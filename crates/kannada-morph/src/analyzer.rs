@@ -1,0 +1,239 @@
+//! Morphological analysis by affix stripping: every way a word splits into a known stem and a rule.
+
+use std::collections::HashMap;
+use std::fmt;
+
+use crate::class::Class;
+use crate::lexicon::{Entry, Lexicon};
+use crate::rules::{Rule, all_rules};
+use crate::script::{akshara_count, normalize};
+
+/// 1 reading of a word, written `lemma+pos+tags`, as in ಮರ+n+pl+loc.
+#[derive(Clone, Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub struct Analysis {
+    pub lemma: String,
+    pub pos: String,
+    pub tags: String,
+    /// The dictionary stem the word was built on.
+    pub stem: String,
+    pub class: Class,
+    /// True when the stem is not in the lexicon and was guessed from the ending alone.
+    pub guessed: bool,
+}
+
+impl fmt::Display for Analysis {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{}+{}{}", self.lemma, self.pos, self.tags)
+    }
+}
+
+/// Classes the guesser may assign to an unknown stem: open classes only.
+const GUESSABLE: &[Class] = &[
+    Class::Noun(crate::noun::Declension::Tree),
+    Class::Noun(crate::noun::Declension::House),
+    Class::Noun(crate::noun::Declension::Forest),
+    Class::Noun(crate::noun::Declension::Thing),
+    Class::Verb,
+];
+
+pub struct Analyzer {
+    lexicon: Lexicon,
+    rules: Vec<Rule>,
+    by_add: HashMap<String, Vec<usize>>,
+}
+
+impl Analyzer {
+    pub fn new(lexicon: Lexicon) -> Self {
+        let rules = all_rules();
+        let mut by_add: HashMap<String, Vec<usize>> = HashMap::new();
+        for (i, rule) in rules.iter().enumerate() {
+            by_add.entry(rule.add.clone()).or_default().push(i);
+        }
+        Self {
+            lexicon,
+            rules,
+            by_add,
+        }
+    }
+
+    pub fn lexicon(&self) -> &Lexicon {
+        &self.lexicon
+    }
+
+    /// Every analysis of `word` from known stems, sorted. Empty for an unknown word.
+    pub fn analyze(&self, word: &str) -> Vec<Analysis> {
+        let word = normalize(word);
+        let mut found: Vec<Analysis> = self
+            .lexicon
+            .get(&word)
+            .iter()
+            .filter(|e| e.class == Class::Fixed)
+            .map(|e| analysis(e, "", false))
+            .collect();
+        for (stem, rule) in self.splits(&word) {
+            for entry in self
+                .lexicon
+                .get(&stem)
+                .iter()
+                .filter(|e| e.class == rule.class)
+            {
+                found.push(analysis(entry, &rule.tags, false));
+            }
+        }
+        found.sort();
+        found.dedup();
+        found
+    }
+
+    /// True when the word has at least 1 analysis: the spelling check.
+    pub fn accepts(&self, word: &str) -> bool {
+        !self.analyze(word).is_empty()
+    }
+
+    /// Analyses of an unknown word from its ending alone: stems of 2 or more
+    /// aksharas in an open class, with the longest matching ending.
+    pub fn guess(&self, word: &str) -> Vec<Analysis> {
+        let word = normalize(word);
+        let mut best: Vec<Analysis> = Vec::new();
+        let mut best_len = 0;
+        for (stem, rule) in self.splits(&word) {
+            if rule.add.is_empty() || !GUESSABLE.contains(&rule.class) || akshara_count(&stem) < 2 {
+                continue;
+            }
+            let len = rule.add.chars().count();
+            if len < best_len {
+                continue;
+            }
+            if len > best_len {
+                best.clear();
+                best_len = len;
+            }
+            best.push(analysis(&Entry::new(&stem, rule.class), &rule.tags, true));
+        }
+        best.sort();
+        best.dedup();
+        best
+    }
+
+    /// The lemma of `word`: from the analysis with the longest stem, or a guess, or the word itself.
+    pub fn stem(&self, word: &str) -> String {
+        let mut analyses = self.analyze(word);
+        if analyses.is_empty() {
+            analyses = self.guess(word);
+        }
+        analyses
+            .into_iter()
+            .max_by_key(|a| (a.stem.chars().count(), std::cmp::Reverse(a.tags.len())))
+            .map_or_else(|| normalize(word), |a| a.lemma)
+    }
+
+    /// Every (stem, rule) whose rule's ending matches the end of `word` and whose stem has an allowed final.
+    /// The stem need not be in the lexicon.
+    pub fn splits<'a>(&'a self, word: &'a str) -> impl Iterator<Item = (String, &'a Rule)> + 'a {
+        word.char_indices()
+            .skip(1)
+            .map(|(i, _)| i)
+            .chain([word.len()])
+            .flat_map(move |i| {
+                let (head, add) = word.split_at(i);
+                self.by_add
+                    .get(add)
+                    .into_iter()
+                    .flatten()
+                    .filter_map(move |&r| {
+                        let rule = &self.rules[r];
+                        let stem = format!("{head}{}", rule.strip);
+                        rule.finals
+                            .iter()
+                            .any(|f| f.matches(&stem))
+                            .then_some((stem, rule))
+                    })
+            })
+    }
+}
+
+fn analysis(entry: &Entry, rule_tags: &str, guessed: bool) -> Analysis {
+    Analysis {
+        lemma: entry.lemma.clone(),
+        pos: entry.pos.clone(),
+        tags: format!("{}{rule_tags}", entry.tags),
+        stem: entry.stem.clone(),
+        class: entry.class,
+        guessed,
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::noun::Declension;
+
+    fn analyzer() -> Analyzer {
+        Analyzer::new(Lexicon::from_entries([
+            Entry::new("ಮರ", Class::Noun(Declension::Tree)),
+            Entry::new("ಮನೆ", Class::Noun(Declension::House)),
+            Entry::new("ಮಾಡು", Class::Verb),
+            Entry {
+                lemma: "ಬರು".into(),
+                ..Entry::new("ಬಂದ", Class::VerbPast)
+            },
+            Entry {
+                lemma: "ಬರು".into(),
+                pos: "v".into(),
+                tags: "+past.3sn".into(),
+                ..Entry::new("ಬಂತು", Class::Fixed)
+            },
+        ]))
+    }
+
+    fn readings(analyzer: &Analyzer, word: &str) -> Vec<String> {
+        analyzer
+            .analyze(word)
+            .iter()
+            .map(ToString::to_string)
+            .collect()
+    }
+
+    #[test]
+    fn analyzes_noun_and_verb_forms() {
+        let a = analyzer();
+        assert_eq!(readings(&a, "ಮರಗಳಲ್ಲಿ"), ["ಮರ+n+pl+loc"]);
+        assert_eq!(readings(&a, "ಮನೆಯಲ್ಲಿದೆ"), ["ಮನೆ+n+loc|ಇರು+v+pres.3sn"]);
+        assert_eq!(
+            readings(&a, "ಮಾಡಿದೆ"),
+            [
+                "ಮಾಡು+v+cp|ಇರು+v+pres.3sn",
+                "ಮಾಡು+v+past.1s",
+                "ಮಾಡು+v+past.2s"
+            ]
+        );
+        assert_eq!(readings(&a, "ಬಂದರು"), ["ಬರು+v+past.3p"]);
+        assert_eq!(readings(&a, "ಬಂತು"), ["ಬರು+v+past.3sn"]);
+        assert_eq!(readings(&a, "ಮರ"), ["ಮರ+n"]);
+    }
+
+    #[test]
+    fn rejects_unknown_and_misspelled_words() {
+        let a = analyzer();
+        assert!(!a.accepts("ಮರನನ್ನು"));
+        assert!(!a.accepts("ಮನೆವನ್ನು"));
+        assert!(!a.accepts("ಕಲ್ಲು"));
+    }
+
+    #[test]
+    fn guesses_and_stems_unknown_words() {
+        let a = analyzer();
+        let guesses: Vec<String> = a
+            .guess("ಕಲ್ಲುಗಳಲ್ಲಿ")
+            .iter()
+            .map(ToString::to_string)
+            .collect();
+        assert!(
+            guesses.contains(&"ಕಲ್ಲು+n+pl+loc".to_string()),
+            "{guesses:?}"
+        );
+        assert_eq!(a.stem("ಮರಗಳಿಗೆ"), "ಮರ");
+        assert_eq!(a.stem("ಬಂದರು"), "ಬರು");
+        assert_eq!(a.stem("ಕಲ್ಲುಗಳಲ್ಲಿ"), "ಕಲ್ಲು");
+    }
+}

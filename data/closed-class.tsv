@@ -1,0 +1,197 @@
+# Pronouns, numerals, determiners and function words, written for this project.
+# Columns: form, class flag, lemma, part of speech, tags. See docs/tags.md.
+# Np and Nd stems decline (ಅವನು: ಅವನನ್ನು, ಅವನಿಗೆ, ಅವನ). Px forms take ಊ and ಏ. Fx forms take nothing.
+ಅವನು	Np	ಅವನು	pron
+ಅವಳು	Np	ಅವಳು	pron
+ಅವರು	Np	ಅವರು	pron
+ಇವನು	Np	ಇವನು	pron
+ಇವಳು	Np	ಇವಳು	pron
+ಇವರು	Np	ಇವರು	pron
+ಯಾರು	Np	ಯಾರು	pron
+ಅದು	Nd	ಅದು	pron
+ಇದು	Nd	ಇದು	pron
+ಯಾವುದು	Nd	ಯಾವುದು	pron
+ಏನು	Px	ಏನು	pron
+ಏನನ್ನು	Px	ಏನು	pron	+acc
+ಏಕೆ	Px	ಏನು	pron	+dat
+ಏತಕ್ಕೆ	Px	ಏನು	pron	+dat
+ಅವು	Px	ಅವು	pron
+ಅವುಗಳು	Np	ಅವು	pron	+pl
+ಅವನ್ನು	Px	ಅವು	pron	+acc
+ಅವಕ್ಕೆ	Px	ಅವು	pron	+dat
+ಇವು	Px	ಇವು	pron
+ಇವುಗಳು	Np	ಇವು	pron	+pl
+ಇವನ್ನು	Px	ಇವು	pron	+acc
+ಇವಕ್ಕೆ	Px	ಇವು	pron	+dat
+ನಾನು	Px	ನಾನು	pron
+ನನ್ನನ್ನು	Px	ನಾನು	pron	+acc
+ನನಗೆ	Px	ನಾನು	pron	+dat
+ನನ್ನ	Fx	ನಾನು	pron	+gen
+ನನ್ನಲ್ಲಿ	Px	ನಾನು	pron	+loc
+ನನ್ನಿಂದ	Fx	ನಾನು	pron	+ins
+ನೀನು	Px	ನೀನು	pron
+ನಿನ್ನನ್ನು	Px	ನೀನು	pron	+acc
+ನಿನಗೆ	Px	ನೀನು	pron	+dat
+ನಿನ್ನ	Fx	ನೀನು	pron	+gen
+ನಿನ್ನಲ್ಲಿ	Px	ನೀನು	pron	+loc
+ನಿನ್ನಿಂದ	Fx	ನೀನು	pron	+ins
+ನಾವು	Px	ನಾವು	pron
+ನಮ್ಮನ್ನು	Px	ನಾವು	pron	+acc
+ನಮಗೆ	Px	ನಾವು	pron	+dat
+ನಮ್ಮ	Fx	ನಾವು	pron	+gen
+ನಮ್ಮಲ್ಲಿ	Px	ನಾವು	pron	+loc
+ನಮ್ಮಿಂದ	Fx	ನಾವು	pron	+ins
+ನೀವು	Px	ನೀವು	pron
+ನಿಮ್ಮನ್ನು	Px	ನೀವು	pron	+acc
+ನಿಮಗೆ	Px	ನೀವು	pron	+dat
+ನಿಮ್ಮ	Fx	ನೀವು	pron	+gen
+ನಿಮ್ಮಲ್ಲಿ	Px	ನೀವು	pron	+loc
+ನಿಮ್ಮಿಂದ	Fx	ನೀವು	pron	+ins
+ತಾನು	Px	ತಾನು	pron
+ತನ್ನನ್ನು	Px	ತಾನು	pron	+acc
+ತನಗೆ	Px	ತಾನು	pron	+dat
+ತನ್ನ	Fx	ತಾನು	pron	+gen
+ತನ್ನಲ್ಲಿ	Px	ತಾನು	pron	+loc
+ತನ್ನಿಂದ	Fx	ತಾನು	pron	+ins
+ತಾವು	Px	ತಾವು	pron
+ತಮ್ಮನ್ನು	Px	ತಾವು	pron	+acc
+ತಮಗೆ	Px	ತಾವು	pron	+dat
+ತಮ್ಮ	Fx	ತಾವು	pron	+gen
+ತಮ್ಮಲ್ಲಿ	Px	ತಾವು	pron	+loc
+ತಮ್ಮಿಂದ	Fx	ತಾವು	pron	+ins
+ಎಲ್ಲರು	Np	ಎಲ್ಲರು	pron
+ಎಲ್ಲವು	Px	ಎಲ್ಲ	pron
+ಎಲ್ಲವನ್ನು	Px	ಎಲ್ಲ	pron	+acc
+ಎಲ್ಲದರ	Fx	ಎಲ್ಲ	pron	+gen
+ಎಲ್ಲದಕ್ಕೆ	Px	ಎಲ್ಲ	pron	+dat
+ಒಂದು	Nd	ಒಂದು	num
+ಎರಡು	Nd	ಎರಡು	num
+ಮೂರು	Nd	ಮೂರು	num
+ನಾಲ್ಕು	Nd	ನಾಲ್ಕು	num
+ಐದು	Nd	ಐದು	num
+ಆರು	Nd	ಆರು	num
+ಏಳು	Nd	ಏಳು	num
+ಎಂಟು	Nd	ಎಂಟು	num
+ಒಂಬತ್ತು	Nd	ಒಂಬತ್ತು	num
+ಹತ್ತು	Nd	ಹತ್ತು	num
+ನೂರು	Nd	ನೂರು	num
+ಸಾವಿರ	Na	ಸಾವಿರ	num
+ಲಕ್ಷ	Na	ಲಕ್ಷ	num
+ಕೋಟಿ	Ne	ಕೋಟಿ	num
+ಮೊದಲ	Fx	ಮೊದಲ	num
+ಮೊದಲನೆಯ	Fx	ಮೊದಲ	num
+ಎರಡನೆಯ	Fx	ಎರಡು	num	+ord
+ಎರಡನೇ	Fx	ಎರಡು	num	+ord
+ಮೂರನೆಯ	Fx	ಮೂರು	num	+ord
+ಮೂರನೇ	Fx	ಮೂರು	num	+ord
+ಈ	Fx	ಈ	det
+ಆ	Fx	ಆ	det
+ಯಾವ	Fx	ಯಾವ	det
+ಅದೇ	Fx	ಅದು	pron	+emph
+ಇದೇ	Fx	ಇದು	pron	+emph
+ಅಂತಹ	Fx	ಅಂತಹ	det
+ಇಂತಹ	Fx	ಇಂತಹ	det
+ಅನೇಕ	Px	ಅನೇಕ	det
+ಹಲವು	Px	ಹಲವು	det
+ಕೆಲವು	Px	ಕೆಲವು	det
+ಹಲವಾರು	Px	ಹಲವಾರು	det
+ಪ್ರತಿ	Px	ಪ್ರತಿ	det
+ಮತ್ತು	Fx	ಮತ್ತು	conj
+ಹಾಗೂ	Fx	ಹಾಗೂ	conj
+ಅಥವಾ	Fx	ಅಥವಾ	conj
+ಆದರೆ	Fx	ಆಗು	v	+cond
+ಆದರೂ	Fx	ಆಗು	v	+conc
+ಆದ್ದರಿಂದ	Fx	ಆದ್ದರಿಂದ	conj
+ಏಕೆಂದರೆ	Fx	ಏಕೆಂದರೆ	conj
+ಹೀಗಾಗಿ	Fx	ಹೀಗಾಗಿ	conj
+ಅಲ್ಲದೆ	Fx	ಅಲ್ಲ	v	+neg.cp
+ಮಾತ್ರ	Px	ಮಾತ್ರ	postp
+ಕೂಡ	Px	ಕೂಡ	postp
+ಕೂಡಾ	Px	ಕೂಡ	postp
+ಸಹ	Px	ಸಹ	postp
+ಬಗ್ಗೆ	Px	ಬಗ್ಗೆ	postp
+ಮೂಲಕ	Px	ಮೂಲಕ	postp
+ನಂತರ	Px	ನಂತರ	postp
+ಬಳಿಕ	Px	ಬಳಿಕ	postp
+ಪ್ರಕಾರ	Px	ಪ್ರಕಾರ	postp
+ಮೇಲೆ	Px	ಮೇಲೆ	postp
+ಕೆಳಗೆ	Px	ಕೆಳಗೆ	postp
+ಒಳಗೆ	Px	ಒಳಗೆ	postp
+ಹೊರಗೆ	Px	ಹೊರಗೆ	postp
+ಹತ್ತಿರ	Px	ಹತ್ತಿರ	postp
+ಜೊತೆ	Px	ಜೊತೆ	postp
+ಜೊತೆಗೆ	Px	ಜೊತೆ	postp	+dat
+ವಿರುದ್ಧ	Px	ವಿರುದ್ಧ	postp
+ಕುರಿತು	Px	ಕುರಿತು	postp
+ವರೆಗೆ	Px	ವರೆಗೆ	postp
+ತನಕ	Px	ತನಕ	postp
+ಇಲ್ಲಿ	Px	ಇಲ್ಲಿ	adv
+ಅಲ್ಲಿ	Px	ಅಲ್ಲಿ	adv
+ಎಲ್ಲಿ	Px	ಎಲ್ಲಿ	adv
+ಇಲ್ಲಿನ	Fx	ಇಲ್ಲಿ	adv	+attr
+ಅಲ್ಲಿನ	Fx	ಅಲ್ಲಿ	adv	+attr
+ಈಗ	Fx	ಈಗ	adv
+ಈಗಲೂ	Fx	ಈಗ	adv	+also
+ಆಗ	Fx	ಆಗ	adv
+ಆಗಲೂ	Fx	ಆಗ	adv	+also
+ಯಾವಾಗ	Fx	ಯಾವಾಗ	adv
+ಯಾವಾಗಲೂ	Fx	ಯಾವಾಗ	adv	+also
+ಹೇಗೆ	Px	ಹೇಗೆ	adv
+ಹಾಗೆ	Px	ಹಾಗೆ	adv
+ಹೀಗೆ	Px	ಹೀಗೆ	adv
+ಇನ್ನು	Px	ಇನ್ನು	adv
+ಇನ್ನೂ	Fx	ಇನ್ನು	adv	+also
+ಮತ್ತೆ	Px	ಮತ್ತೆ	adv
+ಸುಮಾರು	Px	ಸುಮಾರು	adv
+ಬಹಳ	Px	ಬಹಳ	adv
+ತುಂಬಾ	Px	ತುಂಬಾ	adv
+ಸ್ವಲ್ಪ	Px	ಸ್ವಲ್ಪ	adv
+ಇಲ್ಲ	Fx	ಇರು	v	+neg
+ಅಲ್ಲ	Fx	ಅಲ್ಲ	v	+neg
+ಬೇಕು	Fx	ಬೇಕು	v
+ಬೇಡ	Fx	ಬೇಡ	v
+ಹೌದು	Fx	ಹೌದು	x
+ಎಲ್ಲಾ	Px	ಎಲ್ಲ	pron	
+ಜನವರಿ	Ne	ಜನವರಿ	n	
+ಫೆಬ್ರವರಿ	Ne	ಫೆಬ್ರವರಿ	n	
+ಮಾರ್ಚ್	Nl	ಮಾರ್ಚ್	n	
+ಏಪ್ರಿಲ್	Nl	ಏಪ್ರಿಲ್	n	
+ಮೇ	Ne	ಮೇ	n	
+ಜೂನ್	Nl	ಜೂನ್	n	
+ಜುಲೈ	Ne	ಜುಲೈ	n	
+ಆಗಸ್ಟ್	Nl	ಆಗಸ್ಟ್	n	
+ಸೆಪ್ಟೆಂಬರ್	Nl	ಸೆಪ್ಟೆಂಬರ್	n	
+ಅಕ್ಟೋಬರ್	Nl	ಅಕ್ಟೋಬರ್	n	
+ನವೆಂಬರ್	Nl	ನವೆಂಬರ್	n	
+ಡಿಸೆಂಬರ್	Nl	ಡಿಸೆಂಬರ್	n	
+ಆಫ್	Fx	ಆಫ್	x	+foreign
+ದಿ	Fx	ದಿ	x	+foreign
+ಅಂಡ್	Fx	ಅಂಡ್	x	+foreign
+ಎ	Fx	ಎ	abbr	
+ಬಿ	Fx	ಬಿ	abbr	
+ಸಿ	Fx	ಸಿ	abbr	
+ಡಿ	Fx	ಡಿ	abbr	
+ಇ	Fx	ಇ	abbr	
+ಎಫ್	Fx	ಎಫ್	abbr	
+ಜಿ	Fx	ಜಿ	abbr	
+ಎಚ್	Fx	ಎಚ್	abbr	
+ಹೆಚ್	Fx	ಹೆಚ್	abbr	
+ಐ	Fx	ಐ	abbr	
+ಜೆ	Fx	ಜೆ	abbr	
+ಕೆ	Fx	ಕೆ	abbr	
+ಎಲ್	Fx	ಎಲ್	abbr	
+ಎಂ	Fx	ಎಂ	abbr	
+ಎನ್	Fx	ಎನ್	abbr	
+ಒ	Fx	ಒ	abbr	
+ಪಿ	Fx	ಪಿ	abbr	
+ಕ್ಯೂ	Fx	ಕ್ಯೂ	abbr	
+ಆರ್	Fx	ಆರ್	abbr	
+ಎಸ್	Fx	ಎಸ್	abbr	
+ಟಿ	Fx	ಟಿ	abbr	
+ಯು	Fx	ಯು	abbr	
+ವಿ	Fx	ವಿ	abbr	
+ಡಬ್ಲ್ಯು	Fx	ಡಬ್ಲ್ಯು	abbr	
+ಎಕ್ಸ್	Fx	ಎಕ್ಸ್	abbr	
+ವೈ	Fx	ವೈ	abbr	
+ಝಡ್	Fx	ಝಡ್	abbr	
+ಡಾ	Fx	ಡಾ	abbr	
