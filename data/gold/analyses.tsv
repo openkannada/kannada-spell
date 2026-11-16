@@ -1,4 +1,4 @@
-# Gold analyses of data/gold/sample.tsv. Annotated by an AI annotator in a separate session, with docs/tags.md and without access to the analyzer, its code or its dictionaries. Not yet checked by a Kannada reader.
+# Gold analyses of data/gold/sample.tsv. Annotated by an AI model given docs/tags.md, without access to the analyzer, its code or its dictionaries. Not yet checked by a Kannada reader.
 # word	analysis	note
 ಮಾಡಿದ	ಮಾಡು+v+rel.past	
 ಮಾಡಿದ	ಮಾಡು+v+past.3sm	
