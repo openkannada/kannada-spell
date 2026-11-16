@@ -18,7 +18,8 @@ pub enum Declension {
     House,
     /// ಹುಡುಗಿ: like ಮನೆ, with the plural ಹುಡುಗಿಯರು.
     Girl,
-    /// ಆಕೆ: like ಮನೆ, for pronouns. No plural, and no fused ಇರು (no ಆಕೆಗಳು, ಆಕೆಯಿದೆ).
+    /// ಆಕೆ: like ಮನೆ, for pronouns. No plural, and no fused ಇರು (no ಆಕೆಗಳು, ಆಕೆಯಿದೆ);
+    /// "she is not here" is written apart, as ಆಕೆ ಇಲ್ಲ.
     She,
     /// ಕಾಡು: ಕಾಡನ್ನು, ಕಾಡಿಗೆ, ಕಾಡಿನ. The final "ು" is dropped.
     Forest,
@@ -486,6 +487,7 @@ mod tests {
             ("ಮರದಲ್ಲಿದೆ", "+loc|ಇರು+v+pres.3sn"),
             ("ಮರಗಳಾಗಿ", "+pl|ಆಗು+v+cp"),
             ("ಮರವಿದೆ", "|ಇರು+v+pres.3sn"),
+            ("ಮರವಾಗಿದ್ದನು", "|ಆಗು+v+cp|ಇರು+v+past.3sm"),
             ("ಮರದಲ್ಲಿದ್ದ", "+loc|ಇರು+v+rel.past"),
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
