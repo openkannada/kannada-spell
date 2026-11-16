@@ -19,17 +19,23 @@ pub const LATIN_SAMPLES: &[&str] = &[
     "bengaluru",
     "chakra",
     "cakra",
+    "chhatra",
     "kṛṣṇa",
     "krishna",
     "duHkha",
     "duḥkha",
     "praj~je",
     "prajñe",
+    "gnana",
+    "jnana",
     "gūḍha",
     "pāṭha",
     "hiṁ",
     "Kannada",
     "aksharashaH",
+    "neeru",
+    "kaṟi",
+    "kōḻi",
 ];
 
 /// Whole words for the test vectors, chosen to cover clusters, nasals and the visarga.
@@ -40,15 +46,27 @@ const VECTOR_WORDS: &[&str] = &[
     "ಕೃಷ್ಣ",
     "ಕ್ಷೇತ್ರ",
     "ಪ್ರಜ್ಞೆ",
+    "ಜ್ಞಾನ",
     "ದುಃಖ",
     "ಹಿಂ",
     "ಬೆಂಗಳೂರು",
     "ಬ್ಯಾಂಕ್",
+    "ಬ್ಯಾಂಕ್\u{200C}ನಲ್ಲಿ",
     "ಅಮ್ಮ",
     "ಋಷಿ",
     "ಮರಗಳಲ್ಲಿ",
     "ಕಅ",
     "ಮನೆ123",
+    "ಫ\u{0CBC}ಿಲ್ಮ್",
+    "ಜ\u{0CBC}ೀರೋ",
+    "ಕ\u{0CC6}\u{0CC2}ಡು",
+    "ಕ\u{0CC6}\u{0CC2}\u{0CD5}ಟೆ",
+    "ಹಣ್ಣು",
+    "ಜನ್ಮ",
+    "ಕಾಮ್ಯ",
+    "ಉನ್ಮಾದ",
+    "ಸಂಸಾರ",
+    "ಛತ್ರ",
 ];
 
 /// The test-vector words: every consonant alone, with each vowel sign, the virama, the
@@ -81,23 +99,26 @@ pub fn misspelling_recall(pairs: &[(String, String)]) -> [f64; 3] {
     })
 }
 
-/// For each level, how many words share a key with the average word: the cost of a match.
-pub fn mean_bucket(words: &[&str]) -> [f64; 3] {
+/// For each level, how many other distinct words share a key with the average word.
+pub fn other_words_per_key(words: &[&str]) -> [f64; 3] {
+    let mut unique: Vec<&str> = words.to_vec();
+    unique.sort_unstable();
+    unique.dedup();
     LEVELS.map(|level| {
         let mut buckets: HashMap<String, usize> = HashMap::new();
-        for w in words {
+        for w in &unique {
             *buckets.entry(key(w, level)).or_default() += 1;
         }
-        let total: usize = words.iter().map(|w| buckets[&key(w, level)]).sum();
-        total as f64 / words.len().max(1) as f64
+        let others: usize = unique.iter().map(|w| buckets[&key(w, level)] - 1).sum();
+        others as f64 / unique.len().max(1) as f64
     })
 }
 
-/// The share of `(kannada, latin)` pairs whose broad keys match.
-pub fn latin_recall(pairs: &[(String, String)]) -> f64 {
+/// The share of `(kannada, latin)` pairs whose keys match at `level`.
+pub fn latin_recall(pairs: &[(String, String)], level: Level) -> f64 {
     let hits = pairs
         .iter()
-        .filter(|(kn, latin)| key(kn, Level::Broad) == latin_key(latin))
+        .filter(|(kn, latin)| key(kn, level) == latin_key(latin, level))
         .count();
     share(hits, pairs.len())
 }
@@ -132,9 +153,10 @@ mod tests {
     }
 
     #[test]
-    fn buckets_grow_as_keys_fold_more() {
-        let [narrow, _, broad] = mean_bucket(&["ಮನೆ", "ಮಾನೆ", "ಮೇನ", "ಕರ"]);
-        assert!(narrow < broad);
+    fn other_words_per_key_ignores_duplicates_and_the_word_itself() {
+        let [narrow, _, broad] = other_words_per_key(&["ಮನೆ", "ಮನೆ", "ಮಾನೆ", "ಮೇನ", "ಕರ"]);
+        assert_eq!(narrow, 0.5);
+        assert_eq!(broad, 1.5);
     }
 
     #[test]
@@ -153,7 +175,8 @@ mod tests {
         for row in rows {
             let fields: Vec<&str> = row.split('\t').collect();
             if let Some(latin) = fields[0].strip_prefix("latin:") {
-                assert_eq!(latin_key(latin), fields[1], "{latin}");
+                assert_eq!(latin_key(latin, Level::Medium), fields[1], "{latin}");
+                assert_eq!(latin_key(latin, Level::Broad), fields[2], "{latin}");
             } else {
                 let expected = [fields[1], fields[2], fields[3]];
                 assert_eq!(
@@ -169,7 +192,10 @@ mod tests {
     #[test]
     fn latin_pairs_match_at_broad_level() {
         assert_eq!(
-            latin_recall(&pairs(&[("ಶಬ್ದ", "shabda"), ("ಮನುಷ್ಯ", "manuṣya")])),
+            latin_recall(
+                &pairs(&[("ಶಬ್ದ", "shabda"), ("ಮನುಷ್ಯ", "manuṣya")]),
+                Level::Broad
+            ),
             100.0
         );
     }

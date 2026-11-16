@@ -82,28 +82,34 @@ The gold analyses were written by an AI annotator in a separate session, from `d
 
 | Key | Folds | Example |
 | --- | --- | --- |
-| Narrow | aspiration, vowel length, doubled consonants, ಂ and a nasal letter | ಸಂಬಂಧ and ಸಮ್ಬಂದ: `sambanda` |
+| Narrow | aspiration, vowel length, doubled consonants, a nasal before a stop written as ಂ or as a letter | ಸಂಬಂಧ and ಸಮ್ಬಂದ: `sambanda` |
 | Medium | the narrow folds, plus retroflex and dental, ಳ and ಲ, the 3 sibilants | ನಿರ್ದಿಷ್ಟ and ನಿರ್ಧಿಸ್ಟ: `nirdista` |
-| Broad | consonants only, plus a leading vowel; also the key of Latin input | ನಿರ್ದಿಷ್ಟ, "nirdishta" and "nirdiṣṭa": `nrdst` |
+| Broad | consonants only, plus a leading vowel | ನಿರ್ದಿಷ್ಟ and "nirdishta": `nrdst` |
+
+Latin input gets the medium and broad keys: "neeru" matches ನೀರು at medium level. The keys also normalize decomposed vowel signs, the nukta and zero-width joiners, and read ಜ್ಞ as "gn", as Kannada speakers say it.
 
 ```text
 $ kspell phonetic ಸಂಬಂಧ
 ಸಂಬಂಧ	sambanda	sambanda	smbnd
-$ kspell phonetic --latin sambandha
-sambandha	smbnd
+$ kspell phonetic --latin neeru
+neeru	niru	nr
 ```
 
 Measured with `kspell phonetic-eval`:
 
 | Measure | Narrow | Medium | Broad |
 | --- | --- | --- | --- |
-| Confusion misspellings that keep the intended word's key, of 5,000 | 60.3% | 96.4% | 97.2% |
-| Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.1% |
-| Dictionary stems sharing a key with the average stem | 1.4 | 1.7 | 12.9 |
+| Confusion misspellings that keep the intended word's key, of 5,000 | 57.0% | 94.8% | 95.7% |
+| Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.0% |
+| Other dictionary stems sharing a stem's key, mean (130,000 stems) | 0.22 | 0.41 | 9.5 |
+| Informal Latin spellings with the Kannada word's key, of 60 (`informal.tsv`) | | 96.7% | 98.3% |
 
-On the 3,712 main Kannada words of an English to Kannada dictionary, the ISO 15919 and the Baraha spellings both get the same broad key as the Kannada word in 100% of cases. Those words were also used to find the Latin rules (visarga, a final anusvara, Baraha's `j~j`, ISO's `ṭh`), so this figure is a development number.
+- The confusion row is high by design: the confusions are the substitutions the medium key folds. The typing slips are random edits and the fairer test of the broad key.
+- `informal.tsv` was written for this project, so it is small and not independent. The ISO 15919 and Baraha spellings of 3,712 dictionary words, made by machine transliteration from the Kannada, all get the Kannada word's key; that shows only that the Latin rules invert standard romanization.
+- Some different words share keys. Folding vowel length and doubled consonants merges ಹಾಲು and ಹಲ್ಲು, and ಕಾಲು and ಕಲ್ಲು, even at narrow level; the medium key also merges ಕಟ್ಟು and ಕತ್ತು, and ಹಳ್ಳಿ and ಹಲ್ಲಿ. A search should rank exact matches first, then medium, then broad.
+- Informal spellings the keys do not handle: "gyana" for ಜ್ಞಾನ, and "y" for ಐ as in "mysuru".
 
-For search, try the medium key first, where few unrelated words match, then the broad key. `crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages; `kspell phonetic-vectors` rewrites it and a test checks it matches the code.
+`crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages, including nukta, decomposed vowel signs and nasal clusters. `kspell phonetic-vectors` rewrites it, and a test checks it matches the code.
 
 ## How it is built
 

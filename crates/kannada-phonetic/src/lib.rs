@@ -6,14 +6,20 @@
 //! maps a word to a string of sound classes, so that spellings that sound alike
 //! share a key. There are 3 keys, from strict to loose:
 //!
-//! - [`Level::Narrow`] folds aspiration, vowel length, doubled consonants and
-//!   the anusvara. ಸಂಬಂಧ and ಸಮ್ಬಂದ match.
+//! - [`Level::Narrow`] folds aspiration, vowel length, doubled consonants, and a
+//!   nasal before a stop written as ಂ or as a letter. ಸಂಬಂಧ and ಸಮ್ಬಂದ match.
 //! - [`Level::Medium`] also folds retroflex with dental, ಳ with ಲ, the 3
 //!   sibilants, ಜ with ಝ and ಫ with ಪ. ನಿರ್ದಿಷ್ಟ and ನಿರ್ಧಿಸ್ಟ match.
-//! - [`Level::Broad`] keeps only the consonants and a leading vowel. It is the
-//!   key for Latin input too: "nirdishta" and ನಿರ್ದಿಷ್ಟ match.
+//! - [`Level::Broad`] keeps only the consonants and a leading vowel. ನಿರ್ದಿಷ್ಟ
+//!   and ನಿರ್ದೇಶ, which differ in more than spelling, both start `nrd`.
 //!
-//! The keys are plain ASCII.
+//! Folding vowel length and doubled consonants also merges some different words:
+//! ಹಾಲು and ಹಲ್ಲು share every key, as do ಕಾಲು and ಕಲ್ಲು. A search should rank an
+//! exact match above a key match.
+//!
+//! Latin input ([`latin_key`]) gets the medium and broad keys: "neeru" matches
+//! ನೀರು at medium level, and "nirdishta" matches ನಿರ್ದಿಷ್ಟ at broad level. The
+//! keys are plain ASCII.
 
 /// How much a key folds. See the crate documentation.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
@@ -28,132 +34,186 @@ pub enum Level {
 enum Sound {
     Consonant(Place),
     Vowel(char),
-    /// ಂ before a consonant: a nasal at that consonant's place.
-    Nasal,
+    /// ಂ: a nasal at the place of the stop after it, and "m" anywhere else.
+    Anusvara,
 }
 
-/// A consonant class at narrow level. Upper case is retroflex where Kannada contrasts it.
+/// A consonant's code at narrow and at medium level. Upper case marks the retroflex
+/// consonants and the 2 sibilants that only the narrow key keeps apart.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 struct Place {
     narrow: char,
     medium: char,
 }
 
-const fn place(narrow: char, medium: char) -> Place {
-    Place { narrow, medium }
+impl Place {
+    const fn new(narrow: char, medium: char) -> Self {
+        Self { narrow, medium }
+    }
+
+    fn is_stop(self) -> bool {
+        "kgcjTDtdpb".contains(self.narrow)
+    }
+
+    fn is_nasal(self) -> bool {
+        "nNm".contains(self.narrow)
+    }
+
+    fn is_labial(self) -> bool {
+        "pbm".contains(self.narrow)
+    }
 }
+
+const R: Place = Place::new('r', 'r');
+const G: Place = Place::new('g', 'g');
+const H: Place = Place::new('h', 'h');
 
 fn consonant(c: char) -> Option<Place> {
+    let (narrow, medium) = match c {
+        'ಕ' | 'ಖ' => ('k', 'k'),
+        'ಗ' | 'ಘ' => ('g', 'g'),
+        'ಙ' | 'ಞ' | 'ನ' => ('n', 'n'),
+        'ಚ' | 'ಛ' => ('c', 'c'),
+        'ಜ' | 'ಝ' => ('j', 'j'),
+        'ಟ' | 'ಠ' => ('T', 't'),
+        'ಡ' | 'ಢ' => ('D', 'd'),
+        'ಣ' => ('N', 'n'),
+        'ತ' | 'ಥ' => ('t', 't'),
+        'ದ' | 'ಧ' => ('d', 'd'),
+        'ಪ' | 'ಫ' => ('p', 'p'),
+        'ಬ' | 'ಭ' => ('b', 'b'),
+        'ಮ' => ('m', 'm'),
+        'ಯ' => ('y', 'y'),
+        'ರ' | 'ಱ' => ('r', 'r'),
+        'ಲ' => ('l', 'l'),
+        'ಳ' | 'ೞ' => ('L', 'l'),
+        'ವ' => ('v', 'v'),
+        'ಶ' => ('S', 's'),
+        'ಷ' => ('Z', 's'),
+        'ಸ' => ('s', 's'),
+        'ಹ' => ('h', 'h'),
+        _ => return None,
+    };
+    Some(Place::new(narrow, medium))
+}
+
+/// The vowel class of an independent vowel letter: length is folded.
+fn vowel_letter(c: char) -> Option<char> {
     Some(match c {
-        'ಕ' | 'ಖ' => place('k', 'k'),
-        'ಗ' | 'ಘ' => place('g', 'g'),
-        'ಙ' => place('n', 'n'),
-        'ಚ' | 'ಛ' => place('c', 'c'),
-        'ಜ' | 'ಝ' => place('j', 'j'),
-        'ಞ' => place('n', 'n'),
-        'ಟ' | 'ಠ' => place('T', 't'),
-        'ಡ' | 'ಢ' => place('D', 'd'),
-        'ಣ' => place('N', 'n'),
-        'ತ' | 'ಥ' => place('t', 't'),
-        'ದ' | 'ಧ' => place('d', 'd'),
-        'ನ' => place('n', 'n'),
-        'ಪ' | 'ಫ' => place('p', 'p'),
-        'ಬ' | 'ಭ' => place('b', 'b'),
-        'ಮ' => place('m', 'm'),
-        'ಯ' => place('y', 'y'),
-        'ರ' | 'ಱ' => place('r', 'r'),
-        'ಲ' => place('l', 'l'),
-        'ಳ' | 'ೞ' => place('L', 'l'),
-        'ವ' => place('v', 'v'),
-        'ಶ' => place('S', 's'),
-        'ಷ' => place('Z', 's'),
-        'ಸ' => place('s', 's'),
-        'ಹ' => place('h', 'h'),
+        'ಅ' | 'ಆ' => 'a',
+        'ಇ' | 'ಈ' => 'i',
+        'ಉ' | 'ಊ' => 'u',
+        'ಎ' | 'ಏ' | 'ಐ' => 'e',
+        'ಒ' | 'ಓ' | 'ಔ' => 'o',
         _ => return None,
     })
 }
 
-/// The vowel class of an independent vowel or a vowel sign: length is folded.
-fn vowel(c: char) -> Option<char> {
+/// The vowel class of a dependent vowel sign.
+fn vowel_sign(c: char) -> Option<char> {
     Some(match c {
-        'ಅ' | 'ಆ' | 'ಾ' => 'a',
-        'ಇ' | 'ಈ' | 'ಿ' | 'ೀ' => 'i',
-        'ಉ' | 'ಊ' | 'ು' | 'ೂ' => 'u',
-        'ಎ' | 'ಏ' | 'ೆ' | 'ೇ' => 'e',
-        'ಐ' | 'ೈ' => 'e',
-        'ಒ' | 'ಓ' | 'ೊ' | 'ೋ' | 'ಔ' | 'ೌ' => 'o',
+        'ಾ' => 'a',
+        'ಿ' | 'ೀ' => 'i',
+        'ು' | 'ೂ' => 'u',
+        'ೆ' | 'ೇ' | 'ೈ' => 'e',
+        'ೊ' | 'ೋ' | 'ೌ' => 'o',
         _ => return None,
     })
 }
 
+const NUKTA: char = '\u{0CBC}';
 const VIRAMA: char = '\u{0CCD}';
 const ANUSVARA: char = '\u{0C82}';
 const VISARGA: char = '\u{0C83}';
 
+/// Vowel signs that decomposed text writes as 2 or 3 code points, and their single form.
+const DECOMPOSED: &[(&str, &str)] = &[
+    ("\u{0CC6}\u{0CC2}\u{0CD5}", "\u{0CCB}"),
+    ("\u{0CCA}\u{0CD5}", "\u{0CCB}"),
+    ("\u{0CC6}\u{0CC2}", "\u{0CCA}"),
+    ("\u{0CC6}\u{0CD5}", "\u{0CC7}"),
+    ("\u{0CC6}\u{0CD6}", "\u{0CC8}"),
+    ("\u{0CBF}\u{0CD5}", "\u{0CC0}"),
+];
+
+/// `word` with decomposed vowel signs composed and zero-width joiners removed.
+fn compose(word: &str) -> String {
+    let mut text: String = word
+        .chars()
+        .filter(|&c| c != '\u{200C}' && c != '\u{200D}')
+        .collect();
+    for (from, to) in DECOMPOSED {
+        text = text.replace(from, to);
+    }
+    text
+}
+
 /// The sounds of a word in Kannada script. Other characters are skipped.
 fn sounds(word: &str) -> Vec<Sound> {
-    let chars: Vec<char> = word.chars().collect();
+    let chars: Vec<char> = compose(word).chars().collect();
     let mut out = Vec::new();
     let mut i = 0;
     while i < chars.len() {
         let c = chars[i];
-        if let Some(p) = consonant(c) {
-            out.push(Sound::Consonant(p));
-            let next = chars.get(i + 1).copied();
-            match next {
-                Some(VIRAMA) => i += 1,
-                Some('ೃ' | 'ೄ') => {
-                    out.push(Sound::Consonant(place('r', 'r')));
-                    out.push(Sound::Vowel('u'));
-                    i += 1;
-                }
-                Some(sign @ '\u{0CBE}'..='\u{0CCC}') if vowel(sign).is_some() => {
-                    out.extend(vowel(sign).map(Sound::Vowel));
-                    i += 1;
-                }
-                _ => out.push(Sound::Vowel('a')),
+        if let Some(place) = consonant(c) {
+            // ಜ್ಞ is said "gn" in Kannada: ಜ್ಞಾನ, gnana.
+            let gn =
+                c == 'ಜ' && chars.get(i + 1) == Some(&VIRAMA) && chars.get(i + 2) == Some(&'ಞ');
+            out.push(Sound::Consonant(if gn { G } else { place }));
+            let mut next = i + 1;
+            if chars.get(next) == Some(&NUKTA) {
+                next += 1;
             }
-        } else if let Some(v) = vowel(c) {
+            let sign = chars.get(next).copied();
+            if sign == Some(VIRAMA) {
+                i = next;
+            } else if matches!(sign, Some('ೃ' | 'ೄ')) {
+                out.extend([Sound::Consonant(R), Sound::Vowel('u')]);
+                i = next;
+            } else if let Some(v) = sign.and_then(vowel_sign) {
+                out.push(Sound::Vowel(v));
+                i = next;
+            } else {
+                out.push(Sound::Vowel('a'));
+                i = next - 1;
+            }
+        } else if let Some(v) = vowel_letter(c) {
             out.push(Sound::Vowel(v));
         } else if matches!(c, 'ಋ' | 'ೠ') {
-            out.push(Sound::Consonant(place('r', 'r')));
-            out.push(Sound::Vowel('u'));
+            out.extend([Sound::Consonant(R), Sound::Vowel('u')]);
         } else if c == ANUSVARA {
-            out.push(Sound::Nasal);
+            out.push(Sound::Anusvara);
         } else if c == VISARGA {
-            out.push(Sound::Consonant(place('h', 'h')));
+            out.push(Sound::Consonant(H));
         }
         i += 1;
     }
     out
 }
 
-/// A nasal before a consonant sounds at that consonant's place: m before p and b, n before
-/// the others. An anusvara at the end of a word sounds as m (ಹಿಂ, "him").
-fn nasal_before(next: Option<&Sound>) -> char {
+/// The stop after a nasal, if there is one: a nasal before a stop takes its place.
+fn following_stop(next: Option<&Sound>) -> Option<Place> {
     match next {
-        Some(Sound::Consonant(p)) if matches!(p.narrow, 'p' | 'b' | 'm') => 'm',
-        None => 'm',
-        _ => 'n',
+        Some(Sound::Consonant(p)) if p.is_stop() => Some(*p),
+        _ => None,
     }
+}
+
+fn homorganic(stop: Place) -> char {
+    if stop.is_labial() { 'm' } else { 'n' }
 }
 
 fn key_of_sounds(sounds: &[Sound], level: Level) -> String {
     let mut out = String::new();
     for (i, sound) in sounds.iter().enumerate() {
+        let next = sounds.get(i + 1);
         let code = match *sound {
-            Sound::Consonant(p) => {
-                let nasal = matches!(p.narrow, 'n' | 'N' | 'm')
-                    && matches!(sounds.get(i + 1), Some(Sound::Consonant(_)));
-                if nasal {
-                    nasal_before(sounds.get(i + 1))
-                } else if level == Level::Narrow {
-                    p.narrow
-                } else {
-                    p.medium
-                }
-            }
-            Sound::Nasal => nasal_before(sounds.get(i + 1)),
+            Sound::Consonant(p) => match following_stop(next) {
+                Some(stop) if p.is_nasal() => homorganic(stop),
+                _ if level == Level::Narrow => p.narrow,
+                _ => p.medium,
+            },
+            Sound::Anusvara => following_stop(next).map_or('m', homorganic),
             Sound::Vowel(v) => {
                 if level == Level::Broad && i > 0 {
                     continue;
@@ -180,11 +240,12 @@ pub fn keys(word: &str) -> [String; 3] {
     [Level::Narrow, Level::Medium, Level::Broad].map(|level| key_of_sounds(&s, level))
 }
 
-/// Latin letter groups and the sounds they spell; the longest group that matches wins. Matches common
-/// informal romanization (sh, th, aa, ee) as well as ISO 15919 letters. "N" stands
-/// for the anusvara, which sounds at the place of what follows it.
+/// Latin letter groups and the medium-level sounds they spell; the longest group that
+/// matches wins. Covers informal romanization (sh, th, aa, ee, chh, gn), Baraha and
+/// ISO 15919. "N" stands for the anusvara.
 const LATIN: &[(&str, &str)] = &[
     ("ksh", "ks"),
+    ("chh", "c"),
     ("aa", "a"),
     ("ee", "i"),
     ("ii", "i"),
@@ -202,7 +263,10 @@ const LATIN: &[(&str, &str)] = &[
     ("ph", "p"),
     ("bh", "b"),
     ("sh", "s"),
-    ("~j", "n"),
+    ("zh", "l"),
+    ("jn", "gn"),
+    ("jñ", "gn"),
+    ("j~j", "gn"),
     ("~g", "n"),
     ("ḥ", "h"),
     ("ā", "a"),
@@ -211,11 +275,13 @@ const LATIN: &[(&str, &str)] = &[
     ("ē", "e"),
     ("ō", "o"),
     ("ṭ", "t"),
+    ("ṭh", "t"),
     ("ḍ", "d"),
+    ("ḍh", "d"),
     ("ṇ", "n"),
     ("ḷ", "l"),
-    ("ṭh", "t"),
-    ("ḍh", "d"),
+    ("ḻ", "l"),
+    ("ṟ", "r"),
     ("ś", "s"),
     ("ṣ", "s"),
     ("ṁ", "N"),
@@ -252,8 +318,9 @@ const LATIN: &[(&str, &str)] = &[
     ("h", "h"),
 ];
 
-/// The broad key of a word typed in Latin letters, comparable with [`Level::Broad`] keys of Kannada words.
-pub fn latin_key(text: &str) -> String {
+/// The key of a word typed in Latin letters, comparable with the same level's key of a
+/// Kannada word. Latin does not mark retroflex consonants, so the narrow key is the medium one.
+pub fn latin_key(text: &str, level: Level) -> String {
     let lower = text.to_lowercase();
     let mut rest = lower.as_str();
     let mut sounds = Vec::new();
@@ -269,14 +336,19 @@ pub fn latin_key(text: &str) -> String {
         };
         for c in to.chars() {
             sounds.push(match c {
-                'N' => Sound::Nasal,
+                'N' => Sound::Anusvara,
                 _ if "aiueo".contains(c) => Sound::Vowel(c),
-                _ => Sound::Consonant(place(c, c)),
+                _ => Sound::Consonant(Place::new(c, c)),
             });
         }
         rest = &rest[from.len()..];
     }
-    key_of_sounds(&sounds, Level::Broad)
+    let level = if level == Level::Broad {
+        Level::Broad
+    } else {
+        Level::Medium
+    };
+    key_of_sounds(&sounds, level)
 }
 
 #[cfg(test)]
@@ -288,13 +360,22 @@ mod tests {
     }
 
     #[test]
-    fn narrow_folds_aspiration_length_doubling_and_anusvara() {
+    fn narrow_folds_aspiration_length_doubling_and_nasals_before_stops() {
         assert!(same("ಸಂಬಂಧ", "ಸಮ್ಬಂದ", Level::Narrow));
         assert!(same("ದೀಪ", "ದಿಪ", Level::Narrow));
         assert!(same("ಅಮ್ಮ", "ಅಮ", Level::Narrow));
         assert!(same("ಭಾರತ", "ಬಾರತ", Level::Narrow));
+        assert!(same("ಹಣ್ಣು", "ಹಣು", Level::Narrow));
         assert!(!same("ಕಟ", "ಕತ", Level::Narrow));
         assert!(!same("ಮರ", "ಮನೆ", Level::Narrow));
+    }
+
+    #[test]
+    fn a_nasal_keeps_its_place_before_a_non_stop() {
+        assert!(!same("ಜನ್ಮ", "ಜಮ", Level::Narrow));
+        assert!(!same("ಕಾಮ್ಯ", "ಕನ್ಯಾ", Level::Narrow));
+        assert_eq!(key("ಉನ್ಮಾದ", Level::Narrow), "unmada");
+        assert_eq!(key("ಸಂಸಾರ", Level::Narrow), "samsara");
     }
 
     #[test]
@@ -318,24 +399,12 @@ mod tests {
     }
 
     #[test]
-    fn latin_matches_kannada_at_broad_level() {
-        for (latin, kannada) in [
-            ("nirdishta", "ನಿರ್ದಿಷ್ಟ"),
-            ("bharata", "ಭಾರತ"),
-            ("mane", "ಮನೆ"),
-            ("bengaluru", "ಬೆಂಗಳೂರು"),
-            ("sambandha", "ಸಂಬಂಧ"),
-            ("kṛṣṇa", "ಕೃಷ್ಣ"),
-            ("amma", "ಅಮ್ಮ"),
-            ("cakra", "ಚಕ್ರ"),
-            ("chakra", "ಚಕ್ರ"),
-        ] {
-            assert_eq!(
-                latin_key(latin),
-                key(kannada, Level::Broad),
-                "{latin} {kannada}"
-            );
-        }
+    fn nukta_decomposed_signs_and_joiners_do_not_change_the_key() {
+        assert_eq!(keys("ಫ\u{0CBC}ಿಲ್ಮ್"), keys("ಫಿಲ್ಮ್"));
+        assert_eq!(key("ಜ\u{0CBC}ೀರೋ", Level::Narrow), "jiro");
+        assert_eq!(keys("ಕ\u{0CC6}\u{0CC2}ಡು"), keys("ಕೊಡು"));
+        assert_eq!(keys("ಕ\u{0CC6}\u{0CC2}\u{0CD5}ಟೆ"), keys("ಕೋಟೆ"));
+        assert_eq!(keys("ಬ್ಯಾಂಕ್\u{200C}ನಲ್ಲಿ"), keys("ಬ್ಯಾಂಕ್ನಲ್ಲಿ"));
     }
 
     #[test]
@@ -344,19 +413,36 @@ mod tests {
     }
 
     #[test]
-    fn visarga_final_anusvara_and_baraha_jna() {
+    fn jna_is_said_gn() {
+        assert_eq!(key("ಜ್ಞಾನ", Level::Medium), "gnana");
+    }
+
+    #[test]
+    fn latin_matches_kannada_at_broad_level() {
         for (latin, kannada) in [
+            ("nirdishta", "ನಿರ್ದಿಷ್ಟ"),
+            ("bharata", "ಭಾರತ"),
+            ("bengaluru", "ಬೆಂಗಳೂರು"),
+            ("sambandha", "ಸಂಬಂಧ"),
+            ("kṛṣṇa", "ಕೃಷ್ಣ"),
+            ("cakra", "ಚಕ್ರ"),
+            ("chakra", "ಚಕ್ರ"),
+            ("chhatra", "ಛತ್ರ"),
             ("duHkha", "ದುಃಖ"),
             ("svataH", "ಸ್ವತಃ"),
             ("hiM", "ಹಿಂ"),
             ("hiṁ", "ಹಿಂ"),
             ("saṁbandha", "ಸಂಬಂಧ"),
             ("praj~je", "ಪ್ರಜ್ಞೆ"),
+            ("gnana", "ಜ್ಞಾನ"),
+            ("jnana", "ಜ್ಞಾನ"),
             ("gūḍha", "ಗೂಢ"),
             ("pāṭha", "ಪಾಠ"),
+            ("kaṟi", "ಕಱಿ"),
+            ("kōḻi", "ಕೋೞಿ"),
         ] {
             assert_eq!(
-                latin_key(latin),
+                latin_key(latin, Level::Broad),
                 key(kannada, Level::Broad),
                 "{latin} {kannada}"
             );
@@ -364,8 +450,31 @@ mod tests {
     }
 
     #[test]
+    fn latin_matches_kannada_at_medium_level() {
+        for (latin, kannada) in [
+            ("neeru", "ನೀರು"),
+            ("mane", "ಮನೆ"),
+            ("shaale", "ಶಾಲೆ"),
+            ("amma", "ಅಮ್ಮ"),
+        ] {
+            assert_eq!(
+                latin_key(latin, Level::Medium),
+                key(kannada, Level::Medium),
+                "{latin} {kannada}"
+            );
+        }
+        assert_eq!(
+            latin_key("neeru", Level::Narrow),
+            latin_key("neeru", Level::Medium)
+        );
+    }
+
+    #[test]
     fn ignores_other_characters() {
         assert_eq!(key("ಮನೆ123", Level::Broad), key("ಮನೆ", Level::Broad));
-        assert_eq!(latin_key("Mane!"), latin_key("mane"));
+        assert_eq!(
+            latin_key("Mane!", Level::Broad),
+            latin_key("mane", Level::Broad)
+        );
     }
 }

@@ -152,22 +152,22 @@ enum Command {
         #[arg(long)]
         disagreements: Option<PathBuf>,
     },
-    /// Prints the narrow, medium and broad sound-alike keys of each word, or the broad key of Latin input.
+    /// Prints the narrow, medium and broad sound-alike keys of each word, or the medium and broad keys of Latin input.
     Phonetic {
         /// Treat the words as Latin letters.
         #[arg(long)]
         latin: bool,
         words: Vec<String>,
     },
-    /// Measures the sound-alike keys on the misspelling lists and, optionally, romanized words.
+    /// Measures the sound-alike keys on the misspelling lists and on romanized words.
     PhoneticEval {
         #[arg(long, default_value = "dict/kn_IN-alar")]
         dictionary: PathBuf,
         #[arg(long, default_value = "data/build/misspellings.tsv")]
         misspellings: PathBuf,
         /// A file of Kannada words and their romanizations: Kannada, then 1 or more Latin columns.
-        #[arg(long)]
-        romanized: Option<PathBuf>,
+        #[arg(long, default_value = "crates/kannada-phonetic/informal.tsv")]
+        romanized: PathBuf,
     },
     /// Writes test vectors for ports of the phonetic keys: every consonant with every sign,
     /// some whole words, and Latin spellings.
@@ -229,7 +229,7 @@ fn main() -> Result<()> {
             dictionary,
             misspellings,
             romanized,
-        } => phonetic_eval(&dictionary, &misspellings, romanized.as_deref()),
+        } => phonetic_eval(&dictionary, &misspellings, &romanized),
         Command::PhoneticVectors => phonetic_vectors(),
         Command::Rules => {
             for &class in ALL_CLASSES {
@@ -432,7 +432,9 @@ fn phonetic(latin: bool, words: Vec<String>) -> Result<()> {
     let mut out = io::stdout().lock();
     for word in input_words(words)? {
         if latin {
-            writeln!(out, "{word}\t{}", kannada_phonetic::latin_key(&word))?;
+            let medium = kannada_phonetic::latin_key(&word, kannada_phonetic::Level::Medium);
+            let broad = kannada_phonetic::latin_key(&word, kannada_phonetic::Level::Broad);
+            writeln!(out, "{word}\t{medium}\t{broad}")?;
         } else {
             let [narrow, medium, broad] = kannada_phonetic::keys(&word);
             writeln!(out, "{word}\t{narrow}\t{medium}\t{broad}")?;
@@ -451,7 +453,7 @@ fn read_pairs(path: &Path) -> Result<Vec<(String, String)>> {
         .collect())
 }
 
-fn phonetic_eval(dictionary: &Path, misspellings: &Path, romanized: Option<&Path>) -> Result<()> {
+fn phonetic_eval(dictionary: &Path, misspellings: &Path, romanized: &Path) -> Result<()> {
     let level_names = phonetic_eval::LEVELS.map(|l| format!("{l:?}").to_lowercase());
     for (kind, path) in [
         ("confusions", misspellings.to_path_buf()),
@@ -477,35 +479,35 @@ fn phonetic_eval(dictionary: &Path, misspellings: &Path, romanized: Option<&Path
         .iter()
         .map(|e| e.stem.as_str())
         .collect();
-    let buckets = phonetic_eval::mean_bucket(&stems);
+    let others = phonetic_eval::other_words_per_key(&stems);
     let shown: Vec<String> = level_names
         .iter()
-        .zip(buckets)
-        .map(|(n, b)| format!("{n} {b:.1}"))
+        .zip(others)
+        .map(|(n, b)| format!("{n} {b:.2}"))
         .collect();
     println!(
-        "dictionary stems sharing a key, mean ({}): {}",
-        stems.len(),
+        "other dictionary stems sharing a stem's key, mean: {}",
         shown.join(", ")
     );
-    if let Some(path) = romanized {
-        let text = fs::read_to_string(path)?;
-        let rows: Vec<Vec<&str>> = text
-            .lines()
-            .filter(|l| !l.starts_with('#'))
-            .map(|l| l.split('\t').collect())
+    let text = fs::read_to_string(romanized)
+        .with_context(|| format!("reading {}", romanized.display()))?;
+    let rows: Vec<Vec<&str>> = text
+        .lines()
+        .filter(|l| !l.starts_with('#'))
+        .map(|l| l.split('\t').collect())
+        .collect();
+    for column in 1..rows.first().map_or(1, Vec::len) {
+        let pairs: Vec<(String, String)> = rows
+            .iter()
+            .filter_map(|r| Some((r[0].to_string(), r.get(column)?.to_string())))
             .collect();
-        for column in 1..rows.first().map_or(1, Vec::len) {
-            let pairs: Vec<(String, String)> = rows
-                .iter()
-                .filter_map(|r| Some((r[0].to_string(), r.get(column)?.to_string())))
-                .collect();
-            println!(
-                "romanized column {column}: {:.1}% of {} get the Kannada word's broad key",
-                phonetic_eval::latin_recall(&pairs),
-                pairs.len()
-            );
-        }
+        let [_, medium, broad] =
+            phonetic_eval::LEVELS.map(|level| phonetic_eval::latin_recall(&pairs, level));
+        println!(
+            "romanized column {column} of {}: {} pairs, same key as the Kannada word: medium {medium:.1}%, broad {broad:.1}%",
+            romanized.display(),
+            pairs.len()
+        );
     }
     Ok(())
 }
@@ -518,14 +520,16 @@ fn phonetic_vectors() -> Result<()> {
     )?;
     writeln!(
         out,
-        "# Kannada rows: word, narrow, medium, broad. Latin rows: latin:text, broad."
+        "# Kannada rows: word, narrow, medium, broad. Latin rows: latin:text, medium, broad."
     )?;
     for word in phonetic_eval::vector_words() {
         let [narrow, medium, broad] = kannada_phonetic::keys(&word);
         writeln!(out, "{word}\t{narrow}\t{medium}\t{broad}")?;
     }
     for latin in phonetic_eval::LATIN_SAMPLES {
-        writeln!(out, "latin:{latin}\t{}", kannada_phonetic::latin_key(latin))?;
+        let medium = kannada_phonetic::latin_key(latin, kannada_phonetic::Level::Medium);
+        let broad = kannada_phonetic::latin_key(latin, kannada_phonetic::Level::Broad);
+        writeln!(out, "latin:{latin}\t{medium}\t{broad}")?;
     }
     Ok(())
 }

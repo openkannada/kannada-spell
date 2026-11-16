@@ -1,5 +1,5 @@
 # Test vectors for kannada-phonetic, written by `kspell phonetic-vectors`.
-# Kannada rows: word, narrow, medium, broad. Latin rows: latin:text, broad.
+# Kannada rows: word, narrow, medium, broad. Latin rows: latin:text, medium, broad.
 ಕ	ka	ka	k
 ಕಾ	ka	ka	k
 ಕಿ	ki	ki	k
@@ -230,7 +230,7 @@
 ಣೀ	Ni	ni	n
 ಣು	Nu	nu	n
 ಣೂ	Nu	nu	n
-ಣೃ	nru	nru	nr
+ಣೃ	Nru	nru	nr
 ಣೆ	Ne	ne	n
 ಣೇ	Ne	ne	n
 ಣೈ	Ne	ne	n
@@ -321,18 +321,18 @@
 ನಂ	nam	nam	nm
 ನಃ	nah	nah	nh
 ಩			
-಩ಾ	a	a	a
-಩ಿ	i	i	i
-಩ೀ	i	i	i
-಩ು	u	u	u
-಩ೂ	u	u	u
+಩ಾ			
+಩ಿ			
+಩ೀ			
+಩ು			
+಩ೂ			
 ಩ೃ			
-಩ೆ	e	e	e
-಩ೇ	e	e	e
-಩ೈ	e	e	e
-಩ೊ	o	o	o
-಩ೋ	o	o	o
-಩ೌ	o	o	o
+಩ೆ			
+಩ೇ			
+಩ೈ			
+಩ೊ			
+಩ೋ			
+಩ೌ			
 ಩್			
 ಩ಂ	m	m	m
 ಩ಃ	h	h	h
@@ -406,7 +406,7 @@
 ಮೀ	mi	mi	m
 ಮು	mu	mu	m
 ಮೂ	mu	mu	m
-ಮೃ	nru	nru	nr
+ಮೃ	mru	mru	mr
 ಮೆ	me	me	m
 ಮೇ	me	me	m
 ಮೈ	me	me	m
@@ -497,18 +497,18 @@
 ಳಂ	Lam	lam	lm
 ಳಃ	Lah	lah	lh
 ಴			
-಴ಾ	a	a	a
-಴ಿ	i	i	i
-಴ೀ	i	i	i
-಴ು	u	u	u
-಴ೂ	u	u	u
+಴ಾ			
+಴ಿ			
+಴ೀ			
+಴ು			
+಴ೂ			
 ಴ೃ			
-಴ೆ	e	e	e
-಴ೇ	e	e	e
-಴ೈ	e	e	e
-಴ೊ	o	o	o
-಴ೋ	o	o	o
-಴ೌ	o	o	o
+಴ೆ			
+಴ೇ			
+಴ೈ			
+಴ೊ			
+಴ೋ			
+಴ೌ			
 ಴್			
 ಴ಂ	m	m	m
 ಴ಃ	h	h	h
@@ -613,33 +613,51 @@
 ನಿರ್ದಿಷ್ಟ	nirdiZTa	nirdista	nrdst
 ಕೃಷ್ಣ	kruZNa	krusna	krsn
 ಕ್ಷೇತ್ರ	kZetra	ksetra	kstr
-ಪ್ರಜ್ಞೆ	prajne	prajne	prjn
+ಪ್ರಜ್ಞೆ	pragne	pragne	prgn
+ಜ್ಞಾನ	gnana	gnana	gn
 ದುಃಖ	duhka	duhka	dhk
 ಹಿಂ	him	him	hm
 ಬೆಂಗಳೂರು	bengaLuru	bengaluru	bnglr
 ಬ್ಯಾಂಕ್	byank	byank	bynk
+ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ	byanknali	byanknali	bynknl
 ಅಮ್ಮ	ama	ama	am
 ಋಷಿ	ruZi	rusi	rs
 ಮರಗಳಲ್ಲಿ	maragaLali	maragalali	mrgl
 ಕಅ	kaa	kaa	k
 ಮನೆ123	mane	mane	mn
-latin:manuṣya	mnsy
-latin:manuShya	mnsy
-latin:manushya	mnsy
-latin:nirdishta	nrdst
-latin:sambandha	smbnd
-latin:saṁbandha	smbnd
-latin:bengaluru	bnglr
-latin:chakra	ckr
-latin:cakra	ckr
-latin:kṛṣṇa	krsn
-latin:krishna	krsn
-latin:duHkha	dhk
-latin:duḥkha	dhk
-latin:praj~je	prjn
-latin:prajñe	prjn
-latin:gūḍha	gd
-latin:pāṭha	pt
-latin:hiṁ	hm
-latin:Kannada	knd
-latin:aksharashaH	aksrsh
+ಫ಼ಿಲ್ಮ್	pilm	pilm	plm
+ಜ಼ೀರೋ	jiro	jiro	jr
+ಕೊಡು	koDu	kodu	kd
+ಕೋಟೆ	koTe	kote	kt
+ಹಣ್ಣು	haNu	hanu	hn
+ಜನ್ಮ	janma	janma	jnm
+ಕಾಮ್ಯ	kamya	kamya	kmy
+ಉನ್ಮಾದ	unmada	unmada	unmd
+ಸಂಸಾರ	samsara	samsara	smsr
+ಛತ್ರ	catra	catra	ctr
+latin:manuṣya	manusya	mnsy
+latin:manuShya	manusya	mnsy
+latin:manushya	manusya	mnsy
+latin:nirdishta	nirdista	nrdst
+latin:sambandha	sambanda	smbnd
+latin:saṁbandha	sambanda	smbnd
+latin:bengaluru	bengaluru	bnglr
+latin:chakra	cakra	ckr
+latin:cakra	cakra	ckr
+latin:chhatra	catra	ctr
+latin:kṛṣṇa	krusna	krsn
+latin:krishna	krisna	krsn
+latin:duHkha	duhka	dhk
+latin:duḥkha	duhka	dhk
+latin:praj~je	pragne	prgn
+latin:prajñe	pragne	prgn
+latin:gnana	gnana	gn
+latin:jnana	gnana	gn
+latin:gūḍha	guda	gd
+latin:pāṭha	pata	pt
+latin:hiṁ	him	hm
+latin:Kannada	kanada	knd
+latin:aksharashaH	aksarasah	aksrsh
+latin:neeru	niru	nr
+latin:kaṟi	kari	kr
+latin:kōḻi	koli	kl
