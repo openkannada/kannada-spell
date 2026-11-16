@@ -60,26 +60,24 @@ impl Analyzer {
         &self.lexicon
     }
 
-    /// Every form of every stem whose lemma is `lemma`, with the analysis `analyze` gives it.
+    /// Every form of every stem whose lemma is `lemma`, with the analysis `analyze` gives it,
+    /// sorted. Readings that differ only in the stem or class they came from are kept once.
     pub fn paradigm(&self, lemma: &str) -> Vec<(String, Analysis)> {
+        let lemma = normalize(lemma);
         let mut forms: Vec<(String, Analysis)> = self
             .lexicon
             .entries()
             .into_iter()
             .filter(|e| e.lemma == lemma)
             .flat_map(|e| {
-                let fixed = e.class == Class::Fixed;
-                let own = fixed.then(|| (e.stem.clone(), analysis(e, "", false)));
-                let inflected = (!fixed)
-                    .then(|| e.class.forms(&e.stem))
+                e.class
+                    .forms(&e.stem)
                     .into_iter()
-                    .flatten()
-                    .map(|f| (f.text, analysis(e, &f.tags, false)));
-                own.into_iter().chain(inflected).collect::<Vec<_>>()
+                    .map(move |f| (f.text, analysis(e, &f.tags, false)))
             })
             .collect();
-        forms.sort();
-        forms.dedup();
+        forms.sort_by_cached_key(|(word, a)| (word.clone(), a.to_string()));
+        forms.dedup_by(|a, b| a.0 == b.0 && a.1.to_string() == b.1.to_string());
         forms
     }
 
@@ -233,6 +231,31 @@ mod tests {
                 .iter()
                 .any(|(w, r)| w == "ಮರಕ್ಕೆ" && r.to_string() == "ಮರ+n+dat")
         );
+    }
+
+    #[test]
+    fn paradigm_prints_each_reading_once_and_normalizes_the_lemma() {
+        let a = Analyzer::new(Lexicon::from_entries([
+            Entry::new("ಹೋಗು", Class::Verb),
+            Entry::new("ಮನೆ", Class::Noun(Declension::House)),
+            Entry {
+                class: Class::Noun(Declension::Thing),
+                ..Entry::new("ಮನೆ", Class::Noun(Declension::House))
+            },
+        ]));
+        let printed: Vec<String> = a
+            .paradigm("ಮನೆ")
+            .iter()
+            .map(|(w, r)| format!("{w}\t{r}"))
+            .collect();
+        let mut unique = printed.clone();
+        unique.dedup();
+        assert_eq!(printed, unique);
+        assert!(printed.windows(2).all(|p| p[0] <= p[1]));
+        let decomposed = "\u{0CB9}\u{0CCA}\u{0CD5}\u{0C97}\u{0CC1}";
+        assert!(!a.paradigm("ಹೋಗು").is_empty());
+        assert_eq!(a.paradigm(decomposed), a.paradigm("ಹೋಗು"));
+        assert!(a.paradigm("ಝಝಝ").is_empty());
     }
 
     #[test]

@@ -98,7 +98,8 @@ enum Command {
         guess: bool,
         words: Vec<String>,
     },
-    /// Prints every form of each lemma with its analysis (arguments, or 1 per line on stdin).
+    /// Prints every form of each lemma with its analysis (arguments, or 1 per line on stdin);
+    /// an unknown lemma prints "?". Each reading starts with its lemma.
     Paradigm {
         #[arg(long, default_value = "dict/kn_IN")]
         dictionary: PathBuf,
@@ -575,7 +576,11 @@ fn paradigm(dictionary: &Path, lemmas: Vec<String>) -> Result<()> {
     let analyzer = load_analyzer(dictionary)?;
     let mut out = io::stdout().lock();
     for lemma in input_words(lemmas)? {
-        for (word, analysis) in analyzer.paradigm(&lemma) {
+        let forms = analyzer.paradigm(&lemma);
+        if forms.is_empty() {
+            writeln!(out, "{lemma}\t?")?;
+        }
+        for (word, analysis) in forms {
             writeln!(out, "{word}\t{analysis}")?;
         }
     }
