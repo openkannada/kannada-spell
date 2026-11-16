@@ -8,6 +8,7 @@ mod eval;
 mod gold;
 mod induce;
 mod misspell;
+mod phonetic_eval;
 mod suggest;
 
 use std::fs;
@@ -151,6 +152,26 @@ enum Command {
         #[arg(long)]
         disagreements: Option<PathBuf>,
     },
+    /// Prints the narrow, medium and broad sound-alike keys of each word, or the broad key of Latin input.
+    Phonetic {
+        /// Treat the words as Latin letters.
+        #[arg(long)]
+        latin: bool,
+        words: Vec<String>,
+    },
+    /// Measures the sound-alike keys on the misspelling lists and, optionally, romanized words.
+    PhoneticEval {
+        #[arg(long, default_value = "dict/kn_IN-alar")]
+        dictionary: PathBuf,
+        #[arg(long, default_value = "data/build/misspellings.tsv")]
+        misspellings: PathBuf,
+        /// A file of Kannada words and their romanizations: Kannada, then 1 or more Latin columns.
+        #[arg(long)]
+        romanized: Option<PathBuf>,
+    },
+    /// Writes test vectors for ports of the phonetic keys: every consonant with every sign,
+    /// some whole words, and Latin spellings.
+    PhoneticVectors,
     /// Prints the number of affix rules in each class.
     Rules,
 }
@@ -203,6 +224,13 @@ fn main() -> Result<()> {
             gold,
             disagreements,
         } => score_gold(&dictionary, &gold, disagreements.as_deref()),
+        Command::Phonetic { latin, words } => phonetic(latin, words),
+        Command::PhoneticEval {
+            dictionary,
+            misspellings,
+            romanized,
+        } => phonetic_eval(&dictionary, &misspellings, romanized.as_deref()),
+        Command::PhoneticVectors => phonetic_vectors(),
         Command::Rules => {
             for &class in ALL_CLASSES {
                 println!("{}\t{:?}\t{}", class.flag(), class, rules_for(class).len());
@@ -396,6 +424,108 @@ fn score_gold(dictionary: &Path, gold_path: &Path, disagreements: Option<&Path>)
             }
             fs::write(path, out)?;
         }
+    }
+    Ok(())
+}
+
+fn phonetic(latin: bool, words: Vec<String>) -> Result<()> {
+    let mut out = io::stdout().lock();
+    for word in input_words(words)? {
+        if latin {
+            writeln!(out, "{word}\t{}", kannada_phonetic::latin_key(&word))?;
+        } else {
+            let [narrow, medium, broad] = kannada_phonetic::keys(&word);
+            writeln!(out, "{word}\t{narrow}\t{medium}\t{broad}")?;
+        }
+    }
+    Ok(())
+}
+
+fn read_pairs(path: &Path) -> Result<Vec<(String, String)>> {
+    let text = fs::read_to_string(path).with_context(|| format!("reading {}", path.display()))?;
+    Ok(text
+        .lines()
+        .filter(|l| !l.starts_with('#'))
+        .filter_map(|l| l.split_once('\t'))
+        .map(|(a, b)| (a.to_string(), b.split('\t').next().unwrap_or(b).to_string()))
+        .collect())
+}
+
+fn phonetic_eval(dictionary: &Path, misspellings: &Path, romanized: Option<&Path>) -> Result<()> {
+    let level_names = phonetic_eval::LEVELS.map(|l| format!("{l:?}").to_lowercase());
+    for (kind, path) in [
+        ("confusions", misspellings.to_path_buf()),
+        ("typing slips", typo_path(misspellings)),
+    ] {
+        let pairs = read_pairs(&path)?;
+        let recall = phonetic_eval::misspelling_recall(&pairs);
+        let shown: Vec<String> = level_names
+            .iter()
+            .zip(recall)
+            .map(|(n, r)| format!("{n} {r:.1}%"))
+            .collect();
+        println!(
+            "{kind} that keep the intended word's key ({}): {}",
+            pairs.len(),
+            shown.join(", ")
+        );
+    }
+    let analyzer = load_analyzer(dictionary)?;
+    let stems: Vec<&str> = analyzer
+        .lexicon()
+        .entries()
+        .iter()
+        .map(|e| e.stem.as_str())
+        .collect();
+    let buckets = phonetic_eval::mean_bucket(&stems);
+    let shown: Vec<String> = level_names
+        .iter()
+        .zip(buckets)
+        .map(|(n, b)| format!("{n} {b:.1}"))
+        .collect();
+    println!(
+        "dictionary stems sharing a key, mean ({}): {}",
+        stems.len(),
+        shown.join(", ")
+    );
+    if let Some(path) = romanized {
+        let text = fs::read_to_string(path)?;
+        let rows: Vec<Vec<&str>> = text
+            .lines()
+            .filter(|l| !l.starts_with('#'))
+            .map(|l| l.split('\t').collect())
+            .collect();
+        for column in 1..rows.first().map_or(1, Vec::len) {
+            let pairs: Vec<(String, String)> = rows
+                .iter()
+                .filter_map(|r| Some((r[0].to_string(), r.get(column)?.to_string())))
+                .collect();
+            println!(
+                "romanized column {column}: {:.1}% of {} get the Kannada word's broad key",
+                phonetic_eval::latin_recall(&pairs),
+                pairs.len()
+            );
+        }
+    }
+    Ok(())
+}
+
+fn phonetic_vectors() -> Result<()> {
+    let mut out = io::stdout().lock();
+    writeln!(
+        out,
+        "# Test vectors for kannada-phonetic, written by `kspell phonetic-vectors`."
+    )?;
+    writeln!(
+        out,
+        "# Kannada rows: word, narrow, medium, broad. Latin rows: latin:text, broad."
+    )?;
+    for word in phonetic_eval::vector_words() {
+        let [narrow, medium, broad] = kannada_phonetic::keys(&word);
+        writeln!(out, "{word}\t{narrow}\t{medium}\t{broad}")?;
+    }
+    for latin in phonetic_eval::LATIN_SAMPLES {
+        writeln!(out, "latin:{latin}\t{}", kannada_phonetic::latin_key(latin))?;
     }
     Ok(())
 }

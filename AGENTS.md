@@ -4,7 +4,7 @@ Instructions for anyone changing this repository, human or AI agent.
 
 ## What this is
 
-A Kannada spelling dictionary for Hunspell, a morphological analyzer and stemmer, and the tools that build and measure them. 1 description of Kannada inflection, the paradigms in `crates/kannada-morph`, drives both the Hunspell files and the analyzer, so they accept exactly the same words.
+A Kannada spelling dictionary for Hunspell, a morphological analyzer and stemmer, sound-alike keys for search, and the tools that build and measure them. 1 description of Kannada inflection, the paradigms in `crates/kannada-morph`, drives both the Hunspell files and the analyzer, so they accept exactly the same words.
 
 ## Commands
 
@@ -33,6 +33,8 @@ crates/kannada-morph/      the library
   lexicon.rs               stems with classes, lemmas and tags
   analyzer.rs              analysis, guessing and stemming by affix stripping
   hunspell.rs              writing and reading the .aff and .dic files
+crates/kannada-phonetic/   sound-alike keys at 3 levels, for Kannada script and Latin input
+  vectors.tsv              test vectors for ports, rewritten by `kspell phonetic-vectors`
 crates/kspell/             the command-line tool
   corpus.rs                Wikipedia dump to training and held-out counts
   alar.rs                  Alar headwords and parts of speech
@@ -41,6 +43,7 @@ crates/kspell/             the command-line tool
   misspell.rs, eval.rs     synthetic misspellings and the coverage measures
   suggest.rs               scoring Hunspell's suggestions
   gold.rs                  scoring the analyzer against gold analyses
+  phonetic_eval.rs         measuring the phonetic keys
 data/closed-class.tsv      pronouns, numerals and function words, written by hand
 dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md)
 data/gold/                 gold analyses: a development set and a test set

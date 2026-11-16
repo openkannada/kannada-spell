@@ -1,6 +1,6 @@
 # kannada-spell
 
-A Kannada spelling dictionary for Hunspell, with a morphological analyzer and stemmer built from the same rules.
+A Kannada spelling dictionary for Hunspell, with a morphological analyzer and stemmer built from the same rules, and sound-alike keys for fuzzy search.
 
 Kannada joins case endings, auxiliaries and the copula to the word before them, so 1 noun has hundreds of written forms: ಮರ, ಮರವನ್ನು, ಮರಗಳಲ್ಲಿ, ಮರವಾಗಿದೆ, ಮರದಲ್ಲಿದ್ದ. A word list cannot cover that. This project describes Kannada inflection once, as paradigms with sandhi rules, and generates from that description both a Hunspell affix file and an analyzer that returns the lemma and tags of each reading.
 
@@ -76,6 +76,35 @@ Most remaining differences are parts of speech: Alar lists many adjectives as no
 
 The gold analyses were written by an AI annotator in a separate session, from `docs/tags.md` alone, without access to the analyzer or the dictionaries. A Kannada reader has not checked them yet.
 
+## Phonetic keys
+
+`kannada-phonetic` maps a word to sound-alike keys for fuzzy search, so that spellings a reader would confuse share a key:
+
+| Key | Folds | Example |
+| --- | --- | --- |
+| Narrow | aspiration, vowel length, doubled consonants, ಂ and a nasal letter | ಸಂಬಂಧ and ಸಮ್ಬಂದ: `sambanda` |
+| Medium | the narrow folds, plus retroflex and dental, ಳ and ಲ, the 3 sibilants | ನಿರ್ದಿಷ್ಟ and ನಿರ್ಧಿಸ್ಟ: `nirdista` |
+| Broad | consonants only, plus a leading vowel; also the key of Latin input | ನಿರ್ದಿಷ್ಟ, "nirdishta" and "nirdiṣṭa": `nrdst` |
+
+```text
+$ kspell phonetic ಸಂಬಂಧ
+ಸಂಬಂಧ	sambanda	sambanda	smbnd
+$ kspell phonetic --latin sambandha
+sambandha	smbnd
+```
+
+Measured with `kspell phonetic-eval`:
+
+| Measure | Narrow | Medium | Broad |
+| --- | --- | --- | --- |
+| Confusion misspellings that keep the intended word's key, of 5,000 | 60.3% | 96.4% | 97.2% |
+| Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.1% |
+| Dictionary stems sharing a key with the average stem | 1.4 | 1.7 | 12.9 |
+
+On the 3,712 main Kannada words of an English to Kannada dictionary, the ISO 15919 and the Baraha spellings both get the same broad key as the Kannada word in 100% of cases. Those words were also used to find the Latin rules (visarga, a final anusvara, Baraha's `j~j`, ISO's `ṭh`), so this figure is a development number.
+
+For search, try the medium key first, where few unrelated words match, then the broad key. `crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages; `kspell phonetic-vectors` rewrites it and a test checks it matches the code.
+
 ## How it is built
 
 1. **Paradigms.** `crates/kannada-morph` describes 10 noun declensions (ಮರ, ಹುಡುಗ, ಮನೆ, ಹುಡುಗಿ, ಕಾಡು, ವಸ್ತು, ಇದು, plurals, and 2 for loanwords ending in a consonant such as ಬ್ಯಾಂಕ್ and ಬಸ್), regular verbs ending in ು, ಿ and ೆ, 42 irregular verbs and the compounds built on them (ಒಳಗೊಳ್ಳು like ಕೊಳ್ಳು), and the forms that fuse onto a word: the copula ಆಗು, ಇರು, the quotative ಎನ್ನು, ಅಲ್ಲ, the auxiliaries ಕೊಳ್ಳು and ಬಿಡು, and the clitics ಊ and ಏ. Sandhi is 1 function: elision, the ಯ and ವ glides, and the virama.
@@ -100,7 +129,7 @@ target/release/kspell eval
 target/release/kspell suggest
 ```
 
-Other commands: `kspell analyze`, `kspell stem`, `kspell gold`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
+Other commands: `kspell analyze`, `kspell stem`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
 
 ## License
 
