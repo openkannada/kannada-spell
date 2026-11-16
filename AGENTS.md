@@ -1,0 +1,66 @@
+# Working on kannada-spell
+
+Instructions for anyone changing this repository, human or AI agent.
+
+## What this is
+
+A Kannada spelling dictionary for Hunspell, a morphological analyzer and stemmer, and the tools that build and measure them. 1 description of Kannada inflection, the paradigms in `crates/kannada-morph`, drives both the Hunspell files and the analyzer, so they accept exactly the same words.
+
+## Commands
+
+```sh
+cargo test                                         # fast unit tests, under 5 seconds
+cargo fmt --all && cargo clippy --all-targets -- -D warnings
+RUSTDOCFLAGS="-D warnings" cargo doc --no-deps
+scripts/hunspell-smoke.sh                          # the committed dictionary with real Hunspell
+scripts/agreement.sh                               # Hunspell and the analyzer accept the same words
+```
+
+Rebuilding the dictionaries needs `data/raw/alar.yml` and a Kannada Wikipedia dump; see the README.
+
+## Architecture
+
+```text
+crates/kannada-morph/      the library
+  script.rs                Kannada character classes, normalization, word tokens
+  sandhi.rs                how a suffix joins: elision, glides, virama
+  form.rs                  a generated form and the step that adds 1 suffix
+  noun.rs                  declensions, plurals, clitics, fused predicates
+  verb.rs                  conjugation, irregular verbs, auxiliaries
+  class.rs                 inflection classes and their Hunspell flags
+  rules.rs                 affix rules read off the paradigms
+  classify.rs              choosing a declension from corpus evidence
+  lexicon.rs               stems with classes, lemmas and tags
+  analyzer.rs              analysis, guessing and stemming by affix stripping
+  hunspell.rs              writing and reading the .aff and .dic files
+crates/kspell/             the command-line tool
+  corpus.rs                Wikipedia dump to training and held-out counts
+  alar.rs                  Alar headwords and parts of speech
+  build_lexicon.rs         Alar plus the closed-class list to a lexicon
+  induce.rs                stems and words induced from the training counts
+  misspell.rs, eval.rs     synthetic misspellings and the coverage measures
+  suggest.rs               scoring Hunspell's suggestions
+data/closed-class.tsv      pronouns, numerals and function words, written by hand
+dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md)
+docs/tags.md               the analysis tags
+```
+
+## Rules
+
+- Inflection is described once, in `noun.rs` and `verb.rs`. Do not hand-edit affix rules or the `.aff` file; change the paradigm and rebuild.
+- Every behavior change gets a test. For each new rule, remove it, confirm a test fails, then restore it. Run each such check under a 5 second timeout.
+- Measure on held-out text only. The test split (every 10th Wikipedia article) is never used to build or tune the dictionary.
+- Keep the ODbL notice on the dictionaries and the credit to Alar and V. Krishna.
+- Comments only for what the code cannot say.
+
+## Commits
+
+Signed, as Prasad, with no AI attribution:
+
+```sh
+git -c user.name="Prasad Subrahmanya" -c user.email=prasadus92@gmail.com commit -S
+```
+
+## Writing
+
+Plain short sentences, American spelling, digits for numbers, no em dashes, no hype.

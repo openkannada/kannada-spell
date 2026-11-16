@@ -1,0 +1,17 @@
+[package]
+name = "kspell"
+description = "Builds and evaluates the Kannada spelling dictionary and analyzer"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[dependencies]
+kannada-morph.workspace = true
+serde.workspace = true
+serde_yaml_ng.workspace = true
+clap.workspace = true
+anyhow.workspace = true
