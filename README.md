@@ -58,7 +58,7 @@ Most rejected held-out words are rare names and loanwords, and genuine misspelli
 
 ## Analyzer and stemmer
 
-`kspell analyze` returns every reading of a word; `kspell stem` returns its lemma. The analyzer strips the same affix rules Hunspell uses, so it reads exactly the words the dictionary accepts. For a word the dictionary does not know, `--guess` proposes readings from the ending alone, for open noun classes only.
+`kspell analyze` returns every reading of a word; `kspell stem` returns its lemma; `kspell paradigm` lists every form of a lemma with its reading. The analyzer strips the same affix rules Hunspell uses, so it reads exactly the words the dictionary accepts. For a word the dictionary does not know, `--guess` proposes readings from the ending alone, for open noun classes only.
 
 Scored against gold analyses of held-out Wikipedia words with `kspell gold`. Each set samples word types evenly from 3 frequency bands (the 1,000 most frequent, the next 19,000, and the rest seen 3 or more times), so precision and recall are over readings of word types, not weighted by how often a word occurs. Words the annotator marked as not words count against precision when the analyzer accepts them.
 
@@ -136,7 +136,7 @@ target/release/kspell eval
 target/release/kspell suggest
 ```
 
-Other commands: `kspell analyze`, `kspell stem`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
+Other commands: `kspell analyze`, `kspell stem`, `kspell paradigm`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
 
 ## License
 
