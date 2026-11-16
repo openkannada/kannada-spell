@@ -203,11 +203,20 @@ fn homorganic(stop: Place) -> char {
     if stop.is_labial() { 'm' } else { 'n' }
 }
 
+/// True when `next` is a sibilant or ಹ, before which writers spell a nasal as ಂ, ನ್ or ಮ್
+/// and type it as "n" or "m": ಸಂಸ್ಕೃತ, "sanskrit", "samskrutha".
+fn before_sibilant(next: Option<&Sound>) -> bool {
+    matches!(next, Some(Sound::Consonant(p)) if "sh".contains(p.medium))
+}
+
 fn key_of_sounds(sounds: &[Sound], level: Level) -> String {
     let mut out = String::new();
     for (i, sound) in sounds.iter().enumerate() {
         let next = sounds.get(i + 1);
+        let nasal = matches!(sound, Sound::Anusvara)
+            || matches!(sound, Sound::Consonant(p) if p.is_nasal());
         let code = match *sound {
+            _ if nasal && level != Level::Narrow && before_sibilant(next) => 'n',
             Sound::Consonant(p) => match following_stop(next) {
                 Some(stop) if p.is_nasal() => homorganic(stop),
                 _ if level == Level::Narrow => p.narrow,
@@ -467,6 +476,27 @@ mod tests {
             latin_key("neeru", Level::Narrow),
             latin_key("neeru", Level::Medium)
         );
+    }
+
+    #[test]
+    fn a_nasal_before_a_sibilant_or_h_matches_n_and_m_typing() {
+        for (latin, kannada) in [
+            ("sanskrit", "ಸಂಸ್ಕೃತ"),
+            ("samskrutha", "ಸಂಸ್ಕೃತ"),
+            ("sinha", "ಸಿಂಹ"),
+            ("simha", "ಸಿಂಹ"),
+            ("hansa", "ಹಂಸ"),
+            ("vamsha", "ವಂಶ"),
+        ] {
+            assert_eq!(
+                latin_key(latin, Level::Broad),
+                key(kannada, Level::Broad),
+                "{latin} {kannada}"
+            );
+        }
+        assert!(same("ಸಂಸಾರ", "ಸನ್ಸಾರ", Level::Medium));
+        assert!(!same("ಸಂಸಾರ", "ಸನ್ಸಾರ", Level::Narrow));
+        assert!(!same("ಜನ್ಮ", "ಜಮ", Level::Medium));
     }
 
     #[test]

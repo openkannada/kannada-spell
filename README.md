@@ -99,7 +99,7 @@ Measured with `kspell phonetic-eval`:
 
 | Measure | Narrow | Medium | Broad |
 | --- | --- | --- | --- |
-| Confusion misspellings that keep the intended word's key, of 5,000 | 57.0% | 94.8% | 95.7% |
+| Confusion misspellings that keep the intended word's key, of 5,000 | 57.0% | 94.9% | 95.8% |
 | Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.0% |
 | Other dictionary stems sharing a stem's key, mean (130,485 stems) | 0.22 | 0.41 | 9.5 |
 | Informal Latin spellings with the Kannada word's key, of 60 (`informal.tsv`) | | 96.7% | 98.3% |
@@ -107,7 +107,8 @@ Measured with `kspell phonetic-eval`:
 - The confusion row is high by design: the confusions are the substitutions the medium key folds. The typing slips are random edits and the fairer test of the broad key.
 - `informal.tsv` was written for this project, so it is small and not independent. The ISO 15919 and Baraha spellings of 3,712 dictionary words, made by machine transliteration from the Kannada, all get the Kannada word's key; that shows only that the Latin rules invert standard romanization.
 - Some different words share keys. Folding vowel length and doubled consonants merges ಹಾಲು and ಹಲ್ಲು, and ಕಾಲು and ಕಲ್ಲು, even at narrow level; the medium key also merges ಕಟ್ಟು and ಕತ್ತು, and ಹಳ್ಳಿ and ಹಲ್ಲಿ. A search should rank exact matches first, then medium, then broad.
-- Informal spellings the keys do not handle: "gyana" for ಜ್ಞಾನ, and "y" for ಐ as in "mysuru".
+- Informal spellings the keys do not handle: "gyana" for ಜ್ಞಾನ, and "y" for ಐ as in "mysuru". Latin "jn" always reads as ಜ್ಞ, so "rajni" does not find ರಜನಿ.
+- Before a sibilant or ಹ, a nasal written ಂ, ನ್ or ಮ್ and typed "n" or "m" gets 1 code at medium and broad level, so "sanskrit" and "samskrutha" both find ಸಂಸ್ಕೃತ.
 
 `crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages, including nukta, decomposed vowel signs and nasal clusters. `kspell phonetic-vectors` rewrites it, and a test checks it matches the code.
 
