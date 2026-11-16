@@ -24,6 +24,19 @@ Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, 
 hunspell -d dict/kn_IN file.txt
 ```
 
+`kn_IN` is the dictionary this project publishes. The LibreOffice and Firefox packages carry it. `kn_IN-alar` stays in the repository for anyone who wants a word list drawn from Alar alone.
+
+### LibreOffice and Firefox
+
+`scripts/package.sh` builds both packages from `dict/kn_IN` into `dist/`, and `scripts/package-check.sh` checks them:
+
+- `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
+- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
+
+```sh
+scripts/package.sh && scripts/package-check.sh
+```
+
 ## Results
 
 Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles. 2 things break that separation slightly: some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the most often rejected held-out words, and a few pronouns and irregular plurals (ಮಕ್ಕಳು, ಆತ, ಕೆಲವರು) were added to the closed-class list after the development gold set, which is drawn from held-out articles, showed them missing. The coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them.

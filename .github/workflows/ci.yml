@@ -40,3 +40,5 @@ jobs:
       - run: cargo build --release --locked -p kspell
       - run: scripts/agreement.sh dict/kn_IN
       - run: scripts/agreement.sh dict/kn_IN-alar
+      - run: sudo apt-get install -y libxml2-utils zip unzip
+      - run: scripts/package.sh && scripts/package-check.sh

@@ -9,4 +9,4 @@ Hunspell's `.dic` format has no room for a comment, so the notice for the word l
 
 > Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0.
 
-`kn_IN` adds stems and words induced from Kannada Wikipedia word counts. `kn_IN-alar` has only Alar and the hand-written closed-class list.
+`kn_IN` is the published dictionary. It adds stems and words induced from Kannada Wikipedia word counts; credit Kannada Wikipedia's contributors with it, as [../DATA-LICENSE.md](../DATA-LICENSE.md) says. `kn_IN-alar` has only Alar and the hand-written closed-class list.
