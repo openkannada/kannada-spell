@@ -46,7 +46,7 @@ That separation is not perfect, for 2 reasons:
 - Some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the held-out words rejected most often.
 - A few pronouns and irregular plurals (ಮಕ್ಕಳು, ಆತ, ಕೆಲವರು) were added to the closed-class list after the development gold set showed them missing, and that set is drawn from held-out articles.
 
-So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them; `kspell suggest --dictionary dict/kn_IN-alar` gives the `kn_IN-alar` column. A newer dump gives slightly different figures.
+So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them; `kspell suggest --dictionary dict/kn_IN-alar` gives the `kn_IN-alar` column. The build below uses the same dated dump; a newer one gives slightly different figures.
 
 | Measure | `kn_IN` | `kn_IN-alar` |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ Measured with `kspell phonetic-eval`:
 ## Build
 
 ```sh
-cargo install --path crates/kspell      # puts kspell on your PATH, for the examples above
+cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
 ```
 
 To rebuild the dictionaries:
@@ -153,11 +153,11 @@ To rebuild the dictionaries:
 ```sh
 cargo build --release
 mkdir -p data/raw
-curl -L -o data/raw/knwiki-latest-pages-articles.xml.bz2 \
-  https://dumps.wikimedia.org/knwiki/latest/knwiki-latest-pages-articles.xml.bz2
+curl -L -o data/raw/knwiki-20261101-pages-articles.xml.bz2 \
+  https://dumps.wikimedia.org/knwiki/20261101/knwiki-20261101-pages-articles.xml.bz2
 curl -L -o data/raw/alar.yml \
   https://raw.githubusercontent.com/alar-dict/data/8651ccf8e92184ca17e234eeb6c947d8d52dd5c4/alar.yml
-bzcat data/raw/knwiki-latest-pages-articles.xml.bz2 | target/release/kspell corpus
+bzcat data/raw/knwiki-20261101-pages-articles.xml.bz2 | target/release/kspell corpus
 target/release/kspell lexicon
 target/release/kspell induce
 target/release/kspell hunspell
