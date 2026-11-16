@@ -82,8 +82,10 @@ Person, number and gender are written after a dot: `1s`, `1p`, `2s`, `2p`, `3sm`
 | `when` | "when" | ಮಾಡುವಾಗ, ಮಾಡಿದಾಗ |
 | `after` | "after" | ಮಾಡಿದನಂತರ |
 | `vn`, `vn.past` | verbal noun, "doing", "having done" | ಮಾಡುವುದು, ಮಾಡಿದ್ದು |
+| `vn+loc` | "in doing" | ಮಾಡುವಲ್ಲಿ |
+| `rel.neg+sim` | "so as not to" | ಮಾಡದಂತೆ |
 | `ag.*`, `ag.past.*` | participle noun, "the one who does", "the one who did" | ಮಾಡುವವನು, ಮಾಡಿದವರು |
-| `pass` | infinitive before the passive ಆಗು | ಮಾಡಲಾಯಿತು |
+| `pass` | infinitive before the passive ಆಗು or ಪಡು | ಮಾಡಲಾಯಿತು, ಮಾಡಲ್ಪಟ್ಟಿತು |
 
 Verbal and participle nouns take the noun tags after them: `ಮಾಡು+v+vn+acc` is ಮಾಡುವುದನ್ನು.
 
@@ -93,11 +95,13 @@ Verbal and participle nouns take the noun tags after them: `ಮಾಡು+v+vn+ac
 | --- | --- | --- |
 | `|ಇರು+v+…` after `cp` | perfect | ಮಾಡಿದ್ದಾನೆ, ಮಾಡಿದೆ |
 | `|ಇರು+v+…` after `simul` | progressive | ಮಾಡುತ್ತಿದ್ದಾರೆ |
-| `|ಇರು+v+…` after a noun or locative | "there is", "is in" | ಮನೆಯಲ್ಲಿದೆ |
+| `|ಇರು+v+…` after a locative | "is in", "was in" | ಮನೆಯಲ್ಲಿದೆ, ಮನೆಯಲ್ಲಿದ್ದ |
+| `|ಇರು+v+…` after a bare noun | "there is", "there was", "there is no": `pres.3sn`, `pres.3pn`, `past.3sn` and `neg` only | ಮರವಿದೆ, ಮರವಿಲ್ಲ |
 | `|ಆಗು+v+…` | copula "become", "be", and the passive | ಮುಖ್ಯವಾದ, ಮಾಡಲಾಗಿದೆ |
 | `|ಎನ್ನು+v+…` | quotative "called", "that" | ಮರವೆಂದು, ಮರವೆಂಬ |
 | `|ಅಲ್ಲ+v+…` | "is not" | ಮರವಲ್ಲ |
-| `|ಕೊಳ್ಳು+v+…` | reflexive, "for oneself" | ಮಾಡಿಕೊಂಡರು |
+| `|ಕೊಳ್ಳು+v+…` | reflexive, "for oneself"; it takes the perfect itself | ಮಾಡಿಕೊಂಡರು, ಮಾಡಿಕೊಂಡಿದ್ದಾನೆ |
+| `|ಪಡು+v+…` after `pass` | formal passive | ಮಾಡಲ್ಪಟ್ಟಿದೆ |
 | `|ಬಿಡು+v+…` | completive | ಮಾಡಿಬಿಟ್ಟ |
 
 `kspell rules` prints the number of rules per class, and every rule in `dict/kn_IN.aff` carries its tags in its `is:` field.

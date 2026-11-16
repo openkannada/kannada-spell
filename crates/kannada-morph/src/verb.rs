@@ -3,7 +3,7 @@
 use std::sync::OnceLock;
 
 use crate::form::{Form, extend};
-use crate::noun::{CLITICS, Declension, cases, predicates};
+use crate::noun::{CLITICS, Declension, cases, fused_existential, predicates};
 use crate::sandhi::{Junction, join};
 
 /// Endings on the root, as in ಮಾಡು + ಉತ್ತಾನೆ = ಮಾಡುತ್ತಾನೆ and ಬರೆ + ಅಲು = ಬರೆಯಲು.
@@ -29,6 +29,7 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಉವಷ್ಟು", "+extent"),
     ("ಉವವರೆಗೆ", "+term"),
     ("ಉವುದಿಲ್ಲ", "+npst.neg"),
+    ("ಉವಲ್ಲಿ", "+vn+loc"),
     ("ಅಲು", "+inf"),
     ("ಅಲೂ", "+inf+also"),
     ("ಅಲೇ", "+inf+emph"),
@@ -39,6 +40,7 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಅಬೇಡಿ", "+proh.2p"),
     ("ಅಬಲ್ಲ", "+abil"),
     ("ಅದ", "+rel.neg"),
+    ("ಅದಂತೆ", "+rel.neg+sim"),
     ("ಓಣ", "+hort.1p"),
 ];
 
@@ -317,7 +319,16 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
     if root.ends_with('ು') {
         forms.extend(host.then("ಇ", "+imp.2p"));
     }
-    forms.extend(host.then_with("ಅದೆ", "+neg.cp", Junction::Both));
+    for negative in host.then_with("ಅದೆ", "+neg.cp", Junction::Both) {
+        if depth == Depth::Full {
+            let elided = Form {
+                next: Junction::Elide,
+                ..negative.clone()
+            };
+            forms.extend(elided.compose("ಇರು", fused_existential()));
+        }
+        forms.push(negative);
+    }
     forms.extend(nouns(&host, ROOT_NOUNS, depth));
     for modal in extend(std::slice::from_ref(&host), MODALS) {
         if depth == Depth::Full {
@@ -333,6 +344,9 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
         for infinitive in host.then("ಅಲು", "+pass") {
             forms.extend(infinitive.compose("ಆಗು", copula()));
         }
+        for stem in host.then("ಅಲ್", "+pass") {
+            forms.extend(stem.compose("ಪಡು", auxiliary_forms("ಪಡು")));
+        }
     }
     forms
 }
@@ -340,6 +354,10 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
 fn past_forms(past: &str, depth: Depth) -> Vec<Form> {
     let host = Form::stem(past, Junction::Elide);
     let mut forms = extend(std::slice::from_ref(&host), PAST_ENDINGS);
+    // The bare stem also ends a sentence as "he did" (ಅವನು ಮಾಡಿದ), but not in a fused auxiliary.
+    if depth == Depth::Full {
+        forms.push(host.clone().tagged("+past.3sm"));
+    }
     forms.extend(nouns(&host, PAST_NOUNS, depth));
     forms
 }
@@ -420,20 +438,44 @@ pub fn participle_stem_forms(participle: &str) -> Vec<Form> {
     participle_forms(participle, Depth::Full)
 }
 
-fn auxiliary_forms(root: &'static str) -> &'static [Form] {
-    static KOLLU: OnceLock<Vec<Form>> = OnceLock::new();
-    static BIDU: OnceLock<Vec<Form>> = OnceLock::new();
-    let cell = match root {
-        "ಕೊಳ್ಳು" => &KOLLU,
-        "ಬಿಡು" => &BIDU,
-        _ => unreachable!("not an auxiliary: {root}"),
-    };
-    cell.get_or_init(|| {
-        irregular_forms(
-            &irregular_stems(root).expect("auxiliary is irregular"),
-            Depth::Base,
-        )
-    })
+/// The auxiliaries fused to a participle or an infinitive, with the depth each is built to and
+/// whether its command forms are left out. ಕೊಳ್ಳು takes the perfect itself
+/// (ಹೇಳಿಕೊಂಡಿದ್ದಾನೆ); the passive ಪಡು has no imperative or hortative (no ಮಾಡಲ್ಪಡು).
+const AUXILIARIES: &[(&str, Depth, bool)] = &[
+    ("ಕೊಳ್ಳು", Depth::Copula, false),
+    ("ಬಿಡು", Depth::Base, false),
+    ("ಪಡು", Depth::Copula, true),
+];
+
+/// Tags of the commands a passive auxiliary does not take: imperatives, hortatives and
+/// ಬೇಡ (`+proh.2s`). "Must not" (`+proh`, ಮಾಡಲ್ಪಡಬಾರದು) is not a command.
+fn is_command(tags: &str) -> bool {
+    ["+imp", "+hort", "+proh."]
+        .iter()
+        .any(|t| tags.starts_with(t))
+}
+
+fn auxiliary_forms(root: &str) -> &'static [Form] {
+    static ALL: OnceLock<Vec<(&'static str, Vec<Form>)>> = OnceLock::new();
+    let all = ALL.get_or_init(|| {
+        AUXILIARIES
+            .iter()
+            .map(|&(aux, depth, no_commands)| {
+                let mut forms = irregular_forms(
+                    &irregular_stems(aux).expect("auxiliary is irregular"),
+                    depth,
+                );
+                if no_commands {
+                    forms.retain(|f| !is_command(&f.tags));
+                }
+                (aux, forms)
+            })
+            .collect()
+    });
+    all.iter()
+        .find(|(aux, _)| *aux == root)
+        .map(|(_, forms)| forms.as_slice())
+        .expect("an auxiliary")
 }
 
 /// The forms of ಆಗು that fuse to a noun or an infinitive: ಆಗಿ, ಆದ, ಆಗಿದೆ.
@@ -563,6 +605,32 @@ mod tests {
         assert!(has(&forms, "ಮಾಡಬಲ್ಲ", "+abil"));
         assert!(!forms.iter().any(|f| f.text == "ಮಾಡಬಲ್ಲಾಗಿ"));
         assert!(has(&forms, "ಮಾಡಬಲ್ಲದೆಂದು", "+abil|ಎನ್ನು+v+cp"));
+    }
+
+    #[test]
+    fn forms_found_missing_by_the_gold_set() {
+        let forms = regular_forms("ಮಾಡು");
+        for (text, tags) in [
+            ("ಮಾಡಿದ", "+past.3sm"),
+            ("ಮಾಡುವಲ್ಲಿ", "+vn+loc"),
+            ("ಮಾಡದಂತೆ", "+rel.neg+sim"),
+            ("ಮಾಡದಿರುವುದು", "+neg.cp|ಇರು+v+vn"),
+            ("ಮಾಡಿಕೊಂಡಿದ್ದಾನೆ", "+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sm"),
+            ("ಮಾಡಲ್ಪಟ್ಟಿತು", "+pass|ಪಡು+v+past.3sn"),
+            ("ಮಾಡಲ್ಪಟ್ಟಿದೆ", "+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn"),
+            ("ಮಾಡದಿದ್ದರೆ", "+neg.cp|ಇರು+v+cond"),
+        ] {
+            assert!(has(&forms, text, tags), "{text} {tags}");
+        }
+        assert!(has(&forms, "ಮಾಡಲ್ಪಡಬಾರದು", "+pass|ಪಡು+v+proh"));
+        let wrong = ["ಮಾಡಲ್ಪಡು", "ಮಾಡಲ್ಪಡೋಣ", "ಮಾಡಲ್ಪಡಬೇಡ", "ಮಾಡದೆಯಿದ್ದರೆ", "ಮಾಡದೆಯಿರುವುದು"];
+        assert!(!forms.iter().any(|f| wrong.contains(&f.text.as_str())));
+        assert!(
+            !copula()
+                .iter()
+                .any(|f| f.tags == "+past.3sm" && f.text == "ಆದ"),
+            "no bare 3sm in fused forms"
+        );
     }
 
     #[test]

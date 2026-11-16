@@ -27,13 +27,13 @@ impl fmt::Display for Analysis {
     }
 }
 
-/// Classes the guesser may assign to an unknown stem: open classes only.
+/// Classes the guesser may assign to an unknown stem: open noun classes. Unknown words are
+/// mostly names and loanwords; guessing verbs turned names such as ಕಜ್ವಿನಿ into participles.
 const GUESSABLE: &[Class] = &[
     Class::Noun(crate::noun::Declension::Tree),
     Class::Noun(crate::noun::Declension::House),
     Class::Noun(crate::noun::Declension::Forest),
     Class::Noun(crate::noun::Declension::Thing),
-    Class::Verb,
 ];
 
 pub struct Analyzer {
@@ -238,6 +238,10 @@ mod tests {
         assert!(
             a.guess("ಕವನ್ನು").iter().all(|g| g.stem != "ಕ"),
             "1 akshara stems are not guessed"
+        );
+        assert!(
+            a.guess("ಕಜ್ವಿನಿ").iter().all(|g| g.pos != "v"),
+            "verbs are not guessed"
         );
     }
 }

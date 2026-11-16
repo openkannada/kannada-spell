@@ -18,6 +18,9 @@ pub enum Declension {
     House,
     /// ಹುಡುಗಿ: like ಮನೆ, with the plural ಹುಡುಗಿಯರು.
     Girl,
+    /// ಆಕೆ: like ಮನೆ, for pronouns. No plural, and no fused ಇರು (no ಆಕೆಗಳು, ಆಕೆಯಿದೆ);
+    /// "she is not here" is written apart, as ಆಕೆ ಇಲ್ಲ.
+    She,
     /// ಕಾಡು: ಕಾಡನ್ನು, ಕಾಡಿಗೆ, ಕಾಡಿನ. The final "ು" is dropped.
     Forest,
     /// ವಸ್ತು: ವಸ್ತುವನ್ನು, ವಸ್ತುವಿಗೆ, ವಸ್ತುವಿನ. The final vowel stays.
@@ -39,6 +42,7 @@ impl Declension {
             | Declension::Boy
             | Declension::House
             | Declension::Girl
+            | Declension::She
             | Declension::Thing => Junction::Glide,
             Declension::Forest
             | Declension::This
@@ -58,7 +62,7 @@ impl Declension {
             | Declension::LoanDoubled => Some("ಗಳು"),
             Declension::Boy => Some("ರು"),
             Declension::Girl => Some("ಅರು"),
-            Declension::This | Declension::Plural => None,
+            Declension::This | Declension::Plural | Declension::She => None,
         }
     }
 
@@ -66,7 +70,11 @@ impl Declension {
     fn has_formal_nominative(self) -> bool {
         matches!(
             self,
-            Declension::Tree | Declension::House | Declension::Girl | Declension::Thing
+            Declension::Tree
+                | Declension::House
+                | Declension::Girl
+                | Declension::She
+                | Declension::Thing
         )
     }
 
@@ -132,7 +140,7 @@ pub fn cases(stem: &Form, declension: Declension) -> Vec<Form> {
                 oblique,
             )
         }
-        Declension::House | Declension::Girl => (
+        Declension::House | Declension::Girl | Declension::She => (
             nom.then("ಅನ್ನು", "+acc"),
             nom.then("ಗೆ", "+dat"),
             vec![nom.clone()],
@@ -255,6 +263,8 @@ const FUSED_PREDICATE_TAGS: &[&str] = &[
     "+cp|ಇರು+v+pres.3sf",
     "+cp|ಇರು+v+past.3sn",
     "+cp|ಇರು+v+past.3p",
+    "+cp|ಇರು+v+past.3sm",
+    "+cp|ಇರು+v+past.3sf",
     "+cp|ಇರು+v+rel.npst",
     "+cp|ಇರು+v+rel.past",
     "+cp|ಇರು+v+cp",
@@ -273,17 +283,39 @@ fn fused(cell: &'static OnceLock<Vec<Form>>, all: fn() -> &'static [Form]) -> &'
     })
 }
 
-fn fused_existential() -> &'static [Form] {
+pub(crate) fn fused_existential() -> &'static [Form] {
     static EXISTENTIAL: OnceLock<Vec<Form>> = OnceLock::new();
     fused(&EXISTENTIAL, existential)
 }
 
-/// The predicates written fused to a nominal: ಆಗು, ಇರು, ಎನ್ನು and ಅಲ್ಲ.
+/// "There is" and "there was" after a bare noun: ಮರವಿದೆ, ಮರವಿತ್ತು, ಮರವಿಲ್ಲ.
+/// Other forms of ಇರು follow a locative or participle, not a bare noun.
+const BARE_EXISTENTIAL_TAGS: &[&str] = &["+pres.3sn", "+pres.3pn", "+past.3sn", "+neg"];
+
+fn bare_existential() -> &'static [Form] {
+    static FORMS: OnceLock<Vec<Form>> = OnceLock::new();
+    FORMS.get_or_init(|| {
+        existential()
+            .iter()
+            .filter(|f| BARE_EXISTENTIAL_TAGS.contains(&f.tags.as_str()))
+            .cloned()
+            .collect()
+    })
+}
+
+/// The predicates written fused to a noun: ಆಗು, ಇರು ("there is"), ಎನ್ನು and ಅಲ್ಲ.
 pub fn predicates(host: &Form) -> Vec<Form> {
+    let mut forms = copular_predicates(host);
+    forms.extend(host.compose("ಇರು", bare_existential()));
+    forms
+}
+
+/// The predicates written fused to an adjective or a pronoun: ಆಗು, ಎನ್ನು and ಅಲ್ಲ, not ಇರು.
+/// ಸುಂದರವಾಗಿದೆ and ನಾನಾಗಿ are words; ಸುಂದರವಿದೆ and ನಾನಿದೆ are not.
+pub fn copular_predicates(host: &Form) -> Vec<Form> {
     static COPULA: OnceLock<Vec<Form>> = OnceLock::new();
     static QUOTATIVE: OnceLock<Vec<Form>> = OnceLock::new();
     let mut forms = host.compose("ಆಗು", fused(&COPULA, copula));
-    forms.extend(host.compose("ಇರು", fused_existential()));
     forms.extend(host.compose("ಎನ್ನು", fused(&QUOTATIVE, quotative)));
     forms.extend(extend(std::slice::from_ref(host), NEGATIVE_COPULA));
     forms
@@ -304,7 +336,11 @@ pub fn noun_forms(stem: &str, declension: Declension) -> Vec<Form> {
             vec![host.clone()]
         };
         for predicate_host in &predicate_hosts {
-            forms.extend(predicates(predicate_host));
+            forms.extend(if declension == Declension::She {
+                copular_predicates(predicate_host)
+            } else {
+                predicates(predicate_host)
+            });
         }
         for locative in host_cases.iter().filter(|f| f.tags.ends_with("+loc")) {
             forms.extend(locative.compose("ಇರು", fused_existential()));
@@ -450,9 +486,17 @@ mod tests {
             ("ಮರವಲ್ಲ", "|ಅಲ್ಲ+v+neg"),
             ("ಮರದಲ್ಲಿದೆ", "+loc|ಇರು+v+pres.3sn"),
             ("ಮರಗಳಾಗಿ", "+pl|ಆಗು+v+cp"),
+            ("ಮರವಿದೆ", "|ಇರು+v+pres.3sn"),
+            ("ಮರವಾಗಿದ್ದನು", "|ಆಗು+v+cp|ಇರು+v+past.3sm"),
+            ("ಮರದಲ್ಲಿದ್ದ", "+loc|ಇರು+v+rel.past"),
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
+        assert!(
+            !forms
+                .iter()
+                .any(|f| f.text == "ಮರವಿದ್ದ" || f.text == "ಮರವಿರುವ")
+        );
     }
 
     #[test]

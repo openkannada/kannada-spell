@@ -5,6 +5,7 @@ mod build_lexicon;
 mod corpus;
 mod counts;
 mod eval;
+mod gold;
 mod induce;
 mod misspell;
 mod suggest;
@@ -140,6 +141,16 @@ enum Command {
         #[arg(long, default_value_t = 6)]
         forms: usize,
     },
+    /// Scores the analyzer against gold analyses: precision and recall of readings, and stemming.
+    Gold {
+        #[arg(long, default_value = "dict/kn_IN")]
+        dictionary: PathBuf,
+        #[arg(long, default_value = "data/gold/analyses.tsv")]
+        gold: PathBuf,
+        /// Where to write the words whose readings differ from the gold ones.
+        #[arg(long)]
+        disagreements: Option<PathBuf>,
+    },
     /// Prints the number of affix rules in each class.
     Rules,
 }
@@ -187,6 +198,11 @@ fn main() -> Result<()> {
             stems,
             forms,
         } => sample(&dictionary, stems, forms),
+        Command::Gold {
+            dictionary,
+            gold,
+            disagreements,
+        } => score_gold(&dictionary, &gold, disagreements.as_deref()),
         Command::Rules => {
             for &class in ALL_CLASSES {
                 println!("{}\t{:?}\t{}", class.flag(), class, rules_for(class).len());
@@ -338,6 +354,47 @@ fn sample(dictionary: &Path, stems: usize, forms_per_stem: usize) -> Result<()> 
             if let Some(typo) = misspell::typo(word, &mut rng) {
                 writeln!(out, "{typo}")?;
             }
+        }
+    }
+    Ok(())
+}
+
+fn score_gold(dictionary: &Path, gold_path: &Path, disagreements: Option<&Path>) -> Result<()> {
+    let analyzer = load_analyzer(dictionary)?;
+    let gold = gold::Gold::parse(&fs::read_to_string(gold_path)?);
+    for guess in [false, true] {
+        let s = gold::score(&analyzer, &gold, guess);
+        println!(
+            "{}: {} words, {} analyzed from the lexicon; readings P {:.1}% R {:.1}%; lemma and part of speech P {:.1}% R {:.1}%; stem correct {:.1}%",
+            if guess {
+                "with guesses"
+            } else {
+                "lexicon only"
+            },
+            s.words,
+            s.analyzed,
+            100.0 * s.full.precision(),
+            100.0 * s.full.recall(),
+            100.0 * s.lemma_pos.precision(),
+            100.0 * s.lemma_pos.recall(),
+            percent(s.stem_correct as f64, s.words as f64),
+        );
+        if !guess {
+            println!(
+                "  non-words in the gold set: {}, accepted by the analyzer: {}",
+                s.non_words, s.non_words_accepted
+            );
+        }
+        if let (false, Some(path)) = (guess, disagreements) {
+            let mut out = String::from("# word\tgold\tanalyzer\n");
+            for (word, expected, got) in &s.disagreements {
+                out.push_str(&format!(
+                    "{word}\t{}\t{}\n",
+                    expected.join(" ; "),
+                    got.join(" ; ")
+                ));
+            }
+            fs::write(path, out)?;
         }
     }
     Ok(())

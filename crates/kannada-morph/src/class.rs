@@ -1,12 +1,10 @@
 //! Inflection classes: which paradigm a dictionary stem takes.
 
 use crate::form::{Form, extend};
-use crate::noun::{CLITICS, Declension, noun_forms};
+use crate::noun::{CLITICS, Declension, copular_predicates, noun_forms};
 use crate::sandhi::Junction;
 use crate::script::{ANUSVARA, VIRAMA, is_consonant};
-use crate::verb::{
-    copula, irregular_root_forms, participle_stem_forms, past_stem_forms, quotative, regular_forms,
-};
+use crate::verb::{irregular_root_forms, participle_stem_forms, past_stem_forms, regular_forms};
 
 /// The paradigm a stem takes. Each class has a 2 letter Hunspell flag.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]
@@ -72,6 +70,7 @@ pub const ALL_CLASSES: &[Class] = &[
     Class::Noun(Declension::Boy),
     Class::Noun(Declension::House),
     Class::Noun(Declension::Girl),
+    Class::Noun(Declension::She),
     Class::Noun(Declension::Forest),
     Class::Noun(Declension::Thing),
     Class::Noun(Declension::This),
@@ -158,6 +157,7 @@ impl Class {
             Class::Noun(Declension::Boy) => "Nm",
             Class::Noun(Declension::House) => "Ne",
             Class::Noun(Declension::Girl) => "Nf",
+            Class::Noun(Declension::She) => "Ns",
             Class::Noun(Declension::Forest) => "Nu",
             Class::Noun(Declension::Thing) => "Nv",
             Class::Noun(Declension::This) => "Nd",
@@ -194,7 +194,7 @@ impl Class {
             Class::Noun(Declension::Tree | Declension::Boy) | Class::VerbPast => {
                 &[Final::Consonant]
             }
-            Class::Noun(Declension::House | Declension::Girl) => FRONT,
+            Class::Noun(Declension::House | Declension::Girl | Declension::She) => FRONT,
             Class::Noun(Declension::Thing) => LONG_BACK,
             Class::Noun(Declension::Forest | Declension::This | Declension::Plural) => U,
             Class::Noun(Declension::Loan) => &[Final::Char(VIRAMA)],
@@ -252,12 +252,7 @@ fn open_junction(stem: &str) -> Junction {
 fn adjective_forms(stem: &str) -> Vec<Form> {
     let host = Form::stem(stem, open_junction(stem));
     let mut forms = extend(std::slice::from_ref(&host), CLITICS);
-    forms.extend(host.compose("ಆಗು", copula()));
-    forms.extend(host.compose("ಎನ್ನು", quotative()));
-    forms.extend(extend(
-        std::slice::from_ref(&host),
-        &[("ಅಲ್ಲ", "|ಅಲ್ಲ+v+neg")],
-    ));
+    forms.extend(copular_predicates(&host));
     forms.push(host);
     forms
 }
@@ -297,6 +292,10 @@ mod tests {
     #[test]
     fn adjectives_take_the_copula() {
         let forms = Class::Adjective.forms("ಸುಂದರ");
+        assert!(
+            !forms.iter().any(|f| f.tags == "|ಆಗು+v+imp.2p"),
+            "only fused predicate forms"
+        );
         assert!(
             forms
                 .iter()
