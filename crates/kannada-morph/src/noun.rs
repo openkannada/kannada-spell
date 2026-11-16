@@ -293,12 +293,19 @@ fn bare_existential() -> &'static [Form] {
     })
 }
 
-/// The predicates written fused to a nominal: ಆಗು, ಇರು, ಎನ್ನು and ಅಲ್ಲ.
+/// The predicates written fused to a noun: ಆಗು, ಇರು ("there is"), ಎನ್ನು and ಅಲ್ಲ.
 pub fn predicates(host: &Form) -> Vec<Form> {
+    let mut forms = copular_predicates(host);
+    forms.extend(host.compose("ಇರು", bare_existential()));
+    forms
+}
+
+/// The predicates written fused to an adjective or a pronoun: ಆಗು, ಎನ್ನು and ಅಲ್ಲ, not ಇರು.
+/// ಸುಂದರವಾಗಿದೆ and ನಾನಾಗಿ are words; ಸುಂದರವಿದೆ and ನಾನಿದೆ are not.
+pub fn copular_predicates(host: &Form) -> Vec<Form> {
     static COPULA: OnceLock<Vec<Form>> = OnceLock::new();
     static QUOTATIVE: OnceLock<Vec<Form>> = OnceLock::new();
     let mut forms = host.compose("ಆಗು", fused(&COPULA, copula));
-    forms.extend(host.compose("ಇರು", bare_existential()));
     forms.extend(host.compose("ಎನ್ನು", fused(&QUOTATIVE, quotative)));
     forms.extend(extend(std::slice::from_ref(host), NEGATIVE_COPULA));
     forms

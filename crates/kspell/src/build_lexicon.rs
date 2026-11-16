@@ -1,5 +1,7 @@
 //! Builds the lexicon from Alar headwords, the closed-class list and corpus evidence.
 
+use std::collections::HashSet;
+
 use kannada_morph::class::Class;
 use kannada_morph::classify::{choose, choose_attested};
 use kannada_morph::lexicon::{Entry, Lexicon};
@@ -80,14 +82,44 @@ pub fn irregular_entries(verb: &Stems) -> Vec<Entry> {
 }
 
 /// The entries for 1 Alar headword.
-pub fn entries_for(alar: &AlarEntry, counts: &Counts) -> Result<Vec<Entry>, Skip> {
+/// What a headword's class is decided from: corpus counts, and the words the dictionary lists.
+pub struct Evidence<'a> {
+    pub counts: &'a Counts,
+    /// Every Alar headword and closed-class stem.
+    pub known: &'a HashSet<String>,
+}
+
+/// Endings a loanword takes straight after its virama in modern writing: ಅಪೀಲ್‌ಗೆ, ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ.
+const LOAN_ENDINGS: &[&str] = &["ನ", "ನಲ್ಲಿ", "ನಿಂದ", "ಗೆ", "ಗಳು", "ಗಳ", "ನ್ನು"];
+
+/// True when a headword ending in a virama declines as a modern loanword (ಉಡಾನ್, ಈದ್). It is
+/// an Old Kannada form only when Alar also lists it with a final ು (ಮಕ್ಕಳ್ beside ಮಕ್ಕಳು) and
+/// the corpus never writes it with a loanword ending.
+fn is_modern_loan(stem: &str, evidence: &Evidence) -> bool {
+    let Some(body) = stem.strip_suffix(VIRAMA) else {
+        return false;
+    };
+    let attested: u64 = LOAN_ENDINGS
+        .iter()
+        .map(|e| evidence.counts.get(&format!("{stem}{e}")))
+        .sum();
+    attested > 0 || !evidence.known.contains(&format!("{body}ು"))
+}
+
+pub fn entries_for(alar: &AlarEntry, evidence: &Evidence) -> Result<Vec<Entry>, Skip> {
+    let counts = evidence.counts;
     let stem = headword(&alar.entry)?;
     let count = |w: &str| counts.get(w);
     if is_old_form(&stem) {
         if counts.get(&stem) < MIN_OLD_FORM {
             return Err(Skip::OldForm);
         }
-        // Alar's consonant-final words are Old Kannada (ಮಕ್ಕಳ್), not loanwords: they take no endings.
+        if alar.is("noun") && is_modern_loan(&stem, evidence) {
+            return Ok(choose(&stem, &count)
+                .into_iter()
+                .map(|d| Entry::new(&stem, Class::Noun(d)))
+                .collect());
+        }
         return Ok(vec![Entry {
             pos: pos_of(alar).to_string(),
             ..Entry::new(&stem, Class::Fixed)
@@ -180,13 +212,21 @@ pub struct Built {
 
 /// The lexicon: Alar headwords with corpus-chosen classes, the irregular verbs and the closed-class list.
 pub fn build(alar: &[AlarEntry], closed: Lexicon, counts: &Counts) -> Built {
-    let closed_stems: std::collections::HashSet<String> =
-        closed.entries().iter().map(|e| e.stem.clone()).collect();
+    let closed_stems: HashSet<String> = closed.entries().iter().map(|e| e.stem.clone()).collect();
+    let mut known: HashSet<String> = alar
+        .iter()
+        .filter_map(|a| headword(&a.entry).ok())
+        .collect();
+    known.extend(closed_stems.iter().cloned());
+    let evidence = Evidence {
+        counts,
+        known: &known,
+    };
     let mut lexicon = closed;
     let mut skipped = std::collections::BTreeMap::new();
-    let mut headwords = std::collections::HashSet::new();
+    let mut headwords = HashSet::new();
     for entry in alar {
-        match entries_for(entry, counts) {
+        match entries_for(entry, &evidence) {
             Ok(entries) => {
                 // The closed-class list is written for this project and wins over Alar's part of speech.
                 for e in entries
@@ -235,11 +275,17 @@ mod tests {
     }
 
     fn classes(word: &str, kinds: &[&str], counts: &Counts) -> Vec<Class> {
-        entries_for(&alar(word, kinds), counts)
-            .unwrap()
-            .into_iter()
-            .map(|e| e.class)
-            .collect()
+        entries_for(
+            &alar(word, kinds),
+            &Evidence {
+                counts,
+                known: &HashSet::new(),
+            },
+        )
+        .unwrap()
+        .into_iter()
+        .map(|e| e.class)
+        .collect()
     }
 
     #[test]
@@ -253,15 +299,40 @@ mod tests {
     #[test]
     fn keeps_old_forms_only_when_used() {
         let mut counts = Counts::default();
+        let none = HashSet::new();
+        let evidence = |counts| Evidence {
+            counts,
+            known: &none,
+        };
         assert_eq!(
-            entries_for(&alar("ಆಯ್", &["verb"]), &counts),
+            entries_for(&alar("ಆಯ್", &["verb"]), &evidence(&counts)),
             Err(Skip::OldForm)
         );
         counts.add("ಆಯ್".to_string(), 5);
         assert_eq!(classes("ಆಯ್", &["verb"], &counts), [Class::Fixed]);
+        counts.add("ಉಡಾನ್".to_string(), 5);
+        assert_eq!(
+            classes("ಉಡಾನ್", &["noun"], &counts),
+            [Class::Noun(Declension::Loan)]
+        );
         counts.add("ಮಕ್ಕಳ್".to_string(), 5);
         counts.add("ಮಕ್ಕಳಿನ".to_string(), 50);
-        assert_eq!(classes("ಮಕ್ಕಳ್", &["noun"], &counts), [Class::Fixed]);
+        counts.add("ಬ್ಯಾಂಕ್".to_string(), 5);
+        counts.add("ಬ್ಯಾಂಕ್ಗೆ".to_string(), 5);
+        let known: HashSet<String> = ["ಮಕ್ಕಳು".to_string(), "ಬ್ಯಾಂಕು".to_string()].into();
+        let class_of = |word: &str| {
+            let evidence = Evidence {
+                counts: &counts,
+                known: &known,
+            };
+            entries_for(&alar(word, &["noun"]), &evidence).unwrap()[0].class
+        };
+        assert_eq!(class_of("ಮಕ್ಕಳ್"), Class::Fixed, "Alar also lists ಮಕ್ಕಳು");
+        assert_eq!(
+            class_of("ಬ್ಯಾಂಕ್"),
+            Class::Noun(Declension::Loan),
+            "written with a loanword ending"
+        );
     }
 
     #[test]
@@ -310,6 +381,32 @@ mod tests {
                 ("ಮರ".to_string(), "n".to_string())
             ]
         );
+    }
+
+    #[test]
+    fn closed_class_pronouns_take_only_their_own_forms() {
+        let text = std::fs::read_to_string(concat!(
+            env!("CARGO_MANIFEST_DIR"),
+            "/../../data/closed-class.tsv"
+        ))
+        .unwrap();
+        let analyzer = kannada_morph::Analyzer::new(Lexicon::parse(&text).unwrap());
+        for good in [
+            "ನಾನಾಗಿ",
+            "ತಾನಾಗಿಯೇ",
+            "ಆತನಿಗೆ",
+            "ಆತನ",
+            "ಆಕೆಗೆ",
+            "ಆಕೆಯ",
+            "ಅವರಿಗೆ",
+            "ಮಕ್ಕಳಿಗೆ",
+        ] {
+            assert!(analyzer.accepts(good), "{good}");
+        }
+        for bad in ["ನಾನಿದೆ", "ನಾನಿತ್ತು", "ಆತರು", "ಆಕೆಗಳು"]
+        {
+            assert!(!analyzer.accepts(bad), "{bad}");
+        }
     }
 
     #[test]

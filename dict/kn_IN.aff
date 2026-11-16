@@ -45,7 +45,7 @@ REP ಕ್ಷ ಕ್ಶ
 REP ಜ್ಞ ಗ್ನ
 
 # Noun(Tree)
-SFX Na Y 254
+SFX Na Y 248
 SFX Na 0 ಕ್ಕಾಗಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+dat+purp
 SFX Na 0 ಕ್ಕಾಗಿಯೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+dat+purp+also
 SFX Na 0 ಕ್ಕಾಗಿಯೇ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+dat+purp+emph
@@ -68,7 +68,6 @@ SFX Na 0 ಗಳಲ್ಲದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತ
 SFX Na 0 ಗಳಲ್ಲಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc
 SFX Na 0 ಗಳಲ್ಲಿತ್ತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sn
 SFX Na 0 ಗಳಲ್ಲಿದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+pres.3sn
-SFX Na 0 ಗಳಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sm
 SFX Na 0 ಗಳಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+rel.past
 SFX Na 0 ಗಳಲ್ಲಿದ್ದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+sim
 SFX Na 0 ಗಳಲ್ಲಿದ್ದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sm
@@ -125,7 +124,6 @@ SFX Na 0 ಗಳಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Na 0 ಗಳಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+sim
 SFX Na 0 ಗಳಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+when
 SFX Na 0 ಗಳಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+vn
-SFX Na 0 ಗಳಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+past.3sm
 SFX Na 0 ಗಳಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+rel.past
 SFX Na 0 ಗಳಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+sim
 SFX Na 0 ಗಳಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+past.3sm
@@ -155,7 +153,6 @@ SFX Na 0 ಗಳಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Na 0 ಗಳಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಇರು+v+pres.3pn
 SFX Na 0 ಗಳು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl
 SFX Na 0 ಗಳೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+also
-SFX Na 0 ಗಳೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+past.3sm
 SFX Na 0 ಗಳೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+rel.past
 SFX Na 0 ಗಳೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+sim
 SFX Na 0 ಗಳೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+past.3sm
@@ -188,7 +185,6 @@ SFX Na 0 ದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧ
 SFX Na 0 ದಲ್ಲಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc
 SFX Na 0 ದಲ್ಲಿತ್ತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sn
 SFX Na 0 ದಲ್ಲಿದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+pres.3sn
-SFX Na 0 ದಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sm
 SFX Na 0 ದಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+rel.past
 SFX Na 0 ದಲ್ಲಿದ್ದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+sim
 SFX Na 0 ದಲ್ಲಿದ್ದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sm
@@ -257,7 +253,6 @@ SFX Na 0 ವಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Na 0 ವಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+sim
 SFX Na 0 ವಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+when
 SFX Na 0 ವಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+vn
-SFX Na 0 ವಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+past.3sm
 SFX Na 0 ವಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+rel.past
 SFX Na 0 ವಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+sim
 SFX Na 0 ವಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+past.3sm
@@ -274,7 +269,6 @@ SFX Na 0 ವಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧ
 SFX Na 0 ವು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+nom
 SFX Na 0 ವೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+also
 SFX Na 0 ವೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+nom+also
-SFX Na 0 ವೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+past.3sm
 SFX Na 0 ವೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+rel.past
 SFX Na 0 ವೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+sim
 SFX Na 0 ವೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+past.3sm
@@ -302,7 +296,7 @@ SFX Na 0 ವೇ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪ
 SFX Na 0 ವೇ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+nom+emph
 
 # Noun(Boy)
-SFX Nm Y 252
+SFX Nm Y 246
 SFX Nm 0 ನ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+gen
 SFX Nm 0 ನಂತಹ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+like
 SFX Nm 0 ನಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+sim
@@ -315,7 +309,6 @@ SFX Nm 0 ನಲ್ಲದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Nm 0 ನಲ್ಲಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc
 SFX Nm 0 ನಲ್ಲಿತ್ತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sn
 SFX Nm 0 ನಲ್ಲಿದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+pres.3sn
-SFX Nm 0 ನಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sm
 SFX Nm 0 ನಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+rel.past
 SFX Nm 0 ನಲ್ಲಿದ್ದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+sim
 SFX Nm 0 ನಲ್ಲಿದ್ದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+loc|ಇರು+v+past.3sm
@@ -372,7 +365,6 @@ SFX Nm 0 ನಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Nm 0 ನಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+sim
 SFX Nm 0 ನಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+when
 SFX Nm 0 ನಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+vn
-SFX Nm 0 ನಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+past.3sm
 SFX Nm 0 ನಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+rel.past
 SFX Nm 0 ನಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+sim
 SFX Nm 0 ನಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಆಗು+v+past.3sm
@@ -402,7 +394,6 @@ SFX Nm 0 ನಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Nm 0 ನಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಇರು+v+pres.3pn
 SFX Nm 0 ನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+nom
 SFX Nm 0 ನೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+nom+also
-SFX Nm 0 ನೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+past.3sm
 SFX Nm 0 ನೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+rel.past
 SFX Nm 0 ನೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+sim
 SFX Nm 0 ನೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:|ಎನ್ನು+v+past.3sm
@@ -441,7 +432,6 @@ SFX Nm 0 ರಲ್ಲದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Nm 0 ರಲ್ಲಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc
 SFX Nm 0 ರಲ್ಲಿತ್ತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sn
 SFX Nm 0 ರಲ್ಲಿದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+pres.3sn
-SFX Nm 0 ರಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sm
 SFX Nm 0 ರಲ್ಲಿದ್ದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+rel.past
 SFX Nm 0 ರಲ್ಲಿದ್ದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+sim
 SFX Nm 0 ರಲ್ಲಿದ್ದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+loc|ಇರು+v+past.3sm
@@ -498,7 +488,6 @@ SFX Nm 0 ರಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Nm 0 ರಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+sim
 SFX Nm 0 ರಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+when
 SFX Nm 0 ರಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+vn
-SFX Nm 0 ರಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+past.3sm
 SFX Nm 0 ರಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+rel.past
 SFX Nm 0 ರಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+sim
 SFX Nm 0 ರಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಆಗು+v+past.3sm
@@ -528,7 +517,6 @@ SFX Nm 0 ರಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Nm 0 ರಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಇರು+v+pres.3pn
 SFX Nm 0 ರು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl
 SFX Nm 0 ರೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+also
-SFX Nm 0 ರೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+past.3sm
 SFX Nm 0 ರೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+rel.past
 SFX Nm 0 ರೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+sim
 SFX Nm 0 ರೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl|ಎನ್ನು+v+past.3sm
@@ -557,7 +545,7 @@ SFX Nm 0 ರೊಂದಿಗೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತ
 SFX Nm 0 ರೊಳಗೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+pl+in
 
 # Noun(House)
-SFX Ne Y 254
+SFX Ne Y 248
 SFX Ne 0 ಗಳ [ಿೀೆೇೈ] is:+pl+gen
 SFX Ne 0 ಗಳಂತಹ [ಿೀೆೇೈ] is:+pl+like
 SFX Ne 0 ಗಳಂತೆ [ಿೀೆೇೈ] is:+pl+sim
@@ -570,7 +558,6 @@ SFX Ne 0 ಗಳಲ್ಲದೆ [ಿೀೆೇೈ] is:+pl|ಅಲ್ಲ+v+neg.cp
 SFX Ne 0 ಗಳಲ್ಲಿ [ಿೀೆೇೈ] is:+pl+loc
 SFX Ne 0 ಗಳಲ್ಲಿತ್ತು [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sn
 SFX Ne 0 ಗಳಲ್ಲಿದೆ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+pres.3sn
-SFX Ne 0 ಗಳಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sm
 SFX Ne 0 ಗಳಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+rel.past
 SFX Ne 0 ಗಳಲ್ಲಿದ್ದಂತೆ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+sim
 SFX Ne 0 ಗಳಲ್ಲಿದ್ದನು [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sm
@@ -627,7 +614,6 @@ SFX Ne 0 ಗಳಾಗುವ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+rel.npst
 SFX Ne 0 ಗಳಾಗುವಂತೆ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+sim
 SFX Ne 0 ಗಳಾಗುವಾಗ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+when
 SFX Ne 0 ಗಳಾಗುವುದು [ಿೀೆೇೈ] is:+pl|ಆಗು+v+vn
-SFX Ne 0 ಗಳಾದ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+past.3sm
 SFX Ne 0 ಗಳಾದ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+rel.past
 SFX Ne 0 ಗಳಾದಂತೆ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+sim
 SFX Ne 0 ಗಳಾದನು [ಿೀೆೇೈ] is:+pl|ಆಗು+v+past.3sm
@@ -657,7 +643,6 @@ SFX Ne 0 ಗಳಿಲ್ಲ [ಿೀೆೇೈ] is:+pl|ಇರು+v+neg
 SFX Ne 0 ಗಳಿವೆ [ಿೀೆೇೈ] is:+pl|ಇರು+v+pres.3pn
 SFX Ne 0 ಗಳು [ಿೀೆೇೈ] is:+pl
 SFX Ne 0 ಗಳೂ [ಿೀೆೇೈ] is:+pl+also
-SFX Ne 0 ಗಳೆಂದ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+past.3sm
 SFX Ne 0 ಗಳೆಂದ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+rel.past
 SFX Ne 0 ಗಳೆಂದಂತೆ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+sim
 SFX Ne 0 ಗಳೆಂದನು [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+past.3sm
@@ -706,7 +691,6 @@ SFX Ne 0 ಯಲ್ಲದೆ [ಿೀೆೇೈ] is:|ಅಲ್ಲ+v+neg.cp
 SFX Ne 0 ಯಲ್ಲಿ [ಿೀೆೇೈ] is:+loc
 SFX Ne 0 ಯಲ್ಲಿತ್ತು [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sn
 SFX Ne 0 ಯಲ್ಲಿದೆ [ಿೀೆೇೈ] is:+loc|ಇರು+v+pres.3sn
-SFX Ne 0 ಯಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sm
 SFX Ne 0 ಯಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+loc|ಇರು+v+rel.past
 SFX Ne 0 ಯಲ್ಲಿದ್ದಂತೆ [ಿೀೆೇೈ] is:+loc|ಇರು+v+sim
 SFX Ne 0 ಯಲ್ಲಿದ್ದನು [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sm
@@ -763,7 +747,6 @@ SFX Ne 0 ಯಾಗುವ [ಿೀೆೇೈ] is:|ಆಗು+v+rel.npst
 SFX Ne 0 ಯಾಗುವಂತೆ [ಿೀೆೇೈ] is:|ಆಗು+v+sim
 SFX Ne 0 ಯಾಗುವಾಗ [ಿೀೆೇೈ] is:|ಆಗು+v+when
 SFX Ne 0 ಯಾಗುವುದು [ಿೀೆೇೈ] is:|ಆಗು+v+vn
-SFX Ne 0 ಯಾದ [ಿೀೆೇೈ] is:|ಆಗು+v+past.3sm
 SFX Ne 0 ಯಾದ [ಿೀೆೇೈ] is:|ಆಗು+v+rel.past
 SFX Ne 0 ಯಾದಂತೆ [ಿೀೆೇೈ] is:|ಆಗು+v+sim
 SFX Ne 0 ಯಾದನು [ಿೀೆೇೈ] is:|ಆಗು+v+past.3sm
@@ -784,7 +767,6 @@ SFX Ne 0 ಯಿವೆ [ಿೀೆೇೈ] is:|ಇರು+v+pres.3pn
 SFX Ne 0 ಯು [ಿೀೆೇೈ] is:+nom
 SFX Ne 0 ಯೂ [ಿೀೆೇೈ] is:+also
 SFX Ne 0 ಯೂ [ಿೀೆೇೈ] is:+nom+also
-SFX Ne 0 ಯೆಂದ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+past.3sm
 SFX Ne 0 ಯೆಂದ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+rel.past
 SFX Ne 0 ಯೆಂದಂತೆ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+sim
 SFX Ne 0 ಯೆಂದನು [ಿೀೆೇೈ] is:|ಎನ್ನು+v+past.3sm
@@ -814,7 +796,7 @@ SFX Ne 0 ಯೊಂದಿಗೆ [ಿೀೆೇೈ] is:+soc
 SFX Ne 0 ಯೊಳಗೆ [ಿೀೆೇೈ] is:+in
 
 # Noun(Girl)
-SFX Nf Y 254
+SFX Nf Y 248
 SFX Nf 0 ಗಾಗಿ [ಿೀೆೇೈ] is:+dat+purp
 SFX Nf 0 ಗಾಗಿಯೂ [ಿೀೆೇೈ] is:+dat+purp+also
 SFX Nf 0 ಗಾಗಿಯೇ [ಿೀೆೇೈ] is:+dat+purp+emph
@@ -843,7 +825,6 @@ SFX Nf 0 ಯರಲ್ಲದೆ [ಿೀೆೇೈ] is:+pl|ಅಲ್ಲ+v+neg.cp
 SFX Nf 0 ಯರಲ್ಲಿ [ಿೀೆೇೈ] is:+pl+loc
 SFX Nf 0 ಯರಲ್ಲಿತ್ತು [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sn
 SFX Nf 0 ಯರಲ್ಲಿದೆ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+pres.3sn
-SFX Nf 0 ಯರಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sm
 SFX Nf 0 ಯರಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+rel.past
 SFX Nf 0 ಯರಲ್ಲಿದ್ದಂತೆ [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+sim
 SFX Nf 0 ಯರಲ್ಲಿದ್ದನು [ಿೀೆೇೈ] is:+pl+loc|ಇರು+v+past.3sm
@@ -900,7 +881,6 @@ SFX Nf 0 ಯರಾಗುವ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+rel.npst
 SFX Nf 0 ಯರಾಗುವಂತೆ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+sim
 SFX Nf 0 ಯರಾಗುವಾಗ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+when
 SFX Nf 0 ಯರಾಗುವುದು [ಿೀೆೇೈ] is:+pl|ಆಗು+v+vn
-SFX Nf 0 ಯರಾದ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+past.3sm
 SFX Nf 0 ಯರಾದ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+rel.past
 SFX Nf 0 ಯರಾದಂತೆ [ಿೀೆೇೈ] is:+pl|ಆಗು+v+sim
 SFX Nf 0 ಯರಾದನು [ಿೀೆೇೈ] is:+pl|ಆಗು+v+past.3sm
@@ -930,7 +910,6 @@ SFX Nf 0 ಯರಿಲ್ಲ [ಿೀೆೇೈ] is:+pl|ಇರು+v+neg
 SFX Nf 0 ಯರಿವೆ [ಿೀೆೇೈ] is:+pl|ಇರು+v+pres.3pn
 SFX Nf 0 ಯರು [ಿೀೆೇೈ] is:+pl
 SFX Nf 0 ಯರೂ [ಿೀೆೇೈ] is:+pl+also
-SFX Nf 0 ಯರೆಂದ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+past.3sm
 SFX Nf 0 ಯರೆಂದ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+rel.past
 SFX Nf 0 ಯರೆಂದಂತೆ [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+sim
 SFX Nf 0 ಯರೆಂದನು [ಿೀೆೇೈ] is:+pl|ಎನ್ನು+v+past.3sm
@@ -963,7 +942,6 @@ SFX Nf 0 ಯಲ್ಲದೆ [ಿೀೆೇೈ] is:|ಅಲ್ಲ+v+neg.cp
 SFX Nf 0 ಯಲ್ಲಿ [ಿೀೆೇೈ] is:+loc
 SFX Nf 0 ಯಲ್ಲಿತ್ತು [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sn
 SFX Nf 0 ಯಲ್ಲಿದೆ [ಿೀೆೇೈ] is:+loc|ಇರು+v+pres.3sn
-SFX Nf 0 ಯಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sm
 SFX Nf 0 ಯಲ್ಲಿದ್ದ [ಿೀೆೇೈ] is:+loc|ಇರು+v+rel.past
 SFX Nf 0 ಯಲ್ಲಿದ್ದಂತೆ [ಿೀೆೇೈ] is:+loc|ಇರು+v+sim
 SFX Nf 0 ಯಲ್ಲಿದ್ದನು [ಿೀೆೇೈ] is:+loc|ಇರು+v+past.3sm
@@ -1020,7 +998,6 @@ SFX Nf 0 ಯಾಗುವ [ಿೀೆೇೈ] is:|ಆಗು+v+rel.npst
 SFX Nf 0 ಯಾಗುವಂತೆ [ಿೀೆೇೈ] is:|ಆಗು+v+sim
 SFX Nf 0 ಯಾಗುವಾಗ [ಿೀೆೇೈ] is:|ಆಗು+v+when
 SFX Nf 0 ಯಾಗುವುದು [ಿೀೆೇೈ] is:|ಆಗು+v+vn
-SFX Nf 0 ಯಾದ [ಿೀೆೇೈ] is:|ಆಗು+v+past.3sm
 SFX Nf 0 ಯಾದ [ಿೀೆೇೈ] is:|ಆಗು+v+rel.past
 SFX Nf 0 ಯಾದಂತೆ [ಿೀೆೇೈ] is:|ಆಗು+v+sim
 SFX Nf 0 ಯಾದನು [ಿೀೆೇೈ] is:|ಆಗು+v+past.3sm
@@ -1041,7 +1018,6 @@ SFX Nf 0 ಯಿವೆ [ಿೀೆೇೈ] is:|ಇರು+v+pres.3pn
 SFX Nf 0 ಯು [ಿೀೆೇೈ] is:+nom
 SFX Nf 0 ಯೂ [ಿೀೆೇೈ] is:+also
 SFX Nf 0 ಯೂ [ಿೀೆೇೈ] is:+nom+also
-SFX Nf 0 ಯೆಂದ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+past.3sm
 SFX Nf 0 ಯೆಂದ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+rel.past
 SFX Nf 0 ಯೆಂದಂತೆ [ಿೀೆೇೈ] is:|ಎನ್ನು+v+sim
 SFX Nf 0 ಯೆಂದನು [ಿೀೆೇೈ] is:|ಎನ್ನು+v+past.3sm
@@ -1071,7 +1047,7 @@ SFX Nf 0 ಯೊಂದಿಗೆ [ಿೀೆೇೈ] is:+soc
 SFX Nf 0 ಯೊಳಗೆ [ಿೀೆೇೈ] is:+in
 
 # Noun(Forest)
-SFX Nu Y 251
+SFX Nu Y 245
 SFX Nu 0 ಗಳ ು is:+pl+gen
 SFX Nu 0 ಗಳಂತಹ ು is:+pl+like
 SFX Nu 0 ಗಳಂತೆ ು is:+pl+sim
@@ -1084,7 +1060,6 @@ SFX Nu 0 ಗಳಲ್ಲದೆ ು is:+pl|ಅಲ್ಲ+v+neg.cp
 SFX Nu 0 ಗಳಲ್ಲಿ ು is:+pl+loc
 SFX Nu 0 ಗಳಲ್ಲಿತ್ತು ು is:+pl+loc|ಇರು+v+past.3sn
 SFX Nu 0 ಗಳಲ್ಲಿದೆ ು is:+pl+loc|ಇರು+v+pres.3sn
-SFX Nu 0 ಗಳಲ್ಲಿದ್ದ ು is:+pl+loc|ಇರು+v+past.3sm
 SFX Nu 0 ಗಳಲ್ಲಿದ್ದ ು is:+pl+loc|ಇರು+v+rel.past
 SFX Nu 0 ಗಳಲ್ಲಿದ್ದಂತೆ ು is:+pl+loc|ಇರು+v+sim
 SFX Nu 0 ಗಳಲ್ಲಿದ್ದನು ು is:+pl+loc|ಇರು+v+past.3sm
@@ -1141,7 +1116,6 @@ SFX Nu 0 ಗಳಾಗುವ ು is:+pl|ಆಗು+v+rel.npst
 SFX Nu 0 ಗಳಾಗುವಂತೆ ು is:+pl|ಆಗು+v+sim
 SFX Nu 0 ಗಳಾಗುವಾಗ ು is:+pl|ಆಗು+v+when
 SFX Nu 0 ಗಳಾಗುವುದು ು is:+pl|ಆಗು+v+vn
-SFX Nu 0 ಗಳಾದ ು is:+pl|ಆಗು+v+past.3sm
 SFX Nu 0 ಗಳಾದ ು is:+pl|ಆಗು+v+rel.past
 SFX Nu 0 ಗಳಾದಂತೆ ು is:+pl|ಆಗು+v+sim
 SFX Nu 0 ಗಳಾದನು ು is:+pl|ಆಗು+v+past.3sm
@@ -1171,7 +1145,6 @@ SFX Nu 0 ಗಳಿಲ್ಲ ು is:+pl|ಇರು+v+neg
 SFX Nu 0 ಗಳಿವೆ ು is:+pl|ಇರು+v+pres.3pn
 SFX Nu 0 ಗಳು ು is:+pl
 SFX Nu 0 ಗಳೂ ು is:+pl+also
-SFX Nu 0 ಗಳೆಂದ ು is:+pl|ಎನ್ನು+v+past.3sm
 SFX Nu 0 ಗಳೆಂದ ು is:+pl|ಎನ್ನು+v+rel.past
 SFX Nu 0 ಗಳೆಂದಂತೆ ು is:+pl|ಎನ್ನು+v+sim
 SFX Nu 0 ಗಳೆಂದನು ು is:+pl|ಎನ್ನು+v+past.3sm
@@ -1228,7 +1201,6 @@ SFX Nu ು ಾಗುವ ು is:|ಆಗು+v+rel.npst
 SFX Nu ು ಾಗುವಂತೆ ು is:|ಆಗು+v+sim
 SFX Nu ು ಾಗುವಾಗ ು is:|ಆಗು+v+when
 SFX Nu ು ಾಗುವುದು ು is:|ಆಗು+v+vn
-SFX Nu ು ಾದ ು is:|ಆಗು+v+past.3sm
 SFX Nu ು ಾದ ು is:|ಆಗು+v+rel.past
 SFX Nu ು ಾದಂತೆ ು is:|ಆಗು+v+sim
 SFX Nu ು ಾದನು ು is:|ಆಗು+v+past.3sm
@@ -1256,7 +1228,6 @@ SFX Nu ು ಿನಂತೆ ು is:+sim
 SFX Nu ು ಿನಲ್ಲಿ ು is:+loc
 SFX Nu ು ಿನಲ್ಲಿತ್ತು ು is:+loc|ಇರು+v+past.3sn
 SFX Nu ು ಿನಲ್ಲಿದೆ ು is:+loc|ಇರು+v+pres.3sn
-SFX Nu ು ಿನಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+past.3sm
 SFX Nu ು ಿನಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+rel.past
 SFX Nu ು ಿನಲ್ಲಿದ್ದಂತೆ ು is:+loc|ಇರು+v+sim
 SFX Nu ು ಿನಲ್ಲಿದ್ದನು ು is:+loc|ಇರು+v+past.3sm
@@ -1298,7 +1269,6 @@ SFX Nu ು ಿನೊಳಗೆ ು is:+in
 SFX Nu ು ಿಲ್ಲ ು is:|ಇರು+v+neg
 SFX Nu ು ಿವೆ ು is:|ಇರು+v+pres.3pn
 SFX Nu ು ೂ ು is:+also
-SFX Nu ು ೆಂದ ು is:|ಎನ್ನು+v+past.3sm
 SFX Nu ು ೆಂದ ು is:|ಎನ್ನು+v+rel.past
 SFX Nu ು ೆಂದಂತೆ ು is:|ಎನ್ನು+v+sim
 SFX Nu ು ೆಂದನು ು is:|ಎನ್ನು+v+past.3sm
@@ -1325,7 +1295,7 @@ SFX Nu ು ೆನ್ನುವುದು ು is:|ಎನ್ನು+v+vn
 SFX Nu ು ೇ ು is:+emph
 
 # Noun(Thing)
-SFX Nv Y 254
+SFX Nv Y 248
 SFX Nv 0 ಗಳ [ಾುೂೋೌ] is:+pl+gen
 SFX Nv 0 ಗಳಂತಹ [ಾುೂೋೌ] is:+pl+like
 SFX Nv 0 ಗಳಂತೆ [ಾುೂೋೌ] is:+pl+sim
@@ -1338,7 +1308,6 @@ SFX Nv 0 ಗಳಲ್ಲದೆ [ಾುೂೋೌ] is:+pl|ಅಲ್ಲ+v+neg.cp
 SFX Nv 0 ಗಳಲ್ಲಿ [ಾುೂೋೌ] is:+pl+loc
 SFX Nv 0 ಗಳಲ್ಲಿತ್ತು [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+past.3sn
 SFX Nv 0 ಗಳಲ್ಲಿದೆ [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+pres.3sn
-SFX Nv 0 ಗಳಲ್ಲಿದ್ದ [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+past.3sm
 SFX Nv 0 ಗಳಲ್ಲಿದ್ದ [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+rel.past
 SFX Nv 0 ಗಳಲ್ಲಿದ್ದಂತೆ [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+sim
 SFX Nv 0 ಗಳಲ್ಲಿದ್ದನು [ಾುೂೋೌ] is:+pl+loc|ಇರು+v+past.3sm
@@ -1395,7 +1364,6 @@ SFX Nv 0 ಗಳಾಗುವ [ಾುೂೋೌ] is:+pl|ಆಗು+v+rel.npst
 SFX Nv 0 ಗಳಾಗುವಂತೆ [ಾುೂೋೌ] is:+pl|ಆಗು+v+sim
 SFX Nv 0 ಗಳಾಗುವಾಗ [ಾುೂೋೌ] is:+pl|ಆಗು+v+when
 SFX Nv 0 ಗಳಾಗುವುದು [ಾುೂೋೌ] is:+pl|ಆಗು+v+vn
-SFX Nv 0 ಗಳಾದ [ಾುೂೋೌ] is:+pl|ಆಗು+v+past.3sm
 SFX Nv 0 ಗಳಾದ [ಾುೂೋೌ] is:+pl|ಆಗು+v+rel.past
 SFX Nv 0 ಗಳಾದಂತೆ [ಾುೂೋೌ] is:+pl|ಆಗು+v+sim
 SFX Nv 0 ಗಳಾದನು [ಾುೂೋೌ] is:+pl|ಆಗು+v+past.3sm
@@ -1425,7 +1393,6 @@ SFX Nv 0 ಗಳಿಲ್ಲ [ಾುೂೋೌ] is:+pl|ಇರು+v+neg
 SFX Nv 0 ಗಳಿವೆ [ಾುೂೋೌ] is:+pl|ಇರು+v+pres.3pn
 SFX Nv 0 ಗಳು [ಾುೂೋೌ] is:+pl
 SFX Nv 0 ಗಳೂ [ಾುೂೋೌ] is:+pl+also
-SFX Nv 0 ಗಳೆಂದ [ಾುೂೋೌ] is:+pl|ಎನ್ನು+v+past.3sm
 SFX Nv 0 ಗಳೆಂದ [ಾುೂೋೌ] is:+pl|ಎನ್ನು+v+rel.past
 SFX Nv 0 ಗಳೆಂದಂತೆ [ಾುೂೋೌ] is:+pl|ಎನ್ನು+v+sim
 SFX Nv 0 ಗಳೆಂದನು [ಾುೂೋೌ] is:+pl|ಎನ್ನು+v+past.3sm
@@ -1482,7 +1449,6 @@ SFX Nv 0 ವಾಗುವ [ಾುೂೋೌ] is:|ಆಗು+v+rel.npst
 SFX Nv 0 ವಾಗುವಂತೆ [ಾುೂೋೌ] is:|ಆಗು+v+sim
 SFX Nv 0 ವಾಗುವಾಗ [ಾುೂೋೌ] is:|ಆಗು+v+when
 SFX Nv 0 ವಾಗುವುದು [ಾುೂೋೌ] is:|ಆಗು+v+vn
-SFX Nv 0 ವಾದ [ಾುೂೋೌ] is:|ಆಗು+v+past.3sm
 SFX Nv 0 ವಾದ [ಾುೂೋೌ] is:|ಆಗು+v+rel.past
 SFX Nv 0 ವಾದಂತೆ [ಾುೂೋೌ] is:|ಆಗು+v+sim
 SFX Nv 0 ವಾದನು [ಾುೂೋೌ] is:|ಆಗು+v+past.3sm
@@ -1510,7 +1476,6 @@ SFX Nv 0 ವಿನಂತೆ [ಾುೂೋೌ] is:+sim
 SFX Nv 0 ವಿನಲ್ಲಿ [ಾುೂೋೌ] is:+loc
 SFX Nv 0 ವಿನಲ್ಲಿತ್ತು [ಾುೂೋೌ] is:+loc|ಇರು+v+past.3sn
 SFX Nv 0 ವಿನಲ್ಲಿದೆ [ಾುೂೋೌ] is:+loc|ಇರು+v+pres.3sn
-SFX Nv 0 ವಿನಲ್ಲಿದ್ದ [ಾುೂೋೌ] is:+loc|ಇರು+v+past.3sm
 SFX Nv 0 ವಿನಲ್ಲಿದ್ದ [ಾುೂೋೌ] is:+loc|ಇರು+v+rel.past
 SFX Nv 0 ವಿನಲ್ಲಿದ್ದಂತೆ [ಾುೂೋೌ] is:+loc|ಇರು+v+sim
 SFX Nv 0 ವಿನಲ್ಲಿದ್ದನು [ಾುೂೋೌ] is:+loc|ಇರು+v+past.3sm
@@ -1554,7 +1519,6 @@ SFX Nv 0 ವಿವೆ [ಾುೂೋೌ] is:|ಇರು+v+pres.3pn
 SFX Nv 0 ವು [ಾುೂೋೌ] is:+nom
 SFX Nv 0 ವೂ [ಾುೂೋೌ] is:+also
 SFX Nv 0 ವೂ [ಾುೂೋೌ] is:+nom+also
-SFX Nv 0 ವೆಂದ [ಾುೂೋೌ] is:|ಎನ್ನು+v+past.3sm
 SFX Nv 0 ವೆಂದ [ಾುೂೋೌ] is:|ಎನ್ನು+v+rel.past
 SFX Nv 0 ವೆಂದಂತೆ [ಾುೂೋೌ] is:|ಎನ್ನು+v+sim
 SFX Nv 0 ವೆಂದನು [ಾುೂೋೌ] is:|ಎನ್ನು+v+past.3sm
@@ -1582,7 +1546,7 @@ SFX Nv 0 ವೇ [ಾುೂೋೌ] is:+emph
 SFX Nv 0 ವೇ [ಾುೂೋೌ] is:+nom+emph
 
 # Noun(This)
-SFX Nd Y 125
+SFX Nd Y 122
 SFX Nd ು ಕ್ಕಾಗಿ ು is:+dat+purp
 SFX Nd ು ಕ್ಕಾಗಿಯೂ ು is:+dat+purp+also
 SFX Nd ು ಕ್ಕಾಗಿಯೇ ು is:+dat+purp+emph
@@ -1602,7 +1566,6 @@ SFX Nd ು ರಂತೆ ು is:+sim
 SFX Nd ು ರಲ್ಲಿ ು is:+loc
 SFX Nd ು ರಲ್ಲಿತ್ತು ು is:+loc|ಇರು+v+past.3sn
 SFX Nd ು ರಲ್ಲಿದೆ ು is:+loc|ಇರು+v+pres.3sn
-SFX Nd ು ರಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+past.3sm
 SFX Nd ು ರಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+rel.past
 SFX Nd ು ರಲ್ಲಿದ್ದಂತೆ ು is:+loc|ಇರು+v+sim
 SFX Nd ು ರಲ್ಲಿದ್ದನು ು is:+loc|ಇರು+v+past.3sm
@@ -1668,7 +1631,6 @@ SFX Nd ು ಾಗುವ ು is:|ಆಗು+v+rel.npst
 SFX Nd ು ಾಗುವಂತೆ ು is:|ಆಗು+v+sim
 SFX Nd ು ಾಗುವಾಗ ು is:|ಆಗು+v+when
 SFX Nd ು ಾಗುವುದು ು is:|ಆಗು+v+vn
-SFX Nd ು ಾದ ು is:|ಆಗು+v+past.3sm
 SFX Nd ು ಾದ ು is:|ಆಗು+v+rel.past
 SFX Nd ು ಾದಂತೆ ು is:|ಆಗು+v+sim
 SFX Nd ು ಾದನು ು is:|ಆಗು+v+past.3sm
@@ -1683,7 +1645,6 @@ SFX Nd ು ಿದೆ ು is:|ಇರು+v+pres.3sn
 SFX Nd ು ಿಲ್ಲ ು is:|ಇರು+v+neg
 SFX Nd ು ಿವೆ ು is:|ಇರು+v+pres.3pn
 SFX Nd ು ೂ ು is:+also
-SFX Nd ು ೆಂದ ು is:|ಎನ್ನು+v+past.3sm
 SFX Nd ು ೆಂದ ು is:|ಎನ್ನು+v+rel.past
 SFX Nd ು ೆಂದಂತೆ ು is:|ಎನ್ನು+v+sim
 SFX Nd ು ೆಂದನು ು is:|ಎನ್ನು+v+past.3sm
@@ -1710,7 +1671,7 @@ SFX Nd ು ೆನ್ನುವುದು ು is:|ಎನ್ನು+v+vn
 SFX Nd ು ೇ ು is:+emph
 
 # Noun(Plural)
-SFX Np Y 125
+SFX Np Y 122
 SFX Np ು 0 ು is:+gen
 SFX Np ು ಂತಹ ು is:+like
 SFX Np ು ಂತೆ ು is:+sim
@@ -1723,7 +1684,6 @@ SFX Np ು ಲ್ಲದೆ ು is:|ಅಲ್ಲ+v+neg.cp
 SFX Np ು ಲ್ಲಿ ು is:+loc
 SFX Np ು ಲ್ಲಿತ್ತು ು is:+loc|ಇರು+v+past.3sn
 SFX Np ು ಲ್ಲಿದೆ ು is:+loc|ಇರು+v+pres.3sn
-SFX Np ು ಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+past.3sm
 SFX Np ು ಲ್ಲಿದ್ದ ು is:+loc|ಇರು+v+rel.past
 SFX Np ು ಲ್ಲಿದ್ದಂತೆ ು is:+loc|ಇರು+v+sim
 SFX Np ು ಲ್ಲಿದ್ದನು ು is:+loc|ಇರು+v+past.3sm
@@ -1780,7 +1740,6 @@ SFX Np ು ಾಗುವ ು is:|ಆಗು+v+rel.npst
 SFX Np ು ಾಗುವಂತೆ ು is:|ಆಗು+v+sim
 SFX Np ು ಾಗುವಾಗ ು is:|ಆಗು+v+when
 SFX Np ು ಾಗುವುದು ು is:|ಆಗು+v+vn
-SFX Np ು ಾದ ು is:|ಆಗು+v+past.3sm
 SFX Np ು ಾದ ು is:|ಆಗು+v+rel.past
 SFX Np ು ಾದಂತೆ ು is:|ಆಗು+v+sim
 SFX Np ು ಾದನು ು is:|ಆಗು+v+past.3sm
@@ -1809,7 +1768,6 @@ SFX Np ು ಿದೆ ು is:|ಇರು+v+pres.3sn
 SFX Np ು ಿಲ್ಲ ು is:|ಇರು+v+neg
 SFX Np ು ಿವೆ ು is:|ಇರು+v+pres.3pn
 SFX Np ು ೂ ು is:+also
-SFX Np ು ೆಂದ ು is:|ಎನ್ನು+v+past.3sm
 SFX Np ು ೆಂದ ು is:|ಎನ್ನು+v+rel.past
 SFX Np ು ೆಂದಂತೆ ು is:|ಎನ್ನು+v+sim
 SFX Np ು ೆಂದನು ು is:|ಎನ್ನು+v+past.3sm
@@ -4282,7 +4240,7 @@ SFX Nk ್ ೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪ�
 SFX Nk ್ ೇ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲಳವಶಷಸಹ]್ is:+emph
 
 # Adjective
-SFX Aj Y 201
+SFX Aj Y 183
 SFX Aj 0 ಯಲ್ಲ [ಿೀೆೇ] is:|ಅಲ್ಲ+v+neg
 SFX Aj 0 ಯಲ್ಲದ [ಿೀೆೇ] is:|ಅಲ್ಲ+v+rel.neg
 SFX Aj 0 ಯಲ್ಲದೆ [ಿೀೆೇ] is:|ಅಲ್ಲ+v+neg.cp
@@ -4310,7 +4268,6 @@ SFX Aj 0 ಯಾಗುವ [ಿೀೆೇ] is:|ಆಗು+v+rel.npst
 SFX Aj 0 ಯಾಗುವಂತೆ [ಿೀೆೇ] is:|ಆಗು+v+sim
 SFX Aj 0 ಯಾಗುವಾಗ [ಿೀೆೇ] is:|ಆಗು+v+when
 SFX Aj 0 ಯಾಗುವುದು [ಿೀೆೇ] is:|ಆಗು+v+vn
-SFX Aj 0 ಯಾದ [ಿೀೆೇ] is:|ಆಗು+v+past.3sm
 SFX Aj 0 ಯಾದ [ಿೀೆೇ] is:|ಆಗು+v+rel.past
 SFX Aj 0 ಯಾದಂತೆ [ಿೀೆೇ] is:|ಆಗು+v+sim
 SFX Aj 0 ಯಾದನು [ಿೀೆೇ] is:|ಆಗು+v+past.3sm
@@ -4320,12 +4277,7 @@ SFX Aj 0 ಯಾದರೆ [ಿೀೆೇ] is:|ಆಗು+v+cond
 SFX Aj 0 ಯಾದಳು [ಿೀೆೇ] is:|ಆಗು+v+past.3sf
 SFX Aj 0 ಯಾದಾಗ [ಿೀೆೇ] is:|ಆಗು+v+when
 SFX Aj 0 ಯಾಯಿತು [ಿೀೆೇ] is:|ಆಗು+v+past.3sn
-SFX Aj 0 ಯಿತ್ತು [ಿೀೆೇ] is:|ಇರು+v+past.3sn
-SFX Aj 0 ಯಿದೆ [ಿೀೆೇ] is:|ಇರು+v+pres.3sn
-SFX Aj 0 ಯಿಲ್ಲ [ಿೀೆೇ] is:|ಇರು+v+neg
-SFX Aj 0 ಯಿವೆ [ಿೀೆೇ] is:|ಇರು+v+pres.3pn
 SFX Aj 0 ಯೂ [ಿೀೆೇ] is:+also
-SFX Aj 0 ಯೆಂದ [ಿೀೆೇ] is:|ಎನ್ನು+v+past.3sm
 SFX Aj 0 ಯೆಂದ [ಿೀೆೇ] is:|ಎನ್ನು+v+rel.past
 SFX Aj 0 ಯೆಂದಂತೆ [ಿೀೆೇ] is:|ಎನ್ನು+v+sim
 SFX Aj 0 ಯೆಂದನು [ಿೀೆೇ] is:|ಎನ್ನು+v+past.3sm
@@ -4377,7 +4329,6 @@ SFX Aj 0 ವಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Aj 0 ವಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+sim
 SFX Aj 0 ವಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+when
 SFX Aj 0 ವಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+vn
-SFX Aj 0 ವಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+past.3sm
 SFX Aj 0 ವಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+rel.past
 SFX Aj 0 ವಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+sim
 SFX Aj 0 ವಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+past.3sm
@@ -4387,12 +4338,7 @@ SFX Aj 0 ವಾದರೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದ
 SFX Aj 0 ವಾದಳು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+past.3sf
 SFX Aj 0 ವಾದಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+when
 SFX Aj 0 ವಾಯಿತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಆಗು+v+past.3sn
-SFX Aj 0 ವಿತ್ತು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಇರು+v+past.3sn
-SFX Aj 0 ವಿದೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಇರು+v+pres.3sn
-SFX Aj 0 ವಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಇರು+v+neg
-SFX Aj 0 ವಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಇರು+v+pres.3pn
 SFX Aj 0 ವೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:+also
-SFX Aj 0 ವೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಎನ್ನು+v+past.3sm
 SFX Aj 0 ವೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಎನ್ನು+v+rel.past
 SFX Aj 0 ವೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಎನ್ನು+v+sim
 SFX Aj 0 ವೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞಾೂೋ] is:|ಎನ್ನು+v+past.3sm
@@ -4444,7 +4390,6 @@ SFX Aj ು ಾಗುವ ು is:|ಆಗು+v+rel.npst
 SFX Aj ು ಾಗುವಂತೆ ು is:|ಆಗು+v+sim
 SFX Aj ು ಾಗುವಾಗ ು is:|ಆಗು+v+when
 SFX Aj ು ಾಗುವುದು ು is:|ಆಗು+v+vn
-SFX Aj ು ಾದ ು is:|ಆಗು+v+past.3sm
 SFX Aj ು ಾದ ು is:|ಆಗು+v+rel.past
 SFX Aj ು ಾದಂತೆ ು is:|ಆಗು+v+sim
 SFX Aj ು ಾದನು ು is:|ಆಗು+v+past.3sm
@@ -4454,12 +4399,7 @@ SFX Aj ು ಾದರೆ ು is:|ಆಗು+v+cond
 SFX Aj ು ಾದಳು ು is:|ಆಗು+v+past.3sf
 SFX Aj ು ಾದಾಗ ು is:|ಆಗು+v+when
 SFX Aj ು ಾಯಿತು ು is:|ಆಗು+v+past.3sn
-SFX Aj ು ಿತ್ತು ು is:|ಇರು+v+past.3sn
-SFX Aj ು ಿದೆ ು is:|ಇರು+v+pres.3sn
-SFX Aj ು ಿಲ್ಲ ು is:|ಇರು+v+neg
-SFX Aj ು ಿವೆ ು is:|ಇರು+v+pres.3pn
 SFX Aj ು ೂ ು is:+also
-SFX Aj ು ೆಂದ ು is:|ಎನ್ನು+v+past.3sm
 SFX Aj ು ೆಂದ ು is:|ಎನ್ನು+v+rel.past
 SFX Aj ು ೆಂದಂತೆ ು is:|ಎನ್ನು+v+sim
 SFX Aj ು ೆಂದನು ು is:|ಎನ್ನು+v+past.3sm
@@ -4495,7 +4435,7 @@ SFX Px ು ೂ ು is:+also
 SFX Px ು ೇ ು is:+emph
 
 # Verb
-SFX Vb Y 9279
+SFX Vb Y 9131
 SFX Vb 0 ತ್ತ ು is:+simul
 SFX Vb 0 ತ್ತದೆ ು is:+npst.3sn
 SFX Vb 0 ತ್ತಲೇ ು is:+simul+emph
@@ -4506,7 +4446,6 @@ SFX Vb 0 ತ್ತಾರೆ ು is:+npst.3p
 SFX Vb 0 ತ್ತಾಳೆ ು is:+npst.3sf
 SFX Vb 0 ತ್ತಿತ್ತು ು is:+simul|ಇರು+v+past.3sn
 SFX Vb 0 ತ್ತಿದೆ ು is:+simul|ಇರು+v+pres.3sn
-SFX Vb 0 ತ್ತಿದ್ದ ು is:+simul|ಇರು+v+past.3sm
 SFX Vb 0 ತ್ತಿದ್ದ ು is:+simul|ಇರು+v+rel.past
 SFX Vb 0 ತ್ತಿದ್ದಂತಹ ು is:+simul|ಇರು+v+like
 SFX Vb 0 ತ್ತಿದ್ದಂತೆ ು is:+simul|ಇರು+v+sim
@@ -4949,7 +4888,6 @@ SFX Vb 0 ದದ್ದಾಗುವ [ಿೆ] is:+vn.past|ಆಗು+v+rel.npst
 SFX Vb 0 ದದ್ದಾಗುವಂತೆ [ಿೆ] is:+vn.past|ಆಗು+v+sim
 SFX Vb 0 ದದ್ದಾಗುವಾಗ [ಿೆ] is:+vn.past|ಆಗು+v+when
 SFX Vb 0 ದದ್ದಾಗುವುದು [ಿೆ] is:+vn.past|ಆಗು+v+vn
-SFX Vb 0 ದದ್ದಾದ [ಿೆ] is:+vn.past|ಆಗು+v+past.3sm
 SFX Vb 0 ದದ್ದಾದ [ಿೆ] is:+vn.past|ಆಗು+v+rel.past
 SFX Vb 0 ದದ್ದಾದಂತೆ [ಿೆ] is:+vn.past|ಆಗು+v+sim
 SFX Vb 0 ದದ್ದಾದನು [ಿೆ] is:+vn.past|ಆಗು+v+past.3sm
@@ -4965,7 +4903,6 @@ SFX Vb 0 ದದ್ದಿಲ್ಲ [ಿೆ] is:+vn.past|ಇರು+v+neg
 SFX Vb 0 ದದ್ದಿವೆ [ಿೆ] is:+vn.past|ಇರು+v+pres.3pn
 SFX Vb 0 ದದ್ದು [ಿೆ] is:+vn.past
 SFX Vb 0 ದದ್ದೂ [ಿೆ] is:+vn.past+also
-SFX Vb 0 ದದ್ದೆಂದ [ಿೆ] is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ದದ್ದೆಂದ [ಿೆ] is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vb 0 ದದ್ದೆಂದಂತೆ [ಿೆ] is:+vn.past|ಎನ್ನು+v+sim
 SFX Vb 0 ದದ್ದೆಂದನು [ಿೆ] is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -5038,7 +4975,6 @@ SFX Vb 0 ದವನಾಗುವ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+rel.npst
 SFX Vb 0 ದವನಾಗುವಂತೆ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vb 0 ದವನಾಗುವಾಗ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+when
 SFX Vb 0 ದವನಾಗುವುದು [ಿೆ] is:+ag.past.3sm|ಆಗು+v+vn
-SFX Vb 0 ದವನಾದ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+past.3sm
 SFX Vb 0 ದವನಾದ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+rel.past
 SFX Vb 0 ದವನಾದಂತೆ [ಿೆ] is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vb 0 ದವನಾದನು [ಿೆ] is:+ag.past.3sm|ಆಗು+v+past.3sm
@@ -5068,7 +5004,6 @@ SFX Vb 0 ದವನಿಲ್ಲ [ಿೆ] is:+ag.past.3sm|ಇರು+v+neg
 SFX Vb 0 ದವನಿವೆ [ಿೆ] is:+ag.past.3sm|ಇರು+v+pres.3pn
 SFX Vb 0 ದವನು [ಿೆ] is:+ag.past.3sm
 SFX Vb 0 ದವನೂ [ಿೆ] is:+ag.past.3sm+also
-SFX Vb 0 ದವನೆಂದ [ಿೆ] is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ದವನೆಂದ [ಿೆ] is:+ag.past.3sm|ಎನ್ನು+v+rel.past
 SFX Vb 0 ದವನೆಂದಂತೆ [ಿೆ] is:+ag.past.3sm|ಎನ್ನು+v+sim
 SFX Vb 0 ದವನೆಂದನು [ಿೆ] is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
@@ -5136,7 +5071,6 @@ SFX Vb 0 ದವರಾಗುವ [ಿೆ] is:+ag.past.3p|ಆಗು+v+rel.npst
 SFX Vb 0 ದವರಾಗುವಂತೆ [ಿೆ] is:+ag.past.3p|ಆಗು+v+sim
 SFX Vb 0 ದವರಾಗುವಾಗ [ಿೆ] is:+ag.past.3p|ಆಗು+v+when
 SFX Vb 0 ದವರಾಗುವುದು [ಿೆ] is:+ag.past.3p|ಆಗು+v+vn
-SFX Vb 0 ದವರಾದ [ಿೆ] is:+ag.past.3p|ಆಗು+v+past.3sm
 SFX Vb 0 ದವರಾದ [ಿೆ] is:+ag.past.3p|ಆಗು+v+rel.past
 SFX Vb 0 ದವರಾದಂತೆ [ಿೆ] is:+ag.past.3p|ಆಗು+v+sim
 SFX Vb 0 ದವರಾದನು [ಿೆ] is:+ag.past.3p|ಆಗು+v+past.3sm
@@ -5166,7 +5100,6 @@ SFX Vb 0 ದವರಿಲ್ಲ [ಿೆ] is:+ag.past.3p|ಇರು+v+neg
 SFX Vb 0 ದವರಿವೆ [ಿೆ] is:+ag.past.3p|ಇರು+v+pres.3pn
 SFX Vb 0 ದವರು [ಿೆ] is:+ag.past.3p
 SFX Vb 0 ದವರೂ [ಿೆ] is:+ag.past.3p+also
-SFX Vb 0 ದವರೆಂದ [ಿೆ] is:+ag.past.3p|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ದವರೆಂದ [ಿೆ] is:+ag.past.3p|ಎನ್ನು+v+rel.past
 SFX Vb 0 ದವರೆಂದಂತೆ [ಿೆ] is:+ag.past.3p|ಎನ್ನು+v+sim
 SFX Vb 0 ದವರೆಂದನು [ಿೆ] is:+ag.past.3p|ಎನ್ನು+v+past.3sm
@@ -5234,7 +5167,6 @@ SFX Vb 0 ದವಳಾಗುವ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+rel.npst
 SFX Vb 0 ದವಳಾಗುವಂತೆ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vb 0 ದವಳಾಗುವಾಗ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+when
 SFX Vb 0 ದವಳಾಗುವುದು [ಿೆ] is:+ag.past.3sf|ಆಗು+v+vn
-SFX Vb 0 ದವಳಾದ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+past.3sm
 SFX Vb 0 ದವಳಾದ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+rel.past
 SFX Vb 0 ದವಳಾದಂತೆ [ಿೆ] is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vb 0 ದವಳಾದನು [ಿೆ] is:+ag.past.3sf|ಆಗು+v+past.3sm
@@ -5264,7 +5196,6 @@ SFX Vb 0 ದವಳಿಲ್ಲ [ಿೆ] is:+ag.past.3sf|ಇರು+v+neg
 SFX Vb 0 ದವಳಿವೆ [ಿೆ] is:+ag.past.3sf|ಇರು+v+pres.3pn
 SFX Vb 0 ದವಳು [ಿೆ] is:+ag.past.3sf
 SFX Vb 0 ದವಳೂ [ಿೆ] is:+ag.past.3sf+also
-SFX Vb 0 ದವಳೆಂದ [ಿೆ] is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ದವಳೆಂದ [ಿೆ] is:+ag.past.3sf|ಎನ್ನು+v+rel.past
 SFX Vb 0 ದವಳೆಂದಂತೆ [ಿೆ] is:+ag.past.3sf|ಎನ್ನು+v+sim
 SFX Vb 0 ದವಳೆಂದನು [ಿೆ] is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
@@ -5296,7 +5227,6 @@ SFX Vb 0 ದಷ್ಟು [ಿೆ] is:+extent
 SFX Vb 0 ದಾಗ [ಿೆ] is:+when
 SFX Vb 0 ದಿತ್ತು [ಿೆ] is:+cp|ಇರು+v+past.3sn
 SFX Vb 0 ದಿದೆ [ಿೆ] is:+cp|ಇರು+v+pres.3sn
-SFX Vb 0 ದಿದ್ದ [ಿೆ] is:+cp|ಇರು+v+past.3sm
 SFX Vb 0 ದಿದ್ದ [ಿೆ] is:+cp|ಇರು+v+rel.past
 SFX Vb 0 ದಿದ್ದಂತಹ [ಿೆ] is:+cp|ಇರು+v+like
 SFX Vb 0 ದಿದ್ದಂತೆ [ಿೆ] is:+cp|ಇರು+v+sim
@@ -5675,7 +5605,6 @@ SFX Vb 0 ದಿರೋಣ [ಿೆ] is:+cp|ಇರು+v+hort.1p
 SFX Vb 0 ದಿಲ್ಲ [ಿೆ] is:+cp|ಇರು+v+neg
 SFX Vb 0 ದಿವೆ [ಿೆ] is:+cp|ಇರು+v+pres.3pn
 SFX Vb 0 ದು [ಿೆ] is:+cp
-SFX Vb 0 ದುಕೊಂಡ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+past.3sm
 SFX Vb 0 ದುಕೊಂಡ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+rel.past
 SFX Vb 0 ದುಕೊಂಡಂತಹ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+like
 SFX Vb 0 ದುಕೊಂಡಂತೆ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+sim
@@ -5824,7 +5753,6 @@ SFX Vb 0 ದುಕೊಂಡಾಗ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+when
 SFX Vb 0 ದುಕೊಂಡಿತು [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+past.3sn
 SFX Vb 0 ದುಕೊಂಡಿತ್ತು [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sn
 SFX Vb 0 ದುಕೊಂಡಿದೆ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sn
-SFX Vb 0 ದುಕೊಂಡಿದ್ದ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sm
 SFX Vb 0 ದುಕೊಂಡಿದ್ದ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+rel.past
 SFX Vb 0 ದುಕೊಂಡಿದ್ದಂತಹ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+like
 SFX Vb 0 ದುಕೊಂಡಿದ್ದಂತೆ [ಿೆ] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+sim
@@ -6480,7 +6408,6 @@ SFX Vb 0 ದುದಾಗುವ [ಿೆ] is:+vn.past|ಆಗು+v+rel.npst
 SFX Vb 0 ದುದಾಗುವಂತೆ [ಿೆ] is:+vn.past|ಆಗು+v+sim
 SFX Vb 0 ದುದಾಗುವಾಗ [ಿೆ] is:+vn.past|ಆಗು+v+when
 SFX Vb 0 ದುದಾಗುವುದು [ಿೆ] is:+vn.past|ಆಗು+v+vn
-SFX Vb 0 ದುದಾದ [ಿೆ] is:+vn.past|ಆಗು+v+past.3sm
 SFX Vb 0 ದುದಾದ [ಿೆ] is:+vn.past|ಆಗು+v+rel.past
 SFX Vb 0 ದುದಾದಂತೆ [ಿೆ] is:+vn.past|ಆಗು+v+sim
 SFX Vb 0 ದುದಾದನು [ಿೆ] is:+vn.past|ಆಗು+v+past.3sm
@@ -6496,7 +6423,6 @@ SFX Vb 0 ದುದಿಲ್ಲ [ಿೆ] is:+vn.past|ಇರು+v+neg
 SFX Vb 0 ದುದಿವೆ [ಿೆ] is:+vn.past|ಇರು+v+pres.3pn
 SFX Vb 0 ದುದು [ಿೆ] is:+vn.past
 SFX Vb 0 ದುದೂ [ಿೆ] is:+vn.past+also
-SFX Vb 0 ದುದೆಂದ [ಿೆ] is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ದುದೆಂದ [ಿೆ] is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vb 0 ದುದೆಂದಂತೆ [ಿೆ] is:+vn.past|ಎನ್ನು+v+sim
 SFX Vb 0 ದುದೆಂದನು [ಿೆ] is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -6521,7 +6447,6 @@ SFX Vb 0 ದುದೆನ್ನುವಂತೆ [ಿೆ] is:+vn.past|ಎನ್ನ�
 SFX Vb 0 ದುದೆನ್ನುವಾಗ [ಿೆ] is:+vn.past|ಎನ್ನು+v+when
 SFX Vb 0 ದುದೆನ್ನುವುದು [ಿೆ] is:+vn.past|ಎನ್ನು+v+vn
 SFX Vb 0 ದುದೇ [ಿೆ] is:+vn.past+emph
-SFX Vb 0 ದುಬಿಟ್ಟ [ಿೆ] is:+cp|ಬಿಡು+v+past.3sm
 SFX Vb 0 ದುಬಿಟ್ಟ [ಿೆ] is:+cp|ಬಿಡು+v+rel.past
 SFX Vb 0 ದುಬಿಟ್ಟಂತಹ [ಿೆ] is:+cp|ಬಿಡು+v+like
 SFX Vb 0 ದುಬಿಟ್ಟಂತೆ [ಿೆ] is:+cp|ಬಿಡು+v+sim
@@ -6900,7 +6825,6 @@ SFX Vb 0 ಯದ [ಿೆ] is:+rel.neg
 SFX Vb 0 ಯದಂತೆ [ಿೆ] is:+rel.neg+sim
 SFX Vb 0 ಯದಿತ್ತು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sn
 SFX Vb 0 ಯದಿದೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vb 0 ಯದಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
 SFX Vb 0 ಯದಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+rel.past
 SFX Vb 0 ಯದಿದ್ದಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
 SFX Vb 0 ಯದಿದ್ದನು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
@@ -6927,34 +6851,6 @@ SFX Vb 0 ಯದಿರುವುದು [ಿೆ] is:+neg.cp|ಇರು+v+vn
 SFX Vb 0 ಯದಿಲ್ಲ [ಿೆ] is:+neg.cp|ಇರು+v+neg
 SFX Vb 0 ಯದಿವೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vb 0 ಯದೆ [ಿೆ] is:+neg.cp
-SFX Vb 0 ಯದೆಯಿತ್ತು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sn
-SFX Vb 0 ಯದೆಯಿದೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vb 0 ಯದೆಯಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
-SFX Vb 0 ಯದೆಯಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+rel.past
-SFX Vb 0 ಯದೆಯಿದ್ದಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
-SFX Vb 0 ಯದೆಯಿದ್ದನು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
-SFX Vb 0 ಯದೆಯಿದ್ದರು [ಿೆ] is:+neg.cp|ಇರು+v+past.3p
-SFX Vb 0 ಯದೆಯಿದ್ದರೂ [ಿೆ] is:+neg.cp|ಇರು+v+conc
-SFX Vb 0 ಯದೆಯಿದ್ದರೆ [ಿೆ] is:+neg.cp|ಇರು+v+cond
-SFX Vb 0 ಯದೆಯಿದ್ದಳು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sf
-SFX Vb 0 ಯದೆಯಿದ್ದಾಗ [ಿೆ] is:+neg.cp|ಇರು+v+when
-SFX Vb 0 ಯದೆಯಿದ್ದಾನೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sm
-SFX Vb 0 ಯದೆಯಿದ್ದಾರೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3p
-SFX Vb 0 ಯದೆಯಿದ್ದಾಳೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sf
-SFX Vb 0 ಯದೆಯಿದ್ದು [ಿೆ] is:+neg.cp|ಇರು+v+cp
-SFX Vb 0 ಯದೆಯಿದ್ದೂ [ಿೆ] is:+neg.cp|ಇರು+v+cp+also
-SFX Vb 0 ಯದೆಯಿದ್ದೇ [ಿೆ] is:+neg.cp|ಇರು+v+cp+emph
-SFX Vb 0 ಯದೆಯಿರದೆ [ಿೆ] is:+neg.cp|ಇರು+v+neg.cp
-SFX Vb 0 ಯದೆಯಿರಲು [ಿೆ] is:+neg.cp|ಇರು+v+inf
-SFX Vb 0 ಯದೆಯಿರುತ್ತದೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3sn
-SFX Vb 0 ಯದೆಯಿರುತ್ತವೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3pn
-SFX Vb 0 ಯದೆಯಿರುತ್ತಾರೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3p
-SFX Vb 0 ಯದೆಯಿರುವ [ಿೆ] is:+neg.cp|ಇರು+v+rel.npst
-SFX Vb 0 ಯದೆಯಿರುವಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
-SFX Vb 0 ಯದೆಯಿರುವಾಗ [ಿೆ] is:+neg.cp|ಇರು+v+when
-SFX Vb 0 ಯದೆಯಿರುವುದು [ಿೆ] is:+neg.cp|ಇರು+v+vn
-SFX Vb 0 ಯದೆಯಿಲ್ಲ [ಿೆ] is:+neg.cp|ಇರು+v+neg
-SFX Vb 0 ಯದೆಯಿವೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vb 0 ಯಬಲ್ಲ [ಿೆ] is:+abil
 SFX Vb 0 ಯಬಲ್ಲದಲ್ಲ [ಿೆ] is:+abil|ಅಲ್ಲ+v+neg
 SFX Vb 0 ಯಬಲ್ಲದಲ್ಲದ [ಿೆ] is:+abil|ಅಲ್ಲ+v+rel.neg
@@ -6983,7 +6879,6 @@ SFX Vb 0 ಯಬಲ್ಲದಾಗುವ [ಿೆ] is:+abil|ಆಗು+v+rel.npst
 SFX Vb 0 ಯಬಲ್ಲದಾಗುವಂತೆ [ಿೆ] is:+abil|ಆಗು+v+sim
 SFX Vb 0 ಯಬಲ್ಲದಾಗುವಾಗ [ಿೆ] is:+abil|ಆಗು+v+when
 SFX Vb 0 ಯಬಲ್ಲದಾಗುವುದು [ಿೆ] is:+abil|ಆಗು+v+vn
-SFX Vb 0 ಯಬಲ್ಲದಾದ [ಿೆ] is:+abil|ಆಗು+v+past.3sm
 SFX Vb 0 ಯಬಲ್ಲದಾದ [ಿೆ] is:+abil|ಆಗು+v+rel.past
 SFX Vb 0 ಯಬಲ್ಲದಾದಂತೆ [ಿೆ] is:+abil|ಆಗು+v+sim
 SFX Vb 0 ಯಬಲ್ಲದಾದನು [ಿೆ] is:+abil|ಆಗು+v+past.3sm
@@ -6999,7 +6894,6 @@ SFX Vb 0 ಯಬಲ್ಲದಿಲ್ಲ [ಿೆ] is:+abil|ಇರು+v+neg
 SFX Vb 0 ಯಬಲ್ಲದಿವೆ [ಿೆ] is:+abil|ಇರು+v+pres.3pn
 SFX Vb 0 ಯಬಲ್ಲದು [ಿೆ] is:+abil
 SFX Vb 0 ಯಬಲ್ಲದೂ [ಿೆ] is:+abil+also
-SFX Vb 0 ಯಬಲ್ಲದೆಂದ [ಿೆ] is:+abil|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯಬಲ್ಲದೆಂದ [ಿೆ] is:+abil|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯಬಲ್ಲದೆಂದಂತೆ [ಿೆ] is:+abil|ಎನ್ನು+v+sim
 SFX Vb 0 ಯಬಲ್ಲದೆಂದನು [ಿೆ] is:+abil|ಎನ್ನು+v+past.3sm
@@ -7051,7 +6945,6 @@ SFX Vb 0 ಯಬಹುದಾಗುವ [ಿೆ] is:+perm|ಆಗು+v+rel.npst
 SFX Vb 0 ಯಬಹುದಾಗುವಂತೆ [ಿೆ] is:+perm|ಆಗು+v+sim
 SFX Vb 0 ಯಬಹುದಾಗುವಾಗ [ಿೆ] is:+perm|ಆಗು+v+when
 SFX Vb 0 ಯಬಹುದಾಗುವುದು [ಿೆ] is:+perm|ಆಗು+v+vn
-SFX Vb 0 ಯಬಹುದಾದ [ಿೆ] is:+perm|ಆಗು+v+past.3sm
 SFX Vb 0 ಯಬಹುದಾದ [ಿೆ] is:+perm|ಆಗು+v+rel.past
 SFX Vb 0 ಯಬಹುದಾದಂತೆ [ಿೆ] is:+perm|ಆಗು+v+sim
 SFX Vb 0 ಯಬಹುದಾದನು [ಿೆ] is:+perm|ಆಗು+v+past.3sm
@@ -7067,7 +6960,6 @@ SFX Vb 0 ಯಬಹುದಿಲ್ಲ [ಿೆ] is:+perm|ಇರು+v+neg
 SFX Vb 0 ಯಬಹುದಿವೆ [ಿೆ] is:+perm|ಇರು+v+pres.3pn
 SFX Vb 0 ಯಬಹುದು [ಿೆ] is:+perm
 SFX Vb 0 ಯಬಹುದೂ [ಿೆ] is:+perm+also
-SFX Vb 0 ಯಬಹುದೆಂದ [ಿೆ] is:+perm|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯಬಹುದೆಂದ [ಿೆ] is:+perm|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯಬಹುದೆಂದಂತೆ [ಿೆ] is:+perm|ಎನ್ನು+v+sim
 SFX Vb 0 ಯಬಹುದೆಂದನು [ಿೆ] is:+perm|ಎನ್ನು+v+past.3sm
@@ -7119,7 +7011,6 @@ SFX Vb 0 ಯಬಾರದಾಗುವ [ಿೆ] is:+proh|ಆಗು+v+rel.npst
 SFX Vb 0 ಯಬಾರದಾಗುವಂತೆ [ಿೆ] is:+proh|ಆಗು+v+sim
 SFX Vb 0 ಯಬಾರದಾಗುವಾಗ [ಿೆ] is:+proh|ಆಗು+v+when
 SFX Vb 0 ಯಬಾರದಾಗುವುದು [ಿೆ] is:+proh|ಆಗು+v+vn
-SFX Vb 0 ಯಬಾರದಾದ [ಿೆ] is:+proh|ಆಗು+v+past.3sm
 SFX Vb 0 ಯಬಾರದಾದ [ಿೆ] is:+proh|ಆಗು+v+rel.past
 SFX Vb 0 ಯಬಾರದಾದಂತೆ [ಿೆ] is:+proh|ಆಗು+v+sim
 SFX Vb 0 ಯಬಾರದಾದನು [ಿೆ] is:+proh|ಆಗು+v+past.3sm
@@ -7135,7 +7026,6 @@ SFX Vb 0 ಯಬಾರದಿಲ್ಲ [ಿೆ] is:+proh|ಇರು+v+neg
 SFX Vb 0 ಯಬಾರದಿವೆ [ಿೆ] is:+proh|ಇರು+v+pres.3pn
 SFX Vb 0 ಯಬಾರದು [ಿೆ] is:+proh
 SFX Vb 0 ಯಬಾರದೂ [ಿೆ] is:+proh+also
-SFX Vb 0 ಯಬಾರದೆಂದ [ಿೆ] is:+proh|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯಬಾರದೆಂದ [ಿೆ] is:+proh|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯಬಾರದೆಂದಂತೆ [ಿೆ] is:+proh|ಎನ್ನು+v+sim
 SFX Vb 0 ಯಬಾರದೆಂದನು [ಿೆ] is:+proh|ಎನ್ನು+v+past.3sm
@@ -7187,7 +7077,6 @@ SFX Vb 0 ಯಬೇಕಾಗುವ [ಿೆ] is:+deb|ಆಗು+v+rel.npst
 SFX Vb 0 ಯಬೇಕಾಗುವಂತೆ [ಿೆ] is:+deb|ಆಗು+v+sim
 SFX Vb 0 ಯಬೇಕಾಗುವಾಗ [ಿೆ] is:+deb|ಆಗು+v+when
 SFX Vb 0 ಯಬೇಕಾಗುವುದು [ಿೆ] is:+deb|ಆಗು+v+vn
-SFX Vb 0 ಯಬೇಕಾದ [ಿೆ] is:+deb|ಆಗು+v+past.3sm
 SFX Vb 0 ಯಬೇಕಾದ [ಿೆ] is:+deb|ಆಗು+v+rel.past
 SFX Vb 0 ಯಬೇಕಾದಂತೆ [ಿೆ] is:+deb|ಆಗು+v+sim
 SFX Vb 0 ಯಬೇಕಾದನು [ಿೆ] is:+deb|ಆಗು+v+past.3sm
@@ -7203,7 +7092,6 @@ SFX Vb 0 ಯಬೇಕಿಲ್ಲ [ಿೆ] is:+deb|ಇರು+v+neg
 SFX Vb 0 ಯಬೇಕಿವೆ [ಿೆ] is:+deb|ಇರು+v+pres.3pn
 SFX Vb 0 ಯಬೇಕು [ಿೆ] is:+deb
 SFX Vb 0 ಯಬೇಕೂ [ಿೆ] is:+deb+also
-SFX Vb 0 ಯಬೇಕೆಂದ [ಿೆ] is:+deb|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯಬೇಕೆಂದ [ಿೆ] is:+deb|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯಬೇಕೆಂದಂತೆ [ಿೆ] is:+deb|ಎನ್ನು+v+sim
 SFX Vb 0 ಯಬೇಕೆಂದನು [ಿೆ] is:+deb|ಎನ್ನು+v+past.3sm
@@ -7258,7 +7146,6 @@ SFX Vb 0 ಯಲಾಗಿ [ಿೆ] is:+pass|ಆಗು+v+cp
 SFX Vb 0 ಯಲಾಗಿ [ಿೆ] is:+pass|ಆಗು+v+imp.2p
 SFX Vb 0 ಯಲಾಗಿತ್ತು [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sn
 SFX Vb 0 ಯಲಾಗಿದೆ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+pres.3sn
-SFX Vb 0 ಯಲಾಗಿದ್ದ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sm
 SFX Vb 0 ಯಲಾಗಿದ್ದ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+rel.past
 SFX Vb 0 ಯಲಾಗಿದ್ದಂತಹ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+like
 SFX Vb 0 ಯಲಾಗಿದ್ದಂತೆ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+sim
@@ -7793,7 +7680,6 @@ SFX Vb 0 ಯಲಾಗುವುದು [ಿೆ] is:+pass|ಆಗು+v+vn
 SFX Vb 0 ಯಲಾಗುವುದೂ [ಿೆ] is:+pass|ಆಗು+v+vn+also
 SFX Vb 0 ಯಲಾಗುವುದೇ [ಿೆ] is:+pass|ಆಗು+v+vn+emph
 SFX Vb 0 ಯಲಾಗೋಣ [ಿೆ] is:+pass|ಆಗು+v+hort.1p
-SFX Vb 0 ಯಲಾದ [ಿೆ] is:+pass|ಆಗು+v+past.3sm
 SFX Vb 0 ಯಲಾದ [ಿೆ] is:+pass|ಆಗು+v+rel.past
 SFX Vb 0 ಯಲಾದಂತಹ [ಿೆ] is:+pass|ಆಗು+v+like
 SFX Vb 0 ಯಲಾದಂತೆ [ಿೆ] is:+pass|ಆಗು+v+sim
@@ -7984,7 +7870,6 @@ SFX Vb 0 ಯಲಿಲ್ಲ [ಿೆ] is:+past.neg
 SFX Vb 0 ಯಲು [ಿೆ] is:+inf
 SFX Vb 0 ಯಲೂ [ಿೆ] is:+inf+also
 SFX Vb 0 ಯಲೇ [ಿೆ] is:+inf+emph
-SFX Vb 0 ಯಲ್ಪಟ್ಟ [ಿೆ] is:+pass|ಪಡು+v+past.3sm
 SFX Vb 0 ಯಲ್ಪಟ್ಟ [ಿೆ] is:+pass|ಪಡು+v+rel.past
 SFX Vb 0 ಯಲ್ಪಟ್ಟಂತಹ [ಿೆ] is:+pass|ಪಡು+v+like
 SFX Vb 0 ಯಲ್ಪಟ್ಟಂತೆ [ಿೆ] is:+pass|ಪಡು+v+sim
@@ -8133,7 +8018,6 @@ SFX Vb 0 ಯಲ್ಪಟ್ಟಾಗ [ಿೆ] is:+pass|ಪಡು+v+when
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿತು [ಿೆ] is:+pass|ಪಡು+v+past.3sn
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿತ್ತು [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sn
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿದೆ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn
-SFX Vb 0 ಯಲ್ಪಟ್ಟಿದ್ದ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sm
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿದ್ದ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+rel.past
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿದ್ದಂತಹ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+like
 SFX Vb 0 ಯಲ್ಪಟ್ಟಿದ್ದಂತೆ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+sim
@@ -8561,23 +8445,14 @@ SFX Vb 0 ಯಲ್ಪಡಬಲ್ಲದೇ [ಿೆ] is:+pass|ಪಡು+v+abil+em
 SFX Vb 0 ಯಲ್ಪಡಬಹುದು [ಿೆ] is:+pass|ಪಡು+v+perm
 SFX Vb 0 ಯಲ್ಪಡಬಹುದೂ [ಿೆ] is:+pass|ಪಡು+v+perm+also
 SFX Vb 0 ಯಲ್ಪಡಬಹುದೇ [ಿೆ] is:+pass|ಪಡು+v+perm+emph
-SFX Vb 0 ಯಲ್ಪಡಬಾರದು [ಿೆ] is:+pass|ಪಡು+v+proh
-SFX Vb 0 ಯಲ್ಪಡಬಾರದೂ [ಿೆ] is:+pass|ಪಡು+v+proh+also
-SFX Vb 0 ಯಲ್ಪಡಬಾರದೇ [ಿೆ] is:+pass|ಪಡು+v+proh+emph
 SFX Vb 0 ಯಲ್ಪಡಬೇಕು [ಿೆ] is:+pass|ಪಡು+v+deb
 SFX Vb 0 ಯಲ್ಪಡಬೇಕೂ [ಿೆ] is:+pass|ಪಡು+v+deb+also
 SFX Vb 0 ಯಲ್ಪಡಬೇಕೇ [ಿೆ] is:+pass|ಪಡು+v+deb+emph
-SFX Vb 0 ಯಲ್ಪಡಬೇಡ [ಿೆ] is:+pass|ಪಡು+v+proh.2s
-SFX Vb 0 ಯಲ್ಪಡಬೇಡಿ [ಿೆ] is:+pass|ಪಡು+v+proh.2p
-SFX Vb 0 ಯಲ್ಪಡಲಿ [ಿೆ] is:+pass|ಪಡು+v+hort
 SFX Vb 0 ಯಲ್ಪಡಲಿಕ್ಕೆ [ಿೆ] is:+pass|ಪಡು+v+inf+dat
 SFX Vb 0 ಯಲ್ಪಡಲಿಲ್ಲ [ಿೆ] is:+pass|ಪಡು+v+past.neg
 SFX Vb 0 ಯಲ್ಪಡಲು [ಿೆ] is:+pass|ಪಡು+v+inf
 SFX Vb 0 ಯಲ್ಪಡಲೂ [ಿೆ] is:+pass|ಪಡು+v+inf+also
 SFX Vb 0 ಯಲ್ಪಡಲೇ [ಿೆ] is:+pass|ಪಡು+v+inf+emph
-SFX Vb 0 ಯಲ್ಪಡಿ [ಿೆ] is:+pass|ಪಡು+v+imp.2p
-SFX Vb 0 ಯಲ್ಪಡಿರಿ [ಿೆ] is:+pass|ಪಡು+v+imp.2p
-SFX Vb 0 ಯಲ್ಪಡು [ಿೆ] is:+pass|ಪಡು+v+imp.2s
 SFX Vb 0 ಯಲ್ಪಡುತ್ತ [ಿೆ] is:+pass|ಪಡು+v+simul
 SFX Vb 0 ಯಲ್ಪಡುತ್ತದೆ [ಿೆ] is:+pass|ಪಡು+v+npst.3sn
 SFX Vb 0 ಯಲ್ಪಡುತ್ತಲೇ [ಿೆ] is:+pass|ಪಡು+v+simul+emph
@@ -8731,7 +8606,6 @@ SFX Vb 0 ಯಲ್ಪಡುವುದಿಲ್ಲ [ಿೆ] is:+pass|ಪಡು+v+n
 SFX Vb 0 ಯಲ್ಪಡುವುದು [ಿೆ] is:+pass|ಪಡು+v+vn
 SFX Vb 0 ಯಲ್ಪಡುವುದೂ [ಿೆ] is:+pass|ಪಡು+v+vn+also
 SFX Vb 0 ಯಲ್ಪಡುವುದೇ [ಿೆ] is:+pass|ಪಡು+v+vn+emph
-SFX Vb 0 ಯಲ್ಪಡೋಣ [ಿೆ] is:+pass|ಪಡು+v+hort.1p
 SFX Vb 0 ಯಿತು [ಿೆ] is:+past.3sn
 SFX Vb 0 ಯಿರಿ [ಿೆ] is:+imp.2p
 SFX Vb 0 ಯುತ್ತ [ಿೆ] is:+simul
@@ -8744,7 +8618,6 @@ SFX Vb 0 ಯುತ್ತಾರೆ [ಿೆ] is:+npst.3p
 SFX Vb 0 ಯುತ್ತಾಳೆ [ಿೆ] is:+npst.3sf
 SFX Vb 0 ಯುತ್ತಿತ್ತು [ಿೆ] is:+simul|ಇರು+v+past.3sn
 SFX Vb 0 ಯುತ್ತಿದೆ [ಿೆ] is:+simul|ಇರು+v+pres.3sn
-SFX Vb 0 ಯುತ್ತಿದ್ದ [ಿೆ] is:+simul|ಇರು+v+past.3sm
 SFX Vb 0 ಯುತ್ತಿದ್ದ [ಿೆ] is:+simul|ಇರು+v+rel.past
 SFX Vb 0 ಯುತ್ತಿದ್ದಂತಹ [ಿೆ] is:+simul|ಇರು+v+like
 SFX Vb 0 ಯುತ್ತಿದ್ದಂತೆ [ಿೆ] is:+simul|ಇರು+v+sim
@@ -9171,7 +9044,6 @@ SFX Vb 0 ಯುವವನಾಗುವ [ಿೆ] is:+ag.3sm|ಆಗು+v+rel.npst
 SFX Vb 0 ಯುವವನಾಗುವಂತೆ [ಿೆ] is:+ag.3sm|ಆಗು+v+sim
 SFX Vb 0 ಯುವವನಾಗುವಾಗ [ಿೆ] is:+ag.3sm|ಆಗು+v+when
 SFX Vb 0 ಯುವವನಾಗುವುದು [ಿೆ] is:+ag.3sm|ಆಗು+v+vn
-SFX Vb 0 ಯುವವನಾದ [ಿೆ] is:+ag.3sm|ಆಗು+v+past.3sm
 SFX Vb 0 ಯುವವನಾದ [ಿೆ] is:+ag.3sm|ಆಗು+v+rel.past
 SFX Vb 0 ಯುವವನಾದಂತೆ [ಿೆ] is:+ag.3sm|ಆಗು+v+sim
 SFX Vb 0 ಯುವವನಾದನು [ಿೆ] is:+ag.3sm|ಆಗು+v+past.3sm
@@ -9201,7 +9073,6 @@ SFX Vb 0 ಯುವವನಿಲ್ಲ [ಿೆ] is:+ag.3sm|ಇರು+v+neg
 SFX Vb 0 ಯುವವನಿವೆ [ಿೆ] is:+ag.3sm|ಇರು+v+pres.3pn
 SFX Vb 0 ಯುವವನು [ಿೆ] is:+ag.3sm
 SFX Vb 0 ಯುವವನೂ [ಿೆ] is:+ag.3sm+also
-SFX Vb 0 ಯುವವನೆಂದ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯುವವನೆಂದ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯುವವನೆಂದಂತೆ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+sim
 SFX Vb 0 ಯುವವನೆಂದನು [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+past.3sm
@@ -9269,7 +9140,6 @@ SFX Vb 0 ಯುವವರಾಗುವ [ಿೆ] is:+ag.3p|ಆಗು+v+rel.npst
 SFX Vb 0 ಯುವವರಾಗುವಂತೆ [ಿೆ] is:+ag.3p|ಆಗು+v+sim
 SFX Vb 0 ಯುವವರಾಗುವಾಗ [ಿೆ] is:+ag.3p|ಆಗು+v+when
 SFX Vb 0 ಯುವವರಾಗುವುದು [ಿೆ] is:+ag.3p|ಆಗು+v+vn
-SFX Vb 0 ಯುವವರಾದ [ಿೆ] is:+ag.3p|ಆಗು+v+past.3sm
 SFX Vb 0 ಯುವವರಾದ [ಿೆ] is:+ag.3p|ಆಗು+v+rel.past
 SFX Vb 0 ಯುವವರಾದಂತೆ [ಿೆ] is:+ag.3p|ಆಗು+v+sim
 SFX Vb 0 ಯುವವರಾದನು [ಿೆ] is:+ag.3p|ಆಗು+v+past.3sm
@@ -9299,7 +9169,6 @@ SFX Vb 0 ಯುವವರಿಲ್ಲ [ಿೆ] is:+ag.3p|ಇರು+v+neg
 SFX Vb 0 ಯುವವರಿವೆ [ಿೆ] is:+ag.3p|ಇರು+v+pres.3pn
 SFX Vb 0 ಯುವವರು [ಿೆ] is:+ag.3p
 SFX Vb 0 ಯುವವರೂ [ಿೆ] is:+ag.3p+also
-SFX Vb 0 ಯುವವರೆಂದ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯುವವರೆಂದ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯುವವರೆಂದಂತೆ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+sim
 SFX Vb 0 ಯುವವರೆಂದನು [ಿೆ] is:+ag.3p|ಎನ್ನು+v+past.3sm
@@ -9368,7 +9237,6 @@ SFX Vb 0 ಯುವವಳಾಗುವ [ಿೆ] is:+ag.3sf|ಆಗು+v+rel.npst
 SFX Vb 0 ಯುವವಳಾಗುವಂತೆ [ಿೆ] is:+ag.3sf|ಆಗು+v+sim
 SFX Vb 0 ಯುವವಳಾಗುವಾಗ [ಿೆ] is:+ag.3sf|ಆಗು+v+when
 SFX Vb 0 ಯುವವಳಾಗುವುದು [ಿೆ] is:+ag.3sf|ಆಗು+v+vn
-SFX Vb 0 ಯುವವಳಾದ [ಿೆ] is:+ag.3sf|ಆಗು+v+past.3sm
 SFX Vb 0 ಯುವವಳಾದ [ಿೆ] is:+ag.3sf|ಆಗು+v+rel.past
 SFX Vb 0 ಯುವವಳಾದಂತೆ [ಿೆ] is:+ag.3sf|ಆಗು+v+sim
 SFX Vb 0 ಯುವವಳಾದನು [ಿೆ] is:+ag.3sf|ಆಗು+v+past.3sm
@@ -9398,7 +9266,6 @@ SFX Vb 0 ಯುವವಳಿಲ್ಲ [ಿೆ] is:+ag.3sf|ಇರು+v+neg
 SFX Vb 0 ಯುವವಳಿವೆ [ಿೆ] is:+ag.3sf|ಇರು+v+pres.3pn
 SFX Vb 0 ಯುವವಳು [ಿೆ] is:+ag.3sf
 SFX Vb 0 ಯುವವಳೂ [ಿೆ] is:+ag.3sf+also
-SFX Vb 0 ಯುವವಳೆಂದ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯುವವಳೆಂದ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯುವವಳೆಂದಂತೆ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+sim
 SFX Vb 0 ಯುವವಳೆಂದನು [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+past.3sm
@@ -9484,7 +9351,6 @@ SFX Vb 0 ಯುವುದಾಗುವ [ಿೆ] is:+vn|ಆಗು+v+rel.npst
 SFX Vb 0 ಯುವುದಾಗುವಂತೆ [ಿೆ] is:+vn|ಆಗು+v+sim
 SFX Vb 0 ಯುವುದಾಗುವಾಗ [ಿೆ] is:+vn|ಆಗು+v+when
 SFX Vb 0 ಯುವುದಾಗುವುದು [ಿೆ] is:+vn|ಆಗು+v+vn
-SFX Vb 0 ಯುವುದಾದ [ಿೆ] is:+vn|ಆಗು+v+past.3sm
 SFX Vb 0 ಯುವುದಾದ [ಿೆ] is:+vn|ಆಗು+v+rel.past
 SFX Vb 0 ಯುವುದಾದಂತೆ [ಿೆ] is:+vn|ಆಗು+v+sim
 SFX Vb 0 ಯುವುದಾದನು [ಿೆ] is:+vn|ಆಗು+v+past.3sm
@@ -9501,7 +9367,6 @@ SFX Vb 0 ಯುವುದಿಲ್ಲ [ಿೆ] is:+vn|ಇರು+v+neg
 SFX Vb 0 ಯುವುದಿವೆ [ಿೆ] is:+vn|ಇರು+v+pres.3pn
 SFX Vb 0 ಯುವುದು [ಿೆ] is:+vn
 SFX Vb 0 ಯುವುದೂ [ಿೆ] is:+vn+also
-SFX Vb 0 ಯುವುದೆಂದ [ಿೆ] is:+vn|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ಯುವುದೆಂದ [ಿೆ] is:+vn|ಎನ್ನು+v+rel.past
 SFX Vb 0 ಯುವುದೆಂದಂತೆ [ಿೆ] is:+vn|ಎನ್ನು+v+sim
 SFX Vb 0 ಯುವುದೆಂದನು [ಿೆ] is:+vn|ಎನ್ನು+v+past.3sm
@@ -9572,7 +9437,6 @@ SFX Vb 0 ವವನಾಗುವ ು is:+ag.3sm|ಆಗು+v+rel.npst
 SFX Vb 0 ವವನಾಗುವಂತೆ ು is:+ag.3sm|ಆಗು+v+sim
 SFX Vb 0 ವವನಾಗುವಾಗ ು is:+ag.3sm|ಆಗು+v+when
 SFX Vb 0 ವವನಾಗುವುದು ು is:+ag.3sm|ಆಗು+v+vn
-SFX Vb 0 ವವನಾದ ು is:+ag.3sm|ಆಗು+v+past.3sm
 SFX Vb 0 ವವನಾದ ು is:+ag.3sm|ಆಗು+v+rel.past
 SFX Vb 0 ವವನಾದಂತೆ ು is:+ag.3sm|ಆಗು+v+sim
 SFX Vb 0 ವವನಾದನು ು is:+ag.3sm|ಆಗು+v+past.3sm
@@ -9602,7 +9466,6 @@ SFX Vb 0 ವವನಿಲ್ಲ ು is:+ag.3sm|ಇರು+v+neg
 SFX Vb 0 ವವನಿವೆ ು is:+ag.3sm|ಇರು+v+pres.3pn
 SFX Vb 0 ವವನು ು is:+ag.3sm
 SFX Vb 0 ವವನೂ ು is:+ag.3sm+also
-SFX Vb 0 ವವನೆಂದ ು is:+ag.3sm|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ವವನೆಂದ ು is:+ag.3sm|ಎನ್ನು+v+rel.past
 SFX Vb 0 ವವನೆಂದಂತೆ ು is:+ag.3sm|ಎನ್ನು+v+sim
 SFX Vb 0 ವವನೆಂದನು ು is:+ag.3sm|ಎನ್ನು+v+past.3sm
@@ -9670,7 +9533,6 @@ SFX Vb 0 ವವರಾಗುವ ು is:+ag.3p|ಆಗು+v+rel.npst
 SFX Vb 0 ವವರಾಗುವಂತೆ ು is:+ag.3p|ಆಗು+v+sim
 SFX Vb 0 ವವರಾಗುವಾಗ ು is:+ag.3p|ಆಗು+v+when
 SFX Vb 0 ವವರಾಗುವುದು ು is:+ag.3p|ಆಗು+v+vn
-SFX Vb 0 ವವರಾದ ು is:+ag.3p|ಆಗು+v+past.3sm
 SFX Vb 0 ವವರಾದ ು is:+ag.3p|ಆಗು+v+rel.past
 SFX Vb 0 ವವರಾದಂತೆ ು is:+ag.3p|ಆಗು+v+sim
 SFX Vb 0 ವವರಾದನು ು is:+ag.3p|ಆಗು+v+past.3sm
@@ -9700,7 +9562,6 @@ SFX Vb 0 ವವರಿಲ್ಲ ು is:+ag.3p|ಇರು+v+neg
 SFX Vb 0 ವವರಿವೆ ು is:+ag.3p|ಇರು+v+pres.3pn
 SFX Vb 0 ವವರು ು is:+ag.3p
 SFX Vb 0 ವವರೂ ು is:+ag.3p+also
-SFX Vb 0 ವವರೆಂದ ು is:+ag.3p|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ವವರೆಂದ ು is:+ag.3p|ಎನ್ನು+v+rel.past
 SFX Vb 0 ವವರೆಂದಂತೆ ು is:+ag.3p|ಎನ್ನು+v+sim
 SFX Vb 0 ವವರೆಂದನು ು is:+ag.3p|ಎನ್ನು+v+past.3sm
@@ -9769,7 +9630,6 @@ SFX Vb 0 ವವಳಾಗುವ ು is:+ag.3sf|ಆಗು+v+rel.npst
 SFX Vb 0 ವವಳಾಗುವಂತೆ ು is:+ag.3sf|ಆಗು+v+sim
 SFX Vb 0 ವವಳಾಗುವಾಗ ು is:+ag.3sf|ಆಗು+v+when
 SFX Vb 0 ವವಳಾಗುವುದು ು is:+ag.3sf|ಆಗು+v+vn
-SFX Vb 0 ವವಳಾದ ು is:+ag.3sf|ಆಗು+v+past.3sm
 SFX Vb 0 ವವಳಾದ ು is:+ag.3sf|ಆಗು+v+rel.past
 SFX Vb 0 ವವಳಾದಂತೆ ು is:+ag.3sf|ಆಗು+v+sim
 SFX Vb 0 ವವಳಾದನು ು is:+ag.3sf|ಆಗು+v+past.3sm
@@ -9799,7 +9659,6 @@ SFX Vb 0 ವವಳಿಲ್ಲ ು is:+ag.3sf|ಇರು+v+neg
 SFX Vb 0 ವವಳಿವೆ ು is:+ag.3sf|ಇರು+v+pres.3pn
 SFX Vb 0 ವವಳು ು is:+ag.3sf
 SFX Vb 0 ವವಳೂ ು is:+ag.3sf+also
-SFX Vb 0 ವವಳೆಂದ ು is:+ag.3sf|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ವವಳೆಂದ ು is:+ag.3sf|ಎನ್ನು+v+rel.past
 SFX Vb 0 ವವಳೆಂದಂತೆ ು is:+ag.3sf|ಎನ್ನು+v+sim
 SFX Vb 0 ವವಳೆಂದನು ು is:+ag.3sf|ಎನ್ನು+v+past.3sm
@@ -9885,7 +9744,6 @@ SFX Vb 0 ವುದಾಗುವ ು is:+vn|ಆಗು+v+rel.npst
 SFX Vb 0 ವುದಾಗುವಂತೆ ು is:+vn|ಆಗು+v+sim
 SFX Vb 0 ವುದಾಗುವಾಗ ು is:+vn|ಆಗು+v+when
 SFX Vb 0 ವುದಾಗುವುದು ು is:+vn|ಆಗು+v+vn
-SFX Vb 0 ವುದಾದ ು is:+vn|ಆಗು+v+past.3sm
 SFX Vb 0 ವುದಾದ ು is:+vn|ಆಗು+v+rel.past
 SFX Vb 0 ವುದಾದಂತೆ ು is:+vn|ಆಗು+v+sim
 SFX Vb 0 ವುದಾದನು ು is:+vn|ಆಗು+v+past.3sm
@@ -9902,7 +9760,6 @@ SFX Vb 0 ವುದಿಲ್ಲ ು is:+vn|ಇರು+v+neg
 SFX Vb 0 ವುದಿವೆ ು is:+vn|ಇರು+v+pres.3pn
 SFX Vb 0 ವುದು ು is:+vn
 SFX Vb 0 ವುದೂ ು is:+vn+also
-SFX Vb 0 ವುದೆಂದ ು is:+vn|ಎನ್ನು+v+past.3sm
 SFX Vb 0 ವುದೆಂದ ು is:+vn|ಎನ್ನು+v+rel.past
 SFX Vb 0 ವುದೆಂದಂತೆ ು is:+vn|ಎನ್ನು+v+sim
 SFX Vb 0 ವುದೆಂದನು ು is:+vn|ಎನ್ನು+v+past.3sm
@@ -9931,7 +9788,6 @@ SFX Vb ು ದ ು is:+rel.neg
 SFX Vb ು ದಂತೆ ು is:+rel.neg+sim
 SFX Vb ು ದಿತ್ತು ು is:+neg.cp|ಇರು+v+past.3sn
 SFX Vb ು ದಿದೆ ು is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vb ು ದಿದ್ದ ು is:+neg.cp|ಇರು+v+past.3sm
 SFX Vb ು ದಿದ್ದ ು is:+neg.cp|ಇರು+v+rel.past
 SFX Vb ು ದಿದ್ದಂತೆ ು is:+neg.cp|ಇರು+v+sim
 SFX Vb ು ದಿದ್ದನು ು is:+neg.cp|ಇರು+v+past.3sm
@@ -9958,34 +9814,6 @@ SFX Vb ು ದಿರುವುದು ು is:+neg.cp|ಇರು+v+vn
 SFX Vb ು ದಿಲ್ಲ ು is:+neg.cp|ಇರು+v+neg
 SFX Vb ು ದಿವೆ ು is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vb ು ದೆ ು is:+neg.cp
-SFX Vb ು ದೆಯಿತ್ತು ು is:+neg.cp|ಇರು+v+past.3sn
-SFX Vb ು ದೆಯಿದೆ ು is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vb ು ದೆಯಿದ್ದ ು is:+neg.cp|ಇರು+v+past.3sm
-SFX Vb ು ದೆಯಿದ್ದ ು is:+neg.cp|ಇರು+v+rel.past
-SFX Vb ು ದೆಯಿದ್ದಂತೆ ು is:+neg.cp|ಇರು+v+sim
-SFX Vb ು ದೆಯಿದ್ದನು ು is:+neg.cp|ಇರು+v+past.3sm
-SFX Vb ು ದೆಯಿದ್ದರು ು is:+neg.cp|ಇರು+v+past.3p
-SFX Vb ು ದೆಯಿದ್ದರೂ ು is:+neg.cp|ಇರು+v+conc
-SFX Vb ು ದೆಯಿದ್ದರೆ ು is:+neg.cp|ಇರು+v+cond
-SFX Vb ು ದೆಯಿದ್ದಳು ು is:+neg.cp|ಇರು+v+past.3sf
-SFX Vb ು ದೆಯಿದ್ದಾಗ ು is:+neg.cp|ಇರು+v+when
-SFX Vb ು ದೆಯಿದ್ದಾನೆ ು is:+neg.cp|ಇರು+v+pres.3sm
-SFX Vb ು ದೆಯಿದ್ದಾರೆ ು is:+neg.cp|ಇರು+v+pres.3p
-SFX Vb ು ದೆಯಿದ್ದಾಳೆ ು is:+neg.cp|ಇರು+v+pres.3sf
-SFX Vb ು ದೆಯಿದ್ದು ು is:+neg.cp|ಇರು+v+cp
-SFX Vb ು ದೆಯಿದ್ದೂ ು is:+neg.cp|ಇರು+v+cp+also
-SFX Vb ು ದೆಯಿದ್ದೇ ು is:+neg.cp|ಇರು+v+cp+emph
-SFX Vb ು ದೆಯಿರದೆ ು is:+neg.cp|ಇರು+v+neg.cp
-SFX Vb ು ದೆಯಿರಲು ು is:+neg.cp|ಇರು+v+inf
-SFX Vb ು ದೆಯಿರುತ್ತದೆ ು is:+neg.cp|ಇರು+v+npst.3sn
-SFX Vb ು ದೆಯಿರುತ್ತವೆ ು is:+neg.cp|ಇರು+v+npst.3pn
-SFX Vb ು ದೆಯಿರುತ್ತಾರೆ ು is:+neg.cp|ಇರು+v+npst.3p
-SFX Vb ು ದೆಯಿರುವ ು is:+neg.cp|ಇರು+v+rel.npst
-SFX Vb ು ದೆಯಿರುವಂತೆ ು is:+neg.cp|ಇರು+v+sim
-SFX Vb ು ದೆಯಿರುವಾಗ ು is:+neg.cp|ಇರು+v+when
-SFX Vb ು ದೆಯಿರುವುದು ು is:+neg.cp|ಇರು+v+vn
-SFX Vb ು ದೆಯಿಲ್ಲ ು is:+neg.cp|ಇರು+v+neg
-SFX Vb ು ದೆಯಿವೆ ು is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vb ು ಬಲ್ಲ ು is:+abil
 SFX Vb ು ಬಲ್ಲದಲ್ಲ ು is:+abil|ಅಲ್ಲ+v+neg
 SFX Vb ು ಬಲ್ಲದಲ್ಲದ ು is:+abil|ಅಲ್ಲ+v+rel.neg
@@ -10014,7 +9842,6 @@ SFX Vb ು ಬಲ್ಲದಾಗುವ ು is:+abil|ಆಗು+v+rel.npst
 SFX Vb ು ಬಲ್ಲದಾಗುವಂತೆ ು is:+abil|ಆಗು+v+sim
 SFX Vb ು ಬಲ್ಲದಾಗುವಾಗ ು is:+abil|ಆಗು+v+when
 SFX Vb ು ಬಲ್ಲದಾಗುವುದು ು is:+abil|ಆಗು+v+vn
-SFX Vb ು ಬಲ್ಲದಾದ ು is:+abil|ಆಗು+v+past.3sm
 SFX Vb ು ಬಲ್ಲದಾದ ು is:+abil|ಆಗು+v+rel.past
 SFX Vb ು ಬಲ್ಲದಾದಂತೆ ು is:+abil|ಆಗು+v+sim
 SFX Vb ು ಬಲ್ಲದಾದನು ು is:+abil|ಆಗು+v+past.3sm
@@ -10030,7 +9857,6 @@ SFX Vb ು ಬಲ್ಲದಿಲ್ಲ ು is:+abil|ಇರು+v+neg
 SFX Vb ು ಬಲ್ಲದಿವೆ ು is:+abil|ಇರು+v+pres.3pn
 SFX Vb ು ಬಲ್ಲದು ು is:+abil
 SFX Vb ು ಬಲ್ಲದೂ ು is:+abil+also
-SFX Vb ು ಬಲ್ಲದೆಂದ ು is:+abil|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಬಲ್ಲದೆಂದ ು is:+abil|ಎನ್ನು+v+rel.past
 SFX Vb ು ಬಲ್ಲದೆಂದಂತೆ ು is:+abil|ಎನ್ನು+v+sim
 SFX Vb ು ಬಲ್ಲದೆಂದನು ು is:+abil|ಎನ್ನು+v+past.3sm
@@ -10082,7 +9908,6 @@ SFX Vb ು ಬಹುದಾಗುವ ು is:+perm|ಆಗು+v+rel.npst
 SFX Vb ು ಬಹುದಾಗುವಂತೆ ು is:+perm|ಆಗು+v+sim
 SFX Vb ು ಬಹುದಾಗುವಾಗ ು is:+perm|ಆಗು+v+when
 SFX Vb ು ಬಹುದಾಗುವುದು ು is:+perm|ಆಗು+v+vn
-SFX Vb ು ಬಹುದಾದ ು is:+perm|ಆಗು+v+past.3sm
 SFX Vb ು ಬಹುದಾದ ು is:+perm|ಆಗು+v+rel.past
 SFX Vb ು ಬಹುದಾದಂತೆ ು is:+perm|ಆಗು+v+sim
 SFX Vb ು ಬಹುದಾದನು ು is:+perm|ಆಗು+v+past.3sm
@@ -10098,7 +9923,6 @@ SFX Vb ು ಬಹುದಿಲ್ಲ ು is:+perm|ಇರು+v+neg
 SFX Vb ು ಬಹುದಿವೆ ು is:+perm|ಇರು+v+pres.3pn
 SFX Vb ು ಬಹುದು ು is:+perm
 SFX Vb ು ಬಹುದೂ ು is:+perm+also
-SFX Vb ು ಬಹುದೆಂದ ು is:+perm|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಬಹುದೆಂದ ು is:+perm|ಎನ್ನು+v+rel.past
 SFX Vb ು ಬಹುದೆಂದಂತೆ ು is:+perm|ಎನ್ನು+v+sim
 SFX Vb ು ಬಹುದೆಂದನು ು is:+perm|ಎನ್ನು+v+past.3sm
@@ -10150,7 +9974,6 @@ SFX Vb ು ಬಾರದಾಗುವ ು is:+proh|ಆಗು+v+rel.npst
 SFX Vb ು ಬಾರದಾಗುವಂತೆ ು is:+proh|ಆಗು+v+sim
 SFX Vb ು ಬಾರದಾಗುವಾಗ ು is:+proh|ಆಗು+v+when
 SFX Vb ು ಬಾರದಾಗುವುದು ು is:+proh|ಆಗು+v+vn
-SFX Vb ು ಬಾರದಾದ ು is:+proh|ಆಗು+v+past.3sm
 SFX Vb ು ಬಾರದಾದ ು is:+proh|ಆಗು+v+rel.past
 SFX Vb ು ಬಾರದಾದಂತೆ ು is:+proh|ಆಗು+v+sim
 SFX Vb ು ಬಾರದಾದನು ು is:+proh|ಆಗು+v+past.3sm
@@ -10166,7 +9989,6 @@ SFX Vb ು ಬಾರದಿಲ್ಲ ು is:+proh|ಇರು+v+neg
 SFX Vb ು ಬಾರದಿವೆ ು is:+proh|ಇರು+v+pres.3pn
 SFX Vb ು ಬಾರದು ು is:+proh
 SFX Vb ು ಬಾರದೂ ು is:+proh+also
-SFX Vb ು ಬಾರದೆಂದ ು is:+proh|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಬಾರದೆಂದ ು is:+proh|ಎನ್ನು+v+rel.past
 SFX Vb ು ಬಾರದೆಂದಂತೆ ು is:+proh|ಎನ್ನು+v+sim
 SFX Vb ು ಬಾರದೆಂದನು ು is:+proh|ಎನ್ನು+v+past.3sm
@@ -10218,7 +10040,6 @@ SFX Vb ು ಬೇಕಾಗುವ ು is:+deb|ಆಗು+v+rel.npst
 SFX Vb ು ಬೇಕಾಗುವಂತೆ ು is:+deb|ಆಗು+v+sim
 SFX Vb ು ಬೇಕಾಗುವಾಗ ು is:+deb|ಆಗು+v+when
 SFX Vb ು ಬೇಕಾಗುವುದು ು is:+deb|ಆಗು+v+vn
-SFX Vb ು ಬೇಕಾದ ು is:+deb|ಆಗು+v+past.3sm
 SFX Vb ು ಬೇಕಾದ ು is:+deb|ಆಗು+v+rel.past
 SFX Vb ು ಬೇಕಾದಂತೆ ು is:+deb|ಆಗು+v+sim
 SFX Vb ು ಬೇಕಾದನು ು is:+deb|ಆಗು+v+past.3sm
@@ -10234,7 +10055,6 @@ SFX Vb ು ಬೇಕಿಲ್ಲ ು is:+deb|ಇರು+v+neg
 SFX Vb ು ಬೇಕಿವೆ ು is:+deb|ಇರು+v+pres.3pn
 SFX Vb ು ಬೇಕು ು is:+deb
 SFX Vb ು ಬೇಕೂ ು is:+deb+also
-SFX Vb ು ಬೇಕೆಂದ ು is:+deb|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಬೇಕೆಂದ ು is:+deb|ಎನ್ನು+v+rel.past
 SFX Vb ು ಬೇಕೆಂದಂತೆ ು is:+deb|ಎನ್ನು+v+sim
 SFX Vb ು ಬೇಕೆಂದನು ು is:+deb|ಎನ್ನು+v+past.3sm
@@ -10289,7 +10109,6 @@ SFX Vb ು ಲಾಗಿ ು is:+pass|ಆಗು+v+cp
 SFX Vb ು ಲಾಗಿ ು is:+pass|ಆಗು+v+imp.2p
 SFX Vb ು ಲಾಗಿತ್ತು ು is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sn
 SFX Vb ು ಲಾಗಿದೆ ು is:+pass|ಆಗು+v+cp|ಇರು+v+pres.3sn
-SFX Vb ು ಲಾಗಿದ್ದ ು is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sm
 SFX Vb ು ಲಾಗಿದ್ದ ು is:+pass|ಆಗು+v+cp|ಇರು+v+rel.past
 SFX Vb ು ಲಾಗಿದ್ದಂತಹ ು is:+pass|ಆಗು+v+cp|ಇರು+v+like
 SFX Vb ು ಲಾಗಿದ್ದಂತೆ ು is:+pass|ಆಗು+v+cp|ಇರು+v+sim
@@ -10824,7 +10643,6 @@ SFX Vb ು ಲಾಗುವುದು ು is:+pass|ಆಗು+v+vn
 SFX Vb ು ಲಾಗುವುದೂ ು is:+pass|ಆಗು+v+vn+also
 SFX Vb ು ಲಾಗುವುದೇ ು is:+pass|ಆಗು+v+vn+emph
 SFX Vb ು ಲಾಗೋಣ ು is:+pass|ಆಗು+v+hort.1p
-SFX Vb ು ಲಾದ ು is:+pass|ಆಗು+v+past.3sm
 SFX Vb ು ಲಾದ ು is:+pass|ಆಗು+v+rel.past
 SFX Vb ು ಲಾದಂತಹ ು is:+pass|ಆಗು+v+like
 SFX Vb ು ಲಾದಂತೆ ು is:+pass|ಆಗು+v+sim
@@ -11015,7 +10833,6 @@ SFX Vb ು ಲಿಲ್ಲ ು is:+past.neg
 SFX Vb ು ಲು ು is:+inf
 SFX Vb ು ಲೂ ು is:+inf+also
 SFX Vb ು ಲೇ ು is:+inf+emph
-SFX Vb ು ಲ್ಪಟ್ಟ ು is:+pass|ಪಡು+v+past.3sm
 SFX Vb ು ಲ್ಪಟ್ಟ ು is:+pass|ಪಡು+v+rel.past
 SFX Vb ು ಲ್ಪಟ್ಟಂತಹ ು is:+pass|ಪಡು+v+like
 SFX Vb ು ಲ್ಪಟ್ಟಂತೆ ು is:+pass|ಪಡು+v+sim
@@ -11164,7 +10981,6 @@ SFX Vb ು ಲ್ಪಟ್ಟಾಗ ು is:+pass|ಪಡು+v+when
 SFX Vb ು ಲ್ಪಟ್ಟಿತು ು is:+pass|ಪಡು+v+past.3sn
 SFX Vb ು ಲ್ಪಟ್ಟಿತ್ತು ು is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sn
 SFX Vb ು ಲ್ಪಟ್ಟಿದೆ ು is:+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn
-SFX Vb ು ಲ್ಪಟ್ಟಿದ್ದ ು is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sm
 SFX Vb ು ಲ್ಪಟ್ಟಿದ್ದ ು is:+pass|ಪಡು+v+cp|ಇರು+v+rel.past
 SFX Vb ು ಲ್ಪಟ್ಟಿದ್ದಂತಹ ು is:+pass|ಪಡು+v+cp|ಇರು+v+like
 SFX Vb ು ಲ್ಪಟ್ಟಿದ್ದಂತೆ ು is:+pass|ಪಡು+v+cp|ಇರು+v+sim
@@ -11592,23 +11408,14 @@ SFX Vb ು ಲ್ಪಡಬಲ್ಲದೇ ು is:+pass|ಪಡು+v+abil+emph
 SFX Vb ು ಲ್ಪಡಬಹುದು ು is:+pass|ಪಡು+v+perm
 SFX Vb ು ಲ್ಪಡಬಹುದೂ ು is:+pass|ಪಡು+v+perm+also
 SFX Vb ು ಲ್ಪಡಬಹುದೇ ು is:+pass|ಪಡು+v+perm+emph
-SFX Vb ು ಲ್ಪಡಬಾರದು ು is:+pass|ಪಡು+v+proh
-SFX Vb ು ಲ್ಪಡಬಾರದೂ ು is:+pass|ಪಡು+v+proh+also
-SFX Vb ು ಲ್ಪಡಬಾರದೇ ು is:+pass|ಪಡು+v+proh+emph
 SFX Vb ು ಲ್ಪಡಬೇಕು ು is:+pass|ಪಡು+v+deb
 SFX Vb ು ಲ್ಪಡಬೇಕೂ ು is:+pass|ಪಡು+v+deb+also
 SFX Vb ು ಲ್ಪಡಬೇಕೇ ು is:+pass|ಪಡು+v+deb+emph
-SFX Vb ು ಲ್ಪಡಬೇಡ ು is:+pass|ಪಡು+v+proh.2s
-SFX Vb ು ಲ್ಪಡಬೇಡಿ ು is:+pass|ಪಡು+v+proh.2p
-SFX Vb ು ಲ್ಪಡಲಿ ು is:+pass|ಪಡು+v+hort
 SFX Vb ು ಲ್ಪಡಲಿಕ್ಕೆ ು is:+pass|ಪಡು+v+inf+dat
 SFX Vb ು ಲ್ಪಡಲಿಲ್ಲ ು is:+pass|ಪಡು+v+past.neg
 SFX Vb ು ಲ್ಪಡಲು ು is:+pass|ಪಡು+v+inf
 SFX Vb ು ಲ್ಪಡಲೂ ು is:+pass|ಪಡು+v+inf+also
 SFX Vb ು ಲ್ಪಡಲೇ ು is:+pass|ಪಡು+v+inf+emph
-SFX Vb ು ಲ್ಪಡಿ ು is:+pass|ಪಡು+v+imp.2p
-SFX Vb ು ಲ್ಪಡಿರಿ ು is:+pass|ಪಡು+v+imp.2p
-SFX Vb ು ಲ್ಪಡು ು is:+pass|ಪಡು+v+imp.2s
 SFX Vb ು ಲ್ಪಡುತ್ತ ು is:+pass|ಪಡು+v+simul
 SFX Vb ು ಲ್ಪಡುತ್ತದೆ ು is:+pass|ಪಡು+v+npst.3sn
 SFX Vb ು ಲ್ಪಡುತ್ತಲೇ ು is:+pass|ಪಡು+v+simul+emph
@@ -11762,10 +11569,8 @@ SFX Vb ು ಲ್ಪಡುವುದಿಲ್ಲ ು is:+pass|ಪಡು+v+npst.ne
 SFX Vb ು ಲ್ಪಡುವುದು ು is:+pass|ಪಡು+v+vn
 SFX Vb ು ಲ್ಪಡುವುದೂ ು is:+pass|ಪಡು+v+vn+also
 SFX Vb ು ಲ್ಪಡುವುದೇ ು is:+pass|ಪಡು+v+vn+emph
-SFX Vb ು ಲ್ಪಡೋಣ ು is:+pass|ಪಡು+v+hort.1p
 SFX Vb ು ಿ ು is:+cp
 SFX Vb ು ಿ ು is:+imp.2p
-SFX Vb ು ಿಕೊಂಡ ು is:+cp|ಕೊಳ್ಳು+v+past.3sm
 SFX Vb ು ಿಕೊಂಡ ು is:+cp|ಕೊಳ್ಳು+v+rel.past
 SFX Vb ು ಿಕೊಂಡಂತಹ ು is:+cp|ಕೊಳ್ಳು+v+like
 SFX Vb ು ಿಕೊಂಡಂತೆ ು is:+cp|ಕೊಳ್ಳು+v+sim
@@ -11914,7 +11719,6 @@ SFX Vb ು ಿಕೊಂಡಾಗ ು is:+cp|ಕೊಳ್ಳು+v+when
 SFX Vb ು ಿಕೊಂಡಿತು ು is:+cp|ಕೊಳ್ಳು+v+past.3sn
 SFX Vb ು ಿಕೊಂಡಿತ್ತು ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sn
 SFX Vb ು ಿಕೊಂಡಿದೆ ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sn
-SFX Vb ು ಿಕೊಂಡಿದ್ದ ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sm
 SFX Vb ು ಿಕೊಂಡಿದ್ದ ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+rel.past
 SFX Vb ು ಿಕೊಂಡಿದ್ದಂತಹ ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+like
 SFX Vb ು ಿಕೊಂಡಿದ್ದಂತೆ ು is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+sim
@@ -12576,7 +12380,6 @@ SFX Vb ು ಿದದ್ದಾಗುವ ು is:+vn.past|ಆಗು+v+rel.npst
 SFX Vb ು ಿದದ್ದಾಗುವಂತೆ ು is:+vn.past|ಆಗು+v+sim
 SFX Vb ು ಿದದ್ದಾಗುವಾಗ ು is:+vn.past|ಆಗು+v+when
 SFX Vb ು ಿದದ್ದಾಗುವುದು ು is:+vn.past|ಆಗು+v+vn
-SFX Vb ು ಿದದ್ದಾದ ು is:+vn.past|ಆಗು+v+past.3sm
 SFX Vb ು ಿದದ್ದಾದ ು is:+vn.past|ಆಗು+v+rel.past
 SFX Vb ು ಿದದ್ದಾದಂತೆ ು is:+vn.past|ಆಗು+v+sim
 SFX Vb ು ಿದದ್ದಾದನು ು is:+vn.past|ಆಗು+v+past.3sm
@@ -12592,7 +12395,6 @@ SFX Vb ು ಿದದ್ದಿಲ್ಲ ು is:+vn.past|ಇರು+v+neg
 SFX Vb ು ಿದದ್ದಿವೆ ು is:+vn.past|ಇರು+v+pres.3pn
 SFX Vb ು ಿದದ್ದು ು is:+vn.past
 SFX Vb ು ಿದದ್ದೂ ು is:+vn.past+also
-SFX Vb ು ಿದದ್ದೆಂದ ು is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಿದದ್ದೆಂದ ು is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vb ು ಿದದ್ದೆಂದಂತೆ ು is:+vn.past|ಎನ್ನು+v+sim
 SFX Vb ು ಿದದ್ದೆಂದನು ು is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -12665,7 +12467,6 @@ SFX Vb ು ಿದವನಾಗುವ ು is:+ag.past.3sm|ಆಗು+v+rel.npst
 SFX Vb ು ಿದವನಾಗುವಂತೆ ು is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vb ು ಿದವನಾಗುವಾಗ ು is:+ag.past.3sm|ಆಗು+v+when
 SFX Vb ು ಿದವನಾಗುವುದು ು is:+ag.past.3sm|ಆಗು+v+vn
-SFX Vb ು ಿದವನಾದ ು is:+ag.past.3sm|ಆಗು+v+past.3sm
 SFX Vb ು ಿದವನಾದ ು is:+ag.past.3sm|ಆಗು+v+rel.past
 SFX Vb ು ಿದವನಾದಂತೆ ು is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vb ು ಿದವನಾದನು ು is:+ag.past.3sm|ಆಗು+v+past.3sm
@@ -12695,7 +12496,6 @@ SFX Vb ು ಿದವನಿಲ್ಲ ು is:+ag.past.3sm|ಇರು+v+neg
 SFX Vb ು ಿದವನಿವೆ ು is:+ag.past.3sm|ಇರು+v+pres.3pn
 SFX Vb ು ಿದವನು ು is:+ag.past.3sm
 SFX Vb ು ಿದವನೂ ು is:+ag.past.3sm+also
-SFX Vb ು ಿದವನೆಂದ ು is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಿದವನೆಂದ ು is:+ag.past.3sm|ಎನ್ನು+v+rel.past
 SFX Vb ು ಿದವನೆಂದಂತೆ ು is:+ag.past.3sm|ಎನ್ನು+v+sim
 SFX Vb ು ಿದವನೆಂದನು ು is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
@@ -12763,7 +12563,6 @@ SFX Vb ು ಿದವರಾಗುವ ು is:+ag.past.3p|ಆಗು+v+rel.npst
 SFX Vb ು ಿದವರಾಗುವಂತೆ ು is:+ag.past.3p|ಆಗು+v+sim
 SFX Vb ು ಿದವರಾಗುವಾಗ ು is:+ag.past.3p|ಆಗು+v+when
 SFX Vb ು ಿದವರಾಗುವುದು ು is:+ag.past.3p|ಆಗು+v+vn
-SFX Vb ು ಿದವರಾದ ು is:+ag.past.3p|ಆಗು+v+past.3sm
 SFX Vb ು ಿದವರಾದ ು is:+ag.past.3p|ಆಗು+v+rel.past
 SFX Vb ು ಿದವರಾದಂತೆ ು is:+ag.past.3p|ಆಗು+v+sim
 SFX Vb ು ಿದವರಾದನು ು is:+ag.past.3p|ಆಗು+v+past.3sm
@@ -12793,7 +12592,6 @@ SFX Vb ು ಿದವರಿಲ್ಲ ು is:+ag.past.3p|ಇರು+v+neg
 SFX Vb ು ಿದವರಿವೆ ು is:+ag.past.3p|ಇರು+v+pres.3pn
 SFX Vb ು ಿದವರು ು is:+ag.past.3p
 SFX Vb ು ಿದವರೂ ು is:+ag.past.3p+also
-SFX Vb ು ಿದವರೆಂದ ು is:+ag.past.3p|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಿದವರೆಂದ ು is:+ag.past.3p|ಎನ್ನು+v+rel.past
 SFX Vb ು ಿದವರೆಂದಂತೆ ು is:+ag.past.3p|ಎನ್ನು+v+sim
 SFX Vb ು ಿದವರೆಂದನು ು is:+ag.past.3p|ಎನ್ನು+v+past.3sm
@@ -12861,7 +12659,6 @@ SFX Vb ು ಿದವಳಾಗುವ ು is:+ag.past.3sf|ಆಗು+v+rel.npst
 SFX Vb ು ಿದವಳಾಗುವಂತೆ ು is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vb ು ಿದವಳಾಗುವಾಗ ು is:+ag.past.3sf|ಆಗು+v+when
 SFX Vb ು ಿದವಳಾಗುವುದು ು is:+ag.past.3sf|ಆಗು+v+vn
-SFX Vb ು ಿದವಳಾದ ು is:+ag.past.3sf|ಆಗು+v+past.3sm
 SFX Vb ು ಿದವಳಾದ ು is:+ag.past.3sf|ಆಗು+v+rel.past
 SFX Vb ು ಿದವಳಾದಂತೆ ು is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vb ು ಿದವಳಾದನು ು is:+ag.past.3sf|ಆಗು+v+past.3sm
@@ -12891,7 +12688,6 @@ SFX Vb ು ಿದವಳಿಲ್ಲ ು is:+ag.past.3sf|ಇರು+v+neg
 SFX Vb ು ಿದವಳಿವೆ ು is:+ag.past.3sf|ಇರು+v+pres.3pn
 SFX Vb ು ಿದವಳು ು is:+ag.past.3sf
 SFX Vb ು ಿದವಳೂ ು is:+ag.past.3sf+also
-SFX Vb ು ಿದವಳೆಂದ ು is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಿದವಳೆಂದ ು is:+ag.past.3sf|ಎನ್ನು+v+rel.past
 SFX Vb ು ಿದವಳೆಂದಂತೆ ು is:+ag.past.3sf|ಎನ್ನು+v+sim
 SFX Vb ು ಿದವಳೆಂದನು ು is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
@@ -12979,7 +12775,6 @@ SFX Vb ು ಿದುದಾಗುವ ು is:+vn.past|ಆಗು+v+rel.npst
 SFX Vb ು ಿದುದಾಗುವಂತೆ ು is:+vn.past|ಆಗು+v+sim
 SFX Vb ು ಿದುದಾಗುವಾಗ ು is:+vn.past|ಆಗು+v+when
 SFX Vb ು ಿದುದಾಗುವುದು ು is:+vn.past|ಆಗು+v+vn
-SFX Vb ು ಿದುದಾದ ು is:+vn.past|ಆಗು+v+past.3sm
 SFX Vb ು ಿದುದಾದ ು is:+vn.past|ಆಗು+v+rel.past
 SFX Vb ು ಿದುದಾದಂತೆ ು is:+vn.past|ಆಗು+v+sim
 SFX Vb ು ಿದುದಾದನು ು is:+vn.past|ಆಗು+v+past.3sm
@@ -12995,7 +12790,6 @@ SFX Vb ು ಿದುದಿಲ್ಲ ು is:+vn.past|ಇರು+v+neg
 SFX Vb ು ಿದುದಿವೆ ು is:+vn.past|ಇರು+v+pres.3pn
 SFX Vb ು ಿದುದು ು is:+vn.past
 SFX Vb ು ಿದುದೂ ು is:+vn.past+also
-SFX Vb ು ಿದುದೆಂದ ು is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vb ು ಿದುದೆಂದ ು is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vb ು ಿದುದೆಂದಂತೆ ು is:+vn.past|ಎನ್ನು+v+sim
 SFX Vb ು ಿದುದೆಂದನು ು is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -13025,7 +12819,6 @@ SFX Vb ು ಿದೆ ು is:+past.1s
 SFX Vb ು ಿದೆ ು is:+past.2s
 SFX Vb ು ಿದೆನು ು is:+past.1s
 SFX Vb ು ಿದೆವು ು is:+past.1p
-SFX Vb ು ಿದ್ದ ು is:+cp|ಇರು+v+past.3sm
 SFX Vb ು ಿದ್ದ ು is:+cp|ಇರು+v+rel.past
 SFX Vb ು ಿದ್ದಂತಹ ು is:+cp|ಇರು+v+like
 SFX Vb ು ಿದ್ದಂತೆ ು is:+cp|ಇರು+v+sim
@@ -13219,7 +13012,6 @@ SFX Vb ು ಿದ್ದೆವು ು is:+cp|ಇರು+v+past.1p
 SFX Vb ು ಿದ್ದೇ ು is:+cp|ಇರು+v+cp+emph
 SFX Vb ು ಿದ್ದೇನೆ ು is:+cp|ಇರು+v+pres.1s
 SFX Vb ು ಿದ್ದೇವೆ ು is:+cp|ಇರು+v+pres.1p
-SFX Vb ು ಿಬಿಟ್ಟ ು is:+cp|ಬಿಡು+v+past.3sm
 SFX Vb ು ಿಬಿಟ್ಟ ು is:+cp|ಬಿಡು+v+rel.past
 SFX Vb ು ಿಬಿಟ್ಟಂತಹ ು is:+cp|ಬಿಡು+v+like
 SFX Vb ು ಿಬಿಟ್ಟಂತೆ ು is:+cp|ಬಿಡು+v+sim
@@ -13777,7 +13569,7 @@ SFX Vb ು ಿವೆ ು is:+cp|ಇರು+v+pres.3pn
 SFX Vb ು ೋಣ ು is:+hort.1p
 
 # VerbRoot
-SFX Vr Y 5261
+SFX Vr Y 5141
 SFX Vr 0 ತ್ತ ು is:+simul
 SFX Vr 0 ತ್ತದೆ ು is:+npst.3sn
 SFX Vr 0 ತ್ತಲೇ ು is:+simul+emph
@@ -13788,7 +13580,6 @@ SFX Vr 0 ತ್ತಾರೆ ು is:+npst.3p
 SFX Vr 0 ತ್ತಾಳೆ ು is:+npst.3sf
 SFX Vr 0 ತ್ತಿತ್ತು ು is:+simul|ಇರು+v+past.3sn
 SFX Vr 0 ತ್ತಿದೆ ು is:+simul|ಇರು+v+pres.3sn
-SFX Vr 0 ತ್ತಿದ್ದ ು is:+simul|ಇರು+v+past.3sm
 SFX Vr 0 ತ್ತಿದ್ದ ು is:+simul|ಇರು+v+rel.past
 SFX Vr 0 ತ್ತಿದ್ದಂತಹ ು is:+simul|ಇರು+v+like
 SFX Vr 0 ತ್ತಿದ್ದಂತೆ ು is:+simul|ಇರು+v+sim
@@ -14174,7 +13965,6 @@ SFX Vr 0 ಯದ [ಿೆ] is:+rel.neg
 SFX Vr 0 ಯದಂತೆ [ಿೆ] is:+rel.neg+sim
 SFX Vr 0 ಯದಿತ್ತು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sn
 SFX Vr 0 ಯದಿದೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vr 0 ಯದಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
 SFX Vr 0 ಯದಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+rel.past
 SFX Vr 0 ಯದಿದ್ದಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
 SFX Vr 0 ಯದಿದ್ದನು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
@@ -14201,34 +13991,6 @@ SFX Vr 0 ಯದಿರುವುದು [ಿೆ] is:+neg.cp|ಇರು+v+vn
 SFX Vr 0 ಯದಿಲ್ಲ [ಿೆ] is:+neg.cp|ಇರು+v+neg
 SFX Vr 0 ಯದಿವೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vr 0 ಯದೆ [ಿೆ] is:+neg.cp
-SFX Vr 0 ಯದೆಯಿತ್ತು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sn
-SFX Vr 0 ಯದೆಯಿದೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vr 0 ಯದೆಯಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
-SFX Vr 0 ಯದೆಯಿದ್ದ [ಿೆ] is:+neg.cp|ಇರು+v+rel.past
-SFX Vr 0 ಯದೆಯಿದ್ದಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
-SFX Vr 0 ಯದೆಯಿದ್ದನು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sm
-SFX Vr 0 ಯದೆಯಿದ್ದರು [ಿೆ] is:+neg.cp|ಇರು+v+past.3p
-SFX Vr 0 ಯದೆಯಿದ್ದರೂ [ಿೆ] is:+neg.cp|ಇರು+v+conc
-SFX Vr 0 ಯದೆಯಿದ್ದರೆ [ಿೆ] is:+neg.cp|ಇರು+v+cond
-SFX Vr 0 ಯದೆಯಿದ್ದಳು [ಿೆ] is:+neg.cp|ಇರು+v+past.3sf
-SFX Vr 0 ಯದೆಯಿದ್ದಾಗ [ಿೆ] is:+neg.cp|ಇರು+v+when
-SFX Vr 0 ಯದೆಯಿದ್ದಾನೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sm
-SFX Vr 0 ಯದೆಯಿದ್ದಾರೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3p
-SFX Vr 0 ಯದೆಯಿದ್ದಾಳೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3sf
-SFX Vr 0 ಯದೆಯಿದ್ದು [ಿೆ] is:+neg.cp|ಇರು+v+cp
-SFX Vr 0 ಯದೆಯಿದ್ದೂ [ಿೆ] is:+neg.cp|ಇರು+v+cp+also
-SFX Vr 0 ಯದೆಯಿದ್ದೇ [ಿೆ] is:+neg.cp|ಇರು+v+cp+emph
-SFX Vr 0 ಯದೆಯಿರದೆ [ಿೆ] is:+neg.cp|ಇರು+v+neg.cp
-SFX Vr 0 ಯದೆಯಿರಲು [ಿೆ] is:+neg.cp|ಇರು+v+inf
-SFX Vr 0 ಯದೆಯಿರುತ್ತದೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3sn
-SFX Vr 0 ಯದೆಯಿರುತ್ತವೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3pn
-SFX Vr 0 ಯದೆಯಿರುತ್ತಾರೆ [ಿೆ] is:+neg.cp|ಇರು+v+npst.3p
-SFX Vr 0 ಯದೆಯಿರುವ [ಿೆ] is:+neg.cp|ಇರು+v+rel.npst
-SFX Vr 0 ಯದೆಯಿರುವಂತೆ [ಿೆ] is:+neg.cp|ಇರು+v+sim
-SFX Vr 0 ಯದೆಯಿರುವಾಗ [ಿೆ] is:+neg.cp|ಇರು+v+when
-SFX Vr 0 ಯದೆಯಿರುವುದು [ಿೆ] is:+neg.cp|ಇರು+v+vn
-SFX Vr 0 ಯದೆಯಿಲ್ಲ [ಿೆ] is:+neg.cp|ಇರು+v+neg
-SFX Vr 0 ಯದೆಯಿವೆ [ಿೆ] is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vr 0 ಯಬಲ್ಲ [ಿೆ] is:+abil
 SFX Vr 0 ಯಬಲ್ಲದಲ್ಲ [ಿೆ] is:+abil|ಅಲ್ಲ+v+neg
 SFX Vr 0 ಯಬಲ್ಲದಲ್ಲದ [ಿೆ] is:+abil|ಅಲ್ಲ+v+rel.neg
@@ -14257,7 +14019,6 @@ SFX Vr 0 ಯಬಲ್ಲದಾಗುವ [ಿೆ] is:+abil|ಆಗು+v+rel.npst
 SFX Vr 0 ಯಬಲ್ಲದಾಗುವಂತೆ [ಿೆ] is:+abil|ಆಗು+v+sim
 SFX Vr 0 ಯಬಲ್ಲದಾಗುವಾಗ [ಿೆ] is:+abil|ಆಗು+v+when
 SFX Vr 0 ಯಬಲ್ಲದಾಗುವುದು [ಿೆ] is:+abil|ಆಗು+v+vn
-SFX Vr 0 ಯಬಲ್ಲದಾದ [ಿೆ] is:+abil|ಆಗು+v+past.3sm
 SFX Vr 0 ಯಬಲ್ಲದಾದ [ಿೆ] is:+abil|ಆಗು+v+rel.past
 SFX Vr 0 ಯಬಲ್ಲದಾದಂತೆ [ಿೆ] is:+abil|ಆಗು+v+sim
 SFX Vr 0 ಯಬಲ್ಲದಾದನು [ಿೆ] is:+abil|ಆಗು+v+past.3sm
@@ -14273,7 +14034,6 @@ SFX Vr 0 ಯಬಲ್ಲದಿಲ್ಲ [ಿೆ] is:+abil|ಇರು+v+neg
 SFX Vr 0 ಯಬಲ್ಲದಿವೆ [ಿೆ] is:+abil|ಇರು+v+pres.3pn
 SFX Vr 0 ಯಬಲ್ಲದು [ಿೆ] is:+abil
 SFX Vr 0 ಯಬಲ್ಲದೂ [ಿೆ] is:+abil+also
-SFX Vr 0 ಯಬಲ್ಲದೆಂದ [ಿೆ] is:+abil|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯಬಲ್ಲದೆಂದ [ಿೆ] is:+abil|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯಬಲ್ಲದೆಂದಂತೆ [ಿೆ] is:+abil|ಎನ್ನು+v+sim
 SFX Vr 0 ಯಬಲ್ಲದೆಂದನು [ಿೆ] is:+abil|ಎನ್ನು+v+past.3sm
@@ -14325,7 +14085,6 @@ SFX Vr 0 ಯಬಹುದಾಗುವ [ಿೆ] is:+perm|ಆಗು+v+rel.npst
 SFX Vr 0 ಯಬಹುದಾಗುವಂತೆ [ಿೆ] is:+perm|ಆಗು+v+sim
 SFX Vr 0 ಯಬಹುದಾಗುವಾಗ [ಿೆ] is:+perm|ಆಗು+v+when
 SFX Vr 0 ಯಬಹುದಾಗುವುದು [ಿೆ] is:+perm|ಆಗು+v+vn
-SFX Vr 0 ಯಬಹುದಾದ [ಿೆ] is:+perm|ಆಗು+v+past.3sm
 SFX Vr 0 ಯಬಹುದಾದ [ಿೆ] is:+perm|ಆಗು+v+rel.past
 SFX Vr 0 ಯಬಹುದಾದಂತೆ [ಿೆ] is:+perm|ಆಗು+v+sim
 SFX Vr 0 ಯಬಹುದಾದನು [ಿೆ] is:+perm|ಆಗು+v+past.3sm
@@ -14341,7 +14100,6 @@ SFX Vr 0 ಯಬಹುದಿಲ್ಲ [ಿೆ] is:+perm|ಇರು+v+neg
 SFX Vr 0 ಯಬಹುದಿವೆ [ಿೆ] is:+perm|ಇರು+v+pres.3pn
 SFX Vr 0 ಯಬಹುದು [ಿೆ] is:+perm
 SFX Vr 0 ಯಬಹುದೂ [ಿೆ] is:+perm+also
-SFX Vr 0 ಯಬಹುದೆಂದ [ಿೆ] is:+perm|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯಬಹುದೆಂದ [ಿೆ] is:+perm|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯಬಹುದೆಂದಂತೆ [ಿೆ] is:+perm|ಎನ್ನು+v+sim
 SFX Vr 0 ಯಬಹುದೆಂದನು [ಿೆ] is:+perm|ಎನ್ನು+v+past.3sm
@@ -14393,7 +14151,6 @@ SFX Vr 0 ಯಬಾರದಾಗುವ [ಿೆ] is:+proh|ಆಗು+v+rel.npst
 SFX Vr 0 ಯಬಾರದಾಗುವಂತೆ [ಿೆ] is:+proh|ಆಗು+v+sim
 SFX Vr 0 ಯಬಾರದಾಗುವಾಗ [ಿೆ] is:+proh|ಆಗು+v+when
 SFX Vr 0 ಯಬಾರದಾಗುವುದು [ಿೆ] is:+proh|ಆಗು+v+vn
-SFX Vr 0 ಯಬಾರದಾದ [ಿೆ] is:+proh|ಆಗು+v+past.3sm
 SFX Vr 0 ಯಬಾರದಾದ [ಿೆ] is:+proh|ಆಗು+v+rel.past
 SFX Vr 0 ಯಬಾರದಾದಂತೆ [ಿೆ] is:+proh|ಆಗು+v+sim
 SFX Vr 0 ಯಬಾರದಾದನು [ಿೆ] is:+proh|ಆಗು+v+past.3sm
@@ -14409,7 +14166,6 @@ SFX Vr 0 ಯಬಾರದಿಲ್ಲ [ಿೆ] is:+proh|ಇರು+v+neg
 SFX Vr 0 ಯಬಾರದಿವೆ [ಿೆ] is:+proh|ಇರು+v+pres.3pn
 SFX Vr 0 ಯಬಾರದು [ಿೆ] is:+proh
 SFX Vr 0 ಯಬಾರದೂ [ಿೆ] is:+proh+also
-SFX Vr 0 ಯಬಾರದೆಂದ [ಿೆ] is:+proh|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯಬಾರದೆಂದ [ಿೆ] is:+proh|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯಬಾರದೆಂದಂತೆ [ಿೆ] is:+proh|ಎನ್ನು+v+sim
 SFX Vr 0 ಯಬಾರದೆಂದನು [ಿೆ] is:+proh|ಎನ್ನು+v+past.3sm
@@ -14461,7 +14217,6 @@ SFX Vr 0 ಯಬೇಕಾಗುವ [ಿೆ] is:+deb|ಆಗು+v+rel.npst
 SFX Vr 0 ಯಬೇಕಾಗುವಂತೆ [ಿೆ] is:+deb|ಆಗು+v+sim
 SFX Vr 0 ಯಬೇಕಾಗುವಾಗ [ಿೆ] is:+deb|ಆಗು+v+when
 SFX Vr 0 ಯಬೇಕಾಗುವುದು [ಿೆ] is:+deb|ಆಗು+v+vn
-SFX Vr 0 ಯಬೇಕಾದ [ಿೆ] is:+deb|ಆಗು+v+past.3sm
 SFX Vr 0 ಯಬೇಕಾದ [ಿೆ] is:+deb|ಆಗು+v+rel.past
 SFX Vr 0 ಯಬೇಕಾದಂತೆ [ಿೆ] is:+deb|ಆಗು+v+sim
 SFX Vr 0 ಯಬೇಕಾದನು [ಿೆ] is:+deb|ಆಗು+v+past.3sm
@@ -14477,7 +14232,6 @@ SFX Vr 0 ಯಬೇಕಿಲ್ಲ [ಿೆ] is:+deb|ಇರು+v+neg
 SFX Vr 0 ಯಬೇಕಿವೆ [ಿೆ] is:+deb|ಇರು+v+pres.3pn
 SFX Vr 0 ಯಬೇಕು [ಿೆ] is:+deb
 SFX Vr 0 ಯಬೇಕೂ [ಿೆ] is:+deb+also
-SFX Vr 0 ಯಬೇಕೆಂದ [ಿೆ] is:+deb|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯಬೇಕೆಂದ [ಿೆ] is:+deb|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯಬೇಕೆಂದಂತೆ [ಿೆ] is:+deb|ಎನ್ನು+v+sim
 SFX Vr 0 ಯಬೇಕೆಂದನು [ಿೆ] is:+deb|ಎನ್ನು+v+past.3sm
@@ -14532,7 +14286,6 @@ SFX Vr 0 ಯಲಾಗಿ [ಿೆ] is:+pass|ಆಗು+v+cp
 SFX Vr 0 ಯಲಾಗಿ [ಿೆ] is:+pass|ಆಗು+v+imp.2p
 SFX Vr 0 ಯಲಾಗಿತ್ತು [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sn
 SFX Vr 0 ಯಲಾಗಿದೆ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+pres.3sn
-SFX Vr 0 ಯಲಾಗಿದ್ದ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sm
 SFX Vr 0 ಯಲಾಗಿದ್ದ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+rel.past
 SFX Vr 0 ಯಲಾಗಿದ್ದಂತಹ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+like
 SFX Vr 0 ಯಲಾಗಿದ್ದಂತೆ [ಿೆ] is:+pass|ಆಗು+v+cp|ಇರು+v+sim
@@ -15067,7 +14820,6 @@ SFX Vr 0 ಯಲಾಗುವುದು [ಿೆ] is:+pass|ಆಗು+v+vn
 SFX Vr 0 ಯಲಾಗುವುದೂ [ಿೆ] is:+pass|ಆಗು+v+vn+also
 SFX Vr 0 ಯಲಾಗುವುದೇ [ಿೆ] is:+pass|ಆಗು+v+vn+emph
 SFX Vr 0 ಯಲಾಗೋಣ [ಿೆ] is:+pass|ಆಗು+v+hort.1p
-SFX Vr 0 ಯಲಾದ [ಿೆ] is:+pass|ಆಗು+v+past.3sm
 SFX Vr 0 ಯಲಾದ [ಿೆ] is:+pass|ಆಗು+v+rel.past
 SFX Vr 0 ಯಲಾದಂತಹ [ಿೆ] is:+pass|ಆಗು+v+like
 SFX Vr 0 ಯಲಾದಂತೆ [ಿೆ] is:+pass|ಆಗು+v+sim
@@ -15258,7 +15010,6 @@ SFX Vr 0 ಯಲಿಲ್ಲ [ಿೆ] is:+past.neg
 SFX Vr 0 ಯಲು [ಿೆ] is:+inf
 SFX Vr 0 ಯಲೂ [ಿೆ] is:+inf+also
 SFX Vr 0 ಯಲೇ [ಿೆ] is:+inf+emph
-SFX Vr 0 ಯಲ್ಪಟ್ಟ [ಿೆ] is:+pass|ಪಡು+v+past.3sm
 SFX Vr 0 ಯಲ್ಪಟ್ಟ [ಿೆ] is:+pass|ಪಡು+v+rel.past
 SFX Vr 0 ಯಲ್ಪಟ್ಟಂತಹ [ಿೆ] is:+pass|ಪಡು+v+like
 SFX Vr 0 ಯಲ್ಪಟ್ಟಂತೆ [ಿೆ] is:+pass|ಪಡು+v+sim
@@ -15407,7 +15158,6 @@ SFX Vr 0 ಯಲ್ಪಟ್ಟಾಗ [ಿೆ] is:+pass|ಪಡು+v+when
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿತು [ಿೆ] is:+pass|ಪಡು+v+past.3sn
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿತ್ತು [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sn
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿದೆ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn
-SFX Vr 0 ಯಲ್ಪಟ್ಟಿದ್ದ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sm
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿದ್ದ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+rel.past
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿದ್ದಂತಹ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+like
 SFX Vr 0 ಯಲ್ಪಟ್ಟಿದ್ದಂತೆ [ಿೆ] is:+pass|ಪಡು+v+cp|ಇರು+v+sim
@@ -15835,23 +15585,14 @@ SFX Vr 0 ಯಲ್ಪಡಬಲ್ಲದೇ [ಿೆ] is:+pass|ಪಡು+v+abil+em
 SFX Vr 0 ಯಲ್ಪಡಬಹುದು [ಿೆ] is:+pass|ಪಡು+v+perm
 SFX Vr 0 ಯಲ್ಪಡಬಹುದೂ [ಿೆ] is:+pass|ಪಡು+v+perm+also
 SFX Vr 0 ಯಲ್ಪಡಬಹುದೇ [ಿೆ] is:+pass|ಪಡು+v+perm+emph
-SFX Vr 0 ಯಲ್ಪಡಬಾರದು [ಿೆ] is:+pass|ಪಡು+v+proh
-SFX Vr 0 ಯಲ್ಪಡಬಾರದೂ [ಿೆ] is:+pass|ಪಡು+v+proh+also
-SFX Vr 0 ಯಲ್ಪಡಬಾರದೇ [ಿೆ] is:+pass|ಪಡು+v+proh+emph
 SFX Vr 0 ಯಲ್ಪಡಬೇಕು [ಿೆ] is:+pass|ಪಡು+v+deb
 SFX Vr 0 ಯಲ್ಪಡಬೇಕೂ [ಿೆ] is:+pass|ಪಡು+v+deb+also
 SFX Vr 0 ಯಲ್ಪಡಬೇಕೇ [ಿೆ] is:+pass|ಪಡು+v+deb+emph
-SFX Vr 0 ಯಲ್ಪಡಬೇಡ [ಿೆ] is:+pass|ಪಡು+v+proh.2s
-SFX Vr 0 ಯಲ್ಪಡಬೇಡಿ [ಿೆ] is:+pass|ಪಡು+v+proh.2p
-SFX Vr 0 ಯಲ್ಪಡಲಿ [ಿೆ] is:+pass|ಪಡು+v+hort
 SFX Vr 0 ಯಲ್ಪಡಲಿಕ್ಕೆ [ಿೆ] is:+pass|ಪಡು+v+inf+dat
 SFX Vr 0 ಯಲ್ಪಡಲಿಲ್ಲ [ಿೆ] is:+pass|ಪಡು+v+past.neg
 SFX Vr 0 ಯಲ್ಪಡಲು [ಿೆ] is:+pass|ಪಡು+v+inf
 SFX Vr 0 ಯಲ್ಪಡಲೂ [ಿೆ] is:+pass|ಪಡು+v+inf+also
 SFX Vr 0 ಯಲ್ಪಡಲೇ [ಿೆ] is:+pass|ಪಡು+v+inf+emph
-SFX Vr 0 ಯಲ್ಪಡಿ [ಿೆ] is:+pass|ಪಡು+v+imp.2p
-SFX Vr 0 ಯಲ್ಪಡಿರಿ [ಿೆ] is:+pass|ಪಡು+v+imp.2p
-SFX Vr 0 ಯಲ್ಪಡು [ಿೆ] is:+pass|ಪಡು+v+imp.2s
 SFX Vr 0 ಯಲ್ಪಡುತ್ತ [ಿೆ] is:+pass|ಪಡು+v+simul
 SFX Vr 0 ಯಲ್ಪಡುತ್ತದೆ [ಿೆ] is:+pass|ಪಡು+v+npst.3sn
 SFX Vr 0 ಯಲ್ಪಡುತ್ತಲೇ [ಿೆ] is:+pass|ಪಡು+v+simul+emph
@@ -16005,7 +15746,6 @@ SFX Vr 0 ಯಲ್ಪಡುವುದಿಲ್ಲ [ಿೆ] is:+pass|ಪಡು+v+n
 SFX Vr 0 ಯಲ್ಪಡುವುದು [ಿೆ] is:+pass|ಪಡು+v+vn
 SFX Vr 0 ಯಲ್ಪಡುವುದೂ [ಿೆ] is:+pass|ಪಡು+v+vn+also
 SFX Vr 0 ಯಲ್ಪಡುವುದೇ [ಿೆ] is:+pass|ಪಡು+v+vn+emph
-SFX Vr 0 ಯಲ್ಪಡೋಣ [ಿೆ] is:+pass|ಪಡು+v+hort.1p
 SFX Vr 0 ಯಿರಿ [ಿೆ] is:+imp.2p
 SFX Vr 0 ಯುತ್ತ [ಿೆ] is:+simul
 SFX Vr 0 ಯುತ್ತದೆ [ಿೆ] is:+npst.3sn
@@ -16017,7 +15757,6 @@ SFX Vr 0 ಯುತ್ತಾರೆ [ಿೆ] is:+npst.3p
 SFX Vr 0 ಯುತ್ತಾಳೆ [ಿೆ] is:+npst.3sf
 SFX Vr 0 ಯುತ್ತಿತ್ತು [ಿೆ] is:+simul|ಇರು+v+past.3sn
 SFX Vr 0 ಯುತ್ತಿದೆ [ಿೆ] is:+simul|ಇರು+v+pres.3sn
-SFX Vr 0 ಯುತ್ತಿದ್ದ [ಿೆ] is:+simul|ಇರು+v+past.3sm
 SFX Vr 0 ಯುತ್ತಿದ್ದ [ಿೆ] is:+simul|ಇರು+v+rel.past
 SFX Vr 0 ಯುತ್ತಿದ್ದಂತಹ [ಿೆ] is:+simul|ಇರು+v+like
 SFX Vr 0 ಯುತ್ತಿದ್ದಂತೆ [ಿೆ] is:+simul|ಇರು+v+sim
@@ -16444,7 +16183,6 @@ SFX Vr 0 ಯುವವನಾಗುವ [ಿೆ] is:+ag.3sm|ಆಗು+v+rel.npst
 SFX Vr 0 ಯುವವನಾಗುವಂತೆ [ಿೆ] is:+ag.3sm|ಆಗು+v+sim
 SFX Vr 0 ಯುವವನಾಗುವಾಗ [ಿೆ] is:+ag.3sm|ಆಗು+v+when
 SFX Vr 0 ಯುವವನಾಗುವುದು [ಿೆ] is:+ag.3sm|ಆಗು+v+vn
-SFX Vr 0 ಯುವವನಾದ [ಿೆ] is:+ag.3sm|ಆಗು+v+past.3sm
 SFX Vr 0 ಯುವವನಾದ [ಿೆ] is:+ag.3sm|ಆಗು+v+rel.past
 SFX Vr 0 ಯುವವನಾದಂತೆ [ಿೆ] is:+ag.3sm|ಆಗು+v+sim
 SFX Vr 0 ಯುವವನಾದನು [ಿೆ] is:+ag.3sm|ಆಗು+v+past.3sm
@@ -16474,7 +16212,6 @@ SFX Vr 0 ಯುವವನಿಲ್ಲ [ಿೆ] is:+ag.3sm|ಇರು+v+neg
 SFX Vr 0 ಯುವವನಿವೆ [ಿೆ] is:+ag.3sm|ಇರು+v+pres.3pn
 SFX Vr 0 ಯುವವನು [ಿೆ] is:+ag.3sm
 SFX Vr 0 ಯುವವನೂ [ಿೆ] is:+ag.3sm+also
-SFX Vr 0 ಯುವವನೆಂದ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯುವವನೆಂದ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯುವವನೆಂದಂತೆ [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+sim
 SFX Vr 0 ಯುವವನೆಂದನು [ಿೆ] is:+ag.3sm|ಎನ್ನು+v+past.3sm
@@ -16542,7 +16279,6 @@ SFX Vr 0 ಯುವವರಾಗುವ [ಿೆ] is:+ag.3p|ಆಗು+v+rel.npst
 SFX Vr 0 ಯುವವರಾಗುವಂತೆ [ಿೆ] is:+ag.3p|ಆಗು+v+sim
 SFX Vr 0 ಯುವವರಾಗುವಾಗ [ಿೆ] is:+ag.3p|ಆಗು+v+when
 SFX Vr 0 ಯುವವರಾಗುವುದು [ಿೆ] is:+ag.3p|ಆಗು+v+vn
-SFX Vr 0 ಯುವವರಾದ [ಿೆ] is:+ag.3p|ಆಗು+v+past.3sm
 SFX Vr 0 ಯುವವರಾದ [ಿೆ] is:+ag.3p|ಆಗು+v+rel.past
 SFX Vr 0 ಯುವವರಾದಂತೆ [ಿೆ] is:+ag.3p|ಆಗು+v+sim
 SFX Vr 0 ಯುವವರಾದನು [ಿೆ] is:+ag.3p|ಆಗು+v+past.3sm
@@ -16572,7 +16308,6 @@ SFX Vr 0 ಯುವವರಿಲ್ಲ [ಿೆ] is:+ag.3p|ಇರು+v+neg
 SFX Vr 0 ಯುವವರಿವೆ [ಿೆ] is:+ag.3p|ಇರು+v+pres.3pn
 SFX Vr 0 ಯುವವರು [ಿೆ] is:+ag.3p
 SFX Vr 0 ಯುವವರೂ [ಿೆ] is:+ag.3p+also
-SFX Vr 0 ಯುವವರೆಂದ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯುವವರೆಂದ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯುವವರೆಂದಂತೆ [ಿೆ] is:+ag.3p|ಎನ್ನು+v+sim
 SFX Vr 0 ಯುವವರೆಂದನು [ಿೆ] is:+ag.3p|ಎನ್ನು+v+past.3sm
@@ -16641,7 +16376,6 @@ SFX Vr 0 ಯುವವಳಾಗುವ [ಿೆ] is:+ag.3sf|ಆಗು+v+rel.npst
 SFX Vr 0 ಯುವವಳಾಗುವಂತೆ [ಿೆ] is:+ag.3sf|ಆಗು+v+sim
 SFX Vr 0 ಯುವವಳಾಗುವಾಗ [ಿೆ] is:+ag.3sf|ಆಗು+v+when
 SFX Vr 0 ಯುವವಳಾಗುವುದು [ಿೆ] is:+ag.3sf|ಆಗು+v+vn
-SFX Vr 0 ಯುವವಳಾದ [ಿೆ] is:+ag.3sf|ಆಗು+v+past.3sm
 SFX Vr 0 ಯುವವಳಾದ [ಿೆ] is:+ag.3sf|ಆಗು+v+rel.past
 SFX Vr 0 ಯುವವಳಾದಂತೆ [ಿೆ] is:+ag.3sf|ಆಗು+v+sim
 SFX Vr 0 ಯುವವಳಾದನು [ಿೆ] is:+ag.3sf|ಆಗು+v+past.3sm
@@ -16671,7 +16405,6 @@ SFX Vr 0 ಯುವವಳಿಲ್ಲ [ಿೆ] is:+ag.3sf|ಇರು+v+neg
 SFX Vr 0 ಯುವವಳಿವೆ [ಿೆ] is:+ag.3sf|ಇರು+v+pres.3pn
 SFX Vr 0 ಯುವವಳು [ಿೆ] is:+ag.3sf
 SFX Vr 0 ಯುವವಳೂ [ಿೆ] is:+ag.3sf+also
-SFX Vr 0 ಯುವವಳೆಂದ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯುವವಳೆಂದ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯುವವಳೆಂದಂತೆ [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+sim
 SFX Vr 0 ಯುವವಳೆಂದನು [ಿೆ] is:+ag.3sf|ಎನ್ನು+v+past.3sm
@@ -16757,7 +16490,6 @@ SFX Vr 0 ಯುವುದಾಗುವ [ಿೆ] is:+vn|ಆಗು+v+rel.npst
 SFX Vr 0 ಯುವುದಾಗುವಂತೆ [ಿೆ] is:+vn|ಆಗು+v+sim
 SFX Vr 0 ಯುವುದಾಗುವಾಗ [ಿೆ] is:+vn|ಆಗು+v+when
 SFX Vr 0 ಯುವುದಾಗುವುದು [ಿೆ] is:+vn|ಆಗು+v+vn
-SFX Vr 0 ಯುವುದಾದ [ಿೆ] is:+vn|ಆಗು+v+past.3sm
 SFX Vr 0 ಯುವುದಾದ [ಿೆ] is:+vn|ಆಗು+v+rel.past
 SFX Vr 0 ಯುವುದಾದಂತೆ [ಿೆ] is:+vn|ಆಗು+v+sim
 SFX Vr 0 ಯುವುದಾದನು [ಿೆ] is:+vn|ಆಗು+v+past.3sm
@@ -16774,7 +16506,6 @@ SFX Vr 0 ಯುವುದಿಲ್ಲ [ಿೆ] is:+vn|ಇರು+v+neg
 SFX Vr 0 ಯುವುದಿವೆ [ಿೆ] is:+vn|ಇರು+v+pres.3pn
 SFX Vr 0 ಯುವುದು [ಿೆ] is:+vn
 SFX Vr 0 ಯುವುದೂ [ಿೆ] is:+vn+also
-SFX Vr 0 ಯುವುದೆಂದ [ಿೆ] is:+vn|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ಯುವುದೆಂದ [ಿೆ] is:+vn|ಎನ್ನು+v+rel.past
 SFX Vr 0 ಯುವುದೆಂದಂತೆ [ಿೆ] is:+vn|ಎನ್ನು+v+sim
 SFX Vr 0 ಯುವುದೆಂದನು [ಿೆ] is:+vn|ಎನ್ನು+v+past.3sm
@@ -16845,7 +16576,6 @@ SFX Vr 0 ವವನಾಗುವ ು is:+ag.3sm|ಆಗು+v+rel.npst
 SFX Vr 0 ವವನಾಗುವಂತೆ ು is:+ag.3sm|ಆಗು+v+sim
 SFX Vr 0 ವವನಾಗುವಾಗ ು is:+ag.3sm|ಆಗು+v+when
 SFX Vr 0 ವವನಾಗುವುದು ು is:+ag.3sm|ಆಗು+v+vn
-SFX Vr 0 ವವನಾದ ು is:+ag.3sm|ಆಗು+v+past.3sm
 SFX Vr 0 ವವನಾದ ು is:+ag.3sm|ಆಗು+v+rel.past
 SFX Vr 0 ವವನಾದಂತೆ ು is:+ag.3sm|ಆಗು+v+sim
 SFX Vr 0 ವವನಾದನು ು is:+ag.3sm|ಆಗು+v+past.3sm
@@ -16875,7 +16605,6 @@ SFX Vr 0 ವವನಿಲ್ಲ ು is:+ag.3sm|ಇರು+v+neg
 SFX Vr 0 ವವನಿವೆ ು is:+ag.3sm|ಇರು+v+pres.3pn
 SFX Vr 0 ವವನು ು is:+ag.3sm
 SFX Vr 0 ವವನೂ ು is:+ag.3sm+also
-SFX Vr 0 ವವನೆಂದ ು is:+ag.3sm|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ವವನೆಂದ ು is:+ag.3sm|ಎನ್ನು+v+rel.past
 SFX Vr 0 ವವನೆಂದಂತೆ ು is:+ag.3sm|ಎನ್ನು+v+sim
 SFX Vr 0 ವವನೆಂದನು ು is:+ag.3sm|ಎನ್ನು+v+past.3sm
@@ -16943,7 +16672,6 @@ SFX Vr 0 ವವರಾಗುವ ು is:+ag.3p|ಆಗು+v+rel.npst
 SFX Vr 0 ವವರಾಗುವಂತೆ ು is:+ag.3p|ಆಗು+v+sim
 SFX Vr 0 ವವರಾಗುವಾಗ ು is:+ag.3p|ಆಗು+v+when
 SFX Vr 0 ವವರಾಗುವುದು ು is:+ag.3p|ಆಗು+v+vn
-SFX Vr 0 ವವರಾದ ು is:+ag.3p|ಆಗು+v+past.3sm
 SFX Vr 0 ವವರಾದ ು is:+ag.3p|ಆಗು+v+rel.past
 SFX Vr 0 ವವರಾದಂತೆ ು is:+ag.3p|ಆಗು+v+sim
 SFX Vr 0 ವವರಾದನು ು is:+ag.3p|ಆಗು+v+past.3sm
@@ -16973,7 +16701,6 @@ SFX Vr 0 ವವರಿಲ್ಲ ು is:+ag.3p|ಇರು+v+neg
 SFX Vr 0 ವವರಿವೆ ು is:+ag.3p|ಇರು+v+pres.3pn
 SFX Vr 0 ವವರು ು is:+ag.3p
 SFX Vr 0 ವವರೂ ು is:+ag.3p+also
-SFX Vr 0 ವವರೆಂದ ು is:+ag.3p|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ವವರೆಂದ ು is:+ag.3p|ಎನ್ನು+v+rel.past
 SFX Vr 0 ವವರೆಂದಂತೆ ು is:+ag.3p|ಎನ್ನು+v+sim
 SFX Vr 0 ವವರೆಂದನು ು is:+ag.3p|ಎನ್ನು+v+past.3sm
@@ -17042,7 +16769,6 @@ SFX Vr 0 ವವಳಾಗುವ ು is:+ag.3sf|ಆಗು+v+rel.npst
 SFX Vr 0 ವವಳಾಗುವಂತೆ ು is:+ag.3sf|ಆಗು+v+sim
 SFX Vr 0 ವವಳಾಗುವಾಗ ು is:+ag.3sf|ಆಗು+v+when
 SFX Vr 0 ವವಳಾಗುವುದು ು is:+ag.3sf|ಆಗು+v+vn
-SFX Vr 0 ವವಳಾದ ು is:+ag.3sf|ಆಗು+v+past.3sm
 SFX Vr 0 ವವಳಾದ ು is:+ag.3sf|ಆಗು+v+rel.past
 SFX Vr 0 ವವಳಾದಂತೆ ು is:+ag.3sf|ಆಗು+v+sim
 SFX Vr 0 ವವಳಾದನು ು is:+ag.3sf|ಆಗು+v+past.3sm
@@ -17072,7 +16798,6 @@ SFX Vr 0 ವವಳಿಲ್ಲ ು is:+ag.3sf|ಇರು+v+neg
 SFX Vr 0 ವವಳಿವೆ ು is:+ag.3sf|ಇರು+v+pres.3pn
 SFX Vr 0 ವವಳು ು is:+ag.3sf
 SFX Vr 0 ವವಳೂ ು is:+ag.3sf+also
-SFX Vr 0 ವವಳೆಂದ ು is:+ag.3sf|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ವವಳೆಂದ ು is:+ag.3sf|ಎನ್ನು+v+rel.past
 SFX Vr 0 ವವಳೆಂದಂತೆ ು is:+ag.3sf|ಎನ್ನು+v+sim
 SFX Vr 0 ವವಳೆಂದನು ು is:+ag.3sf|ಎನ್ನು+v+past.3sm
@@ -17158,7 +16883,6 @@ SFX Vr 0 ವುದಾಗುವ ು is:+vn|ಆಗು+v+rel.npst
 SFX Vr 0 ವುದಾಗುವಂತೆ ು is:+vn|ಆಗು+v+sim
 SFX Vr 0 ವುದಾಗುವಾಗ ು is:+vn|ಆಗು+v+when
 SFX Vr 0 ವುದಾಗುವುದು ು is:+vn|ಆಗು+v+vn
-SFX Vr 0 ವುದಾದ ು is:+vn|ಆಗು+v+past.3sm
 SFX Vr 0 ವುದಾದ ು is:+vn|ಆಗು+v+rel.past
 SFX Vr 0 ವುದಾದಂತೆ ು is:+vn|ಆಗು+v+sim
 SFX Vr 0 ವುದಾದನು ು is:+vn|ಆಗು+v+past.3sm
@@ -17175,7 +16899,6 @@ SFX Vr 0 ವುದಿಲ್ಲ ು is:+vn|ಇರು+v+neg
 SFX Vr 0 ವುದಿವೆ ು is:+vn|ಇರು+v+pres.3pn
 SFX Vr 0 ವುದು ು is:+vn
 SFX Vr 0 ವುದೂ ು is:+vn+also
-SFX Vr 0 ವುದೆಂದ ು is:+vn|ಎನ್ನು+v+past.3sm
 SFX Vr 0 ವುದೆಂದ ು is:+vn|ಎನ್ನು+v+rel.past
 SFX Vr 0 ವುದೆಂದಂತೆ ು is:+vn|ಎನ್ನು+v+sim
 SFX Vr 0 ವುದೆಂದನು ು is:+vn|ಎನ್ನು+v+past.3sm
@@ -17204,7 +16927,6 @@ SFX Vr ು ದ ು is:+rel.neg
 SFX Vr ು ದಂತೆ ು is:+rel.neg+sim
 SFX Vr ು ದಿತ್ತು ು is:+neg.cp|ಇರು+v+past.3sn
 SFX Vr ು ದಿದೆ ು is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vr ು ದಿದ್ದ ು is:+neg.cp|ಇರು+v+past.3sm
 SFX Vr ು ದಿದ್ದ ು is:+neg.cp|ಇರು+v+rel.past
 SFX Vr ು ದಿದ್ದಂತೆ ು is:+neg.cp|ಇರು+v+sim
 SFX Vr ು ದಿದ್ದನು ು is:+neg.cp|ಇರು+v+past.3sm
@@ -17231,34 +16953,6 @@ SFX Vr ು ದಿರುವುದು ು is:+neg.cp|ಇರು+v+vn
 SFX Vr ು ದಿಲ್ಲ ು is:+neg.cp|ಇರು+v+neg
 SFX Vr ು ದಿವೆ ು is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vr ು ದೆ ು is:+neg.cp
-SFX Vr ು ದೆಯಿತ್ತು ು is:+neg.cp|ಇರು+v+past.3sn
-SFX Vr ು ದೆಯಿದೆ ು is:+neg.cp|ಇರು+v+pres.3sn
-SFX Vr ು ದೆಯಿದ್ದ ು is:+neg.cp|ಇರು+v+past.3sm
-SFX Vr ು ದೆಯಿದ್ದ ು is:+neg.cp|ಇರು+v+rel.past
-SFX Vr ು ದೆಯಿದ್ದಂತೆ ು is:+neg.cp|ಇರು+v+sim
-SFX Vr ು ದೆಯಿದ್ದನು ು is:+neg.cp|ಇರು+v+past.3sm
-SFX Vr ು ದೆಯಿದ್ದರು ು is:+neg.cp|ಇರು+v+past.3p
-SFX Vr ು ದೆಯಿದ್ದರೂ ು is:+neg.cp|ಇರು+v+conc
-SFX Vr ು ದೆಯಿದ್ದರೆ ು is:+neg.cp|ಇರು+v+cond
-SFX Vr ು ದೆಯಿದ್ದಳು ು is:+neg.cp|ಇರು+v+past.3sf
-SFX Vr ು ದೆಯಿದ್ದಾಗ ು is:+neg.cp|ಇರು+v+when
-SFX Vr ು ದೆಯಿದ್ದಾನೆ ು is:+neg.cp|ಇರು+v+pres.3sm
-SFX Vr ು ದೆಯಿದ್ದಾರೆ ು is:+neg.cp|ಇರು+v+pres.3p
-SFX Vr ು ದೆಯಿದ್ದಾಳೆ ು is:+neg.cp|ಇರು+v+pres.3sf
-SFX Vr ು ದೆಯಿದ್ದು ು is:+neg.cp|ಇರು+v+cp
-SFX Vr ು ದೆಯಿದ್ದೂ ು is:+neg.cp|ಇರು+v+cp+also
-SFX Vr ು ದೆಯಿದ್ದೇ ು is:+neg.cp|ಇರು+v+cp+emph
-SFX Vr ು ದೆಯಿರದೆ ು is:+neg.cp|ಇರು+v+neg.cp
-SFX Vr ು ದೆಯಿರಲು ು is:+neg.cp|ಇರು+v+inf
-SFX Vr ು ದೆಯಿರುತ್ತದೆ ು is:+neg.cp|ಇರು+v+npst.3sn
-SFX Vr ು ದೆಯಿರುತ್ತವೆ ು is:+neg.cp|ಇರು+v+npst.3pn
-SFX Vr ು ದೆಯಿರುತ್ತಾರೆ ು is:+neg.cp|ಇರು+v+npst.3p
-SFX Vr ು ದೆಯಿರುವ ು is:+neg.cp|ಇರು+v+rel.npst
-SFX Vr ು ದೆಯಿರುವಂತೆ ು is:+neg.cp|ಇರು+v+sim
-SFX Vr ು ದೆಯಿರುವಾಗ ು is:+neg.cp|ಇರು+v+when
-SFX Vr ು ದೆಯಿರುವುದು ು is:+neg.cp|ಇರು+v+vn
-SFX Vr ು ದೆಯಿಲ್ಲ ು is:+neg.cp|ಇರು+v+neg
-SFX Vr ು ದೆಯಿವೆ ು is:+neg.cp|ಇರು+v+pres.3pn
 SFX Vr ು ಬಲ್ಲ ು is:+abil
 SFX Vr ು ಬಲ್ಲದಲ್ಲ ು is:+abil|ಅಲ್ಲ+v+neg
 SFX Vr ು ಬಲ್ಲದಲ್ಲದ ು is:+abil|ಅಲ್ಲ+v+rel.neg
@@ -17287,7 +16981,6 @@ SFX Vr ು ಬಲ್ಲದಾಗುವ ು is:+abil|ಆಗು+v+rel.npst
 SFX Vr ು ಬಲ್ಲದಾಗುವಂತೆ ು is:+abil|ಆಗು+v+sim
 SFX Vr ು ಬಲ್ಲದಾಗುವಾಗ ು is:+abil|ಆಗು+v+when
 SFX Vr ು ಬಲ್ಲದಾಗುವುದು ು is:+abil|ಆಗು+v+vn
-SFX Vr ು ಬಲ್ಲದಾದ ು is:+abil|ಆಗು+v+past.3sm
 SFX Vr ು ಬಲ್ಲದಾದ ು is:+abil|ಆಗು+v+rel.past
 SFX Vr ು ಬಲ್ಲದಾದಂತೆ ು is:+abil|ಆಗು+v+sim
 SFX Vr ು ಬಲ್ಲದಾದನು ು is:+abil|ಆಗು+v+past.3sm
@@ -17303,7 +16996,6 @@ SFX Vr ು ಬಲ್ಲದಿಲ್ಲ ು is:+abil|ಇರು+v+neg
 SFX Vr ು ಬಲ್ಲದಿವೆ ು is:+abil|ಇರು+v+pres.3pn
 SFX Vr ು ಬಲ್ಲದು ು is:+abil
 SFX Vr ು ಬಲ್ಲದೂ ು is:+abil+also
-SFX Vr ು ಬಲ್ಲದೆಂದ ು is:+abil|ಎನ್ನು+v+past.3sm
 SFX Vr ು ಬಲ್ಲದೆಂದ ು is:+abil|ಎನ್ನು+v+rel.past
 SFX Vr ು ಬಲ್ಲದೆಂದಂತೆ ು is:+abil|ಎನ್ನು+v+sim
 SFX Vr ು ಬಲ್ಲದೆಂದನು ು is:+abil|ಎನ್ನು+v+past.3sm
@@ -17355,7 +17047,6 @@ SFX Vr ು ಬಹುದಾಗುವ ು is:+perm|ಆಗು+v+rel.npst
 SFX Vr ು ಬಹುದಾಗುವಂತೆ ು is:+perm|ಆಗು+v+sim
 SFX Vr ು ಬಹುದಾಗುವಾಗ ು is:+perm|ಆಗು+v+when
 SFX Vr ು ಬಹುದಾಗುವುದು ು is:+perm|ಆಗು+v+vn
-SFX Vr ು ಬಹುದಾದ ು is:+perm|ಆಗು+v+past.3sm
 SFX Vr ು ಬಹುದಾದ ು is:+perm|ಆಗು+v+rel.past
 SFX Vr ು ಬಹುದಾದಂತೆ ು is:+perm|ಆಗು+v+sim
 SFX Vr ು ಬಹುದಾದನು ು is:+perm|ಆಗು+v+past.3sm
@@ -17371,7 +17062,6 @@ SFX Vr ು ಬಹುದಿಲ್ಲ ು is:+perm|ಇರು+v+neg
 SFX Vr ು ಬಹುದಿವೆ ು is:+perm|ಇರು+v+pres.3pn
 SFX Vr ು ಬಹುದು ು is:+perm
 SFX Vr ು ಬಹುದೂ ು is:+perm+also
-SFX Vr ು ಬಹುದೆಂದ ು is:+perm|ಎನ್ನು+v+past.3sm
 SFX Vr ು ಬಹುದೆಂದ ು is:+perm|ಎನ್ನು+v+rel.past
 SFX Vr ು ಬಹುದೆಂದಂತೆ ು is:+perm|ಎನ್ನು+v+sim
 SFX Vr ು ಬಹುದೆಂದನು ು is:+perm|ಎನ್ನು+v+past.3sm
@@ -17423,7 +17113,6 @@ SFX Vr ು ಬಾರದಾಗುವ ು is:+proh|ಆಗು+v+rel.npst
 SFX Vr ು ಬಾರದಾಗುವಂತೆ ು is:+proh|ಆಗು+v+sim
 SFX Vr ು ಬಾರದಾಗುವಾಗ ು is:+proh|ಆಗು+v+when
 SFX Vr ು ಬಾರದಾಗುವುದು ು is:+proh|ಆಗು+v+vn
-SFX Vr ು ಬಾರದಾದ ು is:+proh|ಆಗು+v+past.3sm
 SFX Vr ು ಬಾರದಾದ ು is:+proh|ಆಗು+v+rel.past
 SFX Vr ು ಬಾರದಾದಂತೆ ು is:+proh|ಆಗು+v+sim
 SFX Vr ು ಬಾರದಾದನು ು is:+proh|ಆಗು+v+past.3sm
@@ -17439,7 +17128,6 @@ SFX Vr ು ಬಾರದಿಲ್ಲ ು is:+proh|ಇರು+v+neg
 SFX Vr ು ಬಾರದಿವೆ ು is:+proh|ಇರು+v+pres.3pn
 SFX Vr ು ಬಾರದು ು is:+proh
 SFX Vr ು ಬಾರದೂ ು is:+proh+also
-SFX Vr ು ಬಾರದೆಂದ ು is:+proh|ಎನ್ನು+v+past.3sm
 SFX Vr ು ಬಾರದೆಂದ ು is:+proh|ಎನ್ನು+v+rel.past
 SFX Vr ು ಬಾರದೆಂದಂತೆ ು is:+proh|ಎನ್ನು+v+sim
 SFX Vr ು ಬಾರದೆಂದನು ು is:+proh|ಎನ್ನು+v+past.3sm
@@ -17491,7 +17179,6 @@ SFX Vr ು ಬೇಕಾಗುವ ು is:+deb|ಆಗು+v+rel.npst
 SFX Vr ು ಬೇಕಾಗುವಂತೆ ು is:+deb|ಆಗು+v+sim
 SFX Vr ು ಬೇಕಾಗುವಾಗ ು is:+deb|ಆಗು+v+when
 SFX Vr ು ಬೇಕಾಗುವುದು ು is:+deb|ಆಗು+v+vn
-SFX Vr ು ಬೇಕಾದ ು is:+deb|ಆಗು+v+past.3sm
 SFX Vr ು ಬೇಕಾದ ು is:+deb|ಆಗು+v+rel.past
 SFX Vr ು ಬೇಕಾದಂತೆ ು is:+deb|ಆಗು+v+sim
 SFX Vr ು ಬೇಕಾದನು ು is:+deb|ಆಗು+v+past.3sm
@@ -17507,7 +17194,6 @@ SFX Vr ು ಬೇಕಿಲ್ಲ ು is:+deb|ಇರು+v+neg
 SFX Vr ು ಬೇಕಿವೆ ು is:+deb|ಇರು+v+pres.3pn
 SFX Vr ು ಬೇಕು ು is:+deb
 SFX Vr ು ಬೇಕೂ ು is:+deb+also
-SFX Vr ು ಬೇಕೆಂದ ು is:+deb|ಎನ್ನು+v+past.3sm
 SFX Vr ು ಬೇಕೆಂದ ು is:+deb|ಎನ್ನು+v+rel.past
 SFX Vr ು ಬೇಕೆಂದಂತೆ ು is:+deb|ಎನ್ನು+v+sim
 SFX Vr ು ಬೇಕೆಂದನು ು is:+deb|ಎನ್ನು+v+past.3sm
@@ -17562,7 +17248,6 @@ SFX Vr ು ಲಾಗಿ ು is:+pass|ಆಗು+v+cp
 SFX Vr ು ಲಾಗಿ ು is:+pass|ಆಗು+v+imp.2p
 SFX Vr ು ಲಾಗಿತ್ತು ು is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sn
 SFX Vr ು ಲಾಗಿದೆ ು is:+pass|ಆಗು+v+cp|ಇರು+v+pres.3sn
-SFX Vr ು ಲಾಗಿದ್ದ ು is:+pass|ಆಗು+v+cp|ಇರು+v+past.3sm
 SFX Vr ು ಲಾಗಿದ್ದ ು is:+pass|ಆಗು+v+cp|ಇರು+v+rel.past
 SFX Vr ು ಲಾಗಿದ್ದಂತಹ ು is:+pass|ಆಗು+v+cp|ಇರು+v+like
 SFX Vr ು ಲಾಗಿದ್ದಂತೆ ು is:+pass|ಆಗು+v+cp|ಇರು+v+sim
@@ -18097,7 +17782,6 @@ SFX Vr ು ಲಾಗುವುದು ು is:+pass|ಆಗು+v+vn
 SFX Vr ು ಲಾಗುವುದೂ ು is:+pass|ಆಗು+v+vn+also
 SFX Vr ು ಲಾಗುವುದೇ ು is:+pass|ಆಗು+v+vn+emph
 SFX Vr ು ಲಾಗೋಣ ು is:+pass|ಆಗು+v+hort.1p
-SFX Vr ು ಲಾದ ು is:+pass|ಆಗು+v+past.3sm
 SFX Vr ು ಲಾದ ು is:+pass|ಆಗು+v+rel.past
 SFX Vr ು ಲಾದಂತಹ ು is:+pass|ಆಗು+v+like
 SFX Vr ು ಲಾದಂತೆ ು is:+pass|ಆಗು+v+sim
@@ -18288,7 +17972,6 @@ SFX Vr ು ಲಿಲ್ಲ ು is:+past.neg
 SFX Vr ು ಲು ು is:+inf
 SFX Vr ು ಲೂ ು is:+inf+also
 SFX Vr ು ಲೇ ು is:+inf+emph
-SFX Vr ು ಲ್ಪಟ್ಟ ು is:+pass|ಪಡು+v+past.3sm
 SFX Vr ು ಲ್ಪಟ್ಟ ು is:+pass|ಪಡು+v+rel.past
 SFX Vr ು ಲ್ಪಟ್ಟಂತಹ ು is:+pass|ಪಡು+v+like
 SFX Vr ು ಲ್ಪಟ್ಟಂತೆ ು is:+pass|ಪಡು+v+sim
@@ -18437,7 +18120,6 @@ SFX Vr ು ಲ್ಪಟ್ಟಾಗ ು is:+pass|ಪಡು+v+when
 SFX Vr ು ಲ್ಪಟ್ಟಿತು ು is:+pass|ಪಡು+v+past.3sn
 SFX Vr ು ಲ್ಪಟ್ಟಿತ್ತು ು is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sn
 SFX Vr ು ಲ್ಪಟ್ಟಿದೆ ು is:+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn
-SFX Vr ು ಲ್ಪಟ್ಟಿದ್ದ ು is:+pass|ಪಡು+v+cp|ಇರು+v+past.3sm
 SFX Vr ು ಲ್ಪಟ್ಟಿದ್ದ ು is:+pass|ಪಡು+v+cp|ಇರು+v+rel.past
 SFX Vr ು ಲ್ಪಟ್ಟಿದ್ದಂತಹ ು is:+pass|ಪಡು+v+cp|ಇರು+v+like
 SFX Vr ು ಲ್ಪಟ್ಟಿದ್ದಂತೆ ು is:+pass|ಪಡು+v+cp|ಇರು+v+sim
@@ -18865,23 +18547,14 @@ SFX Vr ು ಲ್ಪಡಬಲ್ಲದೇ ು is:+pass|ಪಡು+v+abil+emph
 SFX Vr ು ಲ್ಪಡಬಹುದು ು is:+pass|ಪಡು+v+perm
 SFX Vr ು ಲ್ಪಡಬಹುದೂ ು is:+pass|ಪಡು+v+perm+also
 SFX Vr ು ಲ್ಪಡಬಹುದೇ ು is:+pass|ಪಡು+v+perm+emph
-SFX Vr ು ಲ್ಪಡಬಾರದು ು is:+pass|ಪಡು+v+proh
-SFX Vr ು ಲ್ಪಡಬಾರದೂ ು is:+pass|ಪಡು+v+proh+also
-SFX Vr ು ಲ್ಪಡಬಾರದೇ ು is:+pass|ಪಡು+v+proh+emph
 SFX Vr ು ಲ್ಪಡಬೇಕು ು is:+pass|ಪಡು+v+deb
 SFX Vr ು ಲ್ಪಡಬೇಕೂ ು is:+pass|ಪಡು+v+deb+also
 SFX Vr ು ಲ್ಪಡಬೇಕೇ ು is:+pass|ಪಡು+v+deb+emph
-SFX Vr ು ಲ್ಪಡಬೇಡ ು is:+pass|ಪಡು+v+proh.2s
-SFX Vr ು ಲ್ಪಡಬೇಡಿ ು is:+pass|ಪಡು+v+proh.2p
-SFX Vr ು ಲ್ಪಡಲಿ ು is:+pass|ಪಡು+v+hort
 SFX Vr ು ಲ್ಪಡಲಿಕ್ಕೆ ು is:+pass|ಪಡು+v+inf+dat
 SFX Vr ು ಲ್ಪಡಲಿಲ್ಲ ು is:+pass|ಪಡು+v+past.neg
 SFX Vr ು ಲ್ಪಡಲು ು is:+pass|ಪಡು+v+inf
 SFX Vr ು ಲ್ಪಡಲೂ ು is:+pass|ಪಡು+v+inf+also
 SFX Vr ು ಲ್ಪಡಲೇ ು is:+pass|ಪಡು+v+inf+emph
-SFX Vr ು ಲ್ಪಡಿ ು is:+pass|ಪಡು+v+imp.2p
-SFX Vr ು ಲ್ಪಡಿರಿ ು is:+pass|ಪಡು+v+imp.2p
-SFX Vr ು ಲ್ಪಡು ು is:+pass|ಪಡು+v+imp.2s
 SFX Vr ು ಲ್ಪಡುತ್ತ ು is:+pass|ಪಡು+v+simul
 SFX Vr ು ಲ್ಪಡುತ್ತದೆ ು is:+pass|ಪಡು+v+npst.3sn
 SFX Vr ು ಲ್ಪಡುತ್ತಲೇ ು is:+pass|ಪಡು+v+simul+emph
@@ -19035,13 +18708,12 @@ SFX Vr ು ಲ್ಪಡುವುದಿಲ್ಲ ು is:+pass|ಪಡು+v+npst.ne
 SFX Vr ು ಲ್ಪಡುವುದು ು is:+pass|ಪಡು+v+vn
 SFX Vr ು ಲ್ಪಡುವುದೂ ು is:+pass|ಪಡು+v+vn+also
 SFX Vr ು ಲ್ಪಡುವುದೇ ು is:+pass|ಪಡು+v+vn+emph
-SFX Vr ು ಲ್ಪಡೋಣ ು is:+pass|ಪಡು+v+hort.1p
 SFX Vr ು ಿ ು is:+imp.2p
 SFX Vr ು ಿರಿ ು is:+imp.2p
 SFX Vr ು ೋಣ ು is:+hort.1p
 
 # VerbPast
-SFX Vp Y 507
+SFX Vp Y 497
 SFX Vp 0 ಂತಹ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+like
 SFX Vp 0 ಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+sim
 SFX Vp 0 ದ್ದಕ್ಕಾಗಿ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past+dat+purp
@@ -19101,7 +18773,6 @@ SFX Vp 0 ದ್ದಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತ
 SFX Vp 0 ದ್ದಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+sim
 SFX Vp 0 ದ್ದಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+when
 SFX Vp 0 ದ್ದಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+vn
-SFX Vp 0 ದ್ದಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+past.3sm
 SFX Vp 0 ದ್ದಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+rel.past
 SFX Vp 0 ದ್ದಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+sim
 SFX Vp 0 ದ್ದಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+past.3sm
@@ -19117,7 +18788,6 @@ SFX Vp 0 ದ್ದಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತ
 SFX Vp 0 ದ್ದಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಇರು+v+pres.3pn
 SFX Vp 0 ದ್ದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past
 SFX Vp 0 ದ್ದೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past+also
-SFX Vp 0 ದ್ದೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vp 0 ದ್ದೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vp 0 ದ್ದೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+sim
 SFX Vp 0 ದ್ದೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -19190,7 +18860,6 @@ SFX Vp 0 ವನಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವನಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vp 0 ವನಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+when
 SFX Vp 0 ವನಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+vn
-SFX Vp 0 ವನಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+past.3sm
 SFX Vp 0 ವನಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+rel.past
 SFX Vp 0 ವನಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+sim
 SFX Vp 0 ವನಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಆಗು+v+past.3sm
@@ -19220,7 +18889,6 @@ SFX Vp 0 ವನಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವನಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಇರು+v+pres.3pn
 SFX Vp 0 ವನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm
 SFX Vp 0 ವನೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm+also
-SFX Vp 0 ವನೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
 SFX Vp 0 ವನೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಎನ್ನು+v+rel.past
 SFX Vp 0 ವನೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಎನ್ನು+v+sim
 SFX Vp 0 ವನೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sm|ಎನ್ನು+v+past.3sm
@@ -19288,7 +18956,6 @@ SFX Vp 0 ವರಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವರಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+sim
 SFX Vp 0 ವರಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+when
 SFX Vp 0 ವರಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+vn
-SFX Vp 0 ವರಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+past.3sm
 SFX Vp 0 ವರಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+rel.past
 SFX Vp 0 ವರಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+sim
 SFX Vp 0 ವರಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಆಗು+v+past.3sm
@@ -19318,7 +18985,6 @@ SFX Vp 0 ವರಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವರಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಇರು+v+pres.3pn
 SFX Vp 0 ವರು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p
 SFX Vp 0 ವರೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p+also
-SFX Vp 0 ವರೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಎನ್ನು+v+past.3sm
 SFX Vp 0 ವರೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಎನ್ನು+v+rel.past
 SFX Vp 0 ವರೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಎನ್ನು+v+sim
 SFX Vp 0 ವರೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3p|ಎನ್ನು+v+past.3sm
@@ -19386,7 +19052,6 @@ SFX Vp 0 ವಳಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವಳಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vp 0 ವಳಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+when
 SFX Vp 0 ವಳಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+vn
-SFX Vp 0 ವಳಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+past.3sm
 SFX Vp 0 ವಳಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+rel.past
 SFX Vp 0 ವಳಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+sim
 SFX Vp 0 ವಳಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಆಗು+v+past.3sm
@@ -19416,7 +19081,6 @@ SFX Vp 0 ವಳಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ವಳಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಇರು+v+pres.3pn
 SFX Vp 0 ವಳು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf
 SFX Vp 0 ವಳೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf+also
-SFX Vp 0 ವಳೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
 SFX Vp 0 ವಳೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಎನ್ನು+v+rel.past
 SFX Vp 0 ವಳೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಎನ್ನು+v+sim
 SFX Vp 0 ವಳೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+ag.past.3sf|ಎನ್ನು+v+past.3sm
@@ -19504,7 +19168,6 @@ SFX Vp 0 ುದಾಗುವ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ುದಾಗುವಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+sim
 SFX Vp 0 ುದಾಗುವಾಗ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+when
 SFX Vp 0 ುದಾಗುವುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+vn
-SFX Vp 0 ುದಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+past.3sm
 SFX Vp 0 ುದಾದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+rel.past
 SFX Vp 0 ುದಾದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+sim
 SFX Vp 0 ುದಾದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಆಗು+v+past.3sm
@@ -19520,7 +19183,6 @@ SFX Vp 0 ುದಿಲ್ಲ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥ
 SFX Vp 0 ುದಿವೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಇರು+v+pres.3pn
 SFX Vp 0 ುದು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past
 SFX Vp 0 ುದೂ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past+also
-SFX Vp 0 ುದೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+past.3sm
 SFX Vp 0 ುದೆಂದ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+rel.past
 SFX Vp 0 ುದೆಂದಂತೆ [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+sim
 SFX Vp 0 ುದೆಂದನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+vn.past|ಎನ್ನು+v+past.3sm
@@ -19551,8 +19213,7 @@ SFX Vp 0 ೆನು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನ
 SFX Vp 0 ೆವು [ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ] is:+past.1p
 
 # VerbParticiple
-SFX Vc Y 1879
-SFX Vc 0 ಕೊಂಡ [ಿು] is:+cp|ಕೊಳ್ಳು+v+past.3sm
+SFX Vc Y 1874
 SFX Vc 0 ಕೊಂಡ [ಿು] is:+cp|ಕೊಳ್ಳು+v+rel.past
 SFX Vc 0 ಕೊಂಡಂತಹ [ಿು] is:+cp|ಕೊಳ್ಳು+v+like
 SFX Vc 0 ಕೊಂಡಂತೆ [ಿು] is:+cp|ಕೊಳ್ಳು+v+sim
@@ -19701,7 +19362,6 @@ SFX Vc 0 ಕೊಂಡಾಗ [ಿು] is:+cp|ಕೊಳ್ಳು+v+when
 SFX Vc 0 ಕೊಂಡಿತು [ಿು] is:+cp|ಕೊಳ್ಳು+v+past.3sn
 SFX Vc 0 ಕೊಂಡಿತ್ತು [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sn
 SFX Vc 0 ಕೊಂಡಿದೆ [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sn
-SFX Vc 0 ಕೊಂಡಿದ್ದ [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+past.3sm
 SFX Vc 0 ಕೊಂಡಿದ್ದ [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+rel.past
 SFX Vc 0 ಕೊಂಡಿದ್ದಂತಹ [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+like
 SFX Vc 0 ಕೊಂಡಿದ್ದಂತೆ [ಿು] is:+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+sim
@@ -20302,7 +19962,6 @@ SFX Vc 0 ಕೊಳ್ಳುವುದೇ [ಿು] is:+cp|ಕೊಳ್ಳು+v+vn+
 SFX Vc 0 ಕೊಳ್ಳೋಣ [ಿು] is:+cp|ಕೊಳ್ಳು+v+hort.1p
 SFX Vc 0 ತ್ತು ಿ is:+cp|ಇರು+v+past.3sn
 SFX Vc 0 ದೆ ಿ is:+cp|ಇರು+v+pres.3sn
-SFX Vc 0 ದ್ದ ಿ is:+cp|ಇರು+v+past.3sm
 SFX Vc 0 ದ್ದ ಿ is:+cp|ಇರು+v+rel.past
 SFX Vc 0 ದ್ದಂತಹ ಿ is:+cp|ಇರು+v+like
 SFX Vc 0 ದ್ದಂತೆ ಿ is:+cp|ಇರು+v+sim
@@ -20496,7 +20155,6 @@ SFX Vc 0 ದ್ದೆವು ಿ is:+cp|ಇರು+v+past.1p
 SFX Vc 0 ದ್ದೇ ಿ is:+cp|ಇರು+v+cp+emph
 SFX Vc 0 ದ್ದೇನೆ ಿ is:+cp|ಇರು+v+pres.1s
 SFX Vc 0 ದ್ದೇವೆ ಿ is:+cp|ಇರು+v+pres.1p
-SFX Vc 0 ಬಿಟ್ಟ [ಿು] is:+cp|ಬಿಡು+v+past.3sm
 SFX Vc 0 ಬಿಟ್ಟ [ಿು] is:+cp|ಬಿಡು+v+rel.past
 SFX Vc 0 ಬಿಟ್ಟಂತಹ [ಿು] is:+cp|ಬಿಡು+v+like
 SFX Vc 0 ಬಿಟ್ಟಂತೆ [ಿು] is:+cp|ಬಿಡು+v+sim
@@ -21052,7 +20710,6 @@ SFX Vc 0 ಲ್ಲ ಿ is:+cp|ಇರು+v+neg
 SFX Vc 0 ವೆ ಿ is:+cp|ಇರು+v+pres.3pn
 SFX Vc ು ಿತ್ತು ು is:+cp|ಇರು+v+past.3sn
 SFX Vc ು ಿದೆ ು is:+cp|ಇರು+v+pres.3sn
-SFX Vc ು ಿದ್ದ ು is:+cp|ಇರು+v+past.3sm
 SFX Vc ು ಿದ್ದ ು is:+cp|ಇರು+v+rel.past
 SFX Vc ು ಿದ್ದಂತಹ ು is:+cp|ಇರು+v+like
 SFX Vc ು ಿದ್ದಂತೆ ು is:+cp|ಇರು+v+sim

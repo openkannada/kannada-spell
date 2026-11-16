@@ -379,7 +379,13 @@ fn score_gold(dictionary: &Path, gold_path: &Path, disagreements: Option<&Path>)
             100.0 * s.lemma_pos.recall(),
             percent(s.stem_correct as f64, s.words as f64),
         );
-        if let (true, Some(path)) = (guess, disagreements) {
+        if !guess {
+            println!(
+                "  non-words in the gold set: {}, accepted by the analyzer: {}",
+                s.non_words, s.non_words_accepted
+            );
+        }
+        if let (false, Some(path)) = (guess, disagreements) {
             let mut out = String::from("# word\tgold\tanalyzer\n");
             for (word, expected, got) in &s.disagreements {
                 out.push_str(&format!(

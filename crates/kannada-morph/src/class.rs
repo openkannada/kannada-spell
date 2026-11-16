@@ -1,7 +1,7 @@
 //! Inflection classes: which paradigm a dictionary stem takes.
 
 use crate::form::{Form, extend};
-use crate::noun::{CLITICS, Declension, noun_forms, predicates};
+use crate::noun::{CLITICS, Declension, copular_predicates, noun_forms};
 use crate::sandhi::Junction;
 use crate::script::{ANUSVARA, VIRAMA, is_consonant};
 use crate::verb::{irregular_root_forms, participle_stem_forms, past_stem_forms, regular_forms};
@@ -250,7 +250,7 @@ fn open_junction(stem: &str) -> Junction {
 fn adjective_forms(stem: &str) -> Vec<Form> {
     let host = Form::stem(stem, open_junction(stem));
     let mut forms = extend(std::slice::from_ref(&host), CLITICS);
-    forms.extend(predicates(&host));
+    forms.extend(copular_predicates(&host));
     forms.push(host);
     forms
 }

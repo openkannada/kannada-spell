@@ -53,6 +53,7 @@ docs/tags.md               the analysis tags
 - Every behavior change gets a test. For each new rule, remove it, confirm a test fails, then restore it. Run each such check under a 5 second timeout.
 - Measure on held-out text only. The test split (every 10th Wikipedia article) is never used to build or tune the dictionary.
 - Tune the analyzer on `data/gold/analyses.tsv` only. `analyses-test.tsv` is for scoring; report its first score for any change you made after looking at it.
+- A new gold test set is committed, with its first score, before any change it inspires. Draw new development sets from the training split, not the held-out articles.
 - Keep the ODbL notice on the dictionaries and the credit to Alar and V. Krishna.
 - Comments only for what the code cannot say.
 

@@ -1,4 +1,5 @@
-//! Scores the analyzer against hand-written gold analyses.
+//! Scores the analyzer against gold analyses. Precision and recall are over readings of
+//! word types, each word counting once whatever its frequency.
 
 use std::collections::{BTreeMap, BTreeSet};
 
@@ -73,6 +74,10 @@ fn ratio(a: usize, b: usize) -> f64 {
 pub struct Score {
     /// Words with gold readings.
     pub words: usize,
+    /// Gold words marked `?`, not words, and how many of them the analyzer accepted.
+    /// Their readings count as predicted readings that match nothing.
+    pub non_words: usize,
+    pub non_words_accepted: usize,
     /// Words the analyzer gives at least 1 reading from its lexicon.
     pub analyzed: usize,
     /// Full readings: lemma, part of speech and every tag.
@@ -85,9 +90,12 @@ pub struct Score {
     pub disagreements: Vec<(String, Vec<String>, Vec<String>)>,
 }
 
-/// The lemma and part of speech of a reading: "ಮರ+n+pl+loc" gives "ಮರ+n".
+/// The lemma and part of speech of a reading: "ಮರ+n+pl+loc" gives "ಮರ+n", and
+/// "ವಿಶೇಷ+adj|ಆಗು+v+cp" gives "ವಿಶೇಷ+adj".
 fn lemma_pos(reading: &str) -> String {
-    reading.split('+').take(2).collect::<Vec<_>>().join("+")
+    let (lemma, rest) = reading.split_once('+').unwrap_or((reading, ""));
+    let pos = rest.split(['+', '|']).next().unwrap_or_default();
+    format!("{lemma}+{pos}")
 }
 
 fn lemma(reading: &str) -> &str {
@@ -98,15 +106,26 @@ fn lemma(reading: &str) -> &str {
 pub fn score(analyzer: &Analyzer, gold: &Gold, guess: bool) -> Score {
     let mut s = Score {
         words: 0,
+        non_words: 0,
+        non_words_accepted: 0,
         analyzed: 0,
         full: Counts::default(),
         lemma_pos: Counts::default(),
         stem_correct: 0,
         disagreements: Vec::new(),
     };
-    for (word, expected) in gold.words.iter().filter(|(_, e)| !e.is_empty()) {
-        s.words += 1;
+    for (word, expected) in &gold.words {
         let mut analyses = analyzer.analyze(word);
+        if expected.is_empty() {
+            s.non_words += 1;
+            s.non_words_accepted += usize::from(!analyses.is_empty());
+            let predicted: BTreeSet<String> = analyses.iter().map(ToString::to_string).collect();
+            s.full.add(&predicted, expected);
+            s.lemma_pos
+                .add(&predicted.iter().map(|r| lemma_pos(r)).collect(), expected);
+            continue;
+        }
+        s.words += 1;
         s.analyzed += usize::from(!analyses.is_empty());
         if analyses.is_empty() && guess {
             analyses = analyzer.guess(word);
@@ -142,15 +161,22 @@ mod tests {
             Entry::new("ಮರ", Class::Noun(Declension::Tree)),
             Entry::new("ಮಾಡು", Class::Verb),
         ]));
-        let gold = Gold::parse(
-            "# header\nಮರಗಳಲ್ಲಿ\tಮರ+n+pl+loc\t\nಮಾಡಿದೆ\tಮಾಡು+v+past.1s\t\nಯಿಂದ\t?\tsuffix\nಕಲ್ಲು\tಕಲ್ಲು+n\t\n",
-        );
-        assert_eq!(gold.words.len(), 4);
+        let gold = Gold::parse(concat!(
+            "# header\n",
+            "ಮರಗಳಲ್ಲಿ\tಮರ+n+pl+loc\t\n",
+            "ಮಾಡಿದೆ\tಮಾಡು+v+past.1s\t\n",
+            "ಯಿಂದ\t?\tsuffix\n",
+            "ಮರವನ್ನು\t?\ttreated as a non-word here\n",
+            "ಕಲ್ಲು\tಕಲ್ಲು+n\t\n",
+            "ಮರವಾಗಿದೆ\tಮರ+n|ಆಗು+v+cp|ಇರು+v+pres.3sn\t\n",
+        ));
+        assert_eq!(gold.words.len(), 6);
         let s = score(&analyzer, &gold, false);
-        assert_eq!((s.words, s.analyzed), (3, 2));
+        assert_eq!((s.words, s.analyzed), (4, 3));
+        assert_eq!((s.non_words, s.non_words_accepted), (2, 1));
         assert_eq!(
             (s.full.matched, s.full.expected, s.full.predicted),
-            (2, 3, 4)
+            (3, 4, 6)
         );
         assert_eq!(
             (
@@ -158,8 +184,14 @@ mod tests {
                 s.lemma_pos.expected,
                 s.lemma_pos.predicted
             ),
-            (2, 3, 2)
+            (3, 4, 4)
         );
-        assert_eq!(s.stem_correct, 3);
+        assert_eq!(s.stem_correct, 4);
+    }
+
+    #[test]
+    fn lemma_and_part_of_speech_stop_at_the_first_tag_or_joined_verb() {
+        assert_eq!(lemma_pos("ಮರ+n+pl+loc"), "ಮರ+n");
+        assert_eq!(lemma_pos("ವಿಶೇಷ+adj|ಆಗು+v+cp"), "ವಿಶೇಷ+adj");
     }
 }

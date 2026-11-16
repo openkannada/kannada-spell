@@ -55,7 +55,6 @@ const MODALS: &[(&str, &str)] = &[
 /// Endings on the past stem, as in ಮಾಡಿದ + ಅನು = ಮಾಡಿದನು and ಬಂದ + ಆಗ = ಬಂದಾಗ.
 const PAST_ENDINGS: &[(&str, &str)] = &[
     ("", "+rel.past"),
-    ("", "+past.3sm"),
     ("ಅನು", "+past.3sm"),
     ("ಅಳು", "+past.3sf"),
     ("ಅರು", "+past.3p"),
@@ -322,7 +321,11 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
     }
     for negative in host.then_with("ಅದೆ", "+neg.cp", Junction::Both) {
         if depth == Depth::Full {
-            forms.extend(negative.compose("ಇರು", fused_existential()));
+            let elided = Form {
+                next: Junction::Elide,
+                ..negative.clone()
+            };
+            forms.extend(elided.compose("ಇರು", fused_existential()));
         }
         forms.push(negative);
     }
@@ -351,6 +354,10 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
 fn past_forms(past: &str, depth: Depth) -> Vec<Form> {
     let host = Form::stem(past, Junction::Elide);
     let mut forms = extend(std::slice::from_ref(&host), PAST_ENDINGS);
+    // The bare stem also ends a sentence as "he did" (ಅವನು ಮಾಡಿದ), but not in a fused auxiliary.
+    if depth == Depth::Full {
+        forms.push(host.clone().tagged("+past.3sm"));
+    }
     forms.extend(nouns(&host, PAST_NOUNS, depth));
     forms
 }
@@ -431,23 +438,43 @@ pub fn participle_stem_forms(participle: &str) -> Vec<Form> {
     participle_forms(participle, Depth::Full)
 }
 
-fn auxiliary_forms(root: &'static str) -> &'static [Form] {
-    static KOLLU: OnceLock<Vec<Form>> = OnceLock::new();
-    static BIDU: OnceLock<Vec<Form>> = OnceLock::new();
-    static PADU: OnceLock<Vec<Form>> = OnceLock::new();
-    // ಕೊಳ್ಳು takes the perfect itself: ಹೇಳಿಕೊಂಡಿದ್ದಾನೆ.
-    let (cell, depth) = match root {
-        "ಕೊಳ್ಳು" => (&KOLLU, Depth::Copula),
-        "ಬಿಡು" => (&BIDU, Depth::Base),
-        "ಪಡು" => (&PADU, Depth::Copula),
-        _ => unreachable!("not an auxiliary: {root}"),
-    };
-    cell.get_or_init(|| {
-        irregular_forms(
-            &irregular_stems(root).expect("auxiliary is irregular"),
-            depth,
-        )
-    })
+/// The auxiliaries fused to a participle or an infinitive, with the depth each is built to and
+/// whether only its finite and participle forms are used. ಕೊಳ್ಳು takes the perfect itself
+/// (ಹೇಳಿಕೊಂಡಿದ್ದಾನೆ); the passive ಪಡು has no imperative or hortative (no ಮಾಡಲ್ಪಡು).
+const AUXILIARIES: &[(&str, Depth, bool)] = &[
+    ("ಕೊಳ್ಳು", Depth::Copula, false),
+    ("ಬಿಡು", Depth::Base, false),
+    ("ಪಡು", Depth::Copula, true),
+];
+
+/// Tags of the root-only forms that a passive auxiliary does not take.
+fn is_command(tags: &str) -> bool {
+    ["+imp", "+hort", "+proh"]
+        .iter()
+        .any(|t| tags.starts_with(t))
+}
+
+fn auxiliary_forms(root: &str) -> &'static [Form] {
+    static ALL: OnceLock<Vec<(&'static str, Vec<Form>)>> = OnceLock::new();
+    let all = ALL.get_or_init(|| {
+        AUXILIARIES
+            .iter()
+            .map(|&(aux, depth, finite_only)| {
+                let mut forms = irregular_forms(
+                    &irregular_stems(aux).expect("auxiliary is irregular"),
+                    depth,
+                );
+                if finite_only {
+                    forms.retain(|f| !is_command(&f.tags));
+                }
+                (aux, forms)
+            })
+            .collect()
+    });
+    all.iter()
+        .find(|(aux, _)| *aux == root)
+        .map(|(_, forms)| forms.as_slice())
+        .expect("an auxiliary")
 }
 
 /// The forms of ಆಗು that fuse to a noun or an infinitive: ಆಗಿ, ಆದ, ಆಗಿದೆ.
@@ -590,9 +617,18 @@ mod tests {
             ("ಮಾಡಿಕೊಂಡಿದ್ದಾನೆ", "+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sm"),
             ("ಮಾಡಲ್ಪಟ್ಟಿತು", "+pass|ಪಡು+v+past.3sn"),
             ("ಮಾಡಲ್ಪಟ್ಟಿದೆ", "+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn"),
+            ("ಮಾಡದಿದ್ದರೆ", "+neg.cp|ಇರು+v+cond"),
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
+        let wrong = ["ಮಾಡಲ್ಪಡು", "ಮಾಡಲ್ಪಡೋಣ", "ಮಾಡದೆಯಿದ್ದರೆ", "ಮಾಡದೆಯಿರುವುದು"];
+        assert!(!forms.iter().any(|f| wrong.contains(&f.text.as_str())));
+        assert!(
+            !copula()
+                .iter()
+                .any(|f| f.tags == "+past.3sm" && f.text == "ಆದ"),
+            "no bare 3sm in fused forms"
+        );
     }
 
     #[test]
