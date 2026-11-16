@@ -288,6 +288,14 @@ mod tests {
     }
 
     #[test]
+    fn doubled_finals_name_the_consonant() {
+        assert!(Final::Doubled('ಸ').matches("ಬಸ್"));
+        assert!(!Final::Doubled('ಸ').matches("ಬ್ಯಾಂಕ್"));
+        assert!(!Final::Doubled('ಸ').matches("ಬಸ"));
+        assert!(Class::Noun(Declension::LoanDoubled).accepts("ಬಸ್"));
+    }
+
+    #[test]
     fn adjectives_take_the_copula() {
         let forms = Class::Adjective.forms("ಸುಂದರ");
         assert!(

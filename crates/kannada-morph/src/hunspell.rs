@@ -216,6 +216,7 @@ mod tests {
         assert!(aff.contains("\nSFX Na 0 ಗಳು [ಕ"));
         assert!(!aff.contains("SFX Fx"));
         assert!(aff.contains("\nSFX Np ು 0 ು is:+gen\n"));
+        assert!(aff.contains("\nIGNORE \u{200C}\u{200D}\n"));
         assert!(!aff.contains("  "));
         let declared: usize = aff
             .lines()

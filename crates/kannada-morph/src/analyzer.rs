@@ -235,5 +235,9 @@ mod tests {
         assert_eq!(a.stem("ಮರಗಳಿಗೆ"), "ಮರ");
         assert_eq!(a.stem("ಬಂದರು"), "ಬರು");
         assert_eq!(a.stem("ಕಲ್ಲುಗಳಲ್ಲಿ"), "ಕಲ್ಲು");
+        assert!(
+            a.guess("ಕವನ್ನು").iter().all(|g| g.stem != "ಕ"),
+            "1 akshara stems are not guessed"
+        );
     }
 }

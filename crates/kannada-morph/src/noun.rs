@@ -444,4 +444,15 @@ mod tests {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
     }
+
+    #[test]
+    fn rare_predicate_forms_are_not_fused() {
+        let forms = noun_forms("ಮರ", Declension::Tree);
+        assert!(forms.iter().any(|f| f.text == "ಮರವಾಗುತ್ತದೆ"));
+        assert!(
+            !forms
+                .iter()
+                .any(|f| f.text == "ಮರವಾಗುತ್ತೀರಿ" || f.text == "ಮರವಾಗಿದ್ದೇನೆ")
+        );
+    }
 }

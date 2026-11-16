@@ -139,6 +139,18 @@ mod tests {
     }
 
     #[test]
+    fn does_not_induce_a_stem_that_is_already_a_word() {
+        let analyzer = Analyzer::new(Lexicon::from_entries([Entry::new("ಮಾಡು", Class::Verb)]));
+        let train = counts(&[("ಮಾಡಬಹುದನ್ನು", 9), ("ಮಾಡಬಹುದಿಗೆ", 9), ("ಮಾಡಬಹುದಿನ", 9)]);
+        let induced = induce(&analyzer, &train);
+        assert!(
+            induced.stems.iter().all(|e| e.stem != "ಮಾಡಬಹುದು"),
+            "{:?}",
+            induced.stems
+        );
+    }
+
+    #[test]
     fn induces_a_stem_from_its_forms_and_skips_misspellings() {
         let analyzer = Analyzer::new(Lexicon::from_entries([Entry::new("ಹಾಗೂ", Class::Fixed)]));
         let train = counts(&[
