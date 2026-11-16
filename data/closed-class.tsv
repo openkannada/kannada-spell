@@ -201,18 +201,8 @@
 ಆತನು	Np	ಆತ	pron	
 ಈತ	Fx	ಈತ	pron	
 ಈತನು	Np	ಈತ	pron	
-ಆಕೆ	Px	ಆಕೆ	pron	
-ಆಕೆಯನ್ನು	Px	ಆಕೆ	pron	+acc
-ಆಕೆಗೆ	Px	ಆಕೆ	pron	+dat
-ಆಕೆಯ	Fx	ಆಕೆ	pron	+gen
-ಆಕೆಯಲ್ಲಿ	Px	ಆಕೆ	pron	+loc
-ಆಕೆಯಿಂದ	Fx	ಆಕೆ	pron	+ins
-ಈಕೆ	Px	ಈಕೆ	pron	
-ಈಕೆಯನ್ನು	Px	ಈಕೆ	pron	+acc
-ಈಕೆಗೆ	Px	ಈಕೆ	pron	+dat
-ಈಕೆಯ	Fx	ಈಕೆ	pron	+gen
-ಈಕೆಯಲ್ಲಿ	Px	ಈಕೆ	pron	+loc
-ಈಕೆಯಿಂದ	Fx	ಈಕೆ	pron	+ins
+ಆಕೆ	Ns	ಆಕೆ	pron	
+ಈಕೆ	Ns	ಈಕೆ	pron	
 ಕೆಲವರು	Np	ಕೆಲವರು	pron	
 ಹಲವರು	Np	ಹಲವರು	pron	
 ಎಲ್ಲ	Px	ಎಲ್ಲ	det	

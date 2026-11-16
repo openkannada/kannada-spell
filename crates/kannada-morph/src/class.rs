@@ -70,6 +70,7 @@ pub const ALL_CLASSES: &[Class] = &[
     Class::Noun(Declension::Boy),
     Class::Noun(Declension::House),
     Class::Noun(Declension::Girl),
+    Class::Noun(Declension::She),
     Class::Noun(Declension::Forest),
     Class::Noun(Declension::Thing),
     Class::Noun(Declension::This),
@@ -156,6 +157,7 @@ impl Class {
             Class::Noun(Declension::Boy) => "Nm",
             Class::Noun(Declension::House) => "Ne",
             Class::Noun(Declension::Girl) => "Nf",
+            Class::Noun(Declension::She) => "Ns",
             Class::Noun(Declension::Forest) => "Nu",
             Class::Noun(Declension::Thing) => "Nv",
             Class::Noun(Declension::This) => "Nd",
@@ -192,7 +194,7 @@ impl Class {
             Class::Noun(Declension::Tree | Declension::Boy) | Class::VerbPast => {
                 &[Final::Consonant]
             }
-            Class::Noun(Declension::House | Declension::Girl) => FRONT,
+            Class::Noun(Declension::House | Declension::Girl | Declension::She) => FRONT,
             Class::Noun(Declension::Thing) => LONG_BACK,
             Class::Noun(Declension::Forest | Declension::This | Declension::Plural) => U,
             Class::Noun(Declension::Loan) => &[Final::Char(VIRAMA)],

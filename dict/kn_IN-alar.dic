@@ -1,4 +1,4 @@
-139594
+139584
 ಅ po:n
 ಅ po:x
 ಅಂ po:n
@@ -13951,13 +13951,8 @@
 ಆಕೃಷ್ಟ/Aj po:adj
 ಆಕೃಷ್ಟಿ/Ne po:n
 ಆಕೃಷ್ಟಿಮಂತ್ರ/Na po:n
-ಆಕೆ/Px po:pron
-ಆಕೆಗೆ/Px st:ಆಕೆ po:pron is:+dat
-ಆಕೆಯ st:ಆಕೆ po:pron is:+gen
-ಆಕೆಯನ್ನು/Px st:ಆಕೆ po:pron is:+acc
-ಆಕೆಯಲ್ಲಿ/Px st:ಆಕೆ po:pron is:+loc
+ಆಕೆ/Ns po:pron
 ಆಕೆಯವಾಳ/Na po:n
-ಆಕೆಯಿಂದ st:ಆಕೆ po:pron is:+ins
 ಆಕೆವಾಳ/Na po:n
 ಆಕೆವಾಳತನ/Na po:n
 ಆಕೆವಾಳತೆ/Ne po:n
@@ -18971,12 +18966,7 @@
 ಈಂಬುಳಿ/Ne po:n
 ಈಕಾರ/Na po:n
 ಈಕಾರಾಂತ/Na po:n
-ಈಕೆ/Px po:pron
-ಈಕೆಗೆ/Px st:ಈಕೆ po:pron is:+dat
-ಈಕೆಯ st:ಈಕೆ po:pron is:+gen
-ಈಕೆಯನ್ನು/Px st:ಈಕೆ po:pron is:+acc
-ಈಕೆಯಲ್ಲಿ/Px st:ಈಕೆ po:pron is:+loc
-ಈಕೆಯಿಂದ st:ಈಕೆ po:pron is:+ins
+ಈಕೆ/Ns po:pron
 ಈಕ್ಷಕ/Na po:n
 ಈಕ್ಷಕಿ/Ne po:n
 ಈಕ್ಷಣ/Na po:n

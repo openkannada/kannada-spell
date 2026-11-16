@@ -18,6 +18,8 @@ pub enum Declension {
     House,
     /// ಹುಡುಗಿ: like ಮನೆ, with the plural ಹುಡುಗಿಯರು.
     Girl,
+    /// ಆಕೆ: like ಮನೆ, for pronouns. No plural, and no fused ಇರು (no ಆಕೆಗಳು, ಆಕೆಯಿದೆ).
+    She,
     /// ಕಾಡು: ಕಾಡನ್ನು, ಕಾಡಿಗೆ, ಕಾಡಿನ. The final "ು" is dropped.
     Forest,
     /// ವಸ್ತು: ವಸ್ತುವನ್ನು, ವಸ್ತುವಿಗೆ, ವಸ್ತುವಿನ. The final vowel stays.
@@ -39,6 +41,7 @@ impl Declension {
             | Declension::Boy
             | Declension::House
             | Declension::Girl
+            | Declension::She
             | Declension::Thing => Junction::Glide,
             Declension::Forest
             | Declension::This
@@ -58,7 +61,7 @@ impl Declension {
             | Declension::LoanDoubled => Some("ಗಳು"),
             Declension::Boy => Some("ರು"),
             Declension::Girl => Some("ಅರು"),
-            Declension::This | Declension::Plural => None,
+            Declension::This | Declension::Plural | Declension::She => None,
         }
     }
 
@@ -66,7 +69,11 @@ impl Declension {
     fn has_formal_nominative(self) -> bool {
         matches!(
             self,
-            Declension::Tree | Declension::House | Declension::Girl | Declension::Thing
+            Declension::Tree
+                | Declension::House
+                | Declension::Girl
+                | Declension::She
+                | Declension::Thing
         )
     }
 
@@ -132,7 +139,7 @@ pub fn cases(stem: &Form, declension: Declension) -> Vec<Form> {
                 oblique,
             )
         }
-        Declension::House | Declension::Girl => (
+        Declension::House | Declension::Girl | Declension::She => (
             nom.then("ಅನ್ನು", "+acc"),
             nom.then("ಗೆ", "+dat"),
             vec![nom.clone()],
@@ -255,6 +262,8 @@ const FUSED_PREDICATE_TAGS: &[&str] = &[
     "+cp|ಇರು+v+pres.3sf",
     "+cp|ಇರು+v+past.3sn",
     "+cp|ಇರು+v+past.3p",
+    "+cp|ಇರು+v+past.3sm",
+    "+cp|ಇರು+v+past.3sf",
     "+cp|ಇರು+v+rel.npst",
     "+cp|ಇರು+v+rel.past",
     "+cp|ಇರು+v+cp",
@@ -326,7 +335,11 @@ pub fn noun_forms(stem: &str, declension: Declension) -> Vec<Form> {
             vec![host.clone()]
         };
         for predicate_host in &predicate_hosts {
-            forms.extend(predicates(predicate_host));
+            forms.extend(if declension == Declension::She {
+                copular_predicates(predicate_host)
+            } else {
+                predicates(predicate_host)
+            });
         }
         for locative in host_cases.iter().filter(|f| f.tags.ends_with("+loc")) {
             forms.extend(locative.compose("ಇರು", fused_existential()));

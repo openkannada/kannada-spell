@@ -1,4 +1,4 @@
-168417
+168402
 ಅ po:n
 ಅ po:x
 ಅಂ po:n
@@ -15490,15 +15490,8 @@
 ಆಕೃಷ್ಟ/Aj po:adj
 ಆಕೃಷ್ಟಿ/Ne po:n
 ಆಕೃಷ್ಟಿಮಂತ್ರ/Na po:n
-ಆಕೆ/Px po:pron
-ಆಕೆಗೆ/Px st:ಆಕೆ po:pron is:+dat
-ಆಕೆಯ st:ಆಕೆ po:pron is:+gen
-ಆಕೆಯನ್ನು/Px st:ಆಕೆ po:pron is:+acc
-ಆಕೆಯಲ್ಲಿ/Px st:ಆಕೆ po:pron is:+loc
+ಆಕೆ/Ns po:pron
 ಆಕೆಯವಾಳ/Na po:n
-ಆಕೆಯಿಂದ st:ಆಕೆ po:pron is:+ins
-ಆಕೆಯು po:x
-ಆಕೆಯೊಂದಿಗೆ po:x
 ಆಕೆವಾಳ/Na po:n
 ಆಕೆವಾಳತನ/Na po:n
 ಆಕೆವಾಳತೆ/Ne po:n
@@ -21869,13 +21862,7 @@
 ಈಂಬುಳಿ/Ne po:n
 ಈಕಾರ/Na po:n
 ಈಕಾರಾಂತ/Na po:n
-ಈಕೆ/Px po:pron
-ಈಕೆಗೆ/Px st:ಈಕೆ po:pron is:+dat
-ಈಕೆಯ st:ಈಕೆ po:pron is:+gen
-ಈಕೆಯನ್ನು/Px st:ಈಕೆ po:pron is:+acc
-ಈಕೆಯಲ್ಲಿ/Px st:ಈಕೆ po:pron is:+loc
-ಈಕೆಯಿಂದ st:ಈಕೆ po:pron is:+ins
-ಈಕೆಯು po:x
+ಈಕೆ/Ns po:pron
 ಈಕ್ವಟೋರಿಯಲ್ po:x
 ಈಕ್ವಿಟಿ/Ne po:n
 ಈಕ್ವೆಡಾರ್/Nl po:n
@@ -31087,7 +31074,6 @@
 ಒಬ್ಬಂಟಿ/Ne po:n
 ಒಬ್ಬಂಟಿಗ/Na po:n
 ಒಬ್ಬಟ್ಟು/Nu po:n
-ಒಬ್ಬನಾಗಿದ್ದನು po:x
 ಒಬ್ಬರನ್ನಾಗಿ po:x
 ಒಬ್ಬರನ್ನೊಬ್ಬರು po:x
 ಒಬ್ಬರಿಂದೊಬ್ಬರಿಗೆ po:x
@@ -63891,6 +63877,7 @@
 ಚಿಕ್ಕಲ್ಲೂರು po:x
 ಚಿಕ್ಕವ/Nm po:n
 ಚಿಕ್ಕವಯಸ್ಸು/Nu po:n
+ಚಿಕ್ಕವಳು/Nu po:n
 ಚಿಕ್ಕವೂಸಿ/Ne po:n
 ಚಿಕ್ಕವ್ವ/Na po:n
 ಚಿಕ್ಕವ್ವೆ/Ne po:n
@@ -106815,6 +106802,7 @@
 ಪ್ರಭಾವಿತ/Aj po:adj
 ಪ್ರಭಾವಿತ/Nm po:n
 ಪ್ರಭಾವಿತಗೊಂಡು/Nu po:n
+ಪ್ರಭಾವಿತಳು/Nu po:n
 ಪ್ರಭಾವಿತವಾಗಿರುತ್ತದೆ po:x
 ಪ್ರಭಾವಿತೆ/Ne po:n
 ಪ್ರಭಾವಿಸು/Vb po:v
@@ -120032,7 +120020,6 @@
 ಮಗದೊಮ್ಮೆ/Px po:adv
 ಮಗಧ/Na po:n
 ಮಗಧಿ po:x
-ಮಗನಾಗಿದ್ದನು po:x
 ಮಗನಿದ್ದ/Nm po:n
 ಮಗನಿದ್ದಾನೆ po:x
 ಮಗನೆ po:x
@@ -120045,7 +120032,6 @@
 ಮಗರೂರಿ/Ne po:n
 ಮಗರ್ಮನ್ po:x
 ಮಗಳ po:x
-ಮಗಳಾಗಿದ್ದಳು po:x
 ಮಗಳಿದ್ದಾಳೆ po:x
 ಮಗಳು/Nu po:n
 ಮಗಳೊಂದಿಗೆ po:x
@@ -133128,7 +133114,6 @@
 ರಾಜಧಾನಿಯನ್ನಾಗಿ po:x
 ರಾಜನ/Na po:n
 ರಾಜನನ್ನಾಗಿ po:x
-ರಾಜನಾಗಿದ್ದನು po:x
 ರಾಜನಾಥ್ po:x
 ರಾಜನಾಳ po:x
 ರಾಜನೀತಿ/Ne po:n

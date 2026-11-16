@@ -403,7 +403,11 @@ mod tests {
         ] {
             assert!(analyzer.accepts(good), "{good}");
         }
-        for bad in ["ನಾನಿದೆ", "ನಾನಿತ್ತು", "ಆತರು", "ಆಕೆಗಳು"]
+        for good in ["ಆಕೆಗಾಗಿ", "ಆಕೆಯಂತೆ", "ಆಕೆಯೊಂದಿಗೆ", "ಆಕೆಯಾಗಿದ್ದಳು", "ಈಕೆಯನ್ನು"]
+        {
+            assert!(analyzer.accepts(good), "{good}");
+        }
+        for bad in ["ನಾನಿದೆ", "ನಾನಿತ್ತು", "ಆತರು", "ಆಕೆಗಳು", "ಆಕೆಯಿದೆ"]
         {
             assert!(!analyzer.accepts(bad), "{bad}");
         }

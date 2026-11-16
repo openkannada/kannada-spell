@@ -439,7 +439,7 @@ pub fn participle_stem_forms(participle: &str) -> Vec<Form> {
 }
 
 /// The auxiliaries fused to a participle or an infinitive, with the depth each is built to and
-/// whether only its finite and participle forms are used. ಕೊಳ್ಳು takes the perfect itself
+/// whether its command forms are left out. ಕೊಳ್ಳು takes the perfect itself
 /// (ಹೇಳಿಕೊಂಡಿದ್ದಾನೆ); the passive ಪಡು has no imperative or hortative (no ಮಾಡಲ್ಪಡು).
 const AUXILIARIES: &[(&str, Depth, bool)] = &[
     ("ಕೊಳ್ಳು", Depth::Copula, false),
@@ -447,9 +447,10 @@ const AUXILIARIES: &[(&str, Depth, bool)] = &[
     ("ಪಡು", Depth::Copula, true),
 ];
 
-/// Tags of the root-only forms that a passive auxiliary does not take.
+/// Tags of the commands a passive auxiliary does not take: imperatives, hortatives and
+/// ಬೇಡ (`+proh.2s`). "Must not" (`+proh`, ಮಾಡಲ್ಪಡಬಾರದು) is not a command.
 fn is_command(tags: &str) -> bool {
-    ["+imp", "+hort", "+proh"]
+    ["+imp", "+hort", "+proh."]
         .iter()
         .any(|t| tags.starts_with(t))
 }
@@ -459,12 +460,12 @@ fn auxiliary_forms(root: &str) -> &'static [Form] {
     let all = ALL.get_or_init(|| {
         AUXILIARIES
             .iter()
-            .map(|&(aux, depth, finite_only)| {
+            .map(|&(aux, depth, no_commands)| {
                 let mut forms = irregular_forms(
                     &irregular_stems(aux).expect("auxiliary is irregular"),
                     depth,
                 );
-                if finite_only {
+                if no_commands {
                     forms.retain(|f| !is_command(&f.tags));
                 }
                 (aux, forms)
@@ -621,7 +622,8 @@ mod tests {
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
-        let wrong = ["ಮಾಡಲ್ಪಡು", "ಮಾಡಲ್ಪಡೋಣ", "ಮಾಡದೆಯಿದ್ದರೆ", "ಮಾಡದೆಯಿರುವುದು"];
+        assert!(has(&forms, "ಮಾಡಲ್ಪಡಬಾರದು", "+pass|ಪಡು+v+proh"));
+        let wrong = ["ಮಾಡಲ್ಪಡು", "ಮಾಡಲ್ಪಡೋಣ", "ಮಾಡಲ್ಪಡಬೇಡ", "ಮಾಡದೆಯಿದ್ದರೆ", "ಮಾಡದೆಯಿರುವುದು"];
         assert!(!forms.iter().any(|f| wrong.contains(&f.text.as_str())));
         assert!(
             !copula()

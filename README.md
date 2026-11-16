@@ -15,8 +15,8 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 
 | File | Words from | Held-out tokens accepted | Misspellings accepted |
 | --- | --- | --- | --- |
-| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 4.0% |
-| `dict/kn_IN-alar` | Alar and the closed-class list only | 70.8% | 3.9% |
+| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 3.7% |
+| `dict/kn_IN-alar` | Alar and the closed-class list only | 70.8% | 3.6% |
 
 Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
 
@@ -32,7 +32,7 @@ Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 3
 | --- | --- | --- |
 | Held-out tokens accepted | 88.9% | 70.8% |
 | Held-out word types seen 5 or more times, accepted | 91.2% | 61.7% |
-| Confusion misspellings accepted (ದ for ಧ, ಿ for ೀ, ಳ for ಲ), of 5,000 | 4.0% | 3.9% |
+| Confusion misspellings accepted (ದ for ಧ, ಿ for ೀ, ಳ for ಲ), of 5,000 | 3.7% | 3.6% |
 | Typing slips accepted, of 5,000 | 3.6% | 3.4% |
 | Confusions: intended word suggested first, in top 5, of 2,000 | 81.7%, 97.5% | 83.4%, 97.7% |
 | Typing slips: intended word suggested first, in top 5, of 2,000 | 70.2%, 95.8% | 72.4%, 96.3% |
@@ -47,10 +47,10 @@ The same held-out words and misspellings, checked with Hunspell 1.7.6:
 
 | Dictionary | Tokens accepted | Types seen 5+ times accepted | Confusions accepted | Typing slips accepted |
 | --- | --- | --- | --- | --- |
-| `kn_IN` (this project) | 88.9% | 91.2% | 4.0% | 3.6% |
-| `kn_IN-alar` (this project) | 70.8% | 61.7% | 3.9% | 3.4% |
+| `kn_IN` (this project) | 88.9% | 91.2% | 3.7% | 3.6% |
+| `kn_IN-alar` (this project) | 70.8% | 61.7% | 3.6% | 3.4% |
 | Fedora `hunspell-kn` 1.0.3 (2009) | 65.7% | 40.0% | 0.2% | 0.1% |
-| [kn-hunspell](https://github.com/mgharish/kn-hunspell) (2013) | 49.4% | 30.1% | 0.2% | 0.5% |
+| [kn-hunspell](https://github.com/mgharish/kn-hunspell) (2013) | 49.4% | 30.1% | 0.1% | 0.5% |
 
 The earlier dictionaries are mostly plain word lists. They accept almost no misspellings because they accept few inflected forms at all: 6 in 10 frequent words are flagged as errors by the 2009 dictionary.
 
