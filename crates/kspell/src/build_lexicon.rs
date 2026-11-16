@@ -3,7 +3,7 @@
 use kannada_morph::class::Class;
 use kannada_morph::classify::{choose, choose_attested};
 use kannada_morph::lexicon::{Entry, Lexicon};
-use kannada_morph::script::{ANUSVARA, VIRAMA, is_kannada_word, normalize};
+use kannada_morph::script::{ANUSVARA, VIRAMA, akshara_count, is_kannada_word, normalize};
 use kannada_morph::verb::{IRREGULAR_VERBS, Stems, irregular_stems};
 
 use crate::alar::AlarEntry;
@@ -36,6 +36,11 @@ pub fn headword(raw: &str) -> Result<String, Skip> {
         return Err(Skip::Damaged);
     }
     Ok(word)
+}
+
+/// A word of 1 akshara ending in a consonant or a short vowel: a letter or prefix, not ಹೂ or ಕೈ.
+fn is_fragment(word: &str) -> bool {
+    akshara_count(word) == 1 && !word.ends_with(['ಾ', 'ೀ', 'ೂ', 'ೇ', 'ೈ', 'ೋ', 'ೌ'])
 }
 
 fn is_old_form(word: &str) -> bool {
@@ -98,8 +103,8 @@ pub fn entries_for(alar: &AlarEntry, counts: &Counts) -> Result<Vec<Entry>, Skip
             ..Entry::new(&stem, Class::Fixed)
         }]);
     }
-    // Alar lists each letter as a noun ("ಮ: the 25th consonant"); a bare consonant takes no endings.
-    if stem.chars().count() == 1 {
+    // Alar lists letters and prefixes as nouns ("ಮ: the 25th consonant", ಕು, ಬೆ); they take no endings.
+    if is_fragment(&stem) {
         return Ok(vec![Entry {
             pos: pos_of(alar).to_string(),
             ..Entry::new(&stem, Class::Fixed)
@@ -260,8 +265,31 @@ mod tests {
     }
 
     #[test]
+    fn lexicon_entries_of_an_irregular_verb_accept_all_its_forms() {
+        use kannada_morph::verb::irregular_verb_forms;
+        use kannada_morph::{Analyzer, Lexicon};
+        for root in ["ಬರು", "ಇರು", "ಎನ್ನು", "ಒಳಗೊಳ್ಳು", "ಕಲಿ"]
+        {
+            let stems = irregular_stems(root).unwrap();
+            let analyzer = Analyzer::new(Lexicon::from_entries(irregular_entries(&stems)));
+            let missing: Vec<String> = irregular_verb_forms(&stems)
+                .into_iter()
+                .map(|f| f.text)
+                .filter(|t| !analyzer.accepts(t))
+                .collect();
+            assert!(
+                missing.is_empty(),
+                "{root}: {:?}",
+                &missing[..missing.len().min(10)]
+            );
+        }
+    }
+
+    #[test]
     fn single_letters_take_no_endings() {
         assert_eq!(classes("ಮ", &["noun"], &Counts::default()), [Class::Fixed]);
+        assert_eq!(classes("ಕು", &["noun"], &Counts::default()), [Class::Fixed]);
+        assert_eq!(classes("ಬೆ", &["noun"], &Counts::default()), [Class::Fixed]);
         assert_eq!(
             classes("ಹೂ", &["noun"], &Counts::default()),
             [Class::Noun(Declension::Thing)]

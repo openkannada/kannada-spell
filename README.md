@@ -15,10 +15,10 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 
 | File | Words from | Held-out tokens accepted | Misspellings accepted |
 | --- | --- | --- | --- |
-| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 89.0% | 3.2% |
-| `dict/kn_IN-alar` | Alar and the closed-class list only | 70.9% | 4.0% |
+| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 89.0% | 4.1% |
+| `dict/kn_IN-alar` | Alar and the closed-class list only | 70.9% | 3.9% |
 
-Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB.
+Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
 
 ```sh
 hunspell -d dict/kn_IN file.txt
@@ -26,26 +26,26 @@ hunspell -d dict/kn_IN file.txt
 
 ## Results
 
-Measured on every 10th article of a Kannada Wikipedia dump (2.2 million words), which is never used to build the dictionary. Run `kspell eval` and `kspell suggest` to reproduce them.
+Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 331,936 distinct word types. No word from these articles is used to build the dictionaries. Some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the most often rejected held-out words, so the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them.
 
 | Measure | `kn_IN` | `kn_IN-alar` |
 | --- | --- | --- |
 | Held-out tokens accepted | 89.0% | 70.9% |
 | Held-out word types seen 5 or more times, accepted | 91.3% | 61.6% |
-| Confusion misspellings accepted (ದ for ಧ, ಿ for ೀ, ಳ for ಲ) | 3.2% | 4.0% |
-| Random typos accepted (deleted, doubled or swapped character) | 2.3% | 2.3% |
-| Confusion misspellings: intended word suggested first, in top 5 | 82.8%, 96.6% | 86.8%, 98.4% |
-| Random typos: intended word suggested first, in top 5 | 75.2%, 96.4% | not measured |
+| Confusion misspellings accepted (ದ for ಧ, ಿ for ೀ, ಳ for ಲ), of 5,000 | 4.1% | 3.9% |
+| Typing slips accepted, of 5,000 | 3.6% | 3.4% |
+| Confusions: intended word suggested first, in top 5, of 2,000 | 82.2%, 97.2% | 83.8%, 97.5% |
+| Typing slips: intended word suggested first, in top 5, of 2,000 | 70.1%, 96.0% | 72.2%, 96.8% |
 
-Hunspell and `kspell analyze` accept exactly the same words: on all 331,936 held-out word types, they agree on every one.
+Hunspell and `kspell analyze` accept exactly the same words: they agree on every one of the 331,936 held-out word types, and CI checks a sample of generated forms and typos on every change (`scripts/agreement.sh`).
 
-The misspellings are 5,000 frequent held-out words with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
+Both dictionaries are tested on the same misspellings. They are made from frequent held-out words that `kn_IN-alar` accepts, with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. A confusion swaps letters that sound alike. A typing slip deletes, doubles or swaps a character, or replaces a vowel sign, and is kept only when the result is well-formed Kannada script. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
 
 Most rejected held-out words are rare names and loanwords, and genuine misspellings in Wikipedia such as ವಿರುದ್ದ for ವಿರುದ್ಧ and ನಿರ್ಧಿಷ್ಟ for ನಿರ್ದಿಷ್ಟ.
 
 ## How it is built
 
-1. **Paradigms.** `crates/kannada-morph` describes 10 noun declensions (ಮರ, ಹುಡುಗ, ಮನೆ, ಹುಡುಗಿ, ಕಾಡು, ವಸ್ತು, ಇದು, plurals, and 2 for loanwords ending in a consonant such as ಬ್ಯಾಂಕ್ and ಬಸ್), regular verbs ending in ು, ಿ and ೆ, 35 irregular verbs and the compounds built on them (ಒಳಗೊಳ್ಳು like ಕೊಳ್ಳು), and the forms that fuse onto a word: the copula ಆಗು, ಇರು, the quotative ಎನ್ನು, ಅಲ್ಲ, the auxiliaries ಕೊಳ್ಳು and ಬಿಡು, and the clitics ಊ and ಏ. Sandhi is 1 function: elision, the ಯ and ವ glides, and the virama.
+1. **Paradigms.** `crates/kannada-morph` describes 10 noun declensions (ಮರ, ಹುಡುಗ, ಮನೆ, ಹುಡುಗಿ, ಕಾಡು, ವಸ್ತು, ಇದು, plurals, and 2 for loanwords ending in a consonant such as ಬ್ಯಾಂಕ್ and ಬಸ್), regular verbs ending in ು, ಿ and ೆ, 43 irregular verbs and the compounds built on them (ಒಳಗೊಳ್ಳು like ಕೊಳ್ಳು), and the forms that fuse onto a word: the copula ಆಗು, ಇರು, the quotative ಎನ್ನು, ಅಲ್ಲ, the auxiliaries ಕೊಳ್ಳು and ಬಿಡು, and the clitics ಊ and ಏ. Sandhi is 1 function: elision, the ಯ and ವ glides, and the virama.
 2. **Rules.** Each class's affix rules are read off its paradigm by inflecting a sample stem and comparing each form with it. The analyzer and the Hunspell file use these same rules.
 3. **Stems from Alar.** Alar's single-word headwords become stems. Its part of speech gives noun, verb, adjective or particle. Old Kannada letters (ೞ, ಱ), Old Kannada endings not used in modern text, and headwords damaged by font conversion are left out.
 4. **Declension from the corpus.** Alar does not say whether ಕಾಡು declines as ಕಾಡನ್ನು or ಕಾಡುವನ್ನು, or whether ಹುಡುಗ takes ಹುಡುಗನನ್ನು. Each candidate declension is scored by how often its own forms occur in the training split, and the best one wins.
@@ -67,7 +67,7 @@ target/release/kspell eval
 target/release/kspell suggest
 ```
 
-Other commands: `kspell analyze`, `kspell stem`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
+Other commands: `kspell analyze`, `kspell stem`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
 
 ## License
 

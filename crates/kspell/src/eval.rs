@@ -48,15 +48,18 @@ pub fn coverage(accepts: &dyn Fn(&str) -> bool, test: &Counts, show: usize) -> C
     c
 }
 
-/// Misspellings of accepted held-out words that occur nowhere in the corpus, and how many the analyzer accepts.
+/// Misspellings of correct held-out words that occur nowhere in the corpus, and how many the analyzer accepts.
 pub struct FalseAcceptance {
     pub tried: usize,
     pub accepted: usize,
     pub samples: Vec<(String, String)>,
 }
 
+/// `source` decides which held-out words are corrupted: pass the same one for every
+/// dictionary compared, so each is tested on the same misspellings.
 pub fn false_acceptance(
     analyzer: &Analyzer,
+    source: &dyn Fn(&str) -> bool,
     test: &Counts,
     seen: &dyn Fn(&str) -> bool,
     corrupt: fn(&str, &mut Rng) -> Option<String>,
@@ -73,7 +76,7 @@ pub fn false_acceptance(
         if result.tried >= limit {
             break;
         }
-        if n < 2 || !analyzer.accepts(word) {
+        if n < 2 || !source(word) {
             continue;
         }
         let Some(wrong) = corrupt(word, &mut rng) else {

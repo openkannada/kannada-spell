@@ -32,6 +32,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
       - run: sudo apt-get update && sudo apt-get install -y hunspell
       - run: scripts/hunspell-smoke.sh dict/kn_IN
       - run: scripts/hunspell-smoke.sh dict/kn_IN-alar core
+      - run: cargo build --release --locked -p kspell
+      - run: scripts/agreement.sh dict/kn_IN
+      - run: scripts/agreement.sh dict/kn_IN-alar

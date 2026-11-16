@@ -1,5 +1,7 @@
 //! Synthetic misspellings: 1 realistic edit to a correct word.
 
+use kannada_morph::script::is_well_formed;
+
 /// Pairs of letters and signs that writers confuse: aspiration, retroflex and
 /// dental, the 3 sibilants, vowel length, and nasals written as anusvara.
 const CONFUSIONS: &[(&str, &str)] = &[
@@ -75,8 +77,14 @@ pub fn misspell(word: &str, rng: &mut Rng) -> Option<String> {
 
 const VOWEL_SIGNS: &[char] = &['ಾ', 'ಿ', 'ೀ', 'ು', 'ೂ', 'ೆ', 'ೇ', 'ೈ', 'ೊ', 'ೋ', 'ೌ'];
 
-/// 1 random typing slip: a character deleted, doubled or swapped with the next, or a vowel sign replaced.
+/// 1 random typing slip: a character deleted, doubled or swapped with the next, or a vowel
+/// sign replaced. Only slips that leave well-formed Kannada script count; a stray vowel
+/// sign is trivially rejected and would flatter the dictionary.
 pub fn typo(word: &str, rng: &mut Rng) -> Option<String> {
+    (0..8).find_map(|_| slip(word, rng).filter(|t| is_well_formed(t)))
+}
+
+fn slip(word: &str, rng: &mut Rng) -> Option<String> {
     let mut chars: Vec<char> = word.chars().collect();
     if chars.len() < 3 {
         return None;
@@ -88,6 +96,7 @@ pub fn typo(word: &str, rng: &mut Rng) -> Option<String> {
         }
         1 => chars.insert(i, chars[i]),
         2 if i + 1 < chars.len() => chars.swap(i, i + 1),
+        2 => return None,
         _ => {
             let signs: Vec<usize> = (1..chars.len())
                 .filter(|&j| VOWEL_SIGNS.contains(&chars[j]))
@@ -123,6 +132,7 @@ mod tests {
         for _ in 0..50 {
             if let Some(t) = typo("ಮನೆಯಲ್ಲಿ", &mut rng) {
                 assert_ne!(t, "ಮನೆಯಲ್ಲಿ");
+                assert!(is_well_formed(&t), "{t}");
             }
         }
         assert_eq!(typo("ಮರ", &mut rng), None);

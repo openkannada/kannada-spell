@@ -1,4 +1,4 @@
-139625
+139723
 ಅ po:n
 ಅ po:x
 ಅಂ po:n
@@ -378,6 +378,7 @@
 ಅಂಗೀಕರ್ತ/Na po:n
 ಅಂಗೀಕಾರ/Na po:n
 ಅಂಗೀಕಾರಾರ್ಹ/Aj po:adj
+ಅಂಗೀಕಾರಾರ್ಹ/Na po:n
 ಅಂಗೀಕಾರಾರ್ಹತೆ/Ne po:n
 ಅಂಗೀಕೃತ/Aj po:adj
 ಅಂಗೀಕೃತ/Na po:n
@@ -1435,7 +1436,7 @@
 ಅಂಹತಿ/Ne po:n
 ಅಂಹ್ರಿ/Ne po:n
 ಅಂಹ್ರಿಪ/Na po:n
-ಅಃ po:intj
+ಅಃ po:x
 ಅಅಃ po:intj
 ಅಕ/Px po:intj
 ಅಕ/Nm po:n
@@ -2894,8 +2895,9 @@
 ಅಚ್ಯುತೇಂದ್ರ/Na po:n
 ಅಛ್ಯ/Na po:n
 ಅಜ/Aj po:adj
-ಅಜ/Nm po:n
+ಅಜ/NaNm po:n
 ಅಜಂಡ/Aj po:adj
+ಅಜಂಡ/Na po:n
 ಅಜಂತ/Aj po:adj
 ಅಜಂತ/Na po:n
 ಅಜಕ/Nm po:n
@@ -2950,7 +2952,7 @@
 ಅಜಯ/Aj po:adj
 ಅಜಯ/Nm po:n
 ಅಜರ/Aj po:adj
-ಅಜರ/Nm po:n
+ಅಜರ/Na po:n
 ಅಜರಂಧ್ರ/Na po:n
 ಅಜರನುಲಿ/Ne po:n
 ಅಜರಾಮರ/Aj po:adj
@@ -4319,6 +4321,7 @@
 ಅತಾಂತ/Aj po:adj
 ಅತಾಂತ್ರಿಕ/Aj po:adj
 ಅತಾರ್ಕಿಕ/Aj po:adj
+ಅತಾರ್ಕಿಕ/Na po:n
 ಅತಾಲವ್ಯ/Aj po:adj
 ಅತಾಲವ್ಯ/Na po:n
 ಅತಿ/Aj po:adj
@@ -4609,7 +4612,7 @@
 ಅತ್ಯಾದರಿಸು/Vb po:v
 ಅತ್ಯಾಧಾನ/Na po:n
 ಅತ್ಯಾಧುನಿಕ/Aj po:adj
-ಅತ್ಯಾಧುನಿಕ/Nm po:n
+ಅತ್ಯಾಧುನಿಕ/Na po:n
 ಅತ್ಯಾಯತ/Aj po:adj
 ಅತ್ಯಾಯಾಮ/Aj po:adj
 ಅತ್ಯಾರ್ಪು/Nu po:n
@@ -4683,7 +4686,7 @@
 ಅದಕು/Vb po:v
 ಅದಕ್ಕೆ/Px po:adv
 ಅದಕ್ಷ/Aj po:adj
-ಅದಕ್ಷ/Nm po:n
+ಅದಕ್ಷ/Na po:n
 ಅದಕ್ಷತೆ/Ne po:n
 ಅದಕ್ಷೆ/Ne po:n
 ಅದಗುಂತಿ/Ne po:n
@@ -5082,7 +5085,7 @@
 ಅಧಿಕಾರಿವರ್ಗ/Na po:n
 ಅಧಿಕಾರ್ತಿ/Ne po:n
 ಅಧಿಕೃತ/Aj po:adj
-ಅಧಿಕೃತ/Nm po:n
+ಅಧಿಕೃತ/Na po:n
 ಅಧಿಕೃತಗ್ರಂಥ/Na po:n
 ಅಧಿಕೃತತೆ/Ne po:n
 ಅಧಿಕೃತನಿವಾಸ/Na po:n
@@ -5496,7 +5499,7 @@
 ಅನನುರೂಪತೆ/Ne po:n
 ಅನನೃತವಚನ/Na po:n
 ಅನನ್ಯ/Aj po:adj
-ಅನನ್ಯ/Nm po:n
+ಅನನ್ಯ/Na po:n
 ಅನನ್ಯಗತಿಕ/Na po:n
 ಅನನ್ಯಜ/Na po:n
 ಅನನ್ಯತೆ/Ne po:n
@@ -5534,6 +5537,7 @@
 ಅನಪಾಯಿನಿ/Ne po:n
 ಅನಪೇಕ್ಷಕ/Na po:n
 ಅನಪೇಕ್ಷಣೀಯ/Aj po:adj
+ಅನಪೇಕ್ಷಣೀಯ/Na po:n
 ಅನಪೇಕ್ಷಿತ/Aj po:adj
 ಅನಪೇಕ್ಷೆ/Ne po:n
 ಅನಪೇಕ್ಷ್ಯ/Aj po:adj
@@ -5637,6 +5641,7 @@
 ಅನವಬೋಧ/Na po:n
 ಅನವರತ/Aj po:adj
 ಅನವರತ/Px po:adv
+ಅನವರತ/Na po:n
 ಅನವಲೋಕನ/Na po:n
 ಅನವಲ್ಯ/Na po:n
 ಅನವಲ್ಯಬಡಿಸು/Vb po:v
@@ -5990,6 +5995,7 @@
 ಅನಿರ್ಣೇಯ/Aj po:adj
 ಅನಿರ್ಣೇಯ/Na po:n
 ಅನಿರ್ದಿಷ್ಟ/Aj po:adj
+ಅನಿರ್ದಿಷ್ಟ/Na po:n
 ಅನಿರ್ದಿಷ್ಟತೆ/Ne po:n
 ಅನಿರ್ದೇಶನ/Na po:n
 ಅನಿರ್ದೇಶಿತ/Aj po:adj
@@ -6068,6 +6074,7 @@
 ಅನಿಶ್ಚಯ/Na po:n
 ಅನಿಶ್ಚಯಿ/Ne po:n
 ಅನಿಶ್ಚಿತ/Aj po:adj
+ಅನಿಶ್ಚಿತ/Na po:n
 ಅನಿಶ್ಚಿತಕ್ರಮ/Na po:n
 ಅನಿಶ್ಚಿತತಾತತ್ವ/Na po:n
 ಅನಿಶ್ಚಿತತೆ/Ne po:n
@@ -6401,6 +6408,7 @@
 ಅನುಪಮ್ಮ/Na po:n
 ಅನುಪಮ್ಮಚರಿತ/Na po:n
 ಅನುಪಯುಕ್ತ/Aj po:adj
+ಅನುಪಯುಕ್ತ/Na po:n
 ಅನುಪಯುಕ್ತತೆ/Ne po:n
 ಅನುಪಯೋಗ/Na po:n
 ಅನುಪಯೋಗಿ/Aj po:adj
@@ -6455,6 +6463,7 @@
 ಅನುಬಂಧಿ/Ne po:n
 ಅನುಬಂಧಿಕೆ/Ne po:n
 ಅನುಬಂಧಿತ/Aj po:adj
+ಅನುಬಂಧಿತ/Na po:n
 ಅನುಬಂಧಿಸು/Vb po:v
 ಅನುಬದ್ಧ/Aj po:adj
 ಅನುಬದ್ಧಕೇವಲ/Na po:n
@@ -6545,6 +6554,7 @@
 ಅನುಮಾನಪ್ರಮಾಣ/Na po:n
 ಅನುಮಾನಾಲಂಕಾರ/Na po:n
 ಅನುಮಾನಾಸ್ಪದ/Aj po:adj
+ಅನುಮಾನಾಸ್ಪದ/Na po:n
 ಅನುಮಾನಿತ/Aj po:adj
 ಅನುಮಾನಿತ/Nm po:n
 ಅನುಮಾನಿಸು/Vb po:v
@@ -6640,6 +6650,7 @@
 ಅನುವಂಶತತ್ತ್ವ/Na po:n
 ಅನುವಂಶವಾದಿ/Ne po:n
 ಅನುವಂಶೀಯ/Aj po:adj
+ಅನುವಂಶೀಯ/Na po:n
 ಅನುವಂಶೀಯತೆ/Ne po:n
 ಅನುವಡಿಸು/Vb po:v
 ಅನುವಡೆ/Vb po:v
@@ -6860,11 +6871,12 @@
 ಅನೈಕಾಂತಿಕ/Aj po:adj
 ಅನೈಕಾಂತಿಕ/Na po:n
 ಅನೈಕ್ಯ/Aj po:adj
+ಅನೈಕ್ಯ/Na po:n
 ಅನೈಕ್ಯತೆ/Ne po:n
 ಅನೈಚ್ಛಿಕ/Aj po:adj
 ಅನೈಚ್ಛಿಕತೆ/Ne po:n
 ಅನೈತಿಕ/Aj po:adj
-ಅನೈತಿಕ/Nm po:n
+ಅನೈತಿಕ/Na po:n
 ಅನೈತಿಕತೆ/Ne po:n
 ಅನೈಪುಣೋಕ್ತಿ/Ne po:n
 ಅನೈರ್ಮಲ್ಯ/Na po:n
@@ -7052,6 +7064,7 @@
 ಅನ್ಯಾಂಗಪ್ರವೇಶ/Na po:n
 ಅನ್ಯಾಚಾರ/Na po:n
 ಅನ್ಯಾದೃಶ/Aj po:adj
+ಅನ್ಯಾದೃಶ/Na po:n
 ಅನ್ಯಾಪದೇಶ/Na po:n
 ಅನ್ಯಾಯ/Na po:n
 ಅನ್ಯಾಯಕಾರ/Nm po:n
@@ -7414,6 +7427,7 @@
 ಅಪರಿಪಕ್ವತೆ/Ne po:n
 ಅಪರಿಪಾತ್ರ/Na po:n
 ಅಪರಿಪೂರ್ಣ/Aj po:adj
+ಅಪರಿಪೂರ್ಣ/Na po:n
 ಅಪರಿಪೂರ್ಣತೆ/Ne po:n
 ಅಪರಿಭಿನ್ನ/Aj po:adj
 ಅಪರಿಮಿತ/Aj po:adj
@@ -7687,7 +7701,7 @@
 ಅಪೂರಣಿ/Aj po:adj
 ಅಪೂರುವ/Aj po:adj
 ಅಪೂರ್ಣ/Aj po:adj
-ಅಪೂರ್ಣ/Nm po:n
+ಅಪೂರ್ಣ/Na po:n
 ಅಪೂರ್ಣಕ್ರಿಯಾಪದ/Na po:n
 ಅಪೂರ್ಣತೆ/Ne po:n
 ಅಪೂರ್ಣಪರಿವರ್ತಿ/Aj po:adj
@@ -7714,6 +7728,7 @@
 ಅಪೂರ್ವಿಗ/Na po:n
 ಅಪೇಕ್ಷಣಿ/Ne po:n
 ಅಪೇಕ್ಷಣೀಯ/Aj po:adj
+ಅಪೇಕ್ಷಣೀಯ/Na po:n
 ಅಪೇಕ್ಷಣೀಯತೆ/Ne po:n
 ಅಪೇಕ್ಷತೆ/Ne po:n
 ಅಪೇಕ್ಷಿ/Ne po:n
@@ -7907,6 +7922,7 @@
 ಅಪ್ರಶಸ್ತ/Aj po:adj
 ಅಪ್ರಶಸ್ತ/Na po:n
 ಅಪ್ರಸಕ್ತ/Aj po:adj
+ಅಪ್ರಸಕ್ತ/Na po:n
 ಅಪ್ರಸಕ್ತತೆ/Ne po:n
 ಅಪ್ರಸಕ್ತಿ/Ne po:n
 ಅಪ್ರಸನ್ನ/Aj po:adj
@@ -8664,6 +8680,7 @@
 ಅಭೌತ/Aj po:adj
 ಅಭೌತ/Na po:n
 ಅಭೌತಿಕ/Aj po:adj
+ಅಭೌತಿಕ/Na po:n
 ಅಭೌತಿಕತೆ/Ne po:n
 ಅಭೌತೀಕರಣ/Na po:n
 ಅಭೌತೀಕರಿಸು/Vb po:v
@@ -9137,6 +9154,7 @@
 ಅಮುಕ್ತ/Aj po:adj
 ಅಮುಕ್ತ/Na po:n
 ಅಮುಖ್ಯ/Aj po:adj
+ಅಮುಖ್ಯ/Na po:n
 ಅಮುಖ್ಯಕರ್ಮ/Na po:n
 ಅಮುಖ್ಯತೆ/Ne po:n
 ಅಮುಗು/Vb po:v
@@ -9158,7 +9176,7 @@
 ಅಮೂರ್ತೆ/Ne po:n
 ಅಮೂಲ/Na po:n
 ಅಮೂಲ್ಯ/Aj po:adj
-ಅಮೂಲ್ಯ/Nm po:n
+ಅಮೂಲ್ಯ/Na po:n
 ಅಮೂಲ್ಯತೆ/Ne po:n
 ಅಮೂಲ್ಯತ್ವ/Na po:n
 ಅಮೃಣಾಲ/Na po:n
@@ -10835,6 +10853,7 @@
 ಅಲಪುಗಾರ/Na po:n
 ಅಲಬು/Nu po:n
 ಅಲಭ್ಯ/Aj po:adj
+ಅಲಭ್ಯ/Na po:n
 ಅಲಭ್ಯತರ/Na po:n
 ಅಲಭ್ಯತೆ/Ne po:n
 ಅಲಭ್ಯಲಾಭ/Na po:n
@@ -11073,7 +11092,7 @@
 ಅಲ್ಗಿಸು/Vb po:v
 ಅಲ್ಗು/Vb po:v
 ಅಲ್ಪ/Aj po:adj
-ಅಲ್ಪ/Nm po:n
+ಅಲ್ಪ/NaNm po:n
 ಅಲ್ಪಕ/Na po:n
 ಅಲ್ಪಕಾಣಿಕೆ/Ne po:n
 ಅಲ್ಪಕಾಲಿಕ/Aj po:adj
@@ -12106,6 +12125,7 @@
 ಅವಾಸ್ತವ/Na po:n
 ಅವಾಸ್ತವತೆ/Ne po:n
 ಅವಾಸ್ತವಿಕ/Aj po:adj
+ಅವಾಸ್ತವಿಕ/Na po:n
 ಅವಾಸ್ತವಿಕತೆ/Ne po:n
 ಅವಾಹಕ/Na po:n
 ಅವಿ/Ne po:n
@@ -12404,6 +12424,7 @@
 ಅವ್ಯವಸಾಯ/Na po:n
 ಅವ್ಯವಸಾಯಿ/Ne po:n
 ಅವ್ಯವಸ್ಥಿತ/Aj po:adj
+ಅವ್ಯವಸ್ಥಿತ/Na po:n
 ಅವ್ಯವಸ್ಥೆ/Ne po:n
 ಅವ್ಯವಹಾರ/Na po:n
 ಅವ್ಯವಹಾರಿ/Ne po:n
@@ -12475,6 +12496,7 @@
 ಅಶಕ್ತಿ/Ne po:n
 ಅಶಕ್ತೆ/Ne po:n
 ಅಶಕ್ಯ/Aj po:adj
+ಅಶಕ್ಯ/Na po:n
 ಅಶಕ್ಯತೆ/Ne po:n
 ಅಶತ್ರು/Aj po:adj
 ಅಶತ್ರು/Nu po:n
@@ -12514,10 +12536,11 @@
 ಅಶಾಬ್ಧಿಕ/Aj po:adj
 ಅಶಾಬ್ಧಿಕತೆ/Ne po:n
 ಅಶಾಶ್ವತ/Aj po:adj
-ಅಶಾಶ್ವತ/Nm po:n
+ಅಶಾಶ್ವತ/Na po:n
 ಅಶಾಶ್ವತತೆ/Ne po:n
 ಅಶಾಸ್ತ್ರ/Aj po:adj
 ಅಶಾಸ್ತ್ರೀಯ/Aj po:adj
+ಅಶಾಸ್ತ್ರೀಯ/Na po:n
 ಅಶಾಸ್ತ್ರೀಯತೆ/Ne po:n
 ಅಶಿಕ್ಷಿತ/Aj po:adj
 ಅಶಿಕ್ಷಿತ/Nm po:n
@@ -12818,7 +12841,7 @@
 ಅಸಂಕ್ಲುಪ್ತ/Aj po:adj
 ಅಸಂಕ್ಲುಪ್ತ/Na po:n
 ಅಸಂಖ್ಯ/Aj po:adj
-ಅಸಂಖ್ಯ/Nm po:n
+ಅಸಂಖ್ಯ/Na po:n
 ಅಸಂಖ್ಯಾಕ/Aj po:adj
 ಅಸಂಖ್ಯಾತ/Aj po:adj
 ಅಸಂಖ್ಯಾತ/Nm po:n
@@ -12835,6 +12858,7 @@
 ಅಸಂಗಿ/Ne po:n
 ಅಸಂಗೆ/Ne po:n
 ಅಸಂಘಟಿತ/Aj po:adj
+ಅಸಂಘಟಿತ/Na po:n
 ಅಸಂಚಲಿತ/Aj po:adj
 ಅಸಂಚಿತ/Aj po:adj
 ಅಸಂಚಿತಸುಕೃತ/Na po:n
@@ -12851,6 +12875,7 @@
 ಅಸಂತೋಷ/Na po:n
 ಅಸಂದರ್ಭ/Na po:n
 ಅಸಂದಿಗ್ಧ/Aj po:adj
+ಅಸಂದಿಗ್ಧ/Na po:n
 ಅಸಂದಿಗ್ಧತೆ/Ne po:n
 ಅಸಂಧೇಯ/Aj po:adj
 ಅಸಂಪಾತ/Aj po:adj
@@ -12863,6 +12888,7 @@
 ಅಸಂಬಂಧ/Na po:n
 ಅಸಂಬಂಧಾತಿಶಯೋಕ್ತಿ/Ne po:n
 ಅಸಂಬದ್ಧ/Aj po:adj
+ಅಸಂಬದ್ಧ/Na po:n
 ಅಸಂಬದ್ಧತನ/Na po:n
 ಅಸಂಬದ್ಧತೆ/Ne po:n
 ಅಸಂಬದ್ಧಪ್ರಲಾಪ/Na po:n
@@ -12986,6 +13012,7 @@
 ಅಸಮ/Aj po:adj
 ಅಸಮ/Nm po:n
 ಅಸಮಂಜಸ/Aj po:adj
+ಅಸಮಂಜಸ/Na po:n
 ಅಸಮಂಜಸತೆ/Ne po:n
 ಅಸಮಂಜಸಿಕೆ/Ne po:n
 ಅಸಮಕಸಿ/Ne po:n
@@ -13087,6 +13114,7 @@
 ಅಸಹಕಾರಿ/Aj po:adj
 ಅಸಹಕಾರಿ/Ne po:n
 ಅಸಹಜ/Aj po:adj
+ಅಸಹಜ/Na po:n
 ಅಸಹಜತೆ/Ne po:n
 ಅಸಹನ/Na po:n
 ಅಸಹನೀಯ/Aj po:adj
@@ -13507,6 +13535,7 @@
 ಅಸ್ವಾಧೀನ/Aj po:adj
 ಅಸ್ವಾಧ್ಯಾಯ/Na po:n
 ಅಸ್ವಾಭಾವಿಕ/Aj po:adj
+ಅಸ್ವಾಭಾವಿಕ/Na po:n
 ಅಸ್ವಾಭಾವಿಕತೆ/Ne po:n
 ಅಸ್ವಾಮಿವಿಕ್ರಯ/Na po:n
 ಅಸ್ವಾಮ್ಯ/Na po:n
@@ -13756,7 +13785,7 @@
 ಆಂಶಿಕ/Aj po:adj
 ಆಂಶಿಕತೆ/Ne po:n
 ಆಂಹತಿ/Ne po:n
-ಆಃ po:intj
+ಆಃ po:x
 ಆಕಂಠ/Px po:adv
 ಆಕಂಠಪೂರ/Px po:adv
 ಆಕಂಠಪೂರ್ತಿ/Px po:adv
@@ -15087,7 +15116,7 @@
 ಆಧೀನಚಿತ್ತ/Na po:n
 ಆಧೀನಚಿತ್ತೆ/Ne po:n
 ಆಧುನಿಕ/Aj po:adj
-ಆಧುನಿಕ/Nm po:n
+ಆಧುನಿಕ/NaNm po:n
 ಆಧುನಿಕತೆ/Ne po:n
 ಆಧುನಿಕೀಕರಣ/Na po:n
 ಆಧುನೀಕರಣ/Na po:n
@@ -15226,6 +15255,7 @@
 ಆನುಲೋಮಿಕತೆ/Ne po:n
 ಆನುವಂಶ/Aj po:adj
 ಆನುವಂಶಿಕ/Aj po:adj
+ಆನುವಂಶಿಕ/Na po:n
 ಆನುವಂಶಿಕತೆ/Ne po:n
 ಆನುವಂಶಿಕೆ/Ne po:n
 ಆನುವಂಶೀಯ/Aj po:adj
@@ -15234,6 +15264,7 @@
 ಆನುಶ್ರಾವಿಕ/Na po:n
 ಆನುಶ್ರಾವಿಕಕರ್ಮಿ/Ne po:n
 ಆನುಷಂಗಿಕ/Aj po:adj
+ಆನುಷಂಗಿಕ/Na po:n
 ಆನುಷಂಗಿಕಖನಿಜ/Na po:n
 ಆನುಷಂಗಿಕತೆ/Ne po:n
 ಆನುಷಂಗಿಕಫಲ/Na po:n
@@ -16052,6 +16083,7 @@
 ಆರೋಗಿಸು/Vb po:v
 ಆರೋಗ್ಯ/Na po:n
 ಆರೋಗ್ಯಕರ/Aj po:adj
+ಆರೋಗ್ಯಕರ/Na po:n
 ಆರೋಗ್ಯಕೇಂದ್ರ/Na po:n
 ಆರೋಗ್ಯಗೃಹ/Na po:n
 ಆರೋಗ್ಯಗೊಳಿಸು/Vb po:v
@@ -16803,6 +16835,7 @@
 ಆಶ್ಚರ್ಯ/Na po:n
 ಆಶ್ಚರ್ಯಂಬಡು/Vb po:v
 ಆಶ್ಚರ್ಯಕರ/Aj po:adj
+ಆಶ್ಚರ್ಯಕರ/Na po:n
 ಆಶ್ಚರ್ಯಚಕಿತ/Aj po:adj
 ಆಶ್ಚರ್ಯಪಟ್ಟ/Vp st:ಆಶ್ಚರ್ಯಪಡು po:v
 ಆಶ್ಚರ್ಯಪಟ್ಟಿತು st:ಆಶ್ಚರ್ಯಪಡು po:v is:+past.3sn
@@ -19341,7 +19374,7 @@
 ಉಂಬುಳ/Na po:n
 ಉಂಬುಳಿ/Ne po:n
 ಉಂಬೊಳ/Na po:n
-ಉಃ po:intj
+ಉಃ po:x
 ಉಃಶಾಪ/Na po:n
 ಉಃಸಿ/Px po:intj
 ಉಕಪ್ರಿಯ/Na po:n
@@ -19632,7 +19665,7 @@
 ಉಚ್ಚಸ್ಥಾನ/Na po:n
 ಉಚ್ಚಸ್ಥಿತಿ/Ne po:n
 ಉಚ್ಚಹ/Na po:n
-ಉಚ್ಚಾಟ/Nm po:n
+ಉಚ್ಚಾಟ/Na po:n
 ಉಚ್ಚಾಟಕ/Na po:n
 ಉಚ್ಚಾಟನ/Na po:n
 ಉಚ್ಚಾಟನಂಗೈ po:v
@@ -20564,7 +20597,7 @@
 ಉದಹರಿಸು/Vb po:v
 ಉದಾಗಸ/Na po:n
 ಉದಾತ್ತ/Aj po:adj
-ಉದಾತ್ತ/Nm po:n
+ಉದಾತ್ತ/Na po:n
 ಉದಾತ್ತಗೊಳಿಸು/Vb po:v
 ಉದಾತ್ತಚರಿತ/Na po:n
 ಉದಾತ್ತಚರಿತೆ/Ne po:n
@@ -21064,7 +21097,7 @@
 ಉನ್ನಂತ/Aj po:adj
 ಉನ್ನಂತು/Aj po:adj
 ಉನ್ನತ/Aj po:adj
-ಉನ್ನತ/Nm po:n
+ಉನ್ನತ/Na po:n
 ಉನ್ನತಚ್ಛಾಯ/Na po:n
 ಉನ್ನತತ್ವ/Na po:n
 ಉನ್ನತದರ್ಪಣ/Na po:n
@@ -25187,6 +25220,7 @@
 ಏಕಶಃ po:adv
 ಏಕಶಾಖಿ/Ne po:n
 ಏಕಶಾಖೀಯ/Aj po:adj
+ಏಕಶಾಖೀಯ/Na po:n
 ಏಕಶೃಂಗಿ/Ne po:n
 ಏಕಶೇಷ/Na po:n
 ಏಕಸಂಧಿ/Ne po:n
@@ -26807,6 +26841,9 @@
 ಒಯ್ತಂದಿತು st:ಒಯ್ತರು po:v is:+past.3sn
 ಒಯ್ತಂದು/Vc st:ಒಯ್ತರು po:v
 ಒಯ್ತರು/Vr po:v
+ಒಯ್ದ/Vp st:ಒಯ್ಯು po:v
+ಒಯ್ದಿತು st:ಒಯ್ಯು po:v is:+past.3sn
+ಒಯ್ದು/Vc st:ಒಯ್ಯು po:v
 ಒಯ್ನ/Na po:n
 ಒಯ್ಪುಚ್ಚ/Na po:n
 ಒಯ್ಯಗೆ/Px po:adv
@@ -26827,7 +26864,7 @@
 ಒಯ್ಯಾಳಿಗ/Na po:n
 ಒಯ್ಯಿ/Vb po:v
 ಒಯ್ಯಿಕೆ/Ne po:n
-ಒಯ್ಯು/Vb po:v
+ಒಯ್ಯು/Vr po:v
 ಒಯ್ರಿ/Ne po:n
 ಒಯ್ಲು/Nu po:n
 ಒಯ್ವಾಹ/Na po:n
@@ -32908,6 +32945,7 @@
 ಕಲಾಕೌಶಲ್ಯ/Na po:n
 ಕಲಾಜೀವಿ/Ne po:n
 ಕಲಾತ್ಮಕ/Aj po:adj
+ಕಲಾತ್ಮಕ/Na po:n
 ಕಲಾತ್ಮಕತೆ/Ne po:n
 ಕಲಾದ/Na po:n
 ಕಲಾದಕ/Na po:n
@@ -35237,6 +35275,7 @@
 ಕಾತೆ/Ne po:n
 ಕಾತ್ಯಾಯನಿ/Ne po:n
 ಕಾತ್ಯಾಯನಿಕೆ/Ne po:n
+ಕಾದ/Vp st:ಕಾಯು po:v
 ಕಾದಂಬ/Nm po:n
 ಕಾದಂಬರಿ/Ne po:n
 ಕಾದಂಬರಿಕಾರ/Nm po:n
@@ -35264,9 +35303,10 @@
 ಕಾದಿಸು/Vb po:v
 ಕಾದು/Nu po:n
 ಕಾದು/Vb po:v
+ಕಾದು/Vc st:ಕಾಯು po:v
 ಕಾದುಹ/Na po:n
 ಕಾದ್ರವೇಯ/Na po:n
-ಕಾನ/Nm po:n
+ಕಾನ/NaNm po:n
 ಕಾನಕ/Aj po:adj
 ಕಾನಕಲ್ಲಟೆ/Ne po:n
 ಕಾನಕಾನಉತ್ತತ್ತಿ/Ne po:n
@@ -35303,8 +35343,9 @@
 ಕಾನೂನುತಜ್ಞೆ/Ne po:n
 ಕಾನೂನುದಾರ/Na po:n
 ಕಾನೂನುಬದ್ಧ/Aj po:adj
+ಕಾನೂನುಬದ್ಧ/Na po:n
 ಕಾನೂನುಬದ್ಧತೆ/Ne po:n
-ಕಾನೂನುಬಾಹಿರ/Nm po:n
+ಕಾನೂನುಬಾಹಿರ/Na po:n
 ಕಾನೂನುಭ್ರಷ್ಟ/Na po:n
 ಕಾನೂನುಭ್ರಷ್ಟೆ/Ne po:n
 ಕಾನೂನುಮದುವೆ/Ne po:n
@@ -35645,6 +35686,7 @@
 ಕಾಯಿಗ/Na po:n
 ಕಾಯಿಗಟ್ಟು/Vb po:v
 ಕಾಯಿಗಣ್ಣು/Nu po:n
+ಕಾಯಿತು st:ಕಾಯು po:v is:+past.3sn
 ಕಾಯಿದೆ/Ne po:n
 ಕಾಯಿಧೂಪ/Na po:n
 ಕಾಯಿಪಲ್ಯ/Na po:n
@@ -35661,7 +35703,7 @@
 ಕಾಯಿಸೋರೆ/Ne po:n
 ಕಾಯಿಹಾಲು/Nu po:n
 ಕಾಯಿಹುಳಿ/Ne po:n
-ಕಾಯು/Vb po:v
+ಕಾಯು/Vr po:v
 ಕಾಯೆಳೆ/Ne po:n
 ಕಾಯೊಡೆ/Ne po:n
 ಕಾಯೋತ್ಸರ್ಗ/Na po:n
@@ -36785,6 +36827,7 @@
 ಕಾವ್ಯಪ್ರವೀಣ/Na po:n
 ಕಾವ್ಯಬಂಧ/Na po:n
 ಕಾವ್ಯಮಯ/Aj po:adj
+ಕಾವ್ಯಮಯ/Na po:n
 ಕಾವ್ಯಮರ್ಮ/Na po:n
 ಕಾವ್ಯಮಲ/Na po:n
 ಕಾವ್ಯಮಲವ್ಯಾವೃತ್ತಿ/Ne po:n
@@ -38201,7 +38244,7 @@
 ಕೀಸುಳಿವಡೆ/Vb po:v
 ಕೀಸುವಣೆ/Ne po:n
 ಕೀಸೋಲೆ/Ne po:n
-ಕು/Nd po:n
+ಕು po:n
 ಕುಂಕಿ/Aj po:adj
 ಕುಂಕಿ/Ne po:n
 ಕುಂಕಿಆನೆ/Ne po:n
@@ -39097,6 +39140,7 @@
 ಕುತುಬಿ/Ne po:n
 ಕುತೂಹಲ/Na po:n
 ಕುತೂಹಲಕರ/Aj po:adj
+ಕುತೂಹಲಕರ/Na po:n
 ಕುತೂಹಲಕಾರಿ/Aj po:adj
 ಕುತೂಹಲಕಾರಿ/Ne po:n
 ಕುತೂಹಲಿ/Ne po:n
@@ -43085,7 +43129,7 @@
 ಕೊಂಗೆ/Ne po:n
 ಕೊಂಚ/Aj po:adj
 ಕೊಂಚ/Px po:adv
-ಕೊಂಚ/Nm po:n
+ಕೊಂಚ/Na po:n
 ಕೊಂಚಗಾತಿ/Ne po:n
 ಕೊಂಚರು/Nu po:n
 ಕೊಂಚಲು/Nu po:n
@@ -43667,10 +43711,13 @@
 ಕೊಯ್ತ/Na po:n
 ಕೊಯ್ತೆ/Ne po:n
 ಕೊಯ್ತೆವೋಗು/Vb po:v
+ಕೊಯ್ದ/Vp st:ಕೊಯ್ಯು po:v
+ಕೊಯ್ದಿತು st:ಕೊಯ್ಯು po:v is:+past.3sn
+ಕೊಯ್ದು/Vc st:ಕೊಯ್ಯು po:v
 ಕೊಯ್ಯಮುಂಜಿ/Ne po:n
 ಕೊಯ್ಯಾ/Nv po:n
 ಕೊಯ್ಯಿಸು/Vb po:v
-ಕೊಯ್ಯು/Vb po:v
+ಕೊಯ್ಯು/Vr po:v
 ಕೊಯ್ಯುಕೊರೆ/Vb po:v
 ಕೊಯ್ಯುರುಳೆ/Ne po:n
 ಕೊಯ್ಲಾಳಿ/Ne po:n
@@ -43769,6 +43816,7 @@
 ಕೊರಳುಚೌಕ/Na po:n
 ಕೊರಳುದ್ದ/Aj po:adj
 ಕೊರಳುದ್ದ/Px po:adv
+ಕೊರಳುದ್ದ/Na po:n
 ಕೊರಳುಪಟ್ಟಿ/Ne po:n
 ಕೊರಳುಬ್ಬಸ/Na po:n
 ಕೊರಳುಲಿ/Ne po:n
@@ -44987,6 +45035,7 @@
 ಕ್ರಮಪ್ರಾಪ್ತ/Aj po:adj
 ಕ್ರಮಪ್ರಾಪ್ತಿ/Ne po:n
 ಕ್ರಮಬದ್ಧ/Aj po:adj
+ಕ್ರಮಬದ್ಧ/Na po:n
 ಕ್ರಮಬದ್ಧತೆ/Ne po:n
 ಕ್ರಮಭಂಗ/Na po:n
 ಕ್ರಮಭ್ರಷ್ಟ/Na po:n
@@ -45046,6 +45095,7 @@
 ಕ್ರಾಂತಿಕಾತಿ/Ne po:n
 ಕ್ರಾಂತಿಕಾರ/Nm po:n
 ಕ್ರಾಂತಿಕಾರಕ/Aj po:adj
+ಕ್ರಾಂತಿಕಾರಕ/Na po:n
 ಕ್ರಾಂತಿಕಾರಿ/Aj po:adj
 ಕ್ರಾಂತಿಕಾರಿ/Ne po:n
 ಕ್ರಾಂತಿಕಾಲ/Na po:n
@@ -45057,7 +45107,7 @@
 ಕ್ರಾಂತಿವೃತ್ತ/Na po:n
 ಕ್ರಾಪು/Nu po:n
 ಕ್ರಾಯಕ/Na po:n
-ಕ್ರಿ/Ne po:n
+ಕ್ರಿ po:n
 ಕ್ರಿಜ್ಞಾನ/Na po:n
 ಕ್ರಿತ್ತಿ/Ne po:n
 ಕ್ರಿಮಿ/Ne po:n
@@ -45096,7 +45146,7 @@
 ಕ್ರಿಯಾಚಾರ/Na po:n
 ಕ್ರಿಯಾಜ್ಞಾನ/Na po:n
 ಕ್ರಿಯಾತ್ಮಕ/Aj po:adj
-ಕ್ರಿಯಾತ್ಮಕ/Nm po:n
+ಕ್ರಿಯಾತ್ಮಕ/Na po:n
 ಕ್ರಿಯಾತ್ಮಕತೆ/Ne po:n
 ಕ್ರಿಯಾತ್ಮಕಶಿಕ್ಷಣ/Na po:n
 ಕ್ರಿಯಾತ್ಮಕಾವ್ಯಯ/Na po:n
@@ -45245,7 +45295,7 @@
 ಕ್ರುಷ್ಟ/Na po:n
 ಕ್ರೂಜೆ/Ne po:n
 ಕ್ರೂರ/Aj po:adj
-ಕ್ರೂರ/Nm po:n
+ಕ್ರೂರ/Na po:n
 ಕ್ರೂರಕರ್ಮ/Na po:n
 ಕ್ರೂರಕರ್ಮಿ/Ne po:n
 ಕ್ರೂರಗ್ರಾಹ್ಯ/Na po:n
@@ -45416,6 +45466,7 @@
 ಕ್ಷಣಾಂಶ/Na po:n
 ಕ್ಷಣಾರ್ಧ/Na po:n
 ಕ್ಷಣಿಕ/Aj po:adj
+ಕ್ಷಣಿಕ/Na po:n
 ಕ್ಷಣಿಕಗುಣ/Na po:n
 ಕ್ಷಣಿಕತೆ/Ne po:n
 ಕ್ಷಣಿಕತ್ವ/Na po:n
@@ -47773,7 +47824,7 @@
 ಗಣನಾಯಕ/Nm po:n
 ಗಣನಿಯಮ/Na po:n
 ಗಣನೀಯ/Aj po:adj
-ಗಣನೀಯ/Nm po:n
+ಗಣನೀಯ/Na po:n
 ಗಣನೀಯತೆ/Ne po:n
 ಗಣನೆ/Ne po:n
 ಗಣನೆಗೆಡು/Vb po:v
@@ -48191,7 +48242,7 @@
 ಗಮನಶ್ರಮ/Na po:n
 ಗಮನಾಗಮನ/Na po:n
 ಗಮನಾರ್ಹ/Aj po:adj
-ಗಮನಾರ್ಹ/Nm po:n
+ಗಮನಾರ್ಹ/NaNm po:n
 ಗಮನಾರ್ಹತೆ/Ne po:n
 ಗಮನಾಲಸ/Aj po:adj
 ಗಮನಾಲಸ/Na po:n
@@ -55200,7 +55251,7 @@
 ಚಿಂಪಿ/Ne po:n
 ಚಿಂಪಿಗ/Na po:n
 ಚಿಂಪೆ/Ne po:n
-ಚಿಃ po:intj
+ಚಿಃ po:x
 ಚಿಃಗೈ po:v
 ಚಿಕಟಾಯಿಸು/Vb po:v
 ಚಿಕಣ/Na po:n
@@ -58125,7 +58176,7 @@
 ಜನಗಿ/Ne po:n
 ಜನಜಂಗುಳಿ/Ne po:n
 ಜನಜನಿತ/Aj po:adj
-ಜನಜನಿತ/Nm po:n
+ಜನಜನಿತ/Na po:n
 ಜನಜಾಗೃತಿ/Ne po:n
 ಜನಜಾತ್ರೆ/Ne po:n
 ಜನಜಾಲ/Na po:n
@@ -58153,7 +58204,7 @@
 ಜನಪದ/NaNm po:n
 ಜನಪದಸಾಹಿತ್ಯ/Na po:n
 ಜನಪ್ರಿಯ/Aj po:adj
-ಜನಪ್ರಿಯ/Nm po:n
+ಜನಪ್ರಿಯ/NaNm po:n
 ಜನಪ್ರಿಯತೆ/Ne po:n
 ಜನಬಲ/Na po:n
 ಜನಬಳಕೆ/Ne po:n
@@ -60763,7 +60814,7 @@
 ಜೌಳಿ/Ne po:n
 ಜೌವನ/Na po:n
 ಜೌವನೆ/Ne po:n
-ಜ್ಞ/Nm po:n
+ಜ್ಞ po:n
 ಜ್ಞತ್ವ/Na po:n
 ಜ್ಞಪಿತ/Aj po:adj
 ಜ್ಞಪ್ತ/Aj po:adj
@@ -60851,7 +60902,7 @@
 ಜ್ಞಾಪಿಸು/Vb po:v
 ಜ್ಞಾಯಕ/Na po:n
 ಜ್ಞೇಯ/Aj po:adj
-ಜ್ಞೇಯ/Nm po:n
+ಜ್ಞೇಯ/Na po:n
 ಜ್ಞೇಯನಿಷ್ಠ/Aj po:adj
 ಜ್ಞೇಯನಿಷ್ಠ/Na po:n
 ಜ್ಞೇಯನಿಷ್ಠತೆ/Ne po:n
@@ -63640,7 +63691,7 @@
 ತಮೋಮಯ/Aj po:adj
 ತಮೋರಿ/Ne po:n
 ತಮೋಲೋಕ/Na po:n
-ತಮ್ಮ/Nm po:n
+ತಮ್ಮ/NaNm po:n
 ತಮ್ಮ st:ತಾವು po:pron is:+gen
 ತಮ್ಮಟ/Na po:n
 ತಮ್ಮಟೆ/Ne po:n
@@ -66941,7 +66992,7 @@
 ತೃಷೆ/Ne po:n
 ತೃಷ್ಣಕ/Na po:n
 ತೃಷ್ಣೆ/Ne po:n
-ತೆ/Px po:x
+ತೆ po:x
 ತೆಂಕ/Na po:n
 ತೆಂಕಣ/Aj po:adj
 ತೆಂಕಣ/Na po:n
@@ -68240,8 +68291,8 @@
 ತ್ರಾಸು/Nu po:n
 ತ್ರಾಸುಗಟ್ಟಳೆ/Ne po:n
 ತ್ರಾಹಿ/Px po:x
-ತ್ರಿ/Aj po:adj
-ತ್ರಿ/Ne po:n
+ತ್ರಿ po:adj
+ತ್ರಿ po:n
 ತ್ರಿಕ/Na po:n
 ತ್ರಿಕಂಟಕ/Na po:n
 ತ್ರಿಕಟು/Nu po:n
@@ -70661,6 +70712,7 @@
 ದೀರ್ಘ/Na po:n
 ದೀರ್ಘಕಂಠ/Na po:n
 ದೀರ್ಘಕಾಲಿಕ/Aj po:adj
+ದೀರ್ಘಕಾಲಿಕ/Na po:n
 ದೀರ್ಘಕೋಶಿ/Ne po:n
 ದೀರ್ಘಕೋಶಿಕೆ/Ne po:n
 ದೀರ್ಘಗೊಳಿಸು/Vb po:v
@@ -70718,7 +70770,7 @@
 ದೀಹ/Na po:n
 ದೀಹಳಿಗೆ/Ne po:n
 ದೀಹಾರ/Na po:n
-ದು/Nu po:n
+ದು po:n
 ದುಂಕಿ/Ne po:n
 ದುಂಡಂಕಿ/Ne po:n
 ದುಂಡಂಕೆ/Ne po:n
@@ -71346,7 +71398,7 @@
 ದುರ್ಲಕ್ಷ್ಯ/Aj po:adj
 ದುರ್ಲಕ್ಷ್ಯ/Na po:n
 ದುರ್ಲಭ/Aj po:adj
-ದುರ್ಲಭ/Nm po:n
+ದುರ್ಲಭ/Na po:n
 ದುರ್ಲಭಾ/Nv po:n
 ದುರ್ಲಲಿತ/Aj po:adj
 ದುರ್ಲವ/Na po:n
@@ -71730,6 +71782,7 @@
 ದೂಷಣ/Nm po:n
 ದೂಷಣಿಕ/Aj po:adj
 ದೂಷಣೀಯ/Aj po:adj
+ದೂಷಣೀಯ/Na po:n
 ದೂಷಣೆ/Ne po:n
 ದೂಷಿ/Ne po:n
 ದೂಷಿಕೆ/Ne po:n
@@ -72270,7 +72323,7 @@
 ದೇಸಿವಡೆ/Vb po:v
 ದೇಸಿಸೆಟ್ಟಿ/Ne po:n
 ದೇಸೀಯ/Aj po:adj
-ದೇಸೀಯ/Nm po:n
+ದೇಸೀಯ/Na po:n
 ದೇಸೆ/Ne po:n
 ದೇಸೆಕಾರ್ತಿ/Ne po:n
 ದೇಸೆಗಾರ್ತಿ/Ne po:n
@@ -72953,7 +73006,7 @@
 ದೌಹಿತ್ರ/Na po:n
 ದೌಹೃದ/Na po:n
 ದ್ಯಾಸ/Na po:n
-ದ್ಯು/Nd po:n
+ದ್ಯು po:n
 ದ್ಯುಚರ/Na po:n
 ದ್ಯುತಿ/Ne po:n
 ದ್ಯುತಿಗರೆ/Vb po:v
@@ -73104,7 +73157,7 @@
 ದ್ರಾವಿತ/Aj po:adj
 ದ್ರಾವಿಳ/Aj po:adj
 ದ್ರಾವಿಳ/Na po:n
-ದ್ರು/Nu po:n
+ದ್ರು po:n
 ದ್ರುಕಿಲಮ/Na po:n
 ದ್ರುಕ್ಕು/Nu po:n
 ದ್ರುಗ್ಧ/Aj po:adj
@@ -73192,8 +73245,8 @@
 ದ್ವಾವಿಂಶತಿ/Ne po:n
 ದ್ವಾಶಿ/Ne po:n
 ದ್ವಾಸ್ಥ/Na po:n
-ದ್ವಿ/Aj po:adj
-ದ್ವಿ/Ne po:n
+ದ್ವಿ po:adj
+ದ್ವಿ po:n
 ದ್ವಿಕ/Na po:n
 ದ್ವಿಕರ್ಮಕ/Na po:n
 ದ್ವಿಖುರ/Na po:n
@@ -73862,7 +73915,7 @@
 ಧಾರೆಹುಳಿ/Ne po:n
 ಧಾರೋಷ್ಣ/Na po:n
 ಧಾರ್ಮಿಕ/Aj po:adj
-ಧಾರ್ಮಿಕ/Nm po:n
+ಧಾರ್ಮಿಕ/NaNm po:n
 ಧಾರ್ಮಿಕತನ/Na po:n
 ಧಾರ್ಮಿಕತೆ/Ne po:n
 ಧಾರ್ಮಿಕಶಿಕ್ಷಣ/Na po:n
@@ -74540,6 +74593,7 @@
 ನಕುಲ/Nm po:n
 ನಕುಲೇಷ್ಟೆ/Ne po:n
 ನಕುಳ/Na po:n
+ನಕ್ಕ/Vp st:ನಗು po:v
 ನಕ್ಕಬಡಿ/Vb po:v
 ನಕ್ಕಬಳಿ/Ne po:n
 ನಕ್ಕರಿ/Ne po:n
@@ -74547,8 +74601,10 @@
 ನಕ್ಕಲು/Nu po:n
 ನಕ್ಕಿ/Ne po:n
 ನಕ್ಕಿಕೆಲಸ/Na po:n
+ನಕ್ಕಿತು st:ನಗು po:v is:+past.3sn
 ನಕ್ಕಿಸು/Vb po:v
 ನಕ್ಕು/Vb po:v
+ನಕ್ಕು/Vc st:ನಗು po:v
 ನಕ್ಕುಳ/Na po:n
 ನಕ್ಕೆ/Ne po:n
 ನಕ್ಕೆಚಿಕ್ಕನಾಕು/Nu po:n
@@ -74690,7 +74746,7 @@
 ನಗಾರ್ಯ/Na po:n
 ನಗಿಸು/Vb po:v
 ನಗು/Nd po:n
-ನಗು/Vb po:v
+ನಗು/Vr po:v
 ನಗುಗೇಡು/Nu po:n
 ನಗುತ/Na po:n
 ನಗುಪಾಟಲು/Nu po:n
@@ -75279,6 +75335,7 @@
 ನಮ್ಮು/Vb po:v
 ನಮ್ಮೆ/Ne po:n
 ನಮ್ಯ/Aj po:adj
+ನಮ್ಯ/Na po:n
 ನಮ್ಯತೆ/Ne po:n
 ನಮ್ರ/Aj po:adj
 ನಮ್ರ/Na po:n
@@ -78235,7 +78292,7 @@
 ನಿರ್ಗುಣ/Na po:n
 ನಿರ್ಗುಣತೆ/Ne po:n
 ನಿರ್ಗುಣತ್ವ/Na po:n
-ನಿರ್ಗುಣಬ್ರಹ್ಮ/Nm po:n
+ನಿರ್ಗುಣಬ್ರಹ್ಮ/Na po:n
 ನಿರ್ಗುಣಬ್ರಹ್ಮವಾದಿ/Ne po:n
 ನಿರ್ಗುಣಬ್ರಹ್ಮವಿದ್ಯೆ/Ne po:n
 ನಿರ್ಗುಣಭಕ್ತಿ/Ne po:n
@@ -80103,7 +80160,7 @@
 ನೀರ್ವೊಟ್ಟಣ/Na po:n
 ನೀರ್ಸೆರೆ/Ne po:n
 ನೀಲ/Aj po:adj
-ನೀಲ/Nm po:n
+ನೀಲ/NaNm po:n
 ನೀಲಂ po:n
 ನೀಲಂಗು/Nu po:n
 ನೀಲಕಂಠ/Nm po:n
@@ -81484,6 +81541,7 @@
 ನೈಜ/Na po:n
 ನೈಜತೆ/Ne po:n
 ನೈತಿಕ/Aj po:adj
+ನೈತಿಕ/Na po:n
 ನೈತಿಕಜಯ/Na po:n
 ನೈತಿಕತೆ/Ne po:n
 ನೈತಿಕಧೈರ್ಯ/Na po:n
@@ -81818,6 +81876,7 @@
 ನ್ಯಾಯವಿದ/Nm po:n
 ನ್ಯಾಯವಿದ್ಯೆ/Ne po:n
 ನ್ಯಾಯವಿಧಾಯಕ/Aj po:adj
+ನ್ಯಾಯವಿಧಾಯಕ/Na po:n
 ನ್ಯಾಯವಿಧಾಯಕಸಭೆ/Ne po:n
 ನ್ಯಾಯವಿರುದ್ಧ/Aj po:adj
 ನ್ಯಾಯವಿರುದ್ಧ/Na po:n
@@ -84934,6 +84993,7 @@
 ಪರಿವರ್ತನಗೊಂಡು/Vc st:ಪರಿವರ್ತನಗೊಳ್ಳು po:v
 ಪರಿವರ್ತನಗೊಳ್ಳು/Vr po:v
 ಪರಿವರ್ತನಶೀಲ/Aj po:adj
+ಪರಿವರ್ತನಶೀಲ/Na po:n
 ಪರಿವರ್ತನೆ/Ne po:n
 ಪರಿವರ್ತನೆಗೊಂಡ/Vp st:ಪರಿವರ್ತನೆಗೊಳ್ಳು po:v
 ಪರಿವರ್ತನೆಗೊಂಡಿತು st:ಪರಿವರ್ತನೆಗೊಳ್ಳು po:v is:+past.3sn
@@ -84946,6 +85006,7 @@
 ಪರಿವರ್ಧಕ/Aj po:adj
 ಪರಿವರ್ಧಕ/Na po:n
 ಪರಿವರ್ಧಿತ/Aj po:adj
+ಪರಿವರ್ಧಿತ/Na po:n
 ಪರಿವರ್ಧಿನಿ/Ne po:n
 ಪರಿವರ್ಧಿನಿಷಟ್ಪದಿ/Ne po:n
 ಪರಿವರ್ಧಿನೀಷಟ್ಪದಿ/Ne po:n
@@ -88445,7 +88506,7 @@
 ಪುರಾತ/Nm po:n
 ಪುರಾತತ್ವ/Na po:n
 ಪುರಾತನ/Aj po:adj
-ಪುರಾತನ/Nm po:n
+ಪುರಾತನ/NaNm po:n
 ಪುರಾತನಜ್ವರ/Na po:n
 ಪುರಾತನಪುರುಷ/Na po:n
 ಪುರಾತನಮತ/Na po:n
@@ -91755,7 +91816,7 @@
 ಪ್ರಬರ್ಹ/Aj po:adj
 ಪ್ರಬರ್ಹ/Na po:n
 ಪ್ರಬಲ/Aj po:adj
-ಪ್ರಬಲ/Nm po:n
+ಪ್ರಬಲ/NaNm po:n
 ಪ್ರಬಲಿ/Ne po:n
 ಪ್ರಬಲಿತ/Aj po:adj
 ಪ್ರಬಲಿಸು/Vb po:v
@@ -92235,7 +92296,7 @@
 ಪ್ರಸಾರಿಸು/Vb po:v
 ಪ್ರಸಿತ/Na po:n
 ಪ್ರಸಿದ್ಧ/Aj po:adj
-ಪ್ರಸಿದ್ಧ/Nm po:n
+ಪ್ರಸಿದ್ಧ/NaNm po:n
 ಪ್ರಸಿದ್ಧತೆ/Ne po:n
 ಪ್ರಸಿದ್ಧಾಂತ/Na po:n
 ಪ್ರಸಿದ್ಧಾನ/Na po:n
@@ -92374,6 +92435,7 @@
 ಪ್ರಾಕೃತ/Aj po:adj
 ಪ್ರಾಕೃತ/Na po:n
 ಪ್ರಾಕೃತಿಕ/Aj po:adj
+ಪ್ರಾಕೃತಿಕ/Na po:n
 ಪ್ರಾಕ್ಕು/Aj po:adj
 ಪ್ರಾಕ್ಕು/Px po:adv
 ಪ್ರಾಕ್ಕು/Nu po:n
@@ -92736,6 +92798,7 @@
 ಪ್ರೇಕ್ಷಕ/Nm po:n
 ಪ್ರೇಕ್ಷಣ/Na po:n
 ಪ್ರೇಕ್ಷಣೀಯ/Aj po:adj
+ಪ್ರೇಕ್ಷಣೀಯ/Na po:n
 ಪ್ರೇಕ್ಷಣೀಯತೆ/Ne po:n
 ಪ್ರೇಕ್ಷಾಗಾರ/Na po:n
 ಪ್ರೇಕ್ಷಾಗೃಹ/Na po:n
@@ -94764,7 +94827,7 @@
 ಬಲಿವಡೆ/Vb po:v
 ಬಲಿವದನೆ/Ne po:n
 ಬಲಿವಿಡಿ/Vb po:v
-ಬಲಿಷ್ಠ/Nm po:n
+ಬಲಿಷ್ಠ/NaNm po:n
 ಬಲಿಷ್ಠಗೊಳಿಸು/Vb po:v
 ಬಲಿಷ್ಠೆ/Ne po:n
 ಬಲಿಸು/Vb po:v
@@ -96190,7 +96253,7 @@
 ಬಾಹಿತ್ಥ/Na po:n
 ಬಾಹಿತ್ರ/Na po:n
 ಬಾಹಿರ/Aj po:adj
-ಬಾಹಿರ/Nm po:n
+ಬಾಹಿರ/Na po:n
 ಬಾಹಿರಂಗ/Aj po:adj
 ಬಾಹಿರಂಗ/Na po:n
 ಬಾಹಿರಗಿತ್ತಿ/Ne po:n
@@ -97793,7 +97856,7 @@
 ಬೃಹಸ್ಪತಿ/Ne po:n
 ಬೃಹಸ್ಪತಿಮತ/Na po:n
 ಬೃಹಸ್ಪತಿವಾರ/Na po:n
-ಬೆ/Ne po:n
+ಬೆ po:n
 ಬೆಂ po:adj
 ಬೆಂ po:n
 ಬೆಂಕಟ್ಟು/Nu po:n
@@ -100328,7 +100391,9 @@
 ಭಾವಕಿ/Ne po:n
 ಭಾವಕೃದಂತ/Na po:n
 ಭಾವಗಮ್ಯ/Aj po:adj
+ಭಾವಗಮ್ಯ/Na po:n
 ಭಾವಗರ್ಭಿತ/Aj po:adj
+ಭಾವಗರ್ಭಿತ/Na po:n
 ಭಾವಗೀತ/Na po:n
 ಭಾವಗೀತೆ/Ne po:n
 ಭಾವಚಿತ್ರ/Na po:n
@@ -100360,6 +100425,7 @@
 ಭಾವಪರವಶೆ/Ne po:n
 ಭಾವಪುಷ್ಟಿ/Ne po:n
 ಭಾವಪೂರ್ಣ/Aj po:adj
+ಭಾವಪೂರ್ಣ/Na po:n
 ಭಾವಪೂರ್ಣತೆ/Ne po:n
 ಭಾವಪ್ರಧಾನ/Aj po:adj
 ಭಾವಪ್ರಧಾನ/Na po:n
@@ -100542,7 +100608,7 @@
 ಭಿದೆ/Ne po:n
 ಭಿದ್ಯ/Na po:n
 ಭಿನ್ನ/Aj po:adj
-ಭಿನ್ನ/Nm po:n
+ಭಿನ್ನ/NaNm po:n
 ಭಿನ್ನಕರ್ತೃ po:n
 ಭಿನ್ನಕರ್ತೃಕ/Na po:n
 ಭಿನ್ನಕೌಶಿಕಿ/Ne po:n
@@ -103160,7 +103226,7 @@
 ಮನೋಜಾಗಮ/Na po:n
 ಮನೋಜಾಡ್ಯ/Na po:n
 ಮನೋಜ್ಞ/Aj po:adj
-ಮನೋಜ್ಞ/Nm po:n
+ಮನೋಜ್ಞ/Na po:n
 ಮನೋಜ್ಞತೆ/Ne po:n
 ಮನೋಜ್ಞೆ/Ne po:n
 ಮನೋದಯಿತೆ/Ne po:n
@@ -103216,7 +103282,7 @@
 ಮನೋವ್ಯಾಧಿ/Ne po:n
 ಮನೋವ್ಯಾಪಾರ/Na po:n
 ಮನೋಹರ/Aj po:adj
-ಮನೋಹರ/Nm po:n
+ಮನೋಹರ/NaNm po:n
 ಮನೋಹರತೆ/Ne po:n
 ಮನೋಹರಿ/Ne po:n
 ಮನೋಹಾರಿ/Ne po:n
@@ -104356,7 +104422,7 @@
 ಮಹಾಪಥ/Na po:n
 ಮಹಾಪಥಂಗಮನ/Na po:n
 ಮಹಾಪಥಂಬೋಗು/Vb po:v
-ಮಹಾಪದ್ಮ/Nm po:n
+ಮಹಾಪದ್ಮ/Na po:n
 ಮಹಾಪರಿಮಿತ/Na po:n
 ಮಹಾಪಸಾಯತ/Na po:n
 ಮಹಾಪಸಾಯಿತ/Na po:n
@@ -104995,6 +105061,7 @@
 ಮಾನವಿಕ/Aj po:adj
 ಮಾನವಿಕ/Na po:n
 ಮಾನವೀಯ/Aj po:adj
+ಮಾನವೀಯ/Na po:n
 ಮಾನವೀಯತೆ/Ne po:n
 ಮಾನವ್ಯ/Na po:n
 ಮಾನಶಾಲಿ/Ne po:n
@@ -105710,7 +105777,10 @@
 ಮಿಂಡೆ/Ne po:n
 ಮಿಂಡೇಳು/Vb po:v
 ಮಿಂತು/Nu po:n
+ಮಿಂದ/Vp st:ಮೀಯು po:v
+ಮಿಂದಿತು st:ಮೀಯು po:v is:+past.3sn
 ಮಿಂದು/Nu po:n
+ಮಿಂದು/Vc st:ಮೀಯು po:v
 ಮಿಕ/Na po:n
 ಮಿಕಿಮಿಕಿ/Px po:adv
 ಮಿಕ್ಕ/Aj po:adj
@@ -106158,7 +106228,7 @@
 ಮೀಮಾಂಸ್ಯ/Na po:n
 ಮೀಯಣ/Na po:n
 ಮೀಯಿಸು/Vb po:v
-ಮೀಯು/Vb po:v
+ಮೀಯು/Vr po:v
 ಮೀಯ್ಯಣ/Na po:n
 ಮೀರಾಕೋರ/Na po:n
 ಮೀರಾಸೆ/Ne po:n
@@ -106767,7 +106837,7 @@
 ಮುಖೋದ್ಗತ/Aj po:adj
 ಮುಖ್ತ್ಯಾರನಾಮೆ/Ne po:n
 ಮುಖ್ಯ/Aj po:adj
-ಮುಖ್ಯ/Nm po:n
+ಮುಖ್ಯ/NaNm po:n
 ಮುಖ್ಯತೆ/Ne po:n
 ಮುಖ್ಯತ್ವ/Na po:n
 ಮುಖ್ಯಪ್ರಾಣ/Nm po:n
@@ -110834,7 +110904,7 @@
 ಯುಕುತಿವಿದ/Na po:n
 ಯುಕುತಿವಿದೆ/Ne po:n
 ಯುಕ್ತ/Aj po:adj
-ಯುಕ್ತ/Nm po:n
+ಯುಕ್ತ/Na po:n
 ಯುಕ್ತಗೈ po:v
 ಯುಕ್ತಯಾರಿಕೆ/Ne po:n
 ಯುಕ್ತರಸೆ/Ne po:n
@@ -110989,7 +111059,7 @@
 ಯೋಗೇಶ್ವರ/Na po:n
 ಯೋಗೇಷ್ಟ/Na po:n
 ಯೋಗ್ಯ/Aj po:adj
-ಯೋಗ್ಯ/Nm po:n
+ಯೋಗ್ಯ/NaNm po:n
 ಯೋಗ್ಯತಾಪತ್ರ/Na po:n
 ಯೋಗ್ಯತಿಕೆ/Ne po:n
 ಯೋಗ್ಯತೆ/Ne po:n
@@ -111620,7 +111690,7 @@
 ರಮಣ/Nm po:n
 ರಮಣಿ/Nf po:n
 ರಮಣೀಯ/Aj po:adj
-ರಮಣೀಯ/Nm po:n
+ರಮಣೀಯ/Na po:n
 ರಮಣೀಯತೆ/Ne po:n
 ರಮಣ್ಯ/Aj po:adj
 ರಮಣ್ಯ/Na po:n
@@ -112548,7 +112618,7 @@
 ರಾಹುಬೀಜ/Na po:n
 ರಾಹುಸಂಸ್ಪರ್ಶ/Aj po:adj
 ರಾಹುಸಂಸ್ಪರ್ಶ/Na po:n
-ರಿ/Ne po:n
+ರಿ po:n
 ರಿಂಕಿಸು/Vb po:v
 ರಿಂಕು/Vb po:v
 ರಿಂಖ/Na po:n
@@ -113423,6 +113493,7 @@
 ಲಂಬಾಳಕ/Na po:n
 ಲಂಬಿಕೆ/Ne po:n
 ಲಂಬಿತ/Aj po:adj
+ಲಂಬಿತ/Na po:n
 ಲಂಬಿಸು/Vb po:v
 ಲಂಬು/Aj po:adj
 ಲಂಬು/Nd po:n
@@ -113820,6 +113891,7 @@
 ಲಯದೂರ/Na po:n
 ಲಯನ/Na po:n
 ಲಯಬದ್ಧ/Aj po:adj
+ಲಯಬದ್ಧ/Na po:n
 ಲಯಮಿತ್ತು/Nu po:n
 ಲಯಮೂರ್ತಿ/Ne po:n
 ಲಯಯೋಗ/Na po:n
@@ -114571,6 +114643,7 @@
 ಲೋಕಪ್ರತೀತಿ/Ne po:n
 ಲೋಕಪ್ರವಾದ/Na po:n
 ಲೋಕಪ್ರಸಿದ್ಧ/Aj po:adj
+ಲೋಕಪ್ರಸಿದ್ಧ/Na po:n
 ಲೋಕಪ್ರಸಿದ್ಧಿ/Ne po:n
 ಲೋಕಬಾಂಧವ/Na po:n
 ಲೋಕಬಿಂದುಪೂರ್ವ/Na po:n
@@ -116546,7 +116619,7 @@
 ವಾಮಾರ್ಧಾಂಗ/Na po:n
 ವಾಮಿ/Ne po:n
 ವಾಮೆ/Ne po:n
-ವಾಯ/Nm po:n
+ವಾಯ/Na po:n
 ವಾಯದ/Na po:n
 ವಾಯದೆಜ್ವರ/Na po:n
 ವಾಯನ/Na po:n
@@ -116932,7 +117005,7 @@
 ವಾಹ್ಯಾಳಿ/Ne po:n
 ವಾಹ್ಯಾಳಿಸು/Vb po:v
 ವಿ po:abbr
-ವಿ/Ne po:n
+ವಿ po:n
 ವಿಂಖ/Na po:n
 ವಿಂಗಡ/Nm po:n
 ವಿಂಗಡಣೆ/Ne po:n
@@ -117696,7 +117769,7 @@
 ವಿದ್ವತ್ತೆ/Ne po:n
 ವಿದ್ವತ್ಪರೀಕ್ಷೆ/Ne po:n
 ವಿದ್ವತ್ಪೂರ್ಣ/Aj po:adj
-ವಿದ್ವತ್ಪೂರ್ಣ/Nm po:n
+ವಿದ್ವತ್ಪೂರ್ಣ/Na po:n
 ವಿದ್ವತ್ಸಂಭಾವನೆ/Ne po:n
 ವಿದ್ವತ್ಸಭೆ/Ne po:n
 ವಿದ್ವತ್ಸೇವೆ/Ne po:n
@@ -118137,7 +118210,7 @@
 ವಿಭಾಸ್ಕರ/Aj po:adj
 ವಿಭಾಸ್ಕರ/Na po:n
 ವಿಭಿನ್ನ/Aj po:adj
-ವಿಭಿನ್ನ/Nm po:n
+ವಿಭಿನ್ನ/Na po:n
 ವಿಭಿನ್ನತೆ/Ne po:n
 ವಿಭಿನ್ನರೂಪಕ/Na po:n
 ವಿಭೀಕರ/Aj po:adj
@@ -118727,7 +118800,7 @@
 ವಿಶಿಖಾಸನ/Na po:n
 ವಿಶಿಖೆ/Ne po:n
 ವಿಶಿಷ್ಟ/Aj po:adj
-ವಿಶಿಷ್ಟ/Nm po:n
+ವಿಶಿಷ್ಟ/Na po:n
 ವಿಶಿಷ್ಟಾದ್ವೈತ/Na po:n
 ವಿಶಿಷ್ಟಾದ್ವೈತಿ/Ne po:n
 ವಿಶಿಷ್ಟೀಕರಣ/Na po:n
@@ -120069,7 +120142,7 @@
 ವೈಜಯಂತಿಮಾಲೆ/Ne po:n
 ವೈಜಯಂತೀವಿಮಾನ/Na po:n
 ವೈಜ್ಞಾನಿಕ/Aj po:adj
-ವೈಜ್ಞಾನಿಕ/Nm po:n
+ವೈಜ್ಞಾನಿಕ/Na po:n
 ವೈಜ್ಞಾನಿಕತೆ/Ne po:n
 ವೈಜ್ಞಾನಿಕದೃಷ್ಟಿ/Ne po:n
 ವೈಜ್ಞಾನಿಕಪ್ರಜ್ಞೆ/Ne po:n
@@ -120439,6 +120512,7 @@
 ವ್ಯವಸ್ಥಾಪಕ/Nm po:n
 ವ್ಯವಸ್ಥಾಪಕಿ/Nf po:n
 ವ್ಯವಸ್ಥಿತ/Aj po:adj
+ವ್ಯವಸ್ಥಿತ/Na po:n
 ವ್ಯವಸ್ಥೆ/Ne po:n
 ವ್ಯವಹರಣ/Na po:n
 ವ್ಯವಹರಣೆ/Ne po:n
@@ -121856,7 +121930,7 @@
 ಶಿಕ್ಷಾಧ್ಯಕ್ಷ/Na po:n
 ಶಿಕ್ಷಾಪದ/Na po:n
 ಶಿಕ್ಷಾರ್ಹ/Aj po:adj
-ಶಿಕ್ಷಾರ್ಹ/Nm po:n
+ಶಿಕ್ಷಾರ್ಹ/Na po:n
 ಶಿಕ್ಷಾರ್ಹೆ/Ne po:n
 ಶಿಕ್ಷಾಲಯ/Na po:n
 ಶಿಕ್ಷಾವಿದ/Na po:n
@@ -122503,7 +122577,7 @@
 ಶುಭೇದಾರ/Na po:n
 ಶುಭೇದಾರು/Nu po:n
 ಶುಭ್ರ/Aj po:adj
-ಶುಭ್ರ/Nm po:n
+ಶುಭ್ರ/Na po:n
 ಶುಭ್ರಕರ/Na po:n
 ಶುಭ್ರಚ್ಛದ/Na po:n
 ಶುಭ್ರತೆ/Ne po:n
@@ -122972,6 +123046,7 @@
 ಶ್ರಮಣೆ/Ne po:n
 ಶ್ರಮದಾನ/Na po:n
 ಶ್ರಮದಾಯಕ/Aj po:adj
+ಶ್ರಮದಾಯಕ/Na po:n
 ಶ್ರಮಪಟ್ಟ/Vp st:ಶ್ರಮಪಡು po:v
 ಶ್ರಮಪಟ್ಟಿತು st:ಶ್ರಮಪಡು po:v is:+past.3sn
 ಶ್ರಮಪಟ್ಟು/Vc st:ಶ್ರಮಪಡು po:v
@@ -124203,6 +124278,7 @@
 ಸಂತ್ವರಿತ/Aj po:adj
 ಸಂಥೆ/Ne po:n
 ಸಂಥೆಗಂಟಳೆ/Ne po:n
+ಸಂದ/Vp st:ಸಲ್ಲು po:v
 ಸಂದಂಶ/Na po:n
 ಸಂದಟಿ/Ne po:n
 ಸಂದಟಿತ/Aj po:adj
@@ -124264,6 +124340,7 @@
 ಸಂದಿಗ್ಧಾರ್ಥ/Na po:n
 ಸಂದಿತ/Aj po:adj
 ಸಂದಿತ/Na po:n
+ಸಂದಿತು st:ಸಲ್ಲು po:v is:+past.3sn
 ಸಂದಿಯ/Na po:n
 ಸಂದಿವಾತ/Na po:n
 ಸಂದಿಸು/Vb po:v
@@ -124271,6 +124348,7 @@
 ಸಂದೀಪಿತಚಿತ್ತ/Na po:n
 ಸಂದೀಪ್ತಿ/Ne po:n
 ಸಂದು/Nu po:n
+ಸಂದು/Vc st:ಸಲ್ಲು po:v
 ಸಂದುಕ/Na po:n
 ಸಂದುಕಟ್ಟು/Vb po:v
 ಸಂದುಕಡಿ/Vb po:v
@@ -124324,6 +124402,7 @@
 ಸಂದೇಹವಾದಿ/Ne po:n
 ಸಂದೇಹಾಪನೋದ/Na po:n
 ಸಂದೇಹಾಸ್ಪದ/Aj po:adj
+ಸಂದೇಹಾಸ್ಪದ/Na po:n
 ಸಂದೇಹಿ/Aj po:adj
 ಸಂದೇಹಿ/Ne po:n
 ಸಂದೇಹಿಸು/Vb po:v
@@ -124537,7 +124616,7 @@
 ಸಂಬಂಧಿ/Ne po:n
 ಸಂಬಂಧಿಕ/Nm po:n
 ಸಂಬಂಧಿತ/Aj po:adj
-ಸಂಬಂಧಿತ/Nm po:n
+ಸಂಬಂಧಿತ/Na po:n
 ಸಂಬಂಧಿಸು/Vb po:v
 ಸಂಬಯಸು/Vb po:v
 ಸಂಬರ/Na po:n
@@ -125295,6 +125374,7 @@
 ಸಜಾತೀಯ/Aj po:adj
 ಸಜಾತೀಯ/Na po:n
 ಸಜೀವ/Aj po:adj
+ಸಜೀವ/Na po:n
 ಸಜೆ/Ne po:n
 ಸಜ್ಜ/Aj po:adj
 ಸಜ್ಜ/Nm po:n
@@ -126532,6 +126612,7 @@
 ಸಮರ್ಥಿಸು/Vb po:v
 ಸಮರ್ಥೆ/Ne po:n
 ಸಮರ್ಪಕ/Aj po:adj
+ಸಮರ್ಪಕ/Na po:n
 ಸಮರ್ಪಕತೆ/Ne po:n
 ಸಮರ್ಪಣ/Na po:n
 ಸಮರ್ಪಣಭಾವ/Na po:n
@@ -126584,6 +126665,7 @@
 ಸಮಸ್ಯ/Aj po:adj
 ಸಮಸ್ಯ/Na po:n
 ಸಮಸ್ಯಾತ್ಮಕ/Aj po:adj
+ಸಮಸ್ಯಾತ್ಮಕ/Na po:n
 ಸಮಸ್ಯೆ/Ne po:n
 ಸಮಾಂತರ/Na po:n
 ಸಮಾಂಸಮೀನೆ/Ne po:n
@@ -126760,6 +126842,7 @@
 ಸಮುಜ್ಜ್ವಳ/Aj po:adj
 ಸಮುಜ್ಝಿತ/Aj po:adj
 ಸಮುಜ್ವಲ/Aj po:adj
+ಸಮುಜ್ವಲ/Na po:n
 ಸಮುಜ್ವಳ/Aj po:adj
 ಸಮುಜ್ವಳಿಸು/Vb po:v
 ಸಮುತ್ಕಂಟಕ/Aj po:adj
@@ -127485,7 +127568,7 @@
 ಸರ್ರನೆ/Px po:adv
 ಸರ್ಲೆ/Ne po:n
 ಸರ್ವ/Aj po:adj
-ಸರ್ವ/Nm po:n
+ಸರ್ವ/NaNm po:n
 ಸರ್ವಂಕಷ/Aj po:adj
 ಸರ್ವಂಸಹೆ/Ne po:n
 ಸರ್ವಕರ್ತೃತ್ವ/Na po:n
@@ -127568,6 +127651,7 @@
 ಸರ್ವಾಂಗಸುಂದರಿ/Ne po:n
 ಸರ್ವಾಂಗಾಸನ/Na po:n
 ಸರ್ವಾಂಗೀಣ/Aj po:adj
+ಸರ್ವಾಂಗೀಣ/Na po:n
 ಸರ್ವಾಂಗೋಪನತ/Na po:n
 ಸರ್ವಾಂತರ್ಯಾಮಿ/Ne po:n
 ಸರ್ವಾತಿಸಾರ/Na po:n
@@ -127719,7 +127803,7 @@
 ಸಲ್ಲಿಡು/Vb po:v
 ಸಲ್ಲಿಸು/Vb po:v
 ಸಲ್ಲೀಲೆ/Ne po:n
-ಸಲ್ಲು/Vb po:v
+ಸಲ್ಲು/Vr po:v
 ಸಲ್ಲುವಳಿ/Ne po:n
 ಸಲ್ಲೆ/Ne po:n
 ಸಲ್ಲೆಯ/Na po:n
@@ -128201,7 +128285,7 @@
 ಸಾಂಕರ್ಯ/Na po:n
 ಸಾಂಕುಶ/Aj po:adj
 ಸಾಂಕೇತಿಕ/Aj po:adj
-ಸಾಂಕೇತಿಕ/Nm po:n
+ಸಾಂಕೇತಿಕ/Na po:n
 ಸಾಂಕ್ರಾಮಿಕ/Aj po:adj
 ಸಾಂಕ್ರಾಮಿಕ/Na po:n
 ಸಾಂಖ್ಯ/Aj po:adj
@@ -128455,7 +128539,7 @@
 ಸಾತೀನ/Na po:n
 ಸಾತ್ಕುಡಿ/Ne po:n
 ಸಾತ್ತ್ವಿಕ/Aj po:adj
-ಸಾತ್ತ್ವಿಕ/Nm po:n
+ಸಾತ್ತ್ವಿಕ/Na po:n
 ಸಾತ್ತ್ವಿಕಭಾವ/Na po:n
 ಸಾತ್ಮ್ಯ/Aj po:adj
 ಸಾತ್ಮ್ಯ/Na po:n
@@ -128913,6 +128997,7 @@
 ಸಾರ್ವ/Aj po:adj
 ಸಾರ್ವಕಾಲ/Na po:n
 ಸಾರ್ವಕಾಲಿಕ/Aj po:adj
+ಸಾರ್ವಕಾಲಿಕ/Na po:n
 ಸಾರ್ವಜನಿಕ/Aj po:adj
 ಸಾರ್ವಜನಿಕ/Nm po:n
 ಸಾರ್ವತ್ರಿಕ/Aj po:adj
@@ -130266,7 +130351,7 @@
 ಸುಂತಿ/Ne po:n
 ಸುಂದ/Nm po:n
 ಸುಂದರ/Aj po:adj
-ಸುಂದರ/Nm po:n
+ಸುಂದರ/NaNm po:n
 ಸುಂದರತೆ/Ne po:n
 ಸುಂದರರೂಪ/Na po:n
 ಸುಂದರವೃತ್ತ/Na po:n
@@ -130876,6 +130961,7 @@
 ಸುಮತ/Na po:n
 ಸುಮತಿ/Ne po:n
 ಸುಮಧುರ/Aj po:adj
+ಸುಮಧುರ/Na po:n
 ಸುಮನ/Na po:n
 ಸುಮನಸ/Na po:n
 ಸುಮನಸಾರ/Na po:n
@@ -131270,6 +131356,7 @@
 ಸುವ್ಯಕ್ತ/Aj po:adj
 ಸುವ್ಯಕ್ತ/Na po:n
 ಸುವ್ಯವಸ್ಥಿತ/Aj po:adj
+ಸುವ್ಯವಸ್ಥಿತ/Na po:n
 ಸುವ್ಯವಸ್ಥೆ/Ne po:n
 ಸುವ್ರತ/Na po:n
 ಸುವ್ರತೆ/Ne po:n
@@ -131322,6 +131409,7 @@
 ಸುಸಂಗಿ/Ne po:n
 ಸುಸಂಧಿ/Ne po:n
 ಸುಸಂಬದ್ಧ/Aj po:adj
+ಸುಸಂಬದ್ಧ/Na po:n
 ಸುಸಂಬದ್ಧತೆ/Ne po:n
 ಸುಸಂಸ್ಕೃತ/Aj po:adj
 ಸುಸಂಸ್ಕೃತ/Nm po:n
@@ -131341,6 +131429,7 @@
 ಸುಸಿಲು/Nu po:n
 ಸುಸಿಲೆಸಗು/Vb po:v
 ಸುಸೂತ್ರ/Aj po:adj
+ಸುಸೂತ್ರ/Na po:n
 ಸುಸ್ಕಾರ/Na po:n
 ಸುಸ್ತಿ/Ne po:n
 ಸುಸ್ತಿಗಾರ/Na po:n
@@ -131734,6 +131823,7 @@
 ಸೃಜನಶೀಲತೆ/Ne po:n
 ಸೃಜನಶೀಲೆ/Ne po:n
 ಸೃಜನಾತ್ಮಕ/Aj po:adj
+ಸೃಜನಾತ್ಮಕ/Na po:n
 ಸೃಜಯಿಸು/Vb po:v
 ಸೃಜಿಯಿಸು/Vb po:v
 ಸೃಜಿಸು/Vb po:v
@@ -132644,6 +132734,9 @@
 ಸೋಣೆ/Ne po:n
 ಸೋಣೆತಿಂಗಳು/Nu po:n
 ಸೋಣೆಮರಿಯಾದೆ/Ne po:n
+ಸೋತ/Vp st:ಸೋಲು po:v
+ಸೋತಿತು st:ಸೋಲು po:v is:+past.3sn
+ಸೋತು/Vc st:ಸೋಲು po:v
 ಸೋತುವಲ್ಲಿ/Ne po:n
 ಸೋತೆ/Ne po:n
 ಸೋತೆವೆಸ/Na po:n
@@ -132803,7 +132896,7 @@
 ಸೋಲಿಗ/Nm po:n
 ಸೋಲಿಸು/Vb po:v
 ಸೋಲು/Nu po:n
-ಸೋಲು/Vb po:v
+ಸೋಲು/Vr po:v
 ಸೋಲುಮುಡಿ/Ne po:n
 ಸೋಲುವಡೆ/Vb po:v
 ಸೋಲುವೆ/Ne po:n
@@ -133391,6 +133484,7 @@
 ಸ್ಪರ್ಶಿಸು/Vb po:v
 ಸ್ಪರ್ಶೇಂದ್ರಿಯ/Na po:n
 ಸ್ಪಷ್ಟ/Aj po:adj
+ಸ್ಪಷ್ಟ/Na po:n
 ಸ್ಪಷ್ಟೀಕರಣ/Na po:n
 ಸ್ಪೃಕ್ಕೆ/Ne po:n
 ಸ್ಪೃಶ್ಯ/Aj po:adj
@@ -133417,7 +133511,7 @@
 ಸ್ಫಿಕ್ಕೆ/Ne po:n
 ಸ್ಫೀತ/Aj po:adj
 ಸ್ಫೀತ/Na po:n
-ಸ್ಫುಟ/Nm po:n
+ಸ್ಫುಟ/Na po:n
 ಸ್ಫುಟಬಂಧ/Na po:n
 ಸ್ಫುಟಹರ್ಷ/Na po:n
 ಸ್ಫುಟಾಕ್ಷರ/Na po:n
@@ -133526,8 +133620,8 @@
 ಸ್ರೋತಃಪತಿ/Ne po:n
 ಸ್ರೋತಸ್ವಿನಿ/Ne po:n
 ಸ್ರೋತ್ರಗುತ್ತಿಗೆ/Ne po:n
-ಸ್ವ/Aj po:adj
-ಸ್ವ/Nm po:n
+ಸ್ವ po:adj
+ಸ್ವ po:n
 ಸ್ವಂ po:n
 ಸ್ವಂತ/Aj po:adj
 ಸ್ವಂತ/Na po:n
@@ -133537,7 +133631,7 @@
 ಸ್ವಕರ್ತೃ po:n
 ಸ್ವಕಾರ್ಯ/Na po:n
 ಸ್ವಕೀಯ/Aj po:adj
-ಸ್ವಕೀಯ/Nm po:n
+ಸ್ವಕೀಯ/Na po:n
 ಸ್ವಕೀಯೆ/Ne po:n
 ಸ್ವಗತ/Aj po:adj
 ಸ್ವಗತ/Na po:n
@@ -135903,6 +135997,7 @@
 ಹಾನಂಜಿ/Ne po:n
 ಹಾನಿ/Ne po:n
 ಹಾನಿಕರ/Aj po:adj
+ಹಾನಿಕರ/Na po:n
 ಹಾನೆ/Ne po:n
 ಹಾಮಚಿ/Ne po:n
 ಹಾಮೆಕ್ಕೆ/Ne po:n
@@ -136994,7 +137089,7 @@
 ಹುಂಬಗುದ್ದಿಕೆ/Ne po:n
 ಹುಂಬತನ/Na po:n
 ಹುಂಬುಗುತ್ತಿಗೆ/Ne po:n
-ಹುಃ po:intj
+ಹುಃ po:x
 ಹುಕಮತು/Nu po:n
 ಹುಕಿ/Ne po:n
 ಹುಕುಂ po:n
@@ -139003,6 +139098,7 @@
 ಹೊಣೆಗೊಡು/Vr po:v
 ಹೊಣೆಹೊರು/Vb po:v
 ಹೊಣ್ಮು/Vb po:v
+ಹೊತ್ತ/Vp st:ಹೊರು po:v
 ಹೊತ್ತಗೆ/Ne po:n
 ಹೊತ್ತರು/Nu po:n
 ಹೊತ್ತಲು/Nu po:n
@@ -139012,11 +139108,13 @@
 ಹೊತ್ತಿಕ್ಕು/Vb po:v
 ಹೊತ್ತಿಗೆ/Ne po:n
 ಹೊತ್ತಿಡು/Vb po:v
+ಹೊತ್ತಿತು st:ಹೊರು po:v is:+past.3sn
 ಹೊತ್ತಿರುಗ/Na po:n
 ಹೊತ್ತಿಳಿ/Vb po:v
 ಹೊತ್ತಿಸು/Vb po:v
 ಹೊತ್ತು/Nu po:n
 ಹೊತ್ತು/Vb po:v
+ಹೊತ್ತು/Vc st:ಹೊರು po:v
 ಹೊತ್ತುಕಳೆ/Vb po:v
 ಹೊತ್ತುಗಳೆ/Vb po:v
 ಹೊತ್ತುಗಳ್ಳ/Na po:n
@@ -139262,7 +139360,7 @@
 ಹೊರಿಗೆವಾಳ/Na po:n
 ಹೊರಿಯೊಟ್ಟೆ/Ne po:n
 ಹೊರಿಸು/Vb po:v
-ಹೊರು/Vb po:v
+ಹೊರು/Vr po:v
 ಹೊರೆ/Ne po:n
 ಹೊರೆ/Vb po:v
 ಹೊರೆಕಟ್ಟು/Vb po:v

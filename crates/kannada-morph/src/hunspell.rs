@@ -6,6 +6,7 @@ use std::fmt::Write as _;
 use crate::class::{ALL_CLASSES, Class, Final};
 use crate::lexicon::Lexicon;
 use crate::rules::{Rule, rules_for};
+use crate::script::VIRAMA;
 
 const CONSONANTS: &str = "ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳೞ";
 
@@ -181,6 +182,11 @@ pub fn parse_dictionary(text: &str) -> Result<Lexicon, String> {
 fn condition(rule: &Rule) -> String {
     let mut chars = String::new();
     let mut doubled = String::new();
+    assert!(
+        rule.finals.iter().all(|f| matches!(f, Final::Doubled(_)))
+            || !rule.finals.iter().any(|f| matches!(f, Final::Doubled(_))),
+        "a Hunspell condition cannot mix doubled consonants with other endings: {rule:?}"
+    );
     for f in &rule.finals {
         match f {
             Final::Consonant => chars.push_str(CONSONANTS),
@@ -198,7 +204,7 @@ fn condition(rule: &Rule) -> String {
     if doubled.is_empty() {
         class(chars)
     } else {
-        format!("{}{}", class(doubled), crate::script::VIRAMA)
+        format!("{}{VIRAMA}", class(doubled))
     }
 }
 
@@ -228,6 +234,39 @@ mod tests {
             .filter(|l| l.starts_with("SFX ") && l.contains(" is:"))
             .count();
         assert_eq!(declared, written);
+    }
+
+    #[test]
+    fn doubled_finals_become_a_two_character_condition() {
+        let rule = |finals| Rule {
+            class: Class::Noun(Declension::LoanDoubled),
+            strip: String::new(),
+            add: "ಸು".into(),
+            finals,
+            tags: String::new(),
+        };
+        assert_eq!(condition(&rule(vec![Final::Doubled('ಸ')])), "ಸ್");
+        assert_eq!(
+            condition(&rule(vec![Final::Doubled('ಸ'), Final::Doubled('ತ')])),
+            "[ಸತ]್"
+        );
+        assert_eq!(
+            condition(&rule(vec![Final::Char('ು'), Final::Char('ಾ')])),
+            "[ುಾ]"
+        );
+    }
+
+    #[test]
+    #[should_panic(expected = "cannot mix")]
+    fn mixed_doubled_and_plain_finals_are_rejected() {
+        let rule = Rule {
+            class: Class::Particle,
+            strip: String::new(),
+            add: "ಊ".into(),
+            finals: vec![Final::Doubled('ಸ'), Final::Char('ು')],
+            tags: String::new(),
+        };
+        condition(&rule);
     }
 
     #[test]

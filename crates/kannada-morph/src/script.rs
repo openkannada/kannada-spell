@@ -98,6 +98,27 @@ pub fn is_kannada_word(word: &str) -> bool {
     word.chars().next().is_some_and(is_letter) && word.chars().all(is_word_char)
 }
 
+/// True when every sign in `word` sits where Kannada script allows it: a vowel sign,
+/// virama or nukta after a consonant (a vowel sign may follow a nukta), and an
+/// anusvara or visarga after a letter or a vowel sign.
+pub fn is_well_formed(word: &str) -> bool {
+    let mut previous: Option<char> = None;
+    for c in word.chars() {
+        let ok = match c {
+            '\u{0CBC}' => previous.is_some_and(is_consonant),
+            VIRAMA => previous.is_some_and(|p| is_consonant(p) || p == '\u{0CBC}'),
+            _ if is_vowel_sign(c) => previous.is_some_and(|p| is_consonant(p) || p == '\u{0CBC}'),
+            ANUSVARA | '\u{0C83}' => previous.is_some_and(|p| is_letter(p) || is_vowel_sign(p)),
+            _ => is_letter(c) || c == ZWNJ || c == ZWJ,
+        };
+        if !ok {
+            return false;
+        }
+        previous = Some(c);
+    }
+    previous.is_some()
+}
+
 /// The number of aksharas (written syllables) in `word`.
 pub fn akshara_count(word: &str) -> usize {
     let chars: Vec<char> = word.chars().collect();
@@ -133,6 +154,17 @@ mod tests {
     #[test]
     fn composes_split_vowel_signs() {
         assert_eq!(normalize("ಕ\u{0CC6}\u{0CC2}"), "ಕ\u{0CCA}");
+    }
+
+    #[test]
+    fn checks_where_signs_may_stand() {
+        for good in ["ಮರ", "ಕ್ಷೇತ್ರ", "ಸಂಬಂಧ", "ದುಃಖ", "ಬ್ಯಾಂಕ್"]
+        {
+            assert!(is_well_formed(good), "{good}");
+        }
+        for bad in ["ಮಾಾ", "ಾಮ", "ಕ್ಾ", "ಕ್ಂ", ""] {
+            assert!(!is_well_formed(bad), "{bad}");
+        }
     }
 
     #[test]

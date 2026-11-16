@@ -196,11 +196,10 @@ impl Class {
             }
             Class::Noun(Declension::House | Declension::Girl) => FRONT,
             Class::Noun(Declension::Thing) => LONG_BACK,
-            Class::Noun(Declension::Forest | Declension::This | Declension::Plural)
-            | Class::VerbRoot => U,
+            Class::Noun(Declension::Forest | Declension::This | Declension::Plural) => U,
             Class::Noun(Declension::Loan) => &[Final::Char(VIRAMA)],
             Class::Noun(Declension::LoanDoubled) => DOUBLED,
-            Class::Verb => &[Final::Char('ು'), Final::Char('ಿ'), Final::Char('ೆ')],
+            Class::Verb | Class::VerbRoot => &[Final::Char('ು'), Final::Char('ಿ'), Final::Char('ೆ')],
             Class::VerbParticiple => &[Final::Char('ು'), Final::Char('ಿ')],
             Class::Adjective | Class::Particle => OPEN,
             Class::Fixed => &[],

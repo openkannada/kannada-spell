@@ -13,6 +13,7 @@ cargo test                                         # fast unit tests, under 5 se
 cargo fmt --all && cargo clippy --all-targets -- -D warnings
 RUSTDOCFLAGS="-D warnings" cargo doc --no-deps
 scripts/hunspell-smoke.sh                          # the committed dictionary with real Hunspell
+scripts/agreement.sh                               # Hunspell and the analyzer accept the same words
 ```
 
 Rebuilding the dictionaries needs `data/raw/alar.yml` and a Kannada Wikipedia dump; see the README.

@@ -8,7 +8,6 @@ use crate::sandhi::{Junction, join};
 
 /// Endings on the root, as in ಮಾಡು + ಉತ್ತಾನೆ = ಮಾಡುತ್ತಾನೆ and ಬರೆ + ಅಲು = ಬರೆಯಲು.
 const ROOT_ENDINGS: &[(&str, &str)] = &[
-    ("ಇ", "+imp.2p"),
     ("ಇರಿ", "+imp.2p"),
     ("ಉತ್ತಾನೆ", "+npst.3sm"),
     ("ಉತ್ತಾಳೆ", "+npst.3sf"),
@@ -38,18 +37,14 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಅಲಿಲ್ಲ", "+past.neg"),
     ("ಅಬೇಡ", "+proh.2s"),
     ("ಅಬೇಡಿ", "+proh.2p"),
+    ("ಅಬಲ್ಲ", "+abil"),
+    ("ಅಬಲ್ಲದು", "+abil"),
     ("ಅದ", "+rel.neg"),
     ("ಓಣ", "+hort.1p"),
 ];
 
 /// Modal endings on the root. Each also takes the fused predicates: ಮಾಡಬೇಕಾಗಿದೆ, ಮಾಡಬಹುದೆಂದು.
-const MODALS: &[(&str, &str)] = &[
-    ("ಅಬೇಕು", "+deb"),
-    ("ಅಬಹುದು", "+perm"),
-    ("ಅಬಾರದು", "+proh"),
-    ("ಅಬಲ್ಲ", "+abil"),
-    ("ಅಬಲ್ಲದು", "+abil"),
-];
+const MODALS: &[(&str, &str)] = &[("ಅಬೇಕು", "+deb"), ("ಅಬಹುದು", "+perm"), ("ಅಬಾರದು", "+proh")];
 
 /// Endings on the past stem, as in ಮಾಡಿದ + ಅನು = ಮಾಡಿದನು and ಬಂದ + ಆಗ = ಬಂದಾಗ.
 const PAST_ENDINGS: &[(&str, &str)] = &[
@@ -182,6 +177,14 @@ pub const IRREGULAR_VERBS: &[IrregularVerb] = &[
     irregular("ಕಲಿ", &["ಕಲಿತ"], &["ಕಲಿತು"], &["ಕಲಿಯಿತು"]),
     irregular("ಅರಿ", &["ಅರಿತ"], &["ಅರಿತು"], &["ಅರಿಯಿತು"]),
     irregular("ಮರೆ", &["ಮರೆತ"], &["ಮರೆತು"], &["ಮರೆಯಿತು"]),
+    irregular("ನಗು", &["ನಕ್ಕ"], &["ನಕ್ಕು"], &["ನಕ್ಕಿತು"]),
+    irregular("ಸೋಲು", &["ಸೋತ"], &["ಸೋತು"], &["ಸೋತಿತು"]),
+    irregular("ಹೊರು", &["ಹೊತ್ತ"], &["ಹೊತ್ತು"], &["ಹೊತ್ತಿತು"]),
+    irregular("ಕೊಯ್ಯು", &["ಕೊಯ್ದ"], &["ಕೊಯ್ದು"], &["ಕೊಯ್ದಿತು"]),
+    irregular("ಒಯ್ಯು", &["ಒಯ್ದ"], &["ಒಯ್ದು"], &["ಒಯ್ದಿತು"]),
+    irregular("ಕಾಯು", &["ಕಾದ"], &["ಕಾದು"], &["ಕಾಯಿತು"]),
+    irregular("ಸಲ್ಲು", &["ಸಂದ"], &["ಸಂದು"], &["ಸಂದಿತು"]),
+    irregular("ಮೀಯು", &["ಮಿಂದ"], &["ಮಿಂದು"], &["ಮಿಂದಿತು"]),
 ];
 
 /// The irregular verb with this root, if there is one.
@@ -250,14 +253,14 @@ fn spell(verb: &IrregularVerb, prefix: &str, voiced: bool) -> Stems {
     }
 }
 
-/// How much is fused onto a form: auxiliaries attach to verbs, and only to depth 1.
+/// Which auxiliaries a verb's forms take. Auxiliaries are built at a lower depth, so fusion stops.
 #[derive(Clone, Copy, PartialEq, Eq)]
 enum Depth {
-    /// No auxiliaries: the forms an auxiliary itself contributes.
+    /// No auxiliaries. The forms of ಇರು, ಎನ್ನು, ಕೊಳ್ಳು and ಬಿಡು when they are fused to another word.
     Base,
-    /// The participle takes ಇರು only: the copula ಆಗು, as in ಆಗಿದೆ.
+    /// The participle takes the forms of ಇರು. The forms of the copula ಆಗು, which include ಆಗಿದೆ.
     Copula,
-    /// Perfect, progressive, reflexive and passive forms.
+    /// Every auxiliary: perfect, progressive, reflexive, completive, passive. The forms of ordinary verbs.
     Full,
 }
 
@@ -306,6 +309,10 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
     let host = Form::stem(root, root_junction(root));
     let mut forms = vec![host.clone().tagged("+imp.2s")];
     forms.extend(extend(std::slice::from_ref(&host), ROOT_ENDINGS));
+    // The short plural imperative is standard only for roots in "ು": ಮಾಡಿ, but ಬರೆಯಿರಿ.
+    if root.ends_with('ು') {
+        forms.extend(host.then("ಇ", "+imp.2p"));
+    }
     forms.extend(host.then_with("ಅದೆ", "+neg.cp", Junction::Both));
     forms.extend(nouns(&host, ROOT_NOUNS, depth));
     for modal in extend(std::slice::from_ref(&host), MODALS) {
@@ -355,8 +362,9 @@ fn past_3sn_form(text: &str) -> Form {
     }
 }
 
-fn irregular_forms(verb: &IrregularVerb, depth: Depth) -> Vec<Form> {
-    let mut forms = root_forms(verb.root, depth);
+/// Every form of an irregular verb, built from its spelled-out stems.
+fn irregular_forms(verb: &Stems, depth: Depth) -> Vec<Form> {
+    let mut forms = root_forms(&verb.root, depth);
     forms.extend(verb.past.iter().flat_map(|p| past_forms(p, depth)));
     forms.extend(
         verb.participle
@@ -369,7 +377,7 @@ fn irregular_forms(verb: &IrregularVerb, depth: Depth) -> Vec<Form> {
         tags: tags.to_string(),
         next: crate::sandhi::junction_after(text),
     }));
-    for (text, tags, declension) in verb.nouns {
+    for (text, tags, declension) in &verb.nouns {
         forms.extend(cases(
             &Form::stem(text, Junction::Elide).tagged(tags),
             *declension,
@@ -386,6 +394,11 @@ pub fn regular_forms(root: &str) -> Vec<Form> {
     forms.extend(participle_forms(&participle, Depth::Full));
     forms.extend(Form::stem(root, root_junction(root)).then("ಇತು", "+past.3sn"));
     forms
+}
+
+/// Every form of an irregular verb, with all auxiliaries.
+pub fn irregular_verb_forms(verb: &Stems) -> Vec<Form> {
+    irregular_forms(verb, Depth::Full)
 }
 
 /// The forms of an irregular root that are built on the root itself.
@@ -413,7 +426,7 @@ fn auxiliary_forms(root: &'static str) -> &'static [Form] {
     };
     cell.get_or_init(|| {
         irregular_forms(
-            irregular_verb(root).expect("auxiliary is irregular"),
+            &irregular_stems(root).expect("auxiliary is irregular"),
             Depth::Base,
         )
     })
@@ -422,19 +435,19 @@ fn auxiliary_forms(root: &'static str) -> &'static [Form] {
 /// The forms of ಆಗು that fuse to a noun or an infinitive: ಆಗಿ, ಆದ, ಆಗಿದೆ.
 pub fn copula() -> &'static [Form] {
     static FORMS: OnceLock<Vec<Form>> = OnceLock::new();
-    FORMS.get_or_init(|| irregular_forms(irregular_verb("ಆಗು").expect("ಆಗು"), Depth::Copula))
+    FORMS.get_or_init(|| irregular_forms(&irregular_stems("ಆಗು").expect("ಆಗು"), Depth::Copula))
 }
 
 /// The forms of ಇರು that fuse to a participle or a locative: ಇದೆ, ಇದ್ದ, ಇರುವ.
 pub fn existential() -> &'static [Form] {
     static FORMS: OnceLock<Vec<Form>> = OnceLock::new();
-    FORMS.get_or_init(|| irregular_forms(irregular_verb("ಇರು").expect("ಇರು"), Depth::Base))
+    FORMS.get_or_init(|| irregular_forms(&irregular_stems("ಇರು").expect("ಇರು"), Depth::Base))
 }
 
 /// The forms of ಎನ್ನು that fuse to a quoted word: ಎಂದು, ಎಂಬ, ಎಂದರೆ.
 pub fn quotative() -> &'static [Form] {
     static FORMS: OnceLock<Vec<Form>> = OnceLock::new();
-    FORMS.get_or_init(|| irregular_forms(irregular_verb("ಎನ್ನು").expect("ಎನ್ನು"), Depth::Base))
+    FORMS.get_or_init(|| irregular_forms(&irregular_stems("ಎನ್ನು").expect("ಎನ್ನು"), Depth::Base))
 }
 
 #[cfg(test)]
@@ -510,6 +523,41 @@ mod tests {
         let root = irregular_root_forms("ಬರು");
         assert!(has(&root, "ಬರುತ್ತಾರೆ", "+npst.3p"));
         assert!(!root.iter().any(|f| f.text == "ಬರಿದ" || f.text == "ಬರಿತು"));
+    }
+
+    #[test]
+    fn front_irregular_roots_keep_their_root_forms() {
+        let forms = irregular_root_forms("ಕಲಿ");
+        for (text, tags) in [
+            ("ಕಲಿಯುತ್ತಾರೆ", "+npst.3p"),
+            ("ಕಲಿಯಲು", "+inf"),
+            ("ಕಲಿಯಿರಿ", "+imp.2p"),
+        ] {
+            assert!(has(&forms, text, tags), "{text} {tags}");
+        }
+        assert!(!forms.iter().any(|f| f.text == "ಕಲಿಯಿ"));
+    }
+
+    #[test]
+    fn newly_listed_irregular_verbs() {
+        for (root, past) in [
+            ("ನಗು", "ನಕ್ಕರು"),
+            ("ಸೋಲು", "ಸೋತರು"),
+            ("ಕೊಯ್ಯು", "ಕೊಯ್ದರು"),
+            ("ಕಾಯು", "ಕಾದರು"),
+        ] {
+            let stems = irregular_stems(root).unwrap();
+            let forms = past_stem_forms(&stems.past[0]);
+            assert!(has(&forms, past, "+past.3p"), "{root}");
+            assert!(!regular_forms(root).is_empty());
+        }
+    }
+
+    #[test]
+    fn able_takes_no_fused_copula() {
+        let forms = regular_forms("ಮಾಡು");
+        assert!(has(&forms, "ಮಾಡಬಲ್ಲ", "+abil"));
+        assert!(!forms.iter().any(|f| f.text == "ಮಾಡಬಲ್ಲಾಗಿ"));
     }
 
     #[test]

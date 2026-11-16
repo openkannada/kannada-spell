@@ -4,6 +4,7 @@ use std::sync::OnceLock;
 
 use crate::form::{Form, extend};
 use crate::sandhi::Junction;
+use crate::script::VIRAMA;
 use crate::verb::{copula, existential, quotative};
 
 /// How a noun stem takes case endings. Each declension is named after an example.
@@ -61,14 +62,19 @@ impl Declension {
         }
     }
 
+    /// True when the nominative also takes a formal "ಉ": ಮರವು, ಮನೆಯು, ವಸ್ತುವು.
+    fn has_formal_nominative(self) -> bool {
+        matches!(
+            self,
+            Declension::Tree | Declension::House | Declension::Girl | Declension::Thing
+        )
+    }
+
     /// The loanword with "ು" added, which declines like ಕಾಡು: ಬ್ಯಾಂಕು, ಬಸ್ಸು.
     fn u_extension(self, stem: &str) -> Option<String> {
-        let consonant = stem.strip_suffix(crate::script::VIRAMA)?.chars().last()?;
+        let consonant = stem.strip_suffix(VIRAMA)?.chars().last()?;
         match self {
-            Declension::Loan => Some(format!(
-                "{}ು",
-                &stem[..stem.len() - crate::script::VIRAMA.len_utf8()]
-            )),
+            Declension::Loan => Some(format!("{}ು", &stem[..stem.len() - VIRAMA.len_utf8()])),
             Declension::LoanDoubled => Some(format!("{stem}{consonant}ು")),
             _ => None,
         }
@@ -105,7 +111,12 @@ const NEGATIVE_COPULA: &[(&str, &str)] = &[
 /// The case forms of 1 nominal stem, with clitics: no plural and no fused predicates.
 pub fn cases(stem: &Form, declension: Declension) -> Vec<Form> {
     let nom = stem.clone();
-    let mut nominatives = vec![nom.clone()];
+    // ಹುಡುಗ takes clitics only through ಹುಡುಗನು: ಹುಡುಗನೂ, never ಹುಡುಗವೂ.
+    let mut nominatives = if declension == Declension::Boy {
+        Vec::new()
+    } else {
+        vec![nom.clone()]
+    };
     let (acc, dat, oblique) = match declension {
         Declension::Tree => (
             nom.then("ಅನ್ನು", "+acc"),
@@ -147,10 +158,7 @@ pub fn cases(stem: &Form, declension: Declension) -> Vec<Form> {
             nom.then("ನ್", ""),
         ),
     };
-    if matches!(
-        declension,
-        Declension::Tree | Declension::House | Declension::Girl | Declension::Thing
-    ) {
+    if declension.has_formal_nominative() {
         nominatives.extend(nom.then("ಉ", "+nom"));
     }
     let oblique_cases = extend(&oblique, OBLIQUE_ENDINGS);
@@ -173,6 +181,9 @@ pub fn cases(stem: &Form, declension: Declension) -> Vec<Form> {
     );
 
     let mut forms = extend(&takes_clitics, CLITICS);
+    if declension == Declension::Boy {
+        forms.push(nom);
+    }
     forms.extend(takes_clitics);
     forms.extend(oblique_cases);
     forms.extend(
@@ -355,11 +366,10 @@ mod tests {
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
-        assert!(
-            !forms
-                .iter()
-                .any(|f| f.text == "ಹುಡುಗವನ್ನು" || f.text == "ಹುಡುಗವಾಗಿ")
-        );
+        let wrong = ["ಹುಡುಗವನ್ನು", "ಹುಡುಗವಾಗಿ", "ಹುಡುಗವೂ", "ಹುಡುಗವೇ"];
+        assert!(!forms.iter().any(|f| wrong.contains(&f.text.as_str())));
+        assert!(has(&forms, "ಹುಡುಗನೂ", "+nom+also"));
+        assert!(has(&forms, "ಹುಡುಗ", ""));
     }
 
     #[test]

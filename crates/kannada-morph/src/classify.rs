@@ -8,7 +8,7 @@
 
 use std::collections::HashSet;
 
-use crate::class::Final;
+use crate::class::Class;
 use crate::noun::{Declension, case_forms};
 
 /// A second declension is kept when it has at least this many attestations...
@@ -16,28 +16,26 @@ const MIN_SECOND: u64 = 5;
 /// ...and at least this share of the best declension's attestations.
 const SECOND_SHARE: f64 = 0.2;
 
-/// The declensions a stem's ending allows, the default first.
-pub fn candidates(stem: &str) -> &'static [Declension] {
-    match Final::of(stem) {
-        Some(Final::Consonant) => &[Declension::Tree, Declension::Boy],
-        Some(Final::Char('ಿ' | 'ೆ' | 'ೀ' | 'ೇ' | 'ೈ')) => {
-            &[Declension::House, Declension::Girl]
-        }
-        Some(Final::Char('ು')) => &[Declension::Forest, Declension::Thing, Declension::This],
-        Some(Final::Char('ಾ' | 'ೂ' | 'ೋ' | 'ೌ')) => &[Declension::Thing],
-        Some(Final::Char(crate::script::VIRAMA)) if is_loan_shape(stem) => {
-            &[Declension::Loan, Declension::LoanDoubled]
-        }
-        _ => &[],
-    }
-}
+/// The declensions a dictionary stem may take, the default for each ending first.
+const OPEN_DECLENSIONS: &[Declension] = &[
+    Declension::Tree,
+    Declension::Boy,
+    Declension::House,
+    Declension::Girl,
+    Declension::Forest,
+    Declension::Thing,
+    Declension::This,
+    Declension::Loan,
+    Declension::LoanDoubled,
+];
 
-/// A consonant and a virama at the end, as in ಬ್ಯಾಂಕ್: not a lone sign.
-fn is_loan_shape(stem: &str) -> bool {
-    stem.chars()
-        .rev()
-        .nth(1)
-        .is_some_and(crate::script::is_consonant)
+/// The declensions whose class allows the stem's ending, the default first.
+pub fn candidates(stem: &str) -> Vec<Declension> {
+    OPEN_DECLENSIONS
+        .iter()
+        .copied()
+        .filter(|&d| Class::Noun(d).accepts(stem))
+        .collect()
 }
 
 /// How often each candidate's own forms occur, by `count`.
@@ -66,7 +64,20 @@ pub fn evidence(stem: &str, count: &dyn Fn(&str) -> u64) -> Vec<(Declension, u64
 /// The declensions to give `stem`: the best attested, or the default with no evidence,
 /// plus a clearly attested second one. Empty when the ending allows none.
 pub fn choose(stem: &str, count: &dyn Fn(&str) -> u64) -> Vec<Declension> {
-    let mut scored = evidence(stem, count);
+    pick(evidence(stem, count))
+}
+
+/// Like [`choose`], but only declensions with corpus evidence: for words Alar lists
+/// as adjectives, which take noun endings only when they are used as nouns.
+pub fn choose_attested(stem: &str, count: &dyn Fn(&str) -> u64) -> Vec<Declension> {
+    let scored = evidence(stem, count);
+    if scored.iter().all(|&(_, s)| s == 0) {
+        return Vec::new();
+    }
+    pick(scored)
+}
+
+fn pick(mut scored: Vec<(Declension, u64)>) -> Vec<Declension> {
     let Some(&(default, _)) = scored.first() else {
         return Vec::new();
     };
@@ -83,16 +94,6 @@ pub fn choose(stem: &str, count: &dyn Fn(&str) -> u64) -> Vec<Declension> {
         chosen.push(second);
     }
     chosen
-}
-
-/// Like [`choose`], but only declensions with corpus evidence: for words Alar lists
-/// as adjectives, which take noun endings only when they are used as nouns.
-pub fn choose_attested(stem: &str, count: &dyn Fn(&str) -> u64) -> Vec<Declension> {
-    let scored = evidence(stem, count);
-    if scored.iter().all(|&(_, s)| s == 0) {
-        return Vec::new();
-    }
-    choose(stem, count)
 }
 
 #[cfg(test)]
@@ -124,7 +125,7 @@ mod tests {
     }
 
     #[test]
-    fn keeps_a_clear_second_declension() {
+    fn keeps_a_second_declension_only_when_clearly_attested() {
         let count = corpus(&[("ಗುರುವನ್ನು", 40), ("ಗುರುವಿಗೆ", 10), ("ಗುರನ್ನು", 2)]);
         assert_eq!(choose("ಗುರು", &count), [Declension::Thing]);
         let count = corpus(&[("ಹಸುವನ್ನು", 40), ("ಹಸಿನ", 12)]);
