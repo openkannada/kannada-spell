@@ -101,7 +101,7 @@ Measured with `kspell phonetic-eval`:
 | --- | --- | --- | --- |
 | Confusion misspellings that keep the intended word's key, of 5,000 | 57.0% | 94.8% | 95.7% |
 | Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.0% |
-| Other dictionary stems sharing a stem's key, mean (130,000 stems) | 0.22 | 0.41 | 9.5 |
+| Other dictionary stems sharing a stem's key, mean (130,485 stems) | 0.22 | 0.41 | 9.5 |
 | Informal Latin spellings with the Kannada word's key, of 60 (`informal.tsv`) | | 96.7% | 98.3% |
 
 - The confusion row is high by design: the confusions are the substitutions the medium key folds. The typing slips are random edits and the fairer test of the broad key.
