@@ -60,6 +60,29 @@ impl Analyzer {
         &self.lexicon
     }
 
+    /// Every form of every stem whose lemma is `lemma`, with the analysis `analyze` gives it.
+    pub fn paradigm(&self, lemma: &str) -> Vec<(String, Analysis)> {
+        let mut forms: Vec<(String, Analysis)> = self
+            .lexicon
+            .entries()
+            .into_iter()
+            .filter(|e| e.lemma == lemma)
+            .flat_map(|e| {
+                let fixed = e.class == Class::Fixed;
+                let own = fixed.then(|| (e.stem.clone(), analysis(e, "", false)));
+                let inflected = (!fixed)
+                    .then(|| e.class.forms(&e.stem))
+                    .into_iter()
+                    .flatten()
+                    .map(|f| (f.text, analysis(e, &f.tags, false)));
+                own.into_iter().chain(inflected).collect::<Vec<_>>()
+            })
+            .collect();
+        forms.sort();
+        forms.dedup();
+        forms
+    }
+
     /// Every analysis of `word` from known stems, sorted. Empty for an unknown word.
     pub fn analyze(&self, word: &str) -> Vec<Analysis> {
         let word = normalize(word);
@@ -192,6 +215,34 @@ mod tests {
             .iter()
             .map(ToString::to_string)
             .collect()
+    }
+
+    #[test]
+    fn paradigm_lists_forms_of_every_stem_of_a_lemma() {
+        let a = analyzer();
+        let forms = a.paradigm("ಬರು");
+        let has = |word: &str, reading: &str| {
+            forms
+                .iter()
+                .any(|(w, r)| w == word && r.to_string() == reading)
+        };
+        assert!(has("ಬಂತು", "ಬರು+v+past.3sn"));
+        assert!(has("ಬಂದನು", "ಬರು+v+past.3sm"));
+        assert!(
+            a.paradigm("ಮರ")
+                .iter()
+                .any(|(w, r)| w == "ಮರಕ್ಕೆ" && r.to_string() == "ಮರ+n+dat")
+        );
+    }
+
+    #[test]
+    fn every_paradigm_form_analyzes_back_to_its_reading() {
+        let a = analyzer();
+        for lemma in ["ಮರ", "ಮನೆ", "ಮಾಡು", "ಬರು"] {
+            for (word, reading) in a.paradigm(lemma) {
+                assert!(a.analyze(&word).contains(&reading), "{word} {reading}");
+            }
+        }
     }
 
     #[test]

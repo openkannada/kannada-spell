@@ -98,6 +98,12 @@ enum Command {
         guess: bool,
         words: Vec<String>,
     },
+    /// Prints every form of each lemma with its analysis (arguments, or 1 per line on stdin).
+    Paradigm {
+        #[arg(long, default_value = "dict/kn_IN")]
+        dictionary: PathBuf,
+        lemmas: Vec<String>,
+    },
     /// Prints the lemma of each word.
     Stem {
         #[arg(long, default_value = "dict/kn_IN")]
@@ -201,6 +207,7 @@ fn main() -> Result<()> {
             words,
         } => analyze(&dictionary, guess, words),
         Command::Stem { dictionary, words } => stem(&dictionary, words),
+        Command::Paradigm { dictionary, lemmas } => paradigm(&dictionary, lemmas),
         Command::Eval {
             dictionary,
             train,
@@ -559,6 +566,17 @@ fn analyze(dictionary: &Path, guess: bool, words: Vec<String>) -> Result<()> {
         }
         for a in analyses {
             writeln!(out, "{word}\t{a}{}", if a.guessed { "\tguess" } else { "" })?;
+        }
+    }
+    Ok(())
+}
+
+fn paradigm(dictionary: &Path, lemmas: Vec<String>) -> Result<()> {
+    let analyzer = load_analyzer(dictionary)?;
+    let mut out = io::stdout().lock();
+    for lemma in input_words(lemmas)? {
+        for (word, analysis) in analyzer.paradigm(&lemma) {
+            writeln!(out, "{word}\t{analysis}")?;
         }
     }
     Ok(())
