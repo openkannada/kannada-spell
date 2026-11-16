@@ -18,7 +18,7 @@ The affix files hold the inflection rules generated from the paradigms in `crate
 
 When you use or redistribute the dictionaries, keep this notice and credit:
 
-> Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0.
+> Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/).
 
 For `kn_IN`, also credit Kannada Wikipedia:
 

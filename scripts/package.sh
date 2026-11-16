@@ -11,7 +11,7 @@ fill() { sed -e "s/@VERSION@/$version/g" -e "s/@LO_ID@/$lo_id/g" -e "s/@FIREFOX_
 
 notice() {
   {
-    cat dict/README.md
+    sed -E 's/\[([^]]*)\]\(\.\.\/[^)]*\)/\1/g' dict/README.md
     printf '\n---\n\n'
     cat DATA-LICENSE.md
     printf '\n---\n\n'

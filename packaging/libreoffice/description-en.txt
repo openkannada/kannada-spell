@@ -1,3 +1,3 @@
 Kannada spell checking for LibreOffice. Kannada joins case endings, auxiliaries and the copula to the word before them, so this dictionary describes Kannada inflection as rules and accepts the inflected forms: ಮರಗಳಲ್ಲಿ, ಮನೆಯಲ್ಲಿದೆ, ಮಾಡಲಾಗಿದೆ. It accepts 88.9% of the words in held-out Kannada Wikipedia text.
 
-The word list contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0. It also includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors. The affix rules are under the MIT License. See NOTICE.md.
+The word list contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/). It also includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors. The affix rules are under the MIT License. See NOTICE.md.

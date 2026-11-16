@@ -23,7 +23,7 @@ cmp -s dict/kn_IN.dic "$work/oxt/kn_IN.dic" || fail "the .oxt kn_IN.dic differs 
 for f in META-INF/manifest.xml description.xml description-en.txt dictionaries.xcu NOTICE.md; do
   [ -f "$work/oxt/$f" ] || fail "the .oxt has no $f"
 done
-for text in "Open Database License" "Permission is hereby granted" "Kannada Wikipedia"; do
+for text in "Open Database License" "opendatacommons.org/licenses/odbl" "Permission is hereby granted" "Kannada Wikipedia"; do
   grep -q "$text" "$work/oxt/NOTICE.md" || fail "the .oxt NOTICE.md lacks $text"
   grep -q "$text" "$work/xpi/NOTICE.md" || fail "the .xpi NOTICE.md lacks $text"
 done
