@@ -36,6 +36,8 @@ pub const LATIN_SAMPLES: &[&str] = &[
     "neeru",
     "kaṟi",
     "kōḻi",
+    "sanskrit",
+    "sinha",
 ];
 
 /// Whole words for the test vectors, chosen to cover clusters, nasals and the visarga.
@@ -67,6 +69,8 @@ const VECTOR_WORDS: &[&str] = &[
     "ಉನ್ಮಾದ",
     "ಸಂಸಾರ",
     "ಛತ್ರ",
+    "ಸನ್ಸಾರ",
+    "ಸಂಹಾರ",
 ];
 
 /// The test-vector words: every consonant alone, with each vowel sign, the virama, the
