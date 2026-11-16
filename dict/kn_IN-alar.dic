@@ -1,4 +1,4 @@
-139723
+139582
 ಅ po:n
 ಅ po:x
 ಅಂ po:n
@@ -984,9 +984,7 @@
 ಅಂತಸ್ಸಾರ/Na po:n
 ಅಂತಸ್ಸ್ರಾವಕ/Aj po:adj
 ಅಂತಸ್ಸ್ರಾವಕ/Na po:n
-ಅಂತಹ/Aj po:adj
 ಅಂತಹ po:det
-ಅಂತಹ/Na po:n
 ಅಂತಾಕ್ಷರಿ/Ne po:n
 ಅಂತಾರಾಷ್ಟ್ರೀಯ/Aj po:adj
 ಅಂತಾರಾಷ್ಟ್ರೀಯ/Na po:n
@@ -1697,7 +1695,7 @@
 ಅಕ್ಕರು/Nu po:n
 ಅಕ್ಕರುಗಾರ್ತಿ/Ne po:n
 ಅಕ್ಕರೆ/Ne po:n
-ಅಕ್ಕರ್/Nl po:n
+ಅಕ್ಕರ್ po:n
 ಅಕ್ಕಲಕರೆ/Ne po:n
 ಅಕ್ಕಲಕಾರ/Na po:n
 ಅಕ್ಕಲಕೋಟೆ/Ne po:n
@@ -2127,7 +2125,7 @@
 ಅಗಲೊಗೆ/Vb po:v
 ಅಗಲೊತ್ತು/Vb po:v
 ಅಗಲೌತಣ/Na po:n
-ಅಗಲ್/Nl po:n
+ಅಗಲ್ po:n
 ಅಗಲ್ po:v
 ಅಗಲ್ಕೆ/Ne po:n
 ಅಗಲ್ಕೆಗಿಚ್ಚು/Nu po:n
@@ -3601,7 +3599,7 @@
 ಅಡಿಗರಟ/Na po:n
 ಅಡಿಗರ್ಚು/Nu po:n
 ಅಡಿಗರ್ಚುಕಾಣಿಕೆ/Ne po:n
-ಅಡಿಗಲ್/Nk po:n
+ಅಡಿಗಲ್ po:n
 ಅಡಿಗಲ್ಲಿಕ್ಕು/Vb po:v
 ಅಡಿಗಲ್ಲು/Nu po:n
 ಅಡಿಗಾರ/Na po:n
@@ -4537,7 +4535,7 @@
 ಅತೃಪ್ತೆ/Ne po:n
 ಅತೃಷ್ಣೆ/Ne po:n
 ಅತೋನಾತ/Na po:n
-ಅತ್/Nk po:n
+ಅತ್ po:n
 ಅತ್ತ/Px po:adv
 ಅತ್ತ/Nm po:n
 ಅತ್ತ/Vp st:ಅಳು po:v
@@ -4557,7 +4555,7 @@
 ಅತ್ತರುಗುಲಾಬಿ/Ne po:n
 ಅತ್ತರುತಟ್ಟಿ/Ne po:n
 ಅತ್ತರುದಾನಿ/Ne po:n
-ಅತ್ತರ್/Nl po:n
+ಅತ್ತರ್ po:n
 ಅತ್ತಲ/Aj po:adj
 ಅತ್ತಲಗ್ಗ/Na po:n
 ಅತ್ತಲಬಾಯಿ/Ne po:n
@@ -4669,7 +4667,7 @@
 ಅಥರ್ವಕುಶಲ/Na po:n
 ಅಥರ್ವಣ/Na po:n
 ಅಥರ್ವಣಪ್ರಯೋಗ/Na po:n
-ಅಥವಾ/Px po:conj
+ಅಥವಾ po:conj
 ಅಥಾಂಗ/Px po:adv
 ಅದ/Px po:intj
 ಅದಂಡ್ಯ/Aj po:adj
@@ -4709,7 +4707,7 @@
 ಅದನ/Nm po:n
 ಅದನಾ/Aj po:adj
 ಅದಪು/Vb po:v
-ಅದಬ್/Nl po:n
+ಅದಬ್ po:n
 ಅದಬ್ಬು/Nu po:n
 ಅದಭ್ರ/Aj po:adj
 ಅದಮಾನಿ/Ne po:n
@@ -4851,7 +4849,6 @@
 ಅದೆ/Vb po:v
 ಅದೆಬದೆ/Ne po:n
 ಅದೇ st:ಅದು po:pron is:+emph
-ಅದೇ/Px po:intj
 ಅದೇಯ/Aj po:adj
 ಅದೈವೆ/Ne po:n
 ಅದೊ po:intj
@@ -6831,9 +6828,7 @@
 ಅನೃತಸ್ಪರ್ಧಿ/Ne po:n
 ಅನೆಮಯ್ಲಿ/Ne po:n
 ಅನೆಯಕ/Aj po:adj
-ಅನೇಕ/Aj po:adj
 ಅನೇಕ/Px po:det
-ಅನೇಕ/Nm po:n
 ಅನೇಕಜಿಹ್ವ/Na po:n
 ಅನೇಕತರ/Aj po:adj
 ಅನೇಕತರ/Na po:n
@@ -6926,7 +6921,7 @@
 ಅನ್ನದ್ವೇಷ/Na po:n
 ಅನ್ನನಾಳ/Na po:n
 ಅನ್ನನೀರು/Nu po:n
-ಅನ್ನನ್/Nl po:n
+ಅನ್ನನ್ po:n
 ಅನ್ನಪಕ್ಷಿ/Ne po:n
 ಅನ್ನಪಚನ/Na po:n
 ಅನ್ನಪಚನೆ/Ne po:n
@@ -7674,7 +7669,7 @@
 ಅಪೀಲು/Nu po:n
 ಅಪೀಲುದಾರ/Na po:n
 ಅಪೀಲುಮಾಡು/Vb po:v
-ಅಪೀಲ್/Nl po:n
+ಅಪೀಲ್ po:n
 ಅಪು/Nd po:n
 ಅಪುಚ್ಛ/Aj po:adj
 ಅಪುತ್ರ/Na po:n
@@ -9030,7 +9025,7 @@
 ಅಮಲುಬಜಾವಣೆ/Ne po:n
 ಅಮಲೆ/Ne po:n
 ಅಮಲೇರು/Vb po:v
-ಅಮಲ್/Nl po:n
+ಅಮಲ್ po:n
 ಅಮಲ್ಜಾರಿ/Ne po:n
 ಅಮಲ್ದಾರ/Nm po:n
 ಅಮಲ್ದಾರಗಿರಿ/Ne po:n
@@ -9219,7 +9214,7 @@
 ಅಮೃತಮಯ/Aj po:adj
 ಅಮೃತಮಯೂಖ/Na po:n
 ಅಮೃತಮರೀಚಿ/Ne po:n
-ಅಮೃತಮಹಲ್/Nl po:n
+ಅಮೃತಮಹಲ್ po:n
 ಅಮೃತಮಹೋತ್ಸವ/Na po:n
 ಅಮೃತರಂಜನಿ/Ne po:n
 ಅಮೃತರಕ್ಷಣಿ/Ne po:n
@@ -9433,7 +9428,7 @@
 ಅಯೋಮುಖ/Na po:n
 ಅಯೋಲಲನೆ/Ne po:n
 ಅಯೋಲ್ಕ/Na po:n
-ಅಯ್/Nk po:n
+ಅಯ್ po:n
 ಅಯ್ಕಿಲ್ಗದಿರ/Na po:n
 ಅಯ್ಕಿಲ್ವೆಟ್ಟ/Na po:n
 ಅಯ್ಕಿಲ್ವೆಟ್ಟಣುಗಿ/Ne po:n
@@ -9494,7 +9489,7 @@
 ಅಯ್ಮೋರೆ/Ne po:n
 ಅಯ್ಯ/Px po:intj
 ಅಯ್ಯ/NaNm po:n
-ಅಯ್ಯಂಗಾರ್/Nl po:n
+ಅಯ್ಯಂಗಾರ್ po:n
 ಅಯ್ಯಂಬ/Na po:n
 ಅಯ್ಯಗಲಿ/Ne po:n
 ಅಯ್ಯಗೊಡೆ/Ne po:n
@@ -9502,7 +9497,7 @@
 ಅಯ್ಯಯ್ಯೊ po:intj
 ಅಯ್ಯಯ್ಯೋ/Px po:intj
 ಅಯ್ಯರೆಗ/Na po:n
-ಅಯ್ಯರ್/Nl po:n
+ಅಯ್ಯರ್ po:n
 ಅಯ್ಯಲಾ/Px po:intj
 ಅಯ್ಯಾಚಾರ/Na po:n
 ಅಯ್ಯಾಜಿ/Ne po:n
@@ -9749,7 +9744,7 @@
 ಅರಲುಮಂದಾರ/Na po:n
 ಅರಲೆ/Ne po:n
 ಅರಲೆಲೆ/Ne po:n
-ಅರಲ್/Nl po:n
+ಅರಲ್ po:n
 ಅರಲ್ po:v
 ಅರಲ್ಕೆ/Ne po:n
 ಅರಲ್ಗುಂದಿಸು/Vb po:v
@@ -10016,7 +10011,7 @@
 ಅರಿಲಭೇಡಿ/Ne po:n
 ಅರಿಲು/Nu po:n
 ಅರಿಲುಂಬ/Na po:n
-ಅರಿಲ್/Nl po:n
+ಅರಿಲ್ po:n
 ಅರಿಲ್ವಟ್ಟೆ/Ne po:n
 ಅರಿವಡೆ/Ne po:n
 ಅರಿವರ್ಗ/Na po:n
@@ -10156,7 +10151,7 @@
 ಅರುಳು/Nu po:n
 ಅರುಳುದೋರು/Vb po:v
 ಅರುಳುಮರಳು/Nu po:n
-ಅರುಳ್/Nl po:n
+ಅರುಳ್ po:n
 ಅರುಳ್ಗೈ po:v
 ಅರುವಡಿ/Aj po:adj
 ಅರುವಡಿ/Ne po:n
@@ -11159,8 +11154,6 @@
 ಅಲ್ಮೇರ/Na po:n
 ಅಲ್ಮೈರ/Na po:n
 ಅಲ್ಯೂಮಿನಿಯಂ po:n
-ಅಲ್ಲ/Px po:adv
-ಅಲ್ಲ/Na po:n
 ಅಲ್ಲ po:v is:+neg
 ಅಲ್ಲಕಲ್ಲೊಳ/Na po:n
 ಅಲ್ಲಕಲ್ಲೋಲ/Na po:n
@@ -11176,7 +11169,6 @@
 ಅಲ್ಲಣಿಗೆಮುಳಿಸು/Nu po:n
 ಅಲ್ಲದಲ್ಲಣಿಗೆ/Ne po:n
 ಅಲ್ಲದೆ st:ಅಲ್ಲ po:v is:+neg.cp
-ಅಲ್ಲದೆ/Px po:postp
 ಅಲ್ಲಪ್ಪ/Nm po:n
 ಅಲ್ಲಬೀಜ/Na po:n
 ಅಲ್ಲಮಂದ/Na po:n
@@ -11191,7 +11183,6 @@
 ಅಲ್ಲಾಬಿ/Ne po:n
 ಅಲ್ಲಾಳನಾಥ/Na po:n
 ಅಲ್ಲಿ/Px po:adv
-ಅಲ್ಲಿ/Ne po:n
 ಅಲ್ಲಿಗಾರಿಗ/Na po:n
 ಅಲ್ಲಿತನಕ/Px po:adv
 ಅಲ್ಲಿದ/Na po:n
@@ -11454,7 +11445,7 @@
 ಅಳೆಯಿಸು/Vb po:v
 ಅಳೆಸು/Vb po:v
 ಅಳ್ po:adj
-ಅಳ್/Nl po:n
+ಅಳ್ po:n
 ಅಳ್ po:v
 ಅಳ್ಕಜ/Na po:n
 ಅಳ್ಕಜಂಬಡು/Vb po:v
@@ -11795,7 +11786,6 @@
 ಅವನೀಶ್ವರ/Na po:n
 ಅವನೀಸುರ/Na po:n
 ಅವನೀಸ್ವಾಮಿ/Ne po:n
-ಅವನು/Nu po:n
 ಅವನು/Np po:pron
 ಅವನ್ po:x
 ಅವನ್ನು/Px st:ಅವು po:pron is:+acc
@@ -11941,7 +11931,7 @@
 ಅವಲೋಕಿಸು/Vb po:v
 ಅವಲೋಹ/Na po:n
 ಅವಲ್ po:adj
-ಅವಲ್/Nl po:n
+ಅವಲ್ po:n
 ಅವಲ್ po:v
 ಅವಲ್ಮಾಡು/Vb po:v
 ಅವಳ/Nm po:n
@@ -11955,13 +11945,12 @@
 ಅವಳಿಜವಳಿ/Ne po:n
 ಅವಳಿಮೊಲೆ/Ne po:n
 ಅವಳಿಸು/Vb po:v
-ಅವಳು/Nu po:n
 ಅವಳು/Np po:pron
 ಅವಳೆ/Ne po:n
 ಅವಳೋಕಿನಿ/Ne po:n
 ಅವಳೋಕಿನೀವಿದ್ಯೆ/Ne po:n
 ಅವಳೋಕಿಸು/Vb po:v
-ಅವಳ್/Nl po:n
+ಅವಳ್ po:n
 ಅವಳ್ po:x
 ಅವಶ/Aj po:adj
 ಅವಶಕುನ/Na po:n
@@ -12321,9 +12310,7 @@
 ಅವೀಚಿ/Aj po:adj
 ಅವೀಚಿ/Ne po:n
 ಅವೀರೆ/Ne po:n
-ಅವು/Nd po:n
 ಅವು/Px po:pron
-ಅವು/Vb po:v
 ಅವುಂಕಿಸು/Vb po:v
 ಅವುಂಕು/Vb po:v
 ಅವುಂಕುಹ/Na po:n
@@ -13101,7 +13088,7 @@
 ಅಸಲೆ/Ne po:n
 ಅಸಲೇಕಾರ/Na po:n
 ಅಸಲ್ po:adj
-ಅಸಲ್/Nl po:n
+ಅಸಲ್ po:n
 ಅಸಳೆ/Ne po:n
 ಅಸವನೆ/Ne po:n
 ಅಸವರ್ಣ/Aj po:adj
@@ -13674,11 +13661,8 @@
 ಅಹೋರಾತ್ರಿ/Ne po:n
 ಅಹೋರಾತ್ರೆ/Ne po:n
 ಅಹ್ನ/Na po:n
-ಅಹ್ರಿಮನ್/Nl po:n
-ಆ po:adj
+ಅಹ್ರಿಮನ್ po:n
 ಆ po:det
-ಆ po:n
-ಆ po:x
 ಆಂ po:x
 ಆಂಕರ/Na po:n
 ಆಂಕರು/Nu po:n
@@ -13967,7 +13951,7 @@
 ಆಕೃಷ್ಟ/Aj po:adj
 ಆಕೃಷ್ಟಿ/Ne po:n
 ಆಕೃಷ್ಟಿಮಂತ್ರ/Na po:n
-ಆಕೆ/Ne po:n
+ಆಕೆ/Ne po:pron
 ಆಕೆಯವಾಳ/Na po:n
 ಆಕೆವಾಳ/Na po:n
 ಆಕೆವಾಳತನ/Na po:n
@@ -14061,8 +14045,7 @@
 ಆಖ್ಯಾಯಕ/Na po:n
 ಆಖ್ಯಾಯಿಕೆ/Ne po:n
 ಆಖ್ಯೆ/Ne po:n
-ಆಗ/Px po:adv
-ಆಗ/Na po:n
+ಆಗ po:adv
 ಆಗಂತು/Aj po:adj
 ಆಗಂತು/Nu po:n
 ಆಗಂತುಕ/Aj po:adj
@@ -14585,11 +14568,12 @@
 ಆಣೆವತ್ತಳೆ/Ne po:n
 ಆಣೆವಾರಿ/Ne po:n
 ಆಣೆಹಾಕಿಸು/Vb po:v
-ಆಣ್/Nl po:n
+ಆಣ್ po:n
 ಆಣ್ತೆ/Ne po:n
 ಆಣ್ಪರಿಜು/Nu po:n
 ಆಣ್ಮ/Na po:n
 ಆಣ್ಮೆ/Ne po:n
+ಆತ/Nm po:pron
 ಆತಂಕ/Na po:n
 ಆತಂಕಕಳಂಕ/Na po:n
 ಆತಂಕಗೊಂಡ/Vp st:ಆತಂಕಗೊಳ್ಳು po:v
@@ -14900,8 +14884,6 @@
 ಆದರಿಸು/Vb po:v
 ಆದರೂ st:ಆಗು po:v is:+conc
 ಆದರೆ st:ಆಗು po:v is:+cond
-ಆದರೆ/Px po:conj
-ಆದರೆ/Px po:intj
 ಆದರ್ಪಿಸು/Vb po:v
 ಆದರ್ಶ/Na po:n
 ಆದರ್ಶಕ/Aj po:adj
@@ -15045,7 +15027,6 @@
 ಆದೊರೆಯ/Aj po:adj
 ಆದೊರೆಯ/Na po:n
 ಆದೋಹಳ/Na po:n
-ಆದ್ದರಿಂದ/Px po:adv
 ಆದ್ದರಿಂದ po:conj
 ಆದ್ಮಿ/Ne po:n
 ಆದ್ಯ/Aj po:adj
@@ -15867,7 +15848,7 @@
 ಆಯುಷ್ಮಂತ/Na po:n
 ಆಯುಷ್ಮಂತೆ/Ne po:n
 ಆಯುಷ್ಮತಿ/Ne po:n
-ಆಯುಷ್ಮಾನ್/Nl po:n
+ಆಯುಷ್ಮಾನ್ po:n
 ಆಯುಷ್ಯ/Aj po:adj
 ಆಯುಷ್ಯ/Na po:n
 ಆಯುಷ್ಯರೇಖೆ/Ne po:n
@@ -16028,10 +16009,7 @@
 ಆರೀಯ/Aj po:adj
 ಆರೀಯವೇಗ/Na po:n
 ಆರೀಯಸಮಾಂಗತೆ/Ne po:n
-ಆರು/Aj po:adj
-ಆರು/Nd po:n
 ಆರು/Nd po:num
-ಆರು/Vb po:v
 ಆರುಕಾರು/Nu po:n
 ಆರುಕೆಲಸ/Na po:n
 ಆರುಕೋರು/Nu po:n
@@ -16118,9 +16096,6 @@
 ಆರೋಹಿಪಕ್ಷಿ/Ne po:n
 ಆರೋಹಿಸು/Vb po:v
 ಆರ್ po:abbr
-ಆರ್/Nl po:n
-ಆರ್ po:v
-ಆರ್ po:x
 ಆರ್ಕಾಟಿ/Ne po:n
 ಆರ್ಕಾಲು/Nu po:n
 ಆರ್ಕ್ಯ/Aj po:adj
@@ -16488,7 +16463,7 @@
 ಆಳೋಳ/Aj po:adj
 ಆಳೋಳ/Na po:n
 ಆಳೋಳಿ/Ne po:n
-ಆಳ್/Nl po:n
+ಆಳ್ po:n
 ಆಳ್ po:v
 ಆಳ್ಕುಡಿ/Ne po:n
 ಆಳ್ಕೆ/Ne po:n
@@ -16515,7 +16490,7 @@
 ಆಳ್ವಲ/Na po:n
 ಆಳ್ವಲ್ಮೆ/Ne po:n
 ಆಳ್ವಾರು/Nd po:n
-ಆಳ್ವಾರ್/Nl po:n
+ಆಳ್ವಾರ್ po:n
 ಆಳ್ವಿಕೆ/Ne po:n
 ಆಳ್ವೆ/Ne po:n
 ಆಳ್ವೆರಿ/Ne po:n
@@ -16961,7 +16936,7 @@
 ಆಸಪಾಸು/Nu po:n
 ಆಸಪು/Nu po:n
 ಆಸಫಗಿರಿ/Ne po:n
-ಆಸಫ್/Nl po:n
+ಆಸಫ್ po:n
 ಆಸಬದಾರ/Na po:n
 ಆಸಮಾನಿ/Ne po:n
 ಆಸರ/Na po:n
@@ -17266,7 +17241,6 @@
 ಆಹ್ವಾನಿಸು/Vb po:v
 ಆಹ್ವೆ/Ne po:n
 ಇ po:abbr
-ಇ po:n
 ಇಂ po:adv
 ಇಂಕರ/Aj po:adj
 ಇಂಕರ/Px po:adv
@@ -17392,9 +17366,7 @@
 ಇಂತ/Na po:n
 ಇಂತ/Px po:x
 ಇಂತಪ್ಪ/Aj po:adj
-ಇಂತಹ/Aj po:adj
 ಇಂತಹ po:det
-ಇಂತಹ/Na po:n
 ಇಂತಾ/Nv po:n
 ಇಂತಿ/Px po:adv
 ಇಂತಿ/Ne po:n
@@ -17806,7 +17778,7 @@
 ಇಜಾರೆ/Ne po:n
 ಇಜ್ಜತು/Nu po:n
 ಇಜ್ಜತೆ/Ne po:n
-ಇಜ್ಜತ್/Nl po:n
+ಇಜ್ಜತ್ po:n
 ಇಜ್ಜಮರ/Na po:n
 ಇಜ್ಜಲ/Na po:n
 ಇಜ್ಜಲು/Nu po:n
@@ -18109,7 +18081,6 @@
 ಇದೆಕೋ/Px po:intj
 ಇದೆಗೋ/Px po:intj
 ಇದೇ st:ಇದು po:pron is:+emph
-ಇದೇ/Px po:intj
 ಇದೊ po:intj
 ಇದೋ/Px po:intj
 ಇದ್ದ/Vp st:ಇರು po:v
@@ -18153,7 +18124,7 @@
 ಇನಾಂತಿ/Ne po:n
 ಇನಾಂತಿಜಮೀನು/Nu po:n
 ಇನಾಂದಾರ/Nm po:n
-ಇನಾಕ್ಯುಲೇಷನ್/Nk po:n
+ಇನಾಕ್ಯುಲೇಷನ್ po:n
 ಇನಾಮ/Na po:n
 ಇನಾಮತಿ/Ne po:n
 ಇನಾಮತ್ತಿ/Ne po:n
@@ -18212,7 +18183,6 @@
 ಇನ್ನುಡಿ/Ne po:n
 ಇನ್ನುಣಿಸು/Nu po:n
 ಇನ್ನೂ st:ಇನ್ನು po:adv is:+also
-ಇನ್ನೂ/Px po:adv
 ಇನ್ನೂರು/Aj po:adj
 ಇನ್ನೂರು/Nd po:n
 ಇನ್ನೆ/Ne po:n
@@ -18495,7 +18465,7 @@
 ಇರುವತಿಗೆ/Ne po:n
 ಇರುವತ್ತು/Aj po:adj
 ಇರುವತ್ತು/Nu po:n
-ಇರುವರ್/Nl po:n
+ಇರುವರ್ po:n
 ಇರುವಳಿಕೆ/Ne po:n
 ಇರುವಾಯಿ/Ne po:n
 ಇರುವಾಯಿಕಟ್ಟು/Nu po:n
@@ -18682,10 +18652,9 @@
 ಇಲುಮಟ/Na po:n
 ಇಲುಮುಚ್ಚೆ/Ne po:n
 ಇಲುವು/Nu po:n
-ಇಲ್/Nk po:n
+ಇಲ್ po:n
 ಇಲ್ po:v
 ಇಲ್ಲ st:ಇರು po:v is:+neg
-ಇಲ್ಲ/Px po:v
 ಇಲ್ಲಣ/Na po:n
 ಇಲ್ಲತೆ/Ne po:n
 ಇಲ್ಲಮೆ/Ne po:n
@@ -18698,7 +18667,6 @@
 ಇಲ್ಲಾರಕಟ್ಟು/Vb po:v
 ಇಲ್ಲಾರಖಂಡಿ/Ne po:n
 ಇಲ್ಲಿ/Px po:adv
-ಇಲ್ಲಿ/Ne po:n
 ಇಲ್ಲಿದ/Nm po:n
 ಇಲ್ಲಿನ st:ಇಲ್ಲಿ po:adv is:+attr
 ಇಲ್ಲಿಯಣ/Na po:n
@@ -18982,10 +18950,7 @@
 ಇಹಿಂಗೆ/Px po:adv
 ಇಹಿಗೆ/Px po:adv
 ಇಹ್ಯ/Aj po:adj
-ಈ po:adj
 ಈ po:det
-ಈ po:n
-ಈ po:v
 ಈಂಚರ/Na po:n
 ಈಂಚು/Nu po:n
 ಈಂಚುವೋಗು/Vb po:v
@@ -19000,6 +18965,7 @@
 ಈಂಬುಳಿ/Ne po:n
 ಈಕಾರ/Na po:n
 ಈಕಾರಾಂತ/Na po:n
+ಈಕೆ/Ne po:pron
 ಈಕ್ಷಕ/Na po:n
 ಈಕ್ಷಕಿ/Ne po:n
 ಈಕ್ಷಣ/Na po:n
@@ -19011,7 +18977,7 @@
 ಈಕ್ಷಿಸು/Vb po:v
 ಈಕ್ಷ್ಯ/Aj po:adj
 ಈಕ್ಷ್ಯಕೃತಿ/Ne po:n
-ಈಗ/Px po:adv
+ಈಗ po:adv
 ಈಗಡ/Px po:adv
 ಈಗಡಿನ/Aj po:adj
 ಈಗಡು/Px po:adv
@@ -19062,7 +19028,7 @@
 ಈಟಿಗಣೆ/Ne po:n
 ಈಟಿಗಾಳ/Na po:n
 ಈಟು/Nu po:n
-ಈಟ್/Nl po:n
+ಈಟ್ po:n
 ಈಡ/Nm po:n
 ಈಡಳಿ/Vb po:v
 ಈಡಾಡಿಸು/Vb po:v
@@ -19087,7 +19053,7 @@
 ಈಡೇರಿಸು/Vb po:v
 ಈಡೇರು/Vb po:v
 ಈಡೊರಸು/Vb po:v
-ಈತ/Nm po:n
+ಈತ/Nm po:pron
 ಈತಿ/Px po:adv
 ಈತಿ/Ne po:n
 ಈತಿಬಾಧೆ/Ne po:n
@@ -19095,7 +19061,7 @@
 ಈದೃಶ/Aj po:adj
 ಈದೊರೆತು/Aj po:adj
 ಈದೊರೆಯ/Na po:n
-ಈದ್/Nl po:n
+ಈದ್ po:n
 ಈನಿಸು/Vb po:v
 ಈನು/Vb po:v
 ಈನ್ po:v
@@ -19854,7 +19820,7 @@
 ಉಡಲು/Nu po:n
 ಉಡವಣಿ/Ne po:n
 ಉಡಸಾರಣೆ/Ne po:n
-ಉಡಾನ್/Nl po:n
+ಉಡಾನ್ po:n
 ಉಡಾಪಿಸು/Vb po:v
 ಉಡಾಪೆ/Ne po:n
 ಉಡಾಫೆ/Ne po:n
@@ -22088,7 +22054,7 @@
 ಉಮ್ಮಡಿಕೆ/Ne po:n
 ಉಮ್ಮತ/Na po:n
 ಉಮ್ಮತ್ತ/Na po:n
-ಉಮ್ಮತ್ತಾಟ್/Nl po:n
+ಉಮ್ಮತ್ತಾಟ್ po:n
 ಉಮ್ಮತ್ತಿ/Ne po:n
 ಉಮ್ಮದ/Aj po:adj
 ಉಮ್ಮದ/Na po:n
@@ -22825,7 +22791,7 @@
 ಉಸುರುಗಳೆ/Vb po:v
 ಉಸುಲು/Nu po:n
 ಉಸುಳಿ/Ne po:n
-ಉಸ್/Nl po:n
+ಉಸ್ po:n
 ಉಸ್ತವಾರಿ/Ne po:n
 ಉಸ್ತಾದ/Nm po:n
 ಉಸ್ತಾದಪಟ್ಟ/Na po:n
@@ -23070,7 +23036,7 @@
 ಊರೊಡೆಗೇರಿ/Ne po:n
 ಊರೊಡೆತನ/Na po:n
 ಊರೊಡೆಯ/Na po:n
-ಊರ್/Nl po:n
+ಊರ್ po:n
 ಊರ್ಕಾವಲಿಗ/Na po:n
 ಊರ್ಕೆಡುಕ/Na po:n
 ಊರ್ಕೆಲಸಿಗ/Na po:n
@@ -23362,7 +23328,6 @@
 ಋಷ್ಯಪ್ರೋಕ್ತೆ/Ne po:n
 ಋಷ್ಯಶೃಂಗ/Nm po:n
 ಎ po:abbr
-ಎ po:n
 ಎಂ po:abbr
 ಎಂಕಲು/Nu po:n
 ಎಂಗ/Nm po:n
@@ -23385,13 +23350,11 @@
 ಎಂಜಲುಹಾಳೆ/Ne po:n
 ಎಂಜಲೆಲೆ/Ne po:n
 ಎಂಜಲೋದನ/Na po:n
-ಎಂಜಲ್/Nl po:n
+ಎಂಜಲ್ po:n
 ಎಂಜಲ್ವಾತು/Nu po:n
 ಎಂಟಡಿ/Ne po:n
 ಎಂಟಡಿಗ/Na po:n
 ಎಂಟಡಿವರಿಜ/Na po:n
-ಎಂಟು/Aj po:adj
-ಎಂಟು/Nd po:n
 ಎಂಟು/Nd po:num
 ಎಂಟುಹಿಟ್ಟು/Nu po:n
 ಎಂಟೆಡೆ/Ne po:n
@@ -24038,7 +24001,7 @@
 ಎದಿರುಗೊಳ್ಳು/Vr po:v
 ಎದಿರೇಡು/Nu po:n
 ಎದಿರ್ po:adj
-ಎದಿರ್/Nl po:n
+ಎದಿರ್ po:n
 ಎದಿರ್ಗೊಂಡ/Vp st:ಎದಿರ್ಗೊಳ್ಳು po:v
 ಎದಿರ್ಗೊಂಡಿತು st:ಎದಿರ್ಗೊಳ್ಳು po:v is:+past.3sn
 ಎದಿರ್ಗೊಂಡು/Vc st:ಎದಿರ್ಗೊಳ್ಳು po:v
@@ -24258,7 +24221,6 @@
 ಎನುಹ/Na po:n
 ಎನೆತು/Px po:adv
 ಎನ್ po:abbr
-ಎನ್ po:v
 ಎನ್ನ/Aj po:adj
 ಎನ್ನ/Na po:n
 ಎನ್ನಬರ/Px po:adv
@@ -24357,10 +24319,7 @@
 ಎರಟೆಕುಟ್ಟಿ/Ne po:n
 ಎರಟ್ಟೆ/Ne po:n
 ಎರಡಚ್ಚಿ/Ne po:n
-ಎರಡನೆಯ/Aj po:adj
-ಎರಡನೆಯ/Na po:n
 ಎರಡನೆಯ st:ಎರಡು po:num is:+ord
-ಎರಡನೇ/Aj po:adj
 ಎರಡನೇ st:ಎರಡು po:num is:+ord
 ಎರಡಯಿದು/Aj po:adj
 ಎರಡಯಿದು/Nu po:n
@@ -24368,8 +24327,6 @@
 ಎರಡಯ್ದು/Nu po:n
 ಎರಡಾಗು/Vb po:v
 ಎರಡಿಡು/Vb po:v
-ಎರಡು/Aj po:adj
-ಎರಡು/Nd po:n
 ಎರಡು/Nd po:num
 ಎರಡುಗೆಡು/Vb po:v
 ಎರಡುನುಡಿ/Ne po:n
@@ -24670,9 +24627,7 @@
 ಎಲ್ po:abbr
 ಎಲ್ಗಗ/Na po:n
 ಎಲ್ಗಟ್ಟು/Nu po:n
-ಎಲ್ಲ/Aj po:adj
-ಎಲ್ಲ/Px po:adv
-ಎಲ್ಲ/NaNm po:n
+ಎಲ್ಲ/Px po:det
 ಎಲ್ಲದಕ್ಕೆ/Px st:ಎಲ್ಲ po:pron is:+dat
 ಎಲ್ಲದರ st:ಎಲ್ಲ po:pron is:+gen
 ಎಲ್ಲಮ್ಮ/Nm po:n
@@ -24685,8 +24640,6 @@
 ಎಲ್ಲಾಗಳೂ/Px po:adv
 ಎಲ್ಲಾಯಿ/Ne po:n
 ಎಲ್ಲಿ/Px po:adv
-ಎಲ್ಲಿ/Px po:conj
-ಎಲ್ಲಿ/Ne po:n
 ಎಲ್ಲಿತು/Nu po:n
 ಎಲ್ಲಿತ್ತು/Nu po:n
 ಎಲ್ಲಿದ/Na po:n
@@ -25351,8 +25304,6 @@
 ಏಕೀಭೂತ/Aj po:adj
 ಏಕು/Nu po:n
 ಏಕು/Vb po:v
-ಏಕೆ/Px po:adv
-ಏಕೆ/Px po:conj
 ಏಕೆ/Px st:ಏನು po:pron is:+dat
 ಏಕೆಂದರೆ po:conj
 ಏಕೇಂದ್ರಿಯ/Aj po:adj
@@ -25435,7 +25386,6 @@
 ಏತ/NaNm po:n
 ಏತಕೆ/Px po:adv
 ಏತಕೋಲು/Nu po:n
-ಏತಕ್ಕೆ/Px po:adv
 ಏತಕ್ಕೆ/Px st:ಏನು po:pron is:+dat
 ಏತನ್ಮಧ್ಯೆ/Px po:adv
 ಏತರಹ/Px po:adv
@@ -25456,7 +25406,6 @@
 ಏನ/Nm po:n
 ಏನನ್ನು/Px st:ಏನು po:pron is:+acc
 ಏನಸ್ಸಂತಾನ/Na po:n
-ಏನು/Px po:adv
 ಏನು/Px po:pron
 ಏನುಜಾರಿಗ/Na po:n
 ಏನೋಹರ/Na po:n
@@ -25472,7 +25421,7 @@
 ಏಮ್ po:x
 ಏಯಾರಸೆ/Ne po:n
 ಏಯೋದಸಿ/Ne po:n
-ಏಯ್/Nl po:n
+ಏಯ್ po:n
 ಏಯ್ po:v
 ಏರಂಡ/Na po:n
 ಏರಂಡಕಿಟ್ಟ/Na po:n
@@ -25533,7 +25482,7 @@
 ಏರುಹತ್ತು/Vb po:v
 ಏರುಹಾಕು/Vb po:v
 ಏರೇರಿಕೆ/Ne po:n
-ಏರ್/Nl po:n
+ಏರ್ po:n
 ಏರ್ಕಟ್ಟು/Vb po:v
 ಏರ್ಕೆ/Ne po:n
 ಏರ್ಗಟ್ಟು/Vb po:v
@@ -25591,8 +25540,6 @@
 ಏಳಿಲ/Na po:n
 ಏಳಿಲು/Nu po:n
 ಏಳಿಸು/Vb po:v
-ಏಳು/Aj po:adj
-ಏಳು/NuNd po:n
 ಏಳು/Nd po:num
 ಏಳು/Vr po:v
 ಏಳುಬೆಸನ/Na po:n
@@ -25602,7 +25549,7 @@
 ಏಳೆಲೆಬಾಳೆ/Ne po:n
 ಏಳೆಲೆವಾಳೆ/Ne po:n
 ಏಳ್ po:adj
-ಏಳ್/Nl po:n
+ಏಳ್ po:n
 ಏಳ್ po:v
 ಏಳ್ಕೆ/Ne po:n
 ಏಳ್ಗಡಲು/Nu po:n
@@ -25642,7 +25589,6 @@
 ಏಸೆ/Aj po:adj
 ಏಹೊ po:intj
 ಐ po:abbr
-ಐ po:n
 ಐಂಗಾಲಿಕ/Aj po:adj
 ಐಂಗಾಲಿಕ/Na po:n
 ಐಂಗುದ/Na po:n
@@ -25740,10 +25686,7 @@
 ಐದಳ/Na po:n
 ಐದಾಳಿ/Ne po:n
 ಐದಿಸು/Vb po:v
-ಐದು/Aj po:adj
-ಐದು/Nd po:n
 ಐದು/Nd po:num
-ಐದು/Vb po:v
 ಐದುಧಾರೆ/Ne po:n
 ಐದುನೀರು/Nu po:n
 ಐದೆ/Px po:adv
@@ -25785,7 +25728,7 @@
 ಐಮೂಲೆ/Ne po:n
 ಐಮೊಗ/Na po:n
 ಐಯ/Na po:n
-ಐಯಂಗಾರ್/Nl po:n
+ಐಯಂಗಾರ್ po:n
 ಐಯ್ಯ/Nm po:n
 ಐರಗಡಗ/Na po:n
 ಐರಣಿ/Ne po:n
@@ -25835,7 +25778,7 @@
 ಐವತ್ತು/Aj po:adj
 ಐವತ್ತು/Nd po:n
 ಐವರು/Nu po:n
-ಐವರ್/Nl po:n
+ಐವರ್ po:n
 ಐವಾಯ/Na po:n
 ಐವಾಯ್ಪುಲಿ/Ne po:n
 ಐವೆಡೆ/Ne po:n
@@ -25880,8 +25823,6 @@
 ಐಹಿಕ/Na po:n
 ಐಹಿಕಸೌಖ್ಯ/Na po:n
 ಒ po:abbr
-ಒ po:n
-ಒ po:x
 ಒಂಟಂಗ/Na po:n
 ಒಂಟಿ/Aj po:adj
 ಒಂಟಿ/Ne po:n
@@ -25931,10 +25872,7 @@
 ಒಂದಿಗೆ/Px po:adv
 ಒಂದಿಲು/Nu po:n
 ಒಂದಿಸು/Vb po:v
-ಒಂದು/Aj po:adj
-ಒಂದು/Nd po:n
 ಒಂದು/Nd po:num
-ಒಂದು/Vb po:v
 ಒಂದುಗುಂದು/Vb po:v
 ಒಂದುಗೂಡಿಸು/Vb po:v
 ಒಂದುಗೂಡು/Vb po:v
@@ -25950,8 +25888,6 @@
 ಒಂದೆಸೆ/Ne po:n
 ಒಂಬತು/Aj po:adj
 ಒಂಬತು/Nu po:n
-ಒಂಬತ್ತು/Aj po:adj
-ಒಂಬತ್ತು/Nd po:n
 ಒಂಬತ್ತು/Nd po:num
 ಒಂಬಯ್ನೂರು/Aj po:adj
 ಒಂಬಯ್ನೂರು/Nu po:n
@@ -26902,7 +26838,7 @@
 ಒರಲು/Nu po:n
 ಒರಲು/Vb po:v
 ಒರಲೆ/Ne po:n
-ಒರಲ್/Nl po:n
+ಒರಲ್ po:n
 ಒರಳಕ್ಕಿ/Ne po:n
 ಒರಳು/Nu po:n
 ಒರಳು/Vb po:v
@@ -27122,7 +27058,6 @@
 ಒಳಗುವರಿ/Vb po:v
 ಒಳಗುವೇಳು/Vb po:v
 ಒಳಗೃಹ/Na po:n
-ಒಳಗೆ/Px po:adv
 ಒಳಗೆ/Px po:postp
 ಒಳಗೆರೆ/Ne po:n
 ಒಳಗೆಲಸ/Na po:n
@@ -27511,7 +27446,7 @@
 ಒಸರು/Nu po:n
 ಒಸರು/Vb po:v
 ಒಸರುನೀರು/Nu po:n
-ಒಸರ್/Nl po:n
+ಒಸರ್ po:n
 ಒಸರ್ po:v
 ಒಸರ್ಗಣ್ಣಿ/Ne po:n
 ಒಸರ್ಚು/Vb po:v
@@ -27781,7 +27716,7 @@
 ಓರೊರ್ಮೆ/Px po:adv
 ಓರೊರ್ವ/Na po:n
 ಓರೋರ್ವ/Na po:n
-ಓರ್/Nl po:n
+ಓರ್ po:n
 ಓರ್ಗುಡಿಸು/Vb po:v
 ಓರ್ಗೈ po:v
 ಓರ್ಚಿಕೆ/Ne po:n
@@ -27868,7 +27803,7 @@
 ಓಲೈಸಿಸು/Vb po:v
 ಓಲೈಸು/Vb po:v
 ಓಲ್ po:adv
-ಓಲ್/Nl po:n
+ಓಲ್ po:n
 ಓಳಿ/Ne po:n
 ಓಳಿಗೊಳಿಸು/Vb po:v
 ಓಳಿದೋರಣ/Na po:n
@@ -29607,7 +29542,7 @@
 ಕಡಲೆಹುಳಿ/Ne po:n
 ಕಡಲೊಡೆಯ/Na po:n
 ಕಡಲೋಟ/Na po:n
-ಕಡಲ್/Nl po:n
+ಕಡಲ್ po:n
 ಕಡಲ್ಕರೆ/Ne po:n
 ಕಡಲ್ಗಟ್ಟು/Vb po:v
 ಕಡಲ್ಗರೆ/Ne po:n
@@ -29633,7 +29568,7 @@
 ಕಡವಾಳ/Na po:n
 ಕಡವು/Nu po:n
 ಕಡವುಗಾರ/Na po:n
-ಕಡವುಲ್/Nl po:n
+ಕಡವುಲ್ po:n
 ಕಡವೆ/Ne po:n
 ಕಡಸಿಗೆ/Ne po:n
 ಕಡಸು/Nu po:n
@@ -30292,7 +30227,7 @@
 ಕಣೆವೋಗು/Vb po:v
 ಕಣೆಹಂದಿ/Ne po:n
 ಕಣೋ/Px po:x
-ಕಣ್/Nk po:n
+ಕಣ್ po:n
 ಕಣ್ಕಟ್ಟು/Nu po:n
 ಕಣ್ಕದಿರು/Nu po:n
 ಕಣ್ಕಪಟ/Na po:n
@@ -30386,7 +30321,7 @@
 ಕಣ್ಣಿವಲೆ/Ne po:n
 ಕಣ್ಣೀರಿಡು/Vb po:v
 ಕಣ್ಣೀರು/Nu po:n
-ಕಣ್ಣೀರ್/Nl po:n
+ಕಣ್ಣೀರ್ po:n
 ಕಣ್ಣೀರ್ತಟಕು/Nu po:n
 ಕಣ್ಣು/Nu po:n
 ಕಣ್ಣುಕಟ್ಟು/Nu po:n
@@ -30709,7 +30644,7 @@
 ಕತ್ವ/Na po:n
 ಕಥಕ/Nm po:n
 ಕಥಕಳಿ/Ne po:n
-ಕಥಕ್/Nl po:n
+ಕಥಕ್ po:n
 ಕಥಕ್ಕಲಿ/Ne po:n
 ಕಥಕ್ಕಳಿ/Ne po:n
 ಕಥನ/Na po:n
@@ -30862,7 +30797,7 @@
 ಕದಿರು/Vb po:v
 ಕದಿರುಗಡೆ/Vb po:v
 ಕದಿರುಗಿಣಿ/Ne po:n
-ಕದಿರ್/Nl po:n
+ಕದಿರ್ po:n
 ಕದಿರ್ಗಂಪು/Nu po:n
 ಕದಿರ್ಜೊನ್ನ/Na po:n
 ಕದಿರ್ವರಿ/Vb po:v
@@ -30934,7 +30869,7 @@
 ಕನಲಿಸು/Vb po:v
 ಕನಲು/Nu po:n
 ಕನಲು/Vb po:v
-ಕನಲ್/Nl po:n
+ಕನಲ್ po:n
 ಕನಲ್ po:v
 ಕನಲ್ಕೆ/Ne po:n
 ಕನಲ್ಗಿಡಿ/Ne po:n
@@ -31386,7 +31321,7 @@
 ಕಬೂಲಿಜಬಾಬು/Nu po:n
 ಕಬೂಲಿಜವಾಬು/Nu po:n
 ಕಬೂಲು/Nu po:n
-ಕಬೂಲ್/Nl po:n
+ಕಬೂಲ್ po:n
 ಕಬೆಕ್ಕೋಲು/Nu po:n
 ಕಬೆತ್ತಿ/Ne po:n
 ಕಬೋಜಿ/Ne po:n
@@ -31543,7 +31478,7 @@
 ಕಮಾಯಿಷಿದಾರ/Na po:n
 ಕಮಾಯಿಸು/Vb po:v
 ಕಮಾಲ/Na po:n
-ಕಮಾಲ್/Nl po:n
+ಕಮಾಲ್ po:n
 ಕಮಾವೀಸದಾರ/Na po:n
 ಕಮಿತೃ po:n
 ಕಮಿಲಾರೋಗ/Na po:n
@@ -31640,7 +31575,7 @@
 ಕಯಿರಗುಳಿಗೆ/Ne po:n
 ಕಯಿರೊಕ್ಕ/Na po:n
 ಕಯು್ದು/Nu po:n
-ಕಯ್/Nl po:n
+ಕಯ್ po:n
 ಕಯ್ po:v
 ಕಯ್ದುಳಿಗ/Na po:n
 ಕಯ್ದುಳಿಗಿತಿ/Ne po:n
@@ -33121,7 +33056,7 @@
 ಕಲೋಪಾಸಕ/Nm po:n
 ಕಲೋಪಾಸಕಿ/Ne po:n
 ಕಲೋಪಾಸನೆ/Ne po:n
-ಕಲ್/Nk po:n
+ಕಲ್ po:n
 ಕಲ್ po:v
 ಕಲ್ಕ/Na po:n
 ಕಲ್ಕಂಗೂಡು/Vb po:v
@@ -33669,7 +33604,7 @@
 ಕಳೇಬರ/Na po:n
 ಕಳೇವರ/Na po:n
 ಕಳೋನ್ನತ/Na po:n
-ಕಳ್/Nk po:n
+ಕಳ್ po:n
 ಕಳ್ po:v
 ಕಳ್ಕನೆ/Px po:adv
 ಕಳ್ಕುಡಿಹಿ/Ne po:n
@@ -33886,7 +33821,7 @@
 ಕವರು/Nu po:n
 ಕವರು/Vb po:v
 ಕವರುಕತ್ತಿ/Ne po:n
-ಕವರ್/Nl po:n
+ಕವರ್ po:n
 ಕವರ್ po:v
 ಕವರ್ಗ/Na po:n
 ಕವರ್ಗಟ್ಟು/Vb po:v
@@ -33914,7 +33849,7 @@
 ಕವಲುನಾಲಗೆ/Ne po:n
 ಕವಲುಮನ/Na po:n
 ಕವಲೊತ್ತು/Nu po:n
-ಕವಲ್/Nl po:n
+ಕವಲ್ po:n
 ಕವಲ್ po:v
 ಕವಲ್ಕೆ/Ne po:n
 ಕವಲ್ಗಣೆ/Ne po:n
@@ -34448,7 +34383,7 @@
 ಕಾಂಪಿಲ್ಲ/Na po:n
 ಕಾಂಪು/Nu po:n
 ಕಾಂಪೊಂಡು/Nu po:n
-ಕಾಂಪೋಸ್ಟ್/Nl po:n
+ಕಾಂಪೋಸ್ಟ್ po:n
 ಕಾಂಪೋಸ್ಟ್ಗೊಬ್ಬರ/Na po:n
 ಕಾಂಪೌಂಡರು/Nu po:n
 ಕಾಂಪೌಂಡು/Nu po:n
@@ -35290,7 +35225,7 @@
 ಕಾದಲಿಸು/Vb po:v
 ಕಾದಲುಗೋಪುಕೋಲು/Nu po:n
 ಕಾದಲೆ/Ne po:n
-ಕಾದಲ್/Nl po:n
+ಕಾದಲ್ po:n
 ಕಾದಲ್ಮೆ/Ne po:n
 ಕಾದಳಕಾಂಡ/Na po:n
 ಕಾದಾಟ/Na po:n
@@ -35327,7 +35262,7 @@
 ಕಾನಬಾವಲಿ/Ne po:n
 ಕಾನಮರ/Na po:n
 ಕಾನರ್ಕ/Na po:n
-ಕಾನಲ್/Nl po:n
+ಕಾನಲ್ po:n
 ಕಾನಶಿರಿಕುಚ್ಚು/Nu po:n
 ಕಾನಶಿಲ್ಕುಚ್ಚು/Nu po:n
 ಕಾನಸೊಪ್ಪು/Nu po:n
@@ -35353,7 +35288,7 @@
 ಕಾನೂನುಮುರುಕಿ/Ne po:n
 ಕಾನೆ/Ne po:n
 ಕಾನೋಲೆ/Ne po:n
-ಕಾನ್/Nl po:n
+ಕಾನ್ po:n
 ಕಾನ್ಮಿಗ/Na po:n
 ಕಾಪಟಿಕ/Na po:n
 ಕಾಪಟಿಗ/Na po:n
@@ -35653,7 +35588,7 @@
 ಕಾಯಮಲ/Na po:n
 ಕಾಯಮಾನ/Na po:n
 ಕಾಯಮುಕ್ತ/Na po:n
-ಕಾಯಲ್/Nl po:n
+ಕಾಯಲ್ po:n
 ಕಾಯವಂಚಕ/Na po:n
 ಕಾಯವಿಕಾರಿ/Ne po:n
 ಕಾಯವಿಡಿ/Vb po:v
@@ -35708,7 +35643,7 @@
 ಕಾಯೊಡೆ/Ne po:n
 ಕಾಯೋತ್ಸರ್ಗ/Na po:n
 ಕಾಯೋರಿ/Ne po:n
-ಕಾಯ್/Nl po:n
+ಕಾಯ್ po:n
 ಕಾಯ್ po:v
 ಕಾಯ್ಗುಳಿ/Ne po:n
 ಕಾಯ್ಗೊಂಡ/Na po:n
@@ -35805,7 +35740,7 @@
 ಕಾರಳೆಗೊಳಿಸು/Vb po:v
 ಕಾರಳ್ಳು/Nu po:n
 ಕಾರವಾನ/Na po:n
-ಕಾರವಾನ್/Nl po:n
+ಕಾರವಾನ್ po:n
 ಕಾರವಿ/Ne po:n
 ಕಾರವೇಲ್ಲ/Na po:n
 ಕಾರಸಿ/Ne po:n
@@ -35921,7 +35856,7 @@
 ಕಾರೋತ್ತರ/Na po:n
 ಕಾರೋಪಕ/Na po:n
 ಕಾರ್ po:adj
-ಕಾರ್/Nl po:n
+ಕಾರ್ po:n
 ಕಾರ್ po:v
 ಕಾರ್ಕಡೆ/Ne po:n
 ಕಾರ್ಕರಿ/Ne po:n
@@ -36410,7 +36345,7 @@
 ಕಾಲೂರು/Nu po:n
 ಕಾಲೂರು/Vb po:v
 ಕಾಲೂರೆ/Ne po:n
-ಕಾಲೂರ್/Nl po:n
+ಕಾಲೂರ್ po:n
 ಕಾಲೂಳಿಗ/Na po:n
 ಕಾಲೂಹೆ/Ne po:n
 ಕಾಲೆ/Ne po:n
@@ -36429,7 +36364,7 @@
 ಕಾಲೋನಿ/Ne po:n
 ಕಾಲೋರಗ/Na po:n
 ಕಾಲೋಹಣ/Na po:n
-ಕಾಲ್/Nl po:n
+ಕಾಲ್ po:n
 ಕಾಲ್ಕಂಬಿ/Ne po:n
 ಕಾಲ್ಕಟ್ಟು/Vb po:v
 ಕಾಲ್ಕಣ್ಣಿ/Ne po:n
@@ -36771,7 +36706,7 @@
 ಕಾವಲುನಾಯಿ/Ne po:n
 ಕಾವಲುಪಡೆ/Ne po:n
 ಕಾವಲೆ/Ne po:n
-ಕಾವಲ್/Nl po:n
+ಕಾವಲ್ po:n
 ಕಾವಲ್ಗುಡು/Vb po:v
 ಕಾವಲ್ಜನ/Na po:n
 ಕಾವಳ/Na po:n
@@ -36808,7 +36743,7 @@
 ಕಾವೇರಿ/Ne po:n
 ಕಾವೇರಿಕೆ/Ne po:n
 ಕಾವೇರು/Vb po:v
-ಕಾವ್/Nl po:n
+ಕಾವ್ po:n
 ಕಾವ್ಗುಡು/Vb po:v
 ಕಾವ್ಯ/Na po:n
 ಕಾವ್ಯಕಂಜಾಸನ/Na po:n
@@ -37598,7 +37533,7 @@
 ಕಿರುಹೊತ್ತಗೆ/Ne po:n
 ಕಿರುಹೊತ್ತಿಗೆ/Ne po:n
 ಕಿರೆ/Ne po:n
-ಕಿರ್/Nl po:n
+ಕಿರ್ po:n
 ಕಿರ್ಕಿಜೋಡು/Nu po:n
 ಕಿರ್ಕಿರಿ/Ne po:n
 ಕಿರ್ಕೊಂಬು/Nu po:n
@@ -37670,7 +37605,7 @@
 ಕಿಲೊವ್ಯಾಟು/Nu po:n
 ಕಿಲೊಸೈಕಲ್ಲು/Nu po:n
 ಕಿಲೋಣಿ/Ne po:n
-ಕಿಲ್/Nl po:n
+ಕಿಲ್ po:n
 ಕಿಲ್ಬಿಷ/Na po:n
 ಕಿಲ್ಬಿಷಿಕ/Na po:n
 ಕಿಲ್ಮಿಷ/Na po:n
@@ -38009,7 +37944,7 @@
 ಕೀರುತಿ/Ne po:n
 ಕೀರೆ/Ne po:n
 ಕೀರೋತ್ಕಾರ/Na po:n
-ಕೀರ್/Nl po:n
+ಕೀರ್ po:n
 ಕೀರ್ಣ/Aj po:adj
 ಕೀರ್ಣ/Na po:n
 ಕೀರ್ತನ/Na po:n
@@ -38107,7 +38042,7 @@
 ಕೀಲೆಣ್ಣೆ/Ne po:n
 ಕೀಲೈಸು/Vb po:v
 ಕೀಲೊಂಟಿ/Ne po:n
-ಕೀಲ್/Nl po:n
+ಕೀಲ್ po:n
 ಕೀಲ್ಕಂಬ/Na po:n
 ಕೀಲ್ಕುಂಚಿ/Ne po:n
 ಕೀಲ್ಕುಂಚಿಕೆ/Ne po:n
@@ -39644,7 +39579,7 @@
 ಕುರವಿ/Ne po:n
 ಕುರಾಡ/Na po:n
 ಕುರಾನು/Nu po:n
-ಕುರಾನ್/Nl po:n
+ಕುರಾನ್ po:n
 ಕುರಿ/Ne po:n
 ಕುರಿ/Vb po:v
 ಕುರಿಂಜಿ/Ne po:n
@@ -40309,7 +40244,7 @@
 ಕುಶಾಲುತೋಪು/Nu po:n
 ಕುಶಾಲುಪಿರಂಗಿ/Ne po:n
 ಕುಶಾಲುಫಿರಂಗಿ/Ne po:n
-ಕುಶಾಲ್/Nl po:n
+ಕುಶಾಲ್ po:n
 ಕುಶಾಲ್ಫಿರಂಗಿ/Ne po:n
 ಕುಶಾಸನ/Na po:n
 ಕುಶಾಸ್ತ್ರ/Na po:n
@@ -40602,7 +40537,7 @@
 ಕೂಚುಭೇರಿ/Ne po:n
 ಕೂಚೆ/Ne po:n
 ಕೂಚೆಯಾಗು/Vb po:v
-ಕೂಚ್/Nl po:n
+ಕೂಚ್ po:n
 ಕೂಜ/Na po:n
 ಕೂಜನ/Na po:n
 ಕೂಜಿತ/Na po:n
@@ -40670,7 +40605,6 @@
 ಕೂಟೆಗೇರು/Nu po:n
 ಕೂಟೋಪಾಯ/Na po:n
 ಕೂಡ/Px po:adv
-ಕೂಡ/Px po:postp
 ಕೂಡಂಚು/Nu po:n
 ಕೂಡಕಂಜಿ/Ne po:n
 ಕೂಡಕ್ಷರ/Na po:n
@@ -40684,8 +40618,8 @@
 ಕೂಡಲೆ/Px po:adv
 ಕೂಡಲೇ/Px po:adv
 ಕೂಡಲೊಟ್ಟು/Vb po:v
-ಕೂಡಲ್/Nl po:n
-ಕೂಡಾ/Px st:ಕೂಡ po:postp
+ಕೂಡಲ್ po:n
+ಕೂಡಾ/Px st:ಕೂಡ po:adv
 ಕೂಡಾಟ/Na po:n
 ಕೂಡಾಡಿ/Ne po:n
 ಕೂಡಾಳಿ/Ne po:n
@@ -40764,7 +40698,7 @@
 ಕೂನು/Vb po:v
 ಕೂನುಬೆನ್ನು/Nu po:n
 ಕೂನೆ/Ne po:n
-ಕೂನ್/Nl po:n
+ಕೂನ್ po:n
 ಕೂನ್ po:v
 ಕೂನ್ಕೆ/Ne po:n
 ಕೂಪ/Na po:n
@@ -40826,7 +40760,7 @@
 ಕೂರೂಟ/Na po:n
 ಕೂರೆ/Ne po:n
 ಕೂರ್ po:adj
-ಕೂರ್/Nl po:n
+ಕೂರ್ po:n
 ಕೂರ್ po:v
 ಕೂರ್ಕಲಿ/Ne po:n
 ಕೂರ್ಗಣೆ/Ne po:n
@@ -40925,7 +40859,7 @@
 ಕೂಲುಳಿ/Ne po:n
 ಕೂಲುವೆಜ್ಜ/Na po:n
 ಕೂಲ್ po:adj
-ಕೂಲ್/Nl po:n
+ಕೂಲ್ po:n
 ಕೂಳ/Nm po:n
 ಕೂಳತನ/Na po:n
 ಕೂಳಬಕ್ಕ/Na po:n
@@ -41350,7 +41284,7 @@
 ಕೆಂಗಲೆಗಟ್ಟು/Vb po:v
 ಕೆಂಗಲೆವಡೆ/Vb po:v
 ಕೆಂಗಲೆಸುಂಡು/Nu po:n
-ಕೆಂಗಲ್/Nk po:n
+ಕೆಂಗಲ್ po:n
 ಕೆಂಗಲ್ಗರು/Nu po:n
 ಕೆಂಗಲ್ಮಸಗು/Vb po:v
 ಕೆಂಗಲ್ಲು/Nu po:n
@@ -41587,7 +41521,7 @@
 ಕೆಂಬರೆ/Ne po:n
 ಕೆಂಬಲಗೆ/Ne po:n
 ಕೆಂಬಲು/Nu po:n
-ಕೆಂಬಲ್/Nl po:n
+ಕೆಂಬಲ್ po:n
 ಕೆಂಬಲ್ಲು/Nu po:n
 ಕೆಂಬಳಯಿಗೆ/Ne po:n
 ಕೆಂಬಳಿ/Vb po:v
@@ -41850,7 +41784,7 @@
 ಕೆಯಿಗಂಪು/Nu po:n
 ಕೆಯಿಮನೆ/Ne po:n
 ಕೆಯಿಸುಂಕ/Na po:n
-ಕೆಯ್/Nl po:n
+ಕೆಯ್ po:n
 ಕೆಯ್ po:v
 ಕೆಯ್ಕಂಬಿ/Ne po:n
 ಕೆಯ್ಕಟ್ಟು/Nu po:n
@@ -42012,17 +41946,15 @@
 ಕೆಲಬರು/Nu po:n
 ಕೆಲಬಲ/Na po:n
 ಕೆಲಯಿಸು/Vb po:v
-ಕೆಲರ್/Nl po:n
+ಕೆಲರ್ po:n
 ಕೆಲರ್ po:v
 ಕೆಲರ್ಮೆ/Px po:adv
 ಕೆಲವರಿ/Vb po:v
-ಕೆಲವರು/Nu po:n
+ಕೆಲವರು/Np po:pron
 ಕೆಲವಷ್ಟು/Aj po:adj
 ಕೆಲವಷ್ಟು/Px po:adv
 ಕೆಲವಾರು/Aj po:adj
-ಕೆಲವು/Aj po:adj
 ಕೆಲವು/Px po:det
-ಕೆಲವು/Nd po:n
 ಕೆಲವೊಮ್ಮೆ/Px po:adv
 ಕೆಲಸ/Na po:n
 ಕೆಲಸಂಗೊಟ್ಟ/Vp st:ಕೆಲಸಂಗೊಡು po:v
@@ -42077,7 +42009,6 @@
 ಕೆಳಗಣ/Aj po:adj
 ಕೆಳಗಿವಿ/Ne po:n
 ಕೆಳಗು/Nu po:n
-ಕೆಳಗೆ/Px po:adv
 ಕೆಳಗೆ/Px po:postp
 ಕೆಳತಟ್ಟು/Nu po:n
 ಕೆಳದವಡೆ/Ne po:n
@@ -42267,7 +42198,7 @@
 ಕೇರೆತುಪ್ಪ/Na po:n
 ಕೇರೆಮೀನು/Nu po:n
 ಕೇರೆಹಾವು/Nu po:n
-ಕೇರ್/Nl po:n
+ಕೇರ್ po:n
 ಕೇರ್ಗಟ್ಟು/Nu po:n
 ಕೇರ್ಗಟ್ಟು/Vb po:v
 ಕೇರ್ಪು/Nu po:n
@@ -42282,7 +42213,7 @@
 ಕೇಲೀನಿಲಯ/Na po:n
 ಕೇಲೀವನ/Na po:n
 ಕೇಲು/Nu po:n
-ಕೇಲ್/Nl po:n
+ಕೇಲ್ po:n
 ಕೇಳ/Na po:n
 ಕೇಳಮೇಳ/Na po:n
 ಕೇಳವಣ/Na po:n
@@ -42503,7 +42434,7 @@
 ಕೈಗರ್ಚು/Vb po:v
 ಕೈಗಲಸು/Vb po:v
 ಕೈಗಲಿ/Ne po:n
-ಕೈಗಲ್/Nl po:n
+ಕೈಗಲ್ po:n
 ಕೈಗಲ್ಲು/Nu po:n
 ಕೈಗಳಸ/Na po:n
 ಕೈಗಳಸು/Vb po:v
@@ -43225,7 +43156,7 @@
 ಕೊಂಬೇರಿಕೂಗುವನಗೆಡ್ಡೆ/Ne po:n
 ಕೊಂಬೊತ್ತು/Vb po:v
 ಕೊಂಯಿಕಿಡು/Vb po:v
-ಕೊಕ್/Nk po:n
+ಕೊಕ್ po:n
 ಕೊಕ್ಕ/Nm po:n
 ಕೊಕ್ಕಟ್ಟೆ/Ne po:n
 ಕೊಕ್ಕರ/Na po:n
@@ -43558,7 +43489,7 @@
 ಕೊತ್ಥಳಿ/Ne po:n
 ಕೊತ್ವಾಲ/Na po:n
 ಕೊತ್ವಾಲಿ/Ne po:n
-ಕೊತ್ವಾಲ್/Nl po:n
+ಕೊತ್ವಾಲ್ po:n
 ಕೊದಂಟಿ/Ne po:n
 ಕೊದಲ/Na po:n
 ಕೊದಲು/Nu po:n
@@ -43698,7 +43629,7 @@
 ಕೊಯಿಲಿ/Ne po:n
 ಕೊಯಿಲು/Nu po:n
 ಕೊಯಿಲೆ/Ne po:n
-ಕೊಯಿಲ್/Nl po:n
+ಕೊಯಿಲ್ po:n
 ಕೊಯಿಸು/Vb po:v
 ಕೊಯೊಗೀರೆ/Ne po:n
 ಕೊಯ್ po:v
@@ -43797,7 +43728,7 @@
 ಕೊರಲೆ/Ne po:n
 ಕೊರಲೆಹುಲ್ಲು/Nu po:n
 ಕೊರಲೌಂಕು/Vb po:v
-ಕೊರಲ್/Nl po:n
+ಕೊರಲ್ po:n
 ಕೊರಲ್ಗೊಲೆ/Ne po:n
 ಕೊರಲ್ಚು/Vb po:v
 ಕೊರಲ್ದಂಡೆ/Ne po:n
@@ -43821,7 +43752,7 @@
 ಕೊರಳುಬ್ಬಸ/Na po:n
 ಕೊರಳುಲಿ/Ne po:n
 ಕೊರಳೇರು/Vb po:v
-ಕೊರಳ್/Nl po:n
+ಕೊರಳ್ po:n
 ಕೊರಳ್ಕಾಪು/Nu po:n
 ಕೊರವ/Nm po:n
 ಕೊರವಂಜಿ/Ne po:n
@@ -43915,7 +43846,7 @@
 ಕೊಲೆಪಾತಕ/Nm po:n
 ಕೊಲೆಬಲೆ/Ne po:n
 ಕೊಲೆಮನೆ/Ne po:n
-ಕೊಲ್/Nk po:n
+ಕೊಲ್ po:n
 ಕೊಲ್ po:v
 ಕೊಲ್ಗತ್ತಿ/Ne po:n
 ಕೊಲ್ಲ/Na po:n
@@ -44063,7 +43994,7 @@
 ಕೊಳೆಹೋಗು/Vr po:v
 ಕೊಳೆಹೋದ/Vp st:ಕೊಳೆಹೋಗು po:v
 ಕೊಳೆಹೋಯಿತು st:ಕೊಳೆಹೋಗು po:v is:+past.3sn
-ಕೊಳ್/Nk po:n
+ಕೊಳ್ po:n
 ಕೊಳ್ po:v
 ಕೊಳ್ಕ/Aj po:adj
 ಕೊಳ್ಕುಳಿ/Ne po:n
@@ -44206,7 +44137,7 @@
 ಕೋಚುಮಾಡು/Vb po:v
 ಕೋಚೆ/Ne po:n
 ಕೋಚೆತ್ತು/Vb po:v
-ಕೋಚ್/Nl po:n
+ಕೋಚ್ po:n
 ಕೋಜು/Nu po:n
 ಕೋಟ/Na po:n
 ಕೋಟರ/Na po:n
@@ -44231,8 +44162,6 @@
 ಕೋಟಾಯಂತ್ರ/Na po:n
 ಕೋಟಾರ/Na po:n
 ಕೋಟಾವಳಿ/Ne po:n
-ಕೋಟಿ/Aj po:adj
-ಕೋಟಿ/Ne po:n
 ಕೋಟಿ/Ne po:num
 ಕೋಟಿಕ/Aj po:adj
 ಕೋಟಿಕ/Na po:n
@@ -44368,7 +44297,7 @@
 ಕೋಣು/Nd po:n
 ಕೋಣೆ/Ne po:n
 ಕೋಣೆವುಗಿಸು/Vb po:v
-ಕೋಣ್/Nl po:n
+ಕೋಣ್ po:n
 ಕೋತ/Nm po:n
 ಕೋತಂಬರಿ/Ne po:n
 ಕೋತಲು/Nu po:n
@@ -44482,7 +44411,7 @@
 ಕೋಯಷ್ಟಿಕ/Na po:n
 ಕೋಯಿದ/Na po:n
 ಕೋಯಿಲು/Nu po:n
-ಕೋಯಿಲ್/Nl po:n
+ಕೋಯಿಲ್ po:n
 ಕೋರ/Aj po:adj
 ಕೋರ/Nm po:n
 ಕೋರಂಗಿ/Ne po:n
@@ -44638,7 +44567,7 @@
 ಕೋಲೆಬಸವಣ್ಣ/Na po:n
 ಕೋಲೊಡ್ಡು/Vb po:v
 ಕೋಲ್ po:adj
-ಕೋಲ್/Nl po:n
+ಕೋಲ್ po:n
 ಕೋಲ್ಕಾರ/Nm po:n
 ಕೋಲ್ಕುಟ್ಟು/Vb po:v
 ಕೋಲ್ಗದಿರು/Nu po:n
@@ -44756,7 +44685,7 @@
 ಕೋವಿದೆ/Ne po:n
 ಕೋವಿಲು/Nu po:n
 ಕೋವಿಲೆ/Ne po:n
-ಕೋವಿಲ್/Nl po:n
+ಕೋವಿಲ್ po:n
 ಕೋವು/Nu po:n
 ಕೋವುಳು/Nu po:n
 ಕೋವೆ/Ne po:n
@@ -44805,7 +44734,7 @@
 ಕೋಹಳಿಕೆ/Ne po:n
 ಕೋಹಳೆ/Ne po:n
 ಕೋಹಾಳೆ/Ne po:n
-ಕೋಹಿನೂರ್/Nl po:n
+ಕೋಹಿನೂರ್ po:n
 ಕೋಹಿಸು/Vb po:v
 ಕೋಹು/Nu po:n
 ಕೌಂಕಲು/Nu po:n
@@ -44927,7 +44856,7 @@
 ಕೌಲೇಯಕ/Aj po:adj
 ಕೌಲೇಯಕ/Na po:n
 ಕೌಲೇಯಕಿ/Ne po:n
-ಕೌಲ್/Nl po:n
+ಕೌಲ್ po:n
 ಕೌಲ್ದಾರ/Na po:n
 ಕೌಳ/Na po:n
 ಕೌಳಿ/Ne po:n
@@ -44984,7 +44913,7 @@
 ಕ್ಯಾಕರಿಸು/Vb po:v
 ಕ್ಯಾತೆ/Ne po:n
 ಕ್ಯಾದಿಗೆ/Ne po:n
-ಕ್ಯಾನ್ಸರ್/Nl po:n
+ಕ್ಯಾನ್ಸರ್ po:n
 ಕ್ಯಾಬೇಜು/Nu po:n
 ಕ್ಯಾಮರ/Na po:n
 ಕ್ಯಾರಟ್ಟು/Nu po:n
@@ -45224,9 +45153,9 @@
 ಕ್ರಿಯೆಗೆಯ್ಸು/Vb po:v
 ಕ್ರಿಯೆಬಟ್ಟಲು/Nu po:n
 ಕ್ರಿಶ್ಚನ್ po:adj
-ಕ್ರಿಶ್ಚನ್/Nl po:n
+ಕ್ರಿಶ್ಚನ್ po:n
 ಕ್ರಿಶ್ಚಿಯನ್ po:adj
-ಕ್ರಿಶ್ಚಿಯನ್/Nk po:n
+ಕ್ರಿಶ್ಚಿಯನ್ po:n
 ಕ್ರಿಶ್ಚಿಯನ್ಧರ್ಮ/Na po:n
 ಕ್ರಿಷ್ಟ/Na po:n
 ಕ್ರಿಸ್ತ/Nm po:n
@@ -45239,7 +45168,7 @@
 ಕ್ರಿಸ್ತಿಯ/Na po:n
 ಕ್ರಿಸ್ತೀಯ/Aj po:adj
 ಕ್ರಿಸ್ತೀಯ/Na po:n
-ಕ್ರಿಸ್ಮಸ್/Nk po:n
+ಕ್ರಿಸ್ಮಸ್ po:n
 ಕ್ರೀ/Ne po:n
 ಕ್ರೀಂಕಾರ/Na po:n
 ಕ್ರೀಡನ/Na po:n
@@ -45436,7 +45365,7 @@
 ಕ್ವಾಥ/Na po:n
 ಕ್ವಾಥರಸ/Na po:n
 ಕ್ವಾಥೋದ್ಭವ/Na po:n
-ಕ್ವಿಂಟಲ್/Nl po:n
+ಕ್ವಿಂಟಲ್ po:n
 ಕ್ವಿಂಟಾಲು/Nu po:n
 ಕ್ವಿನೀನು/Nu po:n
 ಕ್ಷಂತೃ po:n
@@ -46189,7 +46118,7 @@
 ಖತ/Nm po:n
 ಖತಮಾಲ/Na po:n
 ಖತಲು/Nu po:n
-ಖತಲ್/Nl po:n
+ಖತಲ್ po:n
 ಖತಾಯತಿ/Ne po:n
 ಖತಾಯಿತಿ/Ne po:n
 ಖತಾವಣಿ/Ne po:n
@@ -46270,7 +46199,7 @@
 ಖಯಖೋಡಿ/Ne po:n
 ಖಯಾಲಿ/Ne po:n
 ಖಯಾಲು/Nu po:n
-ಖಯಾಲ್/Nl po:n
+ಖಯಾಲ್ po:n
 ಖಯ್ಯಾಲಿ/Ne po:n
 ಖರ/Aj po:adj
 ಖರ/Px po:adv
@@ -46632,7 +46561,7 @@
 ಖುರವಿಡು/Vb po:v
 ಖುರಾಕು/Nu po:n
 ಖುರಾಣ/Na po:n
-ಖುರಾನ್/Nl po:n
+ಖುರಾನ್ po:n
 ಖುರಾಸಾಣಿ/Ne po:n
 ಖುರಾಸಾನಿ/Ne po:n
 ಖುರಾಹತಿ/Ne po:n
@@ -46664,7 +46593,7 @@
 ಖುಶಾಲ/Na po:n
 ಖುಶಾಲಿ/Ne po:n
 ಖುಶಾಲು/Nu po:n
-ಖುಶಾಲ್/Nl po:n
+ಖುಶಾಲ್ po:n
 ಖುಶಿ/Ne po:n
 ಖುಷಾದು/Nu po:n
 ಖುಷಾಮತಿ/Ne po:n
@@ -46685,7 +46614,7 @@
 ಖೂನಿ/Ne po:n
 ಖೂನಿಗಾರ/Na po:n
 ಖೂನು/Nu po:n
-ಖೂನ್/Nl po:n
+ಖೂನ್ po:n
 ಖೂಬ/Px po:adv
 ಖೂಬಿ/Ne po:n
 ಖೂಬು/Px po:adv
@@ -46760,7 +46689,7 @@
 ಖೈರು/Nu po:n
 ಖೈರ್ಕಾಯಿ/Ne po:n
 ಖೈಸೂರಣ/Na po:n
-ಖೊಂಡ್/Nl po:n
+ಖೊಂಡ್ po:n
 ಖೊಜ್ಜೆ/Ne po:n
 ಖೊಟ್ಟಿ/Aj po:adj
 ಖೊಟ್ಟಿ/Ne po:n
@@ -46819,7 +46748,7 @@
 ಖ್ಯಾಲ/Na po:n
 ಖ್ಯಾಲಿ/Ne po:n
 ಖ್ಯಾಲು/Nu po:n
-ಖ್ಯಾಲ್/Nl po:n
+ಖ್ಯಾಲ್ po:n
 ಖ್ವಾಜಾ/Nv po:n
 ಗ po:n
 ಗಂಗಗರಿಕೆ/Ne po:n
@@ -47528,7 +47457,7 @@
 ಗಜಲಕ್ಷ್ಮಿ/Ne po:n
 ಗಜಲಿಂಬೆ/Ne po:n
 ಗಜಲು/Nu po:n
-ಗಜಲ್/Nl po:n
+ಗಜಲ್ po:n
 ಗಜವದನ/Na po:n
 ಗಜವಶೆ/Ne po:n
 ಗಜವಿದ್ವಾಂಸ/Na po:n
@@ -48362,7 +48291,7 @@
 ಗರಮು/Aj po:adj
 ಗರಮು/Nu po:n
 ಗರಮ್ po:adj
-ಗರಮ್/Nl po:n
+ಗರಮ್ po:n
 ಗರಲ/Na po:n
 ಗರಲಕಂಧರ/Na po:n
 ಗರಲಗ್ರೀವ/Na po:n
@@ -48915,7 +48844,7 @@
 ಗವಯ/Na po:n
 ಗವಯಿ/Ne po:n
 ಗವರಿಗ/Na po:n
-ಗವರ್ನರ್/Nl po:n
+ಗವರ್ನರ್ po:n
 ಗವರ್ಮೆಂಟು/Nu po:n
 ಗವಲ/Na po:n
 ಗವಲಕಚೂರ/Na po:n
@@ -48988,7 +48917,7 @@
 ಗವೇಧುಕೆ/Ne po:n
 ಗವೇಷಣೆ/Ne po:n
 ಗವೇಷಿತ/Aj po:adj
-ಗವ್/Nl po:n
+ಗವ್ po:n
 ಗವ್ಯ/Aj po:adj
 ಗವ್ಯ/Na po:n
 ಗವ್ಯೂತ/Na po:n
@@ -49760,7 +49689,7 @@
 ಗಿರೆ/Ne po:n
 ಗಿರೇಬಾಜ/Na po:n
 ಗಿರ್ po:adv
-ಗಿರ್/Nl po:n
+ಗಿರ್ po:n
 ಗಿರ್ಕಿ/Ne po:n
 ಗಿರ್ಕಿಮೆಟ್ಟು/Nu po:n
 ಗಿರ್ಗಟ/Na po:n
@@ -49807,7 +49736,7 @@
 ಗಿಲುಕೆ/Ne po:n
 ಗಿಲುಕೆಮಂಚ/Na po:n
 ಗಿಲುಬು/Vb po:v
-ಗಿಲ್/Nk po:n
+ಗಿಲ್ po:n
 ಗಿಲ್ಲಾ/Nv po:n
 ಗಿಲ್ಲು/Vb po:v
 ಗಿಲ್ಲೆ/Ne po:n
@@ -50078,7 +50007,7 @@
 ಗುಂಬಕಟ್ಟು/Nu po:n
 ಗುಂಬಚ್ಚು/Nu po:n
 ಗುಂಬಜು/Nu po:n
-ಗುಂಬಜ್/Nl po:n
+ಗುಂಬಜ್ po:n
 ಗುಂಬದಂಬಟೆ/Ne po:n
 ಗುಂಬಮಾತು/Nu po:n
 ಗುಂಬಳಕಿ/Ne po:n
@@ -50831,7 +50760,7 @@
 ಗುಮ್ಮೆ/Ne po:n
 ಗುಯಲು/Nu po:n
 ಗುಯಿ/Ne po:n
-ಗುಯ್/Nl po:n
+ಗುಯ್ po:n
 ಗುಯ್ಗುಡು/Vb po:v
 ಗುಯ್ಯ/Na po:n
 ಗುಯ್ಯಲು/Nu po:n
@@ -50978,7 +50907,7 @@
 ಗುರೂಪಧೆ/Ne po:n
 ಗುರೂಪಾಂತ/Na po:n
 ಗುರೆಳ್ಳು/Nu po:n
-ಗುರ್/Nl po:n
+ಗುರ್ po:n
 ಗುರ್ಕಾರ/Nm po:n
 ಗುರ್ಗುಳ/Na po:n
 ಗುರ್ಚಿ/Ne po:n
@@ -51042,10 +50971,10 @@
 ಗುಲ್ಮಲ/Na po:n
 ಗುಲ್ಮವೃದ್ಧಿ/Ne po:n
 ಗುಲ್ಮಶೂಲೆ/Ne po:n
-ಗುಲ್ಮಹರ್/Nl po:n
+ಗುಲ್ಮಹರ್ po:n
 ಗುಲ್ಮಿ/Ne po:n
 ಗುಲ್ಮಿನಿ/Ne po:n
-ಗುಲ್ಮೊಹರ್/Nl po:n
+ಗುಲ್ಮೊಹರ್ po:n
 ಗುಲ್ಲ/Na po:n
 ಗುಲ್ಲಕಂಚಿ/Ne po:n
 ಗುಲ್ಲನೆ/Px po:adv
@@ -51646,7 +51575,7 @@
 ಗೇರೆಣ್ಣೆ/Ne po:n
 ಗೇರೆಯ/Na po:n
 ಗೇರೈಸು/Vb po:v
-ಗೇರ್/Nl po:n
+ಗೇರ್ po:n
 ಗೇಲಿ/Ne po:n
 ಗೇಹ/Na po:n
 ಗೇಹಕ್ರೀಡೆ/Ne po:n
@@ -51682,7 +51611,7 @@
 ಗೈರುಹಾಜರು/Nu po:n
 ಗೈರೇಯ/Aj po:adj
 ಗೈರೇಯ/Na po:n
-ಗೈರ್/Nl po:n
+ಗೈರ್ po:n
 ಗೈರ್ವಿಲೆ/Ne po:n
 ಗೈರ್ಹಾಜರಿ/Ne po:n
 ಗೈಸು/Vb po:v
@@ -51975,7 +51904,7 @@
 ಗೊರೆ/Ne po:n
 ಗೊರೆ/Vb po:v
 ಗೊರೆಸು/Nu po:n
-ಗೊರ್/Nl po:n
+ಗೊರ್ po:n
 ಗೊಲಗಂಡಿ/Ne po:n
 ಗೊಲಸು/Nu po:n
 ಗೊಲೆ/Ne po:n
@@ -52003,7 +51932,7 @@
 ಗೊಳಿಸೆ/Ne po:n
 ಗೊಳೆಗುದುರೆ/Ne po:n
 ಗೊಳೋ/Nv po:n
-ಗೊಳ್/Nl po:n
+ಗೊಳ್ po:n
 ಗೊಳ್ಳ/Na po:n
 ಗೊಳ್ಳನೆ/Px po:adv
 ಗೊಳ್ಳು/Nu po:n
@@ -52363,7 +52292,7 @@
 ಗೋಲಕ/Na po:n
 ಗೋಲಗುಮಟ/Na po:n
 ಗೋಲಗುಮುಟ/Na po:n
-ಗೋಲನ್/Nk po:n
+ಗೋಲನ್ po:n
 ಗೋಲರಸ/Na po:n
 ಗೋಲಸರ/Na po:n
 ಗೋಲಾಂಗೂಲ/Na po:n
@@ -52816,7 +52745,7 @@
 ಗ್ರಾಹ್ಯಾರ್ಥ/Na po:n
 ಗ್ರೀಕ/Nm po:n
 ಗ್ರೀಕು/Nd po:n
-ಗ್ರೀಕ್/Nl po:n
+ಗ್ರೀಕ್ po:n
 ಗ್ರೀವ/Na po:n
 ಗ್ರೀವಾರೇಚಕ/Na po:n
 ಗ್ರೀವಾರೇಚಿತ/Na po:n
@@ -53038,7 +52967,7 @@
 ಘರಿಕ್ಕನೆ/Px po:adv
 ಘರಿಘರಿ/Ne po:n
 ಘರಿಘರಿನೆ/Px po:adv
-ಘರಿಯಲ್/Nl po:n
+ಘರಿಯಲ್ po:n
 ಘರಿಲು/Nu po:n
 ಘರ್ಘರ/Aj po:adj
 ಘರ್ಘರ/Na po:n
@@ -53244,7 +53173,7 @@
 ಘೊತ್ತಲ/Na po:n
 ಘೊರ/Na po:n
 ಘೊರಗುಡು/Vb po:v
-ಘೊಳ್/Nl po:n
+ಘೊಳ್ po:n
 ಘೊಳ್ಳನೆ/Px po:adv
 ಘೋಂಟೆ/Ne po:n
 ಘೋಕ/Na po:n
@@ -53628,7 +53557,7 @@
 ಚಕೋರಾಸನ/Na po:n
 ಚಕೋರಿ/Ne po:n
 ಚಕೋರಿಕೆ/Ne po:n
-ಚಕ್/Nl po:n
+ಚಕ್ po:n
 ಚಕ್ಕ/Nm po:n
 ಚಕ್ಕಂದ/Na po:n
 ಚಕ್ಕಂಬಟ್ಟಲು/Nu po:n
@@ -53644,7 +53573,7 @@
 ಚಕ್ಕಮುಕ್ಕಿಹತ್ತಿಗಿಡ/Na po:n
 ಚಕ್ಕರಿ/Vb po:v
 ಚಕ್ಕರು/Nu po:n
-ಚಕ್ಕರ್/Nl po:n
+ಚಕ್ಕರ್ po:n
 ಚಕ್ಕಲಗುಲಿ/Ne po:n
 ಚಕ್ಕಲಗುಳಿ/Ne po:n
 ಚಕ್ಕಲಿ/Ne po:n
@@ -54253,7 +54182,7 @@
 ಚಮತ್ಕೃತ/Aj po:adj
 ಚಮತ್ಕೃತ/Na po:n
 ಚಮತ್ಕೃತಿ/Ne po:n
-ಚಮನ್/Nl po:n
+ಚಮನ್ po:n
 ಚಮರ/Na po:n
 ಚಮರಗಾರ್ತಿ/Ne po:n
 ಚಮರಜ/Na po:n
@@ -54845,7 +54774,7 @@
 ಚಾಕುಗಳ್ಳಿ/Ne po:n
 ಚಾಕುಸು/Nu po:n
 ಚಾಕ್ರಿಕ/Na po:n
-ಚಾಕ್ಲೇಟ್/Nl po:n
+ಚಾಕ್ಲೇಟ್ po:n
 ಚಾಕ್ಷುಷ/Aj po:adj
 ಚಾಕ್ಷುಷ/Na po:n
 ಚಾಕ್ಷುಷಪ್ರತ್ಯಕ್ಷ/Na po:n
@@ -55116,7 +55045,7 @@
 ಚಾಲೂ/Nv po:n
 ಚಾಲೂಕು/Nu po:n
 ಚಾಲೋಕು/Nu po:n
-ಚಾಲ್/Nl po:n
+ಚಾಲ್ po:n
 ಚಾಲ್ತಿ/Aj po:adj
 ಚಾಲ್ತಿ/Ne po:n
 ಚಾಲ್ತಿಖಾತೆ/Ne po:n
@@ -55444,7 +55373,7 @@
 ಚಿಟುಬಾಳೆ/Ne po:n
 ಚಿಟುಮಿಟಿ/Ne po:n
 ಚಿಟೆ/Ne po:n
-ಚಿಟ್/Nk po:n
+ಚಿಟ್ po:n
 ಚಿಟ್ಟ/Aj po:adj
 ಚಿಟ್ಟ/Na po:n
 ಚಿಟ್ಟಗುಬ್ಬಿ/Ne po:n
@@ -55767,7 +55696,7 @@
 ಚಿನವರದ/Na po:n
 ಚಿನವಾರ/Na po:n
 ಚಿನಾಯಿ/Ne po:n
-ಚಿನಾರ್/Nl po:n
+ಚಿನಾರ್ po:n
 ಚಿನಾಲಿ/Ne po:n
 ಚಿನಿ/Aj po:adj
 ಚಿನಿ/Ne po:n
@@ -56199,7 +56128,7 @@
 ಚೀವರ/Na po:n
 ಚೀವು/Vb po:v
 ಚೀಸು/Nu po:n
-ಚೀಸ್/Nl po:n
+ಚೀಸ್ po:n
 ಚೀಹಾಕು/Vb po:v
 ಚುಂಗ/Na po:n
 ಚುಂಗಚ್ಚೆ/Ne po:n
@@ -56630,7 +56559,7 @@
 ಚೆಂಬೊನ್ನು/Nu po:n
 ಚೆಂಬೊಳಪು/Nu po:n
 ಚೆಂಬೋತ/Na po:n
-ಚೆಕ್/Nk po:n
+ಚೆಕ್ po:n
 ಚೆಕ್ಕಂದ/Na po:n
 ಚೆಕ್ಕನೆ/Px po:adv
 ಚೆಕ್ಕವತ್ತ/Na po:n
@@ -57584,7 +57513,7 @@
 ಜಂಗಲಿಜ್ವರ/Na po:n
 ಜಂಗಲಿಬಾದಾಮಿ/Ne po:n
 ಜಂಗಲು/Nu po:n
-ಜಂಗಲ್/Nl po:n
+ಜಂಗಲ್ po:n
 ಜಂಗಲ್ಬಾದಾಮಿ/Ne po:n
 ಜಂಗಳ/Na po:n
 ಜಂಗಳಂಬರಿ/Vb po:v
@@ -57683,7 +57612,7 @@
 ಜಂಪತಿ/Ne po:n
 ಜಂಪತಿವಕ್ಕಿ/Ne po:n
 ಜಂಪರು/Nu po:n
-ಜಂಪರ್/Nl po:n
+ಜಂಪರ್ po:n
 ಜಂಪಲಿಕ್ಕು/Vb po:v
 ಜಂಪಲು/Nu po:n
 ಜಂಪಳ/Na po:n
@@ -58254,7 +58183,7 @@
 ಜನಾನುರಾಗಿ/Ne po:n
 ಜನಾಪವಾದ/Na po:n
 ಜನಾಬು/Nu po:n
-ಜನಾಬ್/Nl po:n
+ಜನಾಬ್ po:n
 ಜನಾರ್ದನ/Nm po:n
 ಜನಾವರ/Na po:n
 ಜನಾಶ್ರಯ/Na po:n
@@ -58963,7 +58892,7 @@
 ಜವಾಬುದಾರ/Na po:n
 ಜವಾಬುದಾರಿ/Ne po:n
 ಜವಾಬುಸವಾಲು/Nu po:n
-ಜವಾಬ್/Nl po:n
+ಜವಾಬ್ po:n
 ಜವಾಬ್ದಾರ/Nm po:n
 ಜವಾಬ್ದಾರಿ/Ne po:n
 ಜವಾಬ್ದಾರಿಕೆ/Ne po:n
@@ -59026,7 +58955,7 @@
 ಜಹದಜಹಲ್ಲಕ್ಷಣಾವೃತ್ತಿ/Ne po:n
 ಜಹದಜಹಲ್ಲಕ್ಷಣೆ/Ne po:n
 ಜಹಪನಾ/Nv po:n
-ಜಹರ್/Nl po:n
+ಜಹರ್ po:n
 ಜಹಲ್ಲಕ್ಷಣೆ/Ne po:n
 ಜಹಾಂಗೀರು/Nd po:n
 ಜಹಾಗೀರದಾರ/Na po:n
@@ -59099,8 +59028,8 @@
 ಜಾಗೀರು/Nu po:n
 ಜಾಗೀರುದಾರ/Nm po:n
 ಜಾಗೀರ್ po:adj
-ಜಾಗೀರ್/Nl po:n
-ಜಾಗೀರ್ದಾರ್/Nl po:n
+ಜಾಗೀರ್ po:n
+ಜಾಗೀರ್ದಾರ್ po:n
 ಜಾಗು/Px po:intj
 ಜಾಗು/Nd po:n
 ಜಾಗು/Vb po:v
@@ -59201,7 +59130,7 @@
 ಜಾಣುವೆ/Ne po:n
 ಜಾಣೆ/Nf po:n
 ಜಾಣೊಡೆಯ/Na po:n
-ಜಾಣ್/Nl po:n
+ಜಾಣ್ po:n
 ಜಾಣ್ಕಿಡು/Vb po:v
 ಜಾಣ್ಗಿಡು/Vb po:v
 ಜಾಣ್ಗೆಡು/Vb po:v
@@ -59389,7 +59318,7 @@
 ಜಾಮೀನ್ದಾರ/Na po:n
 ಜಾಮು/Nd po:n
 ಜಾಮೂನು/Nu po:n
-ಜಾಮೂನ್/Nl po:n
+ಜಾಮೂನ್ po:n
 ಜಾಮೇಯ/Na po:n
 ಜಾಯಕ/Na po:n
 ಜಾಯಜಖಮಿ/Ne po:n
@@ -59453,7 +59382,7 @@
 ಜಾರೂಲ/Na po:n
 ಜಾರೆ/Nf po:n
 ಜಾರೇಟು/Nu po:n
-ಜಾರ್ಜೆಟ್/Nl po:n
+ಜಾರ್ಜೆಟ್ po:n
 ಜಾರ್ರಾಮರ/Na po:n
 ಜಾಲ/Na po:n
 ಜಾಲಂದರ/Na po:n
@@ -59597,7 +59526,7 @@
 ಜಿಂಜಿರಿಸಂಕಲೆ/Ne po:n
 ಜಿಂದಗಾನಿ/Ne po:n
 ಜಿಂದಗಿ/Ne po:n
-ಜಿಂದಾಬಾದ್/Nl po:n
+ಜಿಂದಾಬಾದ್ po:n
 ಜಿಂದಾಬಾದ್ po:x
 ಜಿಂದಿಗಿ/Ne po:n
 ಜಿಂದಿಗೆ/Ne po:n
@@ -60217,7 +60146,7 @@
 ಜುಪರಿ/Ne po:n
 ಜುಬಕಿ/Ne po:n
 ಜುಬರು/Nu po:n
-ಜುಬಾನ್/Nl po:n
+ಜುಬಾನ್ po:n
 ಜುಬಿಕಿ/Ne po:n
 ಜುಬ್ಬ/Na po:n
 ಜುಬ್ಬರ/Na po:n
@@ -60231,7 +60160,7 @@
 ಜುಮುಕಿ/Ne po:n
 ಜುಮುಗುಟ್ಟು/Vb po:v
 ಜುಮುರು/Nu po:n
-ಜುಮ್/Nk po:n
+ಜುಮ್ po:n
 ಜುಮ್ಮನೆ/Px po:adv
 ಜುಮ್ಮಮಸೀದಿ/Ne po:n
 ಜುಮ್ಮಾಮಸಿತ್ತಿ/Ne po:n
@@ -60446,7 +60375,7 @@
 ಜೇನೆ/Ne po:n
 ಜೇನೈ/Ne po:n
 ಜೇನೊಣ/Na po:n
-ಜೇನ್/Nl po:n
+ಜೇನ್ po:n
 ಜೇನ್ಗನಸು/Nu po:n
 ಜೇನ್ದುಂಬಿ/Ne po:n
 ಜೇನ್ನುಡಿ/Ne po:n
@@ -60544,8 +60473,6 @@
 ಜೊತಗ/Na po:n
 ಜೊತಗೆ/Ne po:n
 ಜೊತಿಗೆ/Ne po:n
-ಜೊತೆ/Px po:adv
-ಜೊತೆ/Ne po:n
 ಜೊತೆ/Px po:postp
 ಜೊತೆಗಾತಿ/Ne po:n
 ಜೊತೆಗಾರ/Nm po:n
@@ -60771,7 +60698,7 @@
 ಜೋಲುಮುಖ/Na po:n
 ಜೋಲುಮೋರೆ/Ne po:n
 ಜೋಲೆ/Ne po:n
-ಜೋಲ್/Nl po:n
+ಜೋಲ್ po:n
 ಜೋಲ್ po:v
 ಜೋಲ್ಬೀಳು/Vb po:v
 ಜೋಳ/Na po:n
@@ -61257,7 +61184,7 @@
 ಟಣಕಲಿ/Ne po:n
 ಟಣ್ಣನೆ/Px po:adv
 ಟತ್ವ/Na po:n
-ಟನ್/Nk po:n
+ಟನ್ po:n
 ಟನ್ನು/Nu po:n
 ಟಪಾರಿಕೆ/Ne po:n
 ಟಪಾಲು/Nu po:n
@@ -61291,7 +61218,7 @@
 ಟವಣೆಹಾಕು/Vb po:v
 ಟವರ್ಗ/Na po:n
 ಟವಲು/Nu po:n
-ಟವಲ್/Nl po:n
+ಟವಲ್ po:n
 ಟವಳಿ/Ne po:n
 ಟವಳಿಗಾರ/Na po:n
 ಟವಾಳ/Na po:n
@@ -61329,7 +61256,7 @@
 ಟಾಪೂಶಿಕ್ಷೆ/Ne po:n
 ಟಾರು/Nu po:n
 ಟಾರೆಣ್ಣೆ/Ne po:n
-ಟಾರ್/Nl po:n
+ಟಾರ್ po:n
 ಟಾಳಿ/Ne po:n
 ಟಾಳಿಸು/Vb po:v
 ಟಾವು/Nu po:n
@@ -61349,7 +61276,7 @@
 ಟಿಕೆಟ್ಟು/Nu po:n
 ಟಿಕೇಗೆ/Ne po:n
 ಟಿಕೇಟು/Nu po:n
-ಟಿಕ್/Nl po:n
+ಟಿಕ್ po:n
 ಟಿಕ್ಕರಿ/Ne po:n
 ಟಿಕ್ಕರಿಗಳೆ/Vb po:v
 ಟಿಕ್ಕೆ/Ne po:n
@@ -61372,7 +61299,7 @@
 ಟಿಬ್ಬರಿಸು/Vb po:v
 ಟಿಬ್ಬಿ/Ne po:n
 ಟಿಮ್ಮು/Nu po:n
-ಟಿಲಿವಿಷನ್/Nl po:n
+ಟಿಲಿವಿಷನ್ po:n
 ಟಿಸಲು/Nu po:n
 ಟಿಸಲೊಡೆ/Vb po:v
 ಟಿಸಳು/Nu po:n
@@ -61434,10 +61361,10 @@
 ಟೆಬ್ಬರ/Na po:n
 ಟೆಬ್ಬರಿಸು/Vb po:v
 ಟೆಲಿಗ್ರಾಫು/Nu po:n
-ಟೆಲಿಗ್ರಾಫ್/Nl po:n
+ಟೆಲಿಗ್ರಾಫ್ po:n
 ಟೆಲಿಗ್ರಾಫ್ಗಿಡ/Na po:n
 ಟೆಲಿಗ್ರಾಮು/Nu po:n
-ಟೆಲಿಗ್ರಾಮ್/Nl po:n
+ಟೆಲಿಗ್ರಾಮ್ po:n
 ಟೆಲಿಫೋನು/Nu po:n
 ಟೆಲಿವಿಷನ್ನು/Nu po:n
 ಟೆಲಿಸಂಪರ್ಕ/Na po:n
@@ -61449,14 +61376,14 @@
 ಟೇಕೆ/Ne po:n
 ಟೇಪಿ/Ne po:n
 ಟೇಪು/Nu po:n
-ಟೇಪ್/Nl po:n
+ಟೇಪ್ po:n
 ಟೇಪ್ರಿಕಾರ್ಡರು/Nu po:n
 ಟೇಪ್ರಿಕಾರ್ಡು/Nu po:n
 ಟೈಪಿಸ್ಟು/Nu po:n
 ಟೈಪು/Nu po:n
-ಟೈಪ್/Nl po:n
+ಟೈಪ್ po:n
 ಟೈಪ್ರೈಟರು/Nu po:n
-ಟೈಪ್ರೈಟರ್/Nl po:n
+ಟೈಪ್ರೈಟರ್ po:n
 ಟೈರು/Nu po:n
 ಟೊಂಕ/Na po:n
 ಟೊಂಕಕಟ್ಟು/Vb po:v
@@ -61510,7 +61437,7 @@
 ಟೋಲನಾಕೆ/Ne po:n
 ಟೋಲು/Nu po:n
 ಟೋಲುಗೇಟು/Nu po:n
-ಟೋಲ್/Nl po:n
+ಟೋಲ್ po:n
 ಟೋಳಿ/Ne po:n
 ಟೋಳಿಕಟ್ಟು/Vb po:v
 ಟೌಳಿ/Ne po:n
@@ -61756,7 +61683,7 @@
 ಡಗ್ಗುತ್ತಿಗೆ/Ne po:n
 ಡಗ್ಗೆ/Ne po:n
 ಡಗ್ರಿಹಗ್ಗ/Na po:n
-ಡಜನ್/Nk po:n
+ಡಜನ್ po:n
 ಡಜನ್ನು/Nu po:n
 ಡಡ್ಸಾಲ/Na po:n
 ಡಣಡಣಿಸು/Vb po:v
@@ -61947,7 +61874,7 @@
 ಡಾವುಪೇಚು/Nu po:n
 ಡಾವುರ/Na po:n
 ಡಾವೆ/Ne po:n
-ಡಾವ್/Nl po:n
+ಡಾವ್ po:n
 ಡಾಶೇರು/Nu po:n
 ಡಾಹ/Na po:n
 ಡಾಹರ/Na po:n
@@ -62116,7 +62043,7 @@
 ಡೇರೆ/Ne po:n
 ಡೇಲಿಯಾ/Nv po:n
 ಡೈನಮೊ po:n
-ಡೈನಾಮೈಟ್/Nl po:n
+ಡೈನಾಮೈಟ್ po:n
 ಡೈನಾಮೊ po:n
 ಡೈರಿ/Ne po:n
 ಡೊಂಕ/Na po:n
@@ -62374,7 +62301,7 @@
 ತಂಗದಿರ್ವಟ್ಟ/Na po:n
 ತಂಗರಗ/Na po:n
 ತಂಗಲು/Nu po:n
-ತಂಗಲ್/Nl po:n
+ತಂಗಲ್ po:n
 ತಂಗಲ್ಲು/Nu po:n
 ತಂಗಳನ್ನ/Na po:n
 ತಂಗಳು/Nu po:n
@@ -63075,7 +63002,7 @@
 ತಣುಕು/Nu po:n
 ತಣುಪು/Vb po:v
 ತಣ್ po:adj
-ತಣ್/Nl po:n
+ತಣ್ po:n
 ತಣ್ po:v
 ತಣ್ಗದಿರ/Na po:n
 ತಣ್ಗದಿರವಕ್ಕಿ/Ne po:n
@@ -63111,7 +63038,7 @@
 ತಣ್ಣೀರು/Nu po:n
 ತಣ್ಣೀರೆರಚು/Vb po:v
 ತಣ್ಣೀರೆರೆ/Vb po:v
-ತಣ್ಣೀರ್/Nl po:n
+ತಣ್ಣೀರ್ po:n
 ತಣ್ಣುಣುಕ/Na po:n
 ತಣ್ಣುಸಿರು/Nu po:n
 ತಣ್ಣೆ/Ne po:n
@@ -63309,7 +63236,6 @@
 ತದ್ವಿಪರೀತ/Na po:n
 ತದ್ವಿರುದ್ಧ/Aj po:adj
 ತದ್ವಿರುದ್ಧ/Na po:n
-ತನಕ/Px po:adv
 ತನಕ/Px po:postp
 ತನಕರ/Px po:adv
 ತನಕಲಿ/Ne po:n
@@ -63691,7 +63617,6 @@
 ತಮೋಮಯ/Aj po:adj
 ತಮೋರಿ/Ne po:n
 ತಮೋಲೋಕ/Na po:n
-ತಮ್ಮ/NaNm po:n
 ತಮ್ಮ st:ತಾವು po:pron is:+gen
 ತಮ್ಮಟ/Na po:n
 ತಮ್ಮಟೆ/Ne po:n
@@ -64678,7 +64603,7 @@
 ತವಿಯಿಸು/Vb po:v
 ತವಿಲಿಲಿ/Ne po:n
 ತವಿಲು/Nu po:n
-ತವಿಲ್/Nl po:n
+ತವಿಲ್ po:n
 ತವಿಲ್ po:v
 ತವಿಸು/Vb po:v
 ತವು/Nd po:n
@@ -64829,7 +64754,7 @@
 ತಾಜಾಕಲಮು/Nu po:n
 ತಾಜಾಸನದು/Nu po:n
 ತಾಜಾಸನ್ನದು/Nu po:n
-ತಾಜಿಕ್/Nl po:n
+ತಾಜಿಕ್ po:n
 ತಾಜೀಮು/Nu po:n
 ತಾಟಂಕ/Na po:n
 ತಾಟಕ/Na po:n
@@ -64926,8 +64851,7 @@
 ತಾನಮಾನ/Na po:n
 ತಾನವರ್ಣ/Na po:n
 ತಾನವಿತಾನ/Na po:n
-ತಾನು/Nu po:n
-ತಾನು/Px po:pron
+ತಾನು/Aj po:pron
 ತಾನ್ po:x
 ತಾನ್ಮೆ/Ne po:n
 ತಾಪ/NaNm po:n
@@ -65064,7 +64988,7 @@
 ತಾಯಿವೇರು/Nu po:n
 ತಾಯೀಚಲು/Nu po:n
 ತಾಯೆಳೆ/Ne po:n
-ತಾಯ್/Nl po:n
+ತಾಯ್ po:n
 ತಾಯ್ಗಂಡಿ/Ne po:n
 ತಾಯ್ಗಣ/Na po:n
 ತಾಯ್ಗನಿ/Ne po:n
@@ -65147,7 +65071,7 @@
 ತಾರೀಖು/Nu po:n
 ತಾರೀಪು/Nu po:n
 ತಾರೀಫು/Nu po:n
-ತಾರೀಫ್/Nl po:n
+ತಾರೀಫ್ po:n
 ತಾರು/Nd po:n
 ತಾರು/Vb po:v
 ತಾರುಂಬಳಿ/Ne po:n
@@ -65163,7 +65087,7 @@
 ತಾರೆಣ್ಣೆ/Ne po:n
 ತಾರೆಲೆ/Ne po:n
 ತಾರೈಸು/Vb po:v
-ತಾರ್/Nl po:n
+ತಾರ್ po:n
 ತಾರ್ಕಣಸು/Vb po:v
 ತಾರ್ಕಣಿಸು/Vb po:v
 ತಾರ್ಕಣೆ/Ne po:n
@@ -65300,7 +65224,7 @@
 ತಾಳೇಸಪತ್ರೆ/Ne po:n
 ತಾಳೋದ್ಘಾಟಿನಿ/Ne po:n
 ತಾಳೋಲೆ/Ne po:n
-ತಾಳ್/Nl po:n
+ತಾಳ್ po:n
 ತಾಳ್ po:v
 ತಾಳ್ಕೆ/Ne po:n
 ತಾಳ್ಕೆವಂತ/Na po:n
@@ -65335,9 +65259,7 @@
 ತಾವರೆಹಕ್ಕಿ/Ne po:n
 ತಾವಾರ/Na po:n
 ತಾವೀಜ/Na po:n
-ತಾವು/Nu po:n
-ತಾವು/Px po:postp
-ತಾವು/Px po:pron
+ತಾವು/Aj po:pron
 ತಾವುಜ/Na po:n
 ತಾವುಸ/Na po:n
 ತಾವೂರಿಬಾವೂರಿ/Ne po:n
@@ -65626,7 +65548,7 @@
 ತಿಮಿರಾಸ್ತ್ರ/Na po:n
 ತಿಮಿರು/Nu po:n
 ತಿಮಿರು/Vb po:v
-ತಿಮಿರ್/Nl po:n
+ತಿಮಿರ್ po:n
 ತಿಮಿರ್ po:v
 ತಿಮಿಳ/Na po:n
 ತಿಮಿಸರಟ/Na po:n
@@ -65751,7 +65673,7 @@
 ತಿರುನಾಮ/Na po:n
 ತಿರುನಾಮಧಾರಿ/Ne po:n
 ತಿರುನಾಳು/Nd po:n
-ತಿರುನಾಳ್/Nl po:n
+ತಿರುನಾಳ್ po:n
 ತಿರುನೀರು/Nu po:n
 ತಿರುಪ/Na po:n
 ತಿರುಪಣಿ/Ne po:n
@@ -65865,7 +65787,7 @@
 ತಿರ್ಯಾಹಿತ/Na po:n
 ತಿರ್ರನೆ/Px po:adv
 ತಿಲ/Na po:n
-ತಿಲಂಗ್/Nl po:n
+ತಿಲಂಗ್ po:n
 ತಿಲಕ/NaNm po:n
 ತಿಲಕಗುದುರೆ/Ne po:n
 ತಿಲಕಪ್ರಾಯ/Aj po:adj
@@ -66075,7 +65997,7 @@
 ತೀನು/Nu po:n
 ತೀನುತೇರಾ/Nv po:n
 ತೀನೆ/Ne po:n
-ತೀನ್/Nl po:n
+ತೀನ್ po:n
 ತೀನ್ಮಸಗು/Vb po:v
 ತೀನ್ಮಸೆ/Vb po:v
 ತೀಬನು/Nu po:n
@@ -67301,7 +67223,7 @@
 ತೆವರು/Nu po:n
 ತೆವರು/Vb po:v
 ತೆವರುಬಿಳಿದಾಳೆ/Ne po:n
-ತೆವರ್/Nl po:n
+ತೆವರ್ po:n
 ತೆವರ್ಚು/Vb po:v
 ತೆವಲು/Nu po:n
 ತೆವಲುಗಾರ/Na po:n
@@ -67413,7 +67335,7 @@
 ತೇರುಹಬ್ಬ/Na po:n
 ತೇರೆಸಗು/Vb po:v
 ತೇರೈಸು/Vb po:v
-ತೇರ್/Nl po:n
+ತೇರ್ po:n
 ತೇರ್ po:v
 ತೇರ್ಗಡೆ/Ne po:n
 ತೇರ್ಗುದುರೆ/Ne po:n
@@ -68107,7 +68029,7 @@
 ತೋಲು/Nd po:n
 ತೋಲುತಪ್ಪು/Vb po:v
 ತೋಲೆ/Ne po:n
-ತೋಲ್/Nl po:n
+ತೋಲ್ po:n
 ತೋಲ್ದಪ್ಪು/Vb po:v
 ತೋಲ್ವಿಡಿ/Vb po:v
 ತೋಳ/Na po:n
@@ -68909,7 +68831,7 @@
 ದಕ್ಷೆ/Ne po:n
 ದಖನಿ/Aj po:adj
 ದಖನಿ/Ne po:n
-ದಖನ್/NlNk po:n
+ದಖನ್ po:n
 ದಖೀಲಿ/Ne po:n
 ದಗ/Na po:n
 ದಗಡಿ/Ne po:n
@@ -69196,7 +69118,7 @@
 ದಫನ/Na po:n
 ದಫನಕ್ರಿಯೆ/Ne po:n
 ದಫನಭೂಮಿ/Ne po:n
-ದಫನ್/Nl po:n
+ದಫನ್ po:n
 ದಫಾ/Nv po:n
 ದಫೇದಾರ/Na po:n
 ದಫೇದಾರಿ/Ne po:n
@@ -69463,7 +69385,7 @@
 ದರ್ಬಾರಿ/Aj po:adj
 ದರ್ಬಾರಿ/Ne po:n
 ದರ್ಬಾರು/Nu po:n
-ದರ್ಬಾರ್/Nl po:n
+ದರ್ಬಾರ್ po:n
 ದರ್ಬಾರ್ಚಾವಡಿ/Ne po:n
 ದರ್ಬಾರ್ಭಕ್ಷಿ/Ne po:n
 ದರ್ಬೆ/Ne po:n
@@ -69544,7 +69466,7 @@
 ದಳವಾಡ/Na po:n
 ದಳವಾಯಿ/Ne po:n
 ದಳವಾಯಿತನ/Na po:n
-ದಳವಾಯ್/Nl po:n
+ದಳವಾಯ್ po:n
 ದಳವಾಯ್ತನ/Na po:n
 ದಳವಿಡು/Vb po:v
 ದಳವುಳ/Na po:n
@@ -70509,7 +70431,7 @@
 ದಿರುಸು/Nu po:n
 ದಿರ್ರನೆ/Px po:adv
 ದಿಲಾಸು/Nu po:n
-ದಿಲ್/Nk po:n
+ದಿಲ್ po:n
 ದಿಲ್ಗಾರ/Na po:n
 ದಿಲ್ಗೀರು/Nu po:n
 ದಿಲ್ದಾರ/Na po:n
@@ -70517,7 +70439,7 @@
 ದಿಲ್ದಾರು/Aj po:adj
 ದಿಲ್ದಾರು/Nu po:n
 ದಿಲ್ದಾರ್ po:adj
-ದಿಲ್ದಾರ್/Nl po:n
+ದಿಲ್ದಾರ್ po:n
 ದಿಲ್ಭರವಸಾ/Nv po:n
 ದಿಲ್ರುಬಾ/Nv po:n
 ದಿಲ್ಲು/Nu po:n
@@ -70564,7 +70486,7 @@
 ದಿವಾನಿ/Aj po:adj
 ದಿವಾನಿ/Ne po:n
 ದಿವಾನು/Nd po:n
-ದಿವಾನ್/Nl po:n
+ದಿವಾನ್ po:n
 ದಿವಾನ್ಕಚೇರಿ/Ne po:n
 ದಿವಾನ್ಕಛೇರಿ/Ne po:n
 ದಿವಾನ್ಖಾನೆ/Ne po:n
@@ -71559,7 +71481,7 @@
 ದುಷ್ಪ್ರೇಕ್ಷ/Na po:n
 ದುಷ್ಪ್ರೇರಣೆ/Ne po:n
 ದುಷ್ಫಲ/Na po:n
-ದುಷ್ಮನ್/Nl po:n
+ದುಷ್ಮನ್ po:n
 ದುಷ್ಮಾನ/Na po:n
 ದುಷ್ಷಮ/Aj po:adj
 ದುಷ್ಷಮ/Na po:n
@@ -72144,7 +72066,7 @@
 ದೇವರಾಯಿ/Ne po:n
 ದೇವರು/Nu po:n
 ದೇವರುಷಿ/Ne po:n
-ದೇವರ್/Nl po:n
+ದೇವರ್ po:n
 ದೇವರ್ಷಿ/Ne po:n
 ದೇವಲ/Nm po:n
 ದೇವಲಕ/Na po:n
@@ -72996,7 +72918,7 @@
 ದೌರ್ಮದ್ಯ/Na po:n
 ದೌರ್ಮನಸ್ಯ/Na po:n
 ದೌರ್ಹೃದ/Na po:n
-ದೌಲತ್/Nk po:n
+ದೌಲತ್ po:n
 ದೌಲತ್ಜಾದಾ/Nv po:n
 ದೌಲತ್ತು/Nu po:n
 ದೌಲಾಚ್ಛಾದ/Na po:n
@@ -74183,7 +74105,7 @@
 ಧೂಳುಭೂಮ/Na po:n
 ಧೂಳೆಬ್ಬಿಸು/Vb po:v
 ಧೂಳೆರಚು/Vb po:v
-ಧೂಳ್/Nl po:n
+ಧೂಳ್ po:n
 ಧೂಸರ/Aj po:adj
 ಧೂಸರ/Na po:n
 ಧೂಸರಿತ/Aj po:adj
@@ -74481,8 +74403,6 @@
 ನಂಟುಭಕ್ತಿ/Ne po:n
 ನಂಟುವಳಿ/Ne po:n
 ನಂಡುಲಿ/Ne po:n
-ನಂತರ/Px po:adv
-ನಂತರ/Na po:n
 ನಂತರ/Px po:postp
 ನಂದ/Nm po:n
 ನಂದಕ/Na po:n
@@ -74851,7 +74771,7 @@
 ನಜರುಕೈದು/Nu po:n
 ನಜರುಗಾಣಿಕೆ/Ne po:n
 ನಜರುಮುಜರೆ/Ne po:n
-ನಜರ್/Nl po:n
+ನಜರ್ po:n
 ನಜುಗು/Vb po:v
 ನಜುರು/Nu po:n
 ನಜುರುಮುಜುರೆ/Ne po:n
@@ -75605,7 +75525,7 @@
 ನರ್ಮಸಹಾಯ/Na po:n
 ನರ್ವಾಳಿ/Ne po:n
 ನರ್ಸು/Nu po:n
-ನರ್ಸ್/Nl po:n
+ನರ್ಸ್ po:n
 ನಲ/Na po:n
 ನಲಂದಳೆ/Vb po:v
 ನಲಕ/Na po:n
@@ -75783,7 +75703,7 @@
 ನವಾಬಿ/Aj po:adj
 ನವಾಬು/Nd po:n
 ನವಾಯತ/Nm po:n
-ನವಾಯತ್/Nl po:n
+ನವಾಯತ್ po:n
 ನವಾಯಿ/Ne po:n
 ನವಾಯಿಗೆಡು/Vb po:v
 ನವಾಯಿತ/Na po:n
@@ -75889,7 +75809,7 @@
 ನಸರಿಹುಳ/Na po:n
 ನಸರು/Nu po:n
 ನಸರುಬಂದಿ/Ne po:n
-ನಸರ್/Nl po:n
+ನಸರ್ po:n
 ನಸರ್ಬಂದಿ/Ne po:n
 ನಸಿ/Ne po:n
 ನಸಿ/Vb po:v
@@ -76170,10 +76090,10 @@
 ನಾಚುಗೆ/Ne po:n
 ನಾಚುಬುರುಕ/Na po:n
 ನಾಚುಬುರುಕಿ/Ne po:n
-ನಾಚ್/Nl po:n
+ನಾಚ್ po:n
 ನಾಜನಾಮ/Na po:n
 ನಾಜರು/Nu po:n
-ನಾಜರ್/Nl po:n
+ನಾಜರ್ po:n
 ನಾಜಲು/Nu po:n
 ನಾಜಲುಹಣ/Na po:n
 ನಾಜಿರ/Na po:n
@@ -76424,8 +76344,7 @@
 ನಾನಾದೇಸಿ/Ne po:n
 ನಾನಾಲಿಂಗ/Na po:n
 ನಾನಾವಚನ/Na po:n
-ನಾನು/Px po:pron
-ನಾನು/Vb po:v
+ನಾನು/Aj po:pron
 ನಾನೂರು/Aj po:adj
 ನಾನೂರು/Nd po:n
 ನಾನೆತ/Na po:n
@@ -76543,14 +76462,14 @@
 ನಾಯತೊಳಸಿ/Ne po:n
 ನಾಯತ್ತಿ/Ne po:n
 ನಾಯನರಕ/Na po:n
-ನಾಯನಾರ್/Nl po:n
+ನಾಯನಾರ್ po:n
 ನಾಯನ್ಮಾರ/Nm po:n
 ನಾಯಬ/Na po:n
 ನಾಯಬಶಿರಸ್ತೇದಾರ/Na po:n
 ನಾಯಬೇಳ/Na po:n
 ನಾಯಮಾರ/Na po:n
 ನಾಯಮ್ಮಾರ/Na po:n
-ನಾಯರ್/Nl po:n
+ನಾಯರ್ po:n
 ನಾಯಹತ್ತಿ/Ne po:n
 ನಾಯಾಟ/Na po:n
 ನಾಯಿ/Ne po:n
@@ -76603,7 +76522,7 @@
 ನಾಯಿಬೇಲ/Na po:n
 ನಾಯಿಬೇಲಿ/Ne po:n
 ನಾಯಿಬೇಳ/Na po:n
-ನಾಯಿಬ್/Nl po:n
+ನಾಯಿಬ್ po:n
 ನಾಯಿಮಾರ/Na po:n
 ನಾಯಿಯುಳ್ಳಿ/Ne po:n
 ನಾಯಿಯೆಲವ/Na po:n
@@ -76624,7 +76543,7 @@
 ನಾಯೆಲವ/Na po:n
 ನಾಯೇಬ/Na po:n
 ನಾಯೊಳಲೆ/Ne po:n
-ನಾಯ್/Nl po:n
+ನಾಯ್ po:n
 ನಾಯ್ಕಿತಿ/Ne po:n
 ನಾಯ್ಗೆಮ್ಮು/Nu po:n
 ನಾಯ್ಚಿಲಿಕೆ/Ne po:n
@@ -76715,7 +76634,7 @@
 ನಾರೆತ್ತು/Vb po:v
 ನಾರೋಲಿ/Ne po:n
 ನಾರೋಳಿ/Ne po:n
-ನಾರ್/Nl po:n
+ನಾರ್ po:n
 ನಾರ್ಗವುಂಡು/Nu po:n
 ನಾರ್ಗಾದೆ/Ne po:n
 ನಾರ್ಗಾಮುಂಡ/Na po:n
@@ -76756,7 +76675,7 @@
 ನಾಲಾಯಕು/Aj po:adj
 ನಾಲಾಯಕು/Nu po:n
 ನಾಲಾಯಕ್ po:adj
-ನಾಲಾಯಕ್/Nl po:n
+ನಾಲಾಯಕ್ po:n
 ನಾಲಾಯಕ್ಕು/Aj po:adj
 ನಾಲಾಯಕ್ಕು/Nu po:n
 ನಾಲಾಯಖ/Na po:n
@@ -76788,8 +76707,6 @@
 ನಾಲ್ಕನೆಯ/Aj po:adj
 ನಾಲ್ಕನೆಯ/Na po:n
 ನಾಲ್ಕನೇ/Aj po:adj
-ನಾಲ್ಕು/Aj po:adj
-ನಾಲ್ಕು/Nd po:n
 ನಾಲ್ಕು/Nd po:num
 ನಾಲ್ಛಾಸಿರ/Aj po:adj
 ನಾಲ್ಛಾಸಿರ/Na po:n
@@ -76842,7 +76759,7 @@
 ನಾಳೀವ್ರಣ/Na po:n
 ನಾಳು/NuNd po:n
 ನಾಳೆ/Ne po:n
-ನಾಳ್/Nl po:n
+ನಾಳ್ po:n
 ನಾಳ್ಕಡಿವೋಗು/Vb po:v
 ನಾಳ್ಗಾದೆ/Ne po:n
 ನಾಳ್ಗಾಮಿಗ/Na po:n
@@ -76871,8 +76788,7 @@
 ನಾವಿದಿತಿ/Ne po:n
 ನಾವಿಲ/Na po:n
 ನಾವೀನ್ಯ/Na po:n
-ನಾವು/Nu po:n
-ನಾವು/Px po:pron
+ನಾವು/Aj po:pron
 ನಾವೆ/Ne po:n
 ನಾವ್ಯ/Aj po:adj
 ನಾವ್ಯ/Na po:n
@@ -77691,7 +77607,7 @@
 ನಿಮಿರಿಸು/Vb po:v
 ನಿಮಿರು/Nu po:n
 ನಿಮಿರು/Vb po:v
-ನಿಮಿರ್/Nl po:n
+ನಿಮಿರ್ po:n
 ನಿಮಿರ್ po:v
 ನಿಮಿರ್ಕೆ/Ne po:n
 ನಿಮಿರ್ಕೆಗುಂದು/Vb po:v
@@ -79766,7 +79682,7 @@
 ನೀತಿಹೀನ/Na po:n
 ನೀತಿಹೀನೆ/Ne po:n
 ನೀಧ್ರ/Na po:n
-ನೀನು/Px po:pron
+ನೀನು/Aj po:pron
 ನೀನ್ po:x
 ನೀಪ/Aj po:adj
 ನೀಪ/Nm po:n
@@ -80056,7 +79972,7 @@
 ನೀರೋಟ/Na po:n
 ನೀರೋಟೆ/Ne po:n
 ನೀರೋಡು/Vb po:v
-ನೀರ್/Nl po:n
+ನೀರ್ po:n
 ನೀರ್ಕಟ್ಟೆ/Ne po:n
 ನೀರ್ಕಾಗೆ/Ne po:n
 ನೀರ್ಕುಟಿಕ/Na po:n
@@ -80074,7 +79990,7 @@
 ನೀರ್ಗನಿಗಲು/Nu po:n
 ನೀರ್ಗರುಳ/Na po:n
 ನೀರ್ಗರೆ/Vb po:v
-ನೀರ್ಗಲ್/Nk po:n
+ನೀರ್ಗಲ್ po:n
 ನೀರ್ಗಲ್ಲು/Nu po:n
 ನೀರ್ಗಾಗೆ/Ne po:n
 ನೀರ್ಗಾದಿಗೆ/Ne po:n
@@ -80274,8 +80190,7 @@
 ನೀವೀಬಂಧ/Na po:n
 ನೀವೀಬಂಧನ/Na po:n
 ನೀವೀಭರ/Na po:n
-ನೀವು/Px po:pron
-ನೀವು/Vb po:v
+ನೀವು/Aj po:pron
 ನೀವೆ/Ne po:n
 ನೀವ್ರ/Na po:n
 ನೀಶಾರ/Na po:n
@@ -80548,8 +80463,6 @@
 ನೂಪುರ/Na po:n
 ನೂಪುರಪಾದ/Na po:n
 ನೂರಡಿ/Ne po:n
-ನೂರು/Aj po:adj
-ನೂರು/Nd po:n
 ನೂರು/Nd po:num
 ನೂರುಕಾಲ/Na po:n
 ನೂರುಮಡಿ/Aj po:adj
@@ -80587,7 +80500,7 @@
 ನೂಲೆಳೆ/Ne po:n
 ನೂಲೆಳೆಗ/Na po:n
 ನೂಲೇಣಿ/Ne po:n
-ನೂಲ್/Nl po:n
+ನೂಲ್ po:n
 ನೂಲ್ po:v
 ನೂಲ್ಗಟ್ಟು/Vb po:v
 ನೂಲ್ಗೊಂಡ/Vp st:ನೂಲ್ಗೊಳ್ಳು po:v
@@ -80868,7 +80781,7 @@
 ನೆಯಿಗೆ/Ne po:n
 ನೆಯಿದಲೆ/Ne po:n
 ನೆಯಿದಿಲು/Nu po:n
-ನೆಯ್/Nl po:n
+ನೆಯ್ po:n
 ನೆಯ್ po:v
 ನೆಯ್ಕಾರ/Na po:n
 ನೆಯ್ಕಾರಿಕೆ/Ne po:n
@@ -80908,7 +80821,7 @@
 ನೆರವಣಿಗೆಗೊಳಿಸು/Vb po:v
 ನೆರವಲ/Na po:n
 ನೆರವಲು/Nu po:n
-ನೆರವಲ್/Nl po:n
+ನೆರವಲ್ po:n
 ನೆರವಳೆ/Ne po:n
 ನೆರವಿ/Ne po:n
 ನೆರವಿಗ/Nm po:n
@@ -81229,7 +81142,7 @@
 ನೆಲೆಹತ್ತು/Vb po:v
 ನೆಲೆಹೊಲ/Na po:n
 ನೆಲೌಡಲ/Na po:n
-ನೆಲ್/Nk po:n
+ನೆಲ್ po:n
 ನೆಲ್ಲ/Na po:n
 ನೆಲ್ಲಕ್ಕಿಬಾಡೆ/Ne po:n
 ನೆಲ್ಲರಳು/Nu po:n
@@ -81454,7 +81367,7 @@
 ನೇರು/Nd po:n
 ನೇರೆ/Ne po:n
 ನೇರ್ po:adj
-ನೇರ್/Nl po:n
+ನೇರ್ po:n
 ನೇರ್ po:v
 ನೇರ್ಗೈ po:v
 ನೇರ್ಗೊಳಿಸು/Vb po:v
@@ -81504,11 +81417,11 @@
 ನೇಸಣ/Na po:n
 ನೇಸರ/Nm po:n
 ನೇಸರು/Nu po:n
-ನೇಸರ್/Nl po:n
+ನೇಸರ್ po:n
 ನೇಸರ್ಬಟ್ಟು/Nu po:n
 ನೇಸರ್ಮಯಣ/Na po:n
 ನೇಸಲು/Nu po:n
-ನೇಸಲ್/Nl po:n
+ನೇಸಲ್ po:n
 ನೇಹ/Na po:n
 ನೇಹಂದಳೆ/Vb po:v
 ನೇಹಂಬಡೆ/Vb po:v
@@ -81803,7 +81716,7 @@
 ನೌಪೂರಿ/Ne po:n
 ನೌಬತು/Nu po:n
 ನೌಬತುಖಾನೆ/Ne po:n
-ನೌಬತ್/Nl po:n
+ನೌಬತ್ po:n
 ನೌಬತ್ತು/Nu po:n
 ನೌಬಲ/Na po:n
 ನೌಬಲಾಧಿಪತಿ/Ne po:n
@@ -82874,7 +82787,7 @@
 ಪಠಾಕ್ಷಿ/Ne po:n
 ಪಠಾಣ/Nm po:n
 ಪಠಾನ/Na po:n
-ಪಠಾನ್/Nl po:n
+ಪಠಾನ್ po:n
 ಪಠಾವಳಿ/Ne po:n
 ಪಠಿತ/Aj po:adj
 ಪಠಿತ/Na po:n
@@ -83824,7 +83737,7 @@
 ಪನೆಬೆಲ್ಲ/Na po:n
 ಪನೋಪಂಭೋಗಿ/Ne po:n
 ಪನ್ po:adj
-ಪನ್/Nk po:n
+ಪನ್ po:n
 ಪನ್ನ/Aj po:adj
 ಪನ್ನ/Na po:n
 ಪನ್ನಂಗ/Na po:n
@@ -83869,7 +83782,7 @@
 ಪನ್ನೀರುಗುಲಾಬಿ/Ne po:n
 ಪನ್ನೀರುದಾನಿ/Ne po:n
 ಪನ್ನೀರೆಲೆ/Ne po:n
-ಪನ್ನೀರ್/Nl po:n
+ಪನ್ನೀರ್ po:n
 ಪನ್ನು/Nd po:n
 ಪನ್ನೆ/Ne po:n
 ಪನ್ನೆಗಪ್ಪುರ/Na po:n
@@ -85320,14 +85233,14 @@
 ಪರೇಂಗಿತಜ್ಞ/Na po:n
 ಪರೇಂಗಿತಜ್ಞೆ/Ne po:n
 ಪರೇಡು/Nu po:n
-ಪರೇಡ್/Nl po:n
+ಪರೇಡ್ po:n
 ಪರೇತ/Aj po:adj
 ಪರೇತ/Na po:n
 ಪರೇತಕೃತ್ಯ/Na po:n
 ಪರೇತಪತಿ/Ne po:n
 ಪರೇತವನ/Na po:n
 ಪರೇರಬೇರು/Nu po:n
-ಪರೇಲ್/Nl po:n
+ಪರೇಲ್ po:n
 ಪರೇಶ/Na po:n
 ಪರೇಶ್ವರ/Na po:n
 ಪರೇಷ್ಟುಕೆ/Ne po:n
@@ -85561,7 +85474,7 @@
 ಪಲಾರ/Na po:n
 ಪಲಾಲ/Na po:n
 ಪಲಾವು/Nv po:n
-ಪಲಾವ್/Nl po:n
+ಪಲಾವ್ po:n
 ಪಲಾಶ/Na po:n
 ಪಲಾಶವೃತ್ತಿ/Ne po:n
 ಪಲಾಶಶಾಲೆ/Ne po:n
@@ -85589,7 +85502,7 @@
 ಪಲುಮೃಗ/Na po:n
 ಪಲುಮೊರೆ/Vb po:v
 ಪಲುಸುಲಿ/Vb po:v
-ಪಲ್/NlNk po:n
+ಪಲ್ po:n
 ಪಲ್ಕಡಿ/Vb po:v
 ಪಲ್ಕಿನಿ/Ne po:n
 ಪಲ್ಕಿರಿ/Vb po:v
@@ -85909,7 +85822,7 @@
 ಪಸ/Nm po:n
 ಪಸಂದ/Na po:n
 ಪಸಂದು/Nu po:n
-ಪಸಂದ್/Nl po:n
+ಪಸಂದ್ po:n
 ಪಸಗಂದು/Vb po:v
 ಪಸಗರಿಕೆ/Ne po:n
 ಪಸಗೆಡಿಸು/Vb po:v
@@ -86173,7 +86086,7 @@
 ಪಾಗರಿ/Ne po:n
 ಪಾಗಲ/Na po:n
 ಪಾಗಲು/Nu po:n
-ಪಾಗಲ್/Nl po:n
+ಪಾಗಲ್ po:n
 ಪಾಗಾ/Nv po:n
 ಪಾಗಾರ/Na po:n
 ಪಾಗಿವಾಳ/Na po:n
@@ -86310,7 +86223,7 @@
 ಪಾಡುಬೀಳು/Vb po:v
 ಪಾಡುವಡಿಸು/Vb po:v
 ಪಾಡೆ/Ne po:n
-ಪಾಡ್/Nl po:n
+ಪಾಡ್ po:n
 ಪಾಡ್ದನ/Na po:n
 ಪಾಡ್ದನೆ/Ne po:n
 ಪಾಡ್ಯ/Na po:n
@@ -86622,7 +86535,7 @@
 ಪಾಪರಹಿತ/Na po:n
 ಪಾಪರು/Nu po:n
 ಪಾಪರುಚೀಟಿ/Ne po:n
-ಪಾಪರ್/Nl po:n
+ಪಾಪರ್ po:n
 ಪಾಪರ್ಕಿ/Ne po:n
 ಪಾಪರ್ಚೀಟಿ/Ne po:n
 ಪಾಪರ್ಧಿ/Ne po:n
@@ -86695,7 +86608,7 @@
 ಪಾಯಿವಟ್ಟ/Na po:n
 ಪಾಯಿಸು/Vb po:v
 ಪಾಯು/Nu po:n
-ಪಾಯ್/Nl po:n
+ಪಾಯ್ po:n
 ಪಾಯ್ po:v
 ಪಾಯ್ಕು/Px po:intj
 ಪಾಯ್ಕು/Vb po:v
@@ -86980,7 +86893,7 @@
 ಪಾಲಿತಪುತ್ರ/Na po:n
 ಪಾಲಿತಪುತ್ರಿ/Ne po:n
 ಪಾಲಿವಾಣ/Na po:n
-ಪಾಲಿಷ್/Nl po:n
+ಪಾಲಿಷ್ po:n
 ಪಾಲಿಸಿ/Ne po:n
 ಪಾಲಿಸು/Vb po:v
 ಪಾಲು/Nu po:n
@@ -87010,7 +86923,7 @@
 ಪಾಲೆಗೊರವಿ/Ne po:n
 ಪಾಲೋಗರ/Na po:n
 ಪಾಲೌಗು/Nu po:n
-ಪಾಲ್/Nl po:n
+ಪಾಲ್ po:n
 ಪಾಲ್ಕಿ/Ne po:n
 ಪಾಲ್ಕೆ/Ne po:n
 ಪಾಲ್ಗಂಚಿ/Ne po:n
@@ -87248,7 +87161,7 @@
 ಪಿಂಚಣಿ/Ne po:n
 ಪಿಂಚಣಿದಾರ/Nm po:n
 ಪಿಂಚನಿ/Ne po:n
-ಪಿಂಚನ್/Nl po:n
+ಪಿಂಚನ್ po:n
 ಪಿಂಚನ್ನು/Nu po:n
 ಪಿಂಚು/Nu po:n
 ಪಿಂಚು/Vb po:v
@@ -87385,7 +87298,7 @@
 ಪಿಕಿ/Ne po:n
 ಪಿಕೀರು/Nu po:n
 ಪಿಕೆಟಿಂಗು/Nu po:n
-ಪಿಕೆಟ್/Nl po:n
+ಪಿಕೆಟ್ po:n
 ಪಿಕ್ಕ/Aj po:adj
 ಪಿಕ್ಕಮಾತು/Nu po:n
 ಪಿಕ್ಕಳ/Na po:n
@@ -87619,7 +87532,7 @@
 ಪಿನಿವಾಲ/Na po:n
 ಪಿನಿಹುಲ್ಲು/Nu po:n
 ಪಿನ್ po:adj
-ಪಿನ್/Nk po:n
+ಪಿನ್ po:n
 ಪಿನ್ನಲ್ಕೋಲಾಟ/Na po:n
 ಪಿನ್ನಿ/Ne po:n
 ಪಿನ್ನಿವಾಲ/Na po:n
@@ -88425,7 +88338,7 @@
 ಪುಯಿ/Vb po:v
 ಪುಯಿಲಿಡು/Vb po:v
 ಪುಯಿಲ್ಚು/Nu po:n
-ಪುಯ್/Nl po:n
+ಪುಯ್ po:n
 ಪುಯ್ಯಲಿಕ್ಕು/Vb po:v
 ಪುಯ್ಯಲಿಗ/Na po:n
 ಪುಯ್ಯಲಿಡು/Vb po:v
@@ -88700,7 +88613,7 @@
 ಪುಲುವೀಡು/Nu po:n
 ಪುಲುಸು/Nu po:n
 ಪುಲುಸೋಗು/Vb po:v
-ಪುಲ್/Nk po:n
+ಪುಲ್ po:n
 ಪುಲ್ಕಸ/Na po:n
 ಪುಲ್ಗಚ್ಚು/Vb po:v
 ಪುಲ್ಗರ್ಚು/Vb po:v
@@ -89055,7 +88968,7 @@
 ಪೂಣಿಗ/Na po:n
 ಪೂಣಿಗತನ/Na po:n
 ಪೂಣಿಸು/Vb po:v
-ಪೂಣ್/Nl po:n
+ಪೂಣ್ po:n
 ಪೂಣ್ po:v
 ಪೂಣ್ಕೆ/Ne po:n
 ಪೂಣ್ಕೆಗೈ po:v
@@ -89556,7 +89469,7 @@
 ಪೆಟಲು/Nu po:n
 ಪೆಟಲುಪ್ಪು/Nu po:n
 ಪೆಟಲುಯಂತ್ರ/Na po:n
-ಪೆಟಲ್/Nl po:n
+ಪೆಟಲ್ po:n
 ಪೆಟಲ್ಗೋವಿ/Ne po:n
 ಪೆಟಾರಿ/Ne po:n
 ಪೆಟಾರಿಗೆ/Ne po:n
@@ -89646,7 +89559,7 @@
 ಪೆಣೆ/Vb po:v
 ಪೆಣೆಗೊಳಿಸು/Vb po:v
 ಪೆಣೆದಾವಣಿ/Ne po:n
-ಪೆಣ್/Nk po:n
+ಪೆಣ್ po:n
 ಪೆಣ್ಗಾಡು/Nu po:n
 ಪೆಣ್ಗೂಳಿ/Ne po:n
 ಪೆಣ್ಗೂಸು/Nu po:n
@@ -89723,7 +89636,7 @@
 ಪೆರು/Vb po:v
 ಪೆರುಂಬೆ/Ne po:n
 ಪೆರುಮಾಳು/Nu po:n
-ಪೆರುಮಾಳ್/Nl po:n
+ಪೆರುಮಾಳ್ po:n
 ಪೆರುಮಾಳ್ತನ/Na po:n
 ಪೆರೆ/Ne po:n
 ಪೆರೆಗಳೆ/Vb po:v
@@ -89738,7 +89651,7 @@
 ಪೆರೆಸುಲಿ/Vb po:v
 ಪೆರೇಡು/Nu po:n
 ಪೆರೋಲು/Nu po:n
-ಪೆರ್/Nl po:n
+ಪೆರ್ po:n
 ಪೆರ್ಕಣ/Na po:n
 ಪೆರ್ಕಳ/Na po:n
 ಪೆರ್ಕಳಿಕೆ/Ne po:n
@@ -89883,7 +89796,7 @@
 ಪೇನಾರಿ/Ne po:n
 ಪೇನಿ/Ne po:n
 ಪೇನು/Nu po:n
-ಪೇನ್/Nl po:n
+ಪೇನ್ po:n
 ಪೇಪಂದಿ/Ne po:n
 ಪೇಯ/Na po:n
 ಪೇಯತ್ತಿ/Ne po:n
@@ -89916,14 +89829,14 @@
 ಪೇರುಸುರು/Nu po:n
 ಪೇರೈಸು/Vb po:v
 ಪೇರ್ po:adj
-ಪೇರ್/Nl po:n
+ಪೇರ್ po:n
 ಪೇಲವ/Aj po:adj
 ಪೇಲವ/Na po:n
 ಪೇಲವತೆ/Ne po:n
 ಪೇಲು/Nu po:n
 ಪೇಲು/Vb po:v
 ಪೇಲೆ/Ne po:n
-ಪೇಲ್/Nl po:n
+ಪೇಲ್ po:n
 ಪೇಲ್ po:v
 ಪೇಳಿ/Ne po:n
 ಪೇಳಿಕೆ/Ne po:n
@@ -89974,7 +89887,7 @@
 ಪೈಕರಿ/Ne po:n
 ಪೈಕಿ/Px po:adv
 ಪೈಗಂಬರ/Nm po:n
-ಪೈಗಂಬರ್/Nl po:n
+ಪೈಗಂಬರ್ po:n
 ಪೈಗಸ್ತಿ/Ne po:n
 ಪೈಗಸ್ತು/Nu po:n
 ಪೈಗು/Nu po:n
@@ -90047,7 +89960,7 @@
 ಪೈಲಾನಂಬರು/Nu po:n
 ಪೈಲಿಕೆ/Ne po:n
 ಪೈಲು/Nu po:n
-ಪೈಲ್ವಾನ್/Nl po:n
+ಪೈಲ್ವಾನ್ po:n
 ಪೈವಸ್ತಿ/Ne po:n
 ಪೈವಸ್ತೆ/Aj po:adj
 ಪೈಶಂಗಿತ/Na po:n
@@ -90088,7 +90001,7 @@
 ಪೊಂಗ/Na po:n
 ಪೊಂಗಯಿ/Ne po:n
 ಪೊಂಗಲು/Nu po:n
-ಪೊಂಗಲ್/Nl po:n
+ಪೊಂಗಲ್ po:n
 ಪೊಂಗಾರ/Na po:n
 ಪೊಂಗಾರುಕ/Na po:n
 ಪೊಂಗಿಸು/Vb po:v
@@ -90336,7 +90249,7 @@
 ಪೊನಲ್ವರಿ/Ne po:n
 ಪೊನಲ್ವರಿ/Vb po:v
 ಪೊನಲ್ವರಿಯಿಸು/Vb po:v
-ಪೊನ್/Nk po:n
+ಪೊನ್ po:n
 ಪೊನ್ತನ/Na po:n
 ಪೊನ್ನಂಬರ/Na po:n
 ಪೊನ್ನಗಂಟಿ/Ne po:n
@@ -90368,7 +90281,7 @@
 ಪೊಯಿನೀರು/Nu po:n
 ಪೊಯಿಲು/Nu po:n
 ಪೊಯಿಸು/Vb po:v
-ಪೊಯ್/Nl po:n
+ಪೊಯ್ po:n
 ಪೊಯ್ po:v
 ಪೊಯ್ಚೆಂಡು/Nu po:n
 ಪೊಯ್ಯಿಸು/Vb po:v
@@ -90405,7 +90318,7 @@
 ಪೊರಿ/Ne po:n
 ಪೊರಿಸು/Vb po:v
 ಪೊರು/Vb po:v
-ಪೊರುಳ್/Nl po:n
+ಪೊರುಳ್ po:n
 ಪೊರೆ/Ne po:n
 ಪೊರೆ/Vb po:v
 ಪೊರೆಕಳಚು/Vb po:v
@@ -90649,7 +90562,7 @@
 ಪೋನಿ/Ne po:n
 ಪೋಪು/Nd po:n
 ಪೋಪು/Vb po:v
-ಪೋಪ್/Nl po:n
+ಪೋಪ್ po:n
 ಪೋಫಳಿ/Ne po:n
 ಪೋರ/Na po:n
 ಪೋರಗ/Na po:n
@@ -90664,7 +90577,7 @@
 ಪೋರು/Vb po:v
 ಪೋರುಗೈ po:v
 ಪೋರೆ/Ne po:n
-ಪೋರ್/Nl po:n
+ಪೋರ್ po:n
 ಪೋರ್ po:v
 ಪೋರ್ಕಳ/Na po:n
 ಪೋರ್ಕಳಿ/Ne po:n
@@ -90677,7 +90590,7 @@
 ಪೋರ್ಚುಗೀಸ/Aj po:adj
 ಪೋರ್ಚುಗೀಸ/Nm po:n
 ಪೋರ್ಚುಗೀಸ್ po:adj
-ಪೋರ್ಚುಗೀಸ್/Nl po:n
+ಪೋರ್ಚುಗೀಸ್ po:n
 ಪೋರ್ತ/Na po:n
 ಪೋರ್ನುಡಿ/Ne po:n
 ಪೋರ್ಮೆ/Ne po:n
@@ -90692,7 +90605,7 @@
 ಪೋಲಿಯೋ/Nv po:n
 ಪೋಲಿಸು/Vb po:v
 ಪೋಲೀಸು/Nd po:n
-ಪೋಲೀಸ್/Nl po:n
+ಪೋಲೀಸ್ po:n
 ಪೋಲು/Nu po:n
 ಪೋಲು/Vb po:v
 ಪೋಲುಗ/Na po:n
@@ -90736,7 +90649,7 @@
 ಪೋಸ/Na po:n
 ಪೋಸಳ/Na po:n
 ಪೋಸ್ಟು/Nu po:n
-ಪೋಸ್ಟ್/Nl po:n
+ಪೋಸ್ಟ್ po:n
 ಪೋಸ್ತು/Nu po:n
 ಪೋಹಚೆ/Ne po:n
 ಪೋಹಣಿಗೆ/Ne po:n
@@ -90761,7 +90674,7 @@
 ಪೌಜೊಡೆ/Vb po:v
 ಪೌಜೊಡ್ಡು/Vb po:v
 ಪೌಡರು/Nu po:n
-ಪೌಡರ್/Nl po:n
+ಪೌಡರ್ po:n
 ಪೌಣಪಟ/Na po:n
 ಪೌಣಿಗೆ/Ne po:n
 ಪೌಣೆ/Ne po:n
@@ -90889,7 +90802,6 @@
 ಪ್ರಕಾಂಡಕ/Aj po:adj
 ಪ್ರಕಾಂಡಕ/Na po:n
 ಪ್ರಕಾಮ/Na po:n
-ಪ್ರಕಾರ/Na po:n
 ಪ್ರಕಾರ/Px po:postp
 ಪ್ರಕಾರವಾಚಕ/Na po:n
 ಪ್ರಕಾರಾಂತರ/Na po:n
@@ -91229,9 +91141,7 @@
 ಪ್ರತಾರಕ/Na po:n
 ಪ್ರತಾರಣ/Na po:n
 ಪ್ರತಾರಿಸು/Vb po:v
-ಪ್ರತಿ/Px po:adv
 ಪ್ರತಿ/Px po:det
-ಪ್ರತಿ/Ne po:n
 ಪ್ರತಿಕಕ್ಷಿ/Ne po:n
 ಪ್ರತಿಕರ್ಮ/Na po:n
 ಪ್ರತಿಕಾಯ/Na po:n
@@ -92974,7 +92884,7 @@
 ಫಕತ/Px po:adv
 ಫಕಫಕ/Na po:n
 ಫಕೀರ/Nm po:n
-ಫಕೀರ್/Nl po:n
+ಫಕೀರ್ po:n
 ಫಕ್ಕಡ/Aj po:adj
 ಫಕ್ಕಡ/Na po:n
 ಫಕ್ಕನೆ/Px po:adv
@@ -93079,7 +92989,7 @@
 ಫರ್ನಾದಿ/Ne po:n
 ಫರ್ಮಾನ/Na po:n
 ಫರ್ಮಾನು/Nu po:n
-ಫರ್ಮಾನ್/Nl po:n
+ಫರ್ಮಾನ್ po:n
 ಫರ್ಮಾಯಿಸು/Vb po:v
 ಫರ್ಲಾಂಗು/Nu po:n
 ಫರ್ಲೋ/Nv po:n
@@ -93182,7 +93092,7 @@
 ಫಸಗಿ/Ne po:n
 ಫಸಲಿ/Ne po:n
 ಫಸಲು/Nu po:n
-ಫಸಲ್/Nl po:n
+ಫಸಲ್ po:n
 ಫಸಾದ/Na po:n
 ಫಸಾಯಿಸು/Vb po:v
 ಫಸಾಸು/Vb po:v
@@ -93193,7 +93103,7 @@
 ಫಾಕಡಾ/Aj po:adj
 ಫಾಕಡಾ/Nv po:n
 ಫಾಜಿಲ್ po:adj
-ಫಾಜಿಲ್/Nl po:n
+ಫಾಜಿಲ್ po:n
 ಫಾಜೀಲ/Aj po:adj
 ಫಾಜೀಲತನ/Na po:n
 ಫಾಜೆ/Ne po:n
@@ -93223,7 +93133,7 @@
 ಫಾಸಿ/Ne po:n
 ಫಾಸಿಕಂಬ/Na po:n
 ಫಾಸಿಖಾನೆ/Ne po:n
-ಫಾಸಿಲ್/Nl po:n
+ಫಾಸಿಲ್ po:n
 ಫಾಸಿಶಿಕ್ಷೆ/Ne po:n
 ಫಾಸೆ/Ne po:n
 ಫಿಕೀರು/Nu po:n
@@ -93305,7 +93215,7 @@
 ಫೈಲು/Nu po:n
 ಫೈಸಲಾತಿ/Ne po:n
 ಫೈಸಲು/Nu po:n
-ಫೈಸಲ್/Nl po:n
+ಫೈಸಲ್ po:n
 ಫೋಡು/Nu po:n
 ಫೋತಿ/Ne po:n
 ಫೋನು/Nu po:n
@@ -93528,8 +93438,8 @@
 ಬಂದೆ/Ne po:n
 ಬಂದೋಬಸ್ತಿ/Ne po:n
 ಬಂದೋಬಸ್ತು/Nu po:n
-ಬಂದೋಬಸ್ತ್/Nl po:n
-ಬಂದ್/Nl po:n
+ಬಂದೋಬಸ್ತ್ po:n
+ಬಂದ್ po:n
 ಬಂಧ/NaNm po:n
 ಬಂಧಕ/Aj po:adj
 ಬಂಧಕ/Na po:n
@@ -93583,7 +93493,7 @@
 ಬಂಬಲಿಸು/Vb po:v
 ಬಂಬಲು/Nu po:n
 ಬಂಬಲ್ po:adv
-ಬಂಬಲ್/Nl po:n
+ಬಂಬಲ್ po:n
 ಬಂಬಲ್ವರಿ/Vb po:v
 ಬಂಬಲ್ವರಿಯಿಸು/Vb po:v
 ಬಂಬಳ/Px po:adv
@@ -93793,7 +93703,7 @@
 ಬಚಾಯಿಸು/Vb po:v
 ಬಚಾರಿ/Ne po:n
 ಬಚಾವು/Nu po:n
-ಬಚಾವ್/Nl po:n
+ಬಚಾವ್ po:n
 ಬಚ್ಚ/Nm po:n
 ಬಚ್ಚಂಗಾಯಿ/Ne po:n
 ಬಚ್ಚಕಾನೆ/Ne po:n
@@ -93833,7 +93743,7 @@
 ಬಜಾರಿ/Aj po:adj
 ಬಜಾರಿ/Ne po:n
 ಬಜಾರು/Nu po:n
-ಬಜಾರ್/Nl po:n
+ಬಜಾರ್ po:n
 ಬಜಾವಣೆ/Ne po:n
 ಬಜೆ/Ne po:n
 ಬಜೆಕರಕು/Nu po:n
@@ -94301,7 +94211,7 @@
 ಬದ್ಧೇಂದ್ರಿಯ/Na po:n
 ಬದ್ನಾಮೀ/Ne po:n
 ಬದ್ಮಾಶ್ po:adj
-ಬದ್ಮಾಶ್/Nl po:n
+ಬದ್ಮಾಶ್ po:n
 ಬಧಿರ/Na po:n
 ಬಧಿರತೆ/Ne po:n
 ಬಧಿರತ್ವ/Na po:n
@@ -94432,7 +94342,7 @@
 ಬಯಿಸಣಿಗೆ/Ne po:n
 ಬಯಿಸು/Vb po:v
 ಬಯಿಸೆ/Ne po:n
-ಬಯ್/Nl po:n
+ಬಯ್ po:n
 ಬಯ್ po:v
 ಬಯ್ಕನೆ/Px po:adv
 ಬಯ್ಕೆ/Ne po:n
@@ -94908,7 +94818,7 @@
 ಬಲ್ಲಾಳ/Nm po:n
 ಬಲ್ಲಾಳಗಿತ್ತಿ/Ne po:n
 ಬಲ್ಲಾಳಿಕೆ/Ne po:n
-ಬಲ್ಲಾಳ್/Nl po:n
+ಬಲ್ಲಾಳ್ po:n
 ಬಲ್ಲಾಳ್ಕೆ/Ne po:n
 ಬಲ್ಲಾಳ್ತನ/Na po:n
 ಬಲ್ಲಿತು/Aj po:adj
@@ -94993,7 +94903,6 @@
 ಬಳಾಹಕ/Na po:n
 ಬಳಿ/Ne po:n
 ಬಳಿ/Vb po:v
-ಬಳಿಕ/Px po:adv
 ಬಳಿಕ/Px po:postp
 ಬಳಿಕೋಲು/Nu po:n
 ಬಳಿಕ್ಕ/Px po:adv
@@ -95244,16 +95153,14 @@
 ಬಹದ್ದೂರಿ/Aj po:adj
 ಬಹದ್ದೂರಿ/Ne po:n
 ಬಹದ್ದೂರ್ po:adj
-ಬಹದ್ದೂರ್/Nl po:n
+ಬಹದ್ದೂರ್ po:n
 ಬಹಲ/Aj po:adj
 ಬಹಲ/Px po:adv
 ಬಹಲ/Na po:n
 ಬಹಲಿ/Ne po:n
 ಬಹಲಿಕೆ/Ne po:n
 ಬಹಲು/Nu po:n
-ಬಹಳ/Aj po:adj
 ಬಹಳ/Px po:adv
-ಬಹಳ/Na po:n
 ಬಹಳಿಕೆ/Ne po:n
 ಬಹಳಿತ/Aj po:adj
 ಬಹಳಿಸು/Vb po:v
@@ -95263,7 +95170,7 @@
 ಬಹಾದುರೀ/Aj po:adj
 ಬಹಾದುರೀ/Ne po:n
 ಬಹಾದುರ್ po:adj
-ಬಹಾದುರ್/Nl po:n
+ಬಹಾದುರ್ po:n
 ಬಹಾದ್ದರ/Aj po:adj
 ಬಹಾದ್ದರ/Na po:n
 ಬಹಾದ್ದರಿ/Aj po:adj
@@ -95278,8 +95185,8 @@
 ಬಹಾದ್ದೂರಿ/Aj po:adj
 ಬಹಾದ್ದೂರಿ/Ne po:n
 ಬಹಾದ್ದೂರ್ po:adj
-ಬಹಾದ್ದೂರ್/Nl po:n
-ಬಹಾರ್/Nl po:n
+ಬಹಾದ್ದೂರ್ po:n
+ಬಹಾರ್ po:n
 ಬಹಿ/Ne po:n
 ಬಹಿಃಕರಣ/Na po:n
 ಬಹಿಃಕರಿಸು/Vb po:v
@@ -95438,7 +95345,7 @@
 ಬಾಂಬೊಚ್ಚ/Na po:n
 ಬಾಂಬೊಳೆ/Ne po:n
 ಬಾಂಬೋಳ/Na po:n
-ಬಾಂಬ್/Nl po:n
+ಬಾಂಬ್ po:n
 ಬಾಕ/Nm po:n
 ಬಾಕತನ/Na po:n
 ಬಾಕಿ/Aj po:adj
@@ -95497,7 +95404,7 @@
 ಬಾಗೆ/Ne po:n
 ಬಾಗೇಶ್ರೀ/Ne po:n
 ಬಾಗೇಶ್ವರಿ/Ne po:n
-ಬಾಗ್/Nl po:n
+ಬಾಗ್ po:n
 ಬಾಚಂಗೆ/Ne po:n
 ಬಾಚಣಿಗೆ/Ne po:n
 ಬಾಚಣಿಸು/Vb po:v
@@ -95714,7 +95621,7 @@
 ಬಾನುಲಿಕೇಂದ್ರ/Na po:n
 ಬಾನೆ/Ne po:n
 ಬಾನೆಡೆ/Ne po:n
-ಬಾನ್/Nl po:n
+ಬಾನ್ po:n
 ಬಾನ್ po:v
 ಬಾನ್ಕೆ/Ne po:n
 ಬಾನ್ನವಿರ/Na po:n
@@ -95828,7 +95735,7 @@
 ಬಾಯೆಣಿಕೆ/Ne po:n
 ಬಾಯೆತ್ತು/Vb po:v
 ಬಾಯೊದರು/Vb po:v
-ಬಾಯ್/Nl po:n
+ಬಾಯ್ po:n
 ಬಾಯ್ಕಟ್ಟು/Nu po:n
 ಬಾಯ್ಕಟ್ಟು/Vb po:v
 ಬಾಯ್ಕುಟುಕು/Nu po:n
@@ -95955,7 +95862,7 @@
 ಬಾರೆ/Ne po:n
 ಬಾರೆತ್ತು/Vb po:v
 ಬಾರೇಳು/Vb po:v
-ಬಾರ್/Nl po:n
+ಬಾರ್ po:n
 ಬಾರ್ po:v
 ಬಾರ್ಕಛೇರಿ/Ne po:n
 ಬಾರ್ಕೋಲು/Nu po:n
@@ -96117,7 +96024,7 @@
 ಬಾಳೆದಿಂಡು/Nu po:n
 ಬಾಳೆಮೀನು/Nu po:n
 ಬಾಳೆಲೆ/Ne po:n
-ಬಾಳ್/Nl po:n
+ಬಾಳ್ po:n
 ಬಾಳ್ po:v
 ಬಾಳ್ಕೆ/Ne po:n
 ಬಾಳ್ಗನಸು/Nu po:n
@@ -96170,7 +96077,7 @@
 ಬಾವರಿವುಗು/Vb po:v
 ಬಾವಲಿ/Ne po:n
 ಬಾವಲು/Nu po:n
-ಬಾವಲ್/Nl po:n
+ಬಾವಲ್ po:n
 ಬಾವಾ/Nv po:n
 ಬಾವಾಜಿ/Ne po:n
 ಬಾವಿ/Ne po:n
@@ -96890,7 +96797,7 @@
 ಬಿಲಹರಿ/Ne po:n
 ಬಿಲಾಕ/Na po:n
 ಬಿಲಾರ/Na po:n
-ಬಿಲಾವಲ್/Nl po:n
+ಬಿಲಾವಲ್ po:n
 ಬಿಲಿ/Ne po:n
 ಬಿಲಿಂಬಿ/Ne po:n
 ಬಿಲಿಗಿ/Ne po:n
@@ -96917,7 +96824,7 @@
 ಬಿಲೇಶ/Na po:n
 ಬಿಲೇಶಯ/Na po:n
 ಬಿಲೋರು/Nu po:n
-ಬಿಲ್/Nk po:n
+ಬಿಲ್ po:n
 ಬಿಲ್ po:v
 ಬಿಲ್ಕಡೆ/Ne po:n
 ಬಿಲ್ಕುನಿಕ/Na po:n
@@ -97360,7 +97267,7 @@
 ಬೀರಿಸು/Vb po:v
 ಬೀರು/Nv po:n
 ಬೀರು/Vb po:v
-ಬೀರ್/Nl po:n
+ಬೀರ್ po:n
 ಬೀರ್ po:v
 ಬೀಳಲು/Nu po:n
 ಬೀಳವೃತ್ತಿ/Ne po:n
@@ -97697,7 +97604,7 @@
 ಬುರ್ರೆ/Ne po:n
 ಬುಲಾಕು/Nu po:n
 ಬುಲೆಟ್ಟು/Nu po:n
-ಬುಲ್ಬುಲ್/Nl po:n
+ಬುಲ್ಬುಲ್ po:n
 ಬುಲ್ಬುಲ್ತರಂಗ/Na po:n
 ಬುಲ್ಲಣಿ/Ne po:n
 ಬುಲ್ಲಯಿಸು/Vb po:v
@@ -97882,7 +97789,7 @@
 ಬೆಂಗಾಣಿಸು/Vb po:v
 ಬೆಂಗಾಪು/Nu po:n
 ಬೆಂಗಾರಿಸು/Vb po:v
-ಬೆಂಗಾಲ್/Nl po:n
+ಬೆಂಗಾಲ್ po:n
 ಬೆಂಗಾಳು/Nu po:n
 ಬೆಂಗಾವಲು/Nu po:n
 ಬೆಂಗಾಹು/Nu po:n
@@ -98153,7 +98060,7 @@
 ಬೆನಕ/Nm po:n
 ಬೆನವ/Na po:n
 ಬೆನು/Nu po:n
-ಬೆನ್/Nk po:n
+ಬೆನ್ po:n
 ಬೆನ್ಗಲ್ಲಿ/Ne po:n
 ಬೆನ್ನಂಟು/Vb po:v
 ಬೆನ್ನಟ್ಟು/Vb po:v
@@ -98227,7 +98134,7 @@
 ಬೆಮರಿಳಿ/Vb po:v
 ಬೆಮರು/Nu po:n
 ಬೆಮರು/Vb po:v
-ಬೆಮರ್/Nl po:n
+ಬೆಮರ್ po:n
 ಬೆಮರ್ po:v
 ಬೆಮರ್ಚು/Vb po:v
 ಬೆಮರ್ಸಾಲೆ/Ne po:n
@@ -98273,7 +98180,7 @@
 ಬೆರಳುಕಾಪು/Nu po:n
 ಬೆರಳುಮುರಿ/Ne po:n
 ಬೆರಳೆತ್ತು/Vb po:v
-ಬೆರಳ್/Nl po:n
+ಬೆರಳ್ po:n
 ಬೆರಳ್ಮಿಡಿ/Vb po:v
 ಬೆರಳ್ಮಿಡಿಸು/Vb po:v
 ಬೆರಳ್ಮುರಿ/Vb po:v
@@ -98682,9 +98589,7 @@
 ಬೇಕಾಯ್ದೆಶೀರ/Aj po:adj
 ಬೇಕಾಯ್ದೆಶೀರ/Na po:n
 ಬೇಕಿ/Ne po:n
-ಬೇಕು/Nu po:n
 ಬೇಕು po:v
-ಬೇಕು/Px po:x
 ಬೇಕೂಪ/Na po:n
 ಬೇಕೂಫ/Na po:n
 ಬೇಕೊಂಡಿ/Ne po:n
@@ -98701,7 +98606,7 @@
 ಬೇಗನೆ/Px po:adv
 ಬೇಗಾರ/Nm po:n
 ಬೇಗಾರಿ/Ne po:n
-ಬೇಗಾರ್/Nl po:n
+ಬೇಗಾರ್ po:n
 ಬೇಗು/Vb po:v
 ಬೇಗುದಿ/Ne po:n
 ಬೇಗುದಿ/Vb po:v
@@ -98746,9 +98651,7 @@
 ಬೇಟೆನಾಯಿ/Ne po:n
 ಬೇಟೆಯಾಡು/Vb po:v
 ಬೇಟೆವೆಸ/Na po:n
-ಬೇಡ/NaNm po:n
 ಬೇಡ po:v
-ಬೇಡ/Px po:x
 ಬೇಡಕೊಟ್ಟ/Na po:n
 ಬೇಡಗೊಟ್ಟ/Na po:n
 ಬೇಡತಿ/Ne po:n
@@ -98829,7 +98732,7 @@
 ಬೇರೆ/Nf po:n
 ಬೇರೊಡೆ/Vb po:v
 ಬೇರ್ po:adj
-ಬೇರ್/Nl po:n
+ಬೇರ್ po:n
 ಬೇರ್ಕೆ/Ne po:n
 ಬೇರ್ಕೈ po:v
 ಬೇರ್ಗೊಲೆ/Ne po:n
@@ -98928,7 +98831,7 @@
 ಬೇಸಗೆಕಾಲ/Na po:n
 ಬೇಸಗೆಗಾಲ/Na po:n
 ಬೇಸಗೆರಜ/Na po:n
-ಬೇಸನ್/Nk po:n
+ಬೇಸನ್ po:n
 ಬೇಸರ/Na po:n
 ಬೇಸರಗೊಂಡ/Vp st:ಬೇಸರಗೊಳ್ಳು po:v
 ಬೇಸರಗೊಂಡಿತು st:ಬೇಸರಗೊಳ್ಳು po:v is:+past.3sn
@@ -98950,7 +98853,7 @@
 ಬೇಸಿಗೆಕಾಲ/Na po:n
 ಬೇಸಿಗೆರಜ/Na po:n
 ಬೇಸಿಗೆರಜೆ/Ne po:n
-ಬೇಸಿನ್/Nl po:n
+ಬೇಸಿನ್ po:n
 ಬೇಸಿಸ್ತು/Nu po:n
 ಬೇಸು/Vb po:v
 ಬೇಸುರ/Na po:n
@@ -98969,7 +98872,7 @@
 ಬೇಹರಿ/Ne po:n
 ಬೇಹರಿಸು/Vb po:v
 ಬೇಹಾಗು/Nu po:n
-ಬೇಹಾಗ್/Nl po:n
+ಬೇಹಾಗ್ po:n
 ಬೇಹಾರ/Na po:n
 ಬೇಹಾರಿ/Ne po:n
 ಬೇಹಾರಿಗ/Na po:n
@@ -99016,7 +98919,7 @@
 ಬೈಠಕಿ/Ne po:n
 ಬೈಠಕು/Nu po:n
 ಬೈಠಕುಖಾನೆ/Ne po:n
-ಬೈಠಕ್/Nk po:n
+ಬೈಠಕ್ po:n
 ಬೈಠಕ್ಕೋಣೆ/Ne po:n
 ಬೈಠಕ್ಖಾನೆ/Ne po:n
 ಬೈಠಕ್ಮುಷ್ಕರ/Na po:n
@@ -99038,7 +98941,7 @@
 ಬೈನಿ/Ne po:n
 ಬೈನೆ/Ne po:n
 ಬೈಪಣೆ/Ne po:n
-ಬೈಬಲ್/NlNk po:n
+ಬೈಬಲ್ po:n
 ಬೈಬಲ್ಲು/Nu po:n
 ಬೈಮಾತು/Nu po:n
 ಬೈಮೂಗ/Na po:n
@@ -99392,7 +99295,7 @@
 ಬೋಳರೆ/Ne po:n
 ಬೋಳವಿಸು/Vb po:v
 ಬೋಳಾಮಸ್ತಕಿ/Ne po:n
-ಬೋಳಾರ್/Nl po:n
+ಬೋಳಾರ್ po:n
 ಬೋಳಿ/Ne po:n
 ಬೋಳಿಸು/Vb po:v
 ಬೋಳು/Aj po:adj
@@ -99784,9 +99687,9 @@
 ಭಗವತ್ಪಾದಿ/Ne po:n
 ಭಗವದಿಚ್ಛೆ/Ne po:n
 ಭಗವದ್ಗೀತೆ/Ne po:n
-ಭಗವನ್/Nk po:n
+ಭಗವನ್ po:n
 ಭಗವಾ/Aj po:adj
-ಭಗವಾನ್/Nk po:n
+ಭಗವಾನ್ po:n
 ಭಗಾಂಕುರ/Na po:n
 ಭಗಿನಿ/Nf po:n
 ಭಗಿನಿಜ/Na po:n
@@ -101101,7 +101004,7 @@
 ಭೇರುಂಡ/Aj po:adj
 ಭೇರುಂಡ/Na po:n
 ಭೇರುಂಡವಕ್ಕಿ/Ne po:n
-ಭೇಲ್/Nl po:n
+ಭೇಲ್ po:n
 ಭೇಳ/Na po:n
 ಭೇಶ/Na po:n
 ಭೇಶಚೂಡ/Na po:n
@@ -101462,7 +101365,7 @@
 ಮಂಜಳ/Na po:n
 ಮಂಜಳಿಕೆ/Ne po:n
 ಮಂಜಳೆಣ್ಣೆ/Ne po:n
-ಮಂಜಳ್/Nl po:n
+ಮಂಜಳ್ po:n
 ಮಂಜಾಡಿ/Ne po:n
 ಮಂಜಾಣ/Na po:n
 ಮಂಜಾಳ/Na po:n
@@ -101522,7 +101425,7 @@
 ಮಂಜೂರಾತಿ/Ne po:n
 ಮಂಜೂರಿ/Ne po:n
 ಮಂಜೂರು/Nu po:n
-ಮಂಜೂರ್/Nl po:n
+ಮಂಜೂರ್ po:n
 ಮಂಜೂಷ/Na po:n
 ಮಂಜೂಷಿಕೆ/Ne po:n
 ಮಂಜೂಷೆ/Ne po:n
@@ -101898,8 +101801,8 @@
 ಮಕುಟಸ್ವರ/Na po:n
 ಮಕ್ಕಡ/Na po:n
 ಮಕ್ಕರಿ/Ne po:n
-ಮಕ್ಕಳು/Nu po:n
-ಮಕ್ಕಳ್/Nl po:n
+ಮಕ್ಕಳು/Np st:ಮಗು po:n is:+pl
+ಮಕ್ಕಳ್ po:n
 ಮಕ್ಕಾಮಕ್ಕಿ/Ne po:n
 ಮಕ್ಕಿ/Ne po:n
 ಮಕ್ಕಿಕಾಮಕ್ಕಿ/Ne po:n
@@ -101949,7 +101852,7 @@
 ಮಗರಿಗೆ/Ne po:n
 ಮಗರೂರಿ/Ne po:n
 ಮಗಳು/Nu po:n
-ಮಗಳ್/Nl po:n
+ಮಗಳ್ po:n
 ಮಗಳ್ಮಾ/Nv po:n
 ಮಗವು/Nu po:n
 ಮಗಿಮಾವು/Nu po:n
@@ -102362,7 +102265,7 @@
 ಮಣೆಬಾಬು/Nu po:n
 ಮಣೆಯ/Na po:n
 ಮಣೆಹಗಾರ/Na po:n
-ಮಣ್/Nk po:n
+ಮಣ್ po:n
 ಮಣ್ಗಪ್ಪರ/Na po:n
 ಮಣ್ಗೊಟ್ಟ/Vp st:ಮಣ್ಗೊಡು po:v
 ಮಣ್ಗೊಟ್ಟಿತು st:ಮಣ್ಗೊಡು po:v is:+past.3sn
@@ -102497,10 +102400,8 @@
 ಮತ್ತಾಲಂಬ/Na po:n
 ಮತ್ತಿ/Ne po:n
 ಮತ್ತಿಕ/Na po:n
-ಮತ್ತು/Px po:conj
-ಮತ್ತು/Nu po:n
+ಮತ್ತು po:conj
 ಮತ್ತೆ/Px po:adv
-ಮತ್ತೆ/Ne po:n
 ಮತ್ತೇಭವಿಕ್ರೀಡಿತ/Na po:n
 ಮತ್ತೊಂದು/Aj po:adj
 ಮತ್ತೊಂದು/Nd po:n
@@ -103103,7 +103004,7 @@
 ಮನಹೀನೆ/Ne po:n
 ಮನಹೇಡಿ/Ne po:n
 ಮನಾಯಿ/Ne po:n
-ಮನಾರ್/Nl po:n
+ಮನಾರ್ po:n
 ಮನಿಯಾರ್ಡರು/Nu po:n
 ಮನಿಲ್ಲಾಸೆಣಬು/Nu po:n
 ಮನೀಷಿ/Ne po:n
@@ -103944,7 +103845,7 @@
 ಮಲರು/Vb po:v
 ಮಲರೋಗ/Na po:n
 ಮಲರೋಗಿ/Ne po:n
-ಮಲರ್/Nl po:n
+ಮಲರ್ po:n
 ಮಲರ್ po:v
 ಮಲರ್ಚು/Vb po:v
 ಮಲರ್ವಿಲ್ಲು/Nu po:n
@@ -104016,7 +103917,7 @@
 ಮಲೆಹಾಕಟು/Nu po:n
 ಮಲೆಹೆಗ್ಗೆ/Ne po:n
 ಮಲೇರಿಯ/Na po:n
-ಮಲ್/Nk po:n
+ಮಲ್ po:n
 ಮಲ್ತೊ po:n
 ಮಲ್ನೀರು/Nu po:n
 ಮಲ್ಪೂಫ/Na po:n
@@ -104282,7 +104183,7 @@
 ಮಸ್ತಿ/Ne po:n
 ಮಸ್ತಿಷ್ಕ/Na po:n
 ಮಸ್ತು/Nu po:n
-ಮಸ್ಲಿನ್/Nk po:n
+ಮಸ್ಲಿನ್ po:n
 ಮಸ್ಸಿ/Ne po:n
 ಮಸ್ಸಿವಾಳ/Na po:n
 ಮಸ್ಸೀವಾರ/Na po:n
@@ -104334,7 +104235,7 @@
 ಮಹಲಕರಿ/Ne po:n
 ಮಹಲದಾರ/Na po:n
 ಮಹಲು/Nu po:n
-ಮಹಲ್/Nl po:n
+ಮಹಲ್ po:n
 ಮಹಳ/Na po:n
 ಮಹಳಪಕ್ಷ/Na po:n
 ಮಹವುರುಮೆ/Ne po:n
@@ -104903,8 +104804,6 @@
 ಮಾತೃಹತ್ಯೆ/Ne po:n
 ಮಾತೆ/Nf po:n
 ಮಾತ್ರ/Px po:adv
-ಮಾತ್ರ/Na po:n
-ಮಾತ್ರ/Px po:postp
 ಮಾತ್ರಾಂಗುಲ/Na po:n
 ಮಾತ್ರಾಕಾಲ/Na po:n
 ಮಾತ್ರಾಗಣ/Na po:n
@@ -105178,7 +105077,7 @@
 ಮಾಫಿರಹದಾರಿ/Ne po:n
 ಮಾಫೀ/Ne po:n
 ಮಾಫು/Nu po:n
-ಮಾಫ್/Nl po:n
+ಮಾಫ್ po:n
 ಮಾಮ/Nm po:n
 ಮಾಮಂಡಿ/Ne po:n
 ಮಾಮನಿ/Ne po:n
@@ -106007,7 +105906,7 @@
 ಮಿನಕೆ/Ne po:n
 ಮಿನಾರ/Na po:n
 ಮಿನಾರು/Nu po:n
-ಮಿನಾರ್/Nl po:n
+ಮಿನಾರ್ po:n
 ಮಿನಾಹಿ/Ne po:n
 ಮಿನಿಕೆ/Ne po:n
 ಮಿನಿಟು/Nu po:n
@@ -106026,11 +105925,11 @@
 ಮಿನುಪು/Nu po:n
 ಮಿನುಮಿನನೆ/Px po:adv
 ಮಿನುಮಿನು/Nu po:n
-ಮಿನ್ನಲ್/Nl po:n
+ಮಿನ್ನಲ್ po:n
 ಮಿನ್ನು/Nu po:n
 ಮಿನ್ನು/Vb po:v
 ಮಿನ್ನುವಡೆ/Vb po:v
-ಮಿಯಾವ್/Nl po:n
+ಮಿಯಾವ್ po:n
 ಮಿರಡಿ/Ne po:n
 ಮಿರಾಬು/Nu po:n
 ಮಿರಾಸದಾರ/Na po:n
@@ -106116,7 +106015,7 @@
 ಮಿಶ್ರಿತ/Na po:n
 ಮಿಶ್ರೇಯ/Na po:n
 ಮಿಷ/Na po:n
-ಮಿಷನ್/Nk po:n
+ಮಿಷನ್ po:n
 ಮಿಷನ್ನು/Nu po:n
 ಮಿಷ್ಟ/Aj po:adj
 ಮಿಷ್ಟ/Na po:n
@@ -106215,7 +106114,7 @@
 ಮೀನುಮರ/Na po:n
 ಮೀನುಮಾರಿ/Ne po:n
 ಮೀನೆಣ್ಣೆ/Ne po:n
-ಮೀನ್/Nl po:n
+ಮೀನ್ po:n
 ಮೀನ್ಚುಳ್ಳಿ/Ne po:n
 ಮೀನ್ಬುಲಿಗ/Na po:n
 ಮೀನ್ವಟ್ಟೆ/Ne po:n
@@ -106235,7 +106134,7 @@
 ಮೀರಿ/Ne po:n
 ಮೀರಿಸು/Vb po:v
 ಮೀರು/Vb po:v
-ಮೀರ್/Nl po:n
+ಮೀರ್ po:n
 ಮೀರ್ಸಾದಕ/Nm po:n
 ಮೀಲಕ/Na po:n
 ಮೀಲನ/Na po:n
@@ -106850,7 +106749,7 @@
 ಮುಖ್ಯಾರ್ಥ/Na po:n
 ಮುಖ್ಯೆ/Ne po:n
 ಮುಗದಾಣ/Na po:n
-ಮುಗಲ್/Nl po:n
+ಮುಗಲ್ po:n
 ಮುಗಳಕ್ಕಿ/Ne po:n
 ಮುಗಳಿ/Ne po:n
 ಮುಗಿ/Vb po:v
@@ -107202,10 +107101,10 @@
 ಮುದತ್ತು/Nu po:n
 ಮುದದಳೆ/Vb po:v
 ಮುದಲಿ/Ne po:n
-ಮುದಲಿಯಾರ್/Nl po:n
+ಮುದಲಿಯಾರ್ po:n
 ಮುದಲೆಕರು/Nu po:n
 ಮುದಲೆಗರು/Nu po:n
-ಮುದಲ್/Nl po:n
+ಮುದಲ್ po:n
 ಮುದವಡು/Vb po:v
 ಮುದವಡೆ/Vb po:v
 ಮುದವೂಡು/Vb po:v
@@ -107405,7 +107304,7 @@
 ಮುನುಷಿ/Ne po:n
 ಮುನ್ po:adj
 ಮುನ್ po:adv
-ಮುನ್/NlNk po:n
+ಮುನ್ po:n
 ಮುನ್ನ/Aj po:adj
 ಮುನ್ನ/Px po:adv
 ಮುನ್ನ/Na po:n
@@ -107449,7 +107348,7 @@
 ಮುನ್ನೋಟವಿಕ್ಕು/Vb po:v
 ಮುನ್ಷಿ/Ne po:n
 ಮುನ್ಸಿಪಾಲಿಟಿ/Ne po:n
-ಮುನ್ಸೀಫ್/Nl po:n
+ಮುನ್ಸೀಫ್ po:n
 ಮುನ್ಸೀಫ್ಕೋರ್ಟು/Nu po:n
 ಮುನ್ಸೂಚನೆ/Ne po:n
 ಮುನ್ಸೂಚಿಸು/Vb po:v
@@ -107484,7 +107383,7 @@
 ಮುಬಾದಲೆ/Ne po:n
 ಮುಬಾದಿಲೆ/Ne po:n
 ಮುಬಾರಕ್ po:adj
-ಮುಬಾರಕ್/Nl po:n
+ಮುಬಾರಕ್ po:n
 ಮುಮರಿದಂಡ/Na po:n
 ಮುಮುಕ್ಷು/Aj po:adj
 ಮುಮುಕ್ಷು/Nv po:n
@@ -107939,7 +107838,7 @@
 ಮುಷ್ಕರಕಾರ/Na po:n
 ಮುಷ್ಕಿ/Ne po:n
 ಮುಷ್ಕಿಲ್ po:adj
-ಮುಷ್ಕಿಲ್/Nl po:n
+ಮುಷ್ಕಿಲ್ po:n
 ಮುಷ್ಕೀಲು/Aj po:adj
 ಮುಷ್ಕೀಲು/Nu po:n
 ಮುಷ್ಟ/Aj po:adj
@@ -107985,7 +107884,7 @@
 ಮುಸಲುಮಾನ/Na po:n
 ಮುಸಲ್ಮಾನ/Nm po:n
 ಮುಸಲ್ಮಾನಿ/Ne po:n
-ಮುಸಲ್ಮಾನ್/Nl po:n
+ಮುಸಲ್ಮಾನ್ po:n
 ಮುಸಳ/Na po:n
 ಮುಸಳಿಕೆ/Ne po:n
 ಮುಸಾಂಬ್ರ/Na po:n
@@ -108094,7 +107993,7 @@
 ಮುಹಮ್ಮದೀಯ/Aj po:adj
 ಮುಹಮ್ಮದೀಯ/Na po:n
 ಮುಹರಿ/Ne po:n
-ಮುಹರ್ರಮ್/Nl po:n
+ಮುಹರ್ರಮ್ po:n
 ಮುಹುಃ po:adv
 ಮುಹುಡ/Na po:n
 ಮುಹುರಿ/Ne po:n
@@ -108212,7 +108111,7 @@
 ಮೂಡಣ/Na po:n
 ಮೂಡಲಿ/Ne po:n
 ಮೂಡಲು/Nu po:n
-ಮೂಡಲ್/Nl po:n
+ಮೂಡಲ್ po:n
 ಮೂಡವೆಟ್ಟ/Na po:n
 ಮೂಡವೆಟ್ಟು/Nu po:n
 ಮೂಡಾಯಿ/Ne po:n
@@ -108309,8 +108208,6 @@
 ಮೂರಿಡು/Vb po:v
 ಮೂರಿಯಿಡು/Vb po:v
 ಮೂರಿವಿಡು/Vb po:v
-ಮೂರು/Aj po:adj
-ಮೂರು/Nd po:n
 ಮೂರು/Nd po:num
 ಮೂರುಕ/Na po:n
 ಮೂರುಕಾಸು/Nu po:n
@@ -108393,8 +108290,6 @@
 ಮೂರ್ಮೆ/Ne po:n
 ಮೂಲ/Na po:n
 ಮೂಲಂಗಿ/Ne po:n
-ಮೂಲಕ/Px po:adv
-ಮೂಲಕ/Na po:n
 ಮೂಲಕ/Px po:postp
 ಮೂಲಕಂದ/Na po:n
 ಮೂಲಕೃತಿ/Ne po:n
@@ -108813,7 +108708,7 @@
 ಮೆದ್ದೆಸೊಪ್ಪು/Nu po:n
 ಮೆಯಿ/Ne po:n
 ಮೆಯಿಜೀವಿತ/Na po:n
-ಮೆಯ್/Nl po:n
+ಮೆಯ್ po:n
 ಮೆಯ್ po:v
 ಮೆಯ್ಕೆಡು/Vb po:v
 ಮೆಯ್ಕೊಳಿಸು/Vb po:v
@@ -108985,13 +108880,11 @@
 ಮೆಹರಬಾನಗಿ/Ne po:n
 ಮೆಹರ್ಬಾನಗಿ/Ne po:n
 ಮೆಹರ್ಬಾನು/Nu po:n
-ಮೆಹರ್ಬಾನ್/Nl po:n
+ಮೆಹರ್ಬಾನ್ po:n
 ಮೆಹೆತರಿ/Ne po:n
 ಮೆಹೆತ್ರಿ/Ne po:n
 ಮೆಹೆರಬಾನಗಿ/Ne po:n
-ಮೇ/Aj po:adj
 ಮೇ/Ne po:n
-ಮೇ/Px po:v
 ಮೇಂ po:adj
 ಮೇಂಗಣ್ಣು/Nu po:n
 ಮೇಂಗೈ/Ne po:n
@@ -109093,7 +108986,7 @@
 ಮೇಠಿ/Ne po:n
 ಮೇಡ/Na po:n
 ಮೇಡಂ po:n
-ಮೇಡಮ್/Nl po:n
+ಮೇಡಮ್ po:n
 ಮೇಡಮ್ಮು/Nu po:n
 ಮೇಡಿ/Ne po:n
 ಮೇಡು/Nu po:n
@@ -109164,7 +109057,7 @@
 ಮೇಯ/Aj po:adj
 ಮೇಯ/Na po:n
 ಮೇಯರು/Nu po:n
-ಮೇಯರ್/Nl po:n
+ಮೇಯರ್ po:n
 ಮೇಯಿಸು/Vb po:v
 ಮೇಯು/Vb po:v
 ಮೇರು/NuNv po:n
@@ -109297,8 +109190,6 @@
 ಮೇಲುಹೊದಕೆ/Ne po:n
 ಮೇಲುಹೊದಿಕೆ/Ne po:n
 ಮೇಲುಹೊಳೆ/Ne po:n
-ಮೇಲೆ/Px po:adv
-ಮೇಲೆ/Ne po:n
 ಮೇಲೆ/Px po:postp
 ಮೇಲೆತಂತು st:ಮೇಲೆತರು po:v is:+past.3sn
 ಮೇಲೆತಂದ/Vp st:ಮೇಲೆತರು po:v
@@ -109319,7 +109210,7 @@
 ಮೇಲೋಗರ/Na po:n
 ಮೇಲ್ po:adj
 ಮೇಲ್ po:adv
-ಮೇಲ್/Nl po:n
+ಮೇಲ್ po:n
 ಮೇಲ್ಕಟ್ಟು/Nu po:n
 ಮೇಲ್ಕಡೆ/Ne po:n
 ಮೇಲ್ಗಟ್ಟು/Nu po:n
@@ -109818,7 +109709,7 @@
 ಮೊಘಲ/Aj po:adj
 ಮೊಘಲ/Nm po:n
 ಮೊಘಲ್ po:adj
-ಮೊಘಲ್/Nl po:n
+ಮೊಘಲ್ po:n
 ಮೊಘೆ/Ne po:n
 ಮೊಚ್ಚಿಗ/Na po:n
 ಮೊಚ್ಚೆ/Ne po:n
@@ -109881,15 +109772,13 @@
 ಮೊದಲಚ್ಚು/Nu po:n
 ಮೊದಲನೆ/Aj po:adj
 ಮೊದಲನೆಯ st:ಮೊದಲ po:num
-ಮೊದಲನೆಯ/Aj po:adj
-ಮೊದಲನೆಯ/Na po:n
 ಮೊದಲನೇ/Aj po:adj
 ಮೊದಲಾರಿ/Ne po:n
 ಮೊದಲಿ/Ne po:n
 ಮೊದಲಿಕ್ಕು/Vb po:v
 ಮೊದಲಿಗ/Nm po:n
 ಮೊದಲಿಡು/Vb po:v
-ಮೊದಲಿಯಾರ್/Nl po:n
+ಮೊದಲಿಯಾರ್ po:n
 ಮೊದಲಿಸು/Vb po:v
 ಮೊದಲು/Px po:adv
 ಮೊದಲು/Nu po:n
@@ -109897,7 +109786,7 @@
 ಮೊದಲುಗೊಂಬು/Nu po:n
 ಮೊದಲೇರಿ/Ne po:n
 ಮೊದಲ್ po:adv
-ಮೊದಲ್/Nl po:n
+ಮೊದಲ್ po:n
 ಮೊದಲ್ಗಿಡು/Vb po:v
 ಮೊದಲ್ಗೆಡಿಸು/Vb po:v
 ಮೊದಲ್ಗೆಡು/Vb po:v
@@ -110102,7 +109991,7 @@
 ಮೊಸರೋಗರ/Na po:n
 ಮೊಸಳೆ/Ne po:n
 ಮೊಹತರ್ಫ/Na po:n
-ಮೊಹಬತ್/Nl po:n
+ಮೊಹಬತ್ po:n
 ಮೊಹಬತ್ತು/Nu po:n
 ಮೊಹರ/Nm po:n
 ಮೊಹರಂ po:n
@@ -110260,11 +110149,11 @@
 ಮೋರು/Vb po:v
 ಮೋರುಂಡೆ/Ne po:n
 ಮೋರೆ/Ne po:n
-ಮೋರ್/Nl po:n
+ಮೋರ್ po:n
 ಮೋರ್ಚೆ/Ne po:n
 ಮೋರ್ಚೆಕಟ್ಟು/Vb po:v
 ಮೋರ್ತಬ್ಬ/Na po:n
-ಮೋರ್ಸಿಂಗ್/Nl po:n
+ಮೋರ್ಸಿಂಗ್ po:n
 ಮೋಲು/Nu po:n
 ಮೋಳ/Na po:n
 ಮೋಳಬೆಕ್ಕು/Nu po:n
@@ -110850,7 +110739,6 @@
 ಯಾಯಾವರ/Na po:n
 ಯಾಯಿ/Aj po:adj
 ಯಾಯಿ/Ne po:n
-ಯಾರು/Px po:conj
 ಯಾರು/Np po:pron
 ಯಾಲಕ್ಕಿ/Ne po:n
 ಯಾಲಕ್ಕಿಬಾಳೆ/Ne po:n
@@ -110858,9 +110746,7 @@
 ಯಾಳ/Na po:n
 ಯಾಳಿ/Ne po:n
 ಯಾಳ್ಪಾಣ/Na po:n
-ಯಾವ/Aj po:adj
 ಯಾವ po:det
-ಯಾವ/Nm po:n
 ಯಾವಕ/Na po:n
 ಯಾವಕಕೃಚ್ಛ್ರ/Na po:n
 ಯಾವಕದ್ರವ/Na po:n
@@ -110879,14 +110765,10 @@
 ಯಾವಳು/Px po:conj
 ಯಾವಸ/Na po:n
 ಯಾವಾಕೆ/Px po:conj
-ಯಾವಾಗ/Px po:adv
-ಯಾವಾಗ/Px po:conj
+ಯಾವಾಗ po:adv
 ಯಾವಾಗಲು/Px po:adv
 ಯಾವಾಗಲೂ st:ಯಾವಾಗ po:adv is:+also
-ಯಾವಾಗಲೂ/Px po:adv
 ಯಾವಾತ/Px po:conj
-ಯಾವುದು/Aj po:adj
-ಯಾವುದು/Nd po:n
 ಯಾವುದು/Nd po:pron
 ಯಾಷ್ಟೀಕ/Na po:n
 ಯಾಸ/Na po:n
@@ -111192,7 +111074,7 @@
 ರಂಜನೆವಡೆ/Vb po:v
 ರಂಜಳಿಗೆ/Ne po:n
 ರಂಜಾನು/Nu po:n
-ರಂಜಾನ್/Nl po:n
+ರಂಜಾನ್ po:n
 ರಂಜಿ/Ne po:n
 ರಂಜಿಕೆ/Ne po:n
 ರಂಜಿತ/Aj po:adj
@@ -112010,7 +111892,7 @@
 ರಾಕುಟಿ/Ne po:n
 ರಾಕುಡಿ/Ne po:n
 ರಾಕೆ/Ne po:n
-ರಾಕೆಟ್/NlNk po:n
+ರಾಕೆಟ್ po:n
 ರಾಕೆಟ್ಟು/Nu po:n
 ರಾಕೇಂದು/Nu po:n
 ರಾಕ್ಷಸ/Aj po:adj
@@ -112491,7 +112373,7 @@
 ರಾಯಮಾನ/Na po:n
 ರಾಯರಿಸಿ/Ne po:n
 ರಾಯರೇಖೆ/Ne po:n
-ರಾಯಲ್/Nl po:n
+ರಾಯಲ್ po:n
 ರಾಯವಜೀರ/Na po:n
 ರಾಯವತ್ತಳೆ/Ne po:n
 ರಾಯವಾಡ/Na po:n
@@ -112522,7 +112404,7 @@
 ರಾವಣಶಾಖ/Na po:n
 ರಾವಣಹಸ್ತ/Na po:n
 ರಾವದಿ/Ne po:n
-ರಾವಲ್/Nl po:n
+ರಾವಲ್ po:n
 ರಾವಳಿಸು/Vb po:v
 ರಾವಸಾಹೇಬ/Na po:n
 ರಾವಿ/Ne po:n
@@ -112548,7 +112430,7 @@
 ರಾವುಳ/Na po:n
 ರಾವುಹಿಡಿ/Vb po:v
 ರಾವುಹೊಡೆ/Vb po:v
-ರಾವ್/Nl po:n
+ರಾವ್ po:n
 ರಾವ್ತ/Na po:n
 ರಾಶಿ/Ne po:n
 ರಾಶಿಕುಂಡಲಿ/Ne po:n
@@ -113176,7 +113058,7 @@
 ರೊಣೆ/Ne po:n
 ರೊಪ್ಪ/Na po:n
 ರೊಯಿಲಿ/Ne po:n
-ರೊಯ್/Nl po:n
+ರೊಯ್ po:n
 ರೊಯ್ಯನೆ/Px po:adv
 ರೊಳ್ಳಿ/Ne po:n
 ರೊಷ್ಟು/Nu po:n
@@ -113275,7 +113157,7 @@
 ರೋಪಿತ/Aj po:adj
 ರೋಪು/Nu po:n
 ರೋಫು/Nu po:n
-ರೋಫ್/Nl po:n
+ರೋಫ್ po:n
 ರೋಮ/Na po:n
 ರೋಮಂಥ/Na po:n
 ರೋಮಂಥಿಸು/Vb po:v
@@ -113544,8 +113426,6 @@
 ಲಕ್ಖ/Aj po:adj
 ಲಕ್ಖ/Na po:n
 ಲಕ್ವ/Na po:n
-ಲಕ್ಷ/Aj po:adj
-ಲಕ್ಷ/Na po:n
 ಲಕ್ಷ/Na po:num
 ಲಕ್ಷಕ/Aj po:adj
 ಲಕ್ಷಕ/Nm po:n
@@ -113854,7 +113734,7 @@
 ಲಪ್ಪೋಟ್ಟೆ/Ne po:n
 ಲಫಂಗ/Na po:n
 ಲಫಂಗಗಿರಿ/Ne po:n
-ಲಬಕ್/Nl po:n
+ಲಬಕ್ po:n
 ಲಬಲಬ/Na po:n
 ಲಬಲಬನೆ/Px po:adv
 ಲಬಲಬಿಸು/Vb po:v
@@ -114007,7 +113887,7 @@
 ಲಷ್ಕರು/Aj po:adj
 ಲಷ್ಕರು/Nu po:n
 ಲಷ್ಕರ್ po:adj
-ಲಷ್ಕರ್/Nl po:n
+ಲಷ್ಕರ್ po:n
 ಲಸಕಿರಿ/Aj po:adj
 ಲಸಕಿರಿ/Ne po:n
 ಲಸಿಕೆ/Ne po:n
@@ -114180,9 +114060,9 @@
 ಲಾಲಿಸು/Vb po:v
 ಲಾಲಿಹಾಡು/Nu po:n
 ಲಾಲೆ/Ne po:n
-ಲಾಲ್/Nl po:n
+ಲಾಲ್ po:n
 ಲಾಲ್ತಿಗಡೆ/Ne po:n
-ಲಾಲ್ಬಾಗ್/Nl po:n
+ಲಾಲ್ಬಾಗ್ po:n
 ಲಾಲ್ಯ/Na po:n
 ಲಾಳ/Na po:n
 ಲಾಳಕ/Na po:n
@@ -114359,7 +114239,7 @@
 ಲಿವಿ/Ne po:n
 ಲಿವಿಸಾಧನೆ/Ne po:n
 ಲಿಸುಗುಟ್ಟು/Vb po:v
-ಲಿಸ್/Nl po:n
+ಲಿಸ್ po:n
 ಲಿಸ್ಟು/Nu po:n
 ಲೀಟರು/Nu po:n
 ಲೀಢ/Aj po:adj
@@ -116039,7 +115919,7 @@
 ವಸೂಲಿ/Ne po:n
 ವಸೂಲು/Nu po:n
 ವಸೂಲುಬಾಕಿ/Ne po:n
-ವಸೂಲ್/Nl po:n
+ವಸೂಲ್ po:n
 ವಸೂಲ್ಬಾಕಿ/Ne po:n
 ವಸೂಲ್ಲು/Nu po:n
 ವಸೂವಣಿ/Ne po:n
@@ -116844,7 +116724,7 @@
 ವಾಲುಕ್ಯ/Na po:n
 ವಾಲುರ್ಸಿ/Ne po:n
 ವಾಲೆ/Ne po:n
-ವಾಲ್/Nl po:n
+ವಾಲ್ po:n
 ವಾಲ್ಮೀಕಿ/Ne po:n
 ವಾಳ/Na po:n
 ವಾಳಕ/Na po:n
@@ -117005,7 +116885,6 @@
 ವಾಹ್ಯಾಳಿ/Ne po:n
 ವಾಹ್ಯಾಳಿಸು/Vb po:v
 ವಿ po:abbr
-ವಿ po:n
 ವಿಂಖ/Na po:n
 ವಿಂಗಡ/Nm po:n
 ವಿಂಗಡಣೆ/Ne po:n
@@ -117448,7 +117327,7 @@
 ವಿಟಾಸಿ/Ne po:n
 ವಿಟಿ/Ne po:n
 ವಿಟೆ/Ne po:n
-ವಿಟ್/Nk po:n
+ವಿಟ್ po:n
 ವಿಟ್ಖದಿರ/Na po:n
 ವಿಟ್ಚರ/Na po:n
 ವಿಟ್ಟರ/Na po:n
@@ -117776,7 +117655,7 @@
 ವಿದ್ವದ್ಗೋಷ್ಠಿ/Ne po:n
 ವಿದ್ವಾಂಸ/Nm po:n
 ವಿದ್ವಾನು/Nd po:n
-ವಿದ್ವಾನ್/Nl po:n
+ವಿದ್ವಾನ್ po:n
 ವಿದ್ವಾನ್ನು/Nu po:n
 ವಿದ್ವಿಷ/Aj po:adj
 ವಿದ್ವಿಷ/Na po:n
@@ -118451,8 +118330,6 @@
 ವಿರುದ್ದಾರ್ಥ/Na po:n
 ವಿರುದ್ದಾರ್ಥಕ/Aj po:adj
 ವಿರುದ್ದಾರ್ಥಕ/Na po:n
-ವಿರುದ್ಧ/Aj po:adj
-ವಿರುದ್ಧ/Na po:n
 ವಿರುದ್ಧ/Px po:postp
 ವಿರುದ್ಧಮತಿಕೃತ್ತು/Nu po:n
 ವಿರುದ್ಧರೂಪಕ/Na po:n
@@ -118619,7 +118496,7 @@
 ವಿಲೋಲುಪ/Na po:n
 ವಿಲೋಲುಪತೆ/Ne po:n
 ವಿಲೋಹಿತ/Na po:n
-ವಿಲ್/Nk po:n
+ವಿಲ್ po:n
 ವಿಲ್ಲು/Nu po:n
 ವಿಳಂಗ/Na po:n
 ವಿಳಂಬ/Na po:n
@@ -120018,7 +119895,7 @@
 ವೇರಡಗಿತ್ತಿ/Ne po:n
 ವೇರಡಿಗ/Na po:n
 ವೇರಡಿಗಿತಿ/Ne po:n
-ವೇರ್/Nl po:n
+ವೇರ್ po:n
 ವೇಲಾಯೋಗ/Na po:n
 ವೇಲಾವನ/Na po:n
 ವೇಲಿ/Ne po:n
@@ -121226,7 +121103,7 @@
 ಶರಣುವೊಗು/Vb po:v
 ಶರಣುಹೊಗು/Vb po:v
 ಶರಣೆ/Nf po:n
-ಶರಣ್/Nl po:n
+ಶರಣ್ po:n
 ಶರಣ್ಬುಗು/Vb po:v
 ಶರಣ್ಬೊಗು/Vb po:v
 ಶರಣ್ಯ/Aj po:adj
@@ -121250,7 +121127,7 @@
 ಶರಪರಿಣತಿ/Ne po:n
 ಶರಪುಂಖಿ/Ne po:n
 ಶರಪುಂಖೆ/Ne po:n
-ಶರಬತ್/Nk po:n
+ಶರಬತ್ po:n
 ಶರಬತ್ತು/Nu po:n
 ಶರಭ/NaNm po:n
 ಶರಭಂಗ/Nm po:n
@@ -121470,7 +121347,7 @@
 ಶಹಣ್ಯಾ/Nv po:n
 ಶಹನ/Na po:n
 ಶಹನಾಯಿ/Ne po:n
-ಶಹನಾಯ್/Nl po:n
+ಶಹನಾಯ್ po:n
 ಶಹಬಾಸು/Px po:intj
 ಶಹಬಾಸುಗಿರಿ/Ne po:n
 ಶಹಭಾಸ್ಗಿರಿ/Ne po:n
@@ -121868,7 +121745,7 @@
 ಶಾಹೀದುಡ್ಡು/Nu po:n
 ಶಾಹೀರ/Na po:n
 ಶಾಹೀರಗಾನ/Na po:n
-ಶಾಹೀರ್/Nl po:n
+ಶಾಹೀರ್ po:n
 ಶಾಹೀರ್ಗಾಣ/Na po:n
 ಶಾಹೀರ್ಗೀತ/Na po:n
 ಶಾಹೂದುಡ್ಡು/Nu po:n
@@ -122028,7 +121905,7 @@
 ಶಿಪಿವಿಷ್ಟ/Na po:n
 ಶಿಪ್ರ/Na po:n
 ಶಿಫಾರಸು/Nu po:n
-ಶಿಫಾರಸ್/Nl po:n
+ಶಿಫಾರಸ್ po:n
 ಶಿಫಾರಸ್ಸು/Nu po:n
 ಶಿಫಾರ್ಸು/Nu po:n
 ಶಿಫೆ/Ne po:n
@@ -123189,7 +123066,7 @@
 ಶ್ರೀಮತು/Nu po:n
 ಶ್ರೀಮದ್ಗಾಂಭೀರ್ಯ/Na po:n
 ಶ್ರೀಮಾನಿನಿ/Ne po:n
-ಶ್ರೀಮಾನ್/Nl po:n
+ಶ್ರೀಮಾನ್ po:n
 ಶ್ರೀಮುಖ/Na po:n
 ಶ್ರೀಮುದ್ರೆ/Ne po:n
 ಶ್ರೀಮುದ್ರೆಗಿಡ/Na po:n
@@ -123596,7 +123473,7 @@
 ಷೇಕ್ದಾರ/Na po:n
 ಷೇಕ್ದಾರಿ/Ne po:n
 ಷೇಕ್ದಾರಿಕೆ/Ne po:n
-ಷೇಖ್/Nl po:n
+ಷೇಖ್ po:n
 ಷೇರು/Nu po:n
 ಷೇರುದಾರ/Nm po:n
 ಷೋಕಿ/Ne po:n
@@ -124309,7 +124186,7 @@
 ಸಂದರ್ಷಾ/Nv po:n
 ಸಂದಲಿ/Ne po:n
 ಸಂದಲಿಸು/Vb po:v
-ಸಂದಲ್/Nl po:n
+ಸಂದಲ್ po:n
 ಸಂದಲ್ಇಲಾಖೆ/Ne po:n
 ಸಂದಲ್ಕಛೇರಿ/Ne po:n
 ಸಂದಳಿ/Ne po:n
@@ -125246,7 +125123,7 @@
 ಸಕ್ಷಮತೆ/Ne po:n
 ಸಕ್ಷಿ/Ne po:n
 ಸಖ/Na po:n
-ಸಖತ್/Nl po:n
+ಸಖತ್ po:n
 ಸಖತ್ತು/Nu po:n
 ಸಖರೆ/Ne po:n
 ಸಖಾಯ/Na po:n
@@ -125834,7 +125711,7 @@
 ಸದರಿ/Ne po:n
 ಸದರು/Nu po:n
 ಸದರುಕಟ್ಟೆ/Ne po:n
-ಸದರ್/Nl po:n
+ಸದರ್ po:n
 ಸದರ್ಥ/Na po:n
 ಸದರ್ಥವಾದಿತ್ವ/Na po:n
 ಸದಳ/Na po:n
@@ -126056,7 +125933,7 @@
 ಸನೆ/Ne po:n
 ಸನೆಗಾರ/Na po:n
 ಸನೆಯ/Na po:n
-ಸನ್/Nk po:n
+ಸನ್ po:n
 ಸನ್ನ/Aj po:adj
 ಸನ್ನ/Nm po:n
 ಸನ್ನಡತೆ/Ne po:n
@@ -127133,7 +127010,7 @@
 ಸರಕುದೆಗೆ/Vb po:v
 ಸರಕೂಟ/Na po:n
 ಸರಕೂಟವಕ್ಕಿ/Ne po:n
-ಸರಕ್/Nl po:n
+ಸರಕ್ po:n
 ಸರಕ್ಕನೆ/Px po:adv
 ಸರಕ್ತ/Aj po:adj
 ಸರಕ್ಷ/Aj po:adj
@@ -127175,7 +127052,7 @@
 ಸರಣುಹೋದ/Vp st:ಸರಣುಹೋಗು po:v
 ಸರಣುಹೋಯಿತು st:ಸರಣುಹೋಗು po:v is:+past.3sn
 ಸರಣೆ/Ne po:n
-ಸರಣ್/Nl po:n
+ಸರಣ್ po:n
 ಸರಣ್ಬುಗು/Vb po:v
 ಸರಣ್ಬೊಗು/Vb po:v
 ಸರತಪ್ಪು/Vb po:v
@@ -127472,7 +127349,7 @@
 ಸರೋಜಾತ/Na po:n
 ಸರೋಜಾಸನ/Na po:n
 ಸರೋಜಿನಿ/Ne po:n
-ಸರೋದ್/Nl po:n
+ಸರೋದ್ po:n
 ಸರೋಧಿ/Ne po:n
 ಸರೋನಿಧಿ/Ne po:n
 ಸರೋಭವ/Na po:n
@@ -127484,7 +127361,7 @@
 ಸರೋಷ/Aj po:adj
 ಸರೋಷ/Na po:n
 ಸರೋಷಮತಿ/Ne po:n
-ಸರ್/NlNk po:n
+ಸರ್ po:n
 ಸರ್ಕರೆ/Ne po:n
 ಸರ್ಕಸ್ಸು/Nu po:n
 ಸರ್ಕಾರ/Na po:n
@@ -127506,7 +127383,7 @@
 ಸರ್ತಿ/Ne po:n
 ಸರ್ತು/Nu po:n
 ಸರ್ದಾರ/Nm po:n
-ಸರ್ದಾರ್/Nl po:n
+ಸರ್ದಾರ್ po:n
 ಸರ್ದಿ/Aj po:adj
 ಸರ್ದಿ/Ne po:n
 ಸರ್ದೇಶಪಾಂಡೆ/Ne po:n
@@ -127718,7 +127595,7 @@
 ಸಲಾಮಿ/Ne po:n
 ಸಲಾಮು/Nu po:n
 ಸಲಾಮುಫಿರಂಗಿ/Ne po:n
-ಸಲಾಮ್/Nl po:n
+ಸಲಾಮ್ po:n
 ಸಲಾಯಿಸು/Vb po:v
 ಸಲಾಹ/Na po:n
 ಸಲಿಂಗ/Aj po:adj
@@ -127884,7 +127761,7 @@
 ಸವನೋತ್ಸವ/Na po:n
 ಸವಬೆಸ/Na po:n
 ಸವರಣೆ/Ne po:n
-ಸವರನ್/Nk po:n
+ಸವರನ್ po:n
 ಸವರನ್ನು/Nu po:n
 ಸವರಿಸು/Vb po:v
 ಸವರು/Nu po:n
@@ -127933,7 +127810,7 @@
 ಸವಾಲುದಾರ/Nm po:n
 ಸವಾಲುಪದ/Na po:n
 ಸವಾಲುಲಾವಣಿ/Ne po:n
-ಸವಾಲ್/Nl po:n
+ಸವಾಲ್ po:n
 ಸವಾಲ್ಲಾವಣಿ/Ne po:n
 ಸವಾಸೇರು/Nu po:n
 ಸವಿ/Ne po:n
@@ -128118,8 +127995,6 @@
 ಸಸ್ಲೆ/Ne po:n
 ಸಸ್ವ/Na po:n
 ಸಹ/Px po:adv
-ಸಹ/Nm po:n
-ಸಹ/Px po:postp
 ಸಹಂಪತಿ/Ne po:n
 ಸಹಕರಿಸು/Vb po:v
 ಸಹಕಾರ/Na po:n
@@ -128346,7 +128221,7 @@
 ಸಾಂಬಾರ/Na po:n
 ಸಾಂಬಾರಜಿನಸು/Nu po:n
 ಸಾಂಬಾರು/Nu po:n
-ಸಾಂಬಾರ್/Nl po:n
+ಸಾಂಬಾರ್ po:n
 ಸಾಂಬಾಳ/Na po:n
 ಸಾಂಬು/Aj po:adj
 ಸಾಂಬು/Nd po:n
@@ -128478,7 +128353,7 @@
 ಸಾಟಿ/Ne po:n
 ಸಾಟಿಗಾಣು/Vb po:v
 ಸಾಟಿಗೈ po:v
-ಸಾಟಿನ್/Nl po:n
+ಸಾಟಿನ್ po:n
 ಸಾಟಿನ್ನು/Nu po:n
 ಸಾಟಿವ್ಯಾಪಾರ/Na po:n
 ಸಾಟಿಸು/Vb po:v
@@ -128693,7 +128568,7 @@
 ಸಾಫು/Nu po:n
 ಸಾಫ್ po:adj
 ಸಾಫ್ po:adv
-ಸಾಫ್/Nl po:n
+ಸಾಫ್ po:n
 ಸಾಫ್ಸೀದಾ/Px po:adv
 ಸಾಬ/Nm po:n
 ಸಾಬಕು/Aj po:adj
@@ -128713,7 +128588,7 @@
 ಸಾಬೂತು/Nu po:n
 ಸಾಬೂದಾಣೆ/Ne po:n
 ಸಾಬೂನು/Nu po:n
-ಸಾಬ್/Nl po:n
+ಸಾಬ್ po:n
 ಸಾಭಿಜ್ಞಾನ/Aj po:adj
 ಸಾಭಿಜ್ಞಾನ/Na po:n
 ಸಾಭಿಪ್ರಾಯ/Aj po:adj
@@ -128826,7 +128701,7 @@
 ಸಾಯರಯಿಲಾಖೆ/Ne po:n
 ಸಾಯರು/Nu po:n
 ಸಾಯರುಬಾಬು/Nu po:n
-ಸಾಯರ್/Nl po:n
+ಸಾಯರ್ po:n
 ಸಾಯಸ/Na po:n
 ಸಾಯಸಗೊಂಡ/Vp st:ಸಾಯಸಗೊಳ್ಳು po:v
 ಸಾಯಸಗೊಂಡಿತು st:ಸಾಯಸಗೊಳ್ಳು po:v is:+past.3sn
@@ -128971,7 +128846,7 @@
 ಸಾರೋಕ್ತಿ/Ne po:n
 ಸಾರೋಟು/Nu po:n
 ಸಾರೋದ್ಧಾರ/Na po:n
-ಸಾರ್/Nl po:n
+ಸಾರ್ po:n
 ಸಾರ್ po:v
 ಸಾರ್ಕೆ/Ne po:n
 ಸಾರ್ಕೆಗುಡು/Vb po:v
@@ -129095,7 +128970,7 @@
 ಸಾಲೆಹುಳು/Nu po:n
 ಸಾಲೋಕ್ಯ/Na po:n
 ಸಾಲೋಕ್ಯಪದ/Na po:n
-ಸಾಲ್/Nl po:n
+ಸಾಲ್ po:n
 ಸಾಲ್ po:v
 ಸಾಲ್ಕುಳಿ/Ne po:n
 ಸಾಲ್ಗಟ್ಟು/Vb po:v
@@ -129159,8 +129034,6 @@
 ಸಾವಿತ್ರಿ/Ne po:n
 ಸಾವಿತ್ರೀವ್ರತ/Na po:n
 ಸಾವಿತ್ರೀಸೂತ್ರ/Na po:n
-ಸಾವಿರ/Aj po:adj
-ಸಾವಿರ/Na po:n
 ಸಾವಿರ/Na po:num
 ಸಾವಿರಸಂಬಾರ/Na po:n
 ಸಾವು/Nu po:n
@@ -129270,7 +129143,7 @@
 ಸಾಹೇಬ/Nm po:n
 ಸಾಹೇಬಕಿ/Ne po:n
 ಸಾಹೇಬಗಿರಿ/Ne po:n
-ಸಾಹೇಬ್/Nl po:n
+ಸಾಹೇಬ್ po:n
 ಸಾಹ್ಯ/Na po:n
 ಸಾಹ್ಯಕ/Na po:n
 ಸಿ po:abbr
@@ -129495,7 +129368,7 @@
 ಸಿಕಿನಿ/Ne po:n
 ಸಿಕಿನಿವಳೆಯ/Na po:n
 ಸಿಕೆ/Ne po:n
-ಸಿಕ್/Nk po:n
+ಸಿಕ್ po:n
 ಸಿಕ್ಕ/NaNm po:n
 ಸಿಕ್ಕ/Vp st:ಸಿಗು po:v
 ಸಿಕ್ಕಟಿಗೆ/Ne po:n
@@ -129534,7 +129407,7 @@
 ಸಿಖರಿ/Ne po:n
 ಸಿಖಾರ/Na po:n
 ಸಿಖಿಮಂಥಣಿ/Ne po:n
-ಸಿಖ್/Nl po:n
+ಸಿಖ್ po:n
 ಸಿಗಡಿ/Ne po:n
 ಸಿಗರೆಬದನಿಕೆ/Ne po:n
 ಸಿಗರೇಟು/Nu po:n
@@ -129666,7 +129539,7 @@
 ಸಿತಾಂಗಿ/Ne po:n
 ಸಿತಾರ/Na po:n
 ಸಿತಾರು/Nu po:n
-ಸಿತಾರ್/Nl po:n
+ಸಿತಾರ್ po:n
 ಸಿತಾಳ/Aj po:adj
 ಸಿತಾಳ/Na po:n
 ಸಿತಿ/Ne po:n
@@ -129959,7 +129832,7 @@
 ಸಿವಾಲ್ಯ/Na po:n
 ಸಿವಿಕೆ/Ne po:n
 ಸಿವಿಗೆ/Ne po:n
-ಸಿವಿಲ್/Nl po:n
+ಸಿವಿಲ್ po:n
 ಸಿವಿಲ್ವಿವಾಹ/Na po:n
 ಸಿವುಂಡಿ/Ne po:n
 ಸಿವುಡಿ/Ne po:n
@@ -129978,7 +129851,7 @@
 ಸಿಸವೆ/Ne po:n
 ಸಿಸಿರ/Na po:n
 ಸಿಸಿಲು/Nu po:n
-ಸಿಸಿಲ್/Nl po:n
+ಸಿಸಿಲ್ po:n
 ಸಿಸು/Nu po:n
 ಸಿಸುತನ/Na po:n
 ಸಿಸುಮಗ/Na po:n
@@ -130100,7 +129973,7 @@
 ಸೀನೀರು/Nu po:n
 ಸೀನು/Nu po:n
 ಸೀನು/Vb po:v
-ಸೀನ್/Nl po:n
+ಸೀನ್ po:n
 ಸೀನ್ po:v
 ಸೀನ್ಕೆ/Ne po:n
 ಸೀಪಲೆ/Ne po:n
@@ -130230,7 +130103,7 @@
 ಸೀರೆಉಡುಕೆ/Ne po:n
 ಸೀರೆರೋಗ/Na po:n
 ಸೀರ್ po:adj
-ಸೀರ್/Nl po:n
+ಸೀರ್ po:n
 ಸೀರ್ಣ/Aj po:adj
 ಸೀರ್ಣಿ/Ne po:n
 ಸೀರ್ಪಡಿಸು/Vb po:v
@@ -130916,7 +130789,7 @@
 ಸುಬೇದಾರಿ/Ne po:n
 ಸುಬೇದಾರಿಕೆ/Ne po:n
 ಸುಬೇದಾರು/Nd po:n
-ಸುಬೇದಾರ್/Nl po:n
+ಸುಬೇದಾರ್ po:n
 ಸುಬೋಧ/Na po:n
 ಸುಬ್ಬನಸೂರೆ/Ne po:n
 ಸುಬ್ಬಲು/Nu po:n
@@ -130981,9 +130854,7 @@
 ಸುಮಾನುಕೊಡು/Vr po:v
 ಸುಮಾರ/Aj po:adj
 ಸುಮಾರ/Nm po:n
-ಸುಮಾರು/Aj po:adj
 ಸುಮಾರು/Px po:adv
-ಸುಮಾರು/Nu po:n
 ಸುಮಾರ್ಗ/Na po:n
 ಸುಮಾಲತಿ/Ne po:n
 ಸುಮಿತ್ರ/Nm po:n
@@ -131018,7 +130889,7 @@
 ಸುಯಿಲ್ಗರೆ/Vb po:v
 ಸುಯೋಗ/Na po:n
 ಸುಯೋಧನ/Nm po:n
-ಸುಯ್/Nl po:n
+ಸುಯ್ po:n
 ಸುಯ್ po:v
 ಸುಯ್ಗರೆ/Ne po:n
 ಸುಯ್ಗರೆ/Vb po:v
@@ -131263,7 +131134,7 @@
 ಸುಲ್ತಾನಿತೋಟ/Na po:n
 ಸುಲ್ತಾನೀ/Aj po:adj
 ಸುಲ್ತಾನೀ/Ne po:n
-ಸುಲ್ತಾನ್/Nl po:n
+ಸುಲ್ತಾನ್ po:n
 ಸುಲ್ಬ/Na po:n
 ಸುಲ್ವ/Na po:n
 ಸುಲ್ವು/Nu po:n
@@ -131687,7 +131558,7 @@
 ಸೂರೆಹೋಗು/Vr po:v
 ಸೂರೆಹೋದ/Vp st:ಸೂರೆಹೋಗು po:v
 ಸೂರೆಹೋಯಿತು st:ಸೂರೆಹೋಗು po:v is:+past.3sn
-ಸೂರ್/Nl po:n
+ಸೂರ್ po:n
 ಸೂರ್ಚು/Vb po:v
 ಸೂರ್ತಿಖಾರ/Na po:n
 ಸೂರ್ತಿಭಾರ/Na po:n
@@ -131749,7 +131620,7 @@
 ಸೂಲಿಸು/Vb po:v
 ಸೂಲು/Nu po:n
 ಸೂಲೆ/Ne po:n
-ಸೂಲ್/Nl po:n
+ಸೂಲ್ po:n
 ಸೂಲ್ಮುಲುಕು/Nu po:n
 ಸೂಲ್ಲಿ/Ne po:n
 ಸೂಳ/Na po:n
@@ -132588,7 +132459,7 @@
 ಸೊಲಗೆ/Ne po:n
 ಸೊಲಪು/Nu po:n
 ಸೊಲಿಗೆ/Ne po:n
-ಸೊಲ್/NlNk po:n
+ಸೊಲ್ po:n
 ಸೊಲ್ po:v
 ಸೊಲ್ಲ/Nm po:n
 ಸೊಲ್ಲಗೆ/Ne po:n
@@ -132884,7 +132755,7 @@
 ಸೋರೆಬುರುಡೆಮರ/Na po:n
 ಸೋರೆಮೊಗ/Na po:n
 ಸೋರೋಡು/Nu po:n
-ಸೋರ್/Nl po:n
+ಸೋರ್ po:n
 ಸೋರ್ಗುರುಳು/Nu po:n
 ಸೋರ್ಚು/Vb po:v
 ಸೋರ್ಮುಡಿ/Ne po:n
@@ -133817,9 +133688,7 @@
 ಸ್ವರ್ಭಾನು/Nv po:n
 ಸ್ವರ್ಮಣಿ/Ne po:n
 ಸ್ವರ್ಲೋಕ/Na po:n
-ಸ್ವಲ್ಪ/Aj po:adj
 ಸ್ವಲ್ಪ/Px po:adv
-ಸ್ವಲ್ಪ/Na po:n
 ಸ್ವಲ್ಪಷ್ಟು/Px po:adv
 ಸ್ವಲ್ಪು/Aj po:adj
 ಸ್ವಲ್ಪು/Px po:adv
@@ -134158,7 +134027,7 @@
 ಹಕಾರ/Na po:n
 ಹಕಾರಿಹೊಡೆ/Vb po:v
 ಹಕೀಕತು/Nu po:n
-ಹಕೀಕತ್/Nl po:n
+ಹಕೀಕತ್ po:n
 ಹಕೀಕತ್ತು/Nu po:n
 ಹಕೀಮ/Nm po:n
 ಹಕ್ಕರಕಿ/Ne po:n
@@ -134305,7 +134174,7 @@
 ಹಚ್ಚೆಲ/Na po:n
 ಹಚ್ಚೊತ್ತಿ/Ne po:n
 ಹಜರತು/Nd po:n
-ಹಜರತ್/Nl po:n
+ಹಜರತ್ po:n
 ಹಜರತ್ತ/Na po:n
 ಹಜಾಮ/Nm po:n
 ಹಜಾಮಗಿರಿ/Ne po:n
@@ -134575,9 +134444,6 @@
 ಹತ್ತಿಗ/Na po:n
 ಹತ್ತಿಗೆ/Ne po:n
 ಹತ್ತಿಡು/Vb po:v
-ಹತ್ತಿರ/Aj po:adj
-ಹತ್ತಿರ/Px po:adv
-ಹತ್ತಿರ/Na po:n
 ಹತ್ತಿರ/Px po:postp
 ಹತ್ತಿರು/Aj po:adj
 ಹತ್ತಿರು/Nd po:n
@@ -134589,10 +134455,7 @@
 ಹತ್ತಿಸು/Vb po:v
 ಹತ್ತಿಹರಳು/Nu po:n
 ಹತ್ತಿಹುಲ್ಲು/Nu po:n
-ಹತ್ತು/Aj po:adj
-ಹತ್ತು/Nd po:n
 ಹತ್ತು/Nd po:num
-ಹತ್ತು/Vb po:v
 ಹತ್ತುಕಡಕು/Nu po:n
 ಹತ್ತುಕಡುಕು/Nu po:n
 ಹತ್ತುಗಡೆ/Ne po:n
@@ -134770,7 +134633,7 @@
 ಹನೆಬೊಂಡ/Na po:n
 ಹನೆಹೆಡೆ/Ne po:n
 ಹನೋಯು/Nu po:n
-ಹನ್/Nl po:n
+ಹನ್ po:n
 ಹನ್ನ/Nm po:n
 ಹನ್ನವಣ/Na po:n
 ಹನ್ನವಣಿಗ/Na po:n
@@ -134910,7 +134773,7 @@
 ಹಯಶೃಂಗಚಾಪ/Na po:n
 ಹಯಹೇಷಿತ/Na po:n
 ಹಯಾತಿ/Ne po:n
-ಹಯಾತ್/Nl po:n
+ಹಯಾತ್ po:n
 ಹಯಾಮಿ/Ne po:n
 ಹಯಿನು/Nu po:n
 ಹಯ್ದ/Na po:n
@@ -135054,7 +134917,7 @@
 ಹರಹುಗೆಡು/Vb po:v
 ಹರಾಂ po:n
 ಹರಾಜು/Nu po:n
-ಹರಾಜ್/Nl po:n
+ಹರಾಜ್ po:n
 ಹರಾಮ/Na po:n
 ಹರಾಮಖೋರ/Na po:n
 ಹರಾಮಿ/Ne po:n
@@ -135325,13 +135188,12 @@
 ಹಲಯೋಗ/Na po:n
 ಹಲರೇಖೆ/Ne po:n
 ಹಲವರಿ/Vb po:v
+ಹಲವರು/Np po:pron
 ಹಲವಳಿ/Vb po:v
 ಹಲವಷ್ಟು/Nu po:n
 ಹಲವಾ/Nv po:n
 ಹಲವಾರು/Px po:det
-ಹಲವು/Aj po:adj
 ಹಲವು/Px po:det
-ಹಲವು/Nd po:n
 ಹಲವುಮಕ್ಕಳತಾಯಿ/Ne po:n
 ಹಲವುಮಕ್ಕಳಬಳ್ಳಿ/Ne po:n
 ಹಲಸಂದೆ/Ne po:n
@@ -135909,14 +135771,13 @@
 ಹಾಗಲು/Nu po:n
 ಹಾಗೂ po:conj
 ಹಾಗೆ/Px po:adv
-ಹಾಗೆ/Ne po:n
 ಹಾಚಿ/Ne po:n
 ಹಾಜರಾತಿ/Ne po:n
 ಹಾಜರಿ/Ne po:n
 ಹಾಜರು/Nu po:n
 ಹಾಜರುಪಟ್ಟಿ/Ne po:n
 ಹಾಜರುಭಾಷಿ/Ne po:n
-ಹಾಜರ್/Nl po:n
+ಹಾಜರ್ po:n
 ಹಾಜರ್ಭಾಷಿ/Ne po:n
 ಹಾಟಕ/Na po:n
 ಹಾಟಕವೆಟ್ಟು/Nu po:n
@@ -136017,7 +135878,7 @@
 ಹಾಯು/Vb po:v
 ಹಾಯೆನಿಸು/Vb po:v
 ಹಾಯ್ po:adj
-ಹಾಯ್/Nl po:n
+ಹಾಯ್ po:n
 ಹಾಯ್ಕಿಸು/Vb po:v
 ಹಾಯ್ಕು/Vb po:v
 ಹಾಯ್ಗಡ/Na po:n
@@ -136756,7 +136617,7 @@
 ಹಿದ್ಮ/Na po:n
 ಹಿಧ್ಮೆ/Ne po:n
 ಹಿನ್ po:adj
-ಹಿನ್/Nl po:n
+ಹಿನ್ po:n
 ಹಿನ್ನಡೆ/Ne po:n
 ಹಿನ್ನಡೆ/Vb po:v
 ಹಿನ್ನಿ/Ne po:n
@@ -137191,7 +137052,7 @@
 ಹುಜೂರುಖಜಾನೆ/Ne po:n
 ಹುಜೂರುಜಮಾಬಂದಿ/Ne po:n
 ಹುಜೂರುಶಿಕೆರೂಪಾಯಿ/Ne po:n
-ಹುಜೂರ್/Nl po:n
+ಹುಜೂರ್ po:n
 ಹುಜೂರ್ಜಮಾಬಂದಿ/Ne po:n
 ಹುಜ್ಜತ್ತಿ/Ne po:n
 ಹುಟ್ಟಗೆ/Ne po:n
@@ -137718,7 +137579,7 @@
 ಹುವ್ವುಲವೆ/Ne po:n
 ಹುಷಾರಿ/Ne po:n
 ಹುಷಾರು/Nu po:n
-ಹುಷಾರ್/Nl po:n
+ಹುಷಾರ್ po:n
 ಹುಸಿ/Ne po:n
 ಹುಸಿ/Vb po:v
 ಹುಸಿಕ/Na po:n
@@ -138061,7 +137922,7 @@
 ಹೆಗಲೆಣೆ/Ne po:n
 ಹೆಗಲೇರು/Vb po:v
 ಹೆಗಲೊಡ್ಡು/Vb po:v
-ಹೆಗಲ್/Nl po:n
+ಹೆಗಲ್ po:n
 ಹೆಗಲ್ಗೊಳಿಸು/Vb po:v
 ಹೆಗಳು/Nu po:n
 ಹೆಗ್ಗ/Na po:n
@@ -138671,7 +138532,7 @@
 ಹೇರೊಡಲ/Na po:n
 ಹೇರೊಡಲು/Nu po:n
 ಹೇರ್ po:adj
-ಹೇರ್/Nl po:n
+ಹೇರ್ po:n
 ಹೇಲನ/Na po:n
 ಹೇಲಾಗತಿ/Ne po:n
 ಹೇಲಿ/Ne po:n
@@ -138785,7 +138646,7 @@
 ಹೈಲು/Nu po:n
 ಹೈವ/Na po:n
 ಹೈವಳ/Na po:n
-ಹೈವಾನ್/Nl po:n
+ಹೈವಾನ್ po:n
 ಹೈವಿಗ/Na po:n
 ಹೈವೆ/Ne po:n
 ಹೊಂ po:n
@@ -139175,7 +139036,7 @@
 ಹೊನಹು/Nu po:n
 ಹೊನಹುಗಾರ್ತಿ/Ne po:n
 ಹೊನಿಗ್ಯಾ/Nv po:n
-ಹೊನ್/Nk po:n
+ಹೊನ್ po:n
 ಹೊನ್ನಗನ್ನೆ/Ne po:n
 ಹೊನ್ನಗಾಲೆ/Ne po:n
 ಹೊನ್ನಗೊನ್ನೆ/Ne po:n
@@ -139221,7 +139082,7 @@
 ಹೊಯಿಸಣ/Na po:n
 ಹೊಯಿಸಳ/Nm po:n
 ಹೊಯಿಸು/Vb po:v
-ಹೊಯ್/Nl po:n
+ಹೊಯ್ po:n
 ಹೊಯ್ po:v
 ಹೊಯ್ಕ/Na po:n
 ಹೊಯ್ಕೈ/Ne po:n
@@ -139266,7 +139127,6 @@
 ಹೊರಗಣ/Na po:n
 ಹೊರಗಣಿಸು/Vb po:v
 ಹೊರಗು/Nu po:n
-ಹೊರಗೆ/Px po:adv
 ಹೊರಗೆ/Px po:postp
 ಹೊರಗೆಡವು/Vb po:v
 ಹೊರಗೆಡಹು/Vb po:v
@@ -139648,7 +139508,7 @@
 ಹೋರುಗೆಡವು/Vb po:v
 ಹೋರೆ/Ne po:n
 ಹೋರೆಗ/Na po:n
-ಹೋರ್/Nl po:n
+ಹೋರ್ po:n
 ಹೋರ್ po:v
 ಹೋರ್ಕೆ/Ne po:n
 ಹೋಲಿಕೆ/Ne po:n
@@ -139656,7 +139516,7 @@
 ಹೋಲು/Nu po:n
 ಹೋಲು/Vb po:v
 ಹೋಲುವೆ/Ne po:n
-ಹೋಲ್/Nl po:n
+ಹೋಲ್ po:n
 ಹೋಲ್ವೆ/Ne po:n
 ಹೋಳಕ/Na po:n
 ಹೋಳಿ/Ne po:n
@@ -139681,8 +139541,7 @@
 ಹೌದ/Na po:n
 ಹೌದಪ್ಪ/Nm po:n
 ಹೌದಾ/Nv po:n
-ಹೌದು/Nu po:n
-ಹೌದು/Px po:x
+ಹೌದು po:x
 ಹೌದೆ/Ne po:n
 ಹೌರಿ/Ne po:n
 ಹೌಳಿಗೆ/Ne po:n

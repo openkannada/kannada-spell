@@ -273,9 +273,24 @@ fn fused(cell: &'static OnceLock<Vec<Form>>, all: fn() -> &'static [Form]) -> &'
     })
 }
 
-fn fused_existential() -> &'static [Form] {
+pub(crate) fn fused_existential() -> &'static [Form] {
     static EXISTENTIAL: OnceLock<Vec<Form>> = OnceLock::new();
     fused(&EXISTENTIAL, existential)
+}
+
+/// "There is" and "there was" after a bare noun: ಮರವಿದೆ, ಮರವಿತ್ತು, ಮರವಿಲ್ಲ.
+/// Other forms of ಇರು follow a locative or participle, not a bare noun.
+const BARE_EXISTENTIAL_TAGS: &[&str] = &["+pres.3sn", "+pres.3pn", "+past.3sn", "+neg"];
+
+fn bare_existential() -> &'static [Form] {
+    static FORMS: OnceLock<Vec<Form>> = OnceLock::new();
+    FORMS.get_or_init(|| {
+        existential()
+            .iter()
+            .filter(|f| BARE_EXISTENTIAL_TAGS.contains(&f.tags.as_str()))
+            .cloned()
+            .collect()
+    })
 }
 
 /// The predicates written fused to a nominal: ಆಗು, ಇರು, ಎನ್ನು and ಅಲ್ಲ.
@@ -283,7 +298,7 @@ pub fn predicates(host: &Form) -> Vec<Form> {
     static COPULA: OnceLock<Vec<Form>> = OnceLock::new();
     static QUOTATIVE: OnceLock<Vec<Form>> = OnceLock::new();
     let mut forms = host.compose("ಆಗು", fused(&COPULA, copula));
-    forms.extend(host.compose("ಇರು", fused_existential()));
+    forms.extend(host.compose("ಇರು", bare_existential()));
     forms.extend(host.compose("ಎನ್ನು", fused(&QUOTATIVE, quotative)));
     forms.extend(extend(std::slice::from_ref(host), NEGATIVE_COPULA));
     forms
@@ -450,9 +465,16 @@ mod tests {
             ("ಮರವಲ್ಲ", "|ಅಲ್ಲ+v+neg"),
             ("ಮರದಲ್ಲಿದೆ", "+loc|ಇರು+v+pres.3sn"),
             ("ಮರಗಳಾಗಿ", "+pl|ಆಗು+v+cp"),
+            ("ಮರವಿದೆ", "|ಇರು+v+pres.3sn"),
+            ("ಮರದಲ್ಲಿದ್ದ", "+loc|ಇರು+v+rel.past"),
         ] {
             assert!(has(&forms, text, tags), "{text} {tags}");
         }
+        assert!(
+            !forms
+                .iter()
+                .any(|f| f.text == "ಮರವಿದ್ದ" || f.text == "ಮರವಿರುವ")
+        );
     }
 
     #[test]

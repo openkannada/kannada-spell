@@ -53,6 +53,19 @@ fn looks_misspelled(word: &str, analyzer: &Analyzer, counts: &Counts) -> bool {
         .any(|other| counts.get(other) >= threshold && analyzer.accepts(other))
 }
 
+/// A consonant-final loan stem must itself occur in the corpus, and must not be a known
+/// word with its "ು" dropped: otherwise ಎಂದು and ನಟರು yield the false stems ಎಂದ್ and ನಟರ್.
+fn plausible_loan(stem: &str, class: Class, analyzer: &Analyzer, train: &Counts) -> bool {
+    if !matches!(
+        class,
+        Class::Noun(Declension::Loan | Declension::LoanDoubled)
+    ) {
+        return true;
+    }
+    let with_u = format!("{}ು", stem.trim_end_matches(kannada_morph::script::VIRAMA));
+    train.get(stem) >= MIN_COUNT && !analyzer.accepts(&with_u)
+}
+
 pub fn induce(analyzer: &Analyzer, train: &Counts) -> Induced {
     let mut likely_misspellings = 0;
     let unknown: Vec<(&str, u64)> = train
@@ -101,7 +114,10 @@ pub fn induce(analyzer: &Analyzer, train: &Counts) -> Induced {
             .filter(|&i| !explained[i as usize])
             .collect();
         // A stem that is already a word, such as the verb form ಮಾಡಬಹುದು, is not a new noun.
-        if fresh.len() < MIN_FORMS || analyzer.accepts(&stem) {
+        if fresh.len() < MIN_FORMS
+            || analyzer.accepts(&stem)
+            || !plausible_loan(&stem, class, analyzer, train)
+        {
             continue;
         }
         if looks_misspelled(&stem, analyzer, train) {
@@ -136,6 +152,37 @@ mod tests {
             c.add(w.to_string(), n);
         }
         c
+    }
+
+    #[test]
+    fn loan_stems_must_occur_and_not_hide_a_known_word() {
+        let analyzer = Analyzer::new(Lexicon::from_entries([Entry::new(
+            "ನಟ",
+            Class::Noun(Declension::Boy),
+        )]));
+        let train = counts(&[
+            ("ನಟರ್", 9),
+            ("ನಟರ್ನ", 9),
+            ("ನಟರ್ನಲ್ಲಿ", 9),
+            ("ನಟರ್ಗೆ", 9),
+            ("ಗಿಗ್ನ", 9),
+            ("ಗಿಗ್ನಲ್ಲಿ", 9),
+            ("ಗಿಗ್ಗೆ", 9),
+            ("ಬ್ಯಾಂಕ್", 9),
+            ("ಬ್ಯಾಂಕ್ನ", 9),
+            ("ಬ್ಯಾಂಕ್ನಲ್ಲಿ", 9),
+        ]);
+        let stems: Vec<String> = induce(&analyzer, &train)
+            .stems
+            .into_iter()
+            .map(|e| e.stem)
+            .collect();
+        assert!(stems.contains(&"ಬ್ಯಾಂಕ್".to_string()), "{stems:?}");
+        assert!(!stems.contains(&"ನಟರ್".to_string()), "hides ನಟರು: {stems:?}");
+        assert!(
+            !stems.contains(&"ಗಿಗ್".to_string()),
+            "never written alone: {stems:?}"
+        );
     }
 
     #[test]

@@ -1,6 +1,7 @@
 # Pronouns, numerals, determiners and function words, written for this project.
 # Columns: form, class flag, lemma, part of speech, tags. See docs/tags.md.
-# Np and Nd stems decline (ಅವನು: ಅವನನ್ನು, ಅವನಿಗೆ, ಅವನ). Px forms take ಊ and ಏ. Fx forms take nothing.
+# Np and Nd stems decline (ಅವನು: ಅವನನ್ನು, ಅವನಿಗೆ, ಅವನ). Aj forms take the copula and clitics (ನಾನಾಗಿ),
+# Px forms take ಊ and ಏ, and Fx forms take nothing. A stem listed here replaces Alar's entries for it.
 ಅವನು	Np	ಅವನು	pron
 ಅವಳು	Np	ಅವಳು	pron
 ಅವರು	Np	ಅವರು	pron
@@ -23,37 +24,37 @@
 ಇವುಗಳು	Np	ಇವು	pron	+pl
 ಇವನ್ನು	Px	ಇವು	pron	+acc
 ಇವಕ್ಕೆ	Px	ಇವು	pron	+dat
-ನಾನು	Px	ನಾನು	pron
+ನಾನು	Aj	ನಾನು	pron
 ನನ್ನನ್ನು	Px	ನಾನು	pron	+acc
 ನನಗೆ	Px	ನಾನು	pron	+dat
 ನನ್ನ	Fx	ನಾನು	pron	+gen
 ನನ್ನಲ್ಲಿ	Px	ನಾನು	pron	+loc
 ನನ್ನಿಂದ	Fx	ನಾನು	pron	+ins
-ನೀನು	Px	ನೀನು	pron
+ನೀನು	Aj	ನೀನು	pron
 ನಿನ್ನನ್ನು	Px	ನೀನು	pron	+acc
 ನಿನಗೆ	Px	ನೀನು	pron	+dat
 ನಿನ್ನ	Fx	ನೀನು	pron	+gen
 ನಿನ್ನಲ್ಲಿ	Px	ನೀನು	pron	+loc
 ನಿನ್ನಿಂದ	Fx	ನೀನು	pron	+ins
-ನಾವು	Px	ನಾವು	pron
+ನಾವು	Aj	ನಾವು	pron
 ನಮ್ಮನ್ನು	Px	ನಾವು	pron	+acc
 ನಮಗೆ	Px	ನಾವು	pron	+dat
 ನಮ್ಮ	Fx	ನಾವು	pron	+gen
 ನಮ್ಮಲ್ಲಿ	Px	ನಾವು	pron	+loc
 ನಮ್ಮಿಂದ	Fx	ನಾವು	pron	+ins
-ನೀವು	Px	ನೀವು	pron
+ನೀವು	Aj	ನೀವು	pron
 ನಿಮ್ಮನ್ನು	Px	ನೀವು	pron	+acc
 ನಿಮಗೆ	Px	ನೀವು	pron	+dat
 ನಿಮ್ಮ	Fx	ನೀವು	pron	+gen
 ನಿಮ್ಮಲ್ಲಿ	Px	ನೀವು	pron	+loc
 ನಿಮ್ಮಿಂದ	Fx	ನೀವು	pron	+ins
-ತಾನು	Px	ತಾನು	pron
+ತಾನು	Aj	ತಾನು	pron
 ತನ್ನನ್ನು	Px	ತಾನು	pron	+acc
 ತನಗೆ	Px	ತಾನು	pron	+dat
 ತನ್ನ	Fx	ತಾನು	pron	+gen
 ತನ್ನಲ್ಲಿ	Px	ತಾನು	pron	+loc
 ತನ್ನಿಂದ	Fx	ತಾನು	pron	+ins
-ತಾವು	Px	ತಾವು	pron
+ತಾವು	Aj	ತಾವು	pron
 ತಮ್ಮನ್ನು	Px	ತಾವು	pron	+acc
 ತಮಗೆ	Px	ತಾವು	pron	+dat
 ತಮ್ಮ	Fx	ತಾವು	pron	+gen
@@ -105,10 +106,10 @@
 ಏಕೆಂದರೆ	Fx	ಏಕೆಂದರೆ	conj
 ಹೀಗಾಗಿ	Fx	ಹೀಗಾಗಿ	conj
 ಅಲ್ಲದೆ	Fx	ಅಲ್ಲ	v	+neg.cp
-ಮಾತ್ರ	Px	ಮಾತ್ರ	postp
-ಕೂಡ	Px	ಕೂಡ	postp
-ಕೂಡಾ	Px	ಕೂಡ	postp
-ಸಹ	Px	ಸಹ	postp
+ಮಾತ್ರ	Px	ಮಾತ್ರ	adv
+ಕೂಡ	Px	ಕೂಡ	adv
+ಕೂಡಾ	Px	ಕೂಡ	adv
+ಸಹ	Px	ಸಹ	adv
 ಬಗ್ಗೆ	Px	ಬಗ್ಗೆ	postp
 ಮೂಲಕ	Px	ಮೂಲಕ	postp
 ನಂತರ	Px	ನಂತರ	postp
@@ -195,3 +196,11 @@
 ವೈ	Fx	ವೈ	abbr	
 ಝಡ್	Fx	ಝಡ್	abbr	
 ಡಾ	Fx	ಡಾ	abbr	
+ಮಕ್ಕಳು	Np	ಮಗು	n	+pl
+ಆತ	Nm	ಆತ	pron	
+ಆಕೆ	Ne	ಆಕೆ	pron	
+ಈತ	Nm	ಈತ	pron	
+ಈಕೆ	Ne	ಈಕೆ	pron	
+ಕೆಲವರು	Np	ಕೆಲವರು	pron	
+ಹಲವರು	Np	ಹಲವರು	pron	
+ಎಲ್ಲ	Px	ಎಲ್ಲ	det	

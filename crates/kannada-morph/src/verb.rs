@@ -3,7 +3,7 @@
 use std::sync::OnceLock;
 
 use crate::form::{Form, extend};
-use crate::noun::{CLITICS, Declension, cases, predicates};
+use crate::noun::{CLITICS, Declension, cases, fused_existential, predicates};
 use crate::sandhi::{Junction, join};
 
 /// Endings on the root, as in ಮಾಡು + ಉತ್ತಾನೆ = ಮಾಡುತ್ತಾನೆ and ಬರೆ + ಅಲು = ಬರೆಯಲು.
@@ -29,6 +29,7 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಉವಷ್ಟು", "+extent"),
     ("ಉವವರೆಗೆ", "+term"),
     ("ಉವುದಿಲ್ಲ", "+npst.neg"),
+    ("ಉವಲ್ಲಿ", "+vn+loc"),
     ("ಅಲು", "+inf"),
     ("ಅಲೂ", "+inf+also"),
     ("ಅಲೇ", "+inf+emph"),
@@ -39,6 +40,7 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಅಬೇಡಿ", "+proh.2p"),
     ("ಅಬಲ್ಲ", "+abil"),
     ("ಅದ", "+rel.neg"),
+    ("ಅದಂತೆ", "+rel.neg+sim"),
     ("ಓಣ", "+hort.1p"),
 ];
 
@@ -53,6 +55,7 @@ const MODALS: &[(&str, &str)] = &[
 /// Endings on the past stem, as in ಮಾಡಿದ + ಅನು = ಮಾಡಿದನು and ಬಂದ + ಆಗ = ಬಂದಾಗ.
 const PAST_ENDINGS: &[(&str, &str)] = &[
     ("", "+rel.past"),
+    ("", "+past.3sm"),
     ("ಅನು", "+past.3sm"),
     ("ಅಳು", "+past.3sf"),
     ("ಅರು", "+past.3p"),
@@ -317,7 +320,12 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
     if root.ends_with('ು') {
         forms.extend(host.then("ಇ", "+imp.2p"));
     }
-    forms.extend(host.then_with("ಅದೆ", "+neg.cp", Junction::Both));
+    for negative in host.then_with("ಅದೆ", "+neg.cp", Junction::Both) {
+        if depth == Depth::Full {
+            forms.extend(negative.compose("ಇರು", fused_existential()));
+        }
+        forms.push(negative);
+    }
     forms.extend(nouns(&host, ROOT_NOUNS, depth));
     for modal in extend(std::slice::from_ref(&host), MODALS) {
         if depth == Depth::Full {
@@ -332,6 +340,9 @@ fn root_forms(root: &str, depth: Depth) -> Vec<Form> {
         }
         for infinitive in host.then("ಅಲು", "+pass") {
             forms.extend(infinitive.compose("ಆಗು", copula()));
+        }
+        for stem in host.then("ಅಲ್", "+pass") {
+            forms.extend(stem.compose("ಪಡು", auxiliary_forms("ಪಡು")));
         }
     }
     forms
@@ -423,15 +434,18 @@ pub fn participle_stem_forms(participle: &str) -> Vec<Form> {
 fn auxiliary_forms(root: &'static str) -> &'static [Form] {
     static KOLLU: OnceLock<Vec<Form>> = OnceLock::new();
     static BIDU: OnceLock<Vec<Form>> = OnceLock::new();
-    let cell = match root {
-        "ಕೊಳ್ಳು" => &KOLLU,
-        "ಬಿಡು" => &BIDU,
+    static PADU: OnceLock<Vec<Form>> = OnceLock::new();
+    // ಕೊಳ್ಳು takes the perfect itself: ಹೇಳಿಕೊಂಡಿದ್ದಾನೆ.
+    let (cell, depth) = match root {
+        "ಕೊಳ್ಳು" => (&KOLLU, Depth::Copula),
+        "ಬಿಡು" => (&BIDU, Depth::Base),
+        "ಪಡು" => (&PADU, Depth::Copula),
         _ => unreachable!("not an auxiliary: {root}"),
     };
     cell.get_or_init(|| {
         irregular_forms(
             &irregular_stems(root).expect("auxiliary is irregular"),
-            Depth::Base,
+            depth,
         )
     })
 }
@@ -563,6 +577,22 @@ mod tests {
         assert!(has(&forms, "ಮಾಡಬಲ್ಲ", "+abil"));
         assert!(!forms.iter().any(|f| f.text == "ಮಾಡಬಲ್ಲಾಗಿ"));
         assert!(has(&forms, "ಮಾಡಬಲ್ಲದೆಂದು", "+abil|ಎನ್ನು+v+cp"));
+    }
+
+    #[test]
+    fn forms_found_missing_by_the_gold_set() {
+        let forms = regular_forms("ಮಾಡು");
+        for (text, tags) in [
+            ("ಮಾಡಿದ", "+past.3sm"),
+            ("ಮಾಡುವಲ್ಲಿ", "+vn+loc"),
+            ("ಮಾಡದಂತೆ", "+rel.neg+sim"),
+            ("ಮಾಡದಿರುವುದು", "+neg.cp|ಇರು+v+vn"),
+            ("ಮಾಡಿಕೊಂಡಿದ್ದಾನೆ", "+cp|ಕೊಳ್ಳು+v+cp|ಇರು+v+pres.3sm"),
+            ("ಮಾಡಲ್ಪಟ್ಟಿತು", "+pass|ಪಡು+v+past.3sn"),
+            ("ಮಾಡಲ್ಪಟ್ಟಿದೆ", "+pass|ಪಡು+v+cp|ಇರು+v+pres.3sn"),
+        ] {
+            assert!(has(&forms, text, tags), "{text} {tags}");
+        }
     }
 
     #[test]

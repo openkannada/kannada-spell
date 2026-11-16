@@ -40,8 +40,10 @@ crates/kspell/             the command-line tool
   induce.rs                stems and words induced from the training counts
   misspell.rs, eval.rs     synthetic misspellings and the coverage measures
   suggest.rs               scoring Hunspell's suggestions
+  gold.rs                  scoring the analyzer against gold analyses
 data/closed-class.tsv      pronouns, numerals and function words, written by hand
 dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md)
+data/gold/                 gold analyses: a development set and a test set
 docs/tags.md               the analysis tags
 ```
 
@@ -50,6 +52,7 @@ docs/tags.md               the analysis tags
 - Inflection is described once, in `noun.rs` and `verb.rs`. Do not hand-edit affix rules or the `.aff` file; change the paradigm and rebuild.
 - Every behavior change gets a test. For each new rule, remove it, confirm a test fails, then restore it. Run each such check under a 5 second timeout.
 - Measure on held-out text only. The test split (every 10th Wikipedia article) is never used to build or tune the dictionary.
+- Tune the analyzer on `data/gold/analyses.tsv` only. `analyses-test.tsv` is for scoring; report its first score for any change you made after looking at it.
 - Keep the ODbL notice on the dictionaries and the credit to Alar and V. Krishna.
 - Comments only for what the code cannot say.
 

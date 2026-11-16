@@ -1,0 +1,165 @@
+//! Scores the analyzer against hand-written gold analyses.
+
+use std::collections::{BTreeMap, BTreeSet};
+
+use kannada_morph::Analyzer;
+use kannada_morph::script::normalize;
+
+/// The gold readings of each word, in file order. Words marked `?` (not a word, or misspelled) have none.
+pub struct Gold {
+    pub words: Vec<(String, BTreeSet<String>)>,
+}
+
+impl Gold {
+    /// Parses lines of word, analysis and note separated by tabs; lines starting with "#" are comments.
+    pub fn parse(text: &str) -> Self {
+        let mut order: Vec<String> = Vec::new();
+        let mut readings: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
+        for line in text
+            .lines()
+            .filter(|l| !l.starts_with('#') && !l.trim().is_empty())
+        {
+            let mut fields = line.split('\t');
+            let word = normalize(fields.next().unwrap_or_default().trim());
+            let analysis = fields.next().unwrap_or_default().trim();
+            if !readings.contains_key(&word) {
+                order.push(word.clone());
+            }
+            let set = readings.entry(word).or_default();
+            if analysis != "?" && !analysis.is_empty() {
+                set.insert(normalize(analysis));
+            }
+        }
+        Self {
+            words: order
+                .into_iter()
+                .map(|w| {
+                    let r = readings.remove(&w).unwrap_or_default();
+                    (w, r)
+                })
+                .collect(),
+        }
+    }
+}
+
+/// Precision and recall over a set of items: what was predicted, what was expected, what matched.
+#[derive(Default, Clone, Copy)]
+pub struct Counts {
+    pub predicted: usize,
+    pub expected: usize,
+    pub matched: usize,
+}
+
+impl Counts {
+    fn add(&mut self, predicted: &BTreeSet<String>, expected: &BTreeSet<String>) {
+        self.predicted += predicted.len();
+        self.expected += expected.len();
+        self.matched += predicted.intersection(expected).count();
+    }
+
+    pub fn precision(self) -> f64 {
+        ratio(self.matched, self.predicted)
+    }
+
+    pub fn recall(self) -> f64 {
+        ratio(self.matched, self.expected)
+    }
+}
+
+fn ratio(a: usize, b: usize) -> f64 {
+    if b == 0 { 0.0 } else { a as f64 / b as f64 }
+}
+
+pub struct Score {
+    /// Words with gold readings.
+    pub words: usize,
+    /// Words the analyzer gives at least 1 reading from its lexicon.
+    pub analyzed: usize,
+    /// Full readings: lemma, part of speech and every tag.
+    pub full: Counts,
+    /// Lemma and part of speech of each reading.
+    pub lemma_pos: Counts,
+    /// Words whose stemmer output is the lemma of a gold reading.
+    pub stem_correct: usize,
+    /// Gold words that disagree, for inspection: word, gold readings, predicted readings.
+    pub disagreements: Vec<(String, Vec<String>, Vec<String>)>,
+}
+
+/// The lemma and part of speech of a reading: "ಮರ+n+pl+loc" gives "ಮರ+n".
+fn lemma_pos(reading: &str) -> String {
+    reading.split('+').take(2).collect::<Vec<_>>().join("+")
+}
+
+fn lemma(reading: &str) -> &str {
+    reading.split('+').next().unwrap_or(reading)
+}
+
+/// Scores `analyzer` on `gold`. With `guess`, unknown words get the guesser's readings.
+pub fn score(analyzer: &Analyzer, gold: &Gold, guess: bool) -> Score {
+    let mut s = Score {
+        words: 0,
+        analyzed: 0,
+        full: Counts::default(),
+        lemma_pos: Counts::default(),
+        stem_correct: 0,
+        disagreements: Vec::new(),
+    };
+    for (word, expected) in gold.words.iter().filter(|(_, e)| !e.is_empty()) {
+        s.words += 1;
+        let mut analyses = analyzer.analyze(word);
+        s.analyzed += usize::from(!analyses.is_empty());
+        if analyses.is_empty() && guess {
+            analyses = analyzer.guess(word);
+        }
+        let predicted: BTreeSet<String> = analyses.iter().map(ToString::to_string).collect();
+        s.full.add(&predicted, expected);
+        let to_lemma_pos =
+            |set: &BTreeSet<String>| set.iter().map(|r| lemma_pos(r)).collect::<BTreeSet<_>>();
+        s.lemma_pos
+            .add(&to_lemma_pos(&predicted), &to_lemma_pos(expected));
+        let stem = analyzer.stem(word);
+        s.stem_correct += usize::from(expected.iter().any(|r| lemma(r) == stem));
+        if predicted != *expected {
+            s.disagreements.push((
+                word.clone(),
+                expected.iter().cloned().collect(),
+                predicted.into_iter().collect(),
+            ));
+        }
+    }
+    s
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use kannada_morph::noun::Declension;
+    use kannada_morph::{Class, Entry, Lexicon};
+
+    #[test]
+    fn scores_readings_lemmas_and_stems() {
+        let analyzer = Analyzer::new(Lexicon::from_entries([
+            Entry::new("ಮರ", Class::Noun(Declension::Tree)),
+            Entry::new("ಮಾಡು", Class::Verb),
+        ]));
+        let gold = Gold::parse(
+            "# header\nಮರಗಳಲ್ಲಿ\tಮರ+n+pl+loc\t\nಮಾಡಿದೆ\tಮಾಡು+v+past.1s\t\nಯಿಂದ\t?\tsuffix\nಕಲ್ಲು\tಕಲ್ಲು+n\t\n",
+        );
+        assert_eq!(gold.words.len(), 4);
+        let s = score(&analyzer, &gold, false);
+        assert_eq!((s.words, s.analyzed), (3, 2));
+        assert_eq!(
+            (s.full.matched, s.full.expected, s.full.predicted),
+            (2, 3, 4)
+        );
+        assert_eq!(
+            (
+                s.lemma_pos.matched,
+                s.lemma_pos.expected,
+                s.lemma_pos.predicted
+            ),
+            (2, 3, 2)
+        );
+        assert_eq!(s.stem_correct, 3);
+    }
+}

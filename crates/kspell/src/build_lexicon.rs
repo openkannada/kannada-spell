@@ -87,17 +87,7 @@ pub fn entries_for(alar: &AlarEntry, counts: &Counts) -> Result<Vec<Entry>, Skip
         if counts.get(&stem) < MIN_OLD_FORM {
             return Err(Skip::OldForm);
         }
-        let loans: Vec<Entry> = if alar.is("noun") {
-            choose(&stem, &count)
-                .into_iter()
-                .map(|d| Entry::new(&stem, Class::Noun(d)))
-                .collect()
-        } else {
-            Vec::new()
-        };
-        if !loans.is_empty() {
-            return Ok(loans);
-        }
+        // Alar's consonant-final words are Old Kannada (ಮಕ್ಕಳ್), not loanwords: they take no endings.
         return Ok(vec![Entry {
             pos: pos_of(alar).to_string(),
             ..Entry::new(&stem, Class::Fixed)
@@ -190,13 +180,19 @@ pub struct Built {
 
 /// The lexicon: Alar headwords with corpus-chosen classes, the irregular verbs and the closed-class list.
 pub fn build(alar: &[AlarEntry], closed: Lexicon, counts: &Counts) -> Built {
+    let closed_stems: std::collections::HashSet<String> =
+        closed.entries().iter().map(|e| e.stem.clone()).collect();
     let mut lexicon = closed;
     let mut skipped = std::collections::BTreeMap::new();
     let mut headwords = std::collections::HashSet::new();
     for entry in alar {
         match entries_for(entry, counts) {
             Ok(entries) => {
-                for e in entries {
+                // The closed-class list is written for this project and wins over Alar's part of speech.
+                for e in entries
+                    .into_iter()
+                    .filter(|e| !closed_stems.contains(&e.stem))
+                {
                     headwords.insert(e.stem.clone());
                     lexicon.insert(e);
                 }
@@ -223,6 +219,7 @@ pub fn build(alar: &[AlarEntry], closed: Lexicon, counts: &Counts) -> Built {
 mod tests {
     use super::*;
     use crate::alar::AlarDef;
+    use kannada_morph::Lexicon;
     use kannada_morph::noun::Declension;
 
     fn alar(word: &str, kinds: &[&str]) -> AlarEntry {
@@ -262,6 +259,9 @@ mod tests {
         );
         counts.add("ಆಯ್".to_string(), 5);
         assert_eq!(classes("ಆಯ್", &["verb"], &counts), [Class::Fixed]);
+        counts.add("ಮಕ್ಕಳ್".to_string(), 5);
+        counts.add("ಮಕ್ಕಳಿನ".to_string(), 50);
+        assert_eq!(classes("ಮಕ್ಕಳ್", &["noun"], &counts), [Class::Fixed]);
     }
 
     #[test]
@@ -283,6 +283,33 @@ mod tests {
                 &missing[..missing.len().min(10)]
             );
         }
+    }
+
+    #[test]
+    fn the_closed_class_list_replaces_alar_entries() {
+        let closed = Lexicon::from_entries([Entry {
+            pos: "pron".into(),
+            ..Entry::new("ಅವನು", Class::Noun(Declension::Plural))
+        }]);
+        let built = build(
+            &[alar("ಅವನು", &["noun"]), alar("ಮರ", &["noun"])],
+            closed,
+            &Counts::default(),
+        );
+        let classes: Vec<(String, String)> = built
+            .lexicon
+            .entries()
+            .iter()
+            .filter(|e| ["ಅವನು", "ಮರ"].contains(&e.stem.as_str()))
+            .map(|e| (e.stem.clone(), e.pos.clone()))
+            .collect();
+        assert_eq!(
+            classes,
+            [
+                ("ಅವನು".to_string(), "pron".to_string()),
+                ("ಮರ".to_string(), "n".to_string())
+            ]
+        );
     }
 
     #[test]
