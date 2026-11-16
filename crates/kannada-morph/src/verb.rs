@@ -38,13 +38,17 @@ const ROOT_ENDINGS: &[(&str, &str)] = &[
     ("ಅಬೇಡ", "+proh.2s"),
     ("ಅಬೇಡಿ", "+proh.2p"),
     ("ಅಬಲ್ಲ", "+abil"),
-    ("ಅಬಲ್ಲದು", "+abil"),
     ("ಅದ", "+rel.neg"),
     ("ಓಣ", "+hort.1p"),
 ];
 
 /// Modal endings on the root. Each also takes the fused predicates: ಮಾಡಬೇಕಾಗಿದೆ, ಮಾಡಬಹುದೆಂದು.
-const MODALS: &[(&str, &str)] = &[("ಅಬೇಕು", "+deb"), ("ಅಬಹುದು", "+perm"), ("ಅಬಾರದು", "+proh")];
+const MODALS: &[(&str, &str)] = &[
+    ("ಅಬೇಕು", "+deb"),
+    ("ಅಬಹುದು", "+perm"),
+    ("ಅಬಾರದು", "+proh"),
+    ("ಅಬಲ್ಲದು", "+abil"),
+];
 
 /// Endings on the past stem, as in ಮಾಡಿದ + ಅನು = ಮಾಡಿದನು and ಬಂದ + ಆಗ = ಬಂದಾಗ.
 const PAST_ENDINGS: &[(&str, &str)] = &[
@@ -258,7 +262,7 @@ fn spell(verb: &IrregularVerb, prefix: &str, voiced: bool) -> Stems {
 enum Depth {
     /// No auxiliaries. The forms of ಇರು, ಎನ್ನು, ಕೊಳ್ಳು and ಬಿಡು when they are fused to another word.
     Base,
-    /// The participle takes the forms of ಇರು. The forms of the copula ಆಗು, which include ಆಗಿದೆ.
+    /// Only the participle takes ಇರು. Used for the copula ಆಗು, whose fused forms include ಆಗಿದೆ.
     Copula,
     /// Every auxiliary: perfect, progressive, reflexive, completive, passive. The forms of ordinary verbs.
     Full,
@@ -558,6 +562,7 @@ mod tests {
         let forms = regular_forms("ಮಾಡು");
         assert!(has(&forms, "ಮಾಡಬಲ್ಲ", "+abil"));
         assert!(!forms.iter().any(|f| f.text == "ಮಾಡಬಲ್ಲಾಗಿ"));
+        assert!(has(&forms, "ಮಾಡಬಲ್ಲದೆಂದು", "+abil|ಎನ್ನು+v+cp"));
     }
 
     #[test]

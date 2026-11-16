@@ -15,7 +15,7 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 
 | File | Words from | Held-out tokens accepted | Misspellings accepted |
 | --- | --- | --- | --- |
-| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 89.0% | 4.1% |
+| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 89.1% | 4.1% |
 | `dict/kn_IN-alar` | Alar and the closed-class list only | 70.9% | 3.9% |
 
 Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
@@ -30,7 +30,7 @@ Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 3
 
 | Measure | `kn_IN` | `kn_IN-alar` |
 | --- | --- | --- |
-| Held-out tokens accepted | 89.0% | 70.9% |
+| Held-out tokens accepted | 89.1% | 70.9% |
 | Held-out word types seen 5 or more times, accepted | 91.3% | 61.6% |
 | Confusion misspellings accepted (ದ for ಧ, ಿ for ೀ, ಳ for ಲ), of 5,000 | 4.1% | 3.9% |
 | Typing slips accepted, of 5,000 | 3.6% | 3.4% |
@@ -39,7 +39,20 @@ Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 3
 
 Hunspell and `kspell analyze` accept exactly the same words: they agree on every one of the 331,936 held-out word types, and CI checks a sample of generated forms and typos on every change (`scripts/agreement.sh`).
 
-Both dictionaries are tested on the same misspellings. They are made from frequent held-out words that `kn_IN-alar` accepts, with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. A confusion swaps letters that sound alike. A typing slip deletes, doubles or swaps a character, or replaces a vowel sign, and is kept only when the result is well-formed Kannada script. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
+Both dictionaries are tested on the same misspellings. Suggestions are scored on the first 2,000 of them that each dictionary rejects. They are made from frequent held-out words that `kn_IN-alar` accepts, with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. A confusion swaps letters that sound alike. A typing slip deletes, doubles or swaps a character, or replaces a vowel sign, and is kept only when the result is well-formed Kannada script. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
+
+### Compared with earlier Kannada dictionaries
+
+The same held-out words and misspellings, checked with Hunspell 1.7.6:
+
+| Dictionary | Tokens accepted | Types seen 5+ times accepted | Confusions accepted | Typing slips accepted |
+| --- | --- | --- | --- | --- |
+| `kn_IN` (this project) | 89.1% | 91.3% | 4.1% | 3.6% |
+| `kn_IN-alar` (this project) | 70.9% | 61.6% | 3.9% | 3.4% |
+| Fedora `hunspell-kn` 1.0.3 (2009) | 65.7% | 40.0% | 0.1% | 0.2% |
+| [kn-hunspell](https://github.com/mgharish/kn-hunspell) (2013) | 49.4% | 30.1% | 0.2% | 0.7% |
+
+The earlier dictionaries are mostly plain word lists. They accept almost no misspellings because they accept few inflected forms at all: 6 in 10 frequent words are flagged as errors by the 2009 dictionary.
 
 Most rejected held-out words are rare names and loanwords, and genuine misspellings in Wikipedia such as ವಿರುದ್ದ for ವಿರುದ್ಧ and ನಿರ್ಧಿಷ್ಟ for ನಿರ್ದಿಷ್ಟ.
 
