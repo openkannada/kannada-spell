@@ -1,6 +1,6 @@
 # kannada-spell
 
-A Kannada spelling dictionary for Hunspell, with a morphological analyzer and stemmer built from the same rules.
+A Kannada spelling dictionary for Hunspell, with a morphological analyzer and stemmer built from the same rules, and sound-alike keys for fuzzy search.
 
 Kannada joins case endings, auxiliaries and the copula to the word before them, so 1 noun has hundreds of written forms: ಮರ, ಮರವನ್ನು, ಮರಗಳಲ್ಲಿ, ಮರವಾಗಿದೆ, ಮರದಲ್ಲಿದ್ದ. A word list cannot cover that. This project describes Kannada inflection once, as paradigms with sandhi rules, and generates from that description both a Hunspell affix file and an analyzer that returns the lemma and tags of each reading.
 
@@ -76,6 +76,42 @@ Most remaining differences are parts of speech: Alar lists many adjectives as no
 
 The gold analyses were written by an AI annotator in a separate session, from `docs/tags.md` alone, without access to the analyzer or the dictionaries. A Kannada reader has not checked them yet.
 
+## Phonetic keys
+
+`kannada-phonetic` maps a word to sound-alike keys for fuzzy search, so that spellings a reader would confuse share a key:
+
+| Key | Folds | Example |
+| --- | --- | --- |
+| Narrow | aspiration, vowel length, doubled consonants, a nasal before a stop written as ಂ or as a letter | ಸಂಬಂಧ and ಸಮ್ಬಂದ: `sambanda` |
+| Medium | the narrow folds, plus retroflex and dental, ಳ and ಲ, the 3 sibilants | ನಿರ್ದಿಷ್ಟ and ನಿರ್ಧಿಸ್ಟ: `nirdista` |
+| Broad | consonants only, plus a leading vowel | ನಿರ್ದಿಷ್ಟ and "nirdishta": `nrdst` |
+
+Latin input gets the medium and broad keys: "neeru" matches ನೀರು at medium level. The keys also normalize decomposed vowel signs, the nukta and zero-width joiners, and read ಜ್ಞ as "gn", as Kannada speakers say it.
+
+```text
+$ kspell phonetic ಸಂಬಂಧ
+ಸಂಬಂಧ	sambanda	sambanda	smbnd
+$ kspell phonetic --latin neeru
+neeru	niru	nr
+```
+
+Measured with `kspell phonetic-eval`:
+
+| Measure | Narrow | Medium | Broad |
+| --- | --- | --- | --- |
+| Confusion misspellings that keep the intended word's key, of 5,000 | 57.0% | 94.9% | 95.8% |
+| Typing slips that keep the key, of 5,000 | 5.5% | 5.8% | 85.0% |
+| Other dictionary stems sharing a stem's key, mean (130,485 stems) | 0.22 | 0.41 | 9.5 |
+| Informal Latin spellings with the Kannada word's key, of 60 (`informal.tsv`) | | 96.7% | 98.3% |
+
+- The confusion row is high by design: the confusions are the substitutions the medium key folds. The typing slips are random edits and the fairer test of the broad key.
+- `informal.tsv` was written for this project, so it is small and not independent. The ISO 15919 and Baraha spellings of 3,712 dictionary words, made by machine transliteration from the Kannada, all get the Kannada word's key; that shows only that the Latin rules invert standard romanization.
+- Some different words share keys. Folding vowel length and doubled consonants merges ಹಾಲು and ಹಲ್ಲು, and ಕಾಲು and ಕಲ್ಲು, even at narrow level; the medium key also merges ಕಟ್ಟು and ಕತ್ತು, and ಹಳ್ಳಿ and ಹಲ್ಲಿ. A search should rank exact matches first, then medium, then broad.
+- Informal spellings the keys do not handle: "gyana" for ಜ್ಞಾನ, and "y" for ಐ as in "mysuru". Latin "jn" always reads as ಜ್ಞ, so "rajni" does not find ರಜನಿ.
+- Before a sibilant or ಹ, a nasal written ಂ, ನ್ or ಮ್ and typed "n" or "m" gets 1 code at medium and broad level, so "sanskrit" and "samskrutha" both find ಸಂಸ್ಕೃತ.
+
+`crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages, including nukta, decomposed vowel signs and nasal clusters. `kspell phonetic-vectors` rewrites it, and a test checks it matches the code.
+
 ## How it is built
 
 1. **Paradigms.** `crates/kannada-morph` describes 10 noun declensions (ಮರ, ಹುಡುಗ, ಮನೆ, ಹುಡುಗಿ, ಕಾಡು, ವಸ್ತು, ಇದು, plurals, and 2 for loanwords ending in a consonant such as ಬ್ಯಾಂಕ್ and ಬಸ್), regular verbs ending in ು, ಿ and ೆ, 42 irregular verbs and the compounds built on them (ಒಳಗೊಳ್ಳು like ಕೊಳ್ಳು), and the forms that fuse onto a word: the copula ಆಗು, ಇರು, the quotative ಎನ್ನು, ಅಲ್ಲ, the auxiliaries ಕೊಳ್ಳು and ಬಿಡು, and the clitics ಊ and ಏ. Sandhi is 1 function: elision, the ಯ and ವ glides, and the virama.
@@ -100,7 +136,7 @@ target/release/kspell eval
 target/release/kspell suggest
 ```
 
-Other commands: `kspell analyze`, `kspell stem`, `kspell gold`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
+Other commands: `kspell analyze`, `kspell stem`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
 
 ## License
 

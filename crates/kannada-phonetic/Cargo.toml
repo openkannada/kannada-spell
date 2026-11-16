@@ -1,0 +1,11 @@
+[package]
+name = "kannada-phonetic"
+description = "Sound-alike keys for Kannada words, for fuzzy search"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
