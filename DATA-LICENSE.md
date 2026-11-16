@@ -8,7 +8,7 @@ These word lists are derived from [Alar](https://github.com/alar-dict/data), the
 
 Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar headwords were filtered, normalized and given inflection classes; see `README.md`.
 
-`dict/kn_IN.dic` also contains words and stems induced from word counts of Kannada Wikipedia (text under CC BY-SA 4.0). Only single words and the inflection class each one takes are used: no sentences or longer passages. Single words are facts about the language rather than creative expression, so this project treats the list as carrying no CC BY-SA duty. It credits the Kannada Wikipedia contributors all the same. `dict/kn_IN-alar.dic` leaves them out, for users who want a word list drawn from Alar alone.
+`dict/kn_IN.dic` also contains words and stems induced from word counts of Kannada Wikipedia (text under CC BY-SA 4.0). Only single words and the inflection class each one takes are used: no sentences or longer passages. The project credits the Kannada Wikipedia contributors for these words. `dict/kn_IN-alar.dic` leaves them out, for users who want a word list drawn from Alar alone.
 
 ## `dict/kn_IN.aff` and `dict/kn_IN-alar.aff`
 
