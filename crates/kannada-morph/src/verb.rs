@@ -572,6 +572,11 @@ mod tests {
     }
 
     #[test]
+    fn irregular_verb_count_matches_the_readme() {
+        assert_eq!(IRREGULAR_VERBS.len(), 42);
+    }
+
+    #[test]
     fn auxiliary_tables_are_complete() {
         assert!(has(existential(), "ಇದೆ", "+pres.3sn"));
         assert!(has(existential(), "ಇರುವ", "+rel.npst"));
