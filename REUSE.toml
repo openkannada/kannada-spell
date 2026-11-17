@@ -1,0 +1,23 @@
+version = 1
+SPDX-PackageName = "kannada-spell"
+SPDX-PackageDownloadLocation = "https://github.com/openkannada/kannada-spell"
+
+[[annotations]]
+path = ["Cargo.toml", "Cargo.lock", "crates/*/Cargo.toml", ".gitignore", ".github/**", "packaging/**", "dict/kn_IN.aff", "crates/kannada-phonetic/vectors.tsv"]
+SPDX-FileCopyrightText = "2026 The Open Kannada Authors"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
+
+[[annotations]]
+path = ["**/*.md", "crates/kannada-phonetic/informal.tsv"]
+SPDX-FileCopyrightText = "2026 The Open Kannada Authors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "dict/kn_IN.dic"
+SPDX-FileCopyrightText = ["V. Krishna, Alar (https://alar.ink)", "2026 The Open Kannada Authors"]
+SPDX-License-Identifier = "ODbL-1.0"
+
+[[annotations]]
+path = "dict/kn_IN-wikipedia.dic"
+SPDX-FileCopyrightText = ["Kannada Wikipedia contributors (https://kn.wikipedia.org)", "2026 The Open Kannada Authors"]
+SPDX-License-Identifier = "CC-BY-4.0"

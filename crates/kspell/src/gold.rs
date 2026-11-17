@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Scores the analyzer against gold analyses. Precision and recall are over readings of
 //! word types, each word counting once whatever its frequency.
 

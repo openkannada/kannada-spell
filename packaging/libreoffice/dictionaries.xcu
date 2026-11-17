@@ -13,6 +13,17 @@
           <value>kn-IN</value>
         </prop>
       </node>
+      <node oor:name="HunSpellDic_kn_IN_wikipedia" oor:op="fuse">
+        <prop oor:name="Locations" oor:type="oor:string-list">
+          <value>%origin%/kn_IN-wikipedia.aff %origin%/kn_IN-wikipedia.dic</value>
+        </prop>
+        <prop oor:name="Format" oor:type="xs:string">
+          <value>DICT_SPELL</value>
+        </prop>
+        <prop oor:name="Locales" oor:type="oor:string-list">
+          <value>kn-IN</value>
+        </prop>
+      </node>
     </node>
   </node>
 </oor:component-data>

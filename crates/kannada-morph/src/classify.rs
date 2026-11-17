@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Choosing a stem's declension from the forms attested in a corpus.
 //!
 //! A dictionary headword such as ಕಾಡು could decline as ಕಾಡನ್ನು or as

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Measures the dictionary on held-out text: coverage, and acceptance of misspellings.
 
 use kannada_morph::Analyzer;

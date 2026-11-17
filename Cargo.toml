@@ -6,9 +6,9 @@ members = ["crates/kannada-morph", "crates/kannada-phonetic", "crates/kspell"]
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.88"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/openkannada/kannada-spell"
-authors = ["Prasad Subrahmanya <prasadus92@gmail.com>"]
+authors = ["The Open Kannada Authors"]
 
 [workspace.dependencies]
 kannada-morph = { path = "crates/kannada-morph" }

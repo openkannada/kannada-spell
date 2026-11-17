@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: CC-BY-4.0
 # Pronouns, numerals, determiners and function words, written for this project.
 # Columns: form, class flag, lemma, part of speech, tags. See docs/tags.md.
 # Np and Nd stems decline (ಅವನು: ಅವನನ್ನು, ಅವನಿಗೆ, ಅವನ). Aj forms take the copula and clitics (ನಾನಾಗಿ),

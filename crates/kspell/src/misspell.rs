@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Synthetic misspellings: 1 realistic edit to a correct word.
 
 use kannada_morph::script::is_well_formed;

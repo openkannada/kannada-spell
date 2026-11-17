@@ -3,7 +3,7 @@
   "name": "Kannada spelling dictionary",
   "description": "Kannada spell checking, with the inflected forms of nouns and verbs.",
   "version": "@VERSION@",
-  "author": "Prasad Subrahmanya",
+  "author": "Open Kannada",
   "homepage_url": "https://github.com/openkannada/kannada-spell",
   "browser_specific_settings": {
     "gecko": {

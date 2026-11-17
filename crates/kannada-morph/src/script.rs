@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Kannada script: character classes, normalization and word tokens.
 
 use unicode_normalization::UnicodeNormalization;

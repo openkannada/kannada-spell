@@ -1,4 +1,6 @@
 #!/bin/sh
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Checks the committed dictionary with the real Hunspell: known words pass, misspellings fail.
 set -eu
 # Usage: hunspell-smoke.sh [dictionary] [core]. With "core", skip names and loanwords that Alar lacks.

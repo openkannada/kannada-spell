@@ -13,10 +13,12 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 
 ## Results
 
-| File | Words from | Held-out tokens accepted | Misspellings accepted |
+| Dictionary | Words from | Held-out tokens accepted | Misspellings accepted |
 | --- | --- | --- | --- |
-| `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 3.7% |
-| `dict/kn_IN-alar` | Alar and the closed-class list only | 70.8% | 3.6% |
+| The packaged dictionary: `dict/kn_IN` with `dict/kn_IN-wikipedia` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 3.7% |
+| `dict/kn_IN` alone | Alar and the closed-class list only | 70.8% | 3.6% |
+
+The LibreOffice and Firefox packages carry both word lists, so 88.9% is what users get. The 2 lists are separate files with separate licenses: `kn_IN.dic` is ODbL 1.0 and `kn_IN-wikipedia.dic` CC BY 4.0 (see License).
 
 Measured on every 10th article of the Kannada Wikipedia dump of 1 November 2026: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles.
 
@@ -25,9 +27,9 @@ That separation is not perfect, for 2 reasons:
 - Some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the held-out words rejected most often.
 - A few pronouns and irregular plurals (ಮಕ್ಕಳು, ಆತ, ಕೆಲವರು) were added to the closed-class list after the development gold set showed them missing, and that set is drawn from held-out articles.
 
-So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them; `kspell suggest --dictionary dict/kn_IN-alar` gives the `kn_IN-alar` column. The build below uses the same dated dump; a newer one gives slightly different figures.
+So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them; `--dictionary dict/kn_IN,dict/kn_IN-wikipedia` gives the packaged column. The build below uses the same dated dump; a newer one gives slightly different figures.
 
-| Measure | `kn_IN` | `kn_IN-alar` |
+| Measure | Packaged, `kn_IN` with `kn_IN-wikipedia` | `kn_IN` alone |
 | --- | --- | --- |
 | Held-out tokens accepted | 88.9% | 70.8% |
 | Held-out word types seen 5 or more times, accepted | 91.2% | 61.7% |
@@ -38,7 +40,7 @@ So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspel
 
 Hunspell and `kspell analyze` accept exactly the same words: they agree on every one of the 331,936 held-out word types, and CI checks a sample of generated forms and typos on every change (`scripts/agreement.sh`).
 
-Both dictionaries are tested on the same misspellings. Suggestions are scored on the first 2,000 of them that each dictionary rejects. They are made from frequent held-out words that `kn_IN-alar` accepts, with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. A confusion swaps letters that sound alike. A typing slip deletes, doubles or swaps a character, or replaces a vowel sign, and is kept only when the result is well-formed Kannada script. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
+Both setups are tested on the same misspellings. Suggestions are scored on the first 2,000 of them that each dictionary rejects. They are made from frequent held-out words that `kn_IN` accepts, with 1 edit each, kept only when the edited spelling occurs nowhere in the corpus. A confusion swaps letters that sound alike. A typing slip deletes, doubles or swaps a character, or replaces a vowel sign, and is kept only when the result is well-formed Kannada script. Some edits produce rare real words that Alar lists (ತಿವಿ, ರಜನ), so part of the accepted share is correct behavior.
 
 ### Compared with earlier Kannada dictionaries
 
@@ -46,8 +48,8 @@ The same held-out words and misspellings, checked with Hunspell 1.7.6:
 
 | Dictionary | Tokens accepted | Types seen 5+ times accepted | Confusions accepted | Typing slips accepted |
 | --- | --- | --- | --- | --- |
-| `kn_IN` (this project) | 88.9% | 91.2% | 3.7% | 3.6% |
-| `kn_IN-alar` (this project) | 70.8% | 61.7% | 3.6% | 3.4% |
+| Packaged, `kn_IN` with `kn_IN-wikipedia` (this project) | 88.9% | 91.2% | 3.7% | 3.6% |
+| `kn_IN` alone (this project) | 70.8% | 61.7% | 3.6% | 3.4% |
 | Fedora `hunspell-kn` 1.0.3 (2009) | 65.7% | 40.0% | 0.2% | 0.1% |
 | [kn-hunspell](https://github.com/mgharish/kn-hunspell) (2013) | 49.4% | 30.1% | 0.1% | 0.5% |
 
@@ -57,13 +59,18 @@ Most rejected held-out words are rare names and loanwords, and genuine misspelli
 
 ## Install
 
-Both dictionaries work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
+The dictionary works with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads both word lists in under 0.2 seconds and uses under 30 MB.
 
 ```sh
-hunspell -d dict/kn_IN file.txt
+hunspell -d dict/kn_IN,dict/kn_IN-wikipedia file.txt    # what the packages carry
+hunspell -d dict/kn_IN file.txt                         # Alar alone, 1 license
 ```
 
-`kn_IN` is the dictionary this project publishes. The LibreOffice and Firefox packages carry it. `kn_IN-alar` stays in the repository for anyone who wants a word list drawn from Alar alone.
+- `kn_IN.dic` holds the Alar entries and the closed-class list, under the ODbL 1.0.
+- `kn_IN-wikipedia.dic` holds names, loanwords and other words that Alar lacks, induced from Kannada Wikipedia, under CC BY 4.0 with credit to Kannada Wikipedia. It loads with the `kn_IN` affix file.
+- `kn_IN.aff`, the affix rules, is under MIT OR Apache-2.0.
+
+Use `kn_IN` alone if you need a word list under the ODbL only. See [DATA-LICENSE.md](DATA-LICENSE.md).
 
 ### The kspell command
 
@@ -73,10 +80,12 @@ cargo install --path crates/kspell      # puts kspell on your PATH, to run it ou
 
 ### LibreOffice and Firefox
 
-`scripts/package.sh` builds both packages from `dict/kn_IN` into `dist/`, and `scripts/package-check.sh` checks them:
+`scripts/package.sh` builds both packages from `dict/kn_IN` and `dict/kn_IN-wikipedia` into `dist/`, and `scripts/package-check.sh` checks them:
 
-- `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
-- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
+- `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. It registers both word lists for Kannada (India) as 2 dictionaries, and LibreOffice accepts a word that either one accepts. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
+- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox takes 1 dictionary file per language, so `package.sh` merges the 2 word lists into its `kn-IN.dic`. That file is derived from Alar, so it is licensed under the ODbL 1.0 as a whole, with credit to Alar and Kannada Wikipedia. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
+
+Each package's `NOTICE.md` credits Alar and Kannada Wikipedia and holds both license texts. `package-check.sh` fails if a package covers fewer held-out words than `kn_IN` with `kn_IN-wikipedia`: it compares them on the words of `data/gold/sample.tsv`, weighted by their held-out counts.
 
 ```sh
 scripts/package.sh && scripts/package-check.sh
@@ -90,15 +99,17 @@ Scored against gold analyses of held-out Wikipedia words with `kspell gold`. Eac
 
 The sets sample 300 and 200 words. The annotator marked 8 and 4 of them as not words, which leaves the 292 and 196 in the table. Those non-words count against precision when the analyzer accepts them.
 
-| Gold set | Readings precision | Readings recall | Lemma and part of speech, P / R | Stem correct |
-| --- | --- | --- | --- | --- |
-| Development, 292 words (`data/gold/analyses.tsv`) | 74.9% | 74.9% | 75.1% / 75.3% | 92.1% |
-| Test, 196 words (`data/gold/analyses-test.tsv`), first scoring | 64.7% | 71.7% | 67.3% / 71.5% | 88.3% |
-| Test, current | 67.5% | 72.6% | 68.2% / 72.5% | 90.3% |
+| Gold set | Dictionary | Readings precision | Readings recall | Lemma and part of speech, P / R | Stem correct |
+| --- | --- | --- | --- | --- | --- |
+| Development, 292 words (`data/gold/analyses.tsv`) | packaged | 74.9% | 74.9% | 75.1% / 75.3% | 92.1% |
+| Development | `kn_IN` alone | 86.8% | 67.8% | 87.3% / 68.1% | 92.1% |
+| Test, 196 words (`data/gold/analyses-test.tsv`), first scoring | packaged | 64.7% | 71.7% | 67.3% / 71.5% | 88.3% |
+| Test, current | packaged | 67.5% | 72.6% | 68.2% / 72.5% | 90.3% |
+| Test, current | `kn_IN` alone | 76.0% | 64.2% | 76.7% / 63.8% | 89.3% |
 
 The development set was used to find and fix gaps. The test set was not looked at until its first scoring, which is the honest measure. That first scoring used an earlier version of the scorer, which did not count accepted non-words and cut lemma and part of speech in the wrong place. After it, 3 changes came from the test set: 2 bugs it exposed (Old Kannada words given a loanword declension, adjectives taking every form of the copula) and the ಪಡು passive (ಸ್ವೀಕರಿಸಲ್ಪಟ್ಟಿತು), which appears only in the test set. The current row reflects those changes, so it is not a clean held-out number.
 
-The stem column uses the guesser for words the dictionary does not know; the other columns do not. With `kn_IN-alar` the readings are more precise (76.0% on the test set) but fewer words are analyzed (138 of 196 against 184). The analyzer with `kn_IN` accepts 2 of the 4 test-set non-words (the stray suffix ನಷ್ಟು and ಕಿ from ಕಿ.ಮೀ.), because both occur often enough in Wikipedia to be induced.
+The stem column uses the guesser for words the dictionary does not know; the other columns do not. `kn_IN` alone gives more precise readings but analyzes fewer words: 138 of the 196 test words, against 184 with both lists. With both lists the analyzer accepts 2 of the 4 test-set non-words (the stray suffix ನಷ್ಟು and ಕಿ from ಕಿ.ಮೀ.), because both occur often enough in Wikipedia to be induced.
 
 Most remaining differences are parts of speech: Alar lists many adjectives as nouns too, and names induced from Wikipedia have no part of speech (`x`) where the gold says noun. The rest are missing names and compounds, and a few constructions the paradigms lack, such as the postposition ಅಡಿ ("under").
 
@@ -146,7 +157,7 @@ Measured with `kspell phonetic-eval`:
 2. **Rules.** Each class's affix rules are read off its paradigm by inflecting a sample stem and comparing each form with it. The analyzer and the Hunspell file use these same rules.
 3. **Stems from Alar.** Alar's single-word headwords become stems. Its part of speech gives noun, verb, adjective or particle. Old Kannada letters (ೞ, ಱ), Old Kannada endings not used in modern text, and headwords damaged by font conversion are left out.
 4. **Declension from the corpus.** Alar does not say whether ಕಾಡು declines as ಕಾಡನ್ನು or ಕಾಡುವನ್ನು, or whether ಹುಡುಗ takes ಹುಡುಗನನ್ನು. Each candidate declension is scored by how often its own forms occur in the training split, and the best one wins.
-5. **Induced stems** (`kn_IN` only). A name or loanword that Alar lacks is added when 3 or more distinct training words are its forms in 1 noun class. Frequent unexplained words are added whole. A word 1 confusion away from an accepted word 3 or more times as frequent is treated as a misspelling and left out, so ಹಾಗು (for ಹಾಗೂ) is not learned from Wikipedia's own errors.
+5. **Induced stems** (the `kn_IN-wikipedia` add-on only). A name or loanword that Alar lacks is added when 3 or more distinct training words are its forms in 1 noun class. Frequent unexplained words are added whole. A word 1 confusion away from an accepted word 3 or more times as frequent is treated as a misspelling and left out, so ಹಾಗು (for ಹಾಗೂ) is not learned from Wikipedia's own errors.
 
 ## Rebuild the dictionaries
 
@@ -161,7 +172,7 @@ bzcat data/raw/knwiki-20261101-pages-articles.xml.bz2 | target/release/kspell co
 target/release/kspell lexicon
 target/release/kspell induce
 target/release/kspell hunspell
-target/release/kspell hunspell --lexicon data/build/lexicon-alar.tsv --out dict/kn_IN-alar
+target/release/kspell hunspell --lexicon data/build/lexicon.tsv --base data/build/lexicon-alar.tsv --out dict/kn_IN-wikipedia
 target/release/kspell eval
 target/release/kspell suggest
 ```
@@ -179,8 +190,13 @@ Other commands: `kspell analyze`, `kspell stem`, `kspell paradigm`, `kspell gold
 
 ## License
 
-The code is under the MIT License. The `.dic` files are derived from Alar and licensed under the Open Database License 1.0; see [DATA-LICENSE.md](DATA-LICENSE.md).
+The code is under the [MIT License](LICENSE-MIT) or the [Apache License 2.0](LICENSE-APACHE), at your option. Copyright 2026 The Open Kannada Authors.
 
-Contains information from [Alar](https://alar.ink) by V. Krishna, made available under the ODbL 1.0.
+- `dict/kn_IN.dic` is derived from Alar and licensed under the Open Database License 1.0. Contains information from [Alar](https://alar.ink) by V. Krishna, made available under the ODbL 1.0.
+- `dict/kn_IN-wikipedia.dic` and the gold sets in `data/gold/` are single words and counts from Kannada Wikipedia. Words and frequency counts are facts, so they carry no share-alike obligation; they are licensed under CC BY 4.0, with credit to Kannada Wikipedia as the source.
+- The LibreOffice package carries both word lists as separate files, each under its own license. The Firefox add-on merges them into 1 file, because Firefox takes 1 per language; that file is derived from Alar, so it is licensed under the ODbL 1.0 as a whole, with credit to both sources.
+- Docs and other data written for this project are under CC BY 4.0.
+
+[DATA-LICENSE.md](DATA-LICENSE.md) and [NOTICE.md](NOTICE.md) give the details and credits, the license texts are in [LICENSES/](LICENSES), and [REUSE.toml](REUSE.toml) covers every file. Contributions are welcome under the [DCO](CONTRIBUTING.md). The name Open Kannada is covered by [TRADEMARKS.md](TRADEMARKS.md).
 
 Part of [Open Kannada](https://github.com/openkannada), free and open-source tools that make Kannada work properly on computers.

@@ -1,29 +1,54 @@
 # Data license
 
-The code in this repository is under the MIT License (see `LICENSE`). The dictionaries are not.
+The code in this repository is under the MIT License or the Apache License 2.0, at your option (see `LICENSE-MIT` and `LICENSE-APACHE`). The dictionaries are not. Each dictionary file in the repository has 1 license:
 
-## `dict/kn_IN.dic` and `dict/kn_IN-alar.dic`
+| File | License | Words from |
+| --- | --- | --- |
+| `dict/kn_IN.dic` | Open Database License 1.0 | Alar, and the closed-class list written for this project |
+| `dict/kn_IN-wikipedia.dic` | CC BY 4.0 | Kannada Wikipedia word counts |
+| `dict/kn_IN.aff` | MIT OR Apache-2.0 | Generated rules; no Alar or Wikipedia text |
 
-These word lists are derived from [Alar](https://github.com/alar-dict/data), the Kannada-English dictionary by V. Krishna, which is published under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). The ODbL is share-alike for databases: a database derived from Alar must also be offered under the ODbL. Both `.dic` files are therefore licensed under the ODbL 1.0.
+The full license texts are in `LICENSES/`. The repository keeps the Alar entries and the Wikipedia words in separate files, so each list can be used on its own under its own license. The Firefox add-on merges them; see Packages.
 
-Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar headwords were filtered, normalized and given inflection classes; see `README.md`.
+## `dict/kn_IN.dic`: the Alar word list
 
-`dict/kn_IN.dic` also contains words and stems induced from word counts of Kannada Wikipedia (text under CC BY-SA 4.0). Only single words and the inflection class each one takes are used: no sentences or longer passages. The project credits the Kannada Wikipedia contributors for these words. `dict/kn_IN-alar.dic` leaves them out, for users who want a word list drawn from Alar alone.
+This word list is derived from [Alar](https://github.com/alar-dict/data), the Kannada-English dictionary by V. Krishna, which is published under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). The ODbL is share-alike for databases: a database derived from Alar must also be offered under the ODbL. `kn_IN.dic` is therefore licensed under the ODbL 1.0.
 
-## `dict/kn_IN.aff` and `dict/kn_IN-alar.aff`
+Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar headwords were filtered, normalized and given inflection classes; see `README.md`. Choosing a class uses word counts from Kannada Wikipedia as evidence, but no Wikipedia word is added to this file.
 
-The affix files hold the inflection rules generated from the paradigms in `crates/kannada-morph` and contain no Alar data. Their `TRY` line lists Kannada letters in order of frequency in Kannada Wikipedia. They are under the MIT License, like the code.
+## `dict/kn_IN-wikipedia.dic`: the Wikipedia add-on
+
+Names, loanwords and other words that Alar lacks, induced from word counts of Kannada Wikipedia, whose text is under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Only single words, their counts and the inflection class each one takes are used: no sentences or longer passages, so the file carries none of Wikipedia's text. Single words and frequency counts are facts, so the list carries no share-alike obligation. It is offered under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with credit to Kannada Wikipedia and its contributors as the source. It holds no Alar entry.
+
+It loads with the affix file of `kn_IN`, as in `hunspell -d dict/kn_IN,dict/kn_IN-wikipedia`. The LibreOffice and Firefox packages carry it with `kn_IN.dic`.
+
+## `dict/kn_IN.aff`
+
+The affix file holds the inflection rules generated from the paradigms in `crates/kannada-morph`. Its `TRY` line lists Kannada letters in order of frequency in Kannada Wikipedia. It is under the MIT License or the Apache License 2.0, like the code.
 
 ## Attribution
 
-When you use or redistribute the dictionaries, keep this notice and credit:
+When you use or redistribute `kn_IN.dic`, keep this notice and credit:
 
 > Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/).
 
-For `kn_IN`, also credit Kannada Wikipedia:
+When you use or redistribute `kn_IN-wikipedia.dic`, credit Kannada Wikipedia as its source:
 
-> Includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors.
+> Includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors. This word list is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+## Other data
+
+| Files | License |
+| --- | --- |
+| `data/closed-class.tsv`, `crates/kannada-phonetic/informal.tsv` | CC BY 4.0, written for this project |
+| `data/gold/*.tsv` | CC BY 4.0, with credit to Kannada Wikipedia: word types and counts from Kannada Wikipedia, which are facts, with analyses written by an AI model and not yet checked by a Kannada reader |
+| `crates/kannada-phonetic/vectors.tsv` | MIT OR Apache-2.0, generated by the code |
+
+`REUSE.toml` and the SPDX headers give the license of every file.
 
 ## Packages
 
-The LibreOffice extension and the Firefox add-on built by `scripts/package.sh` hold `kn_IN.aff` and `kn_IN.dic` unchanged, with this file, `dict/README.md` and the MIT License in `NOTICE.md`. They are under the same licenses as the files they contain.
+Both packages built by `scripts/package.sh` carry both word lists. Each has a `NOTICE.md` with this file, `dict/README.md`, the ODbL and CC BY 4.0 texts, and the MIT and Apache licenses.
+
+- The LibreOffice extension holds `kn_IN.dic` (ODbL 1.0) and `kn_IN-wikipedia.dic` (CC BY 4.0) unchanged, as 2 separate files side by side, each with a copy of `kn_IN.aff`. Each file keeps its own license.
+- The Firefox add-on holds 1 file, `dictionaries/kn-IN.dic`, because Firefox takes 1 dictionary file per language. `package.sh` builds it by merging the entries of `kn_IN.dic` and `kn_IN-wikipedia.dic`. It is derived from Alar, so the merged file as a whole is licensed under the ODbL 1.0, with credit to both Alar and Kannada Wikipedia. CC BY 4.0 allows the Wikipedia words to be shared this way, as long as the credit is kept.

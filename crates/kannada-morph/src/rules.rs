@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Affix rules read off the paradigms: what a class strips from a stem and adds to it.
 //!
 //! The paradigms in [`crate::noun`] and [`crate::verb`] are the only description

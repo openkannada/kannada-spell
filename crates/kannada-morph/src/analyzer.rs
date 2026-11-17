@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Morphological analysis by affix stripping: every way a word splits into a known stem and a rule.
 
 use std::collections::HashMap;

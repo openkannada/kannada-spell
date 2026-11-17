@@ -1,4 +1,6 @@
 #!/bin/sh
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Checks that real Hunspell and `kspell analyze` accept exactly the same words, on a sample
 # of forms built from the dictionary and a typo of each.
 set -eu
