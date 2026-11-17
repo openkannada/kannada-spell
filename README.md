@@ -11,33 +11,12 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 ಮಾಡಲಾಗಿದೆ     ಮಾಡು+v+pass|ಆಗು+v+cp|ಇರು+v+pres.3sn
 ```
 
-## Dictionaries
+## Results
 
 | File | Words from | Held-out tokens accepted | Misspellings accepted |
 | --- | --- | --- | --- |
 | `dict/kn_IN` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 3.7% |
 | `dict/kn_IN-alar` | Alar and the closed-class list only | 70.8% | 3.6% |
-
-Both work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
-
-```sh
-hunspell -d dict/kn_IN file.txt
-```
-
-`kn_IN` is the dictionary this project publishes. The LibreOffice and Firefox packages carry it. `kn_IN-alar` stays in the repository for anyone who wants a word list drawn from Alar alone.
-
-### LibreOffice and Firefox
-
-`scripts/package.sh` builds both packages from `dict/kn_IN` into `dist/`, and `scripts/package-check.sh` checks them:
-
-- `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
-- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
-
-```sh
-scripts/package.sh && scripts/package-check.sh
-```
-
-## Results
 
 Measured on every 10th article of the Kannada Wikipedia dump of 1 November 2026: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles.
 
@@ -75,6 +54,33 @@ The same held-out words and misspellings, checked with Hunspell 1.7.6:
 The earlier dictionaries are mostly plain word lists. They accept almost no misspellings because they accept few inflected forms at all: 6 in 10 frequent words are flagged as errors by the 2009 dictionary.
 
 Most rejected held-out words are rare names and loanwords, and genuine misspellings in Wikipedia such as ವಿರುದ್ದ for ವಿರುದ್ಧ and ನಿರ್ಧಿಷ್ಟ for ನಿರ್ದಿಷ್ಟ.
+
+## Install
+
+Both dictionaries work with Hunspell 1.7 and with anything that loads Hunspell dictionaries, such as LibreOffice. Hunspell loads `kn_IN` in about 0.3 seconds and uses about 40 MB. The `.dic` files are under the ODbL 1.0 and the `.aff` files under the MIT License; see [DATA-LICENSE.md](DATA-LICENSE.md).
+
+```sh
+hunspell -d dict/kn_IN file.txt
+```
+
+`kn_IN` is the dictionary this project publishes. The LibreOffice and Firefox packages carry it. `kn_IN-alar` stays in the repository for anyone who wants a word list drawn from Alar alone.
+
+### The kspell command
+
+```sh
+cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
+```
+
+### LibreOffice and Firefox
+
+`scripts/package.sh` builds both packages from `dict/kn_IN` into `dist/`, and `scripts/package-check.sh` checks them:
+
+- `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
+- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
+
+```sh
+scripts/package.sh && scripts/package-check.sh
+```
 
 ## Analyzer and stemmer
 
@@ -142,13 +148,7 @@ Measured with `kspell phonetic-eval`:
 4. **Declension from the corpus.** Alar does not say whether ಕಾಡು declines as ಕಾಡನ್ನು or ಕಾಡುವನ್ನು, or whether ಹುಡುಗ takes ಹುಡುಗನನ್ನು. Each candidate declension is scored by how often its own forms occur in the training split, and the best one wins.
 5. **Induced stems** (`kn_IN` only). A name or loanword that Alar lacks is added when 3 or more distinct training words are its forms in 1 noun class. Frequent unexplained words are added whole. A word 1 confusion away from an accepted word 3 or more times as frequent is treated as a misspelling and left out, so ಹಾಗು (for ಹಾಗೂ) is not learned from Wikipedia's own errors.
 
-## Build
-
-```sh
-cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
-```
-
-To rebuild the dictionaries:
+## Rebuild the dictionaries
 
 ```sh
 cargo build --release
@@ -168,8 +168,19 @@ target/release/kspell suggest
 
 Other commands: `kspell analyze`, `kspell stem`, `kspell paradigm`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
 
+## Limits
+
+- The coverage figures may be slightly optimistic, because some fixes were chosen after reading held-out words (see Results).
+- Accepting inflected forms lets more misspellings through: 3.7% of sound-alike misspellings, against 0.2% for the 2009 dictionary.
+- Most held-out words it rejects are rare names and loanwords, besides genuine misspellings in Wikipedia.
+- The analyzer's gold analyses were written by an AI model; a Kannada reader has not checked them yet.
+- The phonetic keys merge some different words, such as ಹಾಲು and ಹಲ್ಲು, and miss some informal spellings (see Phonetic keys).
+- The Firefox add-on is unsigned until it is listed on addons.mozilla.org.
+
 ## License
 
 The code is under the MIT License. The `.dic` files are derived from Alar and licensed under the Open Database License 1.0; see [DATA-LICENSE.md](DATA-LICENSE.md).
 
 Contains information from [Alar](https://alar.ink) by V. Krishna, made available under the ODbL 1.0.
+
+Part of [Open Kannada](https://github.com/openkannada), free and open-source tools that make Kannada work properly on computers.
