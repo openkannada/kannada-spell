@@ -11,6 +11,8 @@ This repository includes or is built from the third-party material below. [DATA-
 | Fedora `hunspell-kn` 1.0.3 and [kn-hunspell](https://github.com/mgharish/kn-hunspell) | Their own licenses | Benchmark comparison only | No |
 | Rust crates in `Cargo.lock` | MIT, Apache-2.0 and other permissive licenses | Build dependencies | No |
 
+The LibreOffice and Firefox packages carry both word lists and these credits; see DATA-LICENSE.md, "Packages".
+
 Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/).
 
 Includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).

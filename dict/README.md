@@ -10,4 +10,6 @@ Hunspell's `.dic` format has no room for a comment, so the notices for the word 
 
 > Contains information from Alar by V. Krishna (https://alar.ink), made available under the Open Database License 1.0 (https://opendatacommons.org/licenses/odbl/1-0/).
 
-`kn_IN` is the default dictionary: Alar and the hand-written closed-class list. `kn_IN-wikipedia` is an add-on of names, loanwords and other words induced from Kannada Wikipedia word counts. It loads with the `kn_IN` affix file, as in `hunspell -d kn_IN,kn_IN-wikipedia`. Credit Kannada Wikipedia's contributors with it, as [DATA-LICENSE.md](../DATA-LICENSE.md) says.
+`kn_IN` holds Alar and the hand-written closed-class list. `kn_IN-wikipedia` holds names, loanwords and other words induced from Kannada Wikipedia word counts. It loads with the `kn_IN` affix file, as in `hunspell -d kn_IN,kn_IN-wikipedia`. The LibreOffice and Firefox packages carry both; the Firefox add-on merges them into 1 file. Credit Kannada Wikipedia's contributors with it:
+
+> Includes words counted in Kannada Wikipedia (https://kn.wikipedia.org), written by its contributors, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).

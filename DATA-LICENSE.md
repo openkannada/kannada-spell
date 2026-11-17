@@ -8,9 +8,9 @@ The code in this repository is under the MIT License or the Apache License 2.0, 
 | `dict/kn_IN-wikipedia.dic` | CC BY-SA 4.0 | Kannada Wikipedia word counts |
 | `dict/kn_IN.aff` | MIT OR Apache-2.0 | Generated rules; no Alar or Wikipedia text |
 
-The full license texts are in `LICENSES/`. The 2 share-alike licenses are not compatible with each other, so their entries are never mixed in 1 file.
+The full license texts are in `LICENSES/`. The 2 share-alike licenses are not compatible with each other, so the repository keeps their entries in separate files. The Firefox add-on is the 1 exception; see Packages.
 
-## `dict/kn_IN.dic`: the default dictionary
+## `dict/kn_IN.dic`: the Alar word list
 
 This word list is derived from [Alar](https://github.com/alar-dict/data), the Kannada-English dictionary by V. Krishna, which is published under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). The ODbL is share-alike for databases: a database derived from Alar must also be offered under the ODbL. `kn_IN.dic` is therefore licensed under the ODbL 1.0.
 
@@ -20,7 +20,7 @@ Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar head
 
 Names, loanwords and other words that Alar lacks, induced from word counts of Kannada Wikipedia, whose text is under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Only single words and the inflection class each one takes are used: no sentences or longer passages. This file is licensed under CC BY-SA 4.0 and credits the Kannada Wikipedia contributors. It holds no Alar entry.
 
-It is an add-on, not a dictionary of its own: it loads with the affix file of `kn_IN`, as in `hunspell -d dict/kn_IN,dict/kn_IN-wikipedia`.
+It loads with the affix file of `kn_IN`, as in `hunspell -d dict/kn_IN,dict/kn_IN-wikipedia`. The LibreOffice and Firefox packages carry it with `kn_IN.dic`.
 
 ## `dict/kn_IN.aff`
 
@@ -48,4 +48,7 @@ When you use or redistribute `kn_IN-wikipedia.dic`, credit Kannada Wikipedia und
 
 ## Packages
 
-The LibreOffice extension and the Firefox add-on built by `scripts/package.sh` hold `kn_IN.aff` and `kn_IN.dic` unchanged, with this file, `dict/README.md`, the ODbL text and the MIT and Apache licenses in `NOTICE.md`. They do not hold the Wikipedia add-on. They are under the same licenses as the files they contain.
+Both packages built by `scripts/package.sh` carry both word lists. Each has a `NOTICE.md` with this file, `dict/README.md`, the ODbL and CC BY-SA 4.0 texts, and the MIT and Apache licenses.
+
+- The LibreOffice extension holds `kn_IN.dic` (ODbL 1.0) and `kn_IN-wikipedia.dic` (CC BY-SA 4.0) unchanged, as 2 separate files side by side, each with a copy of `kn_IN.aff`. This is aggregation: each file keeps its own license.
+- The Firefox add-on holds 1 file, `dictionaries/kn-IN.dic`, because Firefox takes 1 dictionary file per language. `package.sh` builds it by merging the entries of `kn_IN.dic` and `kn_IN-wikipedia.dic`. It contains ODbL 1.0 entries from Alar and CC BY-SA 4.0 words from Kannada Wikipedia, and each entry keeps the license and credit of the list it comes from. To separate them again, compare it with the 2 files in `dict/`.
