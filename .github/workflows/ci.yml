@@ -35,11 +35,39 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - run: sudo apt-get update && sudo apt-get install -y hunspell libxml2-utils
-      - run: scripts/hunspell-smoke.sh dict/kn_IN
-      - run: scripts/hunspell-smoke.sh dict/kn_IN-alar core
+      - run: scripts/hunspell-smoke.sh dict/kn_IN core
+      - run: scripts/hunspell-smoke.sh dict/kn_IN,dict/kn_IN-wikipedia
       - run: cargo build --release --locked -p kspell
       - run: scripts/agreement.sh dict/kn_IN
-      - run: scripts/agreement.sh dict/kn_IN-alar
+      - run: scripts/agreement.sh dict/kn_IN,dict/kn_IN-wikipedia
       - run: scripts/package.sh && scripts/package-check.sh
       - name: Packages are the same under another umask
         run: sha256sum dist/* > ../packages.sha256 && (umask 077 && scripts/package.sh) && sha256sum -c ../packages.sha256
+
+  reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: fsfe/reuse-action@v6
+
+  dco:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Every commit is signed off (DCO)
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          status=0
+          for commit in $(git rev-list --no-merges "$BASE..$HEAD"); do
+            author=$(git log -1 --format='%an <%ae>' "$commit")
+            if ! git log -1 --format=%B "$commit" | grep -qF "Signed-off-by: $author"; then
+              echo "::error::$commit has no 'Signed-off-by: $author' line. See CONTRIBUTING.md."
+              status=1
+            fi
+          done
+          exit "$status"

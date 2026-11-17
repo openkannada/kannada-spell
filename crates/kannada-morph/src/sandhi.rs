@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Joining a stem or suffix to the next suffix, as Kannada spelling writes it.
 //!
 //! A suffix that starts with a consonant is written straight after the left

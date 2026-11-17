@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Stems induced from a corpus: names and loanwords that Alar does not list.
 //!
 //! A stem is induced when at least [`MIN_FORMS`] distinct words in the training

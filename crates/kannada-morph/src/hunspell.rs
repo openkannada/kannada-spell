@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Writes the lexicon and rules as a Hunspell dictionary: a `.aff` and a `.dic` file.
 
 use std::collections::BTreeMap;

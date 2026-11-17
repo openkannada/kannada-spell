@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Headwords and parts of speech from Alar, V. Krishna's Kannada-English dictionary (ODbL 1.0).
 
 use std::fs::File;

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Inflection classes: which paradigm a dictionary stem takes.
 
 use crate::form::{Form, extend};

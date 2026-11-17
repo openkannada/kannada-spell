@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Measures the sound-alike keys: how often a misspelling keeps its word's key,
 //! how many dictionary words share a key, and how often a romanized spelling
 //! gets the same key as the Kannada word.

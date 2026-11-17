@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Builds the lexicon from Alar headwords, the closed-class list and corpus evidence.
 
 use std::collections::HashSet;

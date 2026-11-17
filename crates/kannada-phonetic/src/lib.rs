@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Sound-alike keys for Kannada words, for fuzzy search.
 //!
 //! Writers and searchers confuse letters that sound alike: aspirated and plain

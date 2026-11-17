@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Measures Hunspell's suggestions: how often the intended word is offered first, or in the top 5.
 
 use std::io::Write;

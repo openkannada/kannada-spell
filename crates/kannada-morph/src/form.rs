@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! A generated word form and the step that adds 1 suffix to it.
 
 use crate::sandhi::{Junction, join, junction_after};

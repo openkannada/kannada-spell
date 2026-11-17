@@ -13,6 +13,7 @@ cargo test                                         # fast unit tests, under 5 se
 cargo fmt --all && cargo clippy --all-targets -- -D warnings
 RUSTDOCFLAGS="-D warnings" cargo doc --no-deps
 scripts/hunspell-smoke.sh                          # the committed dictionary with real Hunspell
+uvx reuse lint                                     # every file has a license
 scripts/agreement.sh                               # Hunspell and the analyzer accept the same words
 scripts/package.sh && scripts/package-check.sh    # the LibreOffice and Firefox packages, into dist/
 ```
@@ -46,7 +47,7 @@ crates/kspell/             the command-line tool
   gold.rs                  scoring the analyzer against gold analyses
   phonetic_eval.rs         measuring the phonetic keys
 data/closed-class.tsv      pronouns, numerals and function words, written by hand
-dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md); kn_IN is the published one
+dict/                      the built dictionaries: kn_IN (ODbL, the default) and the kn_IN-wikipedia add-on (CC BY-SA)
 packaging/                 templates for the LibreOffice extension and the Firefox add-on
 data/gold/                 gold analyses: a development set and a test set
 docs/tags.md               the analysis tags
@@ -60,11 +61,13 @@ docs/tags.md               the analysis tags
 - Tune the analyzer on `data/gold/analyses.tsv` only. `analyses-test.tsv` is for scoring; report its first score for any change you made after looking at it.
 - A new gold test set is committed, with its first score, before any change it inspires. Draw new development sets from the training split, not the held-out articles.
 - Keep the ODbL notice on the dictionaries and the credit to Alar and V. Krishna.
+- Never put Alar entries (ODbL) and Wikipedia-derived entries (CC BY-SA) in the same file. `kn_IN` is Alar only; `kn_IN-wikipedia` holds only what Wikipedia adds.
+- New files get SPDX headers or a `REUSE.toml` entry; `uvx reuse lint` must pass.
 - Comments only for what the code cannot say.
 
 ## Commits
 
-Sign your commits (`git commit -S`). Add no AI attribution lines such as Co-Authored-By trailers.
+Sign your commits and sign off on them for the DCO (`git commit -S -s`); see CONTRIBUTING.md. Add no AI attribution lines such as Co-Authored-By trailers.
 
 ## Writing
 

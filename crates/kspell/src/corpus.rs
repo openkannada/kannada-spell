@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Kannada words from a Wikipedia XML dump, split by article into training and test counts.
 
 use std::io::BufRead;

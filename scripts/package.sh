@@ -1,12 +1,15 @@
 #!/bin/sh
+# SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Builds the LibreOffice extension (.oxt) and the Firefox dictionary add-on (.xpi) from dict/kn_IN into dist/.
+# The kn_IN-wikipedia add-on is not packaged: it has a different license.
 set -eu
 export TZ=UTC
 umask 022
 cd "$(dirname "$0")/.."
 version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -n 1)
-lo_id=${LO_ID:-io.github.prasadus92.kannada-spell}
-firefox_id=${FIREFOX_ID:-kannada-spell@prasadus92.github.io}
+lo_id=${LO_ID:-io.github.openkannada.kannada-spell}
+firefox_id=${FIREFOX_ID:-kannada-spell@openkannada.github.io}
 fill() { sed -e "s/@VERSION@/$version/g" -e "s/@LO_ID@/$lo_id/g" -e "s/@FIREFOX_ID@/$firefox_id/g" "$1"; }
 
 notice() {
@@ -14,8 +17,10 @@ notice() {
     sed -E 's/\[([^]]*)\]\(\.\.\/[^)]*\)/\1/g' dict/README.md
     printf '\n---\n\n'
     cat DATA-LICENSE.md
-    printf '\n---\n\n'
-    cat LICENSE
+    for license in LICENSES/ODbL-1.0.txt LICENSE-MIT LICENSE-APACHE; do
+      printf '\n---\n\n'
+      cat "$license"
+    done
   } > "$1"
 }
 

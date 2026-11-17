@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 The Open Kannada Authors
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! Kannada inflection, morphological analysis and a Hunspell spelling dictionary.
 //!
 //! The paradigms in [`noun`] and [`verb`] describe how Kannada words inflect.
