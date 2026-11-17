@@ -65,6 +65,12 @@ hunspell -d dict/kn_IN file.txt
 
 `kn_IN` is the dictionary this project publishes. The LibreOffice and Firefox packages carry it. `kn_IN-alar` stays in the repository for anyone who wants a word list drawn from Alar alone.
 
+### The kspell command
+
+```sh
+cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
+```
+
 ### LibreOffice and Firefox
 
 `scripts/package.sh` builds both packages from `dict/kn_IN` into `dist/`, and `scripts/package-check.sh` checks them:
@@ -74,12 +80,6 @@ hunspell -d dict/kn_IN file.txt
 
 ```sh
 scripts/package.sh && scripts/package-check.sh
-```
-
-### The kspell command
-
-```sh
-cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
 ```
 
 ## Analyzer and stemmer
@@ -140,15 +140,6 @@ Measured with `kspell phonetic-eval`:
 
 `crates/kannada-phonetic/vectors.tsv` holds test vectors for ports to other languages, including nukta, decomposed vowel signs and nasal clusters. `kspell phonetic-vectors` rewrites it, and a test checks it matches the code.
 
-## Limits
-
-- The coverage figures may be slightly optimistic, because some fixes were chosen after reading held-out words (see Results).
-- Accepting inflected forms lets more misspellings through: 3.7% of sound-alike misspellings, against 0.2% for the 2009 dictionary.
-- Most words it rejects are rare names and loanwords that neither Alar nor Wikipedia teaches it.
-- The analyzer's gold analyses were written by an AI model; a Kannada reader has not checked them yet.
-- The phonetic keys merge some different words, such as ಹಾಲು and ಹಲ್ಲು, and miss some informal spellings (see Phonetic keys).
-- The Firefox add-on is unsigned until it is listed on addons.mozilla.org.
-
 ## How it is built
 
 1. **Paradigms.** `crates/kannada-morph` describes 10 noun declensions (ಮರ, ಹುಡುಗ, ಮನೆ, ಹುಡುಗಿ, ಕಾಡು, ವಸ್ತು, ಇದು, plurals, and 2 for loanwords ending in a consonant such as ಬ್ಯಾಂಕ್ and ಬಸ್), regular verbs ending in ು, ಿ and ೆ, 42 irregular verbs and the compounds built on them (ಒಳಗೊಳ್ಳು like ಕೊಳ್ಳು), and the forms that fuse onto a word: the copula ಆಗು, ಇರು, the quotative ಎನ್ನು, ಅಲ್ಲ, the auxiliaries ಕೊಳ್ಳು and ಬಿಡು, and the clitics ಊ and ಏ. Sandhi is 1 function: elision, the ಯ and ವ glides, and the virama.
@@ -176,6 +167,15 @@ target/release/kspell suggest
 ```
 
 Other commands: `kspell analyze`, `kspell stem`, `kspell paradigm`, `kspell gold`, `kspell phonetic`, `kspell phonetic-eval`, `kspell sample`, `kspell rules`. The tags are described in [docs/tags.md](docs/tags.md).
+
+## Limits
+
+- The coverage figures may be slightly optimistic, because some fixes were chosen after reading held-out words (see Results).
+- Accepting inflected forms lets more misspellings through: 3.7% of sound-alike misspellings, against 0.2% for the 2009 dictionary.
+- Most held-out words it rejects are rare names and loanwords, besides genuine misspellings in Wikipedia.
+- The analyzer's gold analyses were written by an AI model; a Kannada reader has not checked them yet.
+- The phonetic keys merge some different words, such as ಹಾಲು and ಹಲ್ಲು, and miss some informal spellings (see Phonetic keys).
+- The Firefox add-on is unsigned until it is listed on addons.mozilla.org.
 
 ## License
 
