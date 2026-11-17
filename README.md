@@ -2,7 +2,7 @@
 
 A Kannada spelling dictionary for Hunspell, with a morphological analyzer and stemmer built from the same rules, and sound-alike keys for fuzzy search.
 
-Kannada joins case endings, auxiliaries and the copula to the word before them, so 1 noun has hundreds of written forms: ಮರ, ಮರವನ್ನು, ಮರಗಳಲ್ಲಿ, ಮರವಾಗಿದೆ, ಮರದಲ್ಲಿದ್ದ. A word list cannot cover that. This project describes Kannada inflection once, as paradigms with sandhi rules, and generates from that description both a Hunspell affix file and an analyzer that returns the lemma and tags of each reading.
+Kannada joins case endings, auxiliaries and the copula to the word before them, so a single noun has hundreds of written forms: ಮರ, ಮರವನ್ನು, ಮರಗಳಲ್ಲಿ, ಮರವಾಗಿದೆ, ಮರದಲ್ಲಿದ್ದ. A word list cannot cover that. This project describes Kannada inflection once, as paradigms with sandhi rules, and generates from that description both a Hunspell affix file and an analyzer that returns the lemma and tags of each reading.
 
 ```text
 $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾಡಲಾಗಿದೆ
@@ -39,7 +39,14 @@ scripts/package.sh && scripts/package-check.sh
 
 ## Results
 
-Measured on every 10th article of a Kannada Wikipedia dump: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles. 2 things break that separation slightly: some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the most often rejected held-out words, and a few pronouns and irregular plurals (ಮಕ್ಕಳು, ಆತ, ಕೆಲವರು) were added to the closed-class list after the development gold set, which is drawn from held-out articles, showed them missing. The coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them.
+Measured on every 10th article of the Kannada Wikipedia dump of 1 November 2026: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles.
+
+That separation is not perfect, for 2 reasons:
+
+- Some general fixes (suffixes written on numbers, loanwords ending in a virama, month names, compound verbs) were chosen after reading the held-out words rejected most often.
+- A few pronouns and irregular plurals (ಮಕ್ಕಳು, ಆತ, ಕೆಲವರು) were added to the closed-class list after the development gold set showed them missing, and that set is drawn from held-out articles.
+
+So the coverage figures may be slightly optimistic. Run `kspell eval` and `kspell suggest` to reproduce them; `kspell suggest --dictionary dict/kn_IN-alar` gives the `kn_IN-alar` column. The build below uses the same dated dump; a newer one gives slightly different figures.
 
 | Measure | `kn_IN` | `kn_IN-alar` |
 | --- | --- | --- |
@@ -73,7 +80,9 @@ Most rejected held-out words are rare names and loanwords, and genuine misspelli
 
 `kspell analyze` returns every reading of a word; `kspell stem` returns its lemma; `kspell paradigm` lists every form of a lemma with its reading. The analyzer strips the same affix rules Hunspell uses, so it reads exactly the words the dictionary accepts. For a word the dictionary does not know, `--guess` proposes readings from the ending alone, for open noun classes only.
 
-Scored against gold analyses of held-out Wikipedia words with `kspell gold`. Each set samples word types evenly from 3 frequency bands (the 1,000 most frequent, the next 19,000, and the rest seen 3 or more times), so precision and recall are over readings of word types, not weighted by how often a word occurs. Words the annotator marked as not words count against precision when the analyzer accepts them.
+Scored against gold analyses of held-out Wikipedia words with `kspell gold`. Each set samples word types evenly from 3 frequency bands: the 1,000 most frequent, the next 19,000, and the rest seen 3 or more times. Precision and recall are therefore over readings of word types, not weighted by how often a word occurs.
+
+The sets sample 300 and 200 words. The annotator marked 8 and 4 of them as not words, which leaves the 292 and 196 in the table. Those non-words count against precision when the analyzer accepts them.
 
 | Gold set | Readings precision | Readings recall | Lemma and part of speech, P / R | Stem correct |
 | --- | --- | --- | --- | --- |
@@ -87,7 +96,7 @@ The stem column uses the guesser for words the dictionary does not know; the oth
 
 Most remaining differences are parts of speech: Alar lists many adjectives as nouns too, and names induced from Wikipedia have no part of speech (`x`) where the gold says noun. The rest are missing names and compounds, and a few constructions the paradigms lack, such as the postposition ಅಡಿ ("under").
 
-The gold analyses were written by an AI annotator in a separate session, from `docs/tags.md` alone, without access to the analyzer or the dictionaries. A Kannada reader has not checked them yet.
+The gold analyses were written by an AI model given only `docs/tags.md`, without access to the analyzer or the dictionaries. A Kannada reader has not checked them yet.
 
 ## Phonetic keys
 
@@ -136,11 +145,19 @@ Measured with `kspell phonetic-eval`:
 ## Build
 
 ```sh
+cargo install --path crates/kspell      # puts kspell on your PATH, to run it outside the repository
+```
+
+To rebuild the dictionaries:
+
+```sh
 cargo build --release
-curl -o data/raw/knwiki-latest-pages-articles.xml.bz2 \
-  https://dumps.wikimedia.org/knwiki/latest/knwiki-latest-pages-articles.xml.bz2
-# data/raw/alar.yml from https://github.com/alar-dict/data at the commit in DATA-LICENSE.md
-bzcat data/raw/knwiki-latest-pages-articles.xml.bz2 | target/release/kspell corpus
+mkdir -p data/raw
+curl -L -o data/raw/knwiki-20261101-pages-articles.xml.bz2 \
+  https://dumps.wikimedia.org/knwiki/20261101/knwiki-20261101-pages-articles.xml.bz2
+curl -L -o data/raw/alar.yml \
+  https://raw.githubusercontent.com/alar-dict/data/8651ccf8e92184ca17e234eeb6c947d8d52dd5c4/alar.yml
+bzcat data/raw/knwiki-20261101-pages-articles.xml.bz2 | target/release/kspell corpus
 target/release/kspell lexicon
 target/release/kspell induce
 target/release/kspell hunspell

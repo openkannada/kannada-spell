@@ -64,11 +64,7 @@ docs/tags.md               the analysis tags
 
 ## Commits
 
-Signed, as Prasad, with no AI attribution:
-
-```sh
-git -c user.name="Prasad Subrahmanya" -c user.email=prasadus92@gmail.com commit -S
-```
+Sign your commits (`git commit -S`). Add no AI attribution lines such as Co-Authored-By trailers.
 
 ## Writing
 
