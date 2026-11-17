@@ -183,6 +183,4 @@ The code is under the MIT License. The `.dic` files are derived from Alar and li
 
 Contains information from [Alar](https://alar.ink) by V. Krishna, made available under the ODbL 1.0.
 
-## Part of Open Kannada
-
-This project is part of [Open Kannada](https://github.com/openkannada), free and open-source tools that make Kannada work properly on computers. Founded by [Prasad Subrahmanya](https://prasad.tech) and [Neha Prasad](https://neha-prasad.com/), and supported by [DataRavel Inc. (dba Luminik)](https://www.luminik.io). Dedicated to Subramanya and Veena.
+Part of [Open Kannada](https://github.com/openkannada), free and open-source tools that make Kannada work properly on computers.
