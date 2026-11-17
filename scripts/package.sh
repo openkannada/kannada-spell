@@ -17,7 +17,7 @@ notice() {
     sed -E 's/\[([^]]*)\]\(\.\.\/[^)]*\)/\1/g' dict/README.md
     printf '\n---\n\n'
     cat DATA-LICENSE.md
-    for license in LICENSES/ODbL-1.0.txt LICENSES/CC-BY-SA-4.0.txt LICENSE-MIT LICENSE-APACHE; do
+    for license in LICENSES/ODbL-1.0.txt LICENSES/CC-BY-4.0.txt LICENSE-MIT LICENSE-APACHE; do
       printf '\n---\n\n'
       cat "$license"
     done

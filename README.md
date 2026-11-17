@@ -18,7 +18,7 @@ $ kspell analyze ಮರಗಳಲ್ಲಿ ಬಂದಿದ್ದಾರೆ ಮಾ�
 | The packaged dictionary: `dict/kn_IN` with `dict/kn_IN-wikipedia` | Alar, a closed-class list, and stems induced from Kannada Wikipedia | 88.9% | 3.7% |
 | `dict/kn_IN` alone | Alar and the closed-class list only | 70.8% | 3.6% |
 
-The LibreOffice and Firefox packages carry both word lists, so 88.9% is what users get. The 2 lists are separate files with separate licenses: `kn_IN.dic` is ODbL 1.0 and `kn_IN-wikipedia.dic` CC BY-SA 4.0 (see License).
+The LibreOffice and Firefox packages carry both word lists, so 88.9% is what users get. The 2 lists are separate files with separate licenses: `kn_IN.dic` is ODbL 1.0 and `kn_IN-wikipedia.dic` CC BY 4.0 (see License).
 
 Measured on every 10th article of the Kannada Wikipedia dump of 1 November 2026: 2.2 million words, 331,936 distinct word types. The dictionaries are built from the other articles.
 
@@ -67,7 +67,7 @@ hunspell -d dict/kn_IN file.txt                         # Alar alone, 1 license
 ```
 
 - `kn_IN.dic` holds the Alar entries and the closed-class list, under the ODbL 1.0.
-- `kn_IN-wikipedia.dic` holds names, loanwords and other words that Alar lacks, induced from Kannada Wikipedia, under CC BY-SA 4.0. It loads with the `kn_IN` affix file.
+- `kn_IN-wikipedia.dic` holds names, loanwords and other words that Alar lacks, induced from Kannada Wikipedia, under CC BY 4.0 with credit to Kannada Wikipedia. It loads with the `kn_IN` affix file.
 - `kn_IN.aff`, the affix rules, is under MIT OR Apache-2.0.
 
 Use `kn_IN` alone if you need a word list under the ODbL only. See [DATA-LICENSE.md](DATA-LICENSE.md).
@@ -83,7 +83,7 @@ cargo install --path crates/kspell      # puts kspell on your PATH, to run it ou
 `scripts/package.sh` builds both packages from `dict/kn_IN` and `dict/kn_IN-wikipedia` into `dist/`, and `scripts/package-check.sh` checks them:
 
 - `kannada-spell-kn_IN-<version>.oxt`, a LibreOffice extension. It registers both word lists for Kannada (India) as 2 dictionaries, and LibreOffice accepts a word that either one accepts. Install it with Tools > Extension Manager > Add, restart LibreOffice, and set the text language to Kannada (India). Tested with LibreOffice 26.8.
-- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox takes 1 dictionary file per language, so `package.sh` merges the 2 word lists into its `kn-IN.dic`, which holds ODbL entries from Alar and CC BY-SA words from Wikipedia. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
+- `kannada-spell-kn_IN-<version>.xpi`, a Firefox dictionary add-on for Firefox 140 and later. Firefox takes 1 dictionary file per language, so `package.sh` merges the 2 word lists into its `kn-IN.dic`. That file is derived from Alar, so it is licensed under the ODbL 1.0 as a whole, with credit to Alar and Kannada Wikipedia. Firefox installs only add-ons that Mozilla has signed, so until it is listed on addons.mozilla.org, load it for testing from about:debugging > This Firefox > Load Temporary Add-on.
 
 Each package's `NOTICE.md` credits Alar and Kannada Wikipedia and holds both license texts. `package-check.sh` fails if a package covers fewer held-out words than `kn_IN` with `kn_IN-wikipedia`: it compares them on the words of `data/gold/sample.tsv`, weighted by their held-out counts.
 
@@ -193,10 +193,10 @@ Other commands: `kspell analyze`, `kspell stem`, `kspell paradigm`, `kspell gold
 The code is under the [MIT License](LICENSE-MIT) or the [Apache License 2.0](LICENSE-APACHE), at your option. Copyright 2026 The Open Kannada Authors.
 
 - `dict/kn_IN.dic` is derived from Alar and licensed under the Open Database License 1.0. Contains information from [Alar](https://alar.ink) by V. Krishna, made available under the ODbL 1.0.
-- `dict/kn_IN-wikipedia.dic` and the gold sets in `data/gold/` are derived from Kannada Wikipedia and licensed under CC BY-SA 4.0.
-- The LibreOffice package carries both word lists as separate files. The Firefox add-on merges them into 1 file, because Firefox takes 1 per language; its entries keep the license of the list they come from.
+- `dict/kn_IN-wikipedia.dic` and the gold sets in `data/gold/` are single words and counts from Kannada Wikipedia. Words and frequency counts are facts, so they carry no share-alike obligation; they are licensed under CC BY 4.0, with credit to Kannada Wikipedia as the source.
+- The LibreOffice package carries both word lists as separate files, each under its own license. The Firefox add-on merges them into 1 file, because Firefox takes 1 per language; that file is derived from Alar, so it is licensed under the ODbL 1.0 as a whole, with credit to both sources.
 - Docs and other data written for this project are under CC BY 4.0.
 
-[DATA-LICENSE.md](DATA-LICENSE.md) and [NOTICE.md](NOTICE.md) give the details and credits, the license texts are in [LICENSES/](LICENSES), and [REUSE.toml](REUSE.toml) covers every file. Contributions are welcome under the [DCO](CONTRIBUTING.md).
+[DATA-LICENSE.md](DATA-LICENSE.md) and [NOTICE.md](NOTICE.md) give the details and credits, the license texts are in [LICENSES/](LICENSES), and [REUSE.toml](REUSE.toml) covers every file. Contributions are welcome under the [DCO](CONTRIBUTING.md). The name Open Kannada is covered by [TRADEMARKS.md](TRADEMARKS.md).
 
 Part of [Open Kannada](https://github.com/openkannada), free and open-source tools that make Kannada work properly on computers.

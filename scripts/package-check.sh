@@ -28,17 +28,17 @@ cmp -s dict/kn_IN.aff "$work/oxt/kn_IN-wikipedia.aff" || fail "the .oxt kn_IN-wi
 cmp -s dict/kn_IN.dic "$work/oxt/kn_IN.dic" || fail "the .oxt kn_IN.dic differs from dict/"
 cmp -s dict/kn_IN-wikipedia.dic "$work/oxt/kn_IN-wikipedia.dic" || fail "the .oxt kn_IN-wikipedia.dic differs from dict/"
 
-# The repository keeps the ODbL and CC BY-SA word lists in separate files.
-stems() { tail -n +2 "$1" | cut -d' ' -f1 | cut -d/ -f1 | LC_ALL=C sort -u; }
-stems dict/kn_IN-wikipedia.dic > "$work/add-on-stems"
-stems dict/kn_IN.dic > "$work/alar-stems"
-[ -z "$(LC_ALL=C comm -12 "$work/add-on-stems" "$work/alar-stems")" ] || fail "dict/kn_IN.dic holds stems of the CC BY-SA kn_IN-wikipedia add-on"
+# The repository keeps the Alar and Wikipedia word lists in separate files; a stem may be in both with other classes.
+entries() { tail -n +2 "$1" | LC_ALL=C sort -u; }
+entries dict/kn_IN-wikipedia.dic > "$work/add-on-entries"
+entries dict/kn_IN.dic > "$work/alar-entries"
+[ -z "$(LC_ALL=C comm -12 "$work/add-on-entries" "$work/alar-entries")" ] || fail "dict/kn_IN.dic holds entries of the kn_IN-wikipedia add-on"
 
 grep -q '<name xlink:href="https://github.com/openkannada/kannada-spell" lang="en">Open Kannada</name>' "$work/oxt/description.xml" || fail "the .oxt publisher is not Open Kannada"
 for f in META-INF/manifest.xml description.xml description-en.txt dictionaries.xcu NOTICE.md; do
   [ -f "$work/oxt/$f" ] || fail "the .oxt has no $f"
 done
-for text in "Open Database License (ODbL)" "opendatacommons.org/licenses/odbl" "Attribution-ShareAlike 4.0 International" "Kannada Wikipedia" "Permission is hereby granted" "Apache License"; do
+for text in "Open Database License (ODbL)" "opendatacommons.org/licenses/odbl" "Attribution 4.0 International" "Kannada Wikipedia" "Permission is hereby granted" "Apache License"; do
   grep -q "$text" "$work/oxt/NOTICE.md" || fail "the .oxt NOTICE.md lacks $text"
   grep -q "$text" "$work/xpi/NOTICE.md" || fail "the .xpi NOTICE.md lacks $text"
 done

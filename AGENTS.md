@@ -47,7 +47,7 @@ crates/kspell/             the command-line tool
   gold.rs                  scoring the analyzer against gold analyses
   phonetic_eval.rs         measuring the phonetic keys
 data/closed-class.tsv      pronouns, numerals and function words, written by hand
-dict/                      the built dictionaries: kn_IN (Alar, ODbL) and kn_IN-wikipedia (Wikipedia words, CC BY-SA); the packages carry both
+dict/                      the built dictionaries: kn_IN (Alar, ODbL) and kn_IN-wikipedia (Wikipedia words, CC BY); the packages carry both
 packaging/                 templates for the LibreOffice extension and the Firefox add-on
 data/gold/                 gold analyses: a development set and a test set
 docs/tags.md               the analysis tags
@@ -61,7 +61,7 @@ docs/tags.md               the analysis tags
 - Tune the analyzer on `data/gold/analyses.tsv` only. `analyses-test.tsv` is for scoring; report its first score for any change you made after looking at it.
 - A new gold test set is committed, with its first score, before any change it inspires. Draw new development sets from the training split, not the held-out articles.
 - Keep the ODbL notice on the dictionaries and the credit to Alar and V. Krishna.
-- Never put Alar entries (ODbL) and Wikipedia-derived entries (CC BY-SA) in the same file in the repository. `kn_IN` is Alar only; `kn_IN-wikipedia` holds only what Wikipedia adds. Only `package.sh` merges them, for the Firefox add-on, which takes 1 file per language.
+- Never put Alar entries (ODbL) and Wikipedia-derived entries (CC BY) in the same file in the repository. `kn_IN` is Alar only; `kn_IN-wikipedia` holds only what Wikipedia adds. Only `package.sh` merges them, for the Firefox add-on, which takes 1 file per language.
 - Both packages carry both word lists. `package-check.sh` fails if a package covers fewer held-out words than the 2 lists together.
 - New files get SPDX headers or a `REUSE.toml` entry; `uvx reuse lint` must pass.
 - Comments only for what the code cannot say.

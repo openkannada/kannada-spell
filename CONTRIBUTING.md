@@ -28,4 +28,4 @@ cargo test
 scripts/hunspell-smoke.sh && scripts/agreement.sh
 ```
 
-Keep Alar entries and Wikipedia-derived entries in separate files: they have different share-alike licenses (see [DATA-LICENSE.md](DATA-LICENSE.md)).
+Keep Alar entries and Wikipedia-derived entries in separate files: they have different licenses (see [DATA-LICENSE.md](DATA-LICENSE.md)).

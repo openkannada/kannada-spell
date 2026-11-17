@@ -48,7 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: fsfe/reuse-action@v6
+      - uses: astral-sh/setup-uv@v10.3.3
+      - run: uvx reuse@6.3.0 lint
 
   dco:
     if: github.event_name == 'pull_request'
@@ -57,17 +58,4 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - name: Every commit is signed off (DCO)
-        env:
-          BASE: ${{ github.event.pull_request.base.sha }}
-          HEAD: ${{ github.event.pull_request.head.sha }}
-        run: |
-          status=0
-          for commit in $(git rev-list --no-merges "$BASE..$HEAD"); do
-            author=$(git log -1 --format='%an <%ae>' "$commit")
-            if ! git log -1 --format=%B "$commit" | grep -qF "Signed-off-by: $author"; then
-              echo "::error::$commit has no 'Signed-off-by: $author' line. See CONTRIBUTING.md."
-              status=1
-            fi
-          done
-          exit "$status"
+      - run: .github/scripts/dco.sh "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}"
