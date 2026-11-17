@@ -4,7 +4,7 @@
   "description": "Kannada spell checking, with the inflected forms of nouns and verbs.",
   "version": "@VERSION@",
   "author": "Prasad Subrahmanya",
-  "homepage_url": "https://github.com/prasadus92/kannada-spell",
+  "homepage_url": "https://github.com/openkannada/kannada-spell",
   "browser_specific_settings": {
     "gecko": {
       "id": "@FIREFOX_ID@",
