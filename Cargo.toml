@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.88"
 license = "MIT"
-repository = "https://github.com/prasadus92/kannada-spell"
+repository = "https://github.com/openkannada/kannada-spell"
 authors = ["Prasad Subrahmanya <prasadus92@gmail.com>"]
 
 [workspace.dependencies]
