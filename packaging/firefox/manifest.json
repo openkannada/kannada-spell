@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Kannada spelling dictionary",
+  "description": "Kannada spell checking, with the inflected forms of nouns and verbs.",
+  "version": "@VERSION@",
+  "author": "Prasad Subrahmanya",
+  "homepage_url": "https://github.com/prasadus92/kannada-spell",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@FIREFOX_ID@",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "dictionaries": {
+    "kn-IN": "dictionaries/kn-IN.dic"
+  }
+}

@@ -14,6 +14,7 @@ cargo fmt --all && cargo clippy --all-targets -- -D warnings
 RUSTDOCFLAGS="-D warnings" cargo doc --no-deps
 scripts/hunspell-smoke.sh                          # the committed dictionary with real Hunspell
 scripts/agreement.sh                               # Hunspell and the analyzer accept the same words
+scripts/package.sh && scripts/package-check.sh    # the LibreOffice and Firefox packages, into dist/
 ```
 
 Rebuilding the dictionaries needs `data/raw/alar.yml` and a Kannada Wikipedia dump; see the README.
@@ -45,7 +46,8 @@ crates/kspell/             the command-line tool
   gold.rs                  scoring the analyzer against gold analyses
   phonetic_eval.rs         measuring the phonetic keys
 data/closed-class.tsv      pronouns, numerals and function words, written by hand
-dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md)
+dict/                      the built dictionaries (ODbL, see DATA-LICENSE.md); kn_IN is the published one
+packaging/                 templates for the LibreOffice extension and the Firefox add-on
 data/gold/                 gold analyses: a development set and a test set
 docs/tags.md               the analysis tags
 ```

@@ -40,3 +40,6 @@ jobs:
       - run: cargo build --release --locked -p kspell
       - run: scripts/agreement.sh dict/kn_IN
       - run: scripts/agreement.sh dict/kn_IN-alar
+      - run: scripts/package.sh && scripts/package-check.sh
+      - name: Packages are the same under another umask
+        run: sha256sum dist/* > ../packages.sha256 && (umask 077 && scripts/package.sh) && sha256sum -c ../packages.sha256
