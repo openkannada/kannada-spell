@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use kannada-spell, please cite it as below."
+title: "kannada-spell: a Kannada Hunspell dictionary, morphological analyzer and stemmer"
+abstract: "A Kannada spelling dictionary for Hunspell, LibreOffice and Firefox, generated from 1 description of Kannada inflection as paradigms with sandhi rules, together with a morphological analyzer and stemmer that accept exactly the same words, and sound-alike keys for fuzzy search. The packaged dictionary accepts 88.9% of held-out tokens from Kannada Wikipedia."
+type: software
+authors:
+  - family-names: Subrahmanya
+    given-names: Prasad
+    website: "https://prasad.tech"
+repository-code: "https://github.com/openkannada/kannada-spell"
+url: "https://openkannada.org/spell-check/"
+license:
+  - MIT
+  - Apache-2.0
+  - ODbL-1.0
+  - CC-BY-4.0
+version: 0.1.0
+keywords:
+  - kannada
+  - hunspell
+  - spell checking
+  - morphological analysis
+  - stemmer
