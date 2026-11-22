@@ -14,7 +14,7 @@ The full license texts are in `LICENSES/`. The repository keeps the Alar entries
 
 This word list is derived from [Alar](https://github.com/alar-dict/data), the Kannada-English dictionary by V. Krishna, which is published under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). The ODbL is share-alike for databases: a database derived from Alar must also be offered under the ODbL. `kn_IN.dic` is therefore licensed under the ODbL 1.0.
 
-Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar headwords were filtered, normalized and given inflection classes; see `README.md`. Choosing a class uses word counts from Kannada Wikipedia as evidence, but no Wikipedia word is added to this file.
+Built from Alar commit `8651ccf8e92184ca17e234eeb6c947d8d52dd5c4`. The Alar headwords were filtered, normalized and given inflection classes; see `docs/building.md`. Choosing a class uses word counts from Kannada Wikipedia as evidence, but no Wikipedia word is added to this file.
 
 ## `dict/kn_IN-wikipedia.dic`: the Wikipedia add-on
 

@@ -18,7 +18,7 @@ scripts/agreement.sh                               # Hunspell and the analyzer a
 scripts/package.sh && scripts/package-check.sh    # the LibreOffice and Firefox packages, into dist/
 ```
 
-Rebuilding the dictionaries needs `data/raw/alar.yml` and a Kannada Wikipedia dump; see the README.
+Rebuilding the dictionaries needs `data/raw/alar.yml` and a Kannada Wikipedia dump; see docs/building.md.
 
 ## Architecture
 
